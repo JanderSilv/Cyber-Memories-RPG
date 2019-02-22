@@ -141,9 +141,6 @@
   <data name="AssgReadonlyStatic2" xml:space="preserve">
     <value>Fields of static readonly field '{0}' cannot be assigned to (except in a static constructor or a variable initializer)</value>
   </data>
-  <data name="PredefinedTypeBadType" xml:space="preserve">
-    <value>Predefined type '{0}' is declared incorrectly</value>
-  </data>
   <data name="DelegateOnNullable" xml:space="preserve">
     <value>Cannot bind delegate to '{0}' because it is a member of 'System.Nullable&lt;T&gt;'</value>
   </data>
@@ -161,9 +158,6 @@
   </data>
   <data name="ReturnNotLValue" xml:space="preserve">
     <value>Cannot modify the return value of '{0}' because it is not a variable</value>
-  </data>
-  <data name="BadCastInFixed" xml:space="preserve">
-    <value>The right hand side of a fixed statement assignment may not be a cast expression</value>
   </data>
   <data name="ConstOutOfRangeChecked" xml:space="preserve">
     <value>Constant value '{0}' cannot be converted to a '{1}' (use 'unchecked' syntax to override)</value>
@@ -189,17 +183,11 @@
   <data name="AssgReadonly2" xml:space="preserve">
     <value>Members of readonly field '{0}' cannot be modified (except in a constructor or a variable initializer)</value>
   </data>
-  <data name="CircularConstraint" xml:space="preserve">
-    <value>Circular constraint dependency involving '{0}' and '{1}'</value>
-  </data>
   <data name="BindRequireArguments" xml:space="preserve">
     <value>Cannot bind call with no calling object</value>
   </data>
   <data name="BindBinaryOperatorRequireTwoArguments" xml:space="preserve">
     <value>Binary operators must be invoked with two arguments</value>
-  </data>
-  <data name="UnifyingInterfaceInstantiations" xml:space="preserve">
-    <value>'{0}' cannot implement both '{1}' and '{2}' because they may unify for some type parameter substitutions</value>
   </data>
   <data name="NewConstraintNotSatisfied" xml:space="preserve">
     <value>'{2}' must be a non-abstract type with a public parameterless constructor in order to use it as parameter '{1}' in the generic type or method '{0}'</value>
@@ -228,20 +216,11 @@
   <data name="NamedArgumentSpecificationBeforeFixedArgument" xml:space="preserve">
     <value>Named argument specifications must appear after all fixed arguments have been specified</value>
   </data>
-  <data name="BaseConstraintConflict" xml:space="preserve">
-    <value>Type parameter '{0}' inherits conflicting constraints '{1}' and '{2}'</value>
-  </data>
-  <data name="IntDivByZero" xml:space="preserve">
-    <value>Division by constant zero</value>
-  </data>
   <data name="ValConstraintNotSatisfied" xml:space="preserve">
     <value>The type '{2}' must be a non-nullable value type in order to use it as parameter '{1}' in the generic type or method '{0}'</value>
   </data>
   <data name="NullReferenceOnMemberException" xml:space="preserve">
     <value>Cannot perform runtime binding on a null reference</value>
-  </data>
-  <data name="ManagedAddr" xml:space="preserve">
-    <value>Cannot take the address of, get the size of, or declare a pointer to a managed type ('{0}')</value>
   </data>
   <data name="RefReadonlyStatic2" xml:space="preserve">
     <value>Fields of static readonly field '{0}' cannot be passed ref or out (except in a static constructor)</value>
@@ -257,9 +236,6 @@
   </data>
   <data name="BadArgCount" xml:space="preserve">
     <value>No overload for method '{0}' takes '{1}' arguments</value>
-  </data>
-  <data name="FixedNotNeeded" xml:space="preserve">
-    <value>You cannot use the fixed statement to take the address of an already fixed expression</value>
   </data>
   <data name="BadAccess" xml:space="preserve">
     <value>'{0}' is inaccessible due to its protection level</value>
@@ -278,9 +254,6 @@
   </data>
   <data name="RefConstraintNotSatisfied" xml:space="preserve">
     <value>The type '{2}' must be a reference type in order to use it as parameter '{1}' in the generic type or method '{0}'</value>
-  </data>
-  <data name="CheckedOverflow" xml:space="preserve">
-    <value>The operation overflows at compile time in checked mode</value>
   </data>
   <data name="GenericConstraintNotSatisfiedRefType" xml:space="preserve">
     <value>The type '{3}' cannot be used as type parameter '{2}' in the generic type or method '{0}'. There is no implicit reference conversion from '{3}' to '{1}'.</value>
@@ -330,9 +303,6 @@
   <data name="NoImplicitConv" xml:space="preserve">
     <value>Cannot implicitly convert type '{0}' to '{1}'</value>
   </data>
-  <data name="BindImplicitConversionRequireOneArgument" xml:space="preserve">
-    <value>Implicit conversion takes exactly one argument</value>
-  </data>
   <data name="RefReadonlyStatic" xml:space="preserve">
     <value>A static readonly field cannot be passed ref or out (except in a static constructor)</value>
   </data>
@@ -357,11 +327,11 @@
   <data name="BindToVoidMethodButExpectResult" xml:space="preserve">
     <value>Cannot implicitly convert type 'void' to 'object'</value>
   </data>
-  <data name="ConWithValCon" xml:space="preserve">
-    <value>Type parameter '{1}' has the 'struct' constraint so '{1}' cannot be used as a constraint for '{0}'</value>
-  </data>
   <data name="ObjectRequired" xml:space="preserve">
     <value>An object reference is required for the non-static field, method, or property '{0}'</value>
+  </data>
+  <data name="TypeArgumentRequiredForStaticCall" xml:space="preserve">
+    <value>The first argument to dynamically-bound static call must be a Type</value>
   </data>
   <data name="BindUnaryOperatorRequireOneArgument" xml:space="preserve">
     <value>Unary operators must be invoked with one argument</value>
@@ -417,9 +387,6 @@
   <data name="MustHaveOpTF" xml:space="preserve">
     <value>The type ('{0}') must contain declarations of operator true and operator false</value>
   </data>
-  <data name="BindExplicitConversionRequireOneArgument" xml:space="preserve">
-    <value>Explicit conversion takes exactly one argument</value>
-  </data>
   <data name="BadArgType" xml:space="preserve">
     <value>Argument '{0}': cannot convert from '{1}' to '{2}'</value>
   </data>
@@ -459,9 +426,6 @@
   <data name="AmbigMember" xml:space="preserve">
     <value>Ambiguity between '{0}' and '{1}'</value>
   </data>
-  <data name="ThisStructNotInAnonMeth" xml:space="preserve">
-    <value>Anonymous methods, lambda expressions, and query expressions inside structs cannot access instance members of 'this'. Consider copying 'this' to a local variable outside the anonymous method, lambda expression or query expression and using the local instead.</value>
-  </data>
   <data name="BindInvokeFailedNonDelegate" xml:space="preserve">
     <value>Cannot invoke a non-delegate type</value>
   </data>
@@ -470,9 +434,6 @@
   </data>
   <data name="AmbigUDConv" xml:space="preserve">
     <value>Ambiguous user defined conversions '{0}' and '{1}' when converting from '{2}' to '{3}'</value>
-  </data>
-  <data name="FieldInitRefNonstatic" xml:space="preserve">
-    <value>A field initializer cannot reference the non-static field, method, or property '{0}'</value>
   </data>
   <data name="CantCallSpecialMethod" xml:space="preserve">
     <value>'{0}': cannot explicitly call operator or accessor</value>

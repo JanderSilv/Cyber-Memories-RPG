@@ -111,23 +111,27 @@
     <Compile Include="RPG\Components\Colisao.cs" />
     <Compile Include="RPG\Components\MalhaColisao.cs" />
     <Compile Include="RPG\Components\Posicao.cs" />
+    <Compile Include="RPG\Components\Render.cs" />
     <Compile Include="RPG\Core\Componente.cs" />
     <Compile Include="RPG\Core\ComponenteReg.cs" />
     <Compile Include="RPG\Core\Entidade.cs" />
     <Compile Include="RPG\Core\GerenciadorFisica.cs" />
     <Compile Include="RPG\Core\IComponente.cs" />
     <Compile Include="RPG\Core\Vector2.cs" />
+    <Compile Include="RPG\Core\Vector4.cs" />
     <Compile Include="RPG\Events\ManipuladorEventos.cs" />
     <Compile Include="RPG\Events\MouseEvento.cs" />
     <Compile Include="RPG\Events\PrioridadeCamada.cs" />
     <Compile Include="RPG\Events\TecladoEvento.cs" />
-    <Compile Include="RPG\Testes\Pessoa.cs" />
     <EmbeddedResource Include="Properties\_3ReaisEngieUWP.rd.xml" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
       <Version>6.1.7</Version>
     </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="RPG\Testes\" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

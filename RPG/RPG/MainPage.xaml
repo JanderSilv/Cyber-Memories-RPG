@@ -8,10 +8,14 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid KeyUp="Grid_KeyUp" KeyDown="Grid_KeyDown">
-        <Button Content="Button" HorizontalAlignment="Center" Margin="0,180,0,0" VerticalAlignment="Top" Click="Button_Click"/>
-        <TextBox x:Name="txt_text" HorizontalAlignment="Left" Margin="288,259,0,0" Text="TextBox" VerticalAlignment="Top"/>
-        <TextBox x:Name="txb_log" HorizontalAlignment="Left" Margin="198,275,0,0" Text="TextBox" VerticalAlignment="Top"/>
+    <Canvas
+        Name="Canvas" Margin="0,0,0,0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" KeyDown="Canvas_KeyDown" KeyUp="Canvas_KeyUp" Unloaded="Canvas_Unloaded"
+        >
+        <Button Content="Button" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Click="Button_Click" Canvas.Left="91" Canvas.Top="152"/>
+        <TextBox x:Name="txt_text" HorizontalAlignment="Left" Margin="0,0,0,0" Text="TextBox" VerticalAlignment="Top" Canvas.Left="90" Canvas.Top="240"/>
+        <TextBox x:Name="txb_log" HorizontalAlignment="Left" Margin="0,0,0,0" Text="TextBox" VerticalAlignment="Top" RenderTransformOrigin="-1.171,-0.719" Canvas.Left="90" Canvas.Top="202"/>
+        <TextBox x:Name="EventCount" Canvas.Left="92" Canvas.Top="283" Text="TextBox" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
 
-    </Grid>
+    </Canvas>
+
 </Page>

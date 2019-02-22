@@ -117,9 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="FileNameContainsInvalidCharacters" xml:space="preserve">
-    <value>An entry in the ZipArchive has a path that contains invalid characters.</value>
-  </data>
   <data name="ReadingNotSupported" xml:space="preserve">
     <value>This stream from ZipArchiveEntry does not support reading.</value>
   </data>
@@ -156,9 +153,6 @@
   <data name="FieldTooBigStartDiskNumber" xml:space="preserve">
     <value>Start Disk Number cannot be held in an Int64.</value>
   </data>
-  <data name="InvalidStreamSize" xml:space="preserve">
-    <value>The stream size in GZip footer does not match the real stream size.</value>
-  </data>
   <data name="UpdateModeOneStream" xml:space="preserve">
     <value>Entries cannot be opened multiple times in Update mode.</value>
   </data>
@@ -173,9 +167,6 @@
   </data>
   <data name="OffsetLengthInvalid" xml:space="preserve">
     <value>The offset and length parameters are not valid for the array that was given.</value>
-  </data>
-  <data name="CorruptedGZipHeader" xml:space="preserve">
-    <value>The magic number in GZip header is not correct. Make sure you are passing in a GZip stream.</value>
   </data>
   <data name="ZLibErrorUnexpected" xml:space="preserve">
     <value>The underlying compression routine returned an unexpected error code.</value>
@@ -240,6 +231,9 @@
   <data name="FieldTooBigNumEntries" xml:space="preserve">
     <value>Number of Entries cannot be held in an Int64.</value>
   </data>
+  <data name="UnsupportedCompressionMethod" xml:space="preserve">
+    <value>The archive entry was compressed using {0} and is not supported.</value>
+  </data>
   <data name="ZLibErrorIncorrectInitParameters" xml:space="preserve">
     <value>The underlying compression routine received incorrect initialization parameters.</value>
   </data>
@@ -282,9 +276,6 @@
   <data name="SetLengthRequiresSeekingAndWriting" xml:space="preserve">
     <value>SetLength requires a stream that supports seeking and writing.</value>
   </data>
-  <data name="InvalidCRC" xml:space="preserve">
-    <value>The CRC in GZip footer does not match the CRC calculated from the decompressed data.</value>
-  </data>
   <data name="CreateModeCreateEntryWhileOpen" xml:space="preserve">
     <value>Entries cannot be created while previously created entries are still open.</value>
   </data>
@@ -311,9 +302,6 @@
   </data>
   <data name="ArgumentOutOfRange_NeedPosNum" xml:space="preserve">
     <value>Positive number required.</value>
-  </data>
-  <data name="UnknownCompressionMode" xml:space="preserve">
-    <value>The compression mode specified in GZip header is unknown.</value>
   </data>
   <data name="DeletedEntry" xml:space="preserve">
     <value>Cannot modify deleted entry.</value>

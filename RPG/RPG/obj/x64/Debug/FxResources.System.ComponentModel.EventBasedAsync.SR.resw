@@ -126,6 +126,9 @@
   <data name="BackgroundWorker_WorkerDoesntReportProgress" xml:space="preserve">
     <value>This BackgroundWorker states that it doesn't report progress. Modify WorkerReportsProgress to state that it does report progress.</value>
   </data>
+  <data name="Async_ExceptionOccurred" xml:space="preserve">
+    <value>An exception occurred during the operation, making the result invalid.  Check InnerException for exception details.</value>
+  </data>
   <data name="BackgroundWorker_WorkerAlreadyRunning" xml:space="preserve">
     <value>This BackgroundWorker is currently busy and cannot run multiple tasks concurrently.</value>
   </data>

@@ -20,7 +20,6 @@ namespace _3ReaisEngine.RPG.Core
             Componentes = new Dictionary<ComponenteReg, IComponente>();
             AddComponente<Posicao>();
             Posicao = ((Posicao)Componentes[ComponenteReg.Posicao]).posicao;
-            AmbienteJogo.AdcionarEntidade(this);
         }
         public Entidade(string Nome)
         {
@@ -28,7 +27,6 @@ namespace _3ReaisEngine.RPG.Core
             Componentes = new Dictionary<ComponenteReg, IComponente>();
             AddComponente<Posicao>();
             Posicao = ((Posicao)Componentes[ComponenteReg.Posicao]).posicao;
-            AmbienteJogo.AdcionarEntidade(this);
         }
 
         /*
@@ -45,6 +43,16 @@ namespace _3ReaisEngine.RPG.Core
                 return true;
             }
 
+            return false;
+        }
+
+        public bool AddComponente<T>(Componente<T> c)
+        {
+            if (!Componentes.ContainsKey(Componente<T>.ComponenteID))
+            {
+                c.entidade = this;
+                 Componentes.Add(Componente<T>.ComponenteID,c);
+            }
             return false;
         }
 
@@ -69,14 +77,10 @@ namespace _3ReaisEngine.RPG.Core
          * retorna a propia entidade se bem sucedido, null se mal sucedido
          */
         public T GetComponente<T>() where T : Componente<T>, new()
-        {
-            if (Componentes.ContainsKey(Componente<T>.ComponenteID))
-            {
-                return (T)Componentes[Componente<T>.ComponenteID];
-
-            }
-
-            return null;
+        {          
+            IComponente c = null;
+            Componentes.TryGetValue(Componente<T>.ComponenteID, out c);    
+            return (T)c;
         }
 
         /*

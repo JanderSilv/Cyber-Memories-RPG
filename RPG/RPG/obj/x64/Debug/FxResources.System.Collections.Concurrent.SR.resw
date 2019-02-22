@@ -168,6 +168,12 @@
   <data name="ConcurrentDictionary_KeyAlreadyExisted" xml:space="preserve">
     <value>The key already existed in the dictionary.</value>
   </data>
+  <data name="Collection_CopyTo_ArgumentOutOfRangeException" xml:space="preserve">
+    <value>The index argument must be greater than or equal zero.</value>
+  </data>
+  <data name="Collection_CopyTo_TooManyElems" xml:space="preserve">
+    <value>The number of elements in the collection is greater than the available space from index to the end of the destination array.</value>
+  </data>
   <data name="BlockingCollection_CantTakeAnyWhenAllDone" xml:space="preserve">
     <value>All collections are marked as complete with regards to additions.</value>
   </data>
@@ -192,17 +198,14 @@
   <data name="BlockingCollection_CopyTo_NonNegative" xml:space="preserve">
     <value>The index argument must be greater than or equal zero.</value>
   </data>
-  <data name="BlockingCollection_CopyTo_TooManyElems" xml:space="preserve">
-    <value>The number of elements in the collection is greater than the available space from index to the end of the destination array.</value>
+  <data name="ConcurrentBag_Enumerator_EnumerationNotStartedOrAlreadyFinished" xml:space="preserve">
+    <value>Enumeration has either not started or has already finished.</value>
   </data>
   <data name="PartitionerStatic_CanNotCallGetEnumeratorAfterSourceHasBeenDisposed" xml:space="preserve">
     <value>Can not call GetEnumerator on partitions after the source enumerable is disposed</value>
   </data>
   <data name="BlockingCollection_Take_CollectionModified" xml:space="preserve">
     <value>The underlying collection was modified from outside of the BlockingCollection&lt;T&gt;.</value>
-  </data>
-  <data name="ConcurrentBag_CopyTo_ArgumentOutOfRangeException" xml:space="preserve">
-    <value>The index argument must be greater than or equal zero.</value>
   </data>
   <data name="ConcurrentDictionary_IndexIsNegative" xml:space="preserve">
     <value>The index argument is less than zero.</value>

@@ -195,9 +195,6 @@
   <data name="NotSupported_NoCodepageData" xml:space="preserve">
     <value>No data is available for encoding {0}.</value>
   </data>
-  <data name="Arg_OutOfMemoryException" xml:space="preserve">
-    <value>Insufficient memory to continue the execution of the program.</value>
-  </data>
   <data name="ArgumentOutOfRange_Range" xml:space="preserve">
     <value>Valid values are between {0} and {1}, inclusive.</value>
   </data>

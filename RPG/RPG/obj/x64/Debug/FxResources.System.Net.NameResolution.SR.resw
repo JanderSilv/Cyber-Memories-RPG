@@ -132,7 +132,4 @@
   <data name="net_completed_result" xml:space="preserve">
     <value>This operation cannot be performed on a completed asynchronous result object.</value>
   </data>
-  <data name="net_log_exception" xml:space="preserve">
-    <value>Exception in {0}::{1} - {2}.</value>
-  </data>
 </root>

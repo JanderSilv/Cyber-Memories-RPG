@@ -4,7 +4,7 @@
      * Representa uma posição no plano
      */
 
-    public struct Vector2
+    public class Vector2
     {
         public float x, y;
 
@@ -12,6 +12,12 @@
         {
             this.x = x;
             this.y = y;
+        }
+
+        public Vector2()
+        {
+            x = 0;
+            y = 0;
         }
 
         static Vector2 zero = new Vector2(0, 0);

@@ -40,3 +40,4 @@ C:\Users\ruann\source\repos\LP2\3ReaisEngieUWP\3ReaisEngieUWP\obj\x64\Debug\pri.
 C:\Users\ruann\source\repos\LP2\3ReaisEngieUWP\3ReaisEngieUWP\obj\x64\Debug\qualifiers.txt
 C:\Users\ruann\source\repos\LP2\3ReaisEngieUWP\3ReaisEngieUWP\obj\x64\Debug\qualifiers.txt.intermediate
 C:\Users\ruann\source\repos\LP2\3ReaisEngieUWP\3ReaisEngieUWP\obj\x64\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\ruann\source\repos\LP2\3ReaisEngieUWP\3ReaisEngieUWP\obj\x64\Debug\3ReaisEngieUWP.csprojAssemblyReference.cache

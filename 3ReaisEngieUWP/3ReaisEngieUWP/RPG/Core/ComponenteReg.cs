@@ -9,5 +9,6 @@
         Posicao=1,
         MalhaColisao,
         Colisao,
+        Render
     }
 }

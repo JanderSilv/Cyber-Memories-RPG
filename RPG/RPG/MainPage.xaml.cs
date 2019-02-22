@@ -1,20 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
-using Windows.UI.Xaml;
+﻿using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
-using Windows.UI.Xaml.Navigation;
+
 using _3ReaisEngine.RPG;
 using _3ReaisEngine.RPG.Events;
+using System.Threading;
+using Windows.UI.Core;
+using _3ReaisEngine.RPG.Core;
+using System;
+using Windows.UI.Xaml.Media;
 using System.Threading.Tasks;
+using RPG.Src.Scripts;
+using _3ReaisEngine.RPG.Components;
+using _3ReaisEngieUWP.RPG.Components;
+
 // O modelo de item de Página em Branco está documentado em https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x416
 
 namespace RPG
@@ -24,48 +23,85 @@ namespace RPG
     /// </summary>
     public sealed partial class MainPage : Page
     {
-      
-        public MainPage()
+        Player p;
+        Colisao c;
+         public MainPage()
         {
           
             this.InitializeComponent();
-            
-            AmbienteJogo.gerenciadorEventos.handleTeclado[(int)PrioridadeEvento.Interface] += KeyE;
-            AmbienteJogo.gerenciadorEventos.handleTeclado[(int)PrioridadeEvento.Game] += KeyR;
-            
-        }
-           
-        private void Grid_KeyUp(object sender, KeyRoutedEventArgs e)
-        {
-            TecladoEvento te = new TecladoEvento { Tecla = (int)e.Key, Repeticoes = e.KeyStatus.RepeatCount,Modificador = (byte)ModificadorList.KeyUp };
-            AmbienteJogo.gerenciadorEventos.Enviar(te);
-            AmbienteJogo.Execute();
+        
+            AmbienteJogo.gerenciadorEventos.handleTeclado[(int)PrioridadeEvento.Interface] += KeyE;      
+            AmbienteJogo.Init(Canvas);
 
+            p = new Player();
+            c = p.GetComponente<Colisao>();
+            Player p2  = new Player();
+
+            p2.Posicao.x = 235;
+            p2.Posicao.y = 100;
+
+            AmbienteJogo.Execute(60, LateUpdate);
         }
 
-        private void Grid_KeyDown(object sender, KeyRoutedEventArgs e)
+        public void LateUpdate()
         {
-            TecladoEvento te = new TecladoEvento {Tecla = (int)e.Key,Repeticoes = e.KeyStatus.RepeatCount, Modificador = (byte)ModificadorList.KeyDown };
-            AmbienteJogo.gerenciadorEventos.Enviar(te);
-            AmbienteJogo.Execute();
+            EventCount.Text = AmbienteJogo.time.ToString();
+            txt_text.Text = c.momentoDeColisao.ToString();
         }
+       
+        
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            AmbienteJogo.Run = false;
+           
         }
 
         private bool KeyE(TecladoEvento e)
         {
-           if(e.Modificador == (byte)ModificadorList.KeyUp) txt_text.Text = "key up";
-           else txt_text.Text = "key down";
+         
+            txt_text.Text = c.momentoDeColisao.ToString();
+            if (e.Tecla == (int)Windows.System.VirtualKey.A)
+            {
+                if (c!=null && c.momentoDeColisao.z >= 0)
+                    p.Posicao.x -= 5;             
+            }
+            if (e.Tecla == (int)Windows.System.VirtualKey.D)
+            {
+                if (c != null &&  c.momentoDeColisao.x >= 0)
+                    p.Posicao.x += 5;
+            }
+            if(e.Tecla == (int)Windows.System.VirtualKey.W)
+            {
+                if (c != null && c.momentoDeColisao.y >= 0)
+                    p.Posicao.y -= 5;
+            }
+            if (e.Tecla == (int)Windows.System.VirtualKey.S)
+            {
+                if (c != null && c.momentoDeColisao.w >= 0)
+                    p.Posicao.y += 5;
+            }
+
             return false;
         }
-        private bool KeyR(TecladoEvento e)
+       
+
+        private void Canvas_KeyDown(object sender, KeyRoutedEventArgs e)
         {
-            if (e.Modificador == (byte)ModificadorList.KeyUp) txb_log.Text = "key up";
-            else txb_log.Text = "key down";
-            return false;
+            TecladoEvento te = new TecladoEvento { Tecla = (int)e.Key, Repeticoes = e.KeyStatus.RepeatCount, Modificador = (byte)ModificadorList.KeyDown };
+            AmbienteJogo.gerenciadorEventos.Enviar(te);
+         
+        }
+
+        private void Canvas_KeyUp(object sender, KeyRoutedEventArgs e)
+        {
+            TecladoEvento te = new TecladoEvento { Tecla = (int)e.Key, Repeticoes = e.KeyStatus.RepeatCount, Modificador = (byte)ModificadorList.KeyUp };
+            AmbienteJogo.gerenciadorEventos.Enviar(te);
+
+        }
+
+        private void Canvas_Unloaded(object sender, RoutedEventArgs e)
+        {
+            //AmbienteJogo.Run = false;
         }
     }
 }

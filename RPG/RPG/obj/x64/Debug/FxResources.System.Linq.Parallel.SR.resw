@@ -129,9 +129,6 @@
   <data name="PLINQ_DisposeRequested" xml:space="preserve">
     <value>The query enumerator has been disposed.</value>
   </data>
-  <data name="NoMatch" xml:space="preserve">
-    <value>Sequence contains no matching element</value>
-  </data>
   <data name="ParallelEnumerable_WithMergeOptions_InvalidOptions" xml:space="preserve">
     <value>The mergeOptions argument contains an invalid value.</value>
   </data>
@@ -153,9 +150,6 @@
   <data name="ParallelEnumerable_WithQueryExecutionMode_InvalidMode" xml:space="preserve">
     <value>The executionMode argument contains an invalid value.</value>
   </data>
-  <data name="MoreThanOneElement" xml:space="preserve">
-    <value>Sequence contains more than one element</value>
-  </data>
   <data name="PartitionerQueryOperator_NullPartitionList" xml:space="preserve">
     <value>Partitioner returned null instead of a list of partitions.</value>
   </data>
@@ -167,9 +161,6 @@
   </data>
   <data name="ParallelQuery_PartitionerNotOrderable" xml:space="preserve">
     <value>AsOrdered may not be used with a partitioner that is not orderable.</value>
-  </data>
-  <data name="EmptyEnumerable" xml:space="preserve">
-    <value>Enumeration yielded no results</value>
   </data>
   <data name="PLINQ_ExternalCancellationRequested" xml:space="preserve">
     <value>The query has been canceled via the token supplied to WithCancellation.</value>
@@ -191,9 +182,6 @@
   </data>
   <data name="ParallelPartitionable_IncorretElementCount" xml:space="preserve">
     <value>The returned array's length must equal the number of partitions requested.</value>
-  </data>
-  <data name="ParallelEnumerable_WithCancellation_TokenSourceDisposed" xml:space="preserve">
-    <value>The CancellationTokenSource associated with this CancellationToken has been disposed.</value>
   </data>
   <data name="ParallelPartitionable_NullReturn" xml:space="preserve">
     <value>The return value must not be null.</value>

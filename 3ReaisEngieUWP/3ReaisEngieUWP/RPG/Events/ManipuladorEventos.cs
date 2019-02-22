@@ -11,7 +11,7 @@ namespace _3ReaisEngine.RPG.Events
 
     public class ManipuladorEventos
     {
-        private Queue<EventArgs> eventos = new Queue<EventArgs>();
+        public Queue<EventArgs> eventos = new Queue<EventArgs>();
 
         public HandleEvent<EventArgs>[] handle            = new HandleEvent<EventArgs>[(int)PrioridadeEvento.Count];
         public HandleEvent<TecladoEvento>[] handleTeclado = new HandleEvent<TecladoEvento>[(int)PrioridadeEvento.Count];
@@ -25,9 +25,10 @@ namespace _3ReaisEngine.RPG.Events
 
         public void Update()
         {
-            foreach(EventArgs e in eventos)
+            while(eventos.Count>0)
             {
-                for(int i = 0; i < (int)PrioridadeEvento.Count; i++)
+                EventArgs e = eventos.Dequeue(); 
+                for (int i = 0; i < (int)PrioridadeEvento.Count; i++)
                 {
                     if (e.GetType() == typeof(TecladoEvento))
                     {
@@ -42,6 +43,7 @@ namespace _3ReaisEngine.RPG.Events
                         continue;
                     }
                     handle[0]?.Invoke(e);
+                   
                 }    
             }
         }

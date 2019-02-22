@@ -8,11 +8,15 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid x:ConnectionId='2'                                          >
-        <Button x:ConnectionId='3' Content="Button" HorizontalAlignment="Center" Margin="0,180,0,0" VerticalAlignment="Top"                     />
-        <TextBox x:ConnectionId='4' x:Name="txt_text" HorizontalAlignment="Left" Margin="288,259,0,0" Text="TextBox" VerticalAlignment="Top"/>
-        <TextBox x:ConnectionId='5' x:Name="txb_log" HorizontalAlignment="Left" Margin="198,275,0,0" Text="TextBox" VerticalAlignment="Top"/>
+    <Canvas x:ConnectionId='2'
+        Name="Canvas" Margin="0,0,0,0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"                                                                         
+        >
+        <Button x:ConnectionId='3' Content="Button" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top"                      Canvas.Left="91" Canvas.Top="152"/>
+        <TextBox x:ConnectionId='4' x:Name="txt_text" HorizontalAlignment="Left" Margin="0,0,0,0" Text="TextBox" VerticalAlignment="Top" Canvas.Left="90" Canvas.Top="240"/>
+        <TextBox x:ConnectionId='5' x:Name="txb_log" HorizontalAlignment="Left" Margin="0,0,0,0" Text="TextBox" VerticalAlignment="Top" RenderTransformOrigin="-1.171,-0.719" Canvas.Left="90" Canvas.Top="202"/>
+        <TextBox x:ConnectionId='6' x:Name="EventCount" Canvas.Left="92" Canvas.Top="283" Text="TextBox" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
 
-    </Grid>
+    </Canvas>
+
 </Page>
 

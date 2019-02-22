@@ -1,4 +1,5 @@
 ﻿using System;
+using _3ReaisEngieUWP.RPG.Core;
 using _3ReaisEngine.RPG.Components;
 
 
@@ -15,29 +16,63 @@ namespace _3ReaisEngine.RPG.Core
         {
             length  = array.Length;
             if (length == 0) return;
+
             dist    = Vector2.Zero;
-            centerI = Vector2.Zero;
-            centerJ = Vector2.Zero;
+            float unsafeX = 0;
+            float unsafeY = 0;
 
             for (int i = 0; i < length; i++)
             {
+                array[i].momentoDeColisao = new Vector4(0,0,0,0);
                 for (int j = i + 1; j < length; j++)
                 {
-                    centerI.x = array[i].largura / 2;
-                    centerI.y = array[i].altura / 2;
-                    centerJ.x = array[j].largura / 2;
-                    centerJ.y = array[j].altura / 2;
 
-                    dist = (array[i].Posicao - centerI) - (array[j].Posicao - centerJ);
+                    dist.y = Math.Abs(array[i].posicao.y - array[j].posicao.y);
+                    dist.x = Math.Abs(array[i].posicao.x - array[j].posicao.x);
 
-                    if ((dist.x > 0 && dist.x < array[j].largura) || (dist.x < 0 && Math.Abs(dist.x) < array[i].largura) || (dist.y > 0 && dist.y < array[j].altura) || (dist.y < 0 && Math.Abs(dist.y) < array[i].altura))
+                    unsafeX = (array[i].tamanho.x / 2 + array[j].tamanho.x / 2);
+                    unsafeY = (array[i].tamanho.y / 2 + array[j].tamanho.y / 2);
+
+                    if (dist.x > unsafeX && dist.y >unsafeY)
                     {
-                        array[i].momentoDeColisao = dist;
-                        array[j].momentoDeColisao = -dist;
-
-                        array[i].entidade.OnColide(array[j]);
-                        array[j].entidade.OnColide(array[i]);
+                        continue;
                     }
+
+                    //colisao a direita
+                    if (array[i].Posicao.x < array[j].Posicao.x)
+                    {
+                        float d = (array[j].posicao.x - array[j].tamanho.x / 2) - (array[i].posicao.x + array[i].tamanho.x / 2);
+                        if (d<0 && dist.y<=unsafeY){
+                            array[i].momentoDeColisao.x = d;
+                            array[j].momentoDeColisao.z = d;
+                        }
+                       
+                    }
+                    
+                    //colisao a esquerda (corrigir)
+                    if (array[i].Posicao.x > array[j].Posicao.x)
+                    {
+                        float d = (array[j].posicao.x + array[j].tamanho.x / 2) - (array[i].posicao.x - array[i].tamanho.x / 2);
+                        if (d < 0 && dist.y <= unsafeY)
+                        {
+                            array[i].momentoDeColisao.z = d;
+                            array[j].momentoDeColisao.x = d;
+                        }
+                       
+                    }
+
+                    //colisao em cima
+                    if(array[i].Posicao.y > array[j].posicao.y)
+                    {
+                        float d = (array[i].posicao.y - array[i].tamanho.y / 2) - (array[j].posicao.y + array[j].tamanho.y / 2); 
+                        if(d<0 && dist.x <= unsafeX)
+                        {
+                            array[i].momentoDeColisao.y = d;
+                            array[j].momentoDeColisao.w = d;
+                        }
+                    }
+
+                    //colisao direita(implementar)
                 }
             }
         }

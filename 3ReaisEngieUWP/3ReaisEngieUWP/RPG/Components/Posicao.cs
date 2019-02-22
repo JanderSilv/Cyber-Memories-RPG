@@ -8,6 +8,7 @@ namespace _3ReaisEngine.RPG.Components
 
         public Posicao()
         {
+            posicao = new Vector2();
             m_ComponenteID = ComponenteReg.Posicao;
         }
     }

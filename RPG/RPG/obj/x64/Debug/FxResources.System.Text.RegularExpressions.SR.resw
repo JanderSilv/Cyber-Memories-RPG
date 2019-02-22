@@ -156,6 +156,9 @@
   <data name="NestedQuantify" xml:space="preserve">
     <value>Nested quantifier {0}.</value>
   </data>
+  <data name="Arg_ArrayPlusOffTooSmall" xml:space="preserve">
+    <value>Destination array is not long enough to copy all the items in the collection. Check array index and length.</value>
+  </data>
   <data name="LengthNotNegative" xml:space="preserve">
     <value>Length cannot be less than 0 or exceed input length.</value>
   </data>
@@ -179,6 +182,9 @@
   </data>
   <data name="UndefinedNameRef" xml:space="preserve">
     <value>Reference to undefined group name {0}.</value>
+  </data>
+  <data name="NotSupported_ReadOnlyCollection" xml:space="preserve">
+    <value>Collection is read-only.</value>
   </data>
   <data name="MakeException" xml:space="preserve">
     <value>parsing '{0}' - {1}</value>
