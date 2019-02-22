@@ -21,13 +21,13 @@ namespace _3ReaisEngine.RPG.Components
             m_ComponenteID = ComponenteReg.Colisao;
             momentoDeColisao = new Vector4();
             posicao = new Vector2();
-            tamanho = new Vector2(100, 100);
+            tamanho = new Vector2(85, 85);
         }
         public Colisao(Vector2 posicao)
         {
             m_ComponenteID = ComponenteReg.Colisao;
             this.posicao = posicao;
-            tamanho = new Vector2(100, 100);
+            tamanho = new Vector2(85, 85);
             momentoDeColisao = new Vector4();
         }
         public Colisao(Vector2 posicao, Vector2 size)

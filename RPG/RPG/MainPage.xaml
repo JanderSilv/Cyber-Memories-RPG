@@ -11,11 +11,16 @@
     <Canvas
         Name="Canvas" Margin="0,0,0,0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" KeyDown="Canvas_KeyDown" KeyUp="Canvas_KeyUp" Unloaded="Canvas_Unloaded"
         >
-        <Button Content="Button" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Click="Button_Click" Canvas.Left="91" Canvas.Top="152"/>
-        <TextBox x:Name="txt_text" HorizontalAlignment="Left" Margin="0,0,0,0" Text="TextBox" VerticalAlignment="Top" Canvas.Left="90" Canvas.Top="240"/>
-        <TextBox x:Name="txb_log" HorizontalAlignment="Left" Margin="0,0,0,0" Text="TextBox" VerticalAlignment="Top" RenderTransformOrigin="-1.171,-0.719" Canvas.Left="90" Canvas.Top="202"/>
-        <TextBox x:Name="EventCount" Canvas.Left="92" Canvas.Top="283" Text="TextBox" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
-
+        <Button Content="Button" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Click="Button_Click" Canvas.Left="527" Canvas.Top="273"/>
+        <TextBlock Canvas.Left="492" Canvas.Top="24" Text="Ciclo:" TextWrapping="Wrap"/>
+        <TextBlock x:Name="txt_ciclo" Canvas.Left="536" Canvas.Top="24" Text="" TextWrapping="Wrap" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+        <TextBlock Canvas.Left="429" Canvas.Top="54" Text="Posicao Player:" TextWrapping="Wrap"/>
+        <TextBlock Canvas.Left="431" Canvas.Top="82" Text="Posicao Caixa:" TextWrapping="Wrap" Margin="0,0,0,0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="93"/>
+        <TextBlock Canvas.Left="433" Canvas.Top="113" Text="Colisao:" TextWrapping="Wrap" Margin="0,0,0,0"/>
+        <TextBlock x:Name="txt_playerPos" Canvas.Left="534" Canvas.Top="57" Text="" TextWrapping="Wrap" Margin="0,0,0,0"/>
+        <TextBlock x:Name="txt_cxPos" Canvas.Left="529" Canvas.Top="83" Text="" TextWrapping="Wrap" Margin="0,0,0,0"/>
+        <TextBlock x:Name="txt_colisao" Canvas.Left="501" Canvas.Top="114" Text="" TextWrapping="Wrap" Margin="0,0,0,0"/>
+        
     </Canvas>
 
 </Page>

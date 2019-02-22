@@ -7010,11 +7010,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ruann\\source\\repos\\LP2\\RPG\\RPG\\RPG.csproj",
+      "projectUniqueName": "C:\\Users\\ruann\\Documents\\RPG-LP2\\RPG\\RPG\\RPG.csproj",
       "projectName": "RPG",
-      "projectPath": "C:\\Users\\ruann\\source\\repos\\LP2\\RPG\\RPG\\RPG.csproj",
+      "projectPath": "C:\\Users\\ruann\\Documents\\RPG-LP2\\RPG\\RPG\\RPG.csproj",
       "packagesPath": "C:\\Users\\ruann\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ruann\\source\\repos\\LP2\\RPG\\RPG\\obj\\",
+      "outputPath": "C:\\Users\\ruann\\Documents\\RPG-LP2\\RPG\\RPG\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [

@@ -24,6 +24,7 @@ namespace _3ReaisEngine.RPG.Core
             for (int i = 0; i < length; i++)
             {
                 array[i].momentoDeColisao = new Vector4(0,0,0,0);
+
                 for (int j = i + 1; j < length; j++)
                 {
 
@@ -38,41 +39,50 @@ namespace _3ReaisEngine.RPG.Core
                         continue;
                     }
 
-                    //colisao a direita
-                    if (array[i].Posicao.x < array[j].Posicao.x)
+                    float dir = (array[j].posicao.x - array[j].tamanho.x / 2) - (array[i].posicao.x + array[i].tamanho.x / 2);
+                    float esq = (array[i].posicao.x - array[i].tamanho.x / 2) - (array[j].posicao.x + array[j].tamanho.x / 2);
+
+                    float top = (array[i].posicao.y - array[i].tamanho.y / 2) - (array[j].posicao.y + array[j].tamanho.y / 2);
+                    float bot = (array[j].posicao.y - array[j].tamanho.y / 2) - (array[i].posicao.y + array[i].tamanho.y / 2);
+                  
+                    if(array[i].posicao.x < array[j].posicao.x)
                     {
-                        float d = (array[j].posicao.x - array[j].tamanho.x / 2) - (array[i].posicao.x + array[i].tamanho.x / 2);
-                        if (d<0 && dist.y<=unsafeY){
-                            array[i].momentoDeColisao.x = d;
-                            array[j].momentoDeColisao.z = d;
+                        if(dir<0 && dist.y <= unsafeY*0.95f)
+                        {
+                            array[i].momentoDeColisao.x = dir;
+                            array[j].momentoDeColisao.z = dir;
+                            continue;
                         }
-                       
+                    }
+                    else
+                    {
+                        if (esq < 0 && dist.y <= unsafeY*0.95f)
+                        {
+                            array[i].momentoDeColisao.z = esq;
+                            array[j].momentoDeColisao.x = esq;
+                            continue;
+                        }
+                    }
+
+                    if (array[i].posicao.y > array[j].posicao.y)
+                    {
+                        if(top<0 && dist.x <= unsafeX*0.95f)
+                        {
+                            array[i].momentoDeColisao.y = top;
+                            array[j].momentoDeColisao.w = top;
+                            continue;
+                        }
+                    }
+                    else
+                    {
+                        if (bot < 0 && dist.x <= unsafeX*0.95f)
+                        {
+                            array[i].momentoDeColisao.w = bot;
+                            array[j].momentoDeColisao.y = bot;
+                            continue;
+                        }
                     }
                     
-                    //colisao a esquerda (corrigir)
-                    if (array[i].Posicao.x > array[j].Posicao.x)
-                    {
-                        float d = (array[j].posicao.x + array[j].tamanho.x / 2) - (array[i].posicao.x - array[i].tamanho.x / 2);
-                        if (d < 0 && dist.y <= unsafeY)
-                        {
-                            array[i].momentoDeColisao.z = d;
-                            array[j].momentoDeColisao.x = d;
-                        }
-                       
-                    }
-
-                    //colisao em cima
-                    if(array[i].Posicao.y > array[j].posicao.y)
-                    {
-                        float d = (array[i].posicao.y - array[i].tamanho.y / 2) - (array[j].posicao.y + array[j].tamanho.y / 2); 
-                        if(d<0 && dist.x <= unsafeX)
-                        {
-                            array[i].momentoDeColisao.y = d;
-                            array[j].momentoDeColisao.w = d;
-                        }
-                    }
-
-                    //colisao direita(implementar)
                 }
             }
         }

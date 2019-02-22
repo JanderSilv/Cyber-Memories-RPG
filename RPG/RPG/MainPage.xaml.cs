@@ -39,14 +39,15 @@ namespace RPG
 
             p2.Posicao.x = 235;
             p2.Posicao.y = 100;
-
+            txt_cxPos.Text = p2.Posicao.ToString();
             AmbienteJogo.Execute(60, LateUpdate);
         }
 
         public void LateUpdate()
         {
-            EventCount.Text = AmbienteJogo.time.ToString();
-            txt_text.Text = c.momentoDeColisao.ToString();
+            txt_ciclo.Text = AmbienteJogo.time.ToString();
+            txt_colisao.Text = c.momentoDeColisao.ToString();
+            txt_playerPos.Text = p.Posicao.ToString();
         }
        
         
@@ -59,26 +60,26 @@ namespace RPG
         private bool KeyE(TecladoEvento e)
         {
          
-            txt_text.Text = c.momentoDeColisao.ToString();
+          
             if (e.Tecla == (int)Windows.System.VirtualKey.A)
             {
                 if (c!=null && c.momentoDeColisao.z >= 0)
-                    p.Posicao.x -= 5;             
+                    p.Posicao.x -= 1;             
             }
             if (e.Tecla == (int)Windows.System.VirtualKey.D)
             {
                 if (c != null &&  c.momentoDeColisao.x >= 0)
-                    p.Posicao.x += 5;
+                    p.Posicao.x += 1;
             }
             if(e.Tecla == (int)Windows.System.VirtualKey.W)
             {
                 if (c != null && c.momentoDeColisao.y >= 0)
-                    p.Posicao.y -= 5;
+                    p.Posicao.y -= 1;
             }
             if (e.Tecla == (int)Windows.System.VirtualKey.S)
             {
                 if (c != null && c.momentoDeColisao.w >= 0)
-                    p.Posicao.y += 5;
+                    p.Posicao.y += 1;
             }
 
             return false;
