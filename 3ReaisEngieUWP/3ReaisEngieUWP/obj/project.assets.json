@@ -27506,9 +27506,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ruann\\Documents\\RPG-LP2\\3ReaisEngieUWP\\3ReaisEngieUWP\\3ReaisEngieUWP.csproj",
-      "projectName": "3ReaisEngieUWP",
-      "projectPath": "C:\\Users\\ruann\\Documents\\RPG-LP2\\3ReaisEngieUWP\\3ReaisEngieUWP\\3ReaisEngieUWP.csproj",
+      "projectUniqueName": "C:\\Users\\ruann\\Documents\\RPG-LP2\\3ReaisEngieUWP\\3ReaisEngieUWP\\3ReaisEngine.csproj",
+      "projectName": "3ReaisEngine",
+      "projectPath": "C:\\Users\\ruann\\Documents\\RPG-LP2\\3ReaisEngieUWP\\3ReaisEngieUWP\\3ReaisEngine.csproj",
       "packagesPath": "C:\\Users\\ruann\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\ruann\\Documents\\RPG-LP2\\3ReaisEngieUWP\\3ReaisEngieUWP\\obj\\",
       "projectStyle": "PackageReference",

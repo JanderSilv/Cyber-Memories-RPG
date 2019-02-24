@@ -1,38 +1,52 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using _3ReaisEngieUWP.RPG.Components;
 using _3ReaisEngine.RPG.Components;
 using _3ReaisEngine.RPG.Core;
 using _3ReaisEngine.RPG.Events;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Media;
-using Windows.UI.Xaml.Media.Imaging;
+using System.Reflection;
+using System.Diagnostics;
 
 namespace _3ReaisEngine.RPG
 {
+    using _3ReaisEngine = _3ReaisEngine.RPG;
+
+
     public delegate void LateUpdae();
+
 
     public static class AmbienteJogo
     {
         public static bool Run = true;
 
-        public static ManipuladorEventos gerenciadorEventos = new ManipuladorEventos();
-        public static GerenciadorFisica  gerenciadorFisica = new GerenciadorFisica();
-
         static Panel window;
+
         static List<Entidade> entidades = new List<Entidade>();
         static List<Colisao> colisores = new List<Colisao>();
         static List<Render> renders = new List<Render>();
-     
+
+        static ManipuladorEventos gerenciadorEventos = new ManipuladorEventos();
+        static GerenciadorFisica gerenciadorFisica = new GerenciadorFisica();
+        public static Input Input { get; private set; }
+
         public static float time = 0;
 
         public static void Init(Panel p)
         {
-            Run = true;
-            window = p;          
-        }
 
+            Run = true;
+            window = p;
+            Input = new Input();
+            RegistrarEventoCallBack(PrioridadeEvento.Interface, Input.UpdateTeclado);
+
+            Debug.WriteLine("Engine Inciada");
+
+            Render r = new Render();
+            IComponente ic = r;
+            Debug.WriteLine(ic.GetType());
+
+        }
 
         public static async Task Execute(int frames = 60, LateUpdae late = null)
         {
@@ -42,14 +56,6 @@ namespace _3ReaisEngine.RPG
 
                 if (colisores.Count > 0) gerenciadorFisica.UpdateColisions(colisores.ToArray());
 
-                foreach (Colisao c in colisores)
-                {
-                    c.posicao = c.entidade.Posicao;
-                   
-                }
-
-              
-               
                 foreach (Entidade e in entidades)
                 {
                     e.Update();
@@ -82,7 +88,7 @@ namespace _3ReaisEngine.RPG
                 renders.Add(r);
                 window.Children.Add(r.img);
             }
-            
+
         }
 
         public static void RemoverEntidade(Entidade e)
@@ -100,6 +106,25 @@ namespace _3ReaisEngine.RPG
                 window.Children.Remove(r.img);
             }
         }
+
+        public static void EnviarEvento<T>(T e) where T : EventArgs
+        {
+            gerenciadorEventos.Enviar(e);
+        }
+
+        public static void RegistrarEventoCallBack(PrioridadeEvento prioridade, HandleEvent<TecladoEvento> e)
+        {
+            gerenciadorEventos.handleTeclado[(int)prioridade] += e;
+        }
+        public static void RegistrarEventoCallBack(PrioridadeEvento prioridade, HandleEvent<MouseEvento> e)
+        {
+            gerenciadorEventos.handleMouse[(int)prioridade] += e;
+        }
+        public static void RegistrarEventoCallBack(PrioridadeEvento prioridade, HandleEvent<EventArgs> e)
+        {
+            gerenciadorEventos.handle[(int)prioridade] += e;
+        }
+
 
     }
 }

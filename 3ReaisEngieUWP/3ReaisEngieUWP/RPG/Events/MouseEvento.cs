@@ -2,7 +2,7 @@
 
 namespace _3ReaisEngine.RPG.Events
 {
-    public class MouseEvento:EventArgs
+    public class MouseEvento : EventArgs
     {
         public int Botao;
         public uint Repeticoes;

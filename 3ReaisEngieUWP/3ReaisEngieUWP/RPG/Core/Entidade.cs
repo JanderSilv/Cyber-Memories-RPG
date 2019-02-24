@@ -1,4 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Reflection;
+using _3ReaisEngine.RPG.Attributes;
 using _3ReaisEngine.RPG.Components;
 
 namespace _3ReaisEngine.RPG.Core
@@ -38,6 +41,18 @@ namespace _3ReaisEngine.RPG.Core
             if (!Componentes.ContainsKey(Componente<T>.ComponenteID))
             {
                 T t = new T();
+
+                foreach(Attribute atr in t.GetType().GetTypeInfo().GetCustomAttributes(typeof(RequerComponente)))
+                {
+                    RequerComponente rc = (RequerComponente)atr;
+                    IComponente comp = (IComponente)Activator.CreateInstance(rc.componente);
+                    ComponenteReg reg = comp.getRegister();
+                    if (!Componentes.ContainsKey(reg)){
+                        comp.setEntidade(this);
+                        Componentes.Add(reg, comp);
+                    }
+                }
+                
                 t.entidade = this;
                 Componentes.Add(Componente<T>.ComponenteID,t);
                 return true;
@@ -45,11 +60,25 @@ namespace _3ReaisEngine.RPG.Core
 
             return false;
         }
-
+        public bool AddComponente(IComponente c)
+        {
+            return false;
+        }
         public bool AddComponente<T>(Componente<T> c)
         {
             if (!Componentes.ContainsKey(Componente<T>.ComponenteID))
             {
+                foreach (Attribute atr in c.GetType().GetTypeInfo().GetCustomAttributes(typeof(RequerComponente)))
+                {
+                    RequerComponente rc = (RequerComponente)atr;
+                    IComponente comp = (IComponente)Activator.CreateInstance(rc.componente);
+                    ComponenteReg reg = comp.getRegister();
+                    if (!Componentes.ContainsKey(reg))
+                    {
+                        comp.setEntidade(this);
+                        Componentes.Add(reg, comp);
+                    }
+                }
                 c.entidade = this;
                  Componentes.Add(Componente<T>.ComponenteID,c);
             }

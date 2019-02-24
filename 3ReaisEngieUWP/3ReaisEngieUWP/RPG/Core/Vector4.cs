@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace _3ReaisEngieUWP.RPG.Core
+﻿namespace _3ReaisEngine.RPG.Core
 {
     public class Vector4
     {
-        public float x, y,z,w;
+        public float x, y, z, w;
 
         public Vector4(float x, float y, float z, float w)
         {
@@ -26,22 +20,22 @@ namespace _3ReaisEngieUWP.RPG.Core
             w = 0;
         }
 
-        static Vector4 zero = new Vector4(0, 0,0,0);
+        static Vector4 zero = new Vector4(0, 0, 0, 0);
         public static Vector4 Zero { get { return zero; } }
 
 
         public override string ToString()
         {
-            return "[" + x + "," + y + ","+z+","+ w+ "]";
+            return "[" + x + "," + y + "," + z + "," + w + "]";
         }
 
         public static Vector4 operator -(Vector4 a, Vector4 b)
         {
-            return new Vector4(a.x - b.x, a.y - b.y,a.z - b.z,a.w-b.w);
+            return new Vector4(a.x - b.x, a.y - b.y, a.z - b.z, a.w - b.w);
         }
         public static Vector4 operator -(Vector4 a, float b)
         {
-            return new Vector4(a.x - b, a.y - b,a.z - b,a.w -b);
+            return new Vector4(a.x - b, a.y - b, a.z - b, a.w - b);
         }
         public static Vector4 operator -(Vector4 a)
         {
@@ -65,7 +59,7 @@ namespace _3ReaisEngieUWP.RPG.Core
         }
         public static bool operator !=(Vector4 a, Vector4 b)
         {
-            return !(a==b);
+            return !(a == b);
         }
     }
 }

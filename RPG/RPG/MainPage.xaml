@@ -11,7 +11,7 @@
     <Canvas
         Name="Canvas" Margin="0,0,0,0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" KeyDown="Canvas_KeyDown" KeyUp="Canvas_KeyUp" Unloaded="Canvas_Unloaded"
         >
-        <Button Content="Button" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Click="Button_Click" Canvas.Left="527" Canvas.Top="273"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Canvas.Left="527" Canvas.Top="273"/>
         <TextBlock Canvas.Left="492" Canvas.Top="24" Text="Ciclo:" TextWrapping="Wrap"/>
         <TextBlock x:Name="txt_ciclo" Canvas.Left="536" Canvas.Top="24" Text="" TextWrapping="Wrap" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
         <TextBlock Canvas.Left="429" Canvas.Top="54" Text="Posicao Player:" TextWrapping="Wrap"/>

@@ -39,7 +39,7 @@
         }
         public static Vector2 operator -(Vector2 a)
         {
-            return new Vector2(a.x *-1, a.y *-1);
+            return new Vector2(a.x * -1, a.y * -1);
         }
         public static Vector2 operator +(Vector2 a, Vector2 b)
         {
@@ -53,7 +53,7 @@
         {
             return new Vector2(a.x * b, a.y * b);
         }
-        public static bool operator == (Vector2 a, Vector2 b)
+        public static bool operator ==(Vector2 a, Vector2 b)
         {
             return (a.x == b.x && a.y == b.y);
         }

@@ -556,6 +556,9 @@
     <AppxPackagedFile Include="C:\Users\ruann\Documents\RPG-LP2\RPG\RPG\Src\cabeca.png">
       <PackagePath>Src\cabeca.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ruann\Documents\RPG-LP2\RPG\RPG\Src\dance.gif">
+      <PackagePath>Src\dance.gif</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ruann\Documents\RPG-LP2\RPG\RPG\bin\x64\Debug\RPG.xr.xml">
       <PackagePath>RPG.xr.xml</PackagePath>
     </AppxPackagedFile>

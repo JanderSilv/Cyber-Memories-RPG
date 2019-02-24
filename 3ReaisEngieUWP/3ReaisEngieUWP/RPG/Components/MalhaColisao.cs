@@ -4,7 +4,7 @@ namespace _3ReaisEngine.RPG.Components
 {
     public class MalhaColisao : Componente<MalhaColisao>
     {
-        Colisao[] colisoes;
+        readonly Colisao[] colisoes;
 
         public MalhaColisao()
         {

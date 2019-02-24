@@ -2,7 +2,7 @@
 
 namespace _3ReaisEngine.RPG.Components
 {
-    public sealed class Posicao: Componente<Posicao>
+    public sealed class Posicao : Componente<Posicao>
     {
         public Vector2 posicao;
 
