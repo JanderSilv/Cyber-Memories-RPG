@@ -84,12 +84,15 @@
     <PlatformTarget>x64</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <OutputPath>bin\x64\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <DefineConstants>TRACE;DEBUG;NETFX_CORE;WINDOWS_UWP;_3REAIS_REQUERCOMPONENTE</DefineConstants>
     <NoWarn>;2008</NoWarn>
     <DebugType>full</DebugType>
     <PlatformTarget>x64</PlatformTarget>
     <UseVSHostingProcess>false</UseVSHostingProcess>
     <ErrorReport>prompt</ErrorReport>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <WarningLevel>2</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
     <PlatformTarget>x64</PlatformTarget>
@@ -107,7 +110,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RPG\AmbienteJogo.cs" />
+    <Compile Include="RPG\Core\AmbienteJogo.cs" />
     <Compile Include="RPG\Attributes\RequerComponente.cs" />
     <Compile Include="RPG\Components\Colisao.cs" />
     <Compile Include="RPG\Components\MalhaColisao.cs" />
@@ -121,6 +124,7 @@
     <Compile Include="RPG\Core\Vector2.cs" />
     <Compile Include="RPG\Core\Vector4.cs" />
     <Compile Include="RPG\Core\Input.cs" />
+    <Compile Include="RPG\Engine.cs" />
     <Compile Include="RPG\Events\ManipuladorEventos.cs" />
     <Compile Include="RPG\Events\MouseEvento.cs" />
     <Compile Include="RPG\Events\PrioridadeCamada.cs" />

@@ -1,27 +1,28 @@
-﻿using _3ReaisEngine.RPG;
-using _3ReaisEngine.RPG.Components;
-using _3ReaisEngine.RPG.Core;
+﻿using _3ReaisEngine;
+using _3ReaisEngine.Attributes;
+using _3ReaisEngine.Components;
+using _3ReaisEngine.Core;
 
 using Windows.UI.Xaml.Media.Imaging;
 
 namespace RPG.Src.Scripts
 {
+    [RequerComponente(typeof(Colisao))]
+    [RequerComponente(typeof(Render))]
+
     class Player :Entidade
     {
         bool mudou=false;
         Colisao col;
         float vel;
+
         public Player(Vector2 pos)
         {
-            //col = new Colisao();
-           // col.tipo = TipoColisao.Dinamica;
-          //  AddComponente(col);
-            AddComponente<Render>();
-            Posicao = pos;
-            vel = 15;
-
+            EntPos = pos;
+            vel = 5;
             col = GetComponente<Colisao>();
             col.tipo = TipoColisao.Dinamica;
+            
             AmbienteJogo.AdcionarEntidade(this);
            
         }
@@ -33,28 +34,28 @@ namespace RPG.Src.Scripts
             {
                 if (col.momentoDeColisao.z >= 0)
                 {
-                    Posicao.x -= vel;
+                    EntPos.x -= vel;
                 }
             }
             if (AmbienteJogo.Input.TeclaPressionada(Windows.System.VirtualKey.D))
             {
                 if (col.momentoDeColisao.x >= 0)
                 {
-                    Posicao.x += vel;
+                    EntPos.x += vel;
                 }
             }
             if (AmbienteJogo.Input.TeclaPressionada(Windows.System.VirtualKey.W))
             {
                 if (col.momentoDeColisao.y >= 0)
                 {
-                    Posicao.y -= vel;
+                    EntPos.y -= vel;
                 }
             }
             if (AmbienteJogo.Input.TeclaPressionada(Windows.System.VirtualKey.S))
             {
                 if (col.momentoDeColisao.w >= 0)
                 {
-                    Posicao.y += vel;
+                    EntPos.y += vel;
                 }
             }
         }
@@ -64,7 +65,7 @@ namespace RPG.Src.Scripts
             if (!mudou)
             {
                 Render r = GetComponente<Render>();
-                r.img.Source = new BitmapImage(new System.Uri("ms-appx:/Src/dance.gif"));
+                r.LoadImage("Src/dance.gif");
                 mudou = true;
             }
         

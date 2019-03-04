@@ -1,4 +1,4 @@
-﻿namespace _3ReaisEngine.RPG.Core
+﻿namespace _3ReaisEngine.Core
 {
     public class Vector4
     {

@@ -1,5 +1,5 @@
 ﻿
-namespace _3ReaisEngine.RPG.Core
+namespace _3ReaisEngine.Core
 {
     /*
      * Gambiarra que faz o sistema funcionar
@@ -7,9 +7,7 @@ namespace _3ReaisEngine.RPG.Core
 
     public interface IComponente
     {
-
-         ComponenteReg getRegister();
-         void setEntidade(Entidade e);
-
+        int getRegister();
+        void setEntidade(Entidade e);
     }
 }

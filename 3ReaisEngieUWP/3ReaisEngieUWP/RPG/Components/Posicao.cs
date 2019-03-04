@@ -1,15 +1,16 @@
-﻿using _3ReaisEngine.RPG.Core;
+﻿using _3ReaisEngine.Core;
 
-namespace _3ReaisEngine.RPG.Components
+namespace _3ReaisEngine.Components
 {
+   
     public sealed class Posicao : Componente<Posicao>
     {
         public Vector2 posicao;
-
+        
         public Posicao()
         {
             posicao = new Vector2();
-            m_ComponenteID = ComponenteReg.Posicao;
+
         }
     }
 }

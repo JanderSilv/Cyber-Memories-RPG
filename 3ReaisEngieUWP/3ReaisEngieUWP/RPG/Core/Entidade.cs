@@ -1,35 +1,60 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Reflection;
-using _3ReaisEngine.RPG.Attributes;
-using _3ReaisEngine.RPG.Components;
+using _3ReaisEngine.Attributes;
+using _3ReaisEngine.Components;
 
-namespace _3ReaisEngine.RPG.Core
+namespace _3ReaisEngine.Core
 {
     /*
      * Classe que representa as entidades do jogo, ou seja objetos que estão presentes no mapa,
      * contém um dicionário de componenentes que representa todos os comportamentes que esta entidade deve apresentar
      * Toda entidade por padrão inicia com a componente Transform, pois contem os dados de onde o objeto se localiza em relação ao mapa
      */
-   public abstract class Entidade
+     
+   public abstract class Entidade 
     {
-        protected Dictionary<ComponenteReg, IComponente> Componentes;
+        protected Dictionary<int, IComponente> Componentes;
         public string Nome;
-
-        public Vector2 Posicao { get; set; }
+        public bool IsStatic=false;
+        public Vector2 EntPos { get; set; }
 
         public Entidade()
         {
-            Componentes = new Dictionary<ComponenteReg, IComponente>();
+            Componentes = new Dictionary<int, IComponente>();
             AddComponente<Posicao>();
-            Posicao = ((Posicao)Componentes[ComponenteReg.Posicao]).posicao;
+            EntPos = ((Posicao)Componentes[Posicao.IntComponenteID]).posicao;
+
+            foreach (Attribute atr in GetType().GetTypeInfo().GetCustomAttributes(typeof(RequerComponente)))
+            {
+                
+                RequerComponente rc = (RequerComponente)atr;
+                dynamic comp = Activator.CreateInstance(rc.componente);
+                int reg = comp.getRegister();
+                if (!GetComponente(reg))
+                {
+                    AddComponente(comp);
+                }
+            }
         }
         public Entidade(string Nome)
         {
             this.Nome = Nome;
-            Componentes = new Dictionary<ComponenteReg, IComponente>();
+            Componentes = new Dictionary<int, IComponente>();
             AddComponente<Posicao>();
-            Posicao = ((Posicao)Componentes[ComponenteReg.Posicao]).posicao;
+            EntPos = ((Posicao)Componentes[Posicao.IntComponenteID]).posicao;
+
+            foreach (Attribute atr in GetType().GetTypeInfo().GetCustomAttributes(typeof(RequerComponente)))
+            {
+                RequerComponente rc = (RequerComponente)atr;
+                IComponente comp = (IComponente)Activator.CreateInstance(rc.componente);
+                int reg = comp.getRegister();
+                if (!GetComponente(reg))
+                {
+                    AddComponente(comp);
+                }
+            }
+
         }
 
         /*
@@ -38,7 +63,7 @@ namespace _3ReaisEngine.RPG.Core
          */
         public bool AddComponente<T>() where T : Componente<T>, new()
         {
-            if (!Componentes.ContainsKey(Componente<T>.ComponenteID))
+            if (!Componentes.ContainsKey(Componente<T>.IntComponenteID))
             {
                 T t = new T();
 
@@ -46,7 +71,8 @@ namespace _3ReaisEngine.RPG.Core
                 {
                     RequerComponente rc = (RequerComponente)atr;
                     IComponente comp = (IComponente)Activator.CreateInstance(rc.componente);
-                    ComponenteReg reg = comp.getRegister();
+                    int reg = comp.getRegister();
+                   
                     if (!Componentes.ContainsKey(reg)){
                         comp.setEntidade(this);
                         Componentes.Add(reg, comp);
@@ -54,25 +80,22 @@ namespace _3ReaisEngine.RPG.Core
                 }
                 
                 t.entidade = this;
-                Componentes.Add(Componente<T>.ComponenteID,t);
+                Componentes.Add(Componente<T>.IntComponenteID,t);
                 return true;
             }
 
             return false;
         }
-        public bool AddComponente(IComponente c)
-        {
-            return false;
-        }
+       
         public bool AddComponente<T>(Componente<T> c)
         {
-            if (!Componentes.ContainsKey(Componente<T>.ComponenteID))
+            if (!Componentes.ContainsKey(Componente<T>.IntComponenteID))
             {
                 foreach (Attribute atr in c.GetType().GetTypeInfo().GetCustomAttributes(typeof(RequerComponente)))
                 {
                     RequerComponente rc = (RequerComponente)atr;
                     IComponente comp = (IComponente)Activator.CreateInstance(rc.componente);
-                    ComponenteReg reg = comp.getRegister();
+                    int reg = comp.getRegister();
                     if (!Componentes.ContainsKey(reg))
                     {
                         comp.setEntidade(this);
@@ -80,11 +103,23 @@ namespace _3ReaisEngine.RPG.Core
                     }
                 }
                 c.entidade = this;
-                 Componentes.Add(Componente<T>.ComponenteID,c);
+                 Componentes.Add(Componente<T>.IntComponenteID,c);
             }
             return false;
         }
 
+        public bool AddComponente(IComponente c)
+        {
+            int id = c.getRegister();
+            if (!Componentes.ContainsKey(id))
+            {
+                c.setEntidade(this);
+                Componentes.Add(id,c);
+                return true;
+            }
+
+                return false;
+        }
         /*
          * Procura um componente nesta entidade
          * retorna true se bem sucedido, false se mal sucedido
@@ -92,12 +127,23 @@ namespace _3ReaisEngine.RPG.Core
         public bool GetComponente<T>(ref T Componente) where T : Componente<T>, new()
         {
            
-            if (Componentes.ContainsKey(Componente<T>.ComponenteID))
+            if (Componentes.ContainsKey(Componente<T>.IntComponenteID))
             {
-                Componente = (T)Componentes[Componente<T>.ComponenteID];
+                Componente = (T)Componentes[Componente<T>.IntComponenteID];
                 return true;
             }
             Componente = null;
+            return false;
+        }
+        public bool GetComponente(int ComponenteID) 
+        {
+
+            if (Componentes.ContainsKey(ComponenteID))
+            {
+               
+                return true;
+            }
+            
             return false;
         }
 
@@ -108,7 +154,7 @@ namespace _3ReaisEngine.RPG.Core
         public T GetComponente<T>() where T : Componente<T>, new()
         {          
             IComponente c = null;
-            Componentes.TryGetValue(Componente<T>.ComponenteID, out c);    
+            Componentes.TryGetValue(Componente<T>.IntComponenteID, out c);    
             return (T)c;
         }
 

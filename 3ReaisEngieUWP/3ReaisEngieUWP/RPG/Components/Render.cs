@@ -1,21 +1,22 @@
-﻿using _3ReaisEngine.RPG.Attributes;
-using _3ReaisEngine.RPG.Core;
+﻿using _3ReaisEngine.Attributes;
+using _3ReaisEngine.Core;
 using System;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Media.Imaging;
 
-namespace _3ReaisEngine.RPG.Components
+namespace _3ReaisEngine.Components
 {
-    [RequerComponente(typeof(Colisao))]
-    [RequerComponente(typeof(Posicao))]
+    
     public class Render : Componente<Render>
     {
         public Image img;
         public TranslateTransform transform;
+        public int layer = 0;
 
         public Render()
         {
+            
             transform = new TranslateTransform();
             img = new Image();
             BitmapImage source = new BitmapImage(new Uri("ms-appx:/Assets/StoreLogo.png"));
@@ -53,6 +54,7 @@ namespace _3ReaisEngine.RPG.Components
 
         public Render(string path, float x, float y)
         {
+            
             transform = new TranslateTransform();
             img = new Image();
             BitmapImage source = new BitmapImage(new Uri("ms-appx:" + path));
@@ -64,6 +66,13 @@ namespace _3ReaisEngine.RPG.Components
             transform.X = x;
             transform.Y = y;
         }
+
+        public void LoadImage(string path)
+        {
+            BitmapImage source = new BitmapImage(new Uri("ms-appx:" + path));
+            img.Source = source;
+            source.Play();
+        }  
 
 
     }

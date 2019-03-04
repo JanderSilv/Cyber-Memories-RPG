@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace _3ReaisEngine.RPG.Events
+namespace _3ReaisEngine.Events
 {
     public class MouseEvento : EventArgs
     {

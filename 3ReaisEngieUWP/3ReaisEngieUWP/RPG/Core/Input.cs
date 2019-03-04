@@ -1,8 +1,8 @@
-﻿using _3ReaisEngine.RPG.Events;
+﻿using _3ReaisEngine.Events;
 using System.Collections.Generic;
 using Windows.System;
 
-namespace _3ReaisEngine.RPG.Core
+namespace _3ReaisEngine.Core
 {
     public class Input
     {

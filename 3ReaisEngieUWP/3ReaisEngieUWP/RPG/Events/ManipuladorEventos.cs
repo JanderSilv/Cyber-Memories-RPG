@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 
 
-namespace _3ReaisEngine.RPG.Events
+namespace _3ReaisEngine.Events
 {
     /*
      * Ordena os eventos distribuindo-os pela aplicação de acordo com a prioridade do evento

@@ -1,4 +1,4 @@
-﻿namespace _3ReaisEngine.RPG.Events
+﻿namespace _3ReaisEngine.Events
 {
     public enum PrioridadeEvento
     {

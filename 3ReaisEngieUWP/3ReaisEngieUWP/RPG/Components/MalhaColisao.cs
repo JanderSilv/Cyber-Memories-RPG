@@ -1,6 +1,6 @@
-﻿using _3ReaisEngine.RPG.Core;
+﻿using _3ReaisEngine.Core;
 
-namespace _3ReaisEngine.RPG.Components
+namespace _3ReaisEngine.Components
 {
     public class MalhaColisao : Componente<MalhaColisao>
     {

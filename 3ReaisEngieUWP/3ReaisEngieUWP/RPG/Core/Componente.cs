@@ -1,21 +1,37 @@
-﻿using System;
+﻿using _3ReaisEngine.Components;
+using System;
 
-namespace _3ReaisEngine.RPG.Core
+namespace _3ReaisEngine.Core
 {
-    public abstract class Componente<T> :IComponente
+    public static class ComponenteMnager
     {
-        protected static ComponenteReg m_ComponenteID;
-        public static ComponenteReg ComponenteID { get { return m_ComponenteID; } }
+        public static int componenteCount=0;
+
+    }
+    public abstract class Componente<T> : IComponente
+    {
+        
+        protected static int m_intComponenteID;
+        public static int IntComponenteID { get { return m_intComponenteID; } }
+   
         public Entidade entidade;
 
-        public ComponenteReg getRegister()
-        {
-            return m_ComponenteID;
-        }
-
+        public Componente(){
+            if(m_intComponenteID == 0)
+            {
+                ComponenteMnager.componenteCount++;
+                m_intComponenteID = ComponenteMnager.componenteCount;
+            }
+         }
+        
         public void setEntidade(Entidade e)
         {
             entidade = e;
+        }
+
+        public int getRegister()
+        {
+            return m_intComponenteID;
         }
     }
 }

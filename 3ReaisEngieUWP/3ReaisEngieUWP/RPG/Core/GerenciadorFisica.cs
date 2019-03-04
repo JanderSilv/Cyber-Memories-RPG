@@ -1,8 +1,8 @@
-﻿using _3ReaisEngine.RPG.Components;
+﻿using _3ReaisEngine.Components;
 using System;
 using System.Diagnostics;
 
-namespace _3ReaisEngine.RPG.Core
+namespace _3ReaisEngine.Core
 {
     public class GerenciadorFisica
     {
@@ -26,8 +26,8 @@ namespace _3ReaisEngine.RPG.Core
                 for (int j = i + 1; j < length; j++)
                 {
                     
-                    dist.y = Math.Abs(array[i].entidade.Posicao.y - array[j].entidade.Posicao.y);
-                    dist.x = Math.Abs(array[i].entidade.Posicao.x - array[j].entidade.Posicao.x);
+                    dist.y = Math.Abs(array[i].entidade.EntPos.y - array[j].entidade.EntPos.y);
+                    dist.x = Math.Abs(array[i].entidade.EntPos.x - array[j].entidade.EntPos.x);
 
                     unsafeX = (array[i].tamanho.x / 2 + array[j].tamanho.x / 2);
                     unsafeY = (array[i].tamanho.y / 2 + array[j].tamanho.y / 2);
@@ -37,15 +37,15 @@ namespace _3ReaisEngine.RPG.Core
                         continue;
                     }
 
-                    float dir = (array[j].entidade.Posicao.x - array[j].tamanho.x / 2) - (array[i].entidade.Posicao.x + array[i].tamanho.x / 2);
-                    float esq = (array[i].entidade.Posicao.x - array[i].tamanho.x / 2) - (array[j].entidade.Posicao.x + array[j].tamanho.x / 2);
+                    float dir = (array[j].entidade.EntPos.x - array[j].tamanho.x / 2) - (array[i].entidade.EntPos.x + array[i].tamanho.x / 2);
+                    float esq = (array[i].entidade.EntPos.x - array[i].tamanho.x / 2) - (array[j].entidade.EntPos.x + array[j].tamanho.x / 2);
 
-                    float top = (array[i].entidade.Posicao.y - array[i].tamanho.y / 2) - (array[j].entidade.Posicao.y + array[j].tamanho.y / 2);
-                    float bot = (array[j].entidade.Posicao.y - array[j].tamanho.y / 2) - (array[i].entidade.Posicao.y + array[i].tamanho.y / 2);
+                    float top = (array[i].entidade.EntPos.y - array[i].tamanho.y / 2) - (array[j].entidade.EntPos.y + array[j].tamanho.y / 2);
+                    float bot = (array[j].entidade.EntPos.y - array[j].tamanho.y / 2) - (array[i].entidade.EntPos.y + array[i].tamanho.y / 2);
 
 
 
-                    if (array[i].entidade.Posicao.x < array[j].entidade.Posicao.x)
+                    if (array[i].entidade.EntPos.x < array[j].entidade.EntPos.x)
                     {
                         if (dir < 0 && dist.y <= unsafeY * 0.93f)
                         {
@@ -56,7 +56,7 @@ namespace _3ReaisEngine.RPG.Core
                             continue;
                         }
                     }
-                    else if (array[i].entidade.Posicao.x > array[j].entidade.Posicao.x)
+                    else if (array[i].entidade.EntPos.x > array[j].entidade.EntPos.x)
                     {
                         if (esq < 0 && dist.y <= unsafeY * 0.93f)
                         {
@@ -68,7 +68,7 @@ namespace _3ReaisEngine.RPG.Core
                         }
                     }
 
-                    if (array[i].entidade.Posicao.y > array[j].entidade.Posicao.y)
+                    if (array[i].entidade.EntPos.y > array[j].entidade.EntPos.y)
                     {
                         if (top < 0 && dist.x <= unsafeX * 0.93f)
                         {
@@ -79,7 +79,7 @@ namespace _3ReaisEngine.RPG.Core
                             continue;
                         }
                     }
-                    else if (array[i].entidade.Posicao.y < array[j].entidade.Posicao.y)
+                    else if (array[i].entidade.EntPos.y < array[j].entidade.EntPos.y)
                     {
                         if (bot < 0 && dist.x <= unsafeX * 0.9f)
                         {
