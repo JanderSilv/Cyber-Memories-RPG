@@ -14,6 +14,8 @@
             this.y = y;
         }
 
+        public void setPos(float x,float y) { this.x = x;this.y = y; }
+
         public Vector2()
         {
             x = 0;

@@ -9,7 +9,7 @@ namespace RPG.Src.Scripts
 {
     [RequerComponente(typeof(Colisao))]
     [RequerComponente(typeof(Render))]
-
+   // [RequerComponente(typeof(Inventario))]
     class Player :Entidade
     {
         bool mudou=false;
@@ -18,11 +18,11 @@ namespace RPG.Src.Scripts
 
         public Player(Vector2 pos)
         {
+            
             EntPos = pos;
             vel = 5;
             col = GetComponente<Colisao>();
             col.tipo = TipoColisao.Dinamica;
-            
             AmbienteJogo.AdcionarEntidade(this);
            
         }
@@ -68,7 +68,6 @@ namespace RPG.Src.Scripts
                 r.LoadImage("Src/dance.gif");
                 mudou = true;
             }
-        
         }
     }
 }
