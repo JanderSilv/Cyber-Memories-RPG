@@ -1,4 +1,4 @@
-﻿/*using _3ReaisEngine.Components;
+﻿using _3ReaisEngine.Components;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -30,4 +30,3 @@ namespace _3ReaisEngine.RPG.Core
         }
     }
 }
-*/

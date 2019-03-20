@@ -6,6 +6,8 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Threading.Tasks;
 using Windows.UI.Xaml.Controls;
+using Imagine;
+using _3ReaisEngine.RPG.Core;
 
 namespace _3ReaisEngine
 {
@@ -18,7 +20,6 @@ namespace _3ReaisEngine
         public static bool Run = true;
 
         static Panel window;
-
         static List<Entidade> entidades = new List<Entidade>();
         static List<Colisao> colisores = new List<Colisao>();
         static List<Render> renders = new List<Render>();
@@ -26,6 +27,9 @@ namespace _3ReaisEngine
         static ManipuladorEventos gerenciadorEventos = new ManipuladorEventos();
         static GerenciadorFisica gerenciadorFisica = new GerenciadorFisica();
         public static Input Input { get; private set; }
+
+        public static Layer defaltuLayer = new Layer();
+        public static Layer UILayer = new Layer(1);
 
         public static float time = 0;
 
@@ -38,16 +42,6 @@ namespace _3ReaisEngine
             RegistrarEventoCallBack(PrioridadeEvento.Interface, Input.UpdateTeclado);
 
             Debug.WriteLine("Engine Inciada");
-
-            /*
-                 var t= typeof(ComponenteMnager).GetTypeInfo().Assembly.GetTypes().Where(s=> s.GetInterfaces().Contains(typeof(IComponente)));
-
-                 foreach (Type ty in t)
-                 {
-
-                     Debug.WriteLine(ty.Name);
-                 }
-              */
 
         }
 
@@ -62,11 +56,12 @@ namespace _3ReaisEngine
                 foreach (Entidade e in entidades)
                 {
                     if (!e.IsStatic) e.Update();
+                 
                 }
 
                 foreach (Render r in renders)
                 {
-                    Canvas.SetZIndex(r.img, r.layer);
+                   
                     r.transform.X = r.entidade.EntPos.x;
                     r.transform.Y = r.entidade.EntPos.y;
                     

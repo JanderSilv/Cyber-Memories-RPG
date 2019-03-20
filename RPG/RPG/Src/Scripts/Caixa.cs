@@ -15,6 +15,7 @@ namespace RPG.Src.Scripts
             this.EntPos = pos;
             IsStatic = true;
             AmbienteJogo.AdcionarEntidade(this);
+         
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using _3ReaisEngine.Core;
+﻿using _3ReaisEngine.Attributes;
+using _3ReaisEngine.Core;
 
 namespace _3ReaisEngine.Components
 {
@@ -7,7 +8,6 @@ namespace _3ReaisEngine.Components
         Estatica,
         Dinamica
     }
-
     public class Colisao : Componente<Colisao>
     {
         public Vector4 momentoDeColisao;

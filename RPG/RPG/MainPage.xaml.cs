@@ -2,6 +2,7 @@
 using _3ReaisEngine.Components;
 using _3ReaisEngine.Core;
 using _3ReaisEngine.Events;
+//using _3ReaisEngine.RPG.Core;
 using RPG.Src.Scripts;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
@@ -20,21 +21,26 @@ namespace RPG
         {
 
             InitializeComponent();
-
-            AmbienteJogo.Init(Screen);
-            AmbienteJogo.Execute(120, LateUpdate);
+           
+            AmbienteJogo.Init(Game_Screen);
+            Canvas.SetZIndex(Game_Screen, AmbienteJogo.defaltuLayer.prioridade);
+            Canvas.SetZIndex(UIPanel, AmbienteJogo.UILayer.prioridade);
+           // Canvas.SetZIndex(txt_colisao, AmbienteJogo.UILayer.prioridade);
+          //  Canvas.SetZIndex(txt_cxPos, AmbienteJogo.UILayer.prioridade);
+          //  Canvas.SetZIndex(txt_playerPos, AmbienteJogo.UILayer.prioridade);
 
             p = new Player(new Vector2(60, 60));
-            c = p.GetComponente<Colisao>();
-            p.GetComponente<Render>().layer=-1;
-            
-            
             cx = new Caixa(new Vector2(160, 160));
+            c = p.GetComponente<Colisao>();
+            AmbienteJogo.Execute(120, LateUpdate);
+
+          
 
         }
 
         public void LateUpdate()
-        {
+        {     
+            
             txt_ciclo.Text = AmbienteJogo.time.ToString();
             txt_colisao.Text = c.momentoDeColisao.ToString();
             txt_cxPos.Text = cx.EntPos.ToString();

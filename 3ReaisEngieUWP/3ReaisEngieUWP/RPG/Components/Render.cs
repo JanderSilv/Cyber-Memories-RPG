@@ -1,5 +1,6 @@
 ﻿using _3ReaisEngine.Attributes;
 using _3ReaisEngine.Core;
+using _3ReaisEngine.RPG.Core;
 using System;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Media;
@@ -7,12 +8,12 @@ using Windows.UI.Xaml.Media.Imaging;
 
 namespace _3ReaisEngine.Components
 {
-    
+   
     public class Render : Componente<Render>
     {
         public Image img;
         public TranslateTransform transform;
-        public int layer = 0;
+        public Layer layer = AmbienteJogo.defaltuLayer;
 
         public Render()
         {

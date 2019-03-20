@@ -9,7 +9,7 @@ namespace RPG.Src.Scripts
 {
     [RequerComponente(typeof(Colisao))]
     [RequerComponente(typeof(Render))]
-   // [RequerComponente(typeof(Inventario))]
+    [RequerComponente(typeof(Inventario))]
     class Player :Entidade
     {
         bool mudou=false;

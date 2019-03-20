@@ -14,10 +14,10 @@ namespace _3ReaisEngine.Core
      
    public abstract class Entidade 
     {
-        protected Dictionary<int, IComponente> Componentes;
+        protected Dictionary<int, IComponente> Componentes;//armazenar os componentes da entidade
         public string Nome;
-        public bool IsStatic=false;
-        public Vector2 EntPos { get; set; }
+        public bool IsStatic=false;//pra otimização de rotina (objetos estaticos) 
+        public Vector2 EntPos { get; set; } // posicao da entidade no mapa
 
         public Entidade()
         {
@@ -29,7 +29,7 @@ namespace _3ReaisEngine.Core
             {
                 
                 RequerComponente rc = (RequerComponente)atr;
-                dynamic comp = Activator.CreateInstance(rc.componente);
+                dynamic comp =  Activator.CreateInstance(rc.componente);
                 int reg = comp.getRegister();
                 if (!GetComponente(reg))
                 {
