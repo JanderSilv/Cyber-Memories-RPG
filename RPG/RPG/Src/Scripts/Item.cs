@@ -20,6 +20,7 @@ public class Item :Armazenavel
     public bool estacavel;
     public uint id;
 
+
     public bool getEstacavel()
     {
         return estacavel;
