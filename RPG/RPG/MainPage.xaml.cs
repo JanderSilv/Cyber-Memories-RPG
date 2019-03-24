@@ -7,7 +7,7 @@ using RPG.Src.Scripts;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Input;
-
+using Windows.UI.Xaml.Media;
 
 namespace RPG
 {
@@ -34,7 +34,6 @@ namespace RPG
             c = p.GetComponente<Colisao>();
             AmbienteJogo.Execute(120, LateUpdate);
 
-          
 
         }
 
