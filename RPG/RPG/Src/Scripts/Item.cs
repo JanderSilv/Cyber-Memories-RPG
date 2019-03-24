@@ -4,15 +4,37 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-public enum tipoItem:Int16
+public enum tipoItem:ushort
 {
     Armadura=1,
     Arma=2,
-    Consumivel=4,
-    Encantavel=8
+    Consumivel=3,
+    Encantavel=4
 }
 
 
+
+public static class ItemManager
+{
+    static uint qntArmadura = 0;
+
+    public static void GenID(Item item)
+    {
+        /*
+        uint t = (ushort)item.tipo;
+        uint id = 0;
+        t  = (t << 16);
+
+        item.id = (t & 0xFFFF0000);
+
+        if (item.tipo == tipoItem.Armadura)
+        {
+            qntArmadura++;
+            id = qntArmadura & 0x0000FFFF;     
+        }
+        item.id |= id; */
+    }
+}
 
 public class Item :Armazenavel
 {
@@ -31,9 +53,19 @@ public class Item :Armazenavel
         return id;
     }
 
-    public Int16 getTipo()
+    public ushort getTipo()
     {
-        return (Int16)tipo;
+        return (ushort)tipo;
+    }
+}
+
+public class Machado : Item
+{
+    public Machado()
+    {
+        tipo = tipoItem.Arma;
+        estacavel = false;
+        id = 567;
     }
 }
 

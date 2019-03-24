@@ -7,7 +7,7 @@ public interface Armazenavel
 {
     bool getEstacavel();
     uint  getID();
-    Int16 getTipo();
+    ushort getTipo();
 }
 
 
