@@ -1,47 +1,82 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using _3ReaisEngine.Core;
 
 public interface Armazenavel
 {
-    int getID();
-    int getTipo();
+    bool getEstacavel();
+    uint  getID();
+    Int16 getTipo();
+}
+
+
+public class Slot{
+   public Armazenavel arm;
+   public int qnt;
 }
 
 public class Inventario : Componente<Inventario>
  {
-    public Dictionary<int, Armazenavel> inventario = new Dictionary<int, Armazenavel>();
+    public Dictionary<uint, Slot> inventario = new Dictionary<uint, Slot>();
  }
 
 public static class InventarioHelper
 {
     public static bool Add(Armazenavel item,Inventario inventario)
     {
-        if (inventario.inventario.ContainsKey(item.getID())) return false;
-        inventario.inventario.Add(item.getID(), item);
+        if (!item.getEstacavel() && inventario.inventario.ContainsKey(item.getID()))
+        {
+            return false;
+        }
+        else if (!item.getEstacavel() && !inventario.inventario.ContainsKey(item.getID()))
+        {
+            Slot s = new Slot() { arm = item, qnt = 1 };
+            inventario.inventario.Add(item.getID(), s);
+        }else if(item.getEstacavel() && inventario.inventario.ContainsKey(item.getID()))
+        {
+            inventario.inventario[item.getID()].qnt++;
+        }else if(item.getEstacavel() && !inventario.inventario.ContainsKey(item.getID()))
+        {
+            Slot s = new Slot() { arm = item, qnt = 1 };
+            inventario.inventario.Add(item.getID(), s);
+        }
+      
+      
         return true;
     }
     public static Armazenavel Remove(Armazenavel item,Inventario inventario)
     {
         if (!inventario.inventario.ContainsKey(item.getID())) return null;
-        Armazenavel arm = inventario.inventario[item.getID()];
-        inventario.inventario.Remove(item.getID());
-        return arm;
-    }
-    public static Armazenavel GetByID(int ID,Inventario inventario)
+        if (item.getEstacavel())
+        {
+            inventario.inventario[item.getID()].qnt--;
+            Armazenavel a = inventario.inventario[item.getID()].arm;
+            if (inventario.inventario[item.getID()].qnt == 0) inventario.inventario.Remove(a.getID());
+            return a;
+        }
+        else if(!item.getEstacavel())
+        {
+            Armazenavel a = inventario.inventario[item.getID()].arm;
+            inventario.inventario.Remove(a.getID());
+            return a;
+        }
+        return null;
+      }
+    public static Armazenavel GetByID(uint ID,Inventario inventario)
     {
         if (!inventario.inventario.ContainsKey(ID)) return null;
-        return inventario.inventario[ID];
+        return inventario.inventario[ID].arm;
 
     }
-    public static Armazenavel[] GetItensOfType(int tipo,Inventario inventario)
+    public static Armazenavel[] GetItensOfType(uint tipo,Inventario inventario)
     {
-        var itens = from Armazenavel in inventario.inventario.Values where (Armazenavel.getTipo() & tipo) != 0 select Armazenavel;
+        var itens = from Armazenavel in inventario.inventario.Values where (Armazenavel.arm.getTipo() & tipo) != 0 select Armazenavel.arm;
         return itens.ToArray();
     }
-    public static Armazenavel[] GetItensOfExactType(int tipo, Inventario inventario)
+    public static Armazenavel[] GetItensOfExactType(uint tipo, Inventario inventario)
     {
-        var itens = from Armazenavel in inventario.inventario.Values where Armazenavel.getTipo() == tipo select Armazenavel;
+        var itens = from Armazenavel in inventario.inventario.Values where Armazenavel.arm.getTipo() == tipo select Armazenavel.arm;
         return itens.ToArray();
     }
     public static void Sort() { }
