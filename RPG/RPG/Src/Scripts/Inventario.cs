@@ -10,6 +10,10 @@ public interface Armazenavel
     ushort getTipo();
 }
 
+public interface Comercial:Armazenavel
+{
+    int getPreco();
+}
 
 public class Slot{
    public Armazenavel arm;
@@ -18,6 +22,7 @@ public class Slot{
 
 public class Inventario : Componente<Inventario>
  {
+    public int limite = 30;
     public Dictionary<uint, Slot> inventario = new Dictionary<uint, Slot>();
  }
 
@@ -63,6 +68,24 @@ public static class InventarioHelper
         }
         return null;
       }
+    public static Armazenavel Remove(uint itemID, Inventario inventario)
+    {
+        Armazenavel item = GetByID(itemID,inventario);
+        if (item == null) return null;
+     
+        if (item.getEstacavel())
+        {
+            inventario.inventario[item.getID()].qnt--;
+            if (inventario.inventario[item.getID()].qnt == 0) inventario.inventario.Remove(item.getID());
+            return item;
+        }
+        else if (!item.getEstacavel())
+        {    
+            inventario.inventario.Remove(item.getID());
+            return item;
+        }
+        return null;
+    }
     public static Armazenavel GetByID(uint ID,Inventario inventario)
     {
         if (!inventario.inventario.ContainsKey(ID)) return null;
@@ -79,5 +102,5 @@ public static class InventarioHelper
         var itens = from Armazenavel in inventario.inventario.Values where Armazenavel.arm.getTipo() == tipo select Armazenavel.arm;
         return itens.ToArray();
     }
-    public static void Sort() { }
+   
 }

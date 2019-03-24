@@ -12,8 +12,6 @@ public enum tipoItem:ushort
     Encantavel=4
 }
 
-
-
 public static class ItemManager
 {
     static uint qntArmadura = 0;
@@ -36,36 +34,48 @@ public static class ItemManager
     }
 }
 
-public class Item :Armazenavel
+public class Item : Armazenavel
 {
-    public tipoItem tipo;
-    public bool estacavel;
-    public uint id;
+    public uint ID;
+    public string Descricao;
+    public string Nome;
+    public int Preco;
+    public bool Estacavel;
+    public ushort TipoItem;
+
 
 
     public bool getEstacavel()
     {
-        return estacavel;
+        return Estacavel;
     }
 
     public uint getID()
     {
-        return id;
+        return ID;
     }
 
     public ushort getTipo()
     {
-        return (ushort)tipo;
+        return TipoItem;
     }
 }
 
-public class Machado : Item
+public class Arco : Item, Comercial
 {
-    public Machado()
+    public Arco()
     {
-        tipo = tipoItem.Arma;
-        estacavel = false;
-        id = 567;
+        this.TipoItem = (ushort)tipoItem.Arma;
+        this.ID = 01;
+        this.Nome = "ArcoRuan";
+        this.Preco = 55;
+        this.Estacavel = false;
+        this.Descricao = "Arco de Ruan que Yasmim roubou";
+    }
+
+    public int getPreco()
+    {
+        return Preco;
     }
 }
 

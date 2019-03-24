@@ -102,6 +102,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Src\Scripts\Caixa.cs" />
     <Compile Include="Src\Scripts\Inventario.cs" />
+    <Compile Include="Src\Scripts\Item.cs" />
+    <Compile Include="Src\Scripts\Mercador.cs" />
     <Compile Include="Src\Scripts\Player.cs" />
   </ItemGroup>
   <ItemGroup>
