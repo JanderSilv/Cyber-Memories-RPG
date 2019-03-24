@@ -1,0 +1,118 @@
+﻿* Banco de Habilidades *
+
+Manual:
+
+1.	Nome
+2.	Descrição
+3.	Tipo
+4.	Custo de MP
+5.	Área de Efeito
+6.	Mensagem de Ação
+7.	Requerimento de Arma
+
+==============================================================================================================================
+
+/ Habilidades Gerais: /
+
+     > Atacar:
+	*	Causa dano físico ao inimigo;
+	*	Ação comum;
+	*	0;
+	*	Um inimigo;
+	*	[usuário] atacou [oponente]!;
+	*	Nenhum.
+
+     > Confusão:
+	*	Arremessa um pó mágico que confunde o inimigo podendo faze-lo atacar a si mesmo;
+	*	Ação comum;
+	*	5;
+	*	Um inimigo;
+	*	[usuário] deixou [oponente] confuso!;
+	*	Pó da confusão
+
+     > Diminuir Força:
+	*	Arremessa um pó mágico que diminui a força do inimigo;
+	*	Ação comum;
+	*	0;
+	*	[usuário] usou Pó da Força em [oponente]
+	*	Pó da Força
+
+     > Envenenamento:
+	*	Arremessa uma poção mágica que envenena o inimigo;
+	*	Ação comum;
+	*	0;
+	*	[usuário] envenenou o [oponente]!
+	*	Veneno
+
+     > Cegueira:
+	*	Arremessa uma bomba de fumaça que cega o inimigo temporariamente;
+	*	Ação Comum;
+	*	0;
+	*	[usuário] jogou uma Bomba de Fumaça em [oponente]!
+	*	Bomba de Fumaça.
+
+/ Habilidades Cajado: /
+
+>	Trovão
+	*	Causa dano elétrico ao inimigo, chance de causar paralisia;
+	*	Magia;
+	*	15;
+	*	Um inimigo
+	*	[usuario] lançou um Trovão em [oponente]!;
+	*	Cajado.
+
+     > Tempestade
+	*	Causa dano elétrico ao inimigo, chance de causar paralisia;
+	*	Magia;
+	*	40;
+	*	Todos os inimigos;
+	*	[usuário] conjurou uma Tempestade!;
+	*	Cajado
+
+/ Habilidades Espada: /
+
+>	Ataque Forte
+	*	Ataca um inimigo com força;
+	*	Ação comum;
+	*	0;
+	*	[usuário] atacou fortemente [oponente]!
+	*	Espada
+
+     > Corte de Fogo
+	*	Usa o pó de fogo para imbuir a espada em fogo e atacar múltiplos inimigos;
+	*	Habilidade;
+	*	0;
+	*	[usuário] usou Corte de Fogo;
+	*	Espada;
+
+/ Habilidades Arco: /
+
+     > Flecha de Gelo:
+	*	Atira uma flecha de gelo;
+	*	Habilidade;
+	*	0;
+	*	[usuário] usou Flecha de Gelo em [oponente]!
+	*	Arco
+     > Nevasca de Flechas:
+	*	Atira uma chuva de flechas de gelo atingindo múltiplos inimigos;
+	*	Habilidade;
+	*	0;
+	*	[usuário] usou Nevasca de Flechas em [oponente]!
+	*	Arco
+
+/ Habilidades Adaga: /
+
+     > Corte Rasteiro:
+	*	Ataca um inimigo com um golpe rasteiro;
+	*	Nenhum;
+	*	0;
+	*	[usuário] usou Corte Rasteiro em [oponente];
+	*	Adaga
+
+     > Cortes Múltiplos:
+	*	Ataca diversos inimigos múltiplas vezes;
+	*	Nenhum;
+	*	0;
+	*	[usuário] atacou [oponente] com Cortes Múltiplos!;
+	*	Adaga.
+

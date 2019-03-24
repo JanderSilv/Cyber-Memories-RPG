@@ -1,0 +1,217 @@
+﻿Banco de Itens:
+
+Manual:
+ 
+1. Nome; 
+2. Descrição; 
+3. Tipo; 
+4. Preço; 
+5. Consumível (Some ao utilizar); 
+6. Área de Efeito; 
+7. Usável em; 
+8. Efeitos ao usar
+
+===========================================================================================================================================
+ 	
+Itens:
+
+
+o Itens:
+
+      o Poção de Vida Pequena
+	 • Recupera [valor] de HP de um aliado
+	 • Normal
+	 • 60
+	 • Sim
+	 • Um aliado
+	 • Sempre
+	 • Recuperação HP [valor]
+
+      o Poção de Vida Média
+	• Recupera [valor] de HP de um aliado
+	• Normal
+	• 170
+	• Sim
+	• Um aliado
+	• Sempre
+	• Recuperação HP [valor]
+
+      o Poção de Vida Média
+	• Recupera 100% do HP de um aliado
+	• Normal
+	• 450
+	• Sim
+	• Um aliado
+	• Sempre
+	• Recuperação HP 100%
+
+      o Poção de Mana Pequena
+	• Recupera [valor] de MP de um aliado
+	• Normal
+	• 120
+	• Sim
+	• Um aliado
+	• Sempre
+	• Recuperação MP [valor]
+
+      o Poção de Mana Média
+	• Recupera [valor] de MP de um aliado
+	• Normal
+	• 300
+	• Sim
+	• Um aliado
+	• Sempre
+	• Recuperação MP [valor]
+
+      o Poção de Mana Grande
+	• Recupera 100% de MP de um aliado
+	• Normal
+	• 550
+	• Sim
+	• Um aliado
+	• Sempre
+	• Recuperação MP 100%
+
+      o Antídoto
+	• Remove veneno de um aliado
+	• Normal
+	• 50
+	• Sim
+	• Um aliado
+	• Sempre
+	• Remover Estado Envenenado 100%
+
+      o Elixir
+	• Remove vários estados negativos de um aliado
+	• Normal
+	• 95
+	• Sim
+	• Um aliado
+	• Sempre
+	• Remover Estado [Envenenado, Confuso, Dormindo, Paralisado] 100%
+
+      o Cura Paralisia
+	• Remove a paralisia de um aliado
+	• Normal
+	• 50
+	• Sim
+	• Um aliado
+	• Sempre
+	• Remover Estado Paralisado 100%
+
+      o Despertar
+	• Acorda um aliado
+	• Normal
+	• 50
+	• Sim
+	• Um aliado
+	• Sempre
+	• Remover Estado Dormindo 100%
+
+      o Poção Mágica
+	• Recupera todo o HP e MP de um aliado
+	• Normal
+	• 900
+	• Sim
+	• Um aliado
+	• Sempre
+	• Recuperação [HP, MP] 100%
+
+      o Pílula de Vida
+	• Aumenta o HP Máximo de um aliado em 50 até o fim da batalha
+	• Normal
+	• 200
+	• Sim
+	• Um aliado
+	• Em Batalha
+	• Crescimento [HP Máximo] +50
+
+      o Pílula de Mana
+	• Aumenta o MP Máximo de um aliado em 50 até o fim da batalha
+	• Normal
+	• 200
+	• Sim
+	• Um aliado
+	• Em Batalha
+	• Crescimento [MP Máximo] +20
+
+      o Pílula de Força
+	• Aumenta a Força de um aliado em 3 pontos até o fim da batalha
+	• Normal
+	• 200
+	• Sim
+	• Um aliado
+	• Em Batalha
+	• Crescimento [Força] +3
+
+      o Pílula de Resistência
+	• Aumenta a Resistência em 3 pontos até o fim da batalha
+	• Normal
+	• 200
+	• Sim
+	• Um aliado
+	• Em Batalha
+	• Crescimento [Resistência] +3
+
+      o Pílula de Inteligência
+	• Aumenta a Inteligência de um aliado em 3 pontos até o fim da batalha
+	• Normal
+	• 200
+	• Sim
+	• Um aliado
+	• Em Batalha
+	• Crescimento [Inteligência] +3
+
+      o Trevo da Sorte
+	• Aumenta a Sorte de um aliado em 3 pontos até o fim da batalha
+	• Normal
+	• 200
+	• Sim
+	• Um aliado
+	• Em Batalha
+	• Crescimento [Sorte] +3
+
+      o Pílula de Destreza
+	• Aumenta a Destreza de um aliado em 3 pontos até o fim da batalha
+	• Normal
+	• 200
+	• Sim
+	• Um aliado
+	• Em Batalha
+	• Crescimento [Destreza] +3
+
+      o Pó da Confusão:
+	• Pó mágico que causa confusão a quem inala-lo;
+	• Normal;
+	• 180;
+	• Sim;
+	• Um inimigo;
+	• Em batalha;
+	• Estado [Confuso].
+
+      o Pó da Força:
+	• Pó mágico que diminui a força de quem entrar em contato;
+	• Normal;
+	• 200;
+	• Sim;
+	• Um inimigo;
+	• Em batalha;
+	• Decrescimento [Força] -3.
+
+      o Veneno:
+	• Frasco de veneno que causa envenenamento a quem entrar em contato;
+	• Normal;
+	• 200;
+	• Sim;
+	• Um inimigo;
+	• Em batalha;
+	• Estado [Envenenado].
+
+      o Bomba de Fumaça:
+	• Gera uma fumaça que dificulta o acerto de golpes;
+	• Normal;
+	• 160;
+	• Sim;
+	• Um inimigo;
+	• Em batalha;
+	• Estado [Cego].
