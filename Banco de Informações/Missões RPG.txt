@@ -1,0 +1,36 @@
+* Missões RPG *
+
+     > Busca de item:
+	* 1º
+	* Enredo: Preciso de sua ajuda, sou um minerador e em minha última ida as 
+ruínas de [nome_ruina] deixei cair um colar muito importante para mim.  O 
+colar está em minha família a gerações, não posso perde-lo. Pode recuperar 
+para mim?
+	* Objetivo: Ir até as ruínas [nome_ruína] e recuperar o colar de 
+[nome_NPC].
+	* Recompensa:
+
+     > Matar:
+	* Enredo: Olá jovem, vendo frutas na feira da cidade, porém eu e outros 
+feirantes estamos com graves problemas, bandidos estão atacando os 
+carregamentos que vem do interior, você precisa nos ajudar. [Após ter aceito a 
+missão] Um carregamento virá da cidade [nome_cidade] hoje, acabe com 
+aqueles bastardos.
+	* Objetivo: Encontrar os bandidos e mata-los.
+	* Recompensa:
+
+      > Infestação:
+	* Enredo: A vila está sendo frequentemente atacada por slimes, estão destruindo 
+nossas plantações, precisamos de alguém para elimina-los. Você pode fazer isso?
+	* Objetivo: Eliminar 6 slimes.
+	* Recompensa:
+
+     > Entrega:
+	* Enredo: Vou me casar escondida em alguns dias com o meu amado, logo em 
+seguida iremos fugir, tenho uma irmã que mora em [nome_cidade], o meu 
+casamento não será o mesmo sem ela ao meu lado, além disso quero me 
+despedir dela antes de partir. Os serviços de correio demoram muito para 
+entregar cartas, poderia fazer isso por mim?
+	* Objetivo: Entregar carta para irmã de [nome_NPC] na cidade de 
+[nome_cidade].
+	* Recompensa:

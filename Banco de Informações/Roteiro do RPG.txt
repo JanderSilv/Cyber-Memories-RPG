@@ -1,0 +1,47 @@
+* Roteiro do RPG *
+
+[Narrador]
+
+   O ano é 2077, o mundo está em caos, o Google dominou a internet, as ruas, a revolução das máquinas era real. Uma organização secreta chamada de Departamento do Tempo decide enviar
+um agente para salvar o mundo. O objetivo, ano 2070, antes de tudo acontecer.
+
+[Cena do Laboratório]
+
+- Agente do Departamento do Tempo: [jogador] você precisa ir agora, o Google sabe dos nossos planos, não sabemos como você salvará o mundo, mas confiamos em você. Boa sorte!
+
+[Narrador]
+
+  O agente então entrou na máquina do tempo, estava viajando pela zona temporal, um limbo entre o espaço e o tempo. Porém o Google sabia da intenção do Departamento do Tempo, interceptou o agente e o jogou em uma realidade virtual.
+  
+  O Google ainda não havia completado seus planos de dominação mundial. Ele precisava destruir os cavaleiros da internet, e o agente era a ferramenta perfeita para isso...
+.
+[Acontecimento]
+
+ O jogador acorda em uma vila, não se lembra de nada, sua memória foi apagada.    Um espírito de luz chamado Google aparece.
+
+[Jogo começa]
+
+- Jogador: Onde estou? O que está...
+
+{Espírito do Google aparece}
+
+- Google: Hey [Jogador]!
+- Jogador: Quem é você?
+- Google: Eu sou o Google, serei seu guia de agora em diante.
+- Jogador: Onde eu estou? Quem sou eu?
+- Google: Você é [Jogador], um grande guerreiro, não se lembra?
+- Jogador: Eu não me lembro de nada, tudo está tão confuso.
+- Google: Não se preocupe, vou te ajudar a recuperar suas memórias. Você parece faminto, por que não vai até a taverna se alimentar?
+
+[A dona da taverna oferece comida de graça por ele ser um famoso guerreiro]
+
+
+//
+-Google: Está satisfeito?
+- Google: Eu ainda não sei como recuperar suas memórias, mas enquanto isso você pode me ajudar. 
+- Google: Você está no Silicon Kingdom, um reino que costumava ser pacífico e um ótimo lugar para se viver.
+- Google: Porém poderosos Cavaleiros  usurparam o poder do Rei Legítimo e instauraram o caos por todo reino. O reino está tomado por criaturas perigosas.
+- Google: Você pode não se lembrar, mas você é um grande guerreiro.
+- Google: Você precisa salvar esse reino da destruição.
+- [Jogador]: Eu farei o que for preciso para ter minhas memórias de volta.
+- Google: Ótimo, mas como todo grande guerreiro, você precisa de uma arma. Vamos até o ferreiro.
