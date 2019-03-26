@@ -1,0 +1,82 @@
+* Banco de Armas *
+
+Manual:
+ 
+1. Nome
+2. Descrição
+3. Tipo
+4. Preço
+5. Animação
+6. Atributos
+
+/ Cajados: /
+
+     > Cajado de Madeira:
+	* Cajado maciço feito de carvalho;
+	* Cajado;
+	* 0 (Arma Inicial);
+	* 019: Golpe/físico;
+	* Ataque: 18, Força: 0, Inteligência: 7, Resistência: 0, Sorte: 0, Destreza: 0;
+
+     > Cajado do Mago:
+	* Cajado de carvalho forjado com uma gema mágica;
+	* Cajado;
+	* 500;
+	* 019: Golpe/físico;
+	* Ataque: 34, Força: 0, Inteligência: 15, Resistência: 0, Sorte: 0, Destreza: 0;
+
+     > Cajado de Merlim:
+	* Cajado forjado pelo mago mais poderoso da terra;
+	* Cajado;
+	* 3000;
+	* 022: Golpe/raio;
+	* Ataque: 60, Força: 0, Inteligência: 31, Resistência: 0, Sorte: 0, Destreza: 0;
+
+/ Espadas:/
+
+     > Espada de Aço:
+	* Espada forjada em aço;
+	* Espada;
+	* 0 (Arma Inicial);
+	* 007: Corte/Físico;
+	* Ataque: 23, Força: 3, Inteligência: 0, Resistência: 0, Sorte: 0, Destreza: 0;
+
+     > Espada do Guerreiro:
+	* Espada forjada por um habilidoso ferreiro;
+	* Espada;
+	* 500;
+	* 007: Corte/Físico;
+	* Ataque: 50, Força: 7, Inteligência: 0, Resistência: 0, Sorte: 0, Destreza: 0;
+
+     > Excalibur:
+	* Lendária espada do Rei Artur;
+	* Espada;
+	* 3000;
+	* 011: Corte/Múltiplos1;
+	* Ataque: 95, Força: 15, Inteligência: 0, Resistência: 0, Sorte: 0, Destreza: 0;
+
+
+/ Arcos: /
+
+     > Arco de Madeira:
+	* Arco feito para a caça;
+        * Arco;
+	* 0 (Arma Inicial);
+	* 013: Lança/Físico;
+	* Ataque: 21, Força: 0, Inteligência: 0, Resistência: 0, Sorte: 0, Destreza: 3;
+
+     > Arco do Arqueiro:
+	* Arco longo de combate melhorado;
+	* Arco;
+	* 500;
+	* 013: Lança/Físico;
+	* Ataque: 48, Força: 0, Inteligência: 0, Resistência: 0, Sorte: 0, Destreza: 7;
+
+     > Arco do Légolas:
+	* Arco do grandioso elfo Sindar Légolas;
+	* Arco;
+	* 3000;
+	* 016: Lança/Raio;
+	* Ataque: 93, Força: 0, Inteligência: 0, Resistência: 0, Sorte: 0, Destreza: 15;
+
+
