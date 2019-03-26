@@ -103,10 +103,13 @@
     <Compile Include="Src\Scripts\Componentes\Estatus.cs" />
     <Compile Include="Src\Scripts\Entidades\Caixa.cs" />
     <Compile Include="Src\Scripts\Componentes\Inventario.cs" />
+    <Compile Include="Src\Scripts\Habilidade\Envenenamento.cs" />
+    <Compile Include="Src\Scripts\Habilidade\Trovao.cs" />
     <Compile Include="Src\Scripts\Interfaces\Armazenavel.cs" />
     <Compile Include="Src\Scripts\Interfaces\Comercial.cs" />
     <Compile Include="Src\Scripts\Interfaces\Atacavel.cs" />
     <Compile Include="Src\Scripts\Interfaces\Equipavel.cs" />
+    <Compile Include="Src\Scripts\Interfaces\Habilidade.cs" />
     <Compile Include="Src\Scripts\Items\Armadura.cs" />
     <Compile Include="Src\Scripts\Items\Item.cs" />
     <Compile Include="Src\Scripts\Componentes\Mercador.cs" />

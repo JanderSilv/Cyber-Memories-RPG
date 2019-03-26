@@ -4,7 +4,8 @@ using System.Collections.Generic;
  
     public enum Estado
     {
-        Normal,Envenenado,Paralisado,Confuso,Dormindo
+  
+        Normal=1,Envenenado=2,Paralisado=4,Confuso=8,Dormindo=16
     }
 
     public class Status:Componente<Status>

@@ -63,13 +63,13 @@ C:\Users\ruann\Documents\RPG-LP2\3ReaisEngieUWP\3ReaisEngieUWP\obj\x64\Debug\pri
 C:\Users\ruann\Documents\RPG-LP2\3ReaisEngieUWP\3ReaisEngieUWP\obj\x64\Debug\qualifiers.txt
 C:\Users\ruann\Documents\RPG-LP2\3ReaisEngieUWP\3ReaisEngieUWP\obj\x64\Debug\qualifiers.txt.intermediate
 C:\Users\ruann\Documents\RPG-LP2\3ReaisEngieUWP\3ReaisEngieUWP\obj\x64\Debug\MultipleQualifiersPerDimensionFound.txt
-C:\DEV\Projects\RPG-LP2\3ReaisEngieUWP\3ReaisEngieUWP\obj\x64\Debug\3ReaisEngieUWP.csproj.CoreCompileInputs.cache
-C:\DEV\Projects\RPG-LP2\3ReaisEngieUWP\3ReaisEngieUWP\obj\x64\Debug\3ReaisEngieUWP.dll
-C:\DEV\Projects\RPG-LP2\3ReaisEngieUWP\3ReaisEngieUWP\obj\x64\Debug\3ReaisEngieUWP.pdb
 C:\DEV\Projects\RPG-LP2\3ReaisEngieUWP\3ReaisEngieUWP\bin\x64\Debug\3ReaisEngieUWP.dll
 C:\DEV\Projects\RPG-LP2\3ReaisEngieUWP\3ReaisEngieUWP\bin\x64\Debug\3ReaisEngieUWP.pdb
 C:\DEV\Projects\RPG-LP2\3ReaisEngieUWP\3ReaisEngieUWP\bin\x64\Debug\3ReaisEngieUWP.pri
 C:\DEV\Projects\RPG-LP2\3ReaisEngieUWP\3ReaisEngieUWP\obj\x64\Debug\3ReaisEngieUWP.csprojAssemblyReference.cache
+C:\DEV\Projects\RPG-LP2\3ReaisEngieUWP\3ReaisEngieUWP\obj\x64\Debug\3ReaisEngieUWP.csproj.CoreCompileInputs.cache
+C:\DEV\Projects\RPG-LP2\3ReaisEngieUWP\3ReaisEngieUWP\obj\x64\Debug\3ReaisEngieUWP.dll
+C:\DEV\Projects\RPG-LP2\3ReaisEngieUWP\3ReaisEngieUWP\obj\x64\Debug\3ReaisEngieUWP.pdb
 C:\DEV\Projects\RPG-LP2\3ReaisEngieUWP\3ReaisEngieUWP\obj\x64\Debug\priconfig.xml
 C:\DEV\Projects\RPG-LP2\3ReaisEngieUWP\3ReaisEngieUWP\obj\x64\Debug\priconfig.xml.intermediate
 C:\DEV\Projects\RPG-LP2\3ReaisEngieUWP\3ReaisEngieUWP\obj\x64\Debug\unfiltered.layout.resfiles

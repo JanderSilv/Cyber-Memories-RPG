@@ -75,6 +75,12 @@ namespace RPG
              Engine.Debug(m1.Comprar(m2, arm.ID));
              Engine.Debug(m1.Comprar(m2, arm.ID));
 
+            Status m_status = m.GetComponente<Status>();
+
+            p.Atacar(m_status);
+
+            Engine.Debug(m_status.saude);
+
             AmbienteJogo.Execute(120, LateUpdate);
 
         }
@@ -99,5 +105,6 @@ namespace RPG
             TecladoEvento te = new TecladoEvento { Tecla = (int)e.Key, Repeticoes = e.KeyStatus.RepeatCount, Modificador = (byte)ModificadorList.KeyUp };
             AmbienteJogo.EnviarEvento(te);
         }
+        
     }
 }

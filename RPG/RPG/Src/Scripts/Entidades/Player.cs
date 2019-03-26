@@ -6,13 +6,13 @@ using _3ReaisEngine.Core;
     [RequerComponente(typeof(Colisao))]
     [RequerComponente(typeof(Render))]
     [RequerComponente(typeof(Inventario))]
-
-    class Player :Entidade
+    [RequerComponente(typeof(Status))]
+    class Player :Entidade,Atacavel
     {
         bool mudou=false;
         Colisao col;
         float vel;
-
+        Arco arc;
         public Player(Vector2 pos)
         {
             AddComponente<Mercador>();
@@ -21,6 +21,7 @@ using _3ReaisEngine.Core;
             vel = 5;
             col = GetComponente<Colisao>();
             col.tipo = TipoColisao.Dinamica;
+            arc = new Arco();
             AmbienteJogo.AdcionarEntidade(this);
            
         }
@@ -67,5 +68,12 @@ using _3ReaisEngine.Core;
                 mudou = true;
             }
         }
+
+    public void Atacar(Status e)
+    {
+        Engine.Debug("Atacando oponente");
+     
+        arc.Atacar(e);
     }
+}
 

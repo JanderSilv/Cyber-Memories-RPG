@@ -1,6 +1,8 @@
-﻿
-public class Arco : Item, Comercial,Atacavel,Equipavel
+﻿public class Arco : Item, Comercial,Atacavel,Equipavel
 {
+    Envenenamento env;
+    Trovao trov;
+
     public Arco()
     {
         this.TipoItem = (ushort)tipoItem.Arma;
@@ -8,7 +10,8 @@ public class Arco : Item, Comercial,Atacavel,Equipavel
         this.Preco = 55;
         this.Estacavel = false;
         this.Descricao = "Arco de Ruan que Yasmim roubou";
-        
+        env = new Envenenamento();
+        trov = new Trovao(); 
         ItemManager.GenID(this);
         _3ReaisEngine.Engine.Debug("ID do arco " + ID);
     }
@@ -20,7 +23,12 @@ public class Arco : Item, Comercial,Atacavel,Equipavel
 
     public void Atacar(Status e)
     {
-        e.saude -= 5;           
+        //Ação comum
+        e.saude -= 5;
+        //Efeito de trovao
+        trov.Atacar(e);
+        //Envenamento
+        env.Atacar(e);
     }
     
     public int getPreco()
