@@ -100,11 +100,20 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Src\Scripts\Caixa.cs" />
-    <Compile Include="Src\Scripts\Inventario.cs" />
-    <Compile Include="Src\Scripts\Item.cs" />
-    <Compile Include="Src\Scripts\Mercador.cs" />
-    <Compile Include="Src\Scripts\Player.cs" />
+    <Compile Include="Src\Scripts\Componentes\Estatus.cs" />
+    <Compile Include="Src\Scripts\Entidades\Caixa.cs" />
+    <Compile Include="Src\Scripts\Componentes\Inventario.cs" />
+    <Compile Include="Src\Scripts\Interfaces\Armazenavel.cs" />
+    <Compile Include="Src\Scripts\Interfaces\Comercial.cs" />
+    <Compile Include="Src\Scripts\Interfaces\Atacavel.cs" />
+    <Compile Include="Src\Scripts\Interfaces\Equipavel.cs" />
+    <Compile Include="Src\Scripts\Items\Armadura.cs" />
+    <Compile Include="Src\Scripts\Items\Item.cs" />
+    <Compile Include="Src\Scripts\Componentes\Mercador.cs" />
+    <Compile Include="Src\Scripts\Entidades\Player.cs" />
+    <Compile Include="Src\Scripts\Items\Arco.cs" />
+    <Compile Include="Src\Scripts\Managers\InventarioManager.cs" />
+    <Compile Include="Src\Scripts\Managers\ItemManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">

@@ -89,7 +89,7 @@ namespace _3ReaisEngine
                 renders.Add(r);
                 window.Children.Add(r.img);
             }
-
+            e.OnCreate();
         }
 
         public static void RemoverEntidade(Entidade e)

@@ -3,10 +3,6 @@ using _3ReaisEngine.Attributes;
 using _3ReaisEngine.Components;
 using _3ReaisEngine.Core;
 
-using Windows.UI.Xaml.Media.Imaging;
-
-namespace RPG.Src.Scripts
-{
     [RequerComponente(typeof(Colisao))]
     [RequerComponente(typeof(Render))]
     [RequerComponente(typeof(Inventario))]
@@ -19,7 +15,8 @@ namespace RPG.Src.Scripts
 
         public Player(Vector2 pos)
         {
-            
+            AddComponente<Mercador>();
+
             EntPos = pos;
             vel = 5;
             col = GetComponente<Colisao>();
@@ -71,4 +68,4 @@ namespace RPG.Src.Scripts
             }
         }
     }
-}
+

@@ -25,15 +25,57 @@ namespace RPG
             AmbienteJogo.Init(Game_Screen);
             Canvas.SetZIndex(Game_Screen, AmbienteJogo.defaltuLayer.prioridade);
             Canvas.SetZIndex(UIPanel, AmbienteJogo.UILayer.prioridade);
-           // Canvas.SetZIndex(txt_colisao, AmbienteJogo.UILayer.prioridade);
-          //  Canvas.SetZIndex(txt_cxPos, AmbienteJogo.UILayer.prioridade);
-          //  Canvas.SetZIndex(txt_playerPos, AmbienteJogo.UILayer.prioridade);
-
+           
+            Mercador m1, m2;
+          
             p = new Player(new Vector2(60, 60));
             cx = new Caixa(new Vector2(160, 160));
             c = p.GetComponente<Colisao>();
-            AmbienteJogo.Execute(120, LateUpdate);
 
+            Arco arc = new Arco();
+            Arco arc1 = new Arco();
+            Arco arc2 = new Arco();
+
+            Armadura arm = new Armadura();
+            Armadura arm1 = new Armadura();
+            Armadura arm2 = new Armadura();
+
+            if (InventarioManager.Add(arc, p.GetComponente<Inventario>())) Engine.Debug("Arc adicionado");
+            if (InventarioManager.Add(arc, p.GetComponente<Inventario>())) Engine.Debug("Arc adicionado");
+            if (InventarioManager.Add(arc1, p.GetComponente<Inventario>())) Engine.Debug("Arc1 adicionado");
+
+            if (InventarioManager.Add(arm, p.GetComponente<Inventario>())) Engine.Debug("Arm adicionado");
+            if (InventarioManager.Add(arm1, p.GetComponente<Inventario>())) Engine.Debug("Arm1 adicionado");
+            
+            if(InventarioManager.Remove(arc.ID, p.GetComponente<Inventario>()) != null)
+            {
+                Engine.Debug("Arc removido");
+            }
+            if (InventarioManager.Remove(arc.ID, p.GetComponente<Inventario>()) != null)
+            {
+                Engine.Debug("Arc removido");
+            }
+            else
+            {
+                Engine.Debug("Arc nao encontrado");
+            }
+
+            p.GetComponente<Mercador>().dinheiro = 50;
+
+
+            Player m = new Player(Vector2.Zero);
+            m.AddComponente<Mercador>();
+            InventarioManager.Add(arc, m.GetComponente<Inventario>());
+            InventarioManager.Add(arm, m.GetComponente<Inventario>());
+
+            m1 = p.GetComponente<Mercador>();
+            m2 = m.GetComponente<Mercador>();
+
+             Engine.Debug(m1.Comprar(m2, arc.ID));
+             Engine.Debug(m1.Comprar(m2, arm.ID));
+             Engine.Debug(m1.Comprar(m2, arm.ID));
+
+            AmbienteJogo.Execute(120, LateUpdate);
 
         }
 
