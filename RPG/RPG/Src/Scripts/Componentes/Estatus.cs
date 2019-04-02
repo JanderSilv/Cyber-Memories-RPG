@@ -13,6 +13,5 @@ public class Status : Componente<Status>
     public int forca, inteligencia, resistencia, sorte, saude, destreza;
     public float velocidade;
     public Estado estadoAtual;
-    public List<Atacavel> efeitos = new List<Atacavel>();
 }
 
