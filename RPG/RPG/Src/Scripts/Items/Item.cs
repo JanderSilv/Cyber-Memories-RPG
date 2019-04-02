@@ -1,9 +1,9 @@
-﻿public enum tipoItem:ushort
+﻿public enum tipoItem : ushort
 {
-    Armadura=1,
-    Arma=2,
-    Consumivel=3,
-    Encantavel=4
+    Armadura = 1,
+    Arma = 2,
+    Consumivel = 3,
+    Encantavel = 4
 }
 
 public class Item : Armazenavel

@@ -125,11 +125,14 @@
     <Compile Include="RPG\Core\Vector2.cs" />
     <Compile Include="RPG\Core\Vector4.cs" />
     <Compile Include="RPG\Core\Input.cs" />
+    <Compile Include="RPG\Core\Window.cs" />
     <Compile Include="RPG\Engine.cs" />
+    <Compile Include="RPG\Entidades\Camera.cs" />
     <Compile Include="RPG\Events\ManipuladorEventos.cs" />
     <Compile Include="RPG\Events\MouseEvento.cs" />
     <Compile Include="RPG\Events\PrioridadeCamada.cs" />
     <Compile Include="RPG\Events\TecladoEvento.cs" />
+    <Compile Include="RPG\Layers\ViewLayer.cs" />
     <EmbeddedResource Include="Properties\_3ReaisEngieUWP.rd.xml" />
   </ItemGroup>
   <ItemGroup>

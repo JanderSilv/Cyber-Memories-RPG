@@ -2,12 +2,14 @@
 using _3ReaisEngine.Core;
 using _3ReaisEngine.Events;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Threading.Tasks;
 using Windows.UI.Xaml.Controls;
 using Imagine;
 using _3ReaisEngine.RPG.Core;
+using _3ReaisEngine.Entidades;
 
 namespace _3ReaisEngine
 {
@@ -18,58 +20,74 @@ namespace _3ReaisEngine
     public static class AmbienteJogo
     {
         public static bool Run = true;
-
-        static Panel window;
+        
+        static Window currentWindow;
         static List<Entidade> entidades = new List<Entidade>();
         static List<Colisao> colisores = new List<Colisao>();
         static List<Render> renders = new List<Render>();
-
+        static double UpdateTimeElapsed;
         static ManipuladorEventos gerenciadorEventos = new ManipuladorEventos();
         static GerenciadorFisica gerenciadorFisica = new GerenciadorFisica();
+        static Stopwatch watch;
         public static Input Input { get; private set; }
-
-        public static Layer defaltuLayer = new Layer();
-        public static Layer UILayer = new Layer(1);
-
+     
         public static float time = 0;
 
-        public static void Init(Panel p)
+        public static Camera currentCamera;
+     
+        public static void Init(Page p)
         {
-
+            currentWindow = new Window(p,720,640);
             Run = true;
-            window = p;
+            watch = Stopwatch.StartNew();
+
             Input = new Input();
+           
             RegistrarEventoCallBack(PrioridadeEvento.Interface, Input.UpdateTeclado);
-
+            currentCamera = new Camera();
             Debug.WriteLine("Engine Inciada");
-
+            Debug.WriteLine(currentWindow.Widht + "," + currentWindow.Height);
+            watch.Stop();
+            Debug.WriteLine(watch.ElapsedMilliseconds);
         }
 
         public static async Task Execute(int frames = 60, LateUpdae late = null)
         {
             while (Run)
             {
-                gerenciadorEventos.Update();
+                watch = Stopwatch.StartNew();
 
-                if (colisores.Count > 0) gerenciadorFisica.UpdateColisions(colisores.ToArray());
+                currentCamera.Update();
+                gerenciadorEventos.Update();
+                gerenciadorFisica.UpdateColisions(colisores.ToArray()); //ok
 
                 foreach (Entidade e in entidades)
                 {
+                   
                     if (!e.IsStatic) e.Update();
-                 
                 }
+                foreach (Entidade e in entidades)
+                {
+                    e.EntPos -= currentCamera.delta;
+                }
+                
+                
+                
 
                 foreach (Render r in renders)
                 {
-                   
                     r.transform.X = r.entidade.EntPos.x;
-                    r.transform.Y = r.entidade.EntPos.y;
-                    
+                    r.transform.Y = r.entidade.EntPos.y;            
                 }
 
                 time++;
-                await Task.Delay(1000 / frames);
+                watch.Stop();
+                UpdateTimeElapsed = watch.ElapsedMilliseconds;
+               
+                await Task.Delay(1000/frames);
                 late?.Invoke();
+               
+                
             }
 
         }
@@ -80,6 +98,10 @@ namespace _3ReaisEngine
             entidades.Add(e);
             Colisao c = null;
             Render r = null;
+            
+            e.EntPos.x += currentWindow.Widht / 4;
+            e.EntPos.y += currentWindow.Height / 4;
+            
             if (e.GetComponente(ref c))
             {
                 colisores.Add(c);
@@ -87,7 +109,7 @@ namespace _3ReaisEngine
             if (e.GetComponente(ref r))
             {
                 renders.Add(r);
-                window.Children.Add(r.img);
+                currentWindow.Add(r.img);
             }
             e.OnCreate();
         }
@@ -104,7 +126,7 @@ namespace _3ReaisEngine
             if (e.GetComponente(ref r))
             {
                 renders.Remove(r);
-                window.Children.Remove(r.img);
+                currentWindow.Remove(r.img);
             }
         }
 

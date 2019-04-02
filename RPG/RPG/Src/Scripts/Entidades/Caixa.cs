@@ -10,12 +10,15 @@ namespace RPG.Src.Scripts
     [RequerComponente(typeof(Render))]
     class Caixa : Entidade
     {
-        public Caixa(Vector2 pos):base()
-        {  
-            this.EntPos = pos;
+        public Caixa(Vector2 pos) : base()
+        {
+            EntPos = pos;
+            Nome = "Rocha";
             IsStatic = true;
             AmbienteJogo.AdcionarEntidade(this);
-         
+            Render r = GetComponente<Render>();
+            GetComponente<Colisao>().tipo = TipoColisao.Dinamica;
+            r.LoadImage("Src/JunglerockAlpha.png");
         }
     }
 }

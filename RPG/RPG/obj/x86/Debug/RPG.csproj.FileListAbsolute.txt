@@ -223,3 +223,6 @@ C:\Users\ruann\source\repos\RPG\RPG\obj\x86\Debug\resources.en-us.resfiles.inter
 C:\Users\ruann\source\repos\RPG\RPG\obj\x86\Debug\3ReaisEngieUWP.pri.xml
 C:\Users\ruann\source\repos\RPG\RPG\obj\x86\Debug\ProjectArchitectures.txt
 C:\Users\ruann\source\repos\RPG\RPG\obj\x86\Debug\RPG.csprojAssemblyReference.cache
+C:\DEV\Projects\RPG-LP2\RPG\RPG\obj\x86\Debug\RPG.csprojAssemblyReference.cache
+C:\DEV\Projects\RPG-LP2\RPG\RPG\obj\x86\Debug\RPG.exe
+C:\DEV\Projects\RPG-LP2\RPG\RPG\obj\x86\Debug\RPG.pdb

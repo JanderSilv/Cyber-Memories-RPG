@@ -556,6 +556,9 @@
     <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\cabeca.png">
       <PackagePath>Src\cabeca.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\JunglerockAlpha.png">
+      <PackagePath>Src\JunglerockAlpha.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\dance.gif">
       <PackagePath>Src\dance.gif</PackagePath>
     </AppxPackagedFile>

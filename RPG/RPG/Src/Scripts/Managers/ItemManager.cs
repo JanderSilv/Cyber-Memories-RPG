@@ -9,12 +9,12 @@
     /// </summary>
     /// <param name="item"></param>
     /// <param name="suggested_id"></param>
-    public static void GenID(Item item,ushort suggested_id=1)
+    public static void GenID(Item item, ushort suggested_id = 1)
     {
 
-        uint t = (ushort)item.TipoItem;
+        uint t = item.TipoItem;
         uint id = 0;
-        uint low = (uint)0x0000FFFF;
+        uint low = 0x0000FFFF;
         t = (t << 16);
 
         item.ID = (t & 0xFFFF0000);
@@ -47,7 +47,7 @@
         {
             id = suggested_id & low;
         }
-      
+
         item.ID |= id;
 
     }

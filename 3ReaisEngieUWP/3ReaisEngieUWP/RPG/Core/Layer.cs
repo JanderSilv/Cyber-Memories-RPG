@@ -10,23 +10,14 @@ namespace _3ReaisEngine.RPG.Core
     //Sistema de ordenação da renderização
   public class Layer
     {
-        public int prioridade=0;
-        public List<Render> renders = new List<Render>(); 
-        public Layer()
+        public virtual void OnUpdate()
         {
 
         }
-        public Layer(int prioridade)
+        public virtual void OnRender()
         {
-            this.prioridade = prioridade;
+
         }
-        public void Registrar(Render r)
-        {
-            renders.Add(r);
-        }
-        public void Remover(Render r)
-        {
-            renders.Remove(r);
-        }
+
     }
 }

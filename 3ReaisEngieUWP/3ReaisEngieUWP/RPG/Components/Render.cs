@@ -13,7 +13,7 @@ namespace _3ReaisEngine.Components
     {
         public Image img;
         public TranslateTransform transform;
-        public Layer layer = AmbienteJogo.defaltuLayer;
+       
 
         public Render()
         {

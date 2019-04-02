@@ -139,6 +139,7 @@
     <Content Include="Src\dance.gif">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Src\JunglerockAlpha.png" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
