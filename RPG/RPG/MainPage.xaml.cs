@@ -1,61 +1,61 @@
 ﻿using _3ReaisEngine;
-using _3ReaisEngine.Components;
 using _3ReaisEngine.Core;
-using _3ReaisEngine.Events;
-//using _3ReaisEngine.RPG.Core;
+using _3ReaisEngine.RPG.Core;
+using _3ReaisEngine.UI;
 using RPG.Src.Scripts;
-using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
 
 namespace RPG
 {
 
     public sealed partial class MainPage : Page
     {
-        Player p;
-        Colisao c;
-        Caixa cx;
+        bool add = true;
+        Window window;
+        UButton b = new UButton("Teste", new Vector2(50, 50));
+        UButton bb;
+
+        void a()
+        {
+            if (!add) {
+                window.Remove(b);
+                add = true;
+            }
+            else {
+                window.Add(b);
+                add = false;
+
+            }
+        }
+
         public MainPage()
         {
 
-            InitializeComponent();
-           
-            AmbienteJogo.Init(Game_Screen);
-            Canvas.SetZIndex(Game_Screen, AmbienteJogo.defaltuLayer.prioridade);
-            Canvas.SetZIndex(UIPanel, AmbienteJogo.UILayer.prioridade);
-           // Canvas.SetZIndex(txt_colisao, AmbienteJogo.UILayer.prioridade);
-          //  Canvas.SetZIndex(txt_cxPos, AmbienteJogo.UILayer.prioridade);
-          //  Canvas.SetZIndex(txt_playerPos, AmbienteJogo.UILayer.prioridade);
-
-            p = new Player(new Vector2(60, 60));
-            cx = new Caixa(new Vector2(160, 160));
-            c = p.GetComponente<Colisao>();
-            AmbienteJogo.Execute(120, LateUpdate);
-
-
-        }
-
-        public void LateUpdate()
-        {     
             
-            txt_ciclo.Text = AmbienteJogo.time.ToString();
-            txt_colisao.Text = c.momentoDeColisao.ToString();
-            txt_cxPos.Text = cx.EntPos.ToString();
-            txt_playerPos.Text = p.EntPos.ToString();
-        }
-   
-        private void Page_KeyDown(object sender, KeyRoutedEventArgs e)
-        {
-            TecladoEvento te = new TecladoEvento { Tecla = (int)e.Key, Repeticoes = e.KeyStatus.RepeatCount, Modificador = (byte)ModificadorList.KeyDown };
-            AmbienteJogo.EnviarEvento(te);
+            InitializeComponent();
+
+            string tt = "";
+
+            window = new Window(this, 500, 320);
+            bb = new UButton("Teste", new Vector2(100, 100), a);
+
+          
+            window.Add(bb);
+            AmbienteJogo.Init(window);
+            
+            new Caixa(new Vector2(-200, 0));
+            new Caixa(new Vector2(0, -200));
+            new Caixa(new Vector2(200, 0));
+            new Caixa(new Vector2(0, 200));
+            new Caixa(new Vector2(0, 290));
+
+            new Player(new Vector2(0, 0));
+           
+            AmbienteJogo.Execute(120);
+
+            
         }
 
-        private void Page_KeyUp(object sender, KeyRoutedEventArgs e)
-        {
-            TecladoEvento te = new TecladoEvento { Tecla = (int)e.Key, Repeticoes = e.KeyStatus.RepeatCount, Modificador = (byte)ModificadorList.KeyUp };
-            AmbienteJogo.EnviarEvento(te);
-        }
+       
     }
 }

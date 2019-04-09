@@ -100,9 +100,23 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Src\Scripts\Caixa.cs" />
-    <Compile Include="Src\Scripts\Inventario.cs" />
-    <Compile Include="Src\Scripts\Player.cs" />
+    <Compile Include="Src\Scripts\Componentes\Estatus.cs" />
+    <Compile Include="Src\Scripts\Entidades\Caixa.cs" />
+    <Compile Include="Src\Scripts\Componentes\Inventario.cs" />
+    <Compile Include="Src\Scripts\Habilidade\Envenenamento.cs" />
+    <Compile Include="Src\Scripts\Habilidade\Trovao.cs" />
+    <Compile Include="Src\Scripts\Interfaces\Armazenavel.cs" />
+    <Compile Include="Src\Scripts\Interfaces\Comercial.cs" />
+    <Compile Include="Src\Scripts\Interfaces\Atacavel.cs" />
+    <Compile Include="Src\Scripts\Interfaces\Equipavel.cs" />
+    <Compile Include="Src\Scripts\Interfaces\Habilidade.cs" />
+    <Compile Include="Src\Scripts\Items\Armadura.cs" />
+    <Compile Include="Src\Scripts\Items\Item.cs" />
+    <Compile Include="Src\Scripts\Componentes\Mercador.cs" />
+    <Compile Include="Src\Scripts\Entidades\Player.cs" />
+    <Compile Include="Src\Scripts\Items\Arco.cs" />
+    <Compile Include="Src\Scripts\Managers\InventarioManager.cs" />
+    <Compile Include="Src\Scripts\Managers\ItemManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -119,12 +133,18 @@
     <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
     <Content Include="Assets\StoreLogo.png" />
     <Content Include="Assets\Wide310x150Logo.scale-200.png" />
+    <Content Include="Src\Animations\dead.gif" />
+    <Content Include="Src\Animations\Dead.png" />
+    <Content Include="Src\Animations\idle.gif" />
+    <Content Include="Src\Animations\jump.gif" />
+    <Content Include="Src\Animations\walk.gif" />
     <Content Include="Src\cabeca.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Src\dance.gif">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Src\JunglerockAlpha.png" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">

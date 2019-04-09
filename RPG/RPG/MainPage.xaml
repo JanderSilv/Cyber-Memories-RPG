@@ -7,23 +7,5 @@
     xmlns:Custom="using:Windows.UI.Xaml.Controls.Maps"
     x:Class="RPG.MainPage"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" KeyDown="Page_KeyDown" KeyUp="Page_KeyUp">
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Height="640" Width="720" HorizontalAlignment="Left"/>
 
-    <RelativePanel x:Name="Screen" Margin="0,10,0,30" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
-        <RelativePanel Name="UIPanel">
-        <Button Content="Button" HorizontalAlignment="Left" Margin="18,122,0,0" VerticalAlignment="Top" Canvas.Left="527" Canvas.Top="273" RequestedTheme="Default"/>
-        <TextBlock Canvas.Left="492" Canvas.Top="24" Text="Ciclo:" TextWrapping="Wrap" HorizontalAlignment="Stretch" Margin="18,17,-18,-17" VerticalAlignment="Stretch" RenderTransformOrigin="0.333,0.35"/>
-        <TextBlock x:Name="txt_ciclo" Canvas.Left="536" Canvas.Top="24" Text="" TextWrapping="Wrap" Margin="59,21,-72,-21" RenderTransformOrigin="0.538,0.55" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
-        <TextBlock Canvas.Left="429" Canvas.Top="54" Text="Posicao Player:" TextWrapping="Wrap" Margin="18,37,-16,-37"/>
-        <TextBlock Canvas.Left="431" Canvas.Top="82" Text="Posicao Caixa:" TextWrapping="Wrap" Margin="18,57,-18,-57" Width="93"/>
-        <TextBlock Canvas.Left="433" Canvas.Top="113" Text="Colisao:" TextWrapping="Wrap" Margin="18,77,-14,-77"/>
-        <TextBlock x:Name="txt_playerPos" Canvas.Left="534" Canvas.Top="57" Text="" TextWrapping="Wrap" Margin="130,41,-174,-41" RenderTransformOrigin="0.477,0.55"/>
-        <TextBlock x:Name="txt_cxPos" Canvas.Left="529" Canvas.Top="83" Text="" TextWrapping="Wrap" Margin="115,61,-128,-61" RenderTransformOrigin="0.538,0.5"/>
-        <TextBlock x:Name="txt_colisao" Canvas.Left="501" Canvas.Top="114" Text="" TextWrapping="Wrap" Margin="74,77,-87,-77" RenderTransformOrigin="0.538,0.5"/>
-
-        </RelativePanel>
-        <RelativePanel Name="Game_Screen" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"></RelativePanel>
-    </RelativePanel>
-
-
-</Page>

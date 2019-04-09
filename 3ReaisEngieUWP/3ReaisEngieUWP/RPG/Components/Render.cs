@@ -13,7 +13,7 @@ namespace _3ReaisEngine.Components
     {
         public Image img;
         public TranslateTransform transform;
-        public Layer layer = AmbienteJogo.defaltuLayer;
+       
 
         public Render()
         {
@@ -22,11 +22,13 @@ namespace _3ReaisEngine.Components
             img = new Image();
             BitmapImage source = new BitmapImage(new Uri("ms-appx:/Assets/StoreLogo.png"));
             img.Source = source;
+            
             source.Play();
             img.Width = 100;
             img.Height = 100;
             img.RenderTransform = transform;
         }
+
         public Render(float x, float y)
         {
             transform = new TranslateTransform();

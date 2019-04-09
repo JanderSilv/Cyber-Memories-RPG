@@ -15,6 +15,7 @@ namespace _3ReaisEngine.Core
             RegistrarTecla(VirtualKey.W);
             RegistrarTecla(VirtualKey.D);
             RegistrarTecla(VirtualKey.S);
+            RegistrarTecla(VirtualKey.Escape);
         }
 
         public void RegistrarTecla(VirtualKey key)

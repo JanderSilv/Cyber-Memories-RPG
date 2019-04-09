@@ -161,6 +161,10 @@ namespace _3ReaisEngine.Core
         /*
          É executado a cada frame do jogo
          */
+        public virtual void OnCreate()
+        {
+
+        } 
         public virtual void Update()
         {
            

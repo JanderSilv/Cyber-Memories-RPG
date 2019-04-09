@@ -71,6 +71,9 @@ namespace RPG
                 // Verifique se a janela atual está ativa
                 Window.Current.Activate();
             }
+
+            DebugSettings.EnableFrameRateCounter = true;
+           
         }
 
         /// <summary>

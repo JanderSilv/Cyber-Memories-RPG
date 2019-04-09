@@ -14,7 +14,8 @@ namespace _3ReaisEngine.Core
         public void UpdateColisions(Colisao[] array)
         {
             length = array.Length;
-       
+            bool[] tested = new bool[array.Length];
+
             if (length <= 1) return;
 
             for (int i = 0; i < length; i++)
@@ -23,9 +24,9 @@ namespace _3ReaisEngine.Core
                 if (array[i].tipo == TipoColisao.Estatica) continue;
                 array[i].momentoDeColisao = new Vector4(0, 0, 0, 0);
 
-                for (int j = i + 1; j < length; j++)
+                for (int j = 0; j < length; j++)
                 {
-                    
+                    if (j == i) continue;
                     dist.y = Math.Abs(array[i].entidade.EntPos.y - array[j].entidade.EntPos.y);
                     dist.x = Math.Abs(array[i].entidade.EntPos.x - array[j].entidade.EntPos.x);
 
@@ -43,16 +44,15 @@ namespace _3ReaisEngine.Core
                     float top = (array[i].entidade.EntPos.y - array[i].tamanho.y / 2) - (array[j].entidade.EntPos.y + array[j].tamanho.y / 2);
                     float bot = (array[j].entidade.EntPos.y - array[j].tamanho.y / 2) - (array[i].entidade.EntPos.y + array[i].tamanho.y / 2);
 
-
+                   
 
                     if (array[i].entidade.EntPos.x < array[j].entidade.EntPos.x)
                     {
                         if (dir < 0 && dist.y <= unsafeY * 0.93f)
                         {
-                            array[i].momentoDeColisao.x = dir;
-                            array[j].momentoDeColisao.z = dir;
-                            array[i].entidade.OnColide(array[j]);
-                            array[j].entidade.OnColide(array[i]);
+                          //  Engine.Debug(array[j].entidade.Nome + ": " + dir + "," + esq + "," + top + "," + bot);
+                            array[i].momentoDeColisao.x = dir;                         
+                            array[i].entidade.OnColide(array[j]);                      
                             continue;
                         }
                     }
@@ -60,10 +60,9 @@ namespace _3ReaisEngine.Core
                     {
                         if (esq < 0 && dist.y <= unsafeY * 0.93f)
                         {
-                            array[i].momentoDeColisao.z = esq;
-                            array[j].momentoDeColisao.x = esq;
+                        //    Engine.Debug(array[j].entidade.Nome + ": " + dir + "," + esq + "," + top + "," + bot);
+                            array[i].momentoDeColisao.z = esq;                           
                             array[i].entidade.OnColide(array[j]);
-                            array[j].entidade.OnColide(array[i]);
                             continue;
                         }
                     }
@@ -72,10 +71,9 @@ namespace _3ReaisEngine.Core
                     {
                         if (top < 0 && dist.x <= unsafeX * 0.93f)
                         {
+                        //    Engine.Debug(array[j].entidade.Nome + ": " + dir + "," + esq + "," + top + "," + bot);
                             array[i].momentoDeColisao.y = top;
-                            array[j].momentoDeColisao.w = top;
                             array[i].entidade.OnColide(array[j]);
-                            array[j].entidade.OnColide(array[i]);
                             continue;
                         }
                     }
@@ -83,17 +81,16 @@ namespace _3ReaisEngine.Core
                     {
                         if (bot < 0 && dist.x <= unsafeX * 0.9f)
                         {
-                            array[i].momentoDeColisao.w = bot;
-                            array[j].momentoDeColisao.y = bot;
+                        //    Engine.Debug(array[j].entidade.Nome+": "+ dir + "," + esq + "," + top + "," + bot);
+                            array[i].momentoDeColisao.w = bot;                            
                             array[i].entidade.OnColide(array[j]);
-                            array[j].entidade.OnColide(array[i]);
                             continue;
                         }
                     }
 
-
-
+                  
                 }
+                
             }
         }
     }

@@ -19,7 +19,7 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>C:\DEV\Projects\RPG-LP2\RPG\RPG\bin\x64\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>466FAC5E57A146246834D73A03EC5D78EDD4EA053483FB1B0127FC2AE804A8FA</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>7500CD1F2C62A7314628F15074D62AC6C7B3046494D69090D71F5BA005D32199</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>2d5fb77a-6e92-49d7-b9e3-84e29a9f9a60_1.0.0.0_x64__df0wr8x2vnj7j</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>2d5fb77a-6e92-49d7-b9e3-84e29a9f9a60_df0wr8x2vnj7j!App</RegisteredUserModeAppID>
     <RegisteredPackageID>2d5fb77a-6e92-49d7-b9e3-84e29a9f9a60</RegisteredPackageID>
@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-03-24T17:44:49.082</Modified>
+      <Modified>2019-04-09T13:37:53.790</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\bin\x64\Debug\RPG.exe">
       <PackagePath>entrypoint\RPG.exe</PackagePath>
-      <Modified>2019-03-24T17:44:42.633</Modified>
+      <Modified>2019-04-09T13:37:53.190</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.netcore.universalwindowsplatform\6.1.7\runtimes\win10-x64\nativeassets\uap10.0.15138\clrcompression.dll">
       <PackagePath>clrcompression.dll</PackagePath>
@@ -697,65 +697,89 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\3ReaisEngieUWP\3ReaisEngieUWP\bin\x64\Debug\3ReaisEngieUWP.dll">
       <PackagePath>3ReaisEngieUWP.dll</PackagePath>
-      <Modified>2019-03-20T03:45:58.398</Modified>
+      <Modified>2019-04-09T13:35:50.125</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2019-02-14T01:06:55.552</Modified>
+      <Modified>2019-03-24T20:37:01.145</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2018-09-25T01:02:49.369</Modified>
+      <Modified>2019-03-24T20:37:01.089</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-09-25T01:02:49.369</Modified>
+      <Modified>2019-03-24T20:37:01.091</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-09-25T01:02:49.369</Modified>
+      <Modified>2019-03-24T20:37:01.093</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-09-25T01:02:49.369</Modified>
+      <Modified>2019-03-24T20:37:01.095</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-09-25T01:02:49.369</Modified>
+      <Modified>2019-03-24T20:37:01.098</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-09-25T01:02:49.369</Modified>
+      <Modified>2019-03-24T20:37:01.100</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-09-25T01:02:49.369</Modified>
+      <Modified>2019-03-24T20:37:01.102</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\Animations\Dead.png">
+      <PackagePath>Src\Animations\Dead.png</PackagePath>
+      <Modified>2019-04-08T04:09:30.220</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\cabeca.png">
       <PackagePath>Src\cabeca.png</PackagePath>
-      <Modified>2019-02-18T21:52:59.055</Modified>
+      <Modified>2019-03-24T20:37:01.164</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\JunglerockAlpha.png">
+      <PackagePath>Src\JunglerockAlpha.png</PackagePath>
+      <Modified>2019-04-01T02:56:04.212</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\Animations\dead.gif">
+      <PackagePath>Src\Animations\dead.gif</PackagePath>
+      <Modified>2019-04-08T03:59:24.252</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\Animations\idle.gif">
+      <PackagePath>Src\Animations\idle.gif</PackagePath>
+      <Modified>2019-04-08T03:59:24.214</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\Animations\jump.gif">
+      <PackagePath>Src\Animations\jump.gif</PackagePath>
+      <Modified>2019-04-08T03:59:24.217</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\Animations\walk.gif">
+      <PackagePath>Src\Animations\walk.gif</PackagePath>
+      <Modified>2019-04-08T03:59:24.250</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\dance.gif">
       <PackagePath>Src\dance.gif</PackagePath>
-      <Modified>2019-02-22T20:40:25.822</Modified>
+      <Modified>2019-04-04T18:45:28.799</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\bin\x64\Debug\RPG.xr.xml">
       <PackagePath>RPG.xr.xml</PackagePath>
-      <Modified>2019-03-20T03:43:19.949</Modified>
+      <Modified>2019-04-02T03:00:15.028</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\bin\x64\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2019-03-24T17:44:42.365</Modified>
+      <Modified>2019-04-09T13:37:53.053</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\bin\x64\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2019-03-24T17:44:42.366</Modified>
+      <Modified>2019-04-09T13:37:53.053</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.17134.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -764,11 +788,11 @@
     <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-03-20T03:27:35.774</Modified>
+      <Modified>2019-04-08T04:11:16.492</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\bin\x64\Debug\Core\RPG.exe">
       <PackagePath>RPG.exe</PackagePath>
-      <Modified>2019-03-24T17:44:49.074</Modified>
+      <Modified>2019-04-09T13:37:53.786</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
