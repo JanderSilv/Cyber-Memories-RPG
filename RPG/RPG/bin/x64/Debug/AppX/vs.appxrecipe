@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-04-02T19:16:59.339</Modified>
+      <Modified>2019-04-09T13:37:53.790</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\bin\x64\Debug\RPG.exe">
       <PackagePath>entrypoint\RPG.exe</PackagePath>
-      <Modified>2019-04-02T19:16:58.436</Modified>
+      <Modified>2019-04-09T13:37:53.190</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.netcore.universalwindowsplatform\6.1.7\runtimes\win10-x64\nativeassets\uap10.0.15138\clrcompression.dll">
       <PackagePath>clrcompression.dll</PackagePath>
@@ -697,7 +697,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\3ReaisEngieUWP\3ReaisEngieUWP\bin\x64\Debug\3ReaisEngieUWP.dll">
       <PackagePath>3ReaisEngieUWP.dll</PackagePath>
-      <Modified>2019-04-02T19:16:54.244</Modified>
+      <Modified>2019-04-09T13:35:50.125</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
@@ -737,6 +737,10 @@
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2019-03-24T20:37:01.102</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\Animations\Dead.png">
+      <PackagePath>Src\Animations\Dead.png</PackagePath>
+      <Modified>2019-04-08T04:09:30.220</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\cabeca.png">
       <PackagePath>Src\cabeca.png</PackagePath>
       <Modified>2019-03-24T20:37:01.164</Modified>
@@ -745,9 +749,25 @@
       <PackagePath>Src\JunglerockAlpha.png</PackagePath>
       <Modified>2019-04-01T02:56:04.212</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\Animations\dead.gif">
+      <PackagePath>Src\Animations\dead.gif</PackagePath>
+      <Modified>2019-04-08T03:59:24.252</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\Animations\idle.gif">
+      <PackagePath>Src\Animations\idle.gif</PackagePath>
+      <Modified>2019-04-08T03:59:24.214</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\Animations\jump.gif">
+      <PackagePath>Src\Animations\jump.gif</PackagePath>
+      <Modified>2019-04-08T03:59:24.217</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\Animations\walk.gif">
+      <PackagePath>Src\Animations\walk.gif</PackagePath>
+      <Modified>2019-04-08T03:59:24.250</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\dance.gif">
       <PackagePath>Src\dance.gif</PackagePath>
-      <Modified>2019-03-24T20:37:01.167</Modified>
+      <Modified>2019-04-04T18:45:28.799</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\bin\x64\Debug\RPG.xr.xml">
       <PackagePath>RPG.xr.xml</PackagePath>
@@ -755,11 +775,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\bin\x64\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2019-04-02T19:16:58.291</Modified>
+      <Modified>2019-04-09T13:37:53.053</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\bin\x64\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2019-04-02T19:16:58.291</Modified>
+      <Modified>2019-04-09T13:37:53.053</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.17134.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -768,11 +788,11 @@
     <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-04-02T16:48:43.072</Modified>
+      <Modified>2019-04-08T04:11:16.492</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\bin\x64\Debug\Core\RPG.exe">
       <PackagePath>RPG.exe</PackagePath>
-      <Modified>2019-04-02T19:16:59.334</Modified>
+      <Modified>2019-04-09T13:37:53.786</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

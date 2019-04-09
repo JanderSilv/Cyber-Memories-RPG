@@ -36,7 +36,7 @@ namespace RPG
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 10.0.17.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         public void InitializeComponent()
-         {
+        {
             if (_contentLoaded)
                 return;
 

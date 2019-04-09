@@ -20,8 +20,8 @@ namespace _3ReaisEngine
     public static class AmbienteJogo
     {
         public static bool Run = true;
-        
-        static Window currentWindow;
+
+       
         static List<Entidade> entidades = new List<Entidade>();
         static List<Colisao> colisores = new List<Colisao>();
         static List<Render> renders = new List<Render>();
@@ -29,26 +29,33 @@ namespace _3ReaisEngine
         static ManipuladorEventos gerenciadorEventos = new ManipuladorEventos();
         static GerenciadorFisica gerenciadorFisica = new GerenciadorFisica();
         static Stopwatch watch;
-        public static Input Input { get; private set; }
-     
-        public static float time = 0;
 
-        public static Camera currentCamera;
-     
+        public static Input Input { get; private set; }
+        public static float time { get; private set; }
+        public static Camera currentCamera { get; private set; }
+        public static Window window { get; private set; }
+
         public static void Init(Page p)
         {
-            currentWindow = new Window(p,720,640);
+            time = 0;
+            window = new Window(p,720,640);
             Run = true;
             watch = Stopwatch.StartNew();
-
             Input = new Input();
-           
             RegistrarEventoCallBack(PrioridadeEvento.Interface, Input.UpdateTeclado);
             currentCamera = new Camera();
-            Debug.WriteLine("Engine Inciada");
-            Debug.WriteLine(currentWindow.Widht + "," + currentWindow.Height);
             watch.Stop();
-            Debug.WriteLine(watch.ElapsedMilliseconds);
+        }
+
+        public static void Init(Window w)
+        {
+            window = w;
+            Run = true;
+            watch = Stopwatch.StartNew();
+            Input = new Input();
+            RegistrarEventoCallBack(PrioridadeEvento.Interface, Input.UpdateTeclado);
+            currentCamera = new Camera();
+            watch.Stop();
         }
 
         public static async Task Execute(int frames = 60, LateUpdae late = null)
@@ -59,20 +66,16 @@ namespace _3ReaisEngine
 
                 currentCamera.Update();
                 gerenciadorEventos.Update();
-                gerenciadorFisica.UpdateColisions(colisores.ToArray()); //ok
+                gerenciadorFisica.UpdateColisions(colisores.ToArray()); 
 
                 foreach (Entidade e in entidades)
                 {
-                   
                     if (!e.IsStatic) e.Update();
                 }
                 foreach (Entidade e in entidades)
                 {
                     e.EntPos -= currentCamera.delta;
                 }
-                
-                
-                
 
                 foreach (Render r in renders)
                 {
@@ -99,8 +102,8 @@ namespace _3ReaisEngine
             Colisao c = null;
             Render r = null;
             
-            e.EntPos.x += currentWindow.Widht / 4;
-            e.EntPos.y += currentWindow.Height / 4;
+            e.EntPos.x += window.Widht / 4;
+            e.EntPos.y += window.Height / 4;
             
             if (e.GetComponente(ref c))
             {
@@ -109,7 +112,7 @@ namespace _3ReaisEngine
             if (e.GetComponente(ref r))
             {
                 renders.Add(r);
-                currentWindow.Add(r.img);
+                window.Add(r.img);
             }
             e.OnCreate();
         }
@@ -126,7 +129,7 @@ namespace _3ReaisEngine
             if (e.GetComponente(ref r))
             {
                 renders.Remove(r);
-                currentWindow.Remove(r.img);
+                window.Remove(r.img);
             }
         }
 

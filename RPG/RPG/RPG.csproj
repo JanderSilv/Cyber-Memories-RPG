@@ -133,6 +133,11 @@
     <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
     <Content Include="Assets\StoreLogo.png" />
     <Content Include="Assets\Wide310x150Logo.scale-200.png" />
+    <Content Include="Src\Animations\dead.gif" />
+    <Content Include="Src\Animations\Dead.png" />
+    <Content Include="Src\Animations\idle.gif" />
+    <Content Include="Src\Animations\jump.gif" />
+    <Content Include="Src\Animations\walk.gif" />
     <Content Include="Src\cabeca.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
