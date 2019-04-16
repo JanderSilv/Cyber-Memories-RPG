@@ -1035,3 +1035,6 @@ C:\DEV\Projects\RPG-LP2\RPG\RPG\obj\x64\Debug\resources.en-us.resfiles
 C:\DEV\Projects\RPG-LP2\RPG\RPG\obj\x64\Debug\resources.en-us.resfiles.intermediate
 C:\DEV\Projects\RPG-LP2\RPG\RPG\obj\x64\Debug\3ReaisEngieUWP.pri.xml
 C:\DEV\Projects\RPG-LP2\RPG\RPG\obj\x64\Debug\ProjectArchitectures.txt
+C:\DEV\Projects\RPG-LP2\RPG\RPG\bin\x64\Debug\Src\Audio\beep.mp3
+C:\DEV\Projects\RPG-LP2\RPG\RPG\bin\x64\Debug\Src\Audio\rain.mp3
+C:\DEV\Projects\RPG-LP2\RPG\RPG\bin\x64\Debug\Src\Audio\serrote.wav

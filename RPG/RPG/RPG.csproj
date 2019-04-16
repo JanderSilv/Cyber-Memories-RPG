@@ -138,6 +138,15 @@
     <Content Include="Src\Animations\idle.gif" />
     <Content Include="Src\Animations\jump.gif" />
     <Content Include="Src\Animations\walk.gif" />
+    <Content Include="Src\Audio\beep.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Src\Audio\rain.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Src\Audio\serrote.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Src\cabeca.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

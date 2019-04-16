@@ -7,7 +7,9 @@ using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Windows.Foundation;
 using Windows.UI;
+using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Input;
@@ -26,7 +28,7 @@ namespace _3ReaisEngine.RPG.Core
         public Window(Page root)
         {
             Canvas canv = new Canvas();
-            Canvas ui = new Canvas();
+            RelativePanel ui = new RelativePanel();
 
             this.root = root;
 
@@ -49,7 +51,10 @@ namespace _3ReaisEngine.RPG.Core
 
             canv.KeyDown += Game_KeyDown;
             canv.KeyUp += Game_KeyUp;
+
             Windows.UI.Xaml.Window.Current.CoreWindow.SizeChanged += CoreWindow_SizeChanged;
+            ApplicationView.PreferredLaunchViewSize = new Size(840, 620);
+            ApplicationView.PreferredLaunchWindowingMode = ApplicationViewWindowingMode.PreferredLaunchViewSize;
             Windows.UI.Xaml.Window.Current.CoreWindow.Activate();
         }
 
@@ -78,7 +83,10 @@ namespace _3ReaisEngine.RPG.Core
 
             canv.KeyDown += Game_KeyDown;
             canv.KeyUp += Game_KeyUp;
+            
             Windows.UI.Xaml.Window.Current.CoreWindow.SizeChanged += CoreWindow_SizeChanged;
+            ApplicationView.PreferredLaunchViewSize = new Size(Widht, Height);
+            ApplicationView.PreferredLaunchWindowingMode = ApplicationViewWindowingMode.PreferredLaunchViewSize;
             Windows.UI.Xaml.Window.Current.CoreWindow.Activate();
         }
 
@@ -103,13 +111,16 @@ namespace _3ReaisEngine.RPG.Core
         {
 
             UIElement e = element.getElement();
-            TranslateTransform tt= ((TranslateTransform)e.RenderTransform);
+            e.SetValue(Canvas.HorizontalAlignmentProperty, Canvas.LeftProperty);
+            e.SetValue(Canvas.VerticalAlignmentProperty, Canvas.TopProperty);
 
-            Vector2 pos = element.getPosition();
-            Vector2 si = element.getSize();
+                TranslateTransform tt= ((TranslateTransform)e.RenderTransform);
 
-            tt.X = (pos.x/2 / 100.0) * Widht;
-            tt.Y = (pos.y/2 / 100.0) * Height;
+                Vector2 pos = element.getPosition();
+                Vector2 si = element.getSize();
+
+               tt.X = ((pos.x/2)/ 100.0) * Widht;
+               tt.Y = ((pos.y/2)/ 100.0) * Height;
 
             ui_layer.Children.Add(e);
         }
@@ -143,13 +154,16 @@ namespace _3ReaisEngine.RPG.Core
 
             game_layer.Width = args.Size.Width;
             game_layer.Height = args.Size.Height;
+
             ui_layer.Width = args.Size.Width;
             ui_layer.Height = args.Size.Height;
+
             root.Height = game_layer.Height;
             root.Width = game_layer.Width;
 
             foreach(UIElement e in ui_layer.Children)
             {
+               
                 ((TranslateTransform)e.RenderTransform).X *= a.x;
                 ((TranslateTransform)e.RenderTransform).Y *= a.y;
             }

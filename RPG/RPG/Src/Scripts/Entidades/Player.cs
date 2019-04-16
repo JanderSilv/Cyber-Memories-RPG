@@ -51,6 +51,10 @@ class Player : Entidade, Atacavel
                 anim.Play("Walk", render);
             }
         }
+        if (AmbienteJogo.Input.TeclaSolta(Windows.System.VirtualKey.A))
+        {
+            anim.Play("Idle", render);
+        }
         if (AmbienteJogo.Input.TeclaPressionada(Windows.System.VirtualKey.D))
         {
             if (col.momentoDeColisao.x == 0)
@@ -60,6 +64,10 @@ class Player : Entidade, Atacavel
                 dead = false;
                 anim.Play("Walk", render);
             }
+        }
+         if (AmbienteJogo.Input.TeclaSolta(Windows.System.VirtualKey.D))
+        {
+            anim.Play("Idle", render);
         }
         if (AmbienteJogo.Input.TeclaPressionada(Windows.System.VirtualKey.W))
         {
@@ -71,6 +79,10 @@ class Player : Entidade, Atacavel
                 anim.Play("Walk", render);
             }
         }
+         if (AmbienteJogo.Input.TeclaSolta(Windows.System.VirtualKey.W))
+        {
+            anim.Play("Idle", render);
+        }
         if (AmbienteJogo.Input.TeclaPressionada(Windows.System.VirtualKey.S))
         {
             if (col.momentoDeColisao.w == 0)
@@ -81,6 +93,12 @@ class Player : Entidade, Atacavel
                 anim.Play("Walk", render);
             }
         }
+         if (AmbienteJogo.Input.TeclaSolta(Windows.System.VirtualKey.S))
+        {
+            Engine.Debug("Tecla solta: A");
+            anim.Play("Idle", render);
+        }
+
         if (AmbienteJogo.Input.TeclaPressionada(Windows.System.VirtualKey.Escape))
         {
             if (!dead)
@@ -92,9 +110,7 @@ class Player : Entidade, Atacavel
             else
             {
                 anim.Play("JaDead", render);
-            }
-           
-           
+            } 
         }
     }
 
@@ -104,8 +120,6 @@ class Player : Entidade, Atacavel
         if (!mudou)
         {
             Render r = GetComponente<Render>();
-            // r.LoadImage("Src/dance.gif");
-          
             mudou = true;
         }
     }

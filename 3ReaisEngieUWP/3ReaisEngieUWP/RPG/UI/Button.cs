@@ -13,20 +13,21 @@ namespace _3ReaisEngine.UI
 {
     using uwpUI = Windows.UI.Xaml.Controls;
 
-    public delegate void Execute();
+    public delegate void Execute(object sender);
 
     public interface IUIEntidade
     {
         UIElement getElement();
         Vector2 getPosition();
         Vector2 getSize();
+        string getName();
     }
 
     public class UButton: IUIEntidade
     {
         uwpUI.Button element = new uwpUI.Button();
         TranslateTransform transform = new TranslateTransform();
-
+        public string Nome;
         private Vector2 pos = new Vector2(), si = new Vector2(100,50);
 
         public object Content { get { return element.Content; } set { element.Content = value; } }
@@ -101,7 +102,7 @@ namespace _3ReaisEngine.UI
 
         private void act(object sender, RoutedEventArgs e)
         {
-            Action?.Invoke();
+            Action?.Invoke(sender);
         }
 
         public UIElement getElement()
@@ -118,5 +119,12 @@ namespace _3ReaisEngine.UI
         {
             return si;
         }
+
+        public string getName()
+        {
+            return Nome;
+        }
     }
+
+   
 }

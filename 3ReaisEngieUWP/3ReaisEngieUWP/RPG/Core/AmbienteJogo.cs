@@ -10,6 +10,9 @@ using Windows.UI.Xaml.Controls;
 using Imagine;
 using _3ReaisEngine.RPG.Core;
 using _3ReaisEngine.Entidades;
+using _3ReaisEngine.RPG.Components;
+using Windows.Media.Core;
+using Windows.Storage;
 
 namespace _3ReaisEngine
 {
@@ -29,7 +32,7 @@ namespace _3ReaisEngine
         static ManipuladorEventos gerenciadorEventos = new ManipuladorEventos();
         static GerenciadorFisica gerenciadorFisica = new GerenciadorFisica();
         static Stopwatch watch;
-
+        static Audio musicaDeFundo = new Audio();
         public static Input Input { get; private set; }
         public static float time { get; private set; }
         public static Camera currentCamera { get; private set; }
@@ -45,6 +48,9 @@ namespace _3ReaisEngine
             RegistrarEventoCallBack(PrioridadeEvento.Interface, Input.UpdateTeclado);
             currentCamera = new Camera();
             watch.Stop();
+            musicaDeFundo.Audios.Add("back", new AudioSource() { Name = "rain.mp3", Loop = true, Volume = 50 });
+            musicaDeFundo.Play("back");
+          
         }
 
         public static void Init(Window w)
@@ -56,6 +62,9 @@ namespace _3ReaisEngine
             RegistrarEventoCallBack(PrioridadeEvento.Interface, Input.UpdateTeclado);
             currentCamera = new Camera();
             watch.Stop();
+            musicaDeFundo.Audios.Add("back", new AudioSource() { Name = "rain.mp3", Loop = true, Volume = 50 });
+            musicaDeFundo.Play("back");
+
         }
 
         public static async Task Execute(int frames = 60, LateUpdae late = null)
@@ -63,7 +72,7 @@ namespace _3ReaisEngine
             while (Run)
             {
                 watch = Stopwatch.StartNew();
-
+              
                 currentCamera.Update();
                 gerenciadorEventos.Update();
                 gerenciadorFisica.UpdateColisions(colisores.ToArray()); 
@@ -92,7 +101,7 @@ namespace _3ReaisEngine
                
                 
             }
-
+            
         }
 
         public static void AdcionarEntidade(Entidade e)

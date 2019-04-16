@@ -8,6 +8,7 @@ namespace _3ReaisEngine.Core
     {
 
         Dictionary<VirtualKey, byte> teclado = new Dictionary<VirtualKey, byte>();
+        List<VirtualKey> keyUp = new List<VirtualKey>();
 
         public Input()
         {
@@ -32,6 +33,7 @@ namespace _3ReaisEngine.Core
         public bool UpdateTeclado(TecladoEvento e)
         {
             VirtualKey k = (VirtualKey)e.Tecla;
+            keyUp.Clear();
 
             if (teclado.ContainsKey(k))
             {
@@ -42,6 +44,8 @@ namespace _3ReaisEngine.Core
                 else if (e.Modificador == (byte)ModificadorList.KeyUp)
                 {
                     teclado[k] = 0;
+                    keyUp.Add(k);
+                    
                 }
             }
 
@@ -56,6 +60,10 @@ namespace _3ReaisEngine.Core
                 return true;
             }
             return false;
+        }
+        public bool TeclaSolta(VirtualKey key)
+        {
+            return keyUp.Contains(key);
         }
     }
 }
