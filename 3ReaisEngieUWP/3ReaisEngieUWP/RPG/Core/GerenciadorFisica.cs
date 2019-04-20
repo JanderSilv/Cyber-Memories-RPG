@@ -27,6 +27,7 @@ namespace _3ReaisEngine.Core
                 for (int j = 0; j < length; j++)
                 {
                     if (j == i) continue;
+
                     dist.y = Math.Abs(array[i].entidade.EntPos.y - array[j].entidade.EntPos.y);
                     dist.x = Math.Abs(array[i].entidade.EntPos.x - array[j].entidade.EntPos.x);
 

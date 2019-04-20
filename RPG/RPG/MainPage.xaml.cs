@@ -1,4 +1,6 @@
-﻿using _3ReaisEngine;
+﻿using System;
+using System.Threading.Tasks;
+using _3ReaisEngine;
 using _3ReaisEngine.Core;
 using _3ReaisEngine.RPG.Core;
 using _3ReaisEngine.UI;
@@ -12,7 +14,7 @@ namespace RPG
     {
         bool add = true;
         Window window;
-        UComboBox b = new UComboBox(new Vector2(100, 0), new Vector2(200, 50),(object a)=> { Engine.Debug("Selecionado: " +((UComboBox)a).Selected()); });
+        UPanel b = new UPanel(new Vector2(100, 50), new Vector2(200, 50));
         UButton bb;
 
         void a(object sender)
@@ -34,9 +36,7 @@ namespace RPG
             
             InitializeComponent();
 
-            b.AddItem("Button 1");
-            b.AddItem("Button 2");
-            b.AddItem("Button 3");
+            
 
             string tt = "";
 
@@ -61,6 +61,6 @@ namespace RPG
             
         }
 
-       
+      
     }
 }

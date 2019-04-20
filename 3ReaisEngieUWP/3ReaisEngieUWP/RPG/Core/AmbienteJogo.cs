@@ -13,6 +13,7 @@ using _3ReaisEngine.Entidades;
 using _3ReaisEngine.RPG.Components;
 using Windows.Media.Core;
 using Windows.Storage;
+using Windows.UI.Core;
 
 namespace _3ReaisEngine
 {
@@ -64,6 +65,7 @@ namespace _3ReaisEngine
             watch.Stop();
             musicaDeFundo.Audios.Add("back", new AudioSource() { Name = "rain.mp3", Loop = true, Volume = 50 });
             musicaDeFundo.Play("back");
+            
 
         }
 

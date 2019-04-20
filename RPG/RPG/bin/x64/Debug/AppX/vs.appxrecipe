@@ -19,7 +19,7 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>C:\DEV\Projects\RPG-LP2\RPG\RPG\bin\x64\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>7500CD1F2C62A7314628F15074D62AC6C7B3046494D69090D71F5BA005D32199</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>BA5793B074A456500AC143A044F951F27135D39D1B9D028D38E82103070731CB</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>2d5fb77a-6e92-49d7-b9e3-84e29a9f9a60_1.0.0.0_x64__df0wr8x2vnj7j</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>2d5fb77a-6e92-49d7-b9e3-84e29a9f9a60_df0wr8x2vnj7j!App</RegisteredUserModeAppID>
     <RegisteredPackageID>2d5fb77a-6e92-49d7-b9e3-84e29a9f9a60</RegisteredPackageID>
@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-04-16T14:10:53.081</Modified>
+      <Modified>2019-04-20T12:46:57.905</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\bin\x64\Debug\RPG.exe">
       <PackagePath>entrypoint\RPG.exe</PackagePath>
-      <Modified>2019-04-13T23:11:32.570</Modified>
+      <Modified>2019-04-20T12:46:51.172</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.netcore.universalwindowsplatform\6.1.7\runtimes\win10-x64\nativeassets\uap10.0.15138\clrcompression.dll">
       <PackagePath>clrcompression.dll</PackagePath>
@@ -697,7 +697,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\3ReaisEngieUWP\3ReaisEngieUWP\bin\x64\Debug\3ReaisEngieUWP.dll">
       <PackagePath>3ReaisEngieUWP.dll</PackagePath>
-      <Modified>2019-04-13T23:11:28.306</Modified>
+      <Modified>2019-04-20T12:46:44.409</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
@@ -771,27 +771,27 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\Audio\beep.mp3">
       <PackagePath>Src\Audio\beep.mp3</PackagePath>
-      <Modified>2019-04-12T16:57:03.693</Modified>
+      <Modified>2019-04-16T14:45:22.041</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\Audio\rain.mp3">
       <PackagePath>Src\Audio\rain.mp3</PackagePath>
-      <Modified>2019-04-12T16:57:03.597</Modified>
+      <Modified>2019-04-16T14:45:22.057</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\Audio\serrote.wav">
       <PackagePath>Src\Audio\serrote.wav</PackagePath>
-      <Modified>2019-04-12T17:21:38.774</Modified>
+      <Modified>2019-04-16T14:45:22.077</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\bin\x64\Debug\RPG.xr.xml">
       <PackagePath>RPG.xr.xml</PackagePath>
-      <Modified>2019-04-13T22:47:48.903</Modified>
+      <Modified>2019-04-17T11:49:39.012</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\bin\x64\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2019-04-16T14:10:45.784</Modified>
+      <Modified>2019-04-20T12:46:50.785</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\bin\x64\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2019-04-16T14:10:45.785</Modified>
+      <Modified>2019-04-20T12:46:50.785</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.17134.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -800,11 +800,11 @@
     <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-04-13T22:47:49.682</Modified>
+      <Modified>2019-04-17T11:45:04.185</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\bin\x64\Debug\Core\RPG.exe">
       <PackagePath>RPG.exe</PackagePath>
-      <Modified>2019-04-16T14:10:53.072</Modified>
+      <Modified>2019-04-20T12:46:57.897</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

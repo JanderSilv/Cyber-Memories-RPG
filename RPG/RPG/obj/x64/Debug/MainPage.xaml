@@ -8,7 +8,11 @@
     x:Class="RPG.MainPage"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Height="640" Width="720" HorizontalAlignment="Left">
-   
+    <Rectangle HorizontalAlignment="Center" Height="640" Margin="0,0,0,0" VerticalAlignment="Center" Width="720">
+        <Rectangle.Fill>
+            <ImageBrush ImageSource="/Src/Animations/jump.gif"/>
+        </Rectangle.Fill>
+    </Rectangle>
 </Page>
 
 

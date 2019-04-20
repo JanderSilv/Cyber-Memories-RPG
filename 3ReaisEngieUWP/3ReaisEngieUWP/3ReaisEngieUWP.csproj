@@ -135,9 +135,11 @@
     <Compile Include="RPG\Events\PrioridadeCamada.cs" />
     <Compile Include="RPG\Events\TecladoEvento.cs" />
     <Compile Include="RPG\Layers\ViewLayer.cs" />
-    <Compile Include="RPG\UI\Button.cs" />
+    <Compile Include="RPG\UI\UButton.cs" />
     <Compile Include="RPG\UI\UComboBox.cs" />
     <Compile Include="RPG\UI\UImage.cs" />
+    <Compile Include="RPG\UI\UPanel.cs" />
+    <Compile Include="RPG\UI\UText.cs" />
     <EmbeddedResource Include="Properties\_3ReaisEngieUWP.rd.xml" />
   </ItemGroup>
   <ItemGroup>
