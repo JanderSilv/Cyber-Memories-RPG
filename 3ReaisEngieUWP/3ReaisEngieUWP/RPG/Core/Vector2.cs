@@ -21,9 +21,7 @@
             x = 0;
             y = 0;
         }
-
-        static Vector2 zero = new Vector2(0, 0);
-        public static Vector2 Zero { get { return zero; } }
+        public static Vector2 Zero { get; } = new Vector2(0, 0);
 
 
         public override string ToString()
@@ -31,6 +29,13 @@
             return "[" + x + "," + y + "]";
         }
 
+        public static Vector2 ToScreenPos(Vector2 pos)
+        {
+            Vector2 tt = Vector2.Zero;
+            tt.x = 2*((pos.x ) * 100.0f) / AmbienteJogo.window.Widht;
+            tt.y = 2*((pos.y ) * 100.0f) / AmbienteJogo.window.Height;
+            return tt;
+        }
         public static Vector2 operator -(Vector2 a, Vector2 b)
         {
             return new Vector2(a.x - b.x, a.y - b.y);

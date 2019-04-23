@@ -1,4 +1,5 @@
-﻿using _3ReaisEngine.Core;
+﻿using _3ReaisEngine.Components;
+using _3ReaisEngine.Core;
 using _3ReaisEngine.Events;
 using _3ReaisEngine.UI;
 using System;
@@ -8,7 +9,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Windows.Foundation;
+using Windows.System;
 using Windows.UI;
+using Windows.UI.Input;
 using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
@@ -19,11 +22,18 @@ namespace _3ReaisEngine.RPG.Core
 {
    public class Window 
     {
+
+        public List<Entidade> entidades = new List<Entidade>();
+        public List<Colisao> colisores = new List<Colisao>();
+        public List<Render> renders = new List<Render>();
+
         public float Widht { set { game_layer.Width = value; } get { return (float)game_layer.Width;} }
         public float Height { set { game_layer.Height = value; } get { return (float)game_layer.Height; } }
+
         private Panel game_layer;
         private Panel ui_layer;
-        private Page root;
+
+        public Page root;
 
         public Window(Page root)
         {
@@ -34,30 +44,31 @@ namespace _3ReaisEngine.RPG.Core
 
             canv.Width = 840;
             canv.Height = 620;
+            canv.Children.Add(ui);
+            canv.SetValue(Canvas.ZIndexProperty, 0);
+            canv.KeyDown += Game_KeyDown;
+            canv.KeyUp += Game_KeyUp;
+            canv.PointerPressed += Game_PointerPressed;
+            canv.PointerReleased += Game_PointerReleased;
+
             ui.Width = 840;
             ui.Height = 620;
-            
-            canv.Children.Add(ui);
-           
-
-            canv.SetValue(Canvas.ZIndexProperty, 0);
             ui.SetValue(Canvas.ZIndexProperty, 1);
-
+            ui.PointerPressed += Game_PointerPressed;
+            ui.PointerReleased += Game_PointerReleased;
+            
             root.Content = canv;
             root.Height = canv.Height;
             root.Width = canv.Width;
+
             game_layer = canv;
             ui_layer = ui;
-
-            canv.KeyDown += Game_KeyDown;
-            canv.KeyUp += Game_KeyUp;
 
             Windows.UI.Xaml.Window.Current.CoreWindow.SizeChanged += CoreWindow_SizeChanged;
             ApplicationView.PreferredLaunchViewSize = new Size(840, 620);
             ApplicationView.PreferredLaunchWindowingMode = ApplicationViewWindowingMode.PreferredLaunchViewSize;
             Windows.UI.Xaml.Window.Current.CoreWindow.Activate();
         }
-
         public Window(Page root,float Widht,float Height)
         {
             Canvas canv = new Canvas();
@@ -67,22 +78,27 @@ namespace _3ReaisEngine.RPG.Core
 
             canv.Width = Widht;
             canv.Height = Height;
+            canv.Children.Add(ui);
+            canv.SetValue(Canvas.ZIndexProperty, 0);
+            canv.KeyDown += Game_KeyDown;
+            canv.KeyUp += Game_KeyUp;
+            canv.PointerPressed += Game_PointerPressed;
+            canv.PointerReleased += Game_PointerReleased;
+
             ui.Width = Widht;
             ui.Height = Height;
-
-            canv.Children.Add(ui);
-          
-            canv.SetValue(Canvas.ZIndexProperty, 0);
             ui.SetValue(Canvas.ZIndexProperty, 1);
+            ui.PointerPressed += Game_PointerPressed;
+            ui.PointerReleased += Game_PointerReleased;
 
             root.Height = canv.Height;
             root.Width = canv.Width;
             root.Content = canv;
+
             game_layer = canv;
             ui_layer = ui;
 
-            canv.KeyDown += Game_KeyDown;
-            canv.KeyUp += Game_KeyUp;
+           
             
             Windows.UI.Xaml.Window.Current.CoreWindow.SizeChanged += CoreWindow_SizeChanged;
             ApplicationView.PreferredLaunchViewSize = new Size(Widht, Height);
@@ -91,11 +107,6 @@ namespace _3ReaisEngine.RPG.Core
         }
 
       
-
-        public void SetPanel(Panel panel)
-        {
-            this.game_layer = panel;
-        }
 
         public void Add(UIElement element)
         {
@@ -107,7 +118,7 @@ namespace _3ReaisEngine.RPG.Core
             game_layer.Children.Remove(element);
         }
 
-        public void Add(IUIEntidade element)
+        public void AddUI(IUIEntidade element)
         {
 
             UIElement e = element.getElement();
@@ -128,6 +139,59 @@ namespace _3ReaisEngine.RPG.Core
         public void Remove(IUIEntidade element)
         {
             ui_layer.Children.Remove(element.getElement());
+        }
+
+
+
+        private void Game_PointerReleased(object sender, PointerRoutedEventArgs e)
+        {
+            Pointer ptr = e.Pointer;
+            PointerPoint ptrPt = e.GetCurrentPoint(game_layer);
+            MouseEvento me = new MouseEvento();
+            me.Tipo = Modificador.ButtonUp;
+            me.Modificador = e.KeyModifiers;
+            me.Position = new Vector2((float)ptrPt.Position.X, (float)ptrPt.Position.Y);
+
+            if (ptrPt.Properties.IsLeftButtonPressed)
+            {
+                me.Botao = MouseButton.Left;
+            }
+            if (ptrPt.Properties.IsMiddleButtonPressed)
+            {
+                me.Botao = MouseButton.Scroll;
+            }
+            if (ptrPt.Properties.IsRightButtonPressed)
+            {
+                me.Botao = MouseButton.Right;
+            }
+
+            
+            AmbienteJogo.EnviarEvento(me);
+        }
+
+        private void Game_PointerPressed(object sender, PointerRoutedEventArgs e)
+        {
+            Windows.UI.Xaml.Window.Current.CoreWindow.Activate();
+            Pointer ptr = e.Pointer;
+            PointerPoint ptrPt = e.GetCurrentPoint(game_layer);
+            MouseEvento me = new MouseEvento();
+            me.Tipo = Modificador.ButtonDown;
+            me.Modificador = e.KeyModifiers;
+            me.Position = new Vector2((float)ptrPt.Position.X, (float)ptrPt.Position.Y);
+
+            if (ptrPt.Properties.IsLeftButtonPressed)
+            {
+                me.Botao = MouseButton.Left;
+            }
+            if (ptrPt.Properties.IsMiddleButtonPressed)
+            {
+                me.Botao = MouseButton.Scroll;
+            }
+            if (ptrPt.Properties.IsRightButtonPressed)
+            {
+                me.Botao = MouseButton.Right;
+            }
+            AmbienteJogo.EnviarEvento(me);
         }
 
         private void Game_KeyDown(object sender, KeyRoutedEventArgs e)

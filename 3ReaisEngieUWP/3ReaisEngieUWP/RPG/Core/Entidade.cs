@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Reflection;
 using _3ReaisEngine.Attributes;
 using _3ReaisEngine.Components;
+using _3ReaisEngine.Events;
 
 namespace _3ReaisEngine.Core
 {
@@ -56,6 +57,8 @@ namespace _3ReaisEngine.Core
             }
 
         }
+
+        #region Geren Componente
 
         /*
          *  Adiciona um componente a esta entidade
@@ -161,20 +164,18 @@ namespace _3ReaisEngine.Core
         /*
          É executado a cada frame do jogo
          */
-        public virtual void OnCreate()
+        #endregion
+        
+        public virtual void OnClick(MouseEvento e)
         {
 
-        } 
+        }
+
         public virtual void Update()
         {
            
         }
-
-        public virtual void OnColide(Colisao col)
-        {
-           
-        }
-
+        
         public void Destruir()
         {
             AmbienteJogo.RemoverEntidade(this);

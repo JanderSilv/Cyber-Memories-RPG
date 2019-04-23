@@ -1,6 +1,7 @@
 ﻿using _3ReaisEngine.Components;
 using System;
 using System.Diagnostics;
+using System.Threading.Tasks;
 
 namespace _3ReaisEngine.Core
 {
@@ -51,9 +52,8 @@ namespace _3ReaisEngine.Core
                     {
                         if (dir < 0 && dist.y <= unsafeY * 0.93f)
                         {
-                          //  Engine.Debug(array[j].entidade.Nome + ": " + dir + "," + esq + "," + top + "," + bot);
                             array[i].momentoDeColisao.x = dir;                         
-                            array[i].entidade.OnColide(array[j]);                      
+                            array[i].OnColide(array[j]);                      
                             continue;
                         }
                     }
@@ -61,9 +61,8 @@ namespace _3ReaisEngine.Core
                     {
                         if (esq < 0 && dist.y <= unsafeY * 0.93f)
                         {
-                        //    Engine.Debug(array[j].entidade.Nome + ": " + dir + "," + esq + "," + top + "," + bot);
                             array[i].momentoDeColisao.z = esq;                           
-                            array[i].entidade.OnColide(array[j]);
+                            array[i].OnColide(array[j]);
                             continue;
                         }
                     }
@@ -72,9 +71,8 @@ namespace _3ReaisEngine.Core
                     {
                         if (top < 0 && dist.x <= unsafeX * 0.93f)
                         {
-                        //    Engine.Debug(array[j].entidade.Nome + ": " + dir + "," + esq + "," + top + "," + bot);
                             array[i].momentoDeColisao.y = top;
-                            array[i].entidade.OnColide(array[j]);
+                            array[i].OnColide(array[j]);
                             continue;
                         }
                     }
@@ -82,9 +80,8 @@ namespace _3ReaisEngine.Core
                     {
                         if (bot < 0 && dist.x <= unsafeX * 0.9f)
                         {
-                        //    Engine.Debug(array[j].entidade.Nome+": "+ dir + "," + esq + "," + top + "," + bot);
                             array[i].momentoDeColisao.w = bot;                            
-                            array[i].entidade.OnColide(array[j]);
+                            array[i].OnColide(array[j]);
                             continue;
                         }
                     }

@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     "UAP,Version=v10.0.17134": {
+      "BinaryTree/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/BinaryTree.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/BinaryTree.dll": {}
+        }
+      },
       "Imagine.Uwp.Json/1.0.0": {
         "type": "package",
         "dependencies": {
@@ -309,6 +318,15 @@
       }
     },
     "UAP,Version=v10.0.17134/win10-arm": {
+      "BinaryTree/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/BinaryTree.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/BinaryTree.dll": {}
+        }
+      },
       "Imagine.Uwp.Json/1.0.0": {
         "type": "package",
         "dependencies": {
@@ -791,6 +809,15 @@
       }
     },
     "UAP,Version=v10.0.17134/win10-arm-aot": {
+      "BinaryTree/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/BinaryTree.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/BinaryTree.dll": {}
+        }
+      },
       "Imagine.Uwp.Json/1.0.0": {
         "type": "package",
         "dependencies": {
@@ -1274,6 +1301,15 @@
       }
     },
     "UAP,Version=v10.0.17134/win10-arm64-aot": {
+      "BinaryTree/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/BinaryTree.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/BinaryTree.dll": {}
+        }
+      },
       "Imagine.Uwp.Json/1.0.0": {
         "type": "package",
         "dependencies": {
@@ -1581,6 +1617,15 @@
       }
     },
     "UAP,Version=v10.0.17134/win10-x64": {
+      "BinaryTree/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/BinaryTree.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/BinaryTree.dll": {}
+        }
+      },
       "Imagine.Uwp.Json/1.0.0": {
         "type": "package",
         "dependencies": {
@@ -2063,6 +2108,15 @@
       }
     },
     "UAP,Version=v10.0.17134/win10-x64-aot": {
+      "BinaryTree/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/BinaryTree.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/BinaryTree.dll": {}
+        }
+      },
       "Imagine.Uwp.Json/1.0.0": {
         "type": "package",
         "dependencies": {
@@ -2546,6 +2600,15 @@
       }
     },
     "UAP,Version=v10.0.17134/win10-x86": {
+      "BinaryTree/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/BinaryTree.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/BinaryTree.dll": {}
+        }
+      },
       "Imagine.Uwp.Json/1.0.0": {
         "type": "package",
         "dependencies": {
@@ -3028,6 +3091,15 @@
       }
     },
     "UAP,Version=v10.0.17134/win10-x86-aot": {
+      "BinaryTree/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/BinaryTree.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/BinaryTree.dll": {}
+        }
+      },
       "Imagine.Uwp.Json/1.0.0": {
         "type": "package",
         "dependencies": {
@@ -3512,6 +3584,17 @@
     }
   },
   "libraries": {
+    "BinaryTree/5.0.0": {
+      "sha512": "MRqPCPW4hz725lZXlJx13L72sSfoGoTG0KDTN1NenTrTAhHcqL9pwT6Mw80TqehK6SalI65++Ud2B1kXKT1m5w==",
+      "type": "package",
+      "path": "binarytree/5.0.0",
+      "files": [
+        ".signature.p7s",
+        "binarytree.5.0.0.nupkg.sha512",
+        "binarytree.nuspec",
+        "lib/netstandard2.0/BinaryTree.dll"
+      ]
+    },
     "Imagine.Uwp.Json/1.0.0": {
       "sha512": "myiyiC2LXAAWoNH67Z4zcaVNY6UHx6GUKJEUeYrNllAcEBJKT7zuBWPnTHeJh0JVidhZCn2oSvazGm6fhEJfVA==",
       "type": "package",
@@ -7225,6 +7308,7 @@
   },
   "projectFileDependencyGroups": {
     "UAP,Version=v10.0.17134": [
+      "BinaryTree >= 5.0.0",
       "Imagine.Uwp.Json >= 1.0.0",
       "Microsoft.NETCore.UniversalWindowsPlatform >= 6.1.7",
       "Newtonsoft.Json >= 12.0.1"
@@ -7267,6 +7351,10 @@
     "frameworks": {
       "uap10.0.17134": {
         "dependencies": {
+          "BinaryTree": {
+            "target": "Package",
+            "version": "[5.0.0, )"
+          },
           "Imagine.Uwp.Json": {
             "target": "Package",
             "version": "[1.0.0, )"

@@ -8,14 +8,15 @@ using _3ReaisEngine.Core;
 [RequerComponente(typeof(Animacao))]
 [RequerComponente(typeof(Inventario))]
 [RequerComponente(typeof(Status))]
-class Player : Entidade, Atacavel
+
+class Player : Entidade
 {
     bool mudou = false;
     Colisao col;
     Animacao anim;
     Render render;
     float vel;
-    Arco arc;
+   
     bool dead = false;
 
     public Player(Vector2 pos)
@@ -24,16 +25,19 @@ class Player : Entidade, Atacavel
         Nome = "Tust";
         EntPos = pos;
         vel = 5;
+
         col = GetComponente<Colisao>();
         col.tipo = TipoColisao.Dinamica;
-        arc = new Arco();
+        col.onColisionAction += OnColide;
         anim = new Animacao();
         render = GetComponente<Render>();
+
         anim.AddAnimation("Idle", "Src/Animations/idle.gif");
         anim.AddAnimation("Dead", "Src/Animations/dead.gif");
         anim.AddAnimation("JaDead", "Src/Animations/Dead.png");
         anim.AddAnimation("Walk", "Src/Animations/walk.gif");
         anim.Play("Idle",render);
+
         AmbienteJogo.AdcionarEntidade(this);
 
     }
@@ -65,7 +69,7 @@ class Player : Entidade, Atacavel
                 anim.Play("Walk", render);
             }
         }
-         if (AmbienteJogo.Input.TeclaSolta(Windows.System.VirtualKey.D))
+        if (AmbienteJogo.Input.TeclaSolta(Windows.System.VirtualKey.D))
         {
             anim.Play("Idle", render);
         }
@@ -79,7 +83,7 @@ class Player : Entidade, Atacavel
                 anim.Play("Walk", render);
             }
         }
-         if (AmbienteJogo.Input.TeclaSolta(Windows.System.VirtualKey.W))
+        if (AmbienteJogo.Input.TeclaSolta(Windows.System.VirtualKey.W))
         {
             anim.Play("Idle", render);
         }
@@ -93,12 +97,11 @@ class Player : Entidade, Atacavel
                 anim.Play("Walk", render);
             }
         }
-         if (AmbienteJogo.Input.TeclaSolta(Windows.System.VirtualKey.S))
+        if (AmbienteJogo.Input.TeclaSolta(Windows.System.VirtualKey.S))
         {
             Engine.Debug("Tecla solta: A");
             anim.Play("Idle", render);
         }
-
         if (AmbienteJogo.Input.TeclaPressionada(Windows.System.VirtualKey.Escape))
         {
             if (!dead)
@@ -114,21 +117,11 @@ class Player : Entidade, Atacavel
         }
     }
 
-    public override void OnColide(Colisao col)
+    public void OnColide(Colisao col)
     {
         anim.Play("Idle", render);
-        if (!mudou)
-        {
-            Render r = GetComponente<Render>();
-            mudou = true;
-        }
     }
 
-    public void Atacar(Status e)
-    {
-        Engine.Debug("Atacando oponente");
-
-        arc.Atacar(e);
-    }
+   
 }
 

@@ -23,30 +23,33 @@ namespace _3ReaisEngine
 
     public static class AmbienteJogo
     {
+        #region DefineVar
         public static bool Run = true;
 
-       
-        static List<Entidade> entidades = new List<Entidade>();
-        static List<Colisao> colisores = new List<Colisao>();
-        static List<Render> renders = new List<Render>();
         static double UpdateTimeElapsed;
         static ManipuladorEventos gerenciadorEventos = new ManipuladorEventos();
         static GerenciadorFisica gerenciadorFisica = new GerenciadorFisica();
+
         static Stopwatch watch;
         static Audio musicaDeFundo = new Audio();
-        public static Input Input { get; private set; }
+
         public static float time { get; private set; }
+
+        public static Input Input { get; private set; }
         public static Camera currentCamera { get; private set; }
         public static Window window { get; private set; }
+        #endregion
 
+        #region Construtores
         public static void Init(Page p)
         {
+            window = new Window(p, 720, 640);
             time = 0;
-            window = new Window(p,720,640);
             Run = true;
             watch = Stopwatch.StartNew();
             Input = new Input();
-            RegistrarEventoCallBack(PrioridadeEvento.Interface, Input.UpdateTeclado);
+            RegistrarEventoCallBack(PrioridadeEvento.Game, Input.UpdateTeclado);
+            RegistrarEventoCallBack(PrioridadeEvento.Game, Input.UpdateMouse);
             currentCamera = new Camera();
             watch.Stop();
             musicaDeFundo.Audios.Add("back", new AudioSource() { Name = "rain.mp3", Loop = true, Volume = 50 });
@@ -57,10 +60,12 @@ namespace _3ReaisEngine
         public static void Init(Window w)
         {
             window = w;
+            time = 0;
             Run = true;
             watch = Stopwatch.StartNew();
             Input = new Input();
-            RegistrarEventoCallBack(PrioridadeEvento.Interface, Input.UpdateTeclado);
+            RegistrarEventoCallBack(PrioridadeEvento.Game, Input.UpdateTeclado);
+            RegistrarEventoCallBack(PrioridadeEvento.Game, Input.UpdateMouse);
             currentCamera = new Camera();
             watch.Stop();
             musicaDeFundo.Audios.Add("back", new AudioSource() { Name = "rain.mp3", Loop = true, Volume = 50 });
@@ -68,6 +73,8 @@ namespace _3ReaisEngine
             
 
         }
+
+        #endregion
 
         public static async Task Execute(int frames = 60, LateUpdae late = null)
         {
@@ -77,18 +84,18 @@ namespace _3ReaisEngine
               
                 currentCamera.Update();
                 gerenciadorEventos.Update();
-                gerenciadorFisica.UpdateColisions(colisores.ToArray()); 
+                gerenciadorFisica.UpdateColisions(window.colisores.ToArray()); 
 
-                foreach (Entidade e in entidades)
+                foreach (Entidade e in window.entidades)
                 {
                     if (!e.IsStatic) e.Update();
                 }
-                foreach (Entidade e in entidades)
+                foreach (Entidade e in window.entidades)
                 {
                     e.EntPos -= currentCamera.delta;
                 }
 
-                foreach (Render r in renders)
+                foreach (Render r in window.renders)
                 {
                     r.transform.X = r.entidade.EntPos.x;
                     r.transform.Y = r.entidade.EntPos.y;            
@@ -97,7 +104,8 @@ namespace _3ReaisEngine
                 time++;
                 watch.Stop();
                 UpdateTimeElapsed = watch.ElapsedMilliseconds;
-               
+
+              
                 await Task.Delay(1000/frames);
                 late?.Invoke();
                
@@ -106,10 +114,11 @@ namespace _3ReaisEngine
             
         }
 
+        #region Management Functions
         public static void AdcionarEntidade(Entidade e)
         {
 
-            entidades.Add(e);
+            window.entidades.Add(e);
             Colisao c = null;
             Render r = null;
             
@@ -118,32 +127,31 @@ namespace _3ReaisEngine
             
             if (e.GetComponente(ref c))
             {
-                colisores.Add(c);
+                window.colisores.Add(c);
             }
             if (e.GetComponente(ref r))
             {
-                renders.Add(r);
+                window.renders.Add(r);
                 window.Add(r.img);
             }
-            e.OnCreate();
+          
         }
 
         public static void RemoverEntidade(Entidade e)
         {
-            entidades.Remove(e);
+            window.entidades.Remove(e);
             Colisao c = null;
             Render r = null;
             if (e.GetComponente(ref c))
             {
-                colisores.Remove(c);
+                window.colisores.Remove(c);
             }
             if (e.GetComponente(ref r))
             {
-                renders.Remove(r);
+                window.renders.Remove(r);
                 window.Remove(r.img);
             }
         }
-
         public static void EnviarEvento<T>(T e) where T : EventArgs
         {
             gerenciadorEventos.Enviar(e);
@@ -162,6 +170,20 @@ namespace _3ReaisEngine
             gerenciadorEventos.handle[(int)prioridade] += e;
         }
 
+        public static void RemoverEventoCallBack(PrioridadeEvento prioridade, HandleEvent<TecladoEvento> e)
+        {
+            gerenciadorEventos.handleTeclado[(int)prioridade] -= e;
+        }
+        public static void RemoverEventoCallBack(PrioridadeEvento prioridade, HandleEvent<MouseEvento> e)
+        {
+            gerenciadorEventos.handleMouse[(int)prioridade] -= e;
+        }
+        public static void RemoverEventoCallBack(PrioridadeEvento prioridade, HandleEvent<EventArgs> e)
+        {
+            gerenciadorEventos.handle[(int)prioridade] -= e;
+        }
+
+        #endregion
 
     }
 }

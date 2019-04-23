@@ -10,10 +10,13 @@ namespace _3ReaisEngine.Components
     }
     public class Colisao : Componente<Colisao>
     {
-        public Vector4 momentoDeColisao;
+        public delegate void OnColision(Colisao c);
+
+        public volatile Vector4 momentoDeColisao;
         public Vector2 tamanho;
         public Vector2 Posicao { get { return entidade.EntPos; } set { entidade.EntPos = value; } }
         public TipoColisao tipo = TipoColisao.Estatica;
+        public OnColision onColisionAction = null;
 
         public Colisao()
         {
@@ -34,7 +37,10 @@ namespace _3ReaisEngine.Components
             tamanho = size;
         }
 
-
+        public void OnColide(Colisao other)
+        {
+            onColisionAction?.Invoke(other);
+        }
     }
 
 

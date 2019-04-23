@@ -4,39 +4,30 @@ using Windows.System;
 
 namespace _3ReaisEngine.Core
 {
+
     public class Input
     {
 
-        Dictionary<VirtualKey, byte> teclado = new Dictionary<VirtualKey, byte>();
+        byte[] teclado = new byte[(int)(VirtualKey.GamepadRightThumbstickLeft+1)];
         List<VirtualKey> keyUp = new List<VirtualKey>();
 
         public Input()
         {
-            RegistrarTecla(VirtualKey.A);
-            RegistrarTecla(VirtualKey.W);
-            RegistrarTecla(VirtualKey.D);
-            RegistrarTecla(VirtualKey.S);
-            RegistrarTecla(VirtualKey.Escape);
+            
         }
-
-        public void RegistrarTecla(VirtualKey key)
+        
+        public bool UpdateMouse(MouseEvento e)
         {
-            if (!teclado.ContainsKey(key)) teclado.Add(key, 0);
-        }
 
-        public void RegistrarTeclas(VirtualKey[] keys)
-        {
-            foreach (VirtualKey key in keys)
-                if (!teclado.ContainsKey(key)) teclado.Add(key, 0);
+            return false;
         }
 
         public bool UpdateTeclado(TecladoEvento e)
         {
-            VirtualKey k = (VirtualKey)e.Tecla;
+            int k = e.Tecla;
             keyUp.Clear();
 
-            if (teclado.ContainsKey(k))
-            {
+           
                 if (e.Modificador == (byte)ModificadorList.KeyDown)
                 {
                     teclado[k] = 1;
@@ -44,10 +35,10 @@ namespace _3ReaisEngine.Core
                 else if (e.Modificador == (byte)ModificadorList.KeyUp)
                 {
                     teclado[k] = 0;
-                    keyUp.Add(k);
+                    keyUp.Add((VirtualKey)k);
                     
                 }
-            }
+            
 
             return false;
         }
@@ -55,7 +46,7 @@ namespace _3ReaisEngine.Core
         public bool TeclaPressionada(VirtualKey key)
         {
 
-            if (teclado.ContainsKey(key) && teclado[key] > 0)
+            if (teclado[(int)key] > 0)
             {
                 return true;
             }
