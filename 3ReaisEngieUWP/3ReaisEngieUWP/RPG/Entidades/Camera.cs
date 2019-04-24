@@ -22,8 +22,7 @@ namespace _3ReaisEngine.Entidades
         public override void Update()
         {
            
-            delta.x = 0;
-            delta.y = 0;
+          
 
         }
     }

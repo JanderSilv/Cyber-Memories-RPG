@@ -25,11 +25,8 @@ namespace RPG
             AmbienteJogo.Init(window);
             
             new Caixa(new Vector2(-200, 0));
-            //new Caixa(new Vector2(0, -200));
-            //new Caixa(new Vector2(200, 0));
-            //new Caixa(new Vector2(0, 200));
-            //new Caixa(new Vector2(0, 290));
-            //new Player(new Vector2(0, 0));
+          
+            new Player(new Vector2(0, 0));
            
             AmbienteJogo.Execute(120);
         }

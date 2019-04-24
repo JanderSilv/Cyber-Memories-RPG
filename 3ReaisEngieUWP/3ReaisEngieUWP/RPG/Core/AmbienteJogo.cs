@@ -26,7 +26,7 @@ namespace _3ReaisEngine
         #region DefineVar
         public static bool Run = true;
 
-        static double UpdateTimeElapsed;
+        public static float deltaTime;
         static ManipuladorEventos gerenciadorEventos = new ManipuladorEventos();
         static GerenciadorFisica gerenciadorFisica = new GerenciadorFisica();
 
@@ -38,11 +38,15 @@ namespace _3ReaisEngine
         public static Input Input { get; private set; }
         public static Camera currentCamera { get; private set; }
         public static Window window { get; private set; }
+        public static Vector2 drawOffset = new Vector2();
+      
         #endregion
 
         #region Construtores
         public static void Init(Page p)
         {
+            drawOffset.x = 0;
+            drawOffset.y = 0;
             window = new Window(p, 720, 640);
             time = 0;
             Run = true;
@@ -59,6 +63,8 @@ namespace _3ReaisEngine
 
         public static void Init(Window w)
         {
+            drawOffset.x = 0;
+            drawOffset.y = 0;
             window = w;
             time = 0;
             Run = true;
@@ -90,26 +96,20 @@ namespace _3ReaisEngine
                 {
                     if (!e.IsStatic) e.Update();
                 }
-                foreach (Entidade e in window.entidades)
-                {
-                    e.EntPos -= currentCamera.delta;
-                }
-
+              
                 foreach (Render r in window.renders)
                 {
-                    r.transform.X = r.entidade.EntPos.x;
-                    r.transform.Y = r.entidade.EntPos.y;            
+                    r.transform.X = r.entidade.EntPos.x - currentCamera.delta.x;
+                    r.transform.Y = r.entidade.EntPos.y - currentCamera.delta.y;            
                 }
 
                 time++;
                 watch.Stop();
-                UpdateTimeElapsed = watch.ElapsedMilliseconds;
+                deltaTime =(float)watch.ElapsedMilliseconds;
 
-              
                 await Task.Delay(1000/frames);
                 late?.Invoke();
                
-                
             }
             
         }
