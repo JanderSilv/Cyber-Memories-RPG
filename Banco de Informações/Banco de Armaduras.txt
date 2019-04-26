@@ -1,0 +1,70 @@
+* Banco de Armaduras*
+
+Manual:
+ 
+1. Nome
+2. Lv Requerido
+3. Tipo
+4. Preço
+5. Atributos
+6. Ícone
+
+/ Pesadas: /
+
+	> Elmo do Soldado Novato
+	   * 1
+	   * Armadura;
+	   * 0 (Armadura Inicial);
+	   * Força: 50, Resistência: 10, Destreza: 5;
+
+	> Peitoral do Soldado Novato:
+	   * 1
+	   * Armadura;
+	   * 0 (Armadura Inicial);
+	   * Força: 70, Resistência: 15, Destreza: 10;
+
+	> Botas do Soldado Novato:
+	   * 1
+	   * Armadura;
+	   * 0 (Armadura Inicial);
+	   * Força: 20, Resistência: 5, Destreza: 2;
+
+/ Médias: /
+
+	> Capote do Assassino Novato:
+	   * 1
+	   * Armadura;
+	   * 0 (Armadura Inicial);
+	   * Força: 5, Resistência: 5, Sorte: 10 Destreza: 50;
+
+	> Casaco do Assassino Novato:
+	   * 1
+	   * Armadura;
+	   * 0 (Armadura Inicial);
+	   * Força: 10, Resistência: 10, Sorte: 15 Destreza: 70;
+
+	> Sapatos do Assassino Novato:
+	   * 1
+	   * Armadura;
+	   * 0 (Armadura Inicial);
+	   * Força: 2, Resistência: 2, Sorte: 5 Destreza: 20;
+
+/ Leves: /
+
+	> Capuz do Mago Novato:
+	   * 1
+	   * Armadura;
+	   * 0 (Armadura Inicial);
+	   * Força: 5, Inteligência: 60, Resistência: 10, Destreza: 5;
+
+	> Robe do Mago Novato:
+	   * 1
+	   * Armadura;
+	   * 0 (Armadura Inicial);
+	   * Força: 10, Inteligência: 80, Resistência: 15, Destreza: 8;
+
+	> Sandálias do Mago Novato:
+	   * 1
+	   * Armadura;
+	   * 0 (Armadura Inicial);
+	   * Força: 2, Inteligência: 30, Resistência: 5, Destreza: 2;
