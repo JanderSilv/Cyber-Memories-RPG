@@ -17,11 +17,16 @@ namespace RPG
 
         public MainPage()
         {
-            UButton btn = new UButton("Button");
-            InitializeComponent();
-            
             window = new Window(this, 840, 620);
+
+
+
+            UButton btn = new UButton("Jander",new Vector2(0,0),new Vector2(100,50), algumaCoisa);
+          
+            InitializeComponent();
             window.AddUI(btn);
+           
+         
             AmbienteJogo.Init(window);
             
             new Caixa(new Vector2(-200, 0));
@@ -29,6 +34,11 @@ namespace RPG
             new Player(new Vector2(0, 0));
            
             AmbienteJogo.Execute(120);
+        }
+
+        private void algumaCoisa(object sender)
+        {
+            Engine.Debug("Alguma coisa ocorreu");
         }
     }
 }

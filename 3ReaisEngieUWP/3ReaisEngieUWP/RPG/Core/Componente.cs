@@ -23,7 +23,7 @@ namespace _3ReaisEngine.Core
                 m_intComponenteID = ComponenteMnager.componenteCount;
             }
          }
-        
+      
         public void setEntidade(Entidade e)
         {
             entidade = e;

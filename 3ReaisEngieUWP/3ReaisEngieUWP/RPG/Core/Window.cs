@@ -130,8 +130,8 @@ namespace _3ReaisEngine.RPG.Core
                 Vector2 pos = element.getPosition();
                 Vector2 si = element.getSize();
 
-               tt.X = ((pos.x/2)/ 100.0) * Widht;
-               tt.Y = ((pos.y/2)/ 100.0) * Height;
+               tt.X = 2*(((pos.x/2)/ 100.0) * Widht) - si.x/2;
+            tt.Y = 2 * (((pos.y / 2) / 100.0) * Height) - si.y/2;
 
             ui_layer.Children.Add(e);
         }

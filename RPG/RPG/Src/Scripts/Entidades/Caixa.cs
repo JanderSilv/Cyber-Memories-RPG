@@ -11,13 +11,15 @@ namespace RPG.Src.Scripts
     [RequerComponente(typeof(Colisao))]
     [RequerComponente(typeof(Render))]
     [RequerComponente(typeof(Itinerario))]
+    [RequerComponente(typeof(Movel))]
+
     class Caixa : Entidade
     {
        
         Itinerario caminho;
+        Movel mov;
 
-       
-      
+
 
         public Caixa(Vector2 pos) : base()
         {
@@ -25,10 +27,16 @@ namespace RPG.Src.Scripts
             Nome = "Rocha";
        
             AmbienteJogo.AdcionarEntidade(this);
+            
             Render r = GetComponente<Render>();
-            GetComponente<Colisao>().tipo = TipoColisao.Dinamica;
-            r.LoadImage("Src/JunglerockAlpha.png");
+            Colisao col = GetComponente<Colisao>();
             caminho = GetComponente<Itinerario>();
+            mov = GetComponente<Movel>();
+
+            col.tipo = TipoColisao.Dinamica;
+            r.LoadImage("Src/Opera-04.png");            
+            mov.col = col;
+            caminho.movel = mov;
 
             caminho.AddPos("1", new Vector2(50, 50));
             caminho.AddPos("2", new Vector2(70, 100));
@@ -52,7 +60,7 @@ namespace RPG.Src.Scripts
 
         public override void OnClick(MouseEvento e)
         {
-            
+            Engine.Debug("FUI CUTUCADO");
         }
     }
 }

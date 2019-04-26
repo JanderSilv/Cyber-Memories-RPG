@@ -24,60 +24,50 @@ namespace _3ReaisEngine
     public static class AmbienteJogo
     {
         #region DefineVar
-        public static bool Run = true;
 
-        public static float deltaTime;
+        static bool Run = true;
         static ManipuladorEventos gerenciadorEventos = new ManipuladorEventos();
         static GerenciadorFisica gerenciadorFisica = new GerenciadorFisica();
-
-        static Stopwatch watch;
         static Audio musicaDeFundo = new Audio();
-
-        public static float time { get; private set; }
 
         public static Input Input { get; private set; }
         public static Camera currentCamera { get; private set; }
         public static Window window { get; private set; }
-        public static Vector2 drawOffset = new Vector2();
+       
       
         #endregion
 
         #region Construtores
         public static void Init(Page p)
         {
-            drawOffset.x = 0;
-            drawOffset.y = 0;
-            window = new Window(p, 720, 640);
-            time = 0;
             Run = true;
-            watch = Stopwatch.StartNew();
+
             Input = new Input();
+            currentCamera = new Camera();
+            window = new Window(p, 720, 640);
+
             RegistrarEventoCallBack(PrioridadeEvento.Game, Input.UpdateTeclado);
             RegistrarEventoCallBack(PrioridadeEvento.Game, Input.UpdateMouse);
-            currentCamera = new Camera();
-            watch.Stop();
-            musicaDeFundo.Audios.Add("back", new AudioSource() { Name = "rain.mp3", Loop = true, Volume = 50 });
-            musicaDeFundo.Play("back");
+        
+            musicaDeFundo.Audios.Add("back", new AudioSource() { Name = "rain.mp3", Loop = true, Volume = 0 });
+         //   musicaDeFundo.Play("back");
           
         }
 
         public static void Init(Window w)
         {
-            drawOffset.x = 0;
-            drawOffset.y = 0;
-            window = w;
-            time = 0;
+            window = w;         
             Run = true;
-            watch = Stopwatch.StartNew();
+       
             Input = new Input();
+            currentCamera = new Camera();
+
             RegistrarEventoCallBack(PrioridadeEvento.Game, Input.UpdateTeclado);
             RegistrarEventoCallBack(PrioridadeEvento.Game, Input.UpdateMouse);
-            currentCamera = new Camera();
-            watch.Stop();
-            musicaDeFundo.Audios.Add("back", new AudioSource() { Name = "rain.mp3", Loop = true, Volume = 50 });
-            musicaDeFundo.Play("back");
-            
-
+           
+            musicaDeFundo.Audios.Add("back", new AudioSource() { Name = "rain.mp3", Loop = true, Volume = 0 });
+           // musicaDeFundo.Play("back");
+           
         }
 
         #endregion
@@ -86,7 +76,7 @@ namespace _3ReaisEngine
         {
             while (Run)
             {
-                watch = Stopwatch.StartNew();
+             
               
                 currentCamera.Update();
                 gerenciadorEventos.Update();
@@ -99,14 +89,11 @@ namespace _3ReaisEngine
               
                 foreach (Render r in window.renders)
                 {
-                    r.transform.X = r.entidade.EntPos.x - currentCamera.delta.x;
-                    r.transform.Y = r.entidade.EntPos.y - currentCamera.delta.y;            
+                    r.transform.X = r.entidade.EntPos.x - currentCamera.drawOffset.x;
+                    r.transform.Y = r.entidade.EntPos.y - currentCamera.drawOffset.y;            
                 }
 
-                time++;
-                watch.Stop();
-                deltaTime =(float)watch.ElapsedMilliseconds;
-
+              
                 await Task.Delay(1000/frames);
                 late?.Invoke();
                

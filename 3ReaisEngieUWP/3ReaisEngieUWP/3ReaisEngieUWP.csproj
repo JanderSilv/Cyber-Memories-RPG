@@ -112,7 +112,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RPG\Components\Animacao.cs" />
     <Compile Include="RPG\Components\Audio.cs" />
-    <Compile Include="RPG\Components\Itinerario.cs" />
     <Compile Include="RPG\Core\AmbienteJogo.cs" />
     <Compile Include="RPG\Attributes\RequerComponente.cs" />
     <Compile Include="RPG\Components\Colisao.cs" />

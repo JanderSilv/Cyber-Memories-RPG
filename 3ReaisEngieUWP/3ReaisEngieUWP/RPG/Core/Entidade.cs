@@ -165,7 +165,8 @@ namespace _3ReaisEngine.Core
          É executado a cada frame do jogo
          */
         #endregion
-        
+
+       
         public virtual void OnClick(MouseEvento e)
         {
 

@@ -8,15 +8,16 @@ using _3ReaisEngine.Core;
 [RequerComponente(typeof(Animacao))]
 [RequerComponente(typeof(Inventario))]
 [RequerComponente(typeof(Status))]
+[RequerComponente(typeof(Movel))]
 
 class Player : Entidade
 {
-    bool mudou = false;
-    Colisao col;
-    Animacao anim;
-    Render render;
-    float vel;
-   
+    readonly Animacao anim;
+    readonly Render render;
+    readonly Colisao col;
+    readonly Movel mov;
+
+    float vel;  
     bool dead = false;
 
     public Player(Vector2 pos)
@@ -27,10 +28,14 @@ class Player : Entidade
         vel = 5;
 
         col = GetComponente<Colisao>();
+        render = GetComponente<Render>();
+        anim = GetComponente<Animacao>();
+        mov = GetComponente<Movel>();
+        mov.col = col;
+
         col.tipo = TipoColisao.Dinamica;
         col.onColisionAction += OnColide;
-        anim = new Animacao();
-        render = GetComponente<Render>();
+      
 
         anim.AddAnimation("Idle", "Src/Animations/idle.gif");
         anim.AddAnimation("Dead", "Src/Animations/dead.gif");
@@ -39,6 +44,7 @@ class Player : Entidade
         anim.Play("Idle",render);
 
         AmbienteJogo.AdcionarEntidade(this);
+        AmbienteJogo.currentCamera.setSeek(this);
 
     }
 
@@ -47,10 +53,8 @@ class Player : Entidade
 
         if (AmbienteJogo.Input.TeclaPressionada(Windows.System.VirtualKey.A))
         {
-            if (col.momentoDeColisao.z == 0)
+            if (mov.Mover(-vel,0))
             {
-                 EntPos.x -= vel;
-                AmbienteJogo.currentCamera.delta.x -= vel;
                 dead = false;
                 anim.Play("Walk", render);
             }
@@ -61,10 +65,8 @@ class Player : Entidade
         }
         if (AmbienteJogo.Input.TeclaPressionada(Windows.System.VirtualKey.D))
         {
-            if (col.momentoDeColisao.x == 0)
+            if (mov.Mover(vel, 0))
             {
-                 EntPos.x += vel;
-                AmbienteJogo.currentCamera.delta.x += vel;
                 dead = false;
                 anim.Play("Walk", render);
             }
@@ -75,10 +77,8 @@ class Player : Entidade
         }
         if (AmbienteJogo.Input.TeclaPressionada(Windows.System.VirtualKey.W))
         {
-            if (col.momentoDeColisao.y == 0)
+            if (mov.Mover(0, -vel))
             {
-               EntPos.y -= vel;
-                AmbienteJogo.currentCamera.delta.y -= vel;
                 dead = false;
                 anim.Play("Walk", render);
             }
@@ -89,10 +89,8 @@ class Player : Entidade
         }
         if (AmbienteJogo.Input.TeclaPressionada(Windows.System.VirtualKey.S))
         {
-            if (col.momentoDeColisao.w == 0)
+            if (mov.Mover(0, vel))
             {
-                EntPos.y += vel;
-                AmbienteJogo.currentCamera.delta.y += vel;
                 dead = false;
                 anim.Play("Walk", render);
             }
@@ -102,6 +100,7 @@ class Player : Entidade
             Engine.Debug("Tecla solta: A");
             anim.Play("Idle", render);
         }
+
         if (AmbienteJogo.Input.TeclaPressionada(Windows.System.VirtualKey.Escape))
         {
             if (!dead)

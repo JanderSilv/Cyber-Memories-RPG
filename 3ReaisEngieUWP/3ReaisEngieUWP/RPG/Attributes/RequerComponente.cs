@@ -1,4 +1,5 @@
-﻿using System;
+﻿using _3ReaisEngine.Core;
+using System;
 
 namespace _3ReaisEngine.Attributes
 {
@@ -12,4 +13,6 @@ namespace _3ReaisEngine.Attributes
             componente = Componente;
         }
     }
+
+   
 }

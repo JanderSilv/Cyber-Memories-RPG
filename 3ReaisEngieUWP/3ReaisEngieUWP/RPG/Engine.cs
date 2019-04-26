@@ -1,4 +1,6 @@
-﻿using System.Diagnostics;
+﻿#define LOG
+
+using System.Diagnostics;
 
 namespace _3ReaisEngine
 {
@@ -6,7 +8,9 @@ namespace _3ReaisEngine
     {
         public static void Debug(object obj)
         {
+#if LOG
             System.Diagnostics.Debug.WriteLine(obj);
+#endif
         }
     }
 
