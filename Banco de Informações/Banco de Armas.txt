@@ -3,80 +3,106 @@
 Manual:
  
 1. Nome
-2. Descrição
-3. Tipo
-4. Preço
-5. Animação
+2. DescriÃ§Ã£o
+3. Lv Requerido
+4. Tipo
+5. PreÃ§o
 6. Atributos
 
 / Cajados: /
 
      > Cajado de Madeira:
-	* Cajado maciço feito de carvalho;
+	* Cajado maciÃ§o feito de carvalho;
+	* 1
 	* Cajado;
 	* 0 (Arma Inicial);
-	* 019: Golpe/físico;
-	* Ataque: 18, Força: 0, Inteligência: 7, Resistência: 0, Sorte: 0, Destreza: 0;
+	* Ataque: 18, InteligÃªncia: 30, Destreza: 2;
 
      > Cajado do Mago:
-	* Cajado de carvalho forjado com uma gema mágica;
+	* Cajado de carvalho forjado com uma gema mÃ¡gica;
+	* 5
 	* Cajado;
 	* 500;
-	* 019: Golpe/físico;
-	* Ataque: 34, Força: 0, Inteligência: 15, Resistência: 0, Sorte: 0, Destreza: 0;
+	* Ataque: 34, InteligÃªncia: 48, Destreza: 5;
 
      > Cajado de Merlim:
 	* Cajado forjado pelo mago mais poderoso da terra;
+	* 15
 	* Cajado;
 	* 3000;
 	* 022: Golpe/raio;
-	* Ataque: 60, Força: 0, Inteligência: 31, Resistência: 0, Sorte: 0, Destreza: 0;
+	* Ataque: 60, InteligÃªncia: 65, Destreza: 8;
 
 / Espadas:/
 
-     > Espada de Aço:
-	* Espada forjada em aço;
+     > Espada de AÃ§o:
+	* Espada forjada em aÃ§o;
+	* 1
 	* Espada;
 	* 0 (Arma Inicial);
-	* 007: Corte/Físico;
-	* Ataque: 23, Força: 3, Inteligência: 0, Resistência: 0, Sorte: 0, Destreza: 0;
+	* Ataque: 27, ForÃ§a: 5, Destreza: 2;
 
      > Espada do Guerreiro:
 	* Espada forjada por um habilidoso ferreiro;
+	* 5
 	* Espada;
 	* 500;
-	* 007: Corte/Físico;
-	* Ataque: 50, Força: 7, Inteligência: 0, Resistência: 0, Sorte: 0, Destreza: 0;
+	* 007: Corte/FÃ­sico;
+	* Ataque: 50, ForÃ§a: 10, Destreza: 5;
 
      > Excalibur:
-	* Lendária espada do Rei Artur;
+	* LendÃ¡ria espada do Rei Artur;
+	* 10
 	* Espada;
 	* 3000;
-	* 011: Corte/Múltiplos1;
-	* Ataque: 95, Força: 15, Inteligência: 0, Resistência: 0, Sorte: 0, Destreza: 0;
+	* 011: Corte/MÃºltiplos1;
+	* Ataque: 100, ForÃ§a: 15, Destreza: 7;
 
 
 / Arcos: /
 
      > Arco de Madeira:
-	* Arco feito para a caça;
+	* Arco feito para a caÃ§a;
+	* 1
         * Arco;
 	* 0 (Arma Inicial);
-	* 013: Lança/Físico;
-	* Ataque: 21, Força: 0, Inteligência: 0, Resistência: 0, Sorte: 0, Destreza: 3;
+	* 013: LanÃ§a/FÃ­sico;
+	* Ataque: 21, Destreza: 10;
 
      > Arco do Arqueiro:
 	* Arco longo de combate melhorado;
+	* 5
 	* Arco;
 	* 500;
-	* 013: Lança/Físico;
-	* Ataque: 48, Força: 0, Inteligência: 0, Resistência: 0, Sorte: 0, Destreza: 7;
+	* Ataque: 48, Destreza: 15;
 
-     > Arco do Légolas:
-	* Arco do grandioso elfo Sindar Légolas;
+     > Arco do LÃ©golas:
+	* Arco do grandioso elfo Sindar LÃ©golas;
+	* 10;
 	* Arco;
 	* 3000;
-	* 016: Lança/Raio;
-	* Ataque: 93, Força: 0, Inteligência: 0, Resistência: 0, Sorte: 0, Destreza: 15;
+	* Ataque: 98, Destreza: 20;
 
+/ Adagas: /
 
+     > Adaga de AÃ§o:
+	* Adaga feita aÃ§o bem afiada;
+	* 1;
+        * Adaga;
+	* 0 (Arma Inicial);
+	* Ataque: 24, Sorte: 10, Destreza: 6;
+	
+     > Adaga do Ladino:
+       * Adaga resistente e afiada capaz de cortar qualque coisa.
+       * 5;
+       * Adaga;
+       * 500;
+       * Ataque: 53, Sorte: 15, Destreza: 13;
+       
+     > Adaga do Assassino:
+       * Adaga que pertenceu a um renomado assassino;
+       * 10;
+       * 3000;
+       * Ataque: 97, Sorte: 20, Destreza: 24;
+
+42, 68
