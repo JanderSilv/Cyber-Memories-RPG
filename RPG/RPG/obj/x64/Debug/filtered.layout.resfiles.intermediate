@@ -1,3 +1,4 @@
+WinMetadata\Windows.winmd
 Assets\LockScreenLogo.scale-200.png
 Assets\SplashScreen.scale-200.png
 Assets\Square150x150Logo.scale-200.png
@@ -8,6 +9,7 @@ Assets\Wide310x150Logo.scale-200.png
 App.xbf
 MainPage.xbf
 RPG.xr.xml
+Src\Scripts\Interface de Usuário\Menu.xbf
 Properties\Default.rd.xml
 Src\Animations\dead.gif
 Src\Animations\Dead.png
@@ -21,4 +23,3 @@ Src\cabeca.png
 Src\dance.gif
 Src\JunglerockAlpha.png
 Src\Opera-04.png
-WinMetadata\Windows.winmd
