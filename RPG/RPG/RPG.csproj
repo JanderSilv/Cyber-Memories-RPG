@@ -130,6 +130,8 @@
     <None Include="RPG_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Src\Animations\Menu\Menu.gif" />
+    <Content Include="Src\Images\Menu\Logo.png" />
     <Content Include="Src\Opera-04.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
