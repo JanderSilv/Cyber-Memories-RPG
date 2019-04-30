@@ -43,8 +43,8 @@ class Player : Entidade
         anim.AddAnimation("Walk", "Src/Animations/walk.gif");
         anim.Play("Idle",render);
 
-        AmbienteJogo.AdcionarEntidade(this);
-        AmbienteJogo.currentCamera.setSeek(this);
+      
+     
 
     }
 

@@ -32,9 +32,10 @@ namespace _3ReaisEngine.Entidades
              
                 drawOffset.x += delta.x;
                 drawOffset.y += delta.y;
+                last.x = Seek.EntPos.x;
+                last.y = Seek.EntPos.y;
             }
-            last.x = Seek.EntPos.x;
-            last.y = Seek.EntPos.y;
+           
         }
     }
 }

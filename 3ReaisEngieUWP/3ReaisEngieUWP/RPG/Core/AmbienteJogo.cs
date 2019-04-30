@@ -18,7 +18,7 @@ using Windows.UI.Core;
 namespace _3ReaisEngine
 {
 
-    public delegate void LateUpdae();
+    public delegate void Func();
 
 
     public static class AmbienteJogo
@@ -29,80 +29,70 @@ namespace _3ReaisEngine
         static ManipuladorEventos gerenciadorEventos = new ManipuladorEventos();
         static GerenciadorFisica gerenciadorFisica = new GerenciadorFisica();
         static Audio musicaDeFundo = new Audio();
+        static int frameRate = 60;
+        static Func posUpdate = null;
 
         public static Input Input { get; private set; }
         public static Camera currentCamera { get; private set; }
-        public static Window window { get; private set; }
-       
-      
-        #endregion
-
-        #region Construtores
-        public static void Init(Page p)
-        {
-            Run = true;
-
-            Input = new Input();
-            currentCamera = new Camera();
-            window = new Window(p, 720, 640);
-
-            RegistrarEventoCallBack(PrioridadeEvento.Game, Input.UpdateTeclado);
-            RegistrarEventoCallBack(PrioridadeEvento.Game, Input.UpdateMouse);
+        public static Window window;
         
-            musicaDeFundo.Audios.Add("back", new AudioSource() { Name = "rain.mp3", Loop = true, Volume = 0 });
-         //   musicaDeFundo.Play("back");
-          
-        }
 
-        public static void Init(Window w)
+        #endregion
+
+        static AmbienteJogo()
         {
-            window = w;         
             Run = true;
-       
             Input = new Input();
             currentCamera = new Camera();
 
             RegistrarEventoCallBack(PrioridadeEvento.Game, Input.UpdateTeclado);
             RegistrarEventoCallBack(PrioridadeEvento.Game, Input.UpdateMouse);
-           
-            musicaDeFundo.Audios.Add("back", new AudioSource() { Name = "rain.mp3", Loop = true, Volume = 0 });
-           // musicaDeFundo.Play("back");
-           
+            Windows.ApplicationModel.Core.CoreApplication.MainView.CoreWindow.Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () => { Execute(); });
+
+
         }
 
-        #endregion
-
-        public static async Task Execute(int frames = 60, LateUpdae late = null)
+     
+        static async Task Execute()
         {
             while (Run)
             {
-             
-              
-                currentCamera.Update();
-                gerenciadorEventos.Update();
-                gerenciadorFisica.UpdateColisions(window.colisores.ToArray()); 
-
-                foreach (Entidade e in window.entidades)
+                try
                 {
-                    if (!e.IsStatic) e.Update();
-                }
-              
-                foreach (Render r in window.renders)
-                {
-                    r.transform.X = r.entidade.EntPos.x - currentCamera.drawOffset.x;
-                    r.transform.Y = r.entidade.EntPos.y - currentCamera.drawOffset.y;            
-                }
+                    if (window == null)
+                    {
+                        Engine.Debug("Window is missing");
+                        continue;
+                    }
+                    currentCamera.Update();
+                    gerenciadorEventos.Update();
+                    gerenciadorFisica.UpdateColisions(window.colisores.ToArray());
 
-              
-                await Task.Delay(1000/frames);
-                late?.Invoke();
-               
+                    foreach (Entidade e in window.entidades)
+                    {
+                        if (!e.IsStatic) e.Update();
+                    }
+
+                    foreach (Render r in window.renders)
+                    {
+                        r.transform.X = r.entidade.EntPos.x - currentCamera.drawOffset.x;
+                        r.transform.Y = r.entidade.EntPos.y - currentCamera.drawOffset.y;
+                    }
+
+                    await Task.Delay(1000 / frameRate);
+                    posUpdate?.Invoke();
+                }catch(Exception e)
+                {
+                    Engine.Debug(e.StackTrace);
+                  
+                }
+                   
             }
-            
+          
         }
 
         #region Management Functions
-        public static void AdcionarEntidade(Entidade e)
+        public static Entidade AdcionarEntidade(Entidade e)
         {
 
             window.entidades.Add(e);
@@ -121,7 +111,7 @@ namespace _3ReaisEngine
                 window.renders.Add(r);
                 window.Add(r.img);
             }
-          
+            return e;
         }
 
         public static void RemoverEntidade(Entidade e)

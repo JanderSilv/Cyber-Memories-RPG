@@ -26,7 +26,7 @@ namespace RPG.Src.Scripts
             EntPos = pos;
             Nome = "Rocha";
        
-            AmbienteJogo.AdcionarEntidade(this);
+          
             
             Render r = GetComponente<Render>();
             Colisao col = GetComponente<Colisao>();

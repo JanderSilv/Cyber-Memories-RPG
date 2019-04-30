@@ -117,6 +117,7 @@
     <Compile Include="Src\Scripts\Componentes\Mercador.cs" />
     <Compile Include="Src\Scripts\Entidades\Player.cs" />
     <Compile Include="Src\Scripts\Items\Arco.cs" />
+    <Compile Include="Src\Scripts\Jogo.cs" />
     <Compile Include="Src\Scripts\Managers\InventarioManager.cs" />
     <Compile Include="Src\Scripts\Managers\ItemManager.cs" />
   </ItemGroup>

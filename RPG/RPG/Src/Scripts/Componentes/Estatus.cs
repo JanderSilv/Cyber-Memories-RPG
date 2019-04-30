@@ -1,6 +1,4 @@
 ﻿using _3ReaisEngine.Core;
-using System.Collections.Generic;
-
 
 public enum Estado
 {

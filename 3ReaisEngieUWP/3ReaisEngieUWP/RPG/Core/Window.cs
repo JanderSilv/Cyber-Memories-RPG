@@ -26,13 +26,14 @@ namespace _3ReaisEngine.RPG.Core
         public List<Entidade> entidades = new List<Entidade>();
         public List<Colisao> colisores = new List<Colisao>();
         public List<Render> renders = new List<Render>();
+        public Entidade Entidades;
+        private Panel game_layer;
+        private Panel ui_layer;
 
         public float Widht { set { game_layer.Width = value; } get { return (float)game_layer.Width;} }
         public float Height { set { game_layer.Height = value; } get { return (float)game_layer.Height; } }
 
-        private Panel game_layer;
-        private Panel ui_layer;
-
+       
         public Page root;
 
         public Window(Page root)
@@ -50,6 +51,8 @@ namespace _3ReaisEngine.RPG.Core
             canv.KeyUp += Game_KeyUp;
             canv.PointerPressed += Game_PointerPressed;
             canv.PointerReleased += Game_PointerReleased;
+
+            
 
             ui.Width = 840;
             ui.Height = 620;
@@ -107,7 +110,67 @@ namespace _3ReaisEngine.RPG.Core
         }
 
       
+        public void Add(Entidade element)
+        {
+            entidades.Add(element);
 
+            Colisao c = null;
+            Render r = null;
+
+            element.EntPos.x += Widht / 4;
+            element.EntPos.y += Height / 4;
+
+            if (element.GetComponente(ref c))
+            {
+                colisores.Add(c);
+            }
+            if (element.GetComponente(ref r))
+            {
+                renders.Add(r);
+                Add(r.img);
+            }
+        }
+
+        public void Add(Entidade[] elements)
+        {
+            foreach (Entidade element in elements)
+            {
+                entidades.Add(element);
+
+                Colisao c = null;
+                Render r = null;
+
+                element.EntPos.x += Widht / 4;
+                element.EntPos.y += Height / 4;
+
+                if (element.GetComponente(ref c))
+                {
+                    colisores.Add(c);
+                }
+                if (element.GetComponente(ref r))
+                {
+                    renders.Add(r);
+                    Add(r.img);
+                }
+            }
+        }
+
+        public void Remove(Entidade element)
+        {
+            entidades.Remove(element);
+            Colisao c = null;
+            Render r = null;
+            if (element.GetComponente(ref c))
+            {
+                colisores.Remove(c);
+            }
+            if (element.GetComponente(ref r))
+            {
+                renders.Remove(r);
+                Remove(r.img);
+            }
+        }
+        
         public void Add(UIElement element)
         {
             game_layer.Children.Add(element);
