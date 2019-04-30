@@ -97,7 +97,7 @@ class Player : Entidade
         }
         if (AmbienteJogo.Input.TeclaSolta(Windows.System.VirtualKey.S))
         {
-            Engine.Debug("Tecla solta: A");
+           
             anim.Play("Idle", render);
         }
 
