@@ -107,6 +107,9 @@
     <Compile Include="Src\Scripts\Componentes\Inventario.cs" />
     <Compile Include="Src\Scripts\Habilidade\Envenenamento.cs" />
     <Compile Include="Src\Scripts\Habilidade\Trovao.cs" />
+    <Compile Include="Src\Scripts\Interface de Usuário\Menu.xaml.cs">
+      <DependentUpon>Menu.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Src\Scripts\Interfaces\Armazenavel.cs" />
     <Compile Include="Src\Scripts\Interfaces\Comercial.cs" />
     <Compile Include="Src\Scripts\Interfaces\Atacavel.cs" />
@@ -128,6 +131,8 @@
     <None Include="RPG_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Src\Animations\Menu\Menu.gif" />
+    <Content Include="Src\Images\Menu\Logo.png" />
     <Content Include="Src\Opera-04.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -169,6 +174,10 @@
     <Page Include="MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Src\Scripts\Interface de Usuário\Menu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>

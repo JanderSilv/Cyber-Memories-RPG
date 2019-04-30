@@ -7,8 +7,6 @@
     xmlns:Custom="using:Windows.UI.Xaml.Controls.Maps"
     x:Class="RPG.MainPage"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Height="640" Width="720" HorizontalAlignment="Left">
-  
-</Page>
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Height="640" Width="720" HorizontalAlignment="Left"/>
 
 
