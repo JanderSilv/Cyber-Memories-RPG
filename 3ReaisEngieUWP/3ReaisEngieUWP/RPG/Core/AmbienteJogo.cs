@@ -94,40 +94,13 @@ namespace _3ReaisEngine
         #region Management Functions
         public static Entidade AdcionarEntidade(Entidade e)
         {
-
-            window.entidades.Add(e);
-            Colisao c = null;
-            Render r = null;
-            
-            e.EntPos.x += window.Widht / 4;
-            e.EntPos.y += window.Height / 4;
-            
-            if (e.GetComponente(ref c))
-            {
-                window.colisores.Add(c);
-            }
-            if (e.GetComponente(ref r))
-            {
-                window.renders.Add(r);
-                window.Add(r.img);
-            }
+            window.Add(e);
             return e;
         }
 
         public static void RemoverEntidade(Entidade e)
         {
-            window.entidades.Remove(e);
-            Colisao c = null;
-            Render r = null;
-            if (e.GetComponente(ref c))
-            {
-                window.colisores.Remove(c);
-            }
-            if (e.GetComponente(ref r))
-            {
-                window.renders.Remove(r);
-                window.Remove(r.img);
-            }
+            window.Remove(e);         
         }
         public static void EnviarEvento<T>(T e) where T : EventArgs
         {

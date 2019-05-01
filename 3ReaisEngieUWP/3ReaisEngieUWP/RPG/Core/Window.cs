@@ -29,7 +29,7 @@ namespace _3ReaisEngine.RPG.Core
         public Entidade Entidades;
         private Panel game_layer;
         private Panel ui_layer;
-
+        private ulong EntidadeCount = 1;
         public float Widht { set { game_layer.Width = value; } get { return (float)game_layer.Width;} }
         public float Height { set { game_layer.Height = value; } get { return (float)game_layer.Height; } }
 
@@ -112,14 +112,20 @@ namespace _3ReaisEngine.RPG.Core
       
         public void Add(Entidade element)
         {
+           
             entidades.Add(element);
+            element.ID = EntidadeCount;
+            EntidadeCount++;
 
             Colisao c = null;
             Render r = null;
-
+            MalhaColisao mc = null;
             element.EntPos.x += Widht / 4;
             element.EntPos.y += Height / 4;
-
+            if (element.GetComponente(ref mc))
+            {
+                colisores.AddRange(mc.colisoes);
+            }
             if (element.GetComponente(ref c))
             {
                 colisores.Add(c);
@@ -135,14 +141,20 @@ namespace _3ReaisEngine.RPG.Core
         {
             foreach (Entidade element in elements)
             {
+              
                 entidades.Add(element);
+                element.ID = EntidadeCount;
+                EntidadeCount++;
 
                 Colisao c = null;
                 Render r = null;
-
+                MalhaColisao mc = null;
                 element.EntPos.x += Widht / 4;
                 element.EntPos.y += Height / 4;
-
+                if (element.GetComponente(ref mc))
+                {
+                    colisores.AddRange(mc.colisoes);
+                }
                 if (element.GetComponente(ref c))
                 {
                     colisores.Add(c);

@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-05-01T11:47:29.984</Modified>
+      <Modified>2019-05-01T21:19:50.973</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\bin\x64\Debug\RPG.exe">
       <PackagePath>entrypoint\RPG.exe</PackagePath>
-      <Modified>2019-05-01T11:47:29.019</Modified>
+      <Modified>2019-05-01T21:17:56.754</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.netcore.universalwindowsplatform\6.1.7\runtimes\win10-x64\nativeassets\uap10.0.15138\clrcompression.dll">
       <PackagePath>clrcompression.dll</PackagePath>
@@ -697,7 +697,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\3ReaisEngieUWP\3ReaisEngieUWP\bin\x64\Debug\3ReaisEngieUWP.dll">
       <PackagePath>3ReaisEngieUWP.dll</PackagePath>
-      <Modified>2019-05-01T11:46:49.440</Modified>
+      <Modified>2019-05-01T21:05:01.747</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\Animations\Menu\Menu.gif">
       <PackagePath>Src\Animations\Menu\Menu.gif</PackagePath>
@@ -722,6 +722,26 @@
     <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\dance.gif">
       <PackagePath>Src\dance.gif</PackagePath>
       <Modified>2019-04-09T14:39:46.476</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\Sprites\Zumbi\undead_attack.gif">
+      <PackagePath>Src\Sprites\Zumbi\undead_attack.gif</PackagePath>
+      <Modified>2019-05-01T20:17:26.401</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\Sprites\Zumbi\undead_death.gif">
+      <PackagePath>Src\Sprites\Zumbi\undead_death.gif</PackagePath>
+      <Modified>2019-05-01T20:17:26.403</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\Sprites\Zumbi\undead_hurt.gif">
+      <PackagePath>Src\Sprites\Zumbi\undead_hurt.gif</PackagePath>
+      <Modified>2019-05-01T20:17:26.405</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\Sprites\Zumbi\undead_idle.gif">
+      <PackagePath>Src\Sprites\Zumbi\undead_idle.gif</PackagePath>
+      <Modified>2019-05-01T20:17:26.407</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\Sprites\Zumbi\undead_walk.gif">
+      <PackagePath>Src\Sprites\Zumbi\undead_walk.gif</PackagePath>
+      <Modified>2019-05-01T20:17:26.409</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\Images\Menu\Logo.png">
       <PackagePath>Src\Images\Menu\Logo.png</PackagePath>
@@ -777,6 +797,286 @@
       <PackagePath>Src\JunglerockAlpha.png</PackagePath>
       <Modified>2019-04-09T14:39:46.443</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\Sprites\Bau\Treasure Chest closed 254x254.png">
+      <PackagePath>Src\Sprites\Bau\Treasure Chest closed 254x254.png</PackagePath>
+      <Modified>2019-05-01T20:17:26.202</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\Sprites\Bau\Treasure Chest open 254x254.png">
+      <PackagePath>Src\Sprites\Bau\Treasure Chest open 254x254.png</PackagePath>
+      <Modified>2019-05-01T20:17:26.205</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\Sprites\Cavaleiro\knight 3 block.png">
+      <PackagePath>Src\Sprites\Cavaleiro\knight 3 block.png</PackagePath>
+      <Modified>2019-05-01T20:17:26.229</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\Sprites\Cavaleiro\knight 3 idle.png">
+      <PackagePath>Src\Sprites\Cavaleiro\knight 3 idle.png</PackagePath>
+      <Modified>2019-05-01T20:17:26.232</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\Sprites\Cavaleiro\knight 3 improved slash animation.png">
+      <PackagePath>Src\Sprites\Cavaleiro\knight 3 improved slash animation.png</PackagePath>
+      <Modified>2019-05-01T20:17:26.235</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\Sprites\Cavaleiro\knight death animation.png">
+      <PackagePath>Src\Sprites\Cavaleiro\knight death animation.png</PackagePath>
+      <Modified>2019-05-01T20:17:26.238</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\Sprites\Cavaleiro\knight walk animation.png">
+      <PackagePath>Src\Sprites\Cavaleiro\knight walk animation.png</PackagePath>
+      <Modified>2019-05-01T20:17:26.241</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\Sprites\Feiticeiro\sorcerer attack_Animation 1_0.png">
+      <PackagePath>Src\Sprites\Feiticeiro\sorcerer attack_Animation 1_0.png</PackagePath>
+      <Modified>2019-05-01T20:17:26.244</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\Sprites\Feiticeiro\sorcerer attack_Animation 1_1.png">
+      <PackagePath>Src\Sprites\Feiticeiro\sorcerer attack_Animation 1_1.png</PackagePath>
+      <Modified>2019-05-01T20:17:26.246</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\Sprites\Feiticeiro\sorcerer attack_Animation 1_2.png">
+      <PackagePath>Src\Sprites\Feiticeiro\sorcerer attack_Animation 1_2.png</PackagePath>
+      <Modified>2019-05-01T20:17:26.248</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\Sprites\Feiticeiro\sorcerer attack_Animation 1_3.png">
+      <PackagePath>Src\Sprites\Feiticeiro\sorcerer attack_Animation 1_3.png</PackagePath>
+      <Modified>2019-05-01T20:17:26.251</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\Sprites\Feiticeiro\sorcerer attack_Animation 1_4.png">
+      <PackagePath>Src\Sprites\Feiticeiro\sorcerer attack_Animation 1_4.png</PackagePath>
+      <Modified>2019-05-01T20:17:26.254</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\Sprites\Feiticeiro\sorcerer attack_Animation 1_5.png">
+      <PackagePath>Src\Sprites\Feiticeiro\sorcerer attack_Animation 1_5.png</PackagePath>
+      <Modified>2019-05-01T20:17:26.256</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\Sprites\Feiticeiro\sorcerer attack_Animation 1_6.png">
+      <PackagePath>Src\Sprites\Feiticeiro\sorcerer attack_Animation 1_6.png</PackagePath>
+      <Modified>2019-05-01T20:17:26.258</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\Sprites\Feiticeiro\sorcerer attack_Animation 1_7.png">
+      <PackagePath>Src\Sprites\Feiticeiro\sorcerer attack_Animation 1_7.png</PackagePath>
+      <Modified>2019-05-01T20:17:26.260</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\Sprites\Feiticeiro\sorcerer attack_Animation 1_8.png">
+      <PackagePath>Src\Sprites\Feiticeiro\sorcerer attack_Animation 1_8.png</PackagePath>
+      <Modified>2019-05-01T20:17:26.262</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\Sprites\Feiticeiro\sorcerer attack_Animation 1_9.png">
+      <PackagePath>Src\Sprites\Feiticeiro\sorcerer attack_Animation 1_9.png</PackagePath>
+      <Modified>2019-05-01T20:17:26.263</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\Sprites\Feiticeiro\sorcerer villain.png">
+      <PackagePath>Src\Sprites\Feiticeiro\sorcerer villain.png</PackagePath>
+      <Modified>2019-05-01T20:17:26.265</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\Sprites\Feiticeiro\villain.png">
+      <PackagePath>Src\Sprites\Feiticeiro\villain.png</PackagePath>
+      <Modified>2019-05-01T20:17:26.267</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\Sprites\Mago\wizard attack.png">
+      <PackagePath>Src\Sprites\Mago\wizard attack.png</PackagePath>
+      <Modified>2019-05-01T20:17:26.271</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\Sprites\Mago\wizard death.png">
+      <PackagePath>Src\Sprites\Mago\wizard death.png</PackagePath>
+      <Modified>2019-05-01T20:17:26.274</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\Sprites\Mago\wizard fly forward.png">
+      <PackagePath>Src\Sprites\Mago\wizard fly forward.png</PackagePath>
+      <Modified>2019-05-01T20:17:26.277</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\Sprites\Mago\wizard idle.png">
+      <PackagePath>Src\Sprites\Mago\wizard idle.png</PackagePath>
+      <Modified>2019-05-01T20:17:26.280</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\Sprites\Rogue\rogue like attack animations.png">
+      <PackagePath>Src\Sprites\Rogue\rogue like attack animations.png</PackagePath>
+      <Modified>2019-05-01T20:17:26.283</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\Sprites\Rogue\rogue like attack animations_attack down_0.png">
+      <PackagePath>Src\Sprites\Rogue\rogue like attack animations_attack down_0.png</PackagePath>
+      <Modified>2019-05-01T20:17:26.285</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\Sprites\Rogue\rogue like attack animations_attack down_1.png">
+      <PackagePath>Src\Sprites\Rogue\rogue like attack animations_attack down_1.png</PackagePath>
+      <Modified>2019-05-01T20:17:26.287</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\Sprites\Rogue\rogue like attack animations_attack down_2.png">
+      <PackagePath>Src\Sprites\Rogue\rogue like attack animations_attack down_2.png</PackagePath>
+      <Modified>2019-05-01T20:17:26.289</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\Sprites\Rogue\rogue like attack animations_attack down_3.png">
+      <PackagePath>Src\Sprites\Rogue\rogue like attack animations_attack down_3.png</PackagePath>
+      <Modified>2019-05-01T20:17:26.291</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\Sprites\Rogue\rogue like attack animations_attack left_0.png">
+      <PackagePath>Src\Sprites\Rogue\rogue like attack animations_attack left_0.png</PackagePath>
+      <Modified>2019-05-01T20:17:26.293</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\Sprites\Rogue\rogue like attack animations_attack left_1.png">
+      <PackagePath>Src\Sprites\Rogue\rogue like attack animations_attack left_1.png</PackagePath>
+      <Modified>2019-05-01T20:17:26.295</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\Sprites\Rogue\rogue like attack animations_attack left_2.png">
+      <PackagePath>Src\Sprites\Rogue\rogue like attack animations_attack left_2.png</PackagePath>
+      <Modified>2019-05-01T20:17:26.296</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\Sprites\Rogue\rogue like attack animations_attack left_3.png">
+      <PackagePath>Src\Sprites\Rogue\rogue like attack animations_attack left_3.png</PackagePath>
+      <Modified>2019-05-01T20:17:26.298</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\Sprites\Rogue\rogue like attack animations_attack right_0.png">
+      <PackagePath>Src\Sprites\Rogue\rogue like attack animations_attack right_0.png</PackagePath>
+      <Modified>2019-05-01T20:17:26.301</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\Sprites\Rogue\rogue like attack animations_attack right_1.png">
+      <PackagePath>Src\Sprites\Rogue\rogue like attack animations_attack right_1.png</PackagePath>
+      <Modified>2019-05-01T20:17:26.302</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\Sprites\Rogue\rogue like attack animations_attack right_2.png">
+      <PackagePath>Src\Sprites\Rogue\rogue like attack animations_attack right_2.png</PackagePath>
+      <Modified>2019-05-01T20:17:26.304</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\Sprites\Rogue\rogue like attack animations_attack right_3.png">
+      <PackagePath>Src\Sprites\Rogue\rogue like attack animations_attack right_3.png</PackagePath>
+      <Modified>2019-05-01T20:17:26.306</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\Sprites\Rogue\rogue like attack animations_attack up_0.png">
+      <PackagePath>Src\Sprites\Rogue\rogue like attack animations_attack up_0.png</PackagePath>
+      <Modified>2019-05-01T20:17:26.308</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\Sprites\Rogue\rogue like attack animations_attack up_1.png">
+      <PackagePath>Src\Sprites\Rogue\rogue like attack animations_attack up_1.png</PackagePath>
+      <Modified>2019-05-01T20:17:26.310</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\Sprites\Rogue\rogue like attack animations_attack up_2.png">
+      <PackagePath>Src\Sprites\Rogue\rogue like attack animations_attack up_2.png</PackagePath>
+      <Modified>2019-05-01T20:17:26.313</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\Sprites\Rogue\rogue like attack animations_attack up_3.png">
+      <PackagePath>Src\Sprites\Rogue\rogue like attack animations_attack up_3.png</PackagePath>
+      <Modified>2019-05-01T20:17:26.315</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\Sprites\Rogue\rogue like attack.png">
+      <PackagePath>Src\Sprites\Rogue\rogue like attack.png</PackagePath>
+      <Modified>2019-05-01T20:17:26.317</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\Sprites\Rogue\rogue like attack_Animation 1_0.png">
+      <PackagePath>Src\Sprites\Rogue\rogue like attack_Animation 1_0.png</PackagePath>
+      <Modified>2019-05-01T20:17:26.318</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\Sprites\Rogue\rogue like attack_Animation 1_1.png">
+      <PackagePath>Src\Sprites\Rogue\rogue like attack_Animation 1_1.png</PackagePath>
+      <Modified>2019-05-01T20:17:26.321</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\Sprites\Rogue\rogue like attack_Animation 1_2.png">
+      <PackagePath>Src\Sprites\Rogue\rogue like attack_Animation 1_2.png</PackagePath>
+      <Modified>2019-05-01T20:17:26.323</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\Sprites\Rogue\rogue like attack_Animation 1_3.png">
+      <PackagePath>Src\Sprites\Rogue\rogue like attack_Animation 1_3.png</PackagePath>
+      <Modified>2019-05-01T20:17:26.324</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\Sprites\Rogue\rogue like attack_Animation 1_4.png">
+      <PackagePath>Src\Sprites\Rogue\rogue like attack_Animation 1_4.png</PackagePath>
+      <Modified>2019-05-01T20:17:26.326</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\Sprites\Rogue\rogue like attack_Animation 1_5.png">
+      <PackagePath>Src\Sprites\Rogue\rogue like attack_Animation 1_5.png</PackagePath>
+      <Modified>2019-05-01T20:17:26.350</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\Sprites\Rogue\rogue like attack_Animation 1_6.png">
+      <PackagePath>Src\Sprites\Rogue\rogue like attack_Animation 1_6.png</PackagePath>
+      <Modified>2019-05-01T20:17:26.352</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\Sprites\Rogue\rogue like attack_Animation 1_7.png">
+      <PackagePath>Src\Sprites\Rogue\rogue like attack_Animation 1_7.png</PackagePath>
+      <Modified>2019-05-01T20:17:26.354</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\Sprites\Rogue\rogue like attack_Animation 1_8.png">
+      <PackagePath>Src\Sprites\Rogue\rogue like attack_Animation 1_8.png</PackagePath>
+      <Modified>2019-05-01T20:17:26.356</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\Sprites\Rogue\rogue like attack_Animation 1_9.png">
+      <PackagePath>Src\Sprites\Rogue\rogue like attack_Animation 1_9.png</PackagePath>
+      <Modified>2019-05-01T20:17:26.359</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\Sprites\Rogue\rogue like idle.png">
+      <PackagePath>Src\Sprites\Rogue\rogue like idle.png</PackagePath>
+      <Modified>2019-05-01T20:17:26.361</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\Sprites\Rogue\rogue like idle_Animation 1_0.png">
+      <PackagePath>Src\Sprites\Rogue\rogue like idle_Animation 1_0.png</PackagePath>
+      <Modified>2019-05-01T20:17:26.363</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\Sprites\Rogue\rogue like idle_Animation 1_1.png">
+      <PackagePath>Src\Sprites\Rogue\rogue like idle_Animation 1_1.png</PackagePath>
+      <Modified>2019-05-01T20:17:26.365</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\Sprites\Rogue\rogue like idle_Animation 1_2.png">
+      <PackagePath>Src\Sprites\Rogue\rogue like idle_Animation 1_2.png</PackagePath>
+      <Modified>2019-05-01T20:17:26.367</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\Sprites\Rogue\rogue like run up_Animation 1_0.png">
+      <PackagePath>Src\Sprites\Rogue\rogue like run up_Animation 1_0.png</PackagePath>
+      <Modified>2019-05-01T20:17:26.369</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\Sprites\Rogue\rogue like run up_Animation 1_1.png">
+      <PackagePath>Src\Sprites\Rogue\rogue like run up_Animation 1_1.png</PackagePath>
+      <Modified>2019-05-01T20:17:26.371</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\Sprites\Rogue\rogue like run up_Animation 1_2.png">
+      <PackagePath>Src\Sprites\Rogue\rogue like run up_Animation 1_2.png</PackagePath>
+      <Modified>2019-05-01T20:17:26.373</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\Sprites\Rogue\rogue like run up_Animation 1_3.png">
+      <PackagePath>Src\Sprites\Rogue\rogue like run up_Animation 1_3.png</PackagePath>
+      <Modified>2019-05-01T20:17:26.376</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\Sprites\Rogue\rogue like run.png">
+      <PackagePath>Src\Sprites\Rogue\rogue like run.png</PackagePath>
+      <Modified>2019-05-01T20:17:26.378</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\Sprites\Rogue\rogue like run_Animation 1_0.png">
+      <PackagePath>Src\Sprites\Rogue\rogue like run_Animation 1_0.png</PackagePath>
+      <Modified>2019-05-01T20:17:26.381</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\Sprites\Rogue\rogue like run_Animation 1_1.png">
+      <PackagePath>Src\Sprites\Rogue\rogue like run_Animation 1_1.png</PackagePath>
+      <Modified>2019-05-01T20:17:26.383</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\Sprites\Rogue\rogue like run_Animation 1_2.png">
+      <PackagePath>Src\Sprites\Rogue\rogue like run_Animation 1_2.png</PackagePath>
+      <Modified>2019-05-01T20:17:26.385</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\Sprites\Rogue\rogue like run_Animation 1_3.png">
+      <PackagePath>Src\Sprites\Rogue\rogue like run_Animation 1_3.png</PackagePath>
+      <Modified>2019-05-01T20:17:26.387</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\Sprites\Rogue\rogue like run_Animation 1_4.png">
+      <PackagePath>Src\Sprites\Rogue\rogue like run_Animation 1_4.png</PackagePath>
+      <Modified>2019-05-01T20:17:26.389</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\Sprites\Rogue\rogue like run_Animation 1_5.png">
+      <PackagePath>Src\Sprites\Rogue\rogue like run_Animation 1_5.png</PackagePath>
+      <Modified>2019-05-01T20:17:26.391</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\Sprites\Rogue\roguelike run down_Animation 1_0.png">
+      <PackagePath>Src\Sprites\Rogue\roguelike run down_Animation 1_0.png</PackagePath>
+      <Modified>2019-05-01T20:17:26.393</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\Sprites\Rogue\roguelike run down_Animation 1_1.png">
+      <PackagePath>Src\Sprites\Rogue\roguelike run down_Animation 1_1.png</PackagePath>
+      <Modified>2019-05-01T20:17:26.395</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\Sprites\Rogue\roguelike run down_Animation 1_2.png">
+      <PackagePath>Src\Sprites\Rogue\roguelike run down_Animation 1_2.png</PackagePath>
+      <Modified>2019-05-01T20:17:26.397</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Src\Sprites\Rogue\roguelike run down_Animation 1_3.png">
+      <PackagePath>Src\Sprites\Rogue\roguelike run down_Animation 1_3.png</PackagePath>
+      <Modified>2019-05-01T20:17:26.399</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
       <Modified>2019-03-24T20:37:01.145</Modified>
@@ -799,15 +1099,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\bin\x64\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2019-05-01T11:47:28.870</Modified>
+      <Modified>2019-05-01T21:19:50.071</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\bin\x64\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2019-05-01T11:47:28.871</Modified>
+      <Modified>2019-05-01T21:19:50.071</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\bin\x64\Debug\Src\Scripts\Interface de Usuário\Menu.xbf">
       <PackagePath>Src\Scripts\Interface de Usuário\Menu.xbf</PackagePath>
-      <Modified>2019-05-01T11:47:28.871</Modified>
+      <Modified>2019-05-01T21:19:50.071</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.17134.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -816,11 +1116,11 @@
     <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-05-01T10:50:19.120</Modified>
+      <Modified>2019-05-01T20:30:27.482</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DEV\Projects\RPG-LP2\RPG\RPG\bin\x64\Debug\Core\RPG.exe">
       <PackagePath>RPG.exe</PackagePath>
-      <Modified>2019-05-01T11:47:29.980</Modified>
+      <Modified>2019-05-01T21:19:50.969</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

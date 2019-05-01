@@ -4,11 +4,11 @@ namespace _3ReaisEngine.Components
 {
     public class MalhaColisao : Componente<MalhaColisao>
     {
-        readonly Colisao[] colisoes;
+        public Colisao[] colisoes;
 
         public MalhaColisao()
         {
-            colisoes = new Colisao[] { new Colisao(new Vector2(0, 0)) };
+            colisoes = new Colisao[0];
         }
         public MalhaColisao(Colisao[] colisoes)
         {

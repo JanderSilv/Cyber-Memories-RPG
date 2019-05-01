@@ -12,16 +12,20 @@ namespace _3ReaisEngine.Core
      * contém um dicionário de componenentes que representa todos os comportamentes que esta entidade deve apresentar
      * Toda entidade por padrão inicia com a componente Transform, pois contem os dados de onde o objeto se localiza em relação ao mapa
      */
-     
-   public abstract class Entidade 
+
+    public abstract class Entidade
     {
         protected Dictionary<int, IComponente> Componentes;//armazenar os componentes da entidade
         public string Nome;
-        public bool IsStatic=false;//pra otimização de rotina (objetos estaticos) 
+        private ulong id;
+        public bool IsStatic = false;//pra otimização de rotina (objetos estaticos) 
         public Vector2 EntPos { get; set; } // posicao da entidade no mapa
+        public ulong ID { get { return id; } set { if (id == 0) id = value; } }
 
+        #region Constructors
         public Entidade()
         {
+            ID = 0;
             Componentes = new Dictionary<int, IComponente>();
             AddComponente<Posicao>();
             EntPos = ((Posicao)Componentes[Posicao.IntComponenteID]).posicao;
@@ -40,6 +44,7 @@ namespace _3ReaisEngine.Core
         }
         public Entidade(string Nome)
         {
+            ID = 0;
             this.Nome = Nome;
             Componentes = new Dictionary<int, IComponente>();
             AddComponente<Posicao>();
@@ -57,6 +62,7 @@ namespace _3ReaisEngine.Core
             }
 
         }
+        #endregion
 
         #region Geren Componente
 
@@ -166,7 +172,7 @@ namespace _3ReaisEngine.Core
          */
         #endregion
 
-       
+        #region virtual functions
         public virtual void OnClick(MouseEvento e)
         {
 
@@ -177,9 +183,10 @@ namespace _3ReaisEngine.Core
            
         }
         
-        public void Destruir()
+        public virtual void Destruir()
         {
             AmbienteJogo.RemoverEntidade(this);
         }
+        #endregion
     }
 }

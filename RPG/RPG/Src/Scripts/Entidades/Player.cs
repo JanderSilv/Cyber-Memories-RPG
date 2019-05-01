@@ -10,7 +10,7 @@ using _3ReaisEngine.Core;
 [RequerComponente(typeof(Status))]
 [RequerComponente(typeof(Movel))]
 
-class Player : Entidade
+public class Player : Entidade
 {
     readonly Animacao anim;
     readonly Render render;
@@ -22,10 +22,11 @@ class Player : Entidade
 
     public Player(Vector2 pos)
     {
+        
         AddComponente<Mercador>();
         Nome = "Tust";
         EntPos = pos;
-        vel = 5;
+        vel = 6;
 
         col = GetComponente<Colisao>();
         render = GetComponente<Render>();
@@ -35,7 +36,7 @@ class Player : Entidade
 
         col.tipo = TipoColisao.Dinamica;
         col.onColisionAction += OnColide;
-      
+        col.tamanho.x = 40;
 
         anim.AddAnimation("Idle", "Src/Animations/idle.gif");
         anim.AddAnimation("Dead", "Src/Animations/dead.gif");
@@ -50,7 +51,7 @@ class Player : Entidade
 
     public override void Update()
     {
-
+       
         if (AmbienteJogo.Input.TeclaPressionada(Windows.System.VirtualKey.A))
         {
             if (mov.Mover(-vel,0))

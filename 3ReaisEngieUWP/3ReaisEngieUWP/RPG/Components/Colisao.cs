@@ -12,10 +12,12 @@ namespace _3ReaisEngine.Components
     {
         public delegate void OnColision(Colisao c);
 
-        public volatile Vector4 momentoDeColisao;
-        public Vector4 cornAngles;
+        public Vector4 momentoDeColisao;
+        
         public Vector2 tamanho;
-        public Vector2 Posicao { get { return entidade.EntPos; } set { entidade.EntPos = value; } }
+        public Vector2 relativePos;
+        public Vector2 Position { get { return entidade.EntPos + relativePos; } }
+
         public TipoColisao tipo = TipoColisao.Estatica;
         public OnColision onColisionAction = null;
 
@@ -24,24 +26,24 @@ namespace _3ReaisEngine.Components
           
             momentoDeColisao = new Vector4();
             tamanho = new Vector2(85, 85);
+            relativePos = Vector2.Zero;
         }
-        public Colisao(Vector2 posicao)
+       
+        public Colisao(Vector2 size)
         {
-          
-            tamanho = new Vector2(85, 85);
             momentoDeColisao = new Vector4();
-        }
-        public Colisao(Vector2 posicao, Vector2 size)
-        {
-          
-            momentoDeColisao = new Vector4();
+            relativePos = Vector2.Zero;
             tamanho = size;
         }
 
-        public void OnColide(Colisao other)
+        public Colisao(Vector2 size,Vector2 relativePos)
         {
-            onColisionAction?.Invoke(other);
+            momentoDeColisao = new Vector4();
+            tamanho = size;
+            this.relativePos = relativePos;
         }
+
+
     }
 
 

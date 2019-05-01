@@ -12,6 +12,7 @@ namespace RPG
 
     public sealed partial class MainPage : Page
     {
+        public static Player p;
         public MainPage()
         {
             InitializeComponent();
@@ -22,11 +23,17 @@ namespace RPG
             //                                      ^~~ largura da janela
 
             //adiciona botao na janela (posição dada em %)
-            AmbienteJogo.window.AddUI(new UButton("Jander", new Vector2(50, 50), new Vector2(100, 50))); 
+            AmbienteJogo.window.AddUI(new UButton("Jander", new Vector2(50, 50), new Vector2(100, 50)));
             //                                                   ^~~ posicao na janela       ^~~ tamanho do botao
 
+           
+            
+            AmbienteJogo.AdcionarEntidade(new Undead(new Vector2(150, 0)));
+            AmbienteJogo.AdcionarEntidade(new Undead(new Vector2(-150, -200)));
+            AmbienteJogo.AdcionarEntidade(new Undead(new Vector2(50, 275)));
+            AmbienteJogo.AdcionarEntidade(new Undead(new Vector2(10, -20)));
             //instancia jogador
-            Player p = new Player(new Vector2(0, 0)); 
+            p = new Player(new Vector2(0, 0)); 
 
             //adiciona jogador ao jogo
             AmbienteJogo.AdcionarEntidade(p); 
@@ -36,7 +43,7 @@ namespace RPG
             //            ^~~ pode ser simplificado com AmbienteJogo.currentCamera.setSeek(AmbienteJogo.AdcionarEntidade(p)); visto q AdicionarEntidade retorna a entidade adicionada
 
             //cria caixa ("opera") e adiciona ao jogo
-            AmbienteJogo.AdcionarEntidade(new Caixa(new Vector2(-200, 0))); 
+            //AmbienteJogo.AdcionarEntidade(new Caixa(new Vector2(-200, 0))); 
         }
     }
 }

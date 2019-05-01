@@ -32,6 +32,16 @@ public class Movel:Componente<Movel>
         return m;
     }
 
+   public void MoveTo(Vector2 target,float vel)
+    {
+       
+            if (target.x < entidade.EntPos.x) if (col.momentoDeColisao.z == 0) entidade.EntPos.x -= vel;
+            if (target.x > entidade.EntPos.x) if (col.momentoDeColisao.x == 0) entidade.EntPos.x += vel;
+            if (target.y < entidade.EntPos.y) if (col.momentoDeColisao.w == 0) entidade.EntPos.y -= vel;
+            if (target.x > entidade.EntPos.y) if (col.momentoDeColisao.y == 0) entidade.EntPos.y += vel;
+        
+    }
+
     public bool Mover(Vector2 direcao)
     {
         if (col == null)

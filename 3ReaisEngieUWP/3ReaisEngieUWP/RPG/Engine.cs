@@ -22,6 +22,10 @@ namespace _3ReaisEngine
         {
             return new Vector2(Math.Abs(a.x - b.x), Math.Abs(a.y - b.y));
         }
+        public static void MoveTo(Entidade e,Vector2 v)
+        {
+
+        }
     }
 
 }
