@@ -61,5 +61,9 @@
         {
             return !(a == b);
         }
+        public static Vector4 operator / (Vector4 a,float b)
+        {
+            return new Vector4(a.x / b, a.y / b, a.z / b, a.w / b); 
+        }
     }
 }

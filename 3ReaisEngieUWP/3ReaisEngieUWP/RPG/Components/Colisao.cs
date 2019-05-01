@@ -13,6 +13,7 @@ namespace _3ReaisEngine.Components
         public delegate void OnColision(Colisao c);
 
         public volatile Vector4 momentoDeColisao;
+        public Vector4 cornAngles;
         public Vector2 tamanho;
         public Vector2 Posicao { get { return entidade.EntPos; } set { entidade.EntPos = value; } }
         public TipoColisao tipo = TipoColisao.Estatica;

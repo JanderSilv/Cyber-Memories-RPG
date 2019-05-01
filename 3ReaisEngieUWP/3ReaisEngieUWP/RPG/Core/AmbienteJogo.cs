@@ -66,7 +66,7 @@ namespace _3ReaisEngine
                     }
                     currentCamera.Update();
                     gerenciadorEventos.Update();
-                    gerenciadorFisica.UpdateColisions2(window.colisores.ToArray());
+                    gerenciadorFisica.UpdateColisions(window.colisores.ToArray());
 
                     foreach (Entidade e in window.entidades)
                     {

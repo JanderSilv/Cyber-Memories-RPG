@@ -43,7 +43,7 @@ namespace RPG.Src.Scripts.Interface_de_Usuário {
             window.AddUI(exit);
             window.AddUI(about);
 
-            AmbienteJogo.Init(window);
+          //  AmbienteJogo.Init(window);
 
         }
 

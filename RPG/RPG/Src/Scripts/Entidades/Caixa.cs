@@ -54,7 +54,7 @@ namespace RPG.Src.Scripts
 
         public override void Update()
         {
-          // caminho.Update();
+           caminho.Update();
           
         }
 

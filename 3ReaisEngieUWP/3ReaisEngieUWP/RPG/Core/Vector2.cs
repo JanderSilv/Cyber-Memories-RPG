@@ -22,7 +22,12 @@
             y = 0;
         }
         public static Vector2 Zero { get; } = new Vector2(0, 0);
-
+        public static Vector2 up { get; } = new Vector2(0, 1);
+        public static Vector2 right { get; } = new Vector2(1, 0);
+        public static Vector2 bot { get; } = new Vector2(0, -1);
+        public static Vector2 left { get; } = new Vector2(-1, 0);
+        public static Vector2 flipHorAxis = new Vector2(-1, 1);
+        public static Vector2 flipVerAxis = new Vector2(1, -1);
 
         public override string ToString()
         {
@@ -60,6 +65,10 @@
         {
             return new Vector2(a.x * b, a.y * b);
         }
+        public static Vector2 operator *(Vector2 a,Vector2 b)
+        {
+            return new Vector2(a.x * b.x, a.y * b.y);
+        }
         public static bool operator ==(Vector2 a, Vector2 b)
         {
             return (a.x == b.x && a.y == b.y);
@@ -67,6 +76,10 @@
         public static bool operator !=(Vector2 a, Vector2 b)
         {
             return !(a.x == b.x && a.y == b.y);
+        }
+        public static Vector2 operator /(Vector2 a, float b)
+        {
+            return new Vector2(a.x / b, a.y / b);
         }
     }
 }
