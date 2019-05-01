@@ -10,6 +10,5 @@
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
     <RootType FullName="RPG.MainPage" />
-    <RootType FullName="RPG.Src.Scripts.Interface_de_Usuário.Menu" />
   </Roots.RootTypes>
 </Roots>

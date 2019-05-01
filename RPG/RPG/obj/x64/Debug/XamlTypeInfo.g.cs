@@ -189,17 +189,15 @@ namespace RPG.RPG_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[4];
+            _typeNameTable = new string[3];
             _typeNameTable[0] = "RPG.MainPage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[3] = "RPG.Src.Scripts.Interface_de_Usuário.Menu";
 
-            _typeTable = new global::System.Type[4];
+            _typeTable = new global::System.Type[3];
             _typeTable[0] = typeof(global::RPG.MainPage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[3] = typeof(global::RPG.Src.Scripts.Interface_de_Usuário.Menu);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -235,7 +233,6 @@ namespace RPG.RPG_XamlTypeInfo
         }
 
         private object Activate_0_MainPage() { return new global::RPG.MainPage(); }
-        private object Activate_3_Menu() { return new global::RPG.Src.Scripts.Interface_de_Usuário.Menu(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -260,13 +257,6 @@ namespace RPG.RPG_XamlTypeInfo
 
             case 2:   //  Windows.UI.Xaml.Controls.UserControl
                 xamlType = new global::RPG.RPG_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 3:   //  RPG.Src.Scripts.Interface_de_Usuário.Menu
-                userType = new global::RPG.RPG_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_3_Menu;
-                userType.SetIsLocalType();
-                xamlType = userType;
                 break;
             }
             return xamlType;

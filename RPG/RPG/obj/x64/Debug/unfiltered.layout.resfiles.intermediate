@@ -9,7 +9,6 @@ Assets\Wide310x150Logo.scale-200.png
 App.xbf
 MainPage.xbf
 RPG.xr.xml
-Src\Scripts\Interface de Usuário\Menu.xbf
 Properties\Default.rd.xml
 Src\Animations\dead.gif
 Src\Animations\Dead.png
@@ -23,5 +22,6 @@ Src\Audio\serrote.wav
 Src\cabeca.png
 Src\dance.gif
 Src\Images\Menu\Logo.png
+Src\Images\Menu\Logo2.png
 Src\JunglerockAlpha.png
 Src\Opera-04.png
