@@ -25,7 +25,7 @@ namespace _3ReaisEngine.UI
 
     public class UButton: IUIEntidade
     {
-        uwpUI.Button element = new uwpUI.Button();
+        public uwpUI.Button element = new uwpUI.Button();
         TranslateTransform transform = new TranslateTransform();
         public string Nome;
         private Vector2 pos = new Vector2(), si = new Vector2(100,50);

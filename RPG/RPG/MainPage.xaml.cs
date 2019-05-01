@@ -28,16 +28,24 @@ namespace RPG
             winMenu = new Window(this, 840, 620);
             
            // winMenu.AddUI(new UImage("Src/Animations/Menu/Menu.gif", new Vector2(0, 0), new Vector2(100, 100)));
-            winMenu.AddUI(new UImage("Src/Images/Menu/Logo2.png", new Vector2(22, 20), new Vector2(100, 100)));
-           
-            winMenu.AddUI(new UButton("Iniciar", new Vector2(50,50), new Vector2(150,50), Start));
-            winMenu.AddUI(new UButton("Configurações", new Vector2(50,65), new Vector2(150,50), Settings));
-            winMenu.AddUI(new UButton("Sair", new Vector2(50,80), new Vector2(150,50), Exit));
-            winMenu.AddUI(new UButton("Sobre", new Vector2(92,92), new Vector2(70,30), About));
+            winMenu.AddUI(new UImage("Src/Images/Menu/Logo2.png", new Vector2(23, 14), new Vector2(100, 100)));
+            winMenu.AddUI(new UImage("Src/Images/Menu/Botões/Iniciar.png", new Vector2(43,50), new Vector2(100,100)));
+            winMenu.AddUI(new UImage("Src/Images/Menu/Botões/Configurações.png", new Vector2(43, 67), new Vector2(100, 100)));
+            winMenu.AddUI(new UImage("Src/Images/Menu/Botões/Sair.png", new Vector2(43, 85), new Vector2(100, 100)));
+            winMenu.AddUI(new UImage("Src/Images/Menu/Botões/Sobre.png", new Vector2(92, 98), new Vector2(100, 100)));
+
+            winMenu.AddUI(new UButton("", new Vector2(50,50), new Vector2(150,50), Start));
+            winMenu.AddUI(new UButton("", new Vector2(50,65), new Vector2(150,50), Settings));
+            winMenu.AddUI(new UButton("", new Vector2(50,80), new Vector2(150,50), Exit));
+            winMenu.AddUI(new UButton("", new Vector2(92,92), new Vector2(70,30), About));
 
             /* Algoritmo de Configurações */
-           
-            winConf.AddUI(new UButton("X", new Vector2(5, 5), new Vector2(30,30), Comeback));
+
+            winConf.AddUI(new UImage("Src/Images/Menu/Botões/Voltar.png", new Vector2(9, 10), new Vector2(100, 100)));
+           // winConf.AddUI(new UImage("Src/Images/Menu/.png", new Vector2(30, 15), new Vector2(100, 100)));
+           // winConf.AddUI(new UImage("Src/Images/Menu/.png", new Vector2(10, 10), new Vector2(100, 100)));
+
+            winConf.AddUI(new UButton("X", new Vector2(11, 7), new Vector2(142,43), Comeback));
             winConf.AddUI(new UButton("Controles", new Vector2(40,20), Controls));
             winConf.AddUI(new UButton("Aúdio", new Vector2(60,20), Volume));
             
