@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-05-02T19:22:18.905</Modified>
+      <Modified>2019-05-02T20:16:30.208</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\bin\x64\Debug\RPG.exe">
       <PackagePath>entrypoint\RPG.exe</PackagePath>
-      <Modified>2019-05-02T19:22:08.600</Modified>
+      <Modified>2019-05-02T20:16:18.847</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sonia\.nuget\packages\runtime.win10-x64.microsoft.netcore.universalwindowsplatform\6.1.7\runtimes\win10-x64\nativeassets\uap10.0.15138\clrcompression.dll">
       <PackagePath>clrcompression.dll</PackagePath>
@@ -696,7 +696,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\3ReaisEngieUWP\3ReaisEngieUWP\bin\x64\Debug\3ReaisEngieUWP.dll">
       <PackagePath>3ReaisEngieUWP.dll</PackagePath>
-      <Modified>2019-05-02T18:55:45.171</Modified>
+      <Modified>2019-05-02T20:15:56.435</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Animations\Menu\Menu.gif">
       <PackagePath>Src\Animations\Menu\Menu.gif</PackagePath>
@@ -842,11 +842,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\bin\x64\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2019-05-02T19:22:07.339</Modified>
+      <Modified>2019-05-02T20:16:18.022</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\bin\x64\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2019-05-02T19:22:07.341</Modified>
+      <Modified>2019-05-02T20:16:18.023</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.17134.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -858,7 +858,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\bin\x64\Debug\Core\RPG.exe">
       <PackagePath>RPG.exe</PackagePath>
-      <Modified>2019-05-02T19:22:18.787</Modified>
+      <Modified>2019-05-02T20:16:30.117</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

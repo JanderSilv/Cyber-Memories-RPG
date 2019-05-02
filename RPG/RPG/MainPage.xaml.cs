@@ -31,22 +31,21 @@ namespace RPG
 
             // winMenu.AddUI(new UImage("Src/Animations/Menu/Menu.gif", new Vector2(0, 0), new Vector2(100, 100)));
 
-            UButton logo = new UButton("Src/Images/Menu/Logo2.png", new Vector2(23, 14), new Vector2(100, 100));
-            logo.SetImage("Src/Images/Menu/Logo2.png",Stretch.Fill);
-           
-           
-            winMenu.AddUI(logo);
+            winMenu.AddUI(new UImage("Src/Images/Menu/Logo2.png", new Vector2(23, 14), new Vector2(100, 100)));
 
-           // winMenu.AddUI(new UImage("Src/Images/Menu/Logo2.png", new Vector2(23, 14), new Vector2(100, 100)));
-            winMenu.AddUI(new UImage("Src/Images/Menu/Botões/Iniciar.png", new Vector2(43,50), new Vector2(100,100)));
-            winMenu.AddUI(new UImage("Src/Images/Menu/Botões/Configurações.png", new Vector2(43, 67), new Vector2(100, 100)));
-            winMenu.AddUI(new UImage("Src/Images/Menu/Botões/Sair.png", new Vector2(43, 85), new Vector2(100, 100)));
-            winMenu.AddUI(new UImage("Src/Images/Menu/Botões/Sobre.png", new Vector2(92, 98), new Vector2(100, 100)));
+            UButton start = new UButton("", new Vector2(50, 50), new Vector2(150, 50), Start);
+            start.SetImage("Src/Images/Menu/Botões/Iniciar.png", Stretch.Fill);
+            UButton settings = new UButton("", new Vector2(50, 65), new Vector2(150, 50), Settings);
+            settings.SetImage("Src/Images/Menu/Botões/Configurações.png");
+            UButton exit = new UButton("", new Vector2(50, 80), new Vector2(150, 50), Exit);
+            exit.SetImage("Src/Images/Menu/Botões/Sair.png");
+            UButton about = new UButton("", new Vector2(92, 92), new Vector2(70, 30), About);
+            about.SetImage("Src/Images/Menu/Botões/Sobre.png");
 
-            winMenu.AddUI(new UButton("", new Vector2(50,50), new Vector2(150,50), Start));
-            winMenu.AddUI(new UButton("", new Vector2(50,65), new Vector2(150,50), Settings));
-            winMenu.AddUI(new UButton("", new Vector2(50,80), new Vector2(150,50), Exit));
-            winMenu.AddUI(new UButton("", new Vector2(92,92), new Vector2(70,30), About));
+            winMenu.AddUI(start);
+            winMenu.AddUI(settings);
+            winMenu.AddUI(exit);
+            winMenu.AddUI(about);
 
             /* Algoritmo de Configurações */
 
@@ -58,7 +57,7 @@ namespace RPG
             winConf.AddUI(new UButton("Controles", new Vector2(40,20), Controls));
             winConf.AddUI(new UButton("Aúdio", new Vector2(60,20), Volume));
             
-            winConf.SetCurrent();
+            winMenu.SetCurrent();
             
 
             //adiciona botao na janela (posição dada em %)
