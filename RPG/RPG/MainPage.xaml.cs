@@ -6,6 +6,8 @@ using _3ReaisEngine.RPG.Core;
 using _3ReaisEngine.UI;
 using RPG.Src.Scripts;
 using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml.Media;
+using Windows.UI.Xaml.Media.Imaging;
 
 namespace RPG
 {
@@ -26,9 +28,16 @@ namespace RPG
             /* Algoritmo do Menu */
             winConf = new Window(this, 840, 620); 
             winMenu = new Window(this, 840, 620);
-            
-           // winMenu.AddUI(new UImage("Src/Animations/Menu/Menu.gif", new Vector2(0, 0), new Vector2(100, 100)));
-            winMenu.AddUI(new UImage("Src/Images/Menu/Logo2.png", new Vector2(23, 14), new Vector2(100, 100)));
+
+            // winMenu.AddUI(new UImage("Src/Animations/Menu/Menu.gif", new Vector2(0, 0), new Vector2(100, 100)));
+
+            UButton logo = new UButton("Src/Images/Menu/Logo2.png", new Vector2(23, 14), new Vector2(100, 100));
+            logo.SetImage("Src/Images/Menu/Logo2.png",Stretch.Fill);
+           
+           
+            winMenu.AddUI(logo);
+
+           // winMenu.AddUI(new UImage("Src/Images/Menu/Logo2.png", new Vector2(23, 14), new Vector2(100, 100)));
             winMenu.AddUI(new UImage("Src/Images/Menu/Botões/Iniciar.png", new Vector2(43,50), new Vector2(100,100)));
             winMenu.AddUI(new UImage("Src/Images/Menu/Botões/Configurações.png", new Vector2(43, 67), new Vector2(100, 100)));
             winMenu.AddUI(new UImage("Src/Images/Menu/Botões/Sair.png", new Vector2(43, 85), new Vector2(100, 100)));
