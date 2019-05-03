@@ -15,7 +15,7 @@ namespace _3ReaisEngine.UI
 
     public class UImage : IUIEntidade
     {
-        uwpUI.Image element = new uwpUI.Image();
+        public uwpUI.Image element = new uwpUI.Image();
         TranslateTransform transform = new TranslateTransform();
 
         private Vector2 pos = new Vector2(), si = new Vector2(100, 50);

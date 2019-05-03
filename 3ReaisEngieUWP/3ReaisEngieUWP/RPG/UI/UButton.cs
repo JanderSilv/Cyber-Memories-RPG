@@ -8,6 +8,7 @@ using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
+using Windows.UI.Xaml.Media.Imaging;
 
 namespace _3ReaisEngine.UI
 {
@@ -34,6 +35,7 @@ namespace _3ReaisEngine.UI
         public Vector2 position { get { return pos; } set { pos = value; transform.X = value.x; transform.Y = value.y; } }
         public Vector2 size { get { return si; } set { si = value; element.Width = value.x; element.Height = value.y; } }
         public Execute Action;
+        ImageBrush brush = new ImageBrush();
 
         public UButton(object Content, Execute Action = null)
         {
@@ -98,6 +100,17 @@ namespace _3ReaisEngine.UI
 
             this.Action = Action;
             element.Click += act;
+        }
+
+        public void SetImage(string path) {
+            brush.Stretch = Stretch.UniformToFill;
+            brush.ImageSource = new BitmapImage(new Uri("ms-appx:/"+path));
+            element.Background = brush;
+        }
+        public void SetImage(string path,Stretch strech) {
+            brush.Stretch = strech;
+            brush.ImageSource = new BitmapImage(new Uri("ms-appx:/" + path));
+            element.Background = brush;
         }
 
         private void act(object sender, RoutedEventArgs e)

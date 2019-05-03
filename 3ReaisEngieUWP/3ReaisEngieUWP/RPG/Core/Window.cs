@@ -39,13 +39,14 @@ namespace _3ReaisEngine.RPG.Core
         public Window(Page root)
         {
             Canvas canv = new Canvas();
-            RelativePanel ui = new RelativePanel();
+            Canvas ui = new Canvas();
 
             this.root = root;
 
             canv.Width = 840;
             canv.Height = 620;
             canv.Children.Add(ui);
+            
             canv.SetValue(Canvas.ZIndexProperty, 0);
             canv.KeyDown += Game_KeyDown;
             canv.KeyUp += Game_KeyUp;
@@ -60,7 +61,7 @@ namespace _3ReaisEngine.RPG.Core
             ui.PointerPressed += Game_PointerPressed;
             ui.PointerReleased += Game_PointerReleased;
             
-            root.Content = canv;
+           // root.Content = canv;
             root.Height = canv.Height;
             root.Width = canv.Width;
 
@@ -96,7 +97,7 @@ namespace _3ReaisEngine.RPG.Core
 
             root.Height = canv.Height;
             root.Width = canv.Width;
-            root.Content = canv;
+           // root.Content = canv;
 
             game_layer = canv;
             ui_layer = ui;
@@ -109,6 +110,10 @@ namespace _3ReaisEngine.RPG.Core
             Windows.UI.Xaml.Window.Current.CoreWindow.Activate();
         }
 
+        public void SetCurrent() {
+            root.Content = game_layer;
+            AmbienteJogo.window = this;
+        }
       
         public void Add(Entidade element)
         {

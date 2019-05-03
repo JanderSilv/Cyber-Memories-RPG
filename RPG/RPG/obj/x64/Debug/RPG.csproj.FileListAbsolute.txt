@@ -743,7 +743,6 @@ C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\bin\x64\Debug\Src\cabec
 C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\bin\x64\Debug\Src\dance.gif
 C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\bin\x64\Debug\App.xbf
 C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\bin\x64\Debug\MainPage.xbf
-C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\bin\x64\Debug\Src\Scripts\Interface de Usuário\Menu.xbf
 C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\bin\x64\Debug\RPG.xr.xml
 C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\bin\x64\Debug\RPG.exe
 C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\bin\x64\Debug\RPG.pdb
@@ -924,15 +923,11 @@ C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\obj\x64\Debug\App.g.i.c
 C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\obj\x64\Debug\App.g.cs
 C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\obj\x64\Debug\MainPage.g.i.cs
 C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\obj\x64\Debug\MainPage.g.cs
-C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\obj\x64\Debug\Src\Scripts\Interface de Usuário\Menu.g.i.cs
-C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\obj\x64\Debug\Src\Scripts\Interface de Usuário\Menu.g.cs
 C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\obj\x64\Debug\XamlTypeInfo.g.cs
 C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\obj\x64\Debug\App.xaml
 C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\obj\x64\Debug\MainPage.xaml
-C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\obj\x64\Debug\Src\Scripts\Interface de Usuário\Menu.xaml
 C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\obj\x64\Debug\App.xbf
 C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\obj\x64\Debug\MainPage.xbf
-C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\obj\x64\Debug\Src\Scripts\Interface de Usuário\Menu.xbf
 C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\obj\x64\Debug\XamlSaveStateFile.xml
 C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\obj\x64\Debug\RPG.csproj.CoreCompileInputs.cache
 C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\obj\x64\Debug\RPG.csproj.CopyComplete
@@ -1052,7 +1047,6 @@ C:\Users\Jander\Documents\GitHub\RPG-LP2\RPG\RPG\bin\x64\Debug\Src\cabeca.png
 C:\Users\Jander\Documents\GitHub\RPG-LP2\RPG\RPG\bin\x64\Debug\Src\dance.gif
 C:\Users\Jander\Documents\GitHub\RPG-LP2\RPG\RPG\bin\x64\Debug\App.xbf
 C:\Users\Jander\Documents\GitHub\RPG-LP2\RPG\RPG\bin\x64\Debug\MainPage.xbf
-C:\Users\Jander\Documents\GitHub\RPG-LP2\RPG\RPG\bin\x64\Debug\Src\Scripts\Interface de Usuário\Menu.xbf
 C:\Users\Jander\Documents\GitHub\RPG-LP2\RPG\RPG\bin\x64\Debug\RPG.xr.xml
 C:\Users\Jander\Documents\GitHub\RPG-LP2\RPG\RPG\bin\x64\Debug\RPG.exe
 C:\Users\Jander\Documents\GitHub\RPG-LP2\RPG\RPG\bin\x64\Debug\RPG.pdb
@@ -1233,15 +1227,11 @@ C:\Users\Jander\Documents\GitHub\RPG-LP2\RPG\RPG\obj\x64\Debug\App.g.i.cs
 C:\Users\Jander\Documents\GitHub\RPG-LP2\RPG\RPG\obj\x64\Debug\App.g.cs
 C:\Users\Jander\Documents\GitHub\RPG-LP2\RPG\RPG\obj\x64\Debug\MainPage.g.i.cs
 C:\Users\Jander\Documents\GitHub\RPG-LP2\RPG\RPG\obj\x64\Debug\MainPage.g.cs
-C:\Users\Jander\Documents\GitHub\RPG-LP2\RPG\RPG\obj\x64\Debug\Src\Scripts\Interface de Usuário\Menu.g.i.cs
-C:\Users\Jander\Documents\GitHub\RPG-LP2\RPG\RPG\obj\x64\Debug\Src\Scripts\Interface de Usuário\Menu.g.cs
 C:\Users\Jander\Documents\GitHub\RPG-LP2\RPG\RPG\obj\x64\Debug\XamlTypeInfo.g.cs
 C:\Users\Jander\Documents\GitHub\RPG-LP2\RPG\RPG\obj\x64\Debug\App.xaml
 C:\Users\Jander\Documents\GitHub\RPG-LP2\RPG\RPG\obj\x64\Debug\MainPage.xaml
-C:\Users\Jander\Documents\GitHub\RPG-LP2\RPG\RPG\obj\x64\Debug\Src\Scripts\Interface de Usuário\Menu.xaml
 C:\Users\Jander\Documents\GitHub\RPG-LP2\RPG\RPG\obj\x64\Debug\App.xbf
 C:\Users\Jander\Documents\GitHub\RPG-LP2\RPG\RPG\obj\x64\Debug\MainPage.xbf
-C:\Users\Jander\Documents\GitHub\RPG-LP2\RPG\RPG\obj\x64\Debug\Src\Scripts\Interface de Usuário\Menu.xbf
 C:\Users\Jander\Documents\GitHub\RPG-LP2\RPG\RPG\obj\x64\Debug\XamlSaveStateFile.xml
 C:\Users\Jander\Documents\GitHub\RPG-LP2\RPG\RPG\obj\x64\Debug\RPG.csproj.CoreCompileInputs.cache
 C:\Users\Jander\Documents\GitHub\RPG-LP2\RPG\RPG\obj\x64\Debug\RPG.csproj.CopyComplete

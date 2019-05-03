@@ -7,5 +7,11 @@
     xmlns:Custom="using:Windows.UI.Xaml.Controls.Maps"
     x:Class="RPG.MainPage"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Height="640" Width="720" HorizontalAlignment="Left"/>
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Height="640" Width="720" HorizontalAlignment="Left">
+    <Button Content="" HorizontalAlignment="Center" Height="60" Margin="0,0,0,0" VerticalAlignment="Center" Width="159">
+        <Button.Background>
+            <ImageBrush ImageSource="/Src/Images/Menu/Botões/Iniciar.png"/>
+        </Button.Background>
+    </Button>
+</Page>
 
