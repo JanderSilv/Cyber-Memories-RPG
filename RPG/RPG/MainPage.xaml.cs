@@ -27,20 +27,21 @@ namespace RPG
             //                                      ^~~ largura da janela
 
             /* Algoritmo do Menu */
-            winConf = new Window(this, 840, 620); 
+            winConf = new Window(this, 840, 620);
             winMenu = new Window(this, 840, 620);
 
             // winMenu.AddUI(new UImage("Src/Animations/Menu/Menu.gif", new Vector2(0, 0), new Vector2(100, 100)));
 
-            winMenu.AddUI(new UImage("Src/Images/Menu/Logo2.png", new Vector2(23, 14), new Vector2(100, 100)));
+            winMenu.AddUI(new UImage("Src/Images/Menu/Logo2.png", new Vector2(21, 14), new Vector2(100, 100)));
+            winMenu.AddUI(new UImage("Src/Images/Menu/Botões/Iniciar.png", new Vector2(74, 49), new Vector2(100,100)));
 
-            UButton start = new UButton("", new Vector2(50, 50), new Vector2(150, 50), Start);
-            start.SetImage("Src/Images/Menu/Botões/Iniciar.png", Stretch.Fill);
-            UButton settings = new UButton("", new Vector2(50, 65), new Vector2(150, 50), Settings);
+            UButton start = new UButton("", new Vector2(50, 48), new Vector2(229, 86), Start);
+            start.SetImage("Src/Images/Menu/Botões/Iniciar.png");
+            UButton settings = new UButton("", new Vector2(50, 67), new Vector2(229, 86), Settings);
             settings.SetImage("Src/Images/Menu/Botões/Configurações.png");
-            UButton exit = new UButton("", new Vector2(50, 80), new Vector2(150, 50), Exit);
+            UButton exit = new UButton("", new Vector2(50, 86), new Vector2(229, 87), Exit);
             exit.SetImage("Src/Images/Menu/Botões/Sair.png");
-            UButton about = new UButton("", new Vector2(92, 92), new Vector2(70, 30), About);
+            UButton about = new UButton("", new Vector2(92, 92), new Vector2(103, 35), About);
             about.SetImage("Src/Images/Menu/Botões/Sobre.png");
 
             winMenu.AddUI(start);
@@ -50,19 +51,19 @@ namespace RPG
 
             /* Algoritmo de Configurações */
 
-            winConf.AddUI(new UImage("Src/Images/Menu/Botões/Voltar.png", new Vector2(9, 10), new Vector2(100, 100)));
-           // winConf.AddUI(new UImage("Src/Images/Menu/.png", new Vector2(30, 15), new Vector2(100, 100)));
-           // winConf.AddUI(new UImage("Src/Images/Menu/.png", new Vector2(10, 10), new Vector2(100, 100)));
+            UButton comeback = new UButton("", new Vector2(11,7), new Vector2(145, 37), Comeback);
+            comeback.SetImage("Src/Images/Menu/Botões/Voltar.png");
 
-            winConf.AddUI(new UButton("X", new Vector2(11, 7), new Vector2(142,43), Comeback));
             winConf.AddUI(new UButton("Controles", new Vector2(40,20), Controls));
             winConf.AddUI(new UButton("Aúdio", new Vector2(60,20), Volume));
-            
+
+            winConf.AddUI(comeback);
+
             winMenu.SetCurrent();
-            
+
 
             //adiciona botao na janela (posição dada em %)
-            AmbienteJogo.window.AddUI(new UButton("Jander", new Vector2(50, 50), new Vector2(100, 50)));
+            // AmbienteJogo.window.AddUI(new UButton("Jander", new Vector2(50, 50), new Vector2(100, 50)));
             //                                                   ^~~ posicao na janela       ^~~ tamanho do botao
 
            

@@ -103,7 +103,7 @@ namespace _3ReaisEngine.UI
         }
 
         public void SetImage(string path) {
-            brush.Stretch = Stretch.UniformToFill;
+            brush.Stretch = Stretch.Uniform;
             brush.ImageSource = new BitmapImage(new Uri("ms-appx:/"+path));
             element.Background = brush;
         }
