@@ -1652,3 +1652,8 @@ C:\DEV\Projects\RPG-LP2\RPG\RPG\obj\x64\Debug\resources.en-us.resfiles
 C:\DEV\Projects\RPG-LP2\RPG\RPG\obj\x64\Debug\resources.en-us.resfiles.intermediate
 C:\DEV\Projects\RPG-LP2\RPG\RPG\obj\x64\Debug\3ReaisEngieUWP.pri.xml
 C:\DEV\Projects\RPG-LP2\RPG\RPG\obj\x64\Debug\ProjectArchitectures.txt
+C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\bin\x64\Debug\Src\Scripts\Usuário\Menu.xbf
+C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\obj\x64\Debug\Src\Scripts\Usuário\Menu.g.i.cs
+C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\obj\x64\Debug\Src\Scripts\Usuário\Menu.g.cs
+C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\obj\x64\Debug\Src\Scripts\Usuário\Menu.xaml
+C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\obj\x64\Debug\Src\Scripts\Usuário\Menu.xbf
