@@ -55,8 +55,10 @@ namespace _3ReaisEngine.UI
 
             this.Action = Action;
             element.Click += act;
+            element.PointerEntered += SetHover;
 
         }
+
 
         public UButton(object Content,Vector2 position, Execute Action = null)
         {
@@ -77,6 +79,7 @@ namespace _3ReaisEngine.UI
 
             this.Action = Action;
             element.Click += act;
+            element.PointerEntered += SetHover;
 
         }
 
@@ -100,6 +103,11 @@ namespace _3ReaisEngine.UI
 
             this.Action = Action;
             element.Click += act;
+            element.PointerEntered += SetHover;
+        }
+
+        private void SetHover(object sender, PointerRoutedEventArgs e) {
+            element.Foreground = new SolidColorBrush(Windows.UI.Colors.Blue);
         }
 
         public void SetImage(string path) {

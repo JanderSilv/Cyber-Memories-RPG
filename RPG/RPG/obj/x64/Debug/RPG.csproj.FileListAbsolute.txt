@@ -1657,3 +1657,8 @@ C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\obj\x64\Debug\Src\Scrip
 C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\obj\x64\Debug\Src\Scripts\Usuário\Menu.g.cs
 C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\obj\x64\Debug\Src\Scripts\Usuário\Menu.xaml
 C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\obj\x64\Debug\Src\Scripts\Usuário\Menu.xbf
+C:\Users\Jander\Documents\GitHub\RPG-LP2\RPG\RPG\bin\x64\Debug\Src\Scripts\Usuário\Menu.xbf
+C:\Users\Jander\Documents\GitHub\RPG-LP2\RPG\RPG\obj\x64\Debug\Src\Scripts\Usuário\Menu.g.i.cs
+C:\Users\Jander\Documents\GitHub\RPG-LP2\RPG\RPG\obj\x64\Debug\Src\Scripts\Usuário\Menu.g.cs
+C:\Users\Jander\Documents\GitHub\RPG-LP2\RPG\RPG\obj\x64\Debug\Src\Scripts\Usuário\Menu.xaml
+C:\Users\Jander\Documents\GitHub\RPG-LP2\RPG\RPG\obj\x64\Debug\Src\Scripts\Usuário\Menu.xbf
