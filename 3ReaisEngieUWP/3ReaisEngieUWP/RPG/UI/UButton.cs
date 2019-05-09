@@ -24,7 +24,13 @@ namespace _3ReaisEngine.UI
         string getName();
     }
 
-    public class UButton: IUIEntidade
+    public interface IUIBackground
+    {
+        void setBackground(string path);
+        void setBackground(string path, Stretch strech);
+    }
+
+    public class UButton: IUIEntidade, IUIBackground
     {
         uwpUI.Button element = new uwpUI.Button();
         TranslateTransform transform = new TranslateTransform();
@@ -37,84 +43,110 @@ namespace _3ReaisEngine.UI
         public Execute Action;
         ImageBrush brush = new ImageBrush();
 
+        BitmapImage Normal;
+        BitmapImage OnHover;
+        BitmapImage OnClick;
+
+        void Start()
+        {
+            element.Style = (Style)Application.Current.Resources["ButtonStyle"];
+            VisualStateManager.GoToState(element, "Normal", false);
+            element.HorizontalAlignment = HorizontalAlignment.Left;
+            element.VerticalAlignment = VerticalAlignment.Top;
+            element.RenderTransform = transform;
+            element.PointerEntered += Element_PointerEntered;
+            element.PointerExited += Element_PointerExited;
+            element.Click += act;
+           
+        }
+
+      
         public UButton(object Content, Execute Action = null)
         {
            
-            element.Content = Content;
-
+            element.Content = Content;        
             element.Width = 100;
-            element.Height = 50;
-
-            element.HorizontalAlignment = HorizontalAlignment.Left;
-            element.VerticalAlignment = VerticalAlignment.Top;
-
+            element.Height = 50;          
             transform.X = 0;
-            transform.Y = 0;
-        
-            element.RenderTransform = transform;
-
+            transform.Y = 0;       
             this.Action = Action;
-            element.Click += act;
-
+            Start();
         }
+
+      
 
         public UButton(object Content,Vector2 position, Execute Action = null)
         {
             element.Content = Content;
-
             element.Width = 100;
             element.Height = 50;
-
-            element.HorizontalAlignment = HorizontalAlignment.Left;
-            element.VerticalAlignment = VerticalAlignment.Top;
-
             transform.X = position.x;
             transform.Y = position.y;
-
             pos = position;
-
-            element.RenderTransform = transform;
-
             this.Action = Action;
-            element.Click += act;
-
+            Start();
         }
 
         public UButton(object Content, Vector2 position,Vector2 size, Execute Action = null)
         {
             element.Content = Content;
-
             element.Width = size.x;
             element.Height = size.y;
-
-            element.HorizontalAlignment = HorizontalAlignment.Left;
-            element.VerticalAlignment = VerticalAlignment.Top;
-
             transform.X = position.x;
             transform.Y = position.y;
-
             pos = position;
             si = size;
-
             element.RenderTransform = transform;
-
             this.Action = Action;
-            element.Click += act;
+            Start();
         }
 
-        public void SetImage(string path) {
+
+        public void setBackground(string path)
+        { 
+            Normal = new BitmapImage(new Uri("ms-appx:/" + path));
+            if (OnHover == null) OnHover = Normal;
+            if (OnClick == null) OnClick = Normal;
+
             brush.Stretch = Stretch.UniformToFill;
-            brush.ImageSource = new BitmapImage(new Uri("ms-appx:/"+path));
+            brush.ImageSource = Normal;
             element.Background = brush;
         }
-        public void SetImage(string path,Stretch strech) {
+        public void setBackground(string path, Stretch strech)
+        {
+            Normal = new BitmapImage(new Uri("ms-appx:/" + path));
+            if (OnHover == null) OnHover = Normal;
+            if (OnClick == null) OnClick = Normal;
+
+            brush.ImageSource = Normal;
+            element.Background = brush;
             brush.Stretch = strech;
-            brush.ImageSource = new BitmapImage(new Uri("ms-appx:/" + path));
-            element.Background = brush;
         }
+
+        public void setOnHover(string path)
+        {
+            OnHover = new BitmapImage(new Uri("ms-appx:/" + path));
+        }
+        public void setOnClick(string path)
+        {
+            OnClick = new BitmapImage(new Uri("ms-appx:/" + path));
+        }
+
+        private void Element_PointerEntered(object sender, PointerRoutedEventArgs e)
+        {
+            if(OnHover!=null)
+            brush.ImageSource = OnHover;
+        }
+        private void Element_PointerExited(object sender, PointerRoutedEventArgs e)
+        {
+            
+            brush.ImageSource = Normal;
+        }
+     
 
         private void act(object sender, RoutedEventArgs e)
         {
+  
             Action?.Invoke(sender);
         }
 
@@ -137,6 +169,8 @@ namespace _3ReaisEngine.UI
         {
             return Nome;
         }
+
+       
     }
 
    

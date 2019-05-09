@@ -969,6 +969,122 @@ namespace System.Runtime.InteropServices.WindowsRuntime
 	}
 
 
+	// Specialization: GetMany,string
+	public static class IVectorView_CCWAdapter 
+	{
+	    // T GetAt(uint index)
+	    public static T GetAt<T>(
+	        global::System.Collections.Generic.IReadOnlyList<T> _this,
+	        uint index)
+	    {
+	        EnsureIndexInt32(index, _this.Count);
+
+	        try
+	        {
+	            return _this[(int)index];
+	        }
+	        catch (System.ArgumentOutOfRangeException ex)
+	        {
+	            McgMarshal.SetExceptionErrorCode(ex, global::__Interop.McgHelpers.__HResults.E_BOUNDS);
+	            throw;
+	        }
+	    }
+
+	    // uint Size { get }
+	    public static uint get_Size<T>(global::System.Collections.Generic.IReadOnlyCollection<T> _this)
+	    { 
+	        return (uint)_this.Count;
+	    }
+
+	    // bool IndexOf(T value, out uint index)
+	    public static bool IndexOf<T>(
+	        global::System.Collections.Generic.IReadOnlyList<T> _this, 
+	        T value, 
+	        out uint index)
+	    {
+	        int max = _this.Count;
+
+	        for (int i = 0; i < max; i++)
+	        {
+	            if (global::System.Runtime.InteropServices.McgMarshal.ComparerEquals<T>(value, _this[i]))
+	            {
+	                index = (uint) i;
+	                return true;
+	            }
+	        }
+
+	        index = 0;
+	        return false;
+	    }
+
+	    // uint GetMany(uint startIndex, T[] items)
+	    public static uint GetMany<T>(global::System.Collections.Generic.IReadOnlyList<T> _this, 
+	        uint startIndex, 
+	        T[] items)
+	    {
+	        return GetManyHelper<T>(_this, startIndex, items);
+	    }
+
+	    // @TODO - Weird shared CCW support that I don't really understand. Get rid of this.
+	    public static uint GetMany_string(global::System.Collections.Generic.IReadOnlyList<string> _this,
+	        uint startIndex,
+	        string[] items)
+	    {
+	        return GetManyHelper<string>(_this, startIndex, items);
+	    }
+
+	    private static uint GetManyHelper<T>(global::System.Collections.Generic.IReadOnlyList<T> _this,
+	        uint startIndex,
+	        T[] items)
+	    {
+	        int count = _this.Count;
+
+	        // REX spec says "calling GetMany with startIndex equal to the length of the vector 
+	        // (last valid index + 1) and any specified capacity will succeed and return zero actual
+	        // elements".
+	        if (startIndex == count)
+	            return 0;
+
+	        EnsureIndexInt32(startIndex, count);
+
+	        if (items == null)
+	        {
+	            return 0;
+	        }
+
+	        uint itemCount = global::System.Math.Min((uint)items.Length, (uint)count - startIndex);
+
+	        for (uint i = 0; i < itemCount; ++i)
+	        {
+	            items[i] = _this[(int)(i + startIndex)];
+	        }
+
+	        return itemCount;
+	    }
+
+	    #region Helpers
+
+	    private static void EnsureIndexInt32(uint index, int listCapacity)
+	    {
+	        // We use '<=' and not '<' because Int32.MaxValue == index would imply
+	        // that Size > Int32.MaxValue:
+	        if (((uint)System.Int32.MaxValue) <= index || index >= (uint)listCapacity)
+	        {
+	            global::System.Exception ex = new global::System.ArgumentOutOfRangeException(
+	                "index", 
+	                global::Mcg.System.SR.GetString(global::Mcg.System.SR.Excep_IndexLargerThanMaxValue)
+	            );
+	            McgMarshal.SetExceptionErrorCode(
+	                ex,
+	                global::__Interop.McgHelpers.__HResults.E_BOUNDS
+	            );
+	            throw ex;
+	        }
+	    }
+
+	    #endregion Helpers
+	}
+
 	public static class IVectorViewSharedReferenceTypesRCWAdapter
 	{
 	    public static T Indexer_Get<T>(
@@ -1110,122 +1226,6 @@ namespace System.Runtime.InteropServices.WindowsRuntime
 
 	        return unsafeSize;
 	    }
-	}
-
-	// Specialization: GetMany,string
-	public static class IVectorView_CCWAdapter 
-	{
-	    // T GetAt(uint index)
-	    public static T GetAt<T>(
-	        global::System.Collections.Generic.IReadOnlyList<T> _this,
-	        uint index)
-	    {
-	        EnsureIndexInt32(index, _this.Count);
-
-	        try
-	        {
-	            return _this[(int)index];
-	        }
-	        catch (System.ArgumentOutOfRangeException ex)
-	        {
-	            McgMarshal.SetExceptionErrorCode(ex, global::__Interop.McgHelpers.__HResults.E_BOUNDS);
-	            throw;
-	        }
-	    }
-
-	    // uint Size { get }
-	    public static uint get_Size<T>(global::System.Collections.Generic.IReadOnlyCollection<T> _this)
-	    { 
-	        return (uint)_this.Count;
-	    }
-
-	    // bool IndexOf(T value, out uint index)
-	    public static bool IndexOf<T>(
-	        global::System.Collections.Generic.IReadOnlyList<T> _this, 
-	        T value, 
-	        out uint index)
-	    {
-	        int max = _this.Count;
-
-	        for (int i = 0; i < max; i++)
-	        {
-	            if (global::System.Runtime.InteropServices.McgMarshal.ComparerEquals<T>(value, _this[i]))
-	            {
-	                index = (uint) i;
-	                return true;
-	            }
-	        }
-
-	        index = 0;
-	        return false;
-	    }
-
-	    // uint GetMany(uint startIndex, T[] items)
-	    public static uint GetMany<T>(global::System.Collections.Generic.IReadOnlyList<T> _this, 
-	        uint startIndex, 
-	        T[] items)
-	    {
-	        return GetManyHelper<T>(_this, startIndex, items);
-	    }
-
-	    // @TODO - Weird shared CCW support that I don't really understand. Get rid of this.
-	    public static uint GetMany_string(global::System.Collections.Generic.IReadOnlyList<string> _this,
-	        uint startIndex,
-	        string[] items)
-	    {
-	        return GetManyHelper<string>(_this, startIndex, items);
-	    }
-
-	    private static uint GetManyHelper<T>(global::System.Collections.Generic.IReadOnlyList<T> _this,
-	        uint startIndex,
-	        T[] items)
-	    {
-	        int count = _this.Count;
-
-	        // REX spec says "calling GetMany with startIndex equal to the length of the vector 
-	        // (last valid index + 1) and any specified capacity will succeed and return zero actual
-	        // elements".
-	        if (startIndex == count)
-	            return 0;
-
-	        EnsureIndexInt32(startIndex, count);
-
-	        if (items == null)
-	        {
-	            return 0;
-	        }
-
-	        uint itemCount = global::System.Math.Min((uint)items.Length, (uint)count - startIndex);
-
-	        for (uint i = 0; i < itemCount; ++i)
-	        {
-	            items[i] = _this[(int)(i + startIndex)];
-	        }
-
-	        return itemCount;
-	    }
-
-	    #region Helpers
-
-	    private static void EnsureIndexInt32(uint index, int listCapacity)
-	    {
-	        // We use '<=' and not '<' because Int32.MaxValue == index would imply
-	        // that Size > Int32.MaxValue:
-	        if (((uint)System.Int32.MaxValue) <= index || index >= (uint)listCapacity)
-	        {
-	            global::System.Exception ex = new global::System.ArgumentOutOfRangeException(
-	                "index", 
-	                global::Mcg.System.SR.GetString(global::Mcg.System.SR.Excep_IndexLargerThanMaxValue)
-	            );
-	            McgMarshal.SetExceptionErrorCode(
-	                ex,
-	                global::__Interop.McgHelpers.__HResults.E_BOUNDS
-	            );
-	            throw ex;
-	        }
-	    }
-
-	    #endregion Helpers
 	}
 
 	public static class IMapSharedReferenceTypesRCWAdapter 

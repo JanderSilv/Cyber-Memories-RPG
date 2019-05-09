@@ -15,7 +15,7 @@
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
   <Dependencies>
-    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.17134.0" MaxVersionTested="10.0.17134.0" />
+    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.17134.0" MaxVersionTested="10.0.17763.0" />
     <PackageDependency Name="Microsoft.VCLibs.140.00" MinVersion="14.0.22929.0" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" />
     <PackageDependency Name="Microsoft.NET.Native.Framework.2.1" MinVersion="2.1.26424.0" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" />
     <PackageDependency Name="Microsoft.NET.Native.Runtime.2.1" MinVersion="2.1.26424.0" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" />
@@ -36,10 +36,10 @@
   </Capabilities>
   <build:Metadata>
     <build:Item Name="TargetFrameworkMoniker" Value=".NETCore,Version=v5.0" />
-    <build:Item Name="VisualStudio" Version="15.0" />
-    <build:Item Name="VisualStudioEdition" Value="Microsoft Visual Studio Community 2017" />
-    <build:Item Name="OperatingSystem" Version="10.0.17134.590 (WinBuild.160101.0800)" />
-    <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="15.0.28010.2016" />
+    <build:Item Name="VisualStudio" Version="16.0" />
+    <build:Item Name="VisualStudioEdition" Value="Microsoft Visual Studio Community 2019" />
+    <build:Item Name="OperatingSystem" Version="10.0.17134.765 (WinBuild.160101.0800)" />
+    <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="16.0.28711.60" />
     <build:Item Name="ProjectGUID" Value="{171CAC3C-A3D0-4FB8-8FC4-5E8460050CF2}" />
     <build:Item Name="ilc.exe" Version="2.1.26424.01 built by: PROJECTNREL" />
     <build:Item Name="OptimizingToolset" Value="ilc.exe" />
@@ -51,7 +51,7 @@
     <build:Item Name="SingleThreadNUTC" Value="false" />
     <build:Item Name="Use64BitCompiler" Value="false" />
     <build:Item Name="DisableMetadataStackTraceResolution" Value="false" />
-    <build:Item Name="Microsoft.Windows.UI.Xaml.Build.Tasks.dll" Version="15.0.28010.2016" />
-    <build:Item Name="MakePri.exe" Version="10.0.17134.12 (WinBuild.160101.0800)" />
+    <build:Item Name="Microsoft.Windows.UI.Xaml.Build.Tasks.dll" Version="10.0.17763.132" />
+    <build:Item Name="MakePri.exe" Version="10.0.17763.132 (WinBuild.160101.0800)" />
   </build:Metadata>
 </Package>

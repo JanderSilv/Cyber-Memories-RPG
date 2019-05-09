@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>LAPTOP-AHLNHJ0O</Machine>
+    <Machine>LAPTOP-I3GVLU4P</Machine>
     <WindowsUser>ruann</WindowsUser>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetOsVersion>10.0</TargetOsVersion>
@@ -10,141 +10,442 @@
     <PackageArchitecture>x64</PackageArchitecture>
     <PackageIdentityName>2d5fb77a-6e92-49d7-b9e3-84e29a9f9a60</PackageIdentityName>
     <PackageIdentityPublisher>CN=ruann</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\ruann\Documents\RPG-LP2\RPG\RPG\obj\x64\Release\</IntermediateOutputPath>
+    <IntermediateOutputPath>E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\ruann\Documents\RPG-LP2\RPG\RPG\bin\x64\Release\AppX</LayoutDir>
+    <LayoutDir>E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\AppX</LayoutDir>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\ruann\Documents\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\AppxManifest.xml">
+    <AppXManifest Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\ruann\Documents\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ruann\Documents\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ruann\Documents\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ruann\Documents\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ruann\Documents\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ruann\Documents\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ruann\Documents\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ruann\Documents\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\clrcompression.dll">
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\clrcompression.dll">
       <PackagePath>clrcompression.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ruann\Documents\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\resources.pri">
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ruann\Documents\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\RPG.dll">
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\RPG.dll">
       <PackagePath>RPG.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ruann\Documents\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\RPG.exe">
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\RPG.exe">
       <PackagePath>RPG.exe</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ruann\Documents\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\RPG.pdb">
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\RPG.pdb">
       <PackagePath>RPG.pdb</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ruann\Documents\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\cabeca.png">
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Animations\dead.gif">
+      <PackagePath>Src\Animations\dead.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Animations\Dead.png">
+      <PackagePath>Src\Animations\Dead.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Animations\idle.gif">
+      <PackagePath>Src\Animations\idle.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Animations\jump.gif">
+      <PackagePath>Src\Animations\jump.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Animations\Menu\Menu.gif">
+      <PackagePath>Src\Animations\Menu\Menu.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Animations\walk.gif">
+      <PackagePath>Src\Animations\walk.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Audio\beep.mp3">
+      <PackagePath>Src\Audio\beep.mp3</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Audio\rain.mp3">
+      <PackagePath>Src\Audio\rain.mp3</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Audio\serrote.wav">
+      <PackagePath>Src\Audio\serrote.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\cabeca.png">
       <PackagePath>Src\cabeca.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ruann\Documents\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\dance.gif">
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\dance.gif">
       <PackagePath>Src\dance.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Botões\Configurações.png">
+      <PackagePath>Src\Images\Menu\Botões\Configurações.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Botões\Configurações_Selecionado.png">
+      <PackagePath>Src\Images\Menu\Botões\Configurações_Selecionado.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Botões\Iniciar.png">
+      <PackagePath>Src\Images\Menu\Botões\Iniciar.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Botões\Jogar_Selecionado.png">
+      <PackagePath>Src\Images\Menu\Botões\Jogar_Selecionado.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Botões\Sair.png">
+      <PackagePath>Src\Images\Menu\Botões\Sair.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Botões\Sair_Selecionado.png">
+      <PackagePath>Src\Images\Menu\Botões\Sair_Selecionado.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Botões\Sobre.png">
+      <PackagePath>Src\Images\Menu\Botões\Sobre.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Botões\Sobre_Selecionado.png">
+      <PackagePath>Src\Images\Menu\Botões\Sobre_Selecionado.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Botões\Voltar.png">
+      <PackagePath>Src\Images\Menu\Botões\Voltar.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Botões\Voltar_Selecionado.png">
+      <PackagePath>Src\Images\Menu\Botões\Voltar_Selecionado.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Logo.png">
+      <PackagePath>Src\Images\Menu\Logo.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Logo2.png">
+      <PackagePath>Src\Images\Menu\Logo2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\JunglerockAlpha.png">
+      <PackagePath>Src\JunglerockAlpha.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Opera-04.png">
+      <PackagePath>Src\Opera-04.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Bau\Treasure Chest closed 254x254.png">
+      <PackagePath>Src\Sprites\Bau\Treasure Chest closed 254x254.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Bau\Treasure Chest open 254x254.png">
+      <PackagePath>Src\Sprites\Bau\Treasure Chest open 254x254.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Cavaleiro\knight 3 block.png">
+      <PackagePath>Src\Sprites\Cavaleiro\knight 3 block.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Cavaleiro\knight 3 idle.png">
+      <PackagePath>Src\Sprites\Cavaleiro\knight 3 idle.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Cavaleiro\knight 3 improved slash animation.png">
+      <PackagePath>Src\Sprites\Cavaleiro\knight 3 improved slash animation.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Cavaleiro\knight death animation.png">
+      <PackagePath>Src\Sprites\Cavaleiro\knight death animation.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Cavaleiro\knight walk animation.png">
+      <PackagePath>Src\Sprites\Cavaleiro\knight walk animation.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Feiticeiro\sorcerer attack_Animation 1_0.png">
+      <PackagePath>Src\Sprites\Feiticeiro\sorcerer attack_Animation 1_0.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Feiticeiro\sorcerer attack_Animation 1_1.png">
+      <PackagePath>Src\Sprites\Feiticeiro\sorcerer attack_Animation 1_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Feiticeiro\sorcerer attack_Animation 1_2.png">
+      <PackagePath>Src\Sprites\Feiticeiro\sorcerer attack_Animation 1_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Feiticeiro\sorcerer attack_Animation 1_3.png">
+      <PackagePath>Src\Sprites\Feiticeiro\sorcerer attack_Animation 1_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Feiticeiro\sorcerer attack_Animation 1_4.png">
+      <PackagePath>Src\Sprites\Feiticeiro\sorcerer attack_Animation 1_4.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Feiticeiro\sorcerer attack_Animation 1_5.png">
+      <PackagePath>Src\Sprites\Feiticeiro\sorcerer attack_Animation 1_5.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Feiticeiro\sorcerer attack_Animation 1_6.png">
+      <PackagePath>Src\Sprites\Feiticeiro\sorcerer attack_Animation 1_6.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Feiticeiro\sorcerer attack_Animation 1_7.png">
+      <PackagePath>Src\Sprites\Feiticeiro\sorcerer attack_Animation 1_7.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Feiticeiro\sorcerer attack_Animation 1_8.png">
+      <PackagePath>Src\Sprites\Feiticeiro\sorcerer attack_Animation 1_8.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Feiticeiro\sorcerer attack_Animation 1_9.png">
+      <PackagePath>Src\Sprites\Feiticeiro\sorcerer attack_Animation 1_9.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Feiticeiro\sorcerer villain.png">
+      <PackagePath>Src\Sprites\Feiticeiro\sorcerer villain.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Feiticeiro\villain.png">
+      <PackagePath>Src\Sprites\Feiticeiro\villain.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Mago\wizard attack.png">
+      <PackagePath>Src\Sprites\Mago\wizard attack.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Mago\wizard death.png">
+      <PackagePath>Src\Sprites\Mago\wizard death.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Mago\wizard fly forward.png">
+      <PackagePath>Src\Sprites\Mago\wizard fly forward.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Mago\wizard idle.png">
+      <PackagePath>Src\Sprites\Mago\wizard idle.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like attack animations.png">
+      <PackagePath>Src\Sprites\Rogue\rogue like attack animations.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like attack animations_attack down_0.png">
+      <PackagePath>Src\Sprites\Rogue\rogue like attack animations_attack down_0.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like attack animations_attack down_1.png">
+      <PackagePath>Src\Sprites\Rogue\rogue like attack animations_attack down_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like attack animations_attack down_2.png">
+      <PackagePath>Src\Sprites\Rogue\rogue like attack animations_attack down_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like attack animations_attack down_3.png">
+      <PackagePath>Src\Sprites\Rogue\rogue like attack animations_attack down_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like attack animations_attack left_0.png">
+      <PackagePath>Src\Sprites\Rogue\rogue like attack animations_attack left_0.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like attack animations_attack left_1.png">
+      <PackagePath>Src\Sprites\Rogue\rogue like attack animations_attack left_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like attack animations_attack left_2.png">
+      <PackagePath>Src\Sprites\Rogue\rogue like attack animations_attack left_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like attack animations_attack left_3.png">
+      <PackagePath>Src\Sprites\Rogue\rogue like attack animations_attack left_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like attack animations_attack right_0.png">
+      <PackagePath>Src\Sprites\Rogue\rogue like attack animations_attack right_0.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like attack animations_attack right_1.png">
+      <PackagePath>Src\Sprites\Rogue\rogue like attack animations_attack right_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like attack animations_attack right_2.png">
+      <PackagePath>Src\Sprites\Rogue\rogue like attack animations_attack right_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like attack animations_attack right_3.png">
+      <PackagePath>Src\Sprites\Rogue\rogue like attack animations_attack right_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like attack animations_attack up_0.png">
+      <PackagePath>Src\Sprites\Rogue\rogue like attack animations_attack up_0.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like attack animations_attack up_1.png">
+      <PackagePath>Src\Sprites\Rogue\rogue like attack animations_attack up_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like attack animations_attack up_2.png">
+      <PackagePath>Src\Sprites\Rogue\rogue like attack animations_attack up_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like attack animations_attack up_3.png">
+      <PackagePath>Src\Sprites\Rogue\rogue like attack animations_attack up_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like attack.png">
+      <PackagePath>Src\Sprites\Rogue\rogue like attack.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like attack_Animation 1_0.png">
+      <PackagePath>Src\Sprites\Rogue\rogue like attack_Animation 1_0.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like attack_Animation 1_1.png">
+      <PackagePath>Src\Sprites\Rogue\rogue like attack_Animation 1_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like attack_Animation 1_2.png">
+      <PackagePath>Src\Sprites\Rogue\rogue like attack_Animation 1_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like attack_Animation 1_3.png">
+      <PackagePath>Src\Sprites\Rogue\rogue like attack_Animation 1_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like attack_Animation 1_4.png">
+      <PackagePath>Src\Sprites\Rogue\rogue like attack_Animation 1_4.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like attack_Animation 1_5.png">
+      <PackagePath>Src\Sprites\Rogue\rogue like attack_Animation 1_5.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like attack_Animation 1_6.png">
+      <PackagePath>Src\Sprites\Rogue\rogue like attack_Animation 1_6.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like attack_Animation 1_7.png">
+      <PackagePath>Src\Sprites\Rogue\rogue like attack_Animation 1_7.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like attack_Animation 1_8.png">
+      <PackagePath>Src\Sprites\Rogue\rogue like attack_Animation 1_8.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like attack_Animation 1_9.png">
+      <PackagePath>Src\Sprites\Rogue\rogue like attack_Animation 1_9.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like idle.png">
+      <PackagePath>Src\Sprites\Rogue\rogue like idle.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like idle_Animation 1_0.png">
+      <PackagePath>Src\Sprites\Rogue\rogue like idle_Animation 1_0.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like idle_Animation 1_1.png">
+      <PackagePath>Src\Sprites\Rogue\rogue like idle_Animation 1_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like idle_Animation 1_2.png">
+      <PackagePath>Src\Sprites\Rogue\rogue like idle_Animation 1_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like run up_Animation 1_0.png">
+      <PackagePath>Src\Sprites\Rogue\rogue like run up_Animation 1_0.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like run up_Animation 1_1.png">
+      <PackagePath>Src\Sprites\Rogue\rogue like run up_Animation 1_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like run up_Animation 1_2.png">
+      <PackagePath>Src\Sprites\Rogue\rogue like run up_Animation 1_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like run up_Animation 1_3.png">
+      <PackagePath>Src\Sprites\Rogue\rogue like run up_Animation 1_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like run.png">
+      <PackagePath>Src\Sprites\Rogue\rogue like run.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like run_Animation 1_0.png">
+      <PackagePath>Src\Sprites\Rogue\rogue like run_Animation 1_0.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like run_Animation 1_1.png">
+      <PackagePath>Src\Sprites\Rogue\rogue like run_Animation 1_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like run_Animation 1_2.png">
+      <PackagePath>Src\Sprites\Rogue\rogue like run_Animation 1_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like run_Animation 1_3.png">
+      <PackagePath>Src\Sprites\Rogue\rogue like run_Animation 1_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like run_Animation 1_4.png">
+      <PackagePath>Src\Sprites\Rogue\rogue like run_Animation 1_4.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like run_Animation 1_5.png">
+      <PackagePath>Src\Sprites\Rogue\rogue like run_Animation 1_5.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\roguelike run down_Animation 1_0.png">
+      <PackagePath>Src\Sprites\Rogue\roguelike run down_Animation 1_0.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\roguelike run down_Animation 1_1.png">
+      <PackagePath>Src\Sprites\Rogue\roguelike run down_Animation 1_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\roguelike run down_Animation 1_2.png">
+      <PackagePath>Src\Sprites\Rogue\roguelike run down_Animation 1_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\roguelike run down_Animation 1_3.png">
+      <PackagePath>Src\Sprites\Rogue\roguelike run down_Animation 1_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Zumbi\undead_attack.gif">
+      <PackagePath>Src\Sprites\Zumbi\undead_attack.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Zumbi\undead_death.gif">
+      <PackagePath>Src\Sprites\Zumbi\undead_death.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Zumbi\undead_hurt.gif">
+      <PackagePath>Src\Sprites\Zumbi\undead_hurt.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Zumbi\undead_idle.gif">
+      <PackagePath>Src\Sprites\Zumbi\undead_idle.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Zumbi\undead_walk.gif">
+      <PackagePath>Src\Sprites\Zumbi\undead_walk.gif</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
-    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.native.sharedlibrary\2.1.8\build\..\tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.2.1.appx">
+    <ResolvedSDKReference Include="C:\Users\ruann\.nuget\packages\runtime.win10-x86.microsoft.net.native.sharedlibrary\2.1.8\build\..\tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.2.1.appx">
       <Name>Microsoft.NET.Native.Framework.2.1</Name>
       <Version>2.1.26424.0</Version>
       <Architecture>x86</Architecture>
       <FrameworkIdentity>Name = Microsoft.NET.Native.Framework.2.1, MinVersion = 2.1.26424.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.native.sharedlibrary\2.1.8\build\..\tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.2.1.appx</AppxLocation>
+      <AppxLocation>C:\Users\ruann\.nuget\packages\runtime.win10-x86.microsoft.net.native.sharedlibrary\2.1.8\build\..\tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.2.1.appx</AppxLocation>
       <MoreInfo></MoreInfo>
     </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.native.sharedlibrary\2.1.8\build\..\tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.2.1.appx">
+    <ResolvedSDKReference Include="C:\Users\ruann\.nuget\packages\runtime.win10-x64.microsoft.net.native.sharedlibrary\2.1.8\build\..\tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.2.1.appx">
       <Name>Microsoft.NET.Native.Framework.2.1</Name>
       <Version>2.1.26424.0</Version>
       <Architecture>x64</Architecture>
       <FrameworkIdentity>Name = Microsoft.NET.Native.Framework.2.1, MinVersion = 2.1.26424.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.native.sharedlibrary\2.1.8\build\..\tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.2.1.appx</AppxLocation>
+      <AppxLocation>C:\Users\ruann\.nuget\packages\runtime.win10-x64.microsoft.net.native.sharedlibrary\2.1.8\build\..\tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.2.1.appx</AppxLocation>
       <MoreInfo></MoreInfo>
     </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.net.native.sharedlibrary\2.1.8\build\..\tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.2.1.appx">
+    <ResolvedSDKReference Include="C:\Users\ruann\.nuget\packages\runtime.win10-arm.microsoft.net.native.sharedlibrary\2.1.8\build\..\tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.2.1.appx">
       <Name>Microsoft.NET.Native.Framework.2.1</Name>
       <Version>2.1.26424.0</Version>
       <Architecture>arm</Architecture>
       <FrameworkIdentity>Name = Microsoft.NET.Native.Framework.2.1, MinVersion = 2.1.26424.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.net.native.sharedlibrary\2.1.8\build\..\tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.2.1.appx</AppxLocation>
+      <AppxLocation>C:\Users\ruann\.nuget\packages\runtime.win10-arm.microsoft.net.native.sharedlibrary\2.1.8\build\..\tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.2.1.appx</AppxLocation>
       <MoreInfo></MoreInfo>
     </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.native.compiler\2.1.8\build\..\tools\Runtime\x86\Microsoft.NET.Native.Runtime.2.1.appx">
+    <ResolvedSDKReference Include="C:\Users\ruann\.nuget\packages\runtime.win10-x86.microsoft.net.native.compiler\2.1.8\build\..\tools\Runtime\x86\Microsoft.NET.Native.Runtime.2.1.appx">
       <Name>Microsoft.NET.Native.Runtime.2.1</Name>
       <Version>2.1.26424.0</Version>
       <Architecture>x86</Architecture>
       <FrameworkIdentity>Name = Microsoft.NET.Native.Runtime.2.1, MinVersion = 2.1.26424.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.native.compiler\2.1.8\build\..\tools\Runtime\x86\Microsoft.NET.Native.Runtime.2.1.appx</AppxLocation>
+      <AppxLocation>C:\Users\ruann\.nuget\packages\runtime.win10-x86.microsoft.net.native.compiler\2.1.8\build\..\tools\Runtime\x86\Microsoft.NET.Native.Runtime.2.1.appx</AppxLocation>
       <MoreInfo></MoreInfo>
     </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.native.compiler\2.1.8\build\..\tools\Runtime\x64\Microsoft.NET.Native.Runtime.2.1.appx">
+    <ResolvedSDKReference Include="C:\Users\ruann\.nuget\packages\runtime.win10-x64.microsoft.net.native.compiler\2.1.8\build\..\tools\Runtime\x64\Microsoft.NET.Native.Runtime.2.1.appx">
       <Name>Microsoft.NET.Native.Runtime.2.1</Name>
       <Version>2.1.26424.0</Version>
       <Architecture>x64</Architecture>
       <FrameworkIdentity>Name = Microsoft.NET.Native.Runtime.2.1, MinVersion = 2.1.26424.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.native.compiler\2.1.8\build\..\tools\Runtime\x64\Microsoft.NET.Native.Runtime.2.1.appx</AppxLocation>
+      <AppxLocation>C:\Users\ruann\.nuget\packages\runtime.win10-x64.microsoft.net.native.compiler\2.1.8\build\..\tools\Runtime\x64\Microsoft.NET.Native.Runtime.2.1.appx</AppxLocation>
       <MoreInfo></MoreInfo>
     </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.net.native.compiler\2.1.8\build\..\tools\Runtime\arm\Microsoft.NET.Native.Runtime.2.1.appx">
+    <ResolvedSDKReference Include="C:\Users\ruann\.nuget\packages\runtime.win10-arm.microsoft.net.native.compiler\2.1.8\build\..\tools\Runtime\arm\Microsoft.NET.Native.Runtime.2.1.appx">
       <Name>Microsoft.NET.Native.Runtime.2.1</Name>
       <Version>2.1.26424.0</Version>
       <Architecture>arm</Architecture>
       <FrameworkIdentity>Name = Microsoft.NET.Native.Runtime.2.1, MinVersion = 2.1.26424.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.net.native.compiler\2.1.8\build\..\tools\Runtime\arm\Microsoft.NET.Native.Runtime.2.1.appx</AppxLocation>
+      <AppxLocation>C:\Users\ruann\.nuget\packages\runtime.win10-arm.microsoft.net.native.compiler\2.1.8\build\..\tools\Runtime\arm\Microsoft.NET.Native.Runtime.2.1.appx</AppxLocation>
       <MoreInfo></MoreInfo>
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
       <Name>Microsoft.VCLibs.140.00</Name>
-      <Version>14.0.25426.0</Version>
+      <Version>14.0.26706.0</Version>
       <Architecture>ARM</Architecture>
-      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00, MinVersion = 14.0.25426.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00, MinVersion = 14.0.26706.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Retail\ARM\Microsoft.VCLibs.ARM.14.00.appx</AppxLocation>
       <MoreInfo></MoreInfo>
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
       <Name>Microsoft.VCLibs.140.00</Name>
-      <Version>14.0.25426.0</Version>
+      <Version>14.0.26706.0</Version>
+      <Architecture>ARM64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00, MinVersion = 14.0.26706.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Retail\ARM64\Microsoft.VCLibs.ARM64.14.00.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00</Name>
+      <Version>14.0.26706.0</Version>
       <Architecture>x64</Architecture>
-      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00, MinVersion = 14.0.25426.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00, MinVersion = 14.0.26706.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Retail\x64\Microsoft.VCLibs.x64.14.00.appx</AppxLocation>
       <MoreInfo></MoreInfo>
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
       <Name>Microsoft.VCLibs.140.00</Name>
-      <Version>14.0.25426.0</Version>
+      <Version>14.0.26706.0</Version>
       <Architecture>x86</Architecture>
-      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00, MinVersion = 14.0.25426.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00, MinVersion = 14.0.26706.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Retail\x86\Microsoft.VCLibs.x86.14.00.appx</AppxLocation>
       <MoreInfo></MoreInfo>
     </ResolvedSDKReference>

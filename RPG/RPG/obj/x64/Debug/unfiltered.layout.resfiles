@@ -1,3 +1,4 @@
+WinMetadata\Windows.winmd
 Assets\LockScreenLogo.scale-200.png
 Assets\SplashScreen.scale-200.png
 Assets\Square150x150Logo.scale-200.png
@@ -8,6 +9,7 @@ Assets\Wide310x150Logo.scale-200.png
 App.xbf
 MainPage.xbf
 RPG.xr.xml
+Src\ButtonStyle.xbf
 Properties\Default.rd.xml
 Src\Animations\dead.gif
 Src\Animations\Dead.png
@@ -109,4 +111,3 @@ Src\Sprites\Zumbi\undead_death.gif
 Src\Sprites\Zumbi\undead_hurt.gif
 Src\Sprites\Zumbi\undead_idle.gif
 Src\Sprites\Zumbi\undead_walk.gif
-WinMetadata\Windows.winmd

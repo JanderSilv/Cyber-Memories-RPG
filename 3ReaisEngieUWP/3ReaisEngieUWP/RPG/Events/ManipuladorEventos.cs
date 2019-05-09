@@ -28,6 +28,7 @@ namespace _3ReaisEngine.Events
             while (eventos.Count > 0)
             {
                 EventArgs e = eventos.Dequeue();
+
                 for (int i = 0; i < (int)PrioridadeEvento.Count; i++)
                 {
                     if (e.GetType() == typeof(TecladoEvento) && handleTeclado[i] != null)

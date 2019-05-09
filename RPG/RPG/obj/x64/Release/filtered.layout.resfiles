@@ -8,5 +8,103 @@ Assets\StoreLogo.png
 Assets\Wide310x150Logo.scale-200.png
 RPG.xr.xml
 Properties\Default.rd.xml
+Src\Animations\dead.gif
+Src\Animations\Dead.png
+Src\Animations\idle.gif
+Src\Animations\jump.gif
+Src\Animations\Menu\Menu.gif
+Src\Animations\walk.gif
+Src\Audio\beep.mp3
+Src\Audio\rain.mp3
+Src\Audio\serrote.wav
 Src\cabeca.png
 Src\dance.gif
+Src\Images\Menu\Botões\Configurações.png
+Src\Images\Menu\Botões\Configurações_Selecionado.png
+Src\Images\Menu\Botões\Iniciar.png
+Src\Images\Menu\Botões\Jogar_Selecionado.png
+Src\Images\Menu\Botões\Sair.png
+Src\Images\Menu\Botões\Sair_Selecionado.png
+Src\Images\Menu\Botões\Sobre.png
+Src\Images\Menu\Botões\Sobre_Selecionado.png
+Src\Images\Menu\Botões\Voltar.png
+Src\Images\Menu\Botões\Voltar_Selecionado.png
+Src\Images\Menu\Logo.png
+Src\Images\Menu\Logo2.png
+Src\JunglerockAlpha.png
+Src\Opera-04.png
+Src\Sprites\Bau\Treasure Chest closed 254x254.png
+Src\Sprites\Bau\Treasure Chest open 254x254.png
+Src\Sprites\Cavaleiro\knight 3 block.png
+Src\Sprites\Cavaleiro\knight 3 idle.png
+Src\Sprites\Cavaleiro\knight 3 improved slash animation.png
+Src\Sprites\Cavaleiro\knight death animation.png
+Src\Sprites\Cavaleiro\knight walk animation.png
+Src\Sprites\Feiticeiro\sorcerer attack_Animation 1_0.png
+Src\Sprites\Feiticeiro\sorcerer attack_Animation 1_1.png
+Src\Sprites\Feiticeiro\sorcerer attack_Animation 1_2.png
+Src\Sprites\Feiticeiro\sorcerer attack_Animation 1_3.png
+Src\Sprites\Feiticeiro\sorcerer attack_Animation 1_4.png
+Src\Sprites\Feiticeiro\sorcerer attack_Animation 1_5.png
+Src\Sprites\Feiticeiro\sorcerer attack_Animation 1_6.png
+Src\Sprites\Feiticeiro\sorcerer attack_Animation 1_7.png
+Src\Sprites\Feiticeiro\sorcerer attack_Animation 1_8.png
+Src\Sprites\Feiticeiro\sorcerer attack_Animation 1_9.png
+Src\Sprites\Feiticeiro\sorcerer villain.png
+Src\Sprites\Feiticeiro\villain.png
+Src\Sprites\Mago\wizard attack.png
+Src\Sprites\Mago\wizard death.png
+Src\Sprites\Mago\wizard fly forward.png
+Src\Sprites\Mago\wizard idle.png
+Src\Sprites\Rogue\rogue like attack animations.png
+Src\Sprites\Rogue\rogue like attack animations_attack down_0.png
+Src\Sprites\Rogue\rogue like attack animations_attack down_1.png
+Src\Sprites\Rogue\rogue like attack animations_attack down_2.png
+Src\Sprites\Rogue\rogue like attack animations_attack down_3.png
+Src\Sprites\Rogue\rogue like attack animations_attack left_0.png
+Src\Sprites\Rogue\rogue like attack animations_attack left_1.png
+Src\Sprites\Rogue\rogue like attack animations_attack left_2.png
+Src\Sprites\Rogue\rogue like attack animations_attack left_3.png
+Src\Sprites\Rogue\rogue like attack animations_attack right_0.png
+Src\Sprites\Rogue\rogue like attack animations_attack right_1.png
+Src\Sprites\Rogue\rogue like attack animations_attack right_2.png
+Src\Sprites\Rogue\rogue like attack animations_attack right_3.png
+Src\Sprites\Rogue\rogue like attack animations_attack up_0.png
+Src\Sprites\Rogue\rogue like attack animations_attack up_1.png
+Src\Sprites\Rogue\rogue like attack animations_attack up_2.png
+Src\Sprites\Rogue\rogue like attack animations_attack up_3.png
+Src\Sprites\Rogue\rogue like attack.png
+Src\Sprites\Rogue\rogue like attack_Animation 1_0.png
+Src\Sprites\Rogue\rogue like attack_Animation 1_1.png
+Src\Sprites\Rogue\rogue like attack_Animation 1_2.png
+Src\Sprites\Rogue\rogue like attack_Animation 1_3.png
+Src\Sprites\Rogue\rogue like attack_Animation 1_4.png
+Src\Sprites\Rogue\rogue like attack_Animation 1_5.png
+Src\Sprites\Rogue\rogue like attack_Animation 1_6.png
+Src\Sprites\Rogue\rogue like attack_Animation 1_7.png
+Src\Sprites\Rogue\rogue like attack_Animation 1_8.png
+Src\Sprites\Rogue\rogue like attack_Animation 1_9.png
+Src\Sprites\Rogue\rogue like idle.png
+Src\Sprites\Rogue\rogue like idle_Animation 1_0.png
+Src\Sprites\Rogue\rogue like idle_Animation 1_1.png
+Src\Sprites\Rogue\rogue like idle_Animation 1_2.png
+Src\Sprites\Rogue\rogue like run up_Animation 1_0.png
+Src\Sprites\Rogue\rogue like run up_Animation 1_1.png
+Src\Sprites\Rogue\rogue like run up_Animation 1_2.png
+Src\Sprites\Rogue\rogue like run up_Animation 1_3.png
+Src\Sprites\Rogue\rogue like run.png
+Src\Sprites\Rogue\rogue like run_Animation 1_0.png
+Src\Sprites\Rogue\rogue like run_Animation 1_1.png
+Src\Sprites\Rogue\rogue like run_Animation 1_2.png
+Src\Sprites\Rogue\rogue like run_Animation 1_3.png
+Src\Sprites\Rogue\rogue like run_Animation 1_4.png
+Src\Sprites\Rogue\rogue like run_Animation 1_5.png
+Src\Sprites\Rogue\roguelike run down_Animation 1_0.png
+Src\Sprites\Rogue\roguelike run down_Animation 1_1.png
+Src\Sprites\Rogue\roguelike run down_Animation 1_2.png
+Src\Sprites\Rogue\roguelike run down_Animation 1_3.png
+Src\Sprites\Zumbi\undead_attack.gif
+Src\Sprites\Zumbi\undead_death.gif
+Src\Sprites\Zumbi\undead_hurt.gif
+Src\Sprites\Zumbi\undead_idle.gif
+Src\Sprites\Zumbi\undead_walk.gif

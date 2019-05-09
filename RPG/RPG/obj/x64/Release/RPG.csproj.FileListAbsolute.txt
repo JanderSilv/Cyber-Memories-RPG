@@ -491,3 +491,703 @@ C:\Users\ruann\Documents\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\RPG.Mc
 C:\Users\ruann\Documents\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\RPG.McgInterop\SafeTypes.g.cs
 C:\Users\ruann\Documents\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\RPG.McgInterop\SharedStubs.g.cs
 C:\Users\ruann\Documents\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\System.Private.RPG.Generated.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Collections.Concurrent.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Collections.Immutable.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Collections.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.ComponentModel.EventBasedAsync.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.ComponentModel.TypeConverter.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Diagnostics.Process.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Diagnostics.Tools.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Diagnostics.Tracing.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Drawing.Primitives.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Globalization.Calendars.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Globalization.Extensions.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.IO.Compression.FileSystem.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.IO.Compression.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.IO.FileSystem.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.IO.Pipes.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.IO.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Linq.Parallel.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Net.Http.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Net.Primitives.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Net.Sockets.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Numerics.Vectors.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Private.ServiceModel.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.ServiceModel.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Text.RegularExpressions.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Threading.Tasks.Parallel.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Threading.ThreadPool.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Threading.Timer.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Transactions.Local.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Xml.XPath.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Xml.XmlSerializer.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\netstandard.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.ServiceModel.Security.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.ServiceModel.Web.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Text.RegularExpressions.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Threading.Tasks.Extensions.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Threading.Thread.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Threading.ThreadPool.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Threading.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Transactions.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Web.HttpUtility.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Windows.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Xml.ReaderWriter.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Xml.Serialization.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Xml.XPath.XDocument.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Xml.XPath.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Xml.XmlSerializer.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\Src\Opera-04.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\Src\Audio\beep.mp3
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\Src\Audio\rain.mp3
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\Src\Audio\serrote.wav
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\Src\cabeca.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\Src\dance.gif
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\App.xbf
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\MainPage.xbf
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\Src\ButtonStyle.xbf
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\RPG.xr.xml
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\RPG.exe
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\RPG.pdb
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\resources.pri
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\AppxManifest.xml
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Adapters.g.cs
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\AssemblyInfo.g.cs
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Assets\LockScreenLogo.scale-200.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Assets\SplashScreen.scale-200.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Assets\Square150x150Logo.scale-200.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Assets\Square44x44Logo.scale-200.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Assets\Square44x44Logo.targetsize-24_altform-unplated.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Assets\StoreLogo.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Assets\Wide310x150Logo.scale-200.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\clrcompression.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Data.g.cs
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\DotNetNative.debugger-services-def.json
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Helpers.g.cs
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\ImplTypes.g.cs
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\PInvoke.g.cs
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\resources.pri
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\RPG.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\RPG.exe
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\RPG.pdb
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\RPG.xr.xml
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\SafeTypes.g.cs
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\SharedStubs.g.cs
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Animations\dead.gif
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Animations\Dead.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Animations\idle.gif
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Animations\jump.gif
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Animations\Menu\Menu.gif
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Animations\walk.gif
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Audio\beep.mp3
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Audio\rain.mp3
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Audio\serrote.wav
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\cabeca.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\dance.gif
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Botões\Configurações.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Botões\Configurações_Selecionado.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Botões\Iniciar.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Botões\Jogar_Selecionado.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Botões\Sair.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Botões\Sair_Selecionado.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Botões\Sobre.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Botões\Sobre_Selecionado.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Botões\Voltar.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Botões\Voltar_Selecionado.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Logo.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Logo2.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\JunglerockAlpha.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Opera-04.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Bau\Treasure Chest closed 254x254.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Bau\Treasure Chest open 254x254.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Cavaleiro\knight 3 block.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Cavaleiro\knight 3 idle.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Cavaleiro\knight 3 improved slash animation.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Cavaleiro\knight death animation.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Cavaleiro\knight walk animation.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Feiticeiro\sorcerer attack_Animation 1_0.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Feiticeiro\sorcerer attack_Animation 1_1.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Feiticeiro\sorcerer attack_Animation 1_2.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Feiticeiro\sorcerer attack_Animation 1_3.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Feiticeiro\sorcerer attack_Animation 1_4.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Feiticeiro\sorcerer attack_Animation 1_5.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Feiticeiro\sorcerer attack_Animation 1_6.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Feiticeiro\sorcerer attack_Animation 1_7.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Feiticeiro\sorcerer attack_Animation 1_8.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Feiticeiro\sorcerer attack_Animation 1_9.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Feiticeiro\sorcerer villain.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Feiticeiro\villain.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Mago\wizard attack.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Mago\wizard death.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Mago\wizard fly forward.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Mago\wizard idle.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like attack animations.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like attack animations_attack down_0.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like attack animations_attack down_1.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like attack animations_attack down_2.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like attack animations_attack down_3.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like attack animations_attack left_0.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like attack animations_attack left_1.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like attack animations_attack left_2.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like attack animations_attack left_3.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like attack animations_attack right_0.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like attack animations_attack right_1.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like attack animations_attack right_2.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like attack animations_attack right_3.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like attack animations_attack up_0.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like attack animations_attack up_1.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like attack animations_attack up_2.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like attack animations_attack up_3.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like attack.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like attack_Animation 1_0.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like attack_Animation 1_1.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like attack_Animation 1_2.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like attack_Animation 1_3.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like attack_Animation 1_4.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like attack_Animation 1_5.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like attack_Animation 1_6.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like attack_Animation 1_7.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like attack_Animation 1_8.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like attack_Animation 1_9.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like idle.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like idle_Animation 1_0.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like idle_Animation 1_1.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like idle_Animation 1_2.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like run up_Animation 1_0.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like run up_Animation 1_1.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like run up_Animation 1_2.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like run up_Animation 1_3.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like run.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like run_Animation 1_0.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like run_Animation 1_1.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like run_Animation 1_2.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like run_Animation 1_3.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like run_Animation 1_4.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like run_Animation 1_5.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\roguelike run down_Animation 1_0.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\roguelike run down_Animation 1_1.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\roguelike run down_Animation 1_2.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\roguelike run down_Animation 1_3.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Zumbi\undead_attack.gif
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Zumbi\undead_death.gif
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Zumbi\undead_hurt.gif
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Zumbi\undead_idle.gif
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Zumbi\undead_walk.gif
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\RPG.build.appxrecipe
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\clrcompression.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\Microsoft.CSharp.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\Microsoft.VisualBasic.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\Microsoft.Win32.Primitives.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.AppContext.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Buffers.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Collections.NonGeneric.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Collections.Specialized.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.ComponentModel.Annotations.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.ComponentModel.Composition.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.ComponentModel.DataAnnotations.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.ComponentModel.Primitives.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.ComponentModel.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Configuration.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Console.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Core.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Data.Common.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Data.SqlClient.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Data.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Diagnostics.Contracts.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Diagnostics.Debug.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Diagnostics.DiagnosticSource.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Diagnostics.FileVersionInfo.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Diagnostics.StackTrace.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Diagnostics.TextWriterTraceListener.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Diagnostics.TraceSource.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Drawing.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Dynamic.Runtime.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Globalization.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.IO.Compression.ZipFile.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.IO.FileSystem.DriveInfo.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.IO.FileSystem.Primitives.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.IO.FileSystem.Watcher.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.IO.IsolatedStorage.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.IO.MemoryMappedFiles.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.IO.Ports.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.IO.UnmanagedMemoryStream.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Linq.Expressions.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Linq.Queryable.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Linq.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Net.Http.Rtc.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Net.HttpListener.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Net.Mail.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Net.NameResolution.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Net.NetworkInformation.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Net.Ping.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Net.Requests.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Net.Security.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Net.ServicePoint.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Net.WebClient.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Net.WebHeaderCollection.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Net.WebProxy.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Net.WebSockets.Client.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Net.WebSockets.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Net.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Numerics.Vectors.WindowsRuntime.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Numerics.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.ObjectModel.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Private.DataContractSerialization.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Private.Reflection.Metadata.Ecma335.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Private.Uri.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Private.Xml.Linq.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Private.Xml.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Reflection.Context.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Reflection.DispatchProxy.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Reflection.Emit.ILGeneration.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Reflection.Emit.Lightweight.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Reflection.Emit.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Reflection.Extensions.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Reflection.Metadata.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Reflection.Primitives.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Reflection.TypeExtensions.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Reflection.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Resources.Reader.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Resources.ResourceManager.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Resources.Writer.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Runtime.CompilerServices.VisualC.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Runtime.Extensions.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Runtime.Handles.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Runtime.InteropServices.WindowsRuntime.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Runtime.InteropServices.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Runtime.Numerics.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Runtime.Serialization.Formatters.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Runtime.Serialization.Json.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Runtime.Serialization.Primitives.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Runtime.Serialization.Xml.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Runtime.Serialization.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Runtime.WindowsRuntime.UI.Xaml.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Runtime.WindowsRuntime.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Runtime.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Security.AccessControl.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Security.Claims.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Security.Cryptography.Algorithms.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Security.Cryptography.Cng.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Security.Cryptography.Csp.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Security.Cryptography.Encoding.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Security.Cryptography.Primitives.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Security.Cryptography.X509Certificates.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Security.Principal.Windows.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Security.Principal.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Security.SecureString.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Security.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.ServiceModel.Duplex.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.ServiceModel.Http.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.ServiceModel.NetTcp.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.ServiceModel.Primitives.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.ServiceModel.Security.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.ServiceModel.Web.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.ServiceProcess.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Text.Encoding.CodePages.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Text.Encoding.Extensions.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Text.Encoding.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Threading.Overlapped.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Threading.Tasks.Dataflow.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Threading.Tasks.Extensions.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Threading.Tasks.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Threading.Thread.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Threading.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Transactions.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.ValueTuple.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Web.HttpUtility.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Web.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Windows.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Xml.Linq.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Xml.ReaderWriter.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Xml.Serialization.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Xml.XDocument.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Xml.XPath.XDocument.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Xml.XmlDocument.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Xml.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\WindowsBase.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\mscorlib.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\3ReaisEngieUWP.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\3ReaisEngieUWP.pdb
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\3ReaisEngieUWP.pri
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\App.g.i.cs
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\App.g.cs
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\MainPage.g.i.cs
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\MainPage.g.cs
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\XamlTypeInfo.g.cs
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\App.xaml
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\MainPage.xaml
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\Src\ButtonStyle.xaml
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\App.xbf
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\MainPage.xbf
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\Src\ButtonStyle.xbf
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\XamlSaveStateFile.xml
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\RPG.csproj.CoreCompileInputs.cache
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\RPG.csproj.CopyComplete
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\RPG.exe
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\RPG.pdb
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ResourceHandlingTask.state
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\priconfig.xml
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\priconfig.xml.intermediate
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\unfiltered.layout.resfiles
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\unfiltered.layout.resfiles.intermediate
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\filtered.layout.resfiles
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\filtered.layout.resfiles.intermediate
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\excluded.layout.resfiles
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\excluded.layout.resfiles.intermediate
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\resources.resfiles
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\resources.resfiles.intermediate
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\pri.resfiles
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\pri.resfiles.intermediate
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\qualifiers.txt
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\qualifiers.txt.intermediate
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\MultipleQualifiersPerDimensionFound.txt
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\3ReaisEngieUWP.pri.xml
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ProjectArchitectures.txt
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Properties\Default.rd.xml
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\RPG.xr.xml
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\AppxManifest.xml
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\RPG.pdb
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\3ReaisEngieUWP.pdb
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\RPG.exe
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Microsoft.CSharp.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Microsoft.VisualBasic.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Microsoft.Win32.Primitives.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.AppContext.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Buffers.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Collections.Concurrent.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Collections.Immutable.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Collections.NonGeneric.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Collections.Specialized.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Collections.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.ComponentModel.Annotations.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.ComponentModel.Composition.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.ComponentModel.DataAnnotations.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.ComponentModel.EventBasedAsync.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.ComponentModel.Primitives.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.ComponentModel.TypeConverter.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.ComponentModel.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Configuration.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Console.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Core.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Data.Common.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Data.SqlClient.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Data.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Diagnostics.Contracts.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Diagnostics.Debug.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Diagnostics.DiagnosticSource.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Diagnostics.FileVersionInfo.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Diagnostics.Process.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Diagnostics.StackTrace.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Diagnostics.TextWriterTraceListener.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Diagnostics.Tools.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Diagnostics.TraceSource.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Diagnostics.Tracing.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Drawing.Primitives.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Drawing.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Dynamic.Runtime.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Globalization.Calendars.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Globalization.Extensions.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Globalization.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.IO.Compression.FileSystem.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.IO.Compression.ZipFile.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.IO.Compression.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.IO.FileSystem.DriveInfo.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.IO.FileSystem.Primitives.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.IO.FileSystem.Watcher.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.IO.FileSystem.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.IO.IsolatedStorage.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.IO.MemoryMappedFiles.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.IO.Pipes.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.IO.Ports.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.IO.UnmanagedMemoryStream.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.IO.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Linq.Expressions.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Linq.Parallel.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Linq.Queryable.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Linq.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Net.Http.Rtc.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Net.Http.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Net.HttpListener.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Net.Mail.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Net.NameResolution.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Net.NetworkInformation.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Net.Ping.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Net.Primitives.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Net.Requests.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Net.Security.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Net.ServicePoint.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Net.Sockets.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Net.WebClient.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Net.WebHeaderCollection.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Net.WebProxy.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Net.WebSockets.Client.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Net.WebSockets.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Net.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Numerics.Vectors.WindowsRuntime.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Numerics.Vectors.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Numerics.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.ObjectModel.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Private.DataContractSerialization.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Private.Reflection.Metadata.Ecma335.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Private.ServiceModel.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Private.Uri.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Private.Xml.Linq.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Private.Xml.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Reflection.Context.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Reflection.DispatchProxy.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Reflection.Emit.ILGeneration.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Reflection.Emit.Lightweight.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Reflection.Emit.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Reflection.Extensions.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Reflection.Metadata.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Reflection.Primitives.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Reflection.TypeExtensions.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Reflection.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Resources.Reader.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Resources.ResourceManager.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Resources.Writer.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Runtime.CompilerServices.VisualC.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Runtime.Extensions.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Runtime.Handles.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Runtime.InteropServices.WindowsRuntime.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Runtime.InteropServices.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Runtime.Numerics.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Runtime.Serialization.Formatters.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Runtime.Serialization.Json.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Runtime.Serialization.Primitives.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Runtime.Serialization.Xml.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Runtime.Serialization.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Runtime.WindowsRuntime.UI.Xaml.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Runtime.WindowsRuntime.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Runtime.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Security.AccessControl.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Security.Claims.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Security.Cryptography.Algorithms.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Security.Cryptography.Cng.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Security.Cryptography.Csp.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Security.Cryptography.Encoding.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Security.Cryptography.Primitives.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Security.Cryptography.X509Certificates.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Security.Principal.Windows.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Security.Principal.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Security.SecureString.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Security.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.ServiceModel.Duplex.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.ServiceModel.Http.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.ServiceModel.NetTcp.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.ServiceModel.Primitives.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.ServiceModel.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.ServiceProcess.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Text.Encoding.CodePages.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Text.Encoding.Extensions.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Text.Encoding.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Threading.Overlapped.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Threading.Tasks.Dataflow.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Threading.Tasks.Parallel.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Threading.Tasks.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Threading.Timer.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Transactions.Local.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.ValueTuple.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Web.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Xml.Linq.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Xml.XDocument.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Xml.XmlDocument.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Xml.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\WindowsBase.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\mscorlib.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\netstandard.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\3ReaisEngieUWP.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\WinMetadata\Windows.winmd
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\resources.pri
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\clrcompression.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Animations\Menu\Menu.gif
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Animations\dead.gif
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Animations\idle.gif
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Animations\jump.gif
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Animations\walk.gif
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\dance.gif
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Zumbi\undead_attack.gif
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Zumbi\undead_death.gif
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Zumbi\undead_hurt.gif
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Zumbi\undead_idle.gif
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Zumbi\undead_walk.gif
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Menu\Botões\Configurações.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Menu\Botões\Configurações_Selecionado.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Menu\Botões\Iniciar.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Menu\Botões\Jogar_Selecionado.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Menu\Botões\Sair.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Menu\Botões\Sair_Selecionado.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Menu\Botões\Sobre.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Menu\Botões\Sobre_Selecionado.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Menu\Botões\Voltar.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Menu\Botões\Voltar_Selecionado.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Menu\Logo.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Menu\Logo2.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Opera-04.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Assets\LockScreenLogo.scale-200.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Assets\SplashScreen.scale-200.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Assets\Square150x150Logo.scale-200.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Assets\Square44x44Logo.scale-200.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Assets\Square44x44Logo.targetsize-24_altform-unplated.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Assets\StoreLogo.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Assets\Wide310x150Logo.scale-200.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Animations\Dead.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\cabeca.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\JunglerockAlpha.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Bau\Treasure Chest closed 254x254.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Bau\Treasure Chest open 254x254.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Cavaleiro\knight 3 block.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Cavaleiro\knight 3 idle.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Cavaleiro\knight 3 improved slash animation.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Cavaleiro\knight death animation.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Cavaleiro\knight walk animation.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Feiticeiro\sorcerer attack_Animation 1_0.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Feiticeiro\sorcerer attack_Animation 1_1.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Feiticeiro\sorcerer attack_Animation 1_2.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Feiticeiro\sorcerer attack_Animation 1_3.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Feiticeiro\sorcerer attack_Animation 1_4.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Feiticeiro\sorcerer attack_Animation 1_5.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Feiticeiro\sorcerer attack_Animation 1_6.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Feiticeiro\sorcerer attack_Animation 1_7.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Feiticeiro\sorcerer attack_Animation 1_8.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Feiticeiro\sorcerer attack_Animation 1_9.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Feiticeiro\sorcerer villain.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Feiticeiro\villain.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Mago\wizard attack.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Mago\wizard death.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Mago\wizard fly forward.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Mago\wizard idle.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\rogue like attack animations.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\rogue like attack animations_attack down_0.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\rogue like attack animations_attack down_1.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\rogue like attack animations_attack down_2.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\rogue like attack animations_attack down_3.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\rogue like attack animations_attack left_0.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\rogue like attack animations_attack left_1.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\rogue like attack animations_attack left_2.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\rogue like attack animations_attack left_3.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\rogue like attack animations_attack right_0.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\rogue like attack animations_attack right_1.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\rogue like attack animations_attack right_2.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\rogue like attack animations_attack right_3.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\rogue like attack animations_attack up_0.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\rogue like attack animations_attack up_1.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\rogue like attack animations_attack up_2.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\rogue like attack animations_attack up_3.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\rogue like attack.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\rogue like attack_Animation 1_0.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\rogue like attack_Animation 1_1.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\rogue like attack_Animation 1_2.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\rogue like attack_Animation 1_3.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\rogue like attack_Animation 1_4.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\rogue like attack_Animation 1_5.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\rogue like attack_Animation 1_6.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\rogue like attack_Animation 1_7.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\rogue like attack_Animation 1_8.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\rogue like attack_Animation 1_9.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\rogue like idle.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\rogue like idle_Animation 1_0.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\rogue like idle_Animation 1_1.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\rogue like idle_Animation 1_2.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\rogue like run up_Animation 1_0.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\rogue like run up_Animation 1_1.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\rogue like run up_Animation 1_2.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\rogue like run up_Animation 1_3.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\rogue like run.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\rogue like run_Animation 1_0.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\rogue like run_Animation 1_1.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\rogue like run_Animation 1_2.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\rogue like run_Animation 1_3.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\rogue like run_Animation 1_4.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\rogue like run_Animation 1_5.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\roguelike run down_Animation 1_0.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\roguelike run down_Animation 1_1.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\roguelike run down_Animation 1_2.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\roguelike run down_Animation 1_3.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Audio\beep.mp3
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Audio\rain.mp3
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Audio\serrote.wav
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc.RPG.rsp
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\BuildInfo\BuildInfo.rc
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\BuildInfo\BuildInfo.res
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\BuildInfo\BuildInfo.txt
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\gkargs.rsp
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\3ReaisEngieUWP.ildll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\3ReaisEngieUWP.ilpdb
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\Microsoft.CSharp.ildll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\Microsoft.CSharp.ilpdb
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\RPG.closure.csv
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\RPG.csv
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\RPG.forwarders.csv
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\RPG.ilexe
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\RPG.ilexe.ILTransformTask.repro
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\RPG.ilpdb
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\RPG.McgInterop.ildll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\RPG.McgInterop.ilpdb
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\RPG.metadata
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\RPG.reflectionlog.csv
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\RPG.res
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.Console.ildll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.Console.ilpdb
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.Numerics.Vectors.ildll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.Numerics.Vectors.ilpdb
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.Private.DeveloperExperience.AppX.ildll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.Private.DeveloperExperience.AppX.ilpdb
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.Private.RPG.Generated.ildll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.Private.RPG.Generated.ilpdb
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.Private.StackTraceGenerator.ildll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.Private.StackTraceGenerator.ilpdb
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.Private.WinRTInterop.CoreLib.ildll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.Private.WinRTInterop.CoreLib.ilpdb
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.Runtime.InteropServices.ildll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.Runtime.InteropServices.ilpdb
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.Runtime.InteropServices.WindowsRuntime.ildll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.Runtime.InteropServices.WindowsRuntime.ilpdb
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.Runtime.WindowsRuntime.ildll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.Runtime.WindowsRuntime.ilpdb
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.Runtime.WindowsRuntime.UI.Xaml.ildll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.Runtime.WindowsRuntime.UI.Xaml.ilpdb
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.Text.Encoding.CodePages.ildll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.Text.Encoding.CodePages.ilpdb
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\MDIL\RPG.mdilexe
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\MDIL\RPG.mdilpdb
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\MDIL\RPG.rsp
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Native.res
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Native\DotNetNative.debugger-services-def.json
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Native\RPG.pdb
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\PreMergeILTransformed\RPG.exe
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\PreMergeILTransformed\RPG.pdb
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\Microsoft.CSharp.0.rsrc
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\Microsoft.CSharp.index.txt
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.Console.0.rsrc
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.Console.index.txt
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.Numerics.Vectors.0.rsrc
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.Numerics.Vectors.index.txt
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.Private.DeveloperExperience.AppX.0.rsrc
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.Private.DeveloperExperience.AppX.index.txt
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.Runtime.InteropServices.0.rsrc
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.Runtime.InteropServices.index.txt
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.Runtime.InteropServices.WindowsRuntime.0.rsrc
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.Runtime.InteropServices.WindowsRuntime.index.txt
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.Runtime.WindowsRuntime.0.rsrc
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.Runtime.WindowsRuntime.index.txt
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.Runtime.WindowsRuntime.UI.Xaml.0.rsrc
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.Runtime.WindowsRuntime.UI.Xaml.index.txt
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\rhbindargs.RPG.rsp
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\RPG.McgInterop.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\RPG.McgInterop.pdb
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\RPG.McgInterop.rsp
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\RPG.McgInterop\Adapters.g.cs
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\RPG.McgInterop\AssemblyInfo.g.cs
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\RPG.McgInterop\Data.g.cs
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\RPG.McgInterop\Helpers.g.cs
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\RPG.McgInterop\ImplTypes.g.cs
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\RPG.McgInterop\PInvoke.g.cs
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\RPG.McgInterop\SafeTypes.g.cs
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\RPG.McgInterop\SharedStubs.g.cs
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\System.Private.RPG.Generated.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\RPG.csprojAssemblyReference.cache

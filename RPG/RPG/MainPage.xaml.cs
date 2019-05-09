@@ -15,33 +15,39 @@ namespace RPG
     public sealed partial class MainPage : Page
     {
         public static Player p;
+
         Window winConf;
         Window winMenu;
         public MainPage()
         {
             InitializeComponent();
 
-            //cria a janela e seta ela como a atual
-            //                                           v~~ altura da janela  
+          
             AmbienteJogo.window = new Window(this, 840, 620);
-            //                                      ^~~ largura da janela
-
-            /* Algoritmo do Menu */
+            
             winConf = new Window(this, 840, 620); 
             winMenu = new Window(this, 840, 620);
 
-            // winMenu.AddUI(new UImage("Src/Animations/Menu/Menu.gif", new Vector2(0, 0), new Vector2(100, 100)));
+            p = new Player(new Vector2(0, 0));
 
             winMenu.AddUI(new UImage("Src/Images/Menu/Logo2.png", new Vector2(23, 14), new Vector2(100, 100)));
 
             UButton start = new UButton("", new Vector2(50, 50), new Vector2(150, 50), Start);
-            start.SetImage("Src/Images/Menu/Botões/Iniciar.png", Stretch.Fill);
+            start.setBackground("Src/Images/Menu/Botões/Iniciar.png", Stretch.Fill);
+            start.setOnHover("Src/Images/Menu/Botões/Jogar_Selecionado.png"); // imagem quando o mouse ficar por cima
+            start.setOnClick("Src/Images/Menu/Botões/Configurações.png"); //imagem quando o botao for clicado (ainda n funciona)
+
             UButton settings = new UButton("", new Vector2(50, 65), new Vector2(150, 50), Settings);
-            settings.SetImage("Src/Images/Menu/Botões/Configurações.png");
+            settings.setBackground("Src/Images/Menu/Botões/Configurações.png");
+            settings.setOnHover("Src/Images/Menu/Botões/Configurações_Selecionado.png");
+
             UButton exit = new UButton("", new Vector2(50, 80), new Vector2(150, 50), Exit);
-            exit.SetImage("Src/Images/Menu/Botões/Sair.png");
+            exit.setBackground("Src/Images/Menu/Botões/Sair.png");
+            exit.setOnHover("Src/Images/Menu/Botões/Sair_Selecionado.png");
+
             UButton about = new UButton("", new Vector2(92, 92), new Vector2(70, 30), About);
-            about.SetImage("Src/Images/Menu/Botões/Sobre.png");
+            about.setBackground("Src/Images/Menu/Botões/Sobre.png");
+            about.setOnHover("Src/Images/Menu/Botões/Sobre_Selecionado.png");
 
             winMenu.AddUI(start);
             winMenu.AddUI(settings);
@@ -50,39 +56,25 @@ namespace RPG
 
             /* Algoritmo de Configurações */
 
-            winConf.AddUI(new UImage("Src/Images/Menu/Botões/Voltar.png", new Vector2(9, 10), new Vector2(100, 100)));
-           // winConf.AddUI(new UImage("Src/Images/Menu/.png", new Vector2(30, 15), new Vector2(100, 100)));
-           // winConf.AddUI(new UImage("Src/Images/Menu/.png", new Vector2(10, 10), new Vector2(100, 100)));
+            UButton voltar = new UButton("", new Vector2(11, 7), new Vector2(142, 43), Comeback);
+            voltar.setBackground("Src/Images/Menu/Botões/Voltar.png");
 
-            winConf.AddUI(new UButton("X", new Vector2(11, 7), new Vector2(142,43), Comeback));
             winConf.AddUI(new UButton("Controles", new Vector2(40,20), Controls));
             winConf.AddUI(new UButton("Aúdio", new Vector2(60,20), Volume));
-            
+
+            winConf.AddUI(voltar);
+
             winMenu.SetCurrent();
             
+            AmbienteJogo.AdcionarEntidade(p);
+            AmbienteJogo.currentCamera.setSeek(p);
 
-            //adiciona botao na janela (posição dada em %)
-            AmbienteJogo.window.AddUI(new UButton("Jander", new Vector2(50, 50), new Vector2(100, 50)));
-            //                                                   ^~~ posicao na janela       ^~~ tamanho do botao
-
-           
-            
             AmbienteJogo.AdcionarEntidade(new Undead(new Vector2(150, 0)));
             AmbienteJogo.AdcionarEntidade(new Undead(new Vector2(-150, -200)));
             AmbienteJogo.AdcionarEntidade(new Undead(new Vector2(50, 275)));
             AmbienteJogo.AdcionarEntidade(new Undead(new Vector2(10, -20)));
-            //instancia jogador
-            p = new Player(new Vector2(0, 0)); 
-
-            //adiciona jogador ao jogo
-           // AmbienteJogo.AdcionarEntidade(p); 
-
-            //seta jogador pra ser seguido pela camera
-           // AmbienteJogo.currentCamera.setSeek(p);
-            //            ^~~ pode ser simplificado com AmbienteJogo.currentCamera.setSeek(AmbienteJogo.AdcionarEntidade(p)); visto q AdicionarEntidade retorna a entidade adicionada
-
-            //cria caixa ("opera") e adiciona ao jogo
-            //AmbienteJogo.AdcionarEntidade(new Caixa(new Vector2(-200, 0)));
+           
+          
         }
 
         /* Algoritmo dos Botões do Menu */

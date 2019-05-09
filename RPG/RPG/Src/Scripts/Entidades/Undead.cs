@@ -53,7 +53,9 @@ namespace RPG.Src.Scripts
 
         public override void Update()
         {
-            if (Engine.Distance(EntPos, MainPage.p.EntPos) < 65)
+            
+
+          if (Engine.Distance(EntPos, MainPage.p.EntPos) < 65)
             {
                 anim.Play("attack", render);
             }
@@ -62,7 +64,7 @@ namespace RPG.Src.Scripts
                 mob.MoveTo(MainPage.p.EntPos, 4);
                 anim.Play("walk", render);
             }
-            
+
         }
 
     }

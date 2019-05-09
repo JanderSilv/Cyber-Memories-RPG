@@ -52,6 +52,8 @@ namespace _3ReaisEngine
 
         }
 
+
+
      
         static async Task Execute()
         {
@@ -68,22 +70,24 @@ namespace _3ReaisEngine
                     gerenciadorEventos.Update();
                     gerenciadorFisica.UpdateColisions(window.colisores.ToArray());
 
-                    foreach (Entidade e in window.entidades)
+                    for(int i = 0; i < window.entidades.Count; i++)
                     {
-                        if (!e.IsStatic) e.Update();
+                        if (window.entidades[i] != null && !window.entidades[i].IsStatic) window.entidades[i].Update();
                     }
-
-                    foreach (Render r in window.renders)
+                    for (int i = 0; i < window.renders.Count; i++)
                     {
-                        r.transform.X = r.entidade.EntPos.x - currentCamera.drawOffset.x;
-                        r.transform.Y = r.entidade.EntPos.y - currentCamera.drawOffset.y;
+                        if (window.renders[i] == null) continue;
+                        window.renders[i].transform.X = window.renders[i].entidade.EntPos.x - currentCamera.drawOffset.x;
+                        window.renders[i].transform.Y = window.renders[i].entidade.EntPos.y - currentCamera.drawOffset.y;
                     }
+                    
 
                     await Task.Delay(1000 / frameRate);
                     posUpdate?.Invoke();
                 }catch(Exception e)
                 {
-                    Engine.Debug(e.StackTrace);
+                    Engine.Debug("_3reais: " + e.Message);
+                    Engine.Debug("_3reais: "+e.StackTrace);
                   
                 }
                    
