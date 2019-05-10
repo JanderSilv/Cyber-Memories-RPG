@@ -315,6 +315,15 @@
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.props": {},
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.targets": {}
         }
+      },
+      "TiledNet/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/TiledNet.dll": {}
+        },
+        "runtime": {
+          "lib/net45/TiledNet.dll": {}
+        }
       }
     },
     "UAP,Version=v10.0.17134/win10-arm": {
@@ -805,6 +814,15 @@
         "build": {
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.props": {},
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.targets": {}
+        }
+      },
+      "TiledNet/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/TiledNet.dll": {}
+        },
+        "runtime": {
+          "lib/net45/TiledNet.dll": {}
         }
       }
     },
@@ -1298,6 +1316,15 @@
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.props": {},
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.targets": {}
         }
+      },
+      "TiledNet/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/TiledNet.dll": {}
+        },
+        "runtime": {
+          "lib/net45/TiledNet.dll": {}
+        }
       }
     },
     "UAP,Version=v10.0.17134/win10-arm64-aot": {
@@ -1613,6 +1640,15 @@
         "build": {
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.props": {},
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.targets": {}
+        }
+      },
+      "TiledNet/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/TiledNet.dll": {}
+        },
+        "runtime": {
+          "lib/net45/TiledNet.dll": {}
         }
       }
     },
@@ -2104,6 +2140,15 @@
         "build": {
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.props": {},
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.targets": {}
+        }
+      },
+      "TiledNet/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/TiledNet.dll": {}
+        },
+        "runtime": {
+          "lib/net45/TiledNet.dll": {}
         }
       }
     },
@@ -2597,6 +2642,15 @@
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.props": {},
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.targets": {}
         }
+      },
+      "TiledNet/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/TiledNet.dll": {}
+        },
+        "runtime": {
+          "lib/net45/TiledNet.dll": {}
+        }
       }
     },
     "UAP,Version=v10.0.17134/win10-x86": {
@@ -3087,6 +3141,15 @@
         },
         "native": {
           "runtimes/win10-x86/nativeassets/uap10.0.15138/clrcompression.dll": {}
+        }
+      },
+      "TiledNet/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/TiledNet.dll": {}
+        },
+        "runtime": {
+          "lib/net45/TiledNet.dll": {}
         }
       }
     },
@@ -3579,6 +3642,15 @@
         "build": {
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.props": {},
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.targets": {}
+        }
+      },
+      "TiledNet/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/TiledNet.dll": {}
+        },
+        "runtime": {
+          "lib/net45/TiledNet.dll": {}
         }
       }
     }
@@ -7314,6 +7386,18 @@
         "runtimes/win10-x86/lib/uap10.0.15138/netstandard.dll",
         "runtimes/win10-x86/nativeassets/uap10.0.15138/clrcompression.dll"
       ]
+    },
+    "TiledNet/2.0.0": {
+      "sha512": "wYHyVoBxjtXhZPQ6xn7pOgVur4RCRIu+m50T7kH4eFB+ijOWnVRCMTzOaI3Py/G3Ti+mydAls58lZmTto2hMLQ==",
+      "type": "package",
+      "path": "tilednet/2.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/TiledNet.dll",
+        "tilednet.2.0.0.nupkg.sha512",
+        "tilednet.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
@@ -7321,7 +7405,8 @@
       "BinaryTree >= 5.0.0",
       "Imagine.Uwp.Json >= 1.0.0",
       "Microsoft.NETCore.UniversalWindowsPlatform >= 6.1.7",
-      "Newtonsoft.Json >= 12.0.1"
+      "Newtonsoft.Json >= 12.0.1",
+      "TiledNet >= 2.0.0"
     ]
   },
   "packageFolders": {
@@ -7376,6 +7461,10 @@
           "Newtonsoft.Json": {
             "target": "Package",
             "version": "[12.0.1, )"
+          },
+          "TiledNet": {
+            "target": "Package",
+            "version": "[2.0.0, )"
           }
         },
         "imports": [
@@ -7408,5 +7497,17 @@
         "#import": []
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "O pacote 'TiledNet 2.0.0' foi restaurado usando '.NETFramework,Version=v4.6.1' em vez da estrutura de destino do projeto 'UAP,Version=v10.0.17134'. Esse pacote pode não ser totalmente compatível com o seu projeto.",
+      "libraryId": "TiledNet",
+      "targetGraphs": [
+        "UAP,Version=v10.0.17134"
+      ]
+    }
+  ]
 }

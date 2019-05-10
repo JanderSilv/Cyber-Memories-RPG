@@ -1,5 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.IO;
 using System.Threading.Tasks;
+using System.Xml;
 using _3ReaisEngine;
 using _3ReaisEngine.Core;
 using _3ReaisEngine.RPG.Core;
@@ -18,6 +21,8 @@ namespace RPG
 
         Window winConf;
         Window winMenu;
+        Window winGame;
+
         public MainPage()
         {
             InitializeComponent();
@@ -27,6 +32,7 @@ namespace RPG
             
             winConf = new Window(this, 840, 620); 
             winMenu = new Window(this, 840, 620);
+            winGame = new Window(this, 840, 620);
 
             p = new Player(new Vector2(0, 0));
 
@@ -52,7 +58,7 @@ namespace RPG
             winMenu.AddUI(start);
             winMenu.AddUI(settings);
             winMenu.AddUI(exit);
-            winMenu.AddUI(about);
+           // winMenu.AddUI(about);
 
             /* Algoritmo de Configurações */
 
@@ -65,14 +71,46 @@ namespace RPG
             winConf.AddUI(voltar);
 
             winMenu.SetCurrent();
-            
-            AmbienteJogo.AdcionarEntidade(p);
+
+            winGame.Add(p);
             AmbienteJogo.currentCamera.setSeek(p);
 
-            AmbienteJogo.AdcionarEntidade(new Undead(new Vector2(150, 0)));
-            AmbienteJogo.AdcionarEntidade(new Undead(new Vector2(-150, -200)));
-            AmbienteJogo.AdcionarEntidade(new Undead(new Vector2(50, 275)));
-            AmbienteJogo.AdcionarEntidade(new Undead(new Vector2(10, -20)));
+            UButton voltarg = new UButton("", new Vector2(92, 82), new Vector2(70, 30), Comeback);
+            voltarg.setBackground("Src/Images/Menu/Botões/Voltar.png");
+
+            Dictionary<int, Type> dic = new Dictionary<int, Type>();
+            dic.Add(22, typeof(Grama));
+            dic.Add(100, typeof(Flores));
+            dic.Add(121, typeof(Rocha1));
+            dic.Add(141, typeof(Rocha2));
+            dic.Add(122, typeof(Tronco));
+            dic.Add(242, typeof(Areia));
+            dic.Add(202, typeof(Arvore));
+
+            try{
+                
+               
+                List<Entidade> ent = MapLoader.LoadMap("Src/Maps/map.xml", dic);
+                foreach (Entidade e in ent)
+                {
+                    winGame.Add(e);
+                }
+
+            }
+            catch(Exception e)
+            {
+                Engine.Debug("Load Map Error> "+e.StackTrace);
+                Engine.Debug("Load Map Error> "+ e.Message);
+            }
+
+           
+
+            winGame.AddUI(about);
+            winGame.AddUI(voltarg);
+            winGame.Add(new Undead(new Vector2(150, 0)));
+            winGame.Add(new Undead(new Vector2(-150, -200)));
+            winGame.Add(new Undead(new Vector2(50, 275)));
+            winGame.Add(new Undead(new Vector2(10, -20)));
            
           
         }
@@ -80,7 +118,8 @@ namespace RPG
         /* Algoritmo dos Botões do Menu */
 
         private void Start(object Sender) {
-            // Iniciar jogo;
+            winGame.SetCurrent();
+           
         }
 
         private void Settings(object Sender) {

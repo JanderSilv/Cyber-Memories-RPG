@@ -10,8 +10,10 @@
         Preco = 55;
         Estacavel = false;
         Descricao = "Arco de Ruan que Yasmim roubou";
+
         env = new Envenenamento();
         trov = new Trovao();
+
         ItemManager.GenID(this);
         _3ReaisEngine.Engine.Debug("ID do arco " + ID);
     }

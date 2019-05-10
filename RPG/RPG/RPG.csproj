@@ -103,6 +103,7 @@
     <Compile Include="Src\Scripts\Componentes\Estatus.cs" />
     <Compile Include="Src\Scripts\Componentes\Itinerario.cs" />
     <Compile Include="Src\Scripts\Componentes\Movel.cs" />
+    <Compile Include="Src\Scripts\Entidades\Areia.cs" />
     <Compile Include="Src\Scripts\Entidades\Caixa.cs" />
     <Compile Include="Src\Scripts\Componentes\Inventario.cs" />
     <Compile Include="Src\Scripts\Entidades\Undead.cs" />
@@ -127,6 +128,9 @@
       <SubType>Designer</SubType>
     </AppxManifest>
     <None Include="RPG_TemporaryKey.pfx" />
+    <None Include="Src\Maps\island.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Src\Animations\Menu\Menu.gif" />
@@ -142,6 +146,30 @@
     <Content Include="Src\Images\Menu\Botões\Voltar_Selecionado.png" />
     <Content Include="Src\Images\Menu\Logo.png" />
     <Content Include="Src\Images\Menu\Logo2.png" />
+    <Content Include="Src\Images\tiles\areia.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Src\Images\tiles\arvore.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Src\Images\tiles\flores.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Src\Images\tiles\grama.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Src\Images\tiles\rocha1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Src\Images\tiles\rocha2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Src\Images\tiles\tronco.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Src\Maps\map.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Src\Opera-04.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

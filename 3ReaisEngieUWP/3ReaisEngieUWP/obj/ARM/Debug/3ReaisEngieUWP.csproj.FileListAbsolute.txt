@@ -19,3 +19,5 @@ C:\Users\ruann\source\repos\3ReaisEngieUWP\3ReaisEngieUWP\obj\ARM\Debug\pri.resf
 C:\Users\ruann\source\repos\3ReaisEngieUWP\3ReaisEngieUWP\obj\ARM\Debug\qualifiers.txt
 C:\Users\ruann\source\repos\3ReaisEngieUWP\3ReaisEngieUWP\obj\ARM\Debug\qualifiers.txt.intermediate
 C:\Users\ruann\source\repos\3ReaisEngieUWP\3ReaisEngieUWP\obj\ARM\Debug\MultipleQualifiersPerDimensionFound.txt
+E:\Projects\RPG-LP2\3ReaisEngieUWP\3ReaisEngieUWP\obj\ARM\Debug\3ReaisEngieUWP.dll
+E:\Projects\RPG-LP2\3ReaisEngieUWP\3ReaisEngieUWP\obj\ARM\Debug\3ReaisEngieUWP.pdb

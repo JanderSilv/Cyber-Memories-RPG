@@ -57,6 +57,7 @@ namespace _3ReaisEngine.UI
             element.PointerEntered += Element_PointerEntered;
             element.PointerExited += Element_PointerExited;
             element.Click += act;
+         
            
         }
 
