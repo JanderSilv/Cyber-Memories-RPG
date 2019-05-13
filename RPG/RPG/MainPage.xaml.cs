@@ -72,15 +72,15 @@ namespace RPG
 
             winMenu.SetCurrent();
 
-            winGame.Add(p);
-            AmbienteJogo.currentCamera.setSeek(p);
+            
+          
 
             UButton voltarg = new UButton("", new Vector2(92, 82), new Vector2(70, 30), Comeback);
             voltarg.setBackground("Src/Images/Menu/Botões/Voltar.png");
 
             Dictionary<int, Type> dic = new Dictionary<int, Type>();
             dic.Add(22, typeof(Grama));
-            dic.Add(100, typeof(Flores));
+            dic.Add(101, typeof(Flores));
             dic.Add(121, typeof(Rocha1));
             dic.Add(141, typeof(Rocha2));
             dic.Add(122, typeof(Tronco));
@@ -107,6 +107,8 @@ namespace RPG
 
             winGame.AddUI(about);
             winGame.AddUI(voltarg);
+            winGame.Add(p);
+            AmbienteJogo.currentCamera.setSeek(p);
             winGame.Add(new Undead(new Vector2(150, 0)));
             winGame.Add(new Undead(new Vector2(-150, -200)));
             winGame.Add(new Undead(new Vector2(50, 275)));

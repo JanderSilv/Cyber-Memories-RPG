@@ -13,6 +13,8 @@ namespace RPG.Src.Scripts
             EntPos = pos;
             Render r = GetComponente<Render>();
             r.LoadImage("Src/Images/tiles/areia.png");
+            r.img.Width = 32;
+            r.img.Height = 32;
         }
     }
 
@@ -24,6 +26,8 @@ namespace RPG.Src.Scripts
             EntPos = pos;
             Render r = GetComponente<Render>();
             r.LoadImage("Src/Images/tiles/grama.png");
+            r.img.Width = 32;
+            r.img.Height = 32;
         }
     }
 
@@ -35,6 +39,8 @@ namespace RPG.Src.Scripts
             EntPos = pos;
             Render r = GetComponente<Render>();
             r.LoadImage("Src/Images/tiles/tronco.png");
+            r.img.Width = 32;
+            r.img.Height = 32;
         }
     }
 
@@ -46,6 +52,8 @@ namespace RPG.Src.Scripts
             EntPos = pos;
             Render r = GetComponente<Render>();
             r.LoadImage("Src/Images/tiles/flores.png");
+            r.img.Width = 32;
+            r.img.Height = 32;
         }
     }
 
@@ -57,6 +65,8 @@ namespace RPG.Src.Scripts
             EntPos = pos;
             Render r = GetComponente<Render>();
             r.LoadImage("Src/Images/tiles/arvore.png");
+            r.img.Width = 32;
+            r.img.Height = 96;
         }
     }
 
@@ -68,6 +78,8 @@ namespace RPG.Src.Scripts
             EntPos = pos;
             Render r = GetComponente<Render>();
             r.LoadImage("Src/Images/tiles/rocha1.png");
+            r.img.Width = 32;
+            r.img.Height = 32;
         }
     }
 
@@ -79,6 +91,8 @@ namespace RPG.Src.Scripts
             EntPos = pos;
             Render r = GetComponente<Render>();
             r.LoadImage("Src/Images/tiles/rocha2.png");
+            r.img.Width = 32;
+            r.img.Height = 32;
         }
     }
 

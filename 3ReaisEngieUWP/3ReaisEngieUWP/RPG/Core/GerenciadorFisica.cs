@@ -46,7 +46,7 @@ namespace _3ReaisEngine.Core
 
                 for (int j = 0; j < lenght; j++)
                 {
-                    if (array[i].entidade.ID == array[j].entidade.ID) continue;
+                    if (array[i].entidade.ID == array[j].entidade.ID || array[i].ignoreTypes.Contains(array[j].entidade.GetType())) continue;
                     
                     distance = Engine.DistanceVec(array[i].Position, array[j].Position);
                     safeDist.x = (array[i].tamanho.x + array[j].tamanho.x) / 2.0f;

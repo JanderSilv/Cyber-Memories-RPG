@@ -1660,7 +1660,6 @@ E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Debug\Src\Audio\rain.mp3
 E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Debug\Src\Audio\serrote.wav
 E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Debug\Src\cabeca.png
 E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Debug\Src\dance.gif
-E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Debug\Src\Maps\island.json
 E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Debug\App.xbf
 E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Debug\MainPage.xbf
 E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Debug\Src\ButtonStyle.xbf

@@ -9,50 +9,9 @@ using Newtonsoft;
 using System.Xml;
 
 
-/*
-this class use the TiledSharp library
-link: https://github.com/marshallward/TiledSharp
-*/
-
 namespace _3ReaisEngine.Core
 {
-    public class Layer
-    {
-        public int[] data;
-        public int height;
-        public int id;
-        public string name;
-        public int opacity;
-        public string type;
-        public bool visible;
-        public int width;
-        public int x;
-        public int y;
-    }
-    public class TileSet
-    {
-        public int firstgid;
-        public string source;
-    }
-
-    public class TmxMap
-    {
-        public int height;
-        public bool infinite;
-        public Layer[] layers;
-        public int nextlayerid;
-        public int nextobjectid;
-        public string orientation;
-        public string renderorder;
-        public string tiledversion;
-        public int tileheight;
-        public TileSet[] tilesets;
-        public int tilewidth;
-        public string type;
-        public string version;
-        public int width;
-    }
-
+   
     public static class MapLoader
     {
         public static List<Entidade> LoadMap(string path,Dictionary<int,Type> dic)

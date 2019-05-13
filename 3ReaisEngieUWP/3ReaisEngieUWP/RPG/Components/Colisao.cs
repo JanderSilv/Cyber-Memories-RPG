@@ -1,5 +1,7 @@
 ﻿using _3ReaisEngine.Attributes;
 using _3ReaisEngine.Core;
+using System;
+using System.Collections.Generic;
 
 namespace _3ReaisEngine.Components
 {
@@ -20,6 +22,7 @@ namespace _3ReaisEngine.Components
 
         public TipoColisao tipo = TipoColisao.Estatica;
         public OnColision onColisionAction = null;
+        public List<Type> ignoreTypes = new List<Type>();
 
         public Colisao()
         {

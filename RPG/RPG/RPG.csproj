@@ -128,9 +128,6 @@
       <SubType>Designer</SubType>
     </AppxManifest>
     <None Include="RPG_TemporaryKey.pfx" />
-    <None Include="Src\Maps\island.json">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Src\Animations\Menu\Menu.gif" />
