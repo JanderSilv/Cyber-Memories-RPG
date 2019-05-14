@@ -36,47 +36,59 @@ namespace RPG
 
             p = new Player(new Vector2(0, 0));
 
-            winMenu.AddUI(new UImage("Src/Images/Menu/Logo2.png", new Vector2(23, 14), new Vector2(100, 100)));
+            /* Algoritmo do Menu */
 
-            UButton start = new UButton("", new Vector2(50, 50), new Vector2(150, 50), Start);
+            winMenu.AddUI(new UImage("Src/Images/Menu/Logo2.png", new Vector2(21, 14), new Vector2(100, 100)));
+
+            UButton start = new UButton("", new Vector2(50, 48), new Vector2(229, 86), Start);
             start.setBackground("Src/Images/Menu/Botões/Iniciar.png", Stretch.Fill);
             start.setOnHover("Src/Images/Menu/Botões/Jogar_Selecionado.png"); // imagem quando o mouse ficar por cima
             start.setOnClick("Src/Images/Menu/Botões/Configurações.png"); //imagem quando o botao for clicado (ainda n funciona)
 
-            UButton settings = new UButton("", new Vector2(50, 65), new Vector2(150, 50), Settings);
+            UButton settings = new UButton("", new Vector2(50, 67), new Vector2(229, 86), Settings);
             settings.setBackground("Src/Images/Menu/Botões/Configurações.png");
             settings.setOnHover("Src/Images/Menu/Botões/Configurações_Selecionado.png");
 
-            UButton exit = new UButton("", new Vector2(50, 80), new Vector2(150, 50), Exit);
+            UButton exit = new UButton("", new Vector2(50, 86), new Vector2(229, 87), Exit);
             exit.setBackground("Src/Images/Menu/Botões/Sair.png");
             exit.setOnHover("Src/Images/Menu/Botões/Sair_Selecionado.png");
 
-            UButton about = new UButton("", new Vector2(92, 92), new Vector2(70, 30), About);
-            about.setBackground("Src/Images/Menu/Botões/Sobre.png");
-            about.setOnHover("Src/Images/Menu/Botões/Sobre_Selecionado.png");
+            UButton info = new UButton("", new Vector2(92, 92), new Vector2(103, 35), About);
+            info.setBackground("Src/Images/Menu/Botões/Sobre.png");
+            info.setOnHover("Src/Images/Menu/Botões/Sobre_Selecionado.png");
+
+            UButton info2 = new UButton("", new Vector2(92, 92), new Vector2(103, 35), About);
+            info.setBackground("Src/Images/Menu/Botões/Sobre.png");
+            info.setOnHover("Src/Images/Menu/Botões/Sobre_Selecionado.png");
 
             winMenu.AddUI(start);
             winMenu.AddUI(settings);
             winMenu.AddUI(exit);
-           // winMenu.AddUI(about);
+            winMenu.AddUI(info);
 
             /* Algoritmo de Configurações */
 
-            UButton voltar = new UButton("", new Vector2(11, 7), new Vector2(142, 43), Comeback);
-            voltar.setBackground("Src/Images/Menu/Botões/Voltar.png");
+            UButton comeback = new UButton("", new Vector2(11, 7), new Vector2(145, 37), Comeback);
+            comeback.setBackground("Src/Images/Menu/Botões/Voltar.png");
+            comeback.setOnHover("Src/Images/Menu/Botões/Voltar_Selecionado.png");
 
-            winConf.AddUI(new UButton("Controles", new Vector2(40,20), Controls));
-            winConf.AddUI(new UButton("Aúdio", new Vector2(60,20), Volume));
+            UButton controls = new UButton("Controles", new Vector2(35, 20), new Vector2(178,67), Controls);
+            controls.setBackground("Src/Images/Menu/Botões/Controles.png");
+            controls.setOnHover("Src/Images/Menu/Botões/Controles_Selecionado.png");
 
-            winConf.AddUI(voltar);
+            UButton volume = new UButton("Aúdio", new Vector2(65, 20), new Vector2(178,67), Volume);
+            volume.setBackground("Src/Images/Menu/Botões/Volume.png");
+            volume.setOnHover("Src/Images/Menu/Botões/Volume_Selecionado.png");
+
+            winConf.AddUI(comeback);
+            winConf.AddUI(controls);
+            winConf.AddUI(volume);
 
             winMenu.SetCurrent();
 
-            
-          
-
-            UButton voltarg = new UButton("", new Vector2(92, 82), new Vector2(70, 30), Comeback);
+            UButton voltarg = new UButton("", new Vector2(92, 82), new Vector2(145, 37), Comeback);
             voltarg.setBackground("Src/Images/Menu/Botões/Voltar.png");
+            voltarg.setOnHover("Src/Images/Menu/Botões/Voltar_Selecionado.png");
 
             Dictionary<int, Type> dic = new Dictionary<int, Type>();
             dic.Add(22, typeof(Grama));
@@ -87,8 +99,7 @@ namespace RPG
             dic.Add(242, typeof(Areia));
             dic.Add(202, typeof(Arvore));
 
-            try{
-                
+            try{ 
                
                 List<Entidade> ent = MapLoader.LoadMap("Src/Maps/map.xml", dic);
                 foreach (Entidade e in ent)
@@ -103,9 +114,7 @@ namespace RPG
                 Engine.Debug("Load Map Error> "+ e.Message);
             }
 
-           
-
-            winGame.AddUI(about);
+            winGame.AddUI(info2);
             winGame.AddUI(voltarg);
             winGame.Add(p);
             AmbienteJogo.currentCamera.setSeek(p);
@@ -113,7 +122,6 @@ namespace RPG
             winGame.Add(new Undead(new Vector2(-150, -200)));
             winGame.Add(new Undead(new Vector2(50, 275)));
             winGame.Add(new Undead(new Vector2(10, -20)));
-           
           
         }
 
@@ -121,7 +129,6 @@ namespace RPG
 
         private void Start(object Sender) {
             winGame.SetCurrent();
-           
         }
 
         private void Settings(object Sender) {

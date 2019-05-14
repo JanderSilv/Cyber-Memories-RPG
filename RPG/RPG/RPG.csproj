@@ -133,6 +133,8 @@
     <Content Include="Src\Animations\Menu\Menu.gif" />
     <Content Include="Src\Images\Menu\Botões\Configurações.png" />
     <Content Include="Src\Images\Menu\Botões\Configurações_Selecionado.png" />
+    <Content Include="Src\Images\Menu\Botões\Controles.png" />
+    <Content Include="Src\Images\Menu\Botões\Controles_Selecionado.png" />
     <Content Include="Src\Images\Menu\Botões\Iniciar.png" />
     <Content Include="Src\Images\Menu\Botões\Jogar_Selecionado.png" />
     <Content Include="Src\Images\Menu\Botões\Sair.png" />
@@ -141,6 +143,8 @@
     <Content Include="Src\Images\Menu\Botões\Sobre_Selecionado.png" />
     <Content Include="Src\Images\Menu\Botões\Voltar.png" />
     <Content Include="Src\Images\Menu\Botões\Voltar_Selecionado.png" />
+    <Content Include="Src\Images\Menu\Botões\Volume.png" />
+    <Content Include="Src\Images\Menu\Botões\Volume_Selecionado.png" />
     <Content Include="Src\Images\Menu\Logo.png" />
     <Content Include="Src\Images\Menu\Logo2.png" />
     <Content Include="Src\Images\tiles\areia.png">
