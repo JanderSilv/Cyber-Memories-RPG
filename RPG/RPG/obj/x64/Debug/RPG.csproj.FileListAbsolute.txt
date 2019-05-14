@@ -1964,3 +1964,17 @@ E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Debug\3ReaisEngieUWP.pri.xml
 E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Debug\ProjectArchitectures.txt
 E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_636758660200000000.json
 E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Debug\Src\Maps\map.xml
+C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\bin\x64\Debug\Src\Images\tiles\areia.png
+C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\bin\x64\Debug\Src\Images\tiles\arvore.png
+C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\bin\x64\Debug\Src\Images\tiles\flores.png
+C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\bin\x64\Debug\Src\Images\tiles\grama.png
+C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\bin\x64\Debug\Src\Images\tiles\rocha1.png
+C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\bin\x64\Debug\Src\Images\tiles\rocha2.png
+C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\bin\x64\Debug\Src\Images\tiles\tronco.png
+C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\bin\x64\Debug\Src\Maps\map.xml
+C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\bin\x64\Debug\Src\ButtonStyle.xbf
+C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\bin\x64\Debug\Microsoft.UI.Xaml.Markup.winmd
+C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\obj\x64\Debug\Src\ButtonStyle.xaml
+C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\obj\x64\Debug\Src\ButtonStyle.xbf
+C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\obj\x64\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_636758624200000000.json
+C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\obj\x64\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_636758660200000000.json
