@@ -57,6 +57,10 @@ namespace RPG
             info.setBackground("Src/Images/Menu/Botões/Sobre.png");
             info.setOnHover("Src/Images/Menu/Botões/Sobre_Selecionado.png");
 
+            UButton info2 = new UButton("", new Vector2(92, 92), new Vector2(103, 35), About);
+            info.setBackground("Src/Images/Menu/Botões/Sobre.png");
+            info.setOnHover("Src/Images/Menu/Botões/Sobre_Selecionado.png");
+
             winMenu.AddUI(start);
             winMenu.AddUI(settings);
             winMenu.AddUI(exit);
@@ -82,8 +86,9 @@ namespace RPG
 
             winMenu.SetCurrent();
 
-            UButton voltarg = new UButton("", new Vector2(92, 82), new Vector2(70, 30), Comeback);
+            UButton voltarg = new UButton("", new Vector2(92, 82), new Vector2(145, 37), Comeback);
             voltarg.setBackground("Src/Images/Menu/Botões/Voltar.png");
+            voltarg.setOnHover("Src/Images/Menu/Botões/Voltar_Selecionado.png");
 
             Dictionary<int, Type> dic = new Dictionary<int, Type>();
             dic.Add(22, typeof(Grama));
@@ -109,7 +114,7 @@ namespace RPG
                 Engine.Debug("Load Map Error> "+ e.Message);
             }
 
-            //winGame.AddUI(info);
+            winGame.AddUI(info2);
             winGame.AddUI(voltarg);
             winGame.Add(p);
             AmbienteJogo.currentCamera.setSeek(p);
