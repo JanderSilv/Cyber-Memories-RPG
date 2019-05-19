@@ -159,3 +159,27 @@ E:\Projects\RPG-LP2\3ReaisEngieUWP\3ReaisEngieUWP\obj\x64\Debug\qualifiers.txt
 E:\Projects\RPG-LP2\3ReaisEngieUWP\3ReaisEngieUWP\obj\x64\Debug\qualifiers.txt.intermediate
 E:\Projects\RPG-LP2\3ReaisEngieUWP\3ReaisEngieUWP\obj\x64\Debug\MultipleQualifiersPerDimensionFound.txt
 E:\Projects\RPG-LP2\3ReaisEngieUWP\3ReaisEngieUWP\obj\x64\Debug\3ReaisEngieUWP.csprojAssemblyReference.cache
+C:\Users\Jafe Ferreira\Documents\GitHub\LP\3ReaisEngieUWP\3ReaisEngieUWP\obj\x64\Debug\3ReaisEngieUWP.csprojAssemblyReference.cache
+C:\Users\Jafe Ferreira\Documents\GitHub\LP\3ReaisEngieUWP\3ReaisEngieUWP\obj\x64\Debug\3ReaisEngieUWP.csproj.CoreCompileInputs.cache
+C:\Users\Jafe Ferreira\Documents\GitHub\LP\3ReaisEngieUWP\3ReaisEngieUWP\obj\x64\Debug\3ReaisEngieUWP.dll
+C:\Users\Jafe Ferreira\Documents\GitHub\LP\3ReaisEngieUWP\3ReaisEngieUWP\obj\x64\Debug\3ReaisEngieUWP.pdb
+C:\Users\Jafe Ferreira\Documents\GitHub\LP\3ReaisEngieUWP\3ReaisEngieUWP\bin\x64\Debug\3ReaisEngieUWP.dll
+C:\Users\Jafe Ferreira\Documents\GitHub\LP\3ReaisEngieUWP\3ReaisEngieUWP\bin\x64\Debug\3ReaisEngieUWP.pdb
+C:\Users\Jafe Ferreira\Documents\GitHub\LP\3ReaisEngieUWP\3ReaisEngieUWP\bin\x64\Debug\3ReaisEngieUWP.pri
+C:\Users\Jafe Ferreira\Documents\GitHub\LP\3ReaisEngieUWP\3ReaisEngieUWP\bin\x64\Debug\Microsoft.UI.Xaml.Markup.winmd
+C:\Users\Jafe Ferreira\Documents\GitHub\LP\3ReaisEngieUWP\3ReaisEngieUWP\obj\x64\Debug\3ReaisEngieUWP.csproj.CopyComplete
+C:\Users\Jafe Ferreira\Documents\GitHub\LP\3ReaisEngieUWP\3ReaisEngieUWP\obj\x64\Debug\priconfig.xml
+C:\Users\Jafe Ferreira\Documents\GitHub\LP\3ReaisEngieUWP\3ReaisEngieUWP\obj\x64\Debug\priconfig.xml.intermediate
+C:\Users\Jafe Ferreira\Documents\GitHub\LP\3ReaisEngieUWP\3ReaisEngieUWP\obj\x64\Debug\unfiltered.layout.resfiles
+C:\Users\Jafe Ferreira\Documents\GitHub\LP\3ReaisEngieUWP\3ReaisEngieUWP\obj\x64\Debug\unfiltered.layout.resfiles.intermediate
+C:\Users\Jafe Ferreira\Documents\GitHub\LP\3ReaisEngieUWP\3ReaisEngieUWP\obj\x64\Debug\filtered.layout.resfiles
+C:\Users\Jafe Ferreira\Documents\GitHub\LP\3ReaisEngieUWP\3ReaisEngieUWP\obj\x64\Debug\filtered.layout.resfiles.intermediate
+C:\Users\Jafe Ferreira\Documents\GitHub\LP\3ReaisEngieUWP\3ReaisEngieUWP\obj\x64\Debug\excluded.layout.resfiles
+C:\Users\Jafe Ferreira\Documents\GitHub\LP\3ReaisEngieUWP\3ReaisEngieUWP\obj\x64\Debug\excluded.layout.resfiles.intermediate
+C:\Users\Jafe Ferreira\Documents\GitHub\LP\3ReaisEngieUWP\3ReaisEngieUWP\obj\x64\Debug\resources.resfiles
+C:\Users\Jafe Ferreira\Documents\GitHub\LP\3ReaisEngieUWP\3ReaisEngieUWP\obj\x64\Debug\resources.resfiles.intermediate
+C:\Users\Jafe Ferreira\Documents\GitHub\LP\3ReaisEngieUWP\3ReaisEngieUWP\obj\x64\Debug\pri.resfiles
+C:\Users\Jafe Ferreira\Documents\GitHub\LP\3ReaisEngieUWP\3ReaisEngieUWP\obj\x64\Debug\pri.resfiles.intermediate
+C:\Users\Jafe Ferreira\Documents\GitHub\LP\3ReaisEngieUWP\3ReaisEngieUWP\obj\x64\Debug\qualifiers.txt
+C:\Users\Jafe Ferreira\Documents\GitHub\LP\3ReaisEngieUWP\3ReaisEngieUWP\obj\x64\Debug\qualifiers.txt.intermediate
+C:\Users\Jafe Ferreira\Documents\GitHub\LP\3ReaisEngieUWP\3ReaisEngieUWP\obj\x64\Debug\MultipleQualifiersPerDimensionFound.txt

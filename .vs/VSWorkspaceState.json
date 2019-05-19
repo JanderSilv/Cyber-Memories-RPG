@@ -3,9 +3,14 @@
     "",
     "\\3ReaisEngieUWP",
     "\\3ReaisEngieUWP\\3ReaisEngieUWP",
+    "\\3ReaisEngieUWP\\3ReaisEngieUWP\\RPG",
     "\\RPG",
-    "\\RPG\\RPG"
+    "\\RPG\\RPG",
+    "\\RPG\\RPG\\Src",
+    "\\RPG\\RPG\\Src\\Scripts",
+    "\\RPG\\RPG\\Src\\Scripts\\Componentes",
+    "\\RPG\\RPG\\Src\\Sprites"
   ],
-  "SelectedNode": "\\3ReaisEngieUWP\\3ReaisEngieUWP\\RPG",
+  "SelectedNode": "\\RPG\\RPG\\Src\\Scripts\\Componentes\\Itinerario.cs",
   "PreviewInSolutionExplorer": false
 }

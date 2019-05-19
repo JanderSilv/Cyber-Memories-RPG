@@ -20,9 +20,9 @@ namespace RPG
     {
         public static Player p;
 
-        //Window winConf;
-        //Window winMenu;
-        //Window winGame;
+        Window winConf;
+        Window winMenu;
+        Window winGame;
         Window testes;
 
         public MainPage()
@@ -32,9 +32,9 @@ namespace RPG
           
             AmbienteJogo.window = new Window(this, 840, 620);
             
-            //winConf = new Window(this, 840, 620); 
-            //winMenu = new Window(this, 840, 620);
-            //winGame = new Window(this, 840, 620);
+            winConf = new Window(this, 840, 620); 
+            winMenu = new Window(this, 840, 620);
+            winGame = new Window(this, 840, 620);
             testes = new Window(this, 840, 620);
             testes.SetCurrent();
 
@@ -79,10 +79,6 @@ namespace RPG
             winMenu.AddUI(exit);
             winMenu.AddUI(info);
 
-            // winMenu.AddUI(start);
-            // winMenu.AddUI(settings);
-            // winMenu.AddUI(exit);
-            //// winMenu.AddUI(about);
 
             UButton comeback = new UButton("", new Vector2(11, 7), new Vector2(145, 37), Comeback);
             comeback.setBackground("Src/Images/Menu/Botões/Voltar.png");
@@ -124,29 +120,25 @@ namespace RPG
                 }
 
 
-            //     List<Entidade> ent = MapLoader.LoadMap("Src/Maps/map.xml", dic);
-            //     foreach (Entidade e in ent)
-            //     {
-            //         winGame.Add(e);
-            //     }
+              
 
-            // }
-            // catch(Exception e)
-            // {
-            //     Engine.Debug("Load Map Error> "+e.StackTrace);
-            //     Engine.Debug("Load Map Error> "+ e.Message);
-            // }
+            }
+            catch (Exception e)
+            {
+                Engine.Debug("Load Map Error> " + e.StackTrace);
+                Engine.Debug("Load Map Error> " + e.Message);
+            }
 
 
 
-            // winGame.AddUI(about);
-            // winGame.AddUI(voltarg);
-            // winGame.Add(p);
-            // AmbienteJogo.currentCamera.setSeek(p);
-            // //winGame.Add(new Undead(new Vector2(150, 0)));
-            // //winGame.Add(new Undead(new Vector2(-150, -200)));
-            // //winGame.Add(new Undead(new Vector2(50, 275)));
-            // //winGame.Add(new Undead(new Vector2(10, -20)));
+          
+            winGame.AddUI(voltarg);
+            winGame.Add(p);
+            AmbienteJogo.currentCamera.setSeek(p);
+            //winGame.Add(new Undead(new Vector2(150, 0)));
+            //winGame.Add(new Undead(new Vector2(-150, -200)));
+            //winGame.Add(new Undead(new Vector2(50, 275)));
+            //winGame.Add(new Undead(new Vector2(10, -20)));
 
 
         }
@@ -164,8 +156,7 @@ namespace RPG
                 Engine.Debug(e.Message);
             }
 
-            winGame.AddUI(info2);
-            winGame.AddUI(voltarg);
+           
             winGame.Add(p);
             AmbienteJogo.currentCamera.setSeek(p);
             winGame.Add(new Undead(new Vector2(150, 0)));
@@ -181,32 +172,39 @@ namespace RPG
             winGame.SetCurrent();
         }
 
-        //}
+        private void Settings(object Sender)
+        {
+            winConf.SetCurrent();
+        }
 
-        //private void Settings(object Sender) {
-        //    winConf.SetCurrent();
-        //}
+        private void Exit(object Sender)
+        {
+            Environment.Exit(0);
+        }
 
-        //private void Exit(object Sender) {
-        //    Environment.Exit(0);
-        //}
+        private void About(object Sender)
+        {
+            // Abrir aba sobre;
+        }
 
-        //private void About(object Sender) {
-        //    // Abrir aba sobre;
-        //}
+        /* Algoritmo dos Botões de Configurações */
 
-        ///* Algoritmo dos Botões de Configurações */
+        private void Comeback(object Sender)
+        {
+            winMenu.SetCurrent();
+        }
 
-        //private void Comeback(object Sender) {
-        //    winMenu.SetCurrent(); 
-        //}
+        private void Controls(object Sender)
+        {
+            // Abre o canvas de controles;
+        }
 
-        //private void Controls(object Sender) {
-        //    // Abre o canvas de controles;
-        //}
-
-        //private void Volume(object Sender) {
-        //    // Abre o canvas de volume;
-        //}
+        private void Volume(object Sender)
+        {
+            // Abre o canvas de volume;
+        }
     }
+
+
 }
+

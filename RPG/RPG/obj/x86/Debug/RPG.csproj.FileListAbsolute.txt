@@ -241,3 +241,6 @@ E:\Projects\RPG-LP2\RPG\RPG\obj\x86\Debug\Src\ButtonStyle.xbf
 E:\Projects\RPG-LP2\RPG\RPG\obj\x86\Debug\XamlSaveStateFile.xml
 E:\Projects\RPG-LP2\RPG\RPG\obj\x86\Debug\RPG.exe
 E:\Projects\RPG-LP2\RPG\RPG\obj\x86\Debug\RPG.pdb
+C:\Users\Jafe Ferreira\Documents\GitHub\LP\RPG\RPG\obj\x86\Debug\RPG.csprojAssemblyReference.cache
+C:\Users\Jafe Ferreira\Documents\GitHub\LP\RPG\RPG\obj\x86\Debug\RPG.exe
+C:\Users\Jafe Ferreira\Documents\GitHub\LP\RPG\RPG\obj\x86\Debug\RPG.pdb
