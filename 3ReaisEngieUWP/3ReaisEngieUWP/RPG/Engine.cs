@@ -1,13 +1,33 @@
 ﻿#define LOG
 
 using _3ReaisEngine.Core;
+using Newtonsoft.Json;
 using System;
 using System.Diagnostics;
+using System.IO;
 
 namespace _3ReaisEngine
 {
     public static class Engine
     {
+
+        public static bool salva(Object x, string path)
+        {
+            string output = JsonConvert.SerializeObject(x);
+          
+            File.WriteAllText(path, output);
+
+            return true;
+        }
+        public static T load<T>(string path)
+        {
+           
+            string esse = File.ReadAllText(path);
+            T deserializedGeneric = JsonConvert.DeserializeObject<T>(esse);
+
+            return deserializedGeneric;
+        }
+
         public static void Debug(object obj)
         {
 #if LOG
