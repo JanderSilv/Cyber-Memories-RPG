@@ -1,0 +1,166 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\Projects\\RPG-LP2\\RPG\\RpgTestes\\RpgTestes.csproj": {}
+  },
+  "projects": {
+    "E:\\Projects\\RPG-LP2\\3ReaisEngieUWP\\3ReaisEngieUWP\\3ReaisEngieUWP.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Projects\\RPG-LP2\\3ReaisEngieUWP\\3ReaisEngieUWP\\3ReaisEngieUWP.csproj",
+        "projectName": "3ReaisEngieUWP",
+        "projectPath": "E:\\Projects\\RPG-LP2\\3ReaisEngieUWP\\3ReaisEngieUWP\\3ReaisEngieUWP.csproj",
+        "packagesPath": "C:\\Users\\ruann\\.nuget\\packages\\",
+        "outputPath": "E:\\Projects\\RPG-LP2\\3ReaisEngieUWP\\3ReaisEngieUWP\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ruann\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "uap10.0.17134"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "uap10.0.17134": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "uap10.0.17134": {
+          "dependencies": {
+            "BinaryTree": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Imagine.Uwp.Json": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "Microsoft.NETCore.UniversalWindowsPlatform": {
+              "target": "Package",
+              "version": "[6.1.7, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "TiledNet": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      },
+      "runtimes": {
+        "win10-arm": {
+          "#import": []
+        },
+        "win10-arm-aot": {
+          "#import": []
+        },
+        "win10-arm64-aot": {
+          "#import": []
+        },
+        "win10-x64": {
+          "#import": []
+        },
+        "win10-x64-aot": {
+          "#import": []
+        },
+        "win10-x86": {
+          "#import": []
+        },
+        "win10-x86-aot": {
+          "#import": []
+        }
+      }
+    },
+    "E:\\Projects\\RPG-LP2\\RPG\\RpgTestes\\RpgTestes.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Projects\\RPG-LP2\\RPG\\RpgTestes\\RpgTestes.csproj",
+        "projectName": "RpgTestes",
+        "projectPath": "E:\\Projects\\RPG-LP2\\RPG\\RpgTestes\\RpgTestes.csproj",
+        "packagesPath": "C:\\Users\\ruann\\.nuget\\packages\\",
+        "outputPath": "E:\\Projects\\RPG-LP2\\RPG\\RpgTestes\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ruann\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "uap10.0.17763"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "uap10.0.17763": {
+            "projectReferences": {
+              "E:\\Projects\\RPG-LP2\\3ReaisEngieUWP\\3ReaisEngieUWP\\3ReaisEngieUWP.csproj": {
+                "projectPath": "E:\\Projects\\RPG-LP2\\3ReaisEngieUWP\\3ReaisEngieUWP\\3ReaisEngieUWP.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "uap10.0.17763": {
+          "dependencies": {
+            "Microsoft.NETCore.UniversalWindowsPlatform": {
+              "target": "Package",
+              "version": "[6.2.8, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      },
+      "runtimes": {
+        "win10-arm": {
+          "#import": []
+        },
+        "win10-arm-aot": {
+          "#import": []
+        },
+        "win10-arm64-aot": {
+          "#import": []
+        },
+        "win10-x64": {
+          "#import": []
+        },
+        "win10-x64-aot": {
+          "#import": []
+        },
+        "win10-x86": {
+          "#import": []
+        },
+        "win10-x86-aot": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

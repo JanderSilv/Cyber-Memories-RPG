@@ -41,7 +41,7 @@ namespace _3ReaisEngine.RPG.Components
             }
             catch(Exception e)
             {
-                Console.WriteLine("[Componente Audio]: "+e.StackTrace);
+                Console.WriteLine("[Componente Audio]: "+e.Message);
             }
 
            

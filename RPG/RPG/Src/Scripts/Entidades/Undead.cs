@@ -33,15 +33,14 @@ namespace RPG.Src.Scripts
             colider = GetComponente<Colisao>();
             caminho = GetComponente<Itinerario>();
 
-            render.img.Width = 32;
-            render.img.Height = 64;
+            render.img.Width = 128;
+            render.img.Height = 128*1.5f;
 
-            colider.tamanho = new Vector2(80, 80);
+            colider.tamanho = render.size;
             colider.ignoreTypes.Add(typeof(Undead));
             EntPos = pos;
             colider.tipo = TipoColisao.Dinamica;
-            mob.col = colider;
-            caminho.movel = mob;
+          
 
             caminho.AddPos("Esq", new Vector2(400,50));
             caminho.AddPos("Dir", new Vector2(200, 50));

@@ -26,7 +26,8 @@ namespace _3ReaisEngine.RPG.Core
         public List<Entidade> entidades = new List<Entidade>();
         public List<Colisao> colisores = new List<Colisao>();
         public List<Render> renders = new List<Render>();
-      
+        public List<Body> bodies = new List<Body>();
+        public List<UIEntidade> uiElements = new List<UIEntidade>();
 
         private Panel game_layer;
         private Panel ui_layer;
@@ -52,16 +53,16 @@ namespace _3ReaisEngine.RPG.Core
             canv.SetValue(Canvas.ZIndexProperty, 0);
             canv.KeyDown += Game_KeyDown;
             canv.KeyUp += Game_KeyUp;
-            canv.PointerPressed += Game_PointerPressed;
-            canv.PointerReleased += Game_PointerReleased;
+           // canv.PointerPressed += Game_PointerPressed;
+          //  canv.PointerReleased += Game_PointerReleased;
 
             
 
             ui.Width = 840;
             ui.Height = 620;
             ui.SetValue(Canvas.ZIndexProperty, 1);
-            ui.PointerPressed += Game_PointerPressed;
-            ui.PointerReleased += Game_PointerReleased;
+          //  ui.PointerPressed += Game_PointerPressed;
+          //  ui.PointerReleased += Game_PointerReleased;
             
            // root.Content = canv;
             root.Height = canv.Height;
@@ -88,14 +89,14 @@ namespace _3ReaisEngine.RPG.Core
             canv.SetValue(Canvas.ZIndexProperty, 0);
             canv.KeyDown += Game_KeyDown;
             canv.KeyUp += Game_KeyUp;
-            canv.PointerPressed += Game_PointerPressed;
-            canv.PointerReleased += Game_PointerReleased;
+         //   canv.PointerPressed += Game_PointerPressed;
+          //  canv.PointerReleased += Game_PointerReleased;
 
             ui.Width = Widht;
             ui.Height = Height;
             ui.SetValue(Canvas.ZIndexProperty, 1);
-            ui.PointerPressed += Game_PointerPressed;
-            ui.PointerReleased += Game_PointerReleased;
+         //   ui.PointerPressed += Game_PointerPressed;
+         //   ui.PointerReleased += Game_PointerReleased;
 
             root.Height = canv.Height;
             root.Width = canv.Width;
@@ -127,6 +128,7 @@ namespace _3ReaisEngine.RPG.Core
             Colisao c = null;
             Render r = null;
             MalhaColisao mc = null;
+            Body b = null;
 
             element.EntPos.x += Widht / 4;
             element.EntPos.y += Height / 4;
@@ -144,6 +146,10 @@ namespace _3ReaisEngine.RPG.Core
                 renders.Add(r);
                 Add(r.img);
             }
+            if(element.GetComponente(ref b))
+            {
+                bodies.Add(b);
+            }
         }
 
         public void Add(Entidade[] elements)
@@ -157,6 +163,7 @@ namespace _3ReaisEngine.RPG.Core
 
                 Colisao c = null;
                 Render r = null;
+                Body b = null;
                 MalhaColisao mc = null;
                 element.EntPos.x += Widht / 4;
                 element.EntPos.y += Height / 4;
@@ -172,6 +179,10 @@ namespace _3ReaisEngine.RPG.Core
                 {
                     renders.Add(r);
                     Add(r.img);
+                }
+                if (element.GetComponente(ref b))
+                {
+                    bodies.Add(b);
                 }
             }
         }
@@ -200,32 +211,86 @@ namespace _3ReaisEngine.RPG.Core
         public void Remove(UIElement element)
         {
             game_layer.Children.Remove(element);
+          
+
         }
 
-        public void AddUI(IUIEntidade element)
+        public void AddUI(UIEntidade element)
         {
 
-            UIElement e = element.getElement();
+            UIElement e = element.element;
+            UIEntidade parent = element.parent;
             e.SetValue(Canvas.HorizontalAlignmentProperty, Canvas.LeftProperty);
             e.SetValue(Canvas.VerticalAlignmentProperty, Canvas.TopProperty);
 
-                TranslateTransform tt= ((TranslateTransform)e.RenderTransform);
+            TranslateTransform tt= ((TranslateTransform)e.RenderTransform);
+            Vector2 pos = element.position;
+            Vector2 si = element.size;
 
-                Vector2 pos = element.getPosition();
-                Vector2 si = element.getSize();
+            if (parent != null)
+            {
+                Vector2 parentPos = parent.position;
+                Vector2 parentSi = parent.size;
 
-               tt.X = 2*(((pos.x/2)/ 100.0) * Widht) - si.x/2;
-            tt.Y = 2 * (((pos.y / 2) / 100.0) * Height) - si.y/2;
+                tt.X = 2 * (((parentPos.x / 2) / 100.0) * Widht) - si.x / 2;
+                tt.Y = 2 * (((parentPos.y / 2) / 100.0) * Height) - si.y / 2;
 
+                tt.X += 2 * (((pos.x / 2) / 100.0) * parentSi.x) - si.x / 2;
+                tt.Y += 2 * (((pos.y / 2) / 100.0) * parentSi.y) - si.y / 2;
+            }
+            else{
+                tt.X = 2 * (((pos.x / 2) / 100.0) * Widht) - si.x / 2;
+                tt.Y = 2 * (((pos.y / 2) / 100.0) * Height) - si.y / 2;
+            }
+            uiElements.Add(element);
             ui_layer.Children.Add(e);
+            if(element is IUIStack)
+            {
+                foreach (UIEntidade i in ((IUIStack)element).getChilds()) AddUI(i);
+            }
         }
 
-        public void Remove(IUIEntidade element)
+        public void Remove(UIEntidade element)
         {
-            ui_layer.Children.Remove(element.getElement());
+            ui_layer.Children.Remove(element.element);
+            if (element is IUIStack)
+            {
+                foreach (UIEntidade i in ((IUIStack)element).getChilds()) Remove(i);
+            }
+            uiElements.Remove(element);
         }
 
+        public void UpdateWindow()
+        {
+            foreach(UIEntidade element in uiElements)
+            {
+                UIElement e = element.element;
+                UIEntidade parent = element.parent;
+                e.SetValue(Canvas.HorizontalAlignmentProperty, Canvas.LeftProperty);
+                e.SetValue(Canvas.VerticalAlignmentProperty, Canvas.TopProperty);
 
+                TranslateTransform tt = ((TranslateTransform)e.RenderTransform);
+                Vector2 pos = element.position;
+                Vector2 si = element.size;
+
+                if (parent != null)
+                {
+                    Vector2 parentPos = parent.position;
+                    Vector2 parentSi = element.size;
+
+                    tt.X = 2 * (((parentPos.x / 2) / 100.0) * Widht) - si.x / 2;
+                    tt.Y = 2 * (((parentPos.y / 2) / 100.0) * Height) - si.y / 2;
+
+                    tt.X += 2 * (((pos.x / 2) / 100.0) * parentSi.x) - si.x / 2;
+                    tt.Y += 2 * (((pos.y / 2) / 100.0) * parentSi.y) - si.y / 2;
+                }
+                else
+                {
+                    tt.X = 2 * (((pos.x / 2) / 100.0) * Widht) - si.x / 2;
+                    tt.Y = 2 * (((pos.y / 2) / 100.0) * Height) - si.y / 2;
+                }
+            }
+        }
 
         private void Game_PointerReleased(object sender, PointerRoutedEventArgs e)
         {

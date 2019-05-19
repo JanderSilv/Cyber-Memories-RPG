@@ -1,0 +1,2 @@
+E:\Projects\RPG-LP2\3ReaisEngieUWP\3ReaisEngieUWP\3ReaisEngieUWP.csproj;x64
+E:\Projects\RPG-LP2\RPG\RpgTestes\RpgTestes.csproj;x64

@@ -23,18 +23,17 @@ namespace _3ReaisEngine.Core
         public ulong ID { get { return id; } set { if (id == 0) id = value; } }
 
         #region Constructors
-        public Entidade()
+
+        void init()
         {
             ID = 0;
             Componentes = new Dictionary<int, IComponente>();
-            AddComponente<Posicao>();
-            EntPos = ((Posicao)Componentes[Posicao.IntComponenteID]).posicao;
-
+            EntPos = new Vector2();
             foreach (Attribute atr in GetType().GetTypeInfo().GetCustomAttributes(typeof(RequerComponente)))
             {
-                
+
                 RequerComponente rc = (RequerComponente)atr;
-                dynamic comp =  Activator.CreateInstance(rc.componente);
+                dynamic comp = Activator.CreateInstance(rc.componente);
                 int reg = comp.getRegister();
                 if (!GetComponente(reg))
                 {
@@ -42,25 +41,17 @@ namespace _3ReaisEngine.Core
                 }
             }
         }
+
+        public Entidade()
+        {
+            init();
+            foreach (IComponente c in Componentes.Values) c.Init();
+        }
         public Entidade(string Nome)
         {
-            ID = 0;
+           
             this.Nome = Nome;
-            Componentes = new Dictionary<int, IComponente>();
-            AddComponente<Posicao>();
-            EntPos = ((Posicao)Componentes[Posicao.IntComponenteID]).posicao;
-
-            foreach (Attribute atr in GetType().GetTypeInfo().GetCustomAttributes(typeof(RequerComponente)))
-            {
-                RequerComponente rc = (RequerComponente)atr;
-                IComponente comp = (IComponente)Activator.CreateInstance(rc.componente);
-                int reg = comp.getRegister();
-                if (!GetComponente(reg))
-                {
-                    AddComponente(comp);
-                }
-            }
-
+            init();
         }
         #endregion
 

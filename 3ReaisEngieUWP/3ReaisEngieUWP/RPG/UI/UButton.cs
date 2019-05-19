@@ -16,12 +16,24 @@ namespace _3ReaisEngine.UI
 
     public delegate void Execute(object sender);
 
-    public interface IUIEntidade
+    public abstract class UIEntidade
     {
-        UIElement getElement();
-        Vector2 getPosition();
-        Vector2 getSize();
-        string getName();
+       public UIElement element;
+       protected TranslateTransform transform = new TranslateTransform();
+       public string Nome;
+       public Vector2 position = new Vector2();
+       public Vector2 size = new Vector2(100, 50);
+       public UIEntidade parent;
+       public ManipulationModes manipulationMode { get { return element.ManipulationMode; }  set { element.ManipulationMode = value; } }
+
+
+    }
+
+    public interface IUIStack
+    {
+        void addChild(UIEntidade child);
+        void removeChild(UIEntidade child);
+        List<UIEntidade> getChilds();
     }
 
     public interface IUIBackground
@@ -30,79 +42,84 @@ namespace _3ReaisEngine.UI
         void setBackground(string path, Stretch strech);
     }
 
-    public class UButton: IUIEntidade, IUIBackground
+    public class UButton : UIEntidade, IUIBackground
     {
-        uwpUI.Button element = new uwpUI.Button();
-        TranslateTransform transform = new TranslateTransform();
-        public string Nome;
-        private Vector2 pos = new Vector2(), si = new Vector2(100,50);
-
-        public object Content { get { return element.Content; } set { element.Content = value; } }
-        public Vector2 position { get { return pos; } set { pos = value; transform.X = value.x; transform.Y = value.y; } }
-        public Vector2 size { get { return si; } set { si = value; element.Width = value.x; element.Height = value.y; } }
         public Execute Action;
-        ImageBrush brush = new ImageBrush();
+
+        Button btn = new Button();
+
+        public object Content { get { return btn.Content; } set { btn.Content = value; } }
+       
+      
 
         BitmapImage Normal;
         BitmapImage OnHover;
         BitmapImage OnClick;
+        ImageBrush brush = new ImageBrush();
+
 
         void Start()
         {
-            element.Style = (Style)Application.Current.Resources["ButtonStyle"];
-            VisualStateManager.GoToState(element, "Normal", false);
-            element.HorizontalAlignment = HorizontalAlignment.Left;
-            element.VerticalAlignment = VerticalAlignment.Top;
-            element.RenderTransform = transform;
-            element.PointerEntered += Element_PointerEntered;
-            element.PointerExited += Element_PointerExited;
-            element.Click += act;
-         
-           
+            // btn.Style = (Style)Application.Current.Resources["ButtonStyle"];
+            // VisualStateManager.GoToState(btn, "Normal", false);
+
+            element = btn;
+            btn.ManipulationDelta += btn_ManipulationDelta;
+            btn.HorizontalAlignment = HorizontalAlignment.Left;
+            btn.VerticalAlignment = VerticalAlignment.Top;
+            btn.RenderTransform = transform;
+            btn.PointerEntered += btn_PointerEntered;
+            btn.PointerExited += btn_PointerExited;
+            btn.Click += act;
+
         }
 
-      
+        public UButton(object Content, Vector2 position, Vector2 size, Execute Action = null)
+        {
+
+            btn.ManipulationDelta += btn_ManipulationDelta;
+            btn.CanDrag = true;
+            btn.Content = Content;
+            btn.Width = size.x;
+            btn.Height = size.y;
+            transform.X = position.x;
+            transform.Y = position.y;
+            base.position = position;
+            base.size = size;
+            this.Action = Action;
+            Start();
+        }
+
         public UButton(object Content, Execute Action = null)
         {
-           
-            element.Content = Content;        
-            element.Width = 100;
-            element.Height = 50;          
+            btn.CanDrag = true;
+            btn.Content = Content;        
+            btn.Width = 100;
+            btn.Height = 50;          
             transform.X = 0;
             transform.Y = 0;       
             this.Action = Action;
             Start();
         }
 
-      
-
         public UButton(object Content,Vector2 position, Execute Action = null)
         {
-            element.Content = Content;
-            element.Width = 100;
-            element.Height = 50;
+            btn.Content = Content;
+            btn.Width = 100;
+            btn.Height = 50;
             transform.X = position.x;
             transform.Y = position.y;
-            pos = position;
+            base.position = position;
             this.Action = Action;
             Start();
         }
 
-        public UButton(object Content, Vector2 position,Vector2 size, Execute Action = null)
+        private void btn_ManipulationDelta(object sender, ManipulationDeltaRoutedEventArgs e)
         {
-            element.Content = Content;
-            element.Width = size.x;
-            element.Height = size.y;
-            transform.X = position.x;
-            transform.Y = position.y;
-            pos = position;
-            si = size;
-            element.RenderTransform = transform;
-            this.Action = Action;
-            Start();
+           position.x += (float)e.Delta.Translation.X;
+           position.y += (float)e.Delta.Translation.Y;
+          
         }
-
-
         public void setBackground(string path)
         { 
             Normal = new BitmapImage(new Uri("ms-appx:/" + path));
@@ -111,7 +128,7 @@ namespace _3ReaisEngine.UI
 
             brush.Stretch = Stretch.UniformToFill;
             brush.ImageSource = Normal;
-            element.Background = brush;
+            btn.Background = brush;
         }
         public void setBackground(string path, Stretch strech)
         {
@@ -120,10 +137,9 @@ namespace _3ReaisEngine.UI
             if (OnClick == null) OnClick = Normal;
 
             brush.ImageSource = Normal;
-            element.Background = brush;
+            btn.Background = brush;
             brush.Stretch = strech;
         }
-
         public void setOnHover(string path)
         {
             OnHover = new BitmapImage(new Uri("ms-appx:/" + path));
@@ -132,46 +148,22 @@ namespace _3ReaisEngine.UI
         {
             OnClick = new BitmapImage(new Uri("ms-appx:/" + path));
         }
-
-        private void Element_PointerEntered(object sender, PointerRoutedEventArgs e)
+        private void btn_PointerEntered(object sender, PointerRoutedEventArgs e)
         {
             if(OnHover!=null)
             brush.ImageSource = OnHover;
         }
-        private void Element_PointerExited(object sender, PointerRoutedEventArgs e)
+        private void btn_PointerExited(object sender, PointerRoutedEventArgs e)
         {
             
             brush.ImageSource = Normal;
-        }
-     
-
+        } 
         private void act(object sender, RoutedEventArgs e)
         {
-  
-            Action?.Invoke(sender);
+            Action?.Invoke(this);
         }
 
-        public UIElement getElement()
-        {
-            return element;
-        }
-
-        public Vector2 getPosition()
-        {
-            return pos;
-        }
-
-        public Vector2 getSize()
-        {
-            return si;
-        }
-
-        public string getName()
-        {
-            return Nome;
-        }
-
-       
+      
     }
 
    

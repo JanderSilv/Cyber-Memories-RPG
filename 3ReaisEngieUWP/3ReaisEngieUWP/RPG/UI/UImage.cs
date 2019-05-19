@@ -13,90 +13,45 @@ namespace _3ReaisEngine.UI
 {
     using uwpUI = Windows.UI.Xaml.Controls;
 
-    public class UImage : IUIEntidade
+    public class UImage : UIEntidade
     {
-        public uwpUI.Image element = new uwpUI.Image();
-        TranslateTransform transform = new TranslateTransform();
-
-        private Vector2 pos = new Vector2(), si = new Vector2(100, 50);
-        public string Nome;
-        public object Content { get { return element.Source; } set { element.Source = new BitmapImage(new Uri((string)value)); } }
-        public Vector2 position { get { return pos; } set { pos = value; transform.X = value.x; transform.Y = value.y; } }
-        public Vector2 size { get { return si; } set { si = value; element.Width = value.x; element.Height = value.y; } }
+        public uwpUI.Image img = new uwpUI.Image();   
+        public object Content { get { return img.Source; } set { img.Source = new BitmapImage(new Uri("ms-appx:/"+(string)value)); } }
        
+        void start()
+        {
+            img.HorizontalAlignment = HorizontalAlignment.Left;
+            img.VerticalAlignment = VerticalAlignment.Top;
+            img.RenderTransform = transform;
+            element = img;
+        }
+
         public UImage(string Content)
         {
-
-            element.Source = new BitmapImage(new Uri("ms-appx:/"+Content));
-
-            element.Width = 100;
-            element.Height = 50;
-
-            element.HorizontalAlignment = HorizontalAlignment.Left;
-            element.VerticalAlignment = VerticalAlignment.Top;
-
+            img.Source = new BitmapImage(new Uri("ms-appx:/"+Content));
+            img.Width = 100;
+            img.Height = 50;
             transform.X = 0;
             transform.Y = 0;
-
-            element.RenderTransform = transform;
-
-          
-
+            start();
         }
         public UImage(string Content,Vector2 pos)
         {
-
-            element.Source = new BitmapImage(new Uri("ms-appx:/" + Content));
-
-            element.Width = 100;
-            element.Height = 50;
-
-            element.HorizontalAlignment = HorizontalAlignment.Left;
-            element.VerticalAlignment = VerticalAlignment.Top;
-
-            this.pos = pos;
-
-            element.RenderTransform = transform;
-
-
-
+            img.Source = new BitmapImage(new Uri("ms-appx:/" + Content));
+            img.Width = 100;
+            img.Height = 50;
+            position = pos;
+            start();
         }
         public UImage(string Content, Vector2 pos,Vector2 size)
         {
 
-            element.Source = new BitmapImage(new Uri("ms-appx:/" + Content));
-
-            this.si = size;
-
-            element.HorizontalAlignment = HorizontalAlignment.Left;
-            element.VerticalAlignment = VerticalAlignment.Top;
-
-            this.pos = pos;
-
-            element.RenderTransform = transform;
-
-
-
+            img.Source = new BitmapImage(new Uri("ms-appx:/" + Content));
+            size = size;
+            position = pos;
+            start();
         }
 
-        public UIElement getElement()
-        {
-            return element;
-        }
-
-        public Vector2 getPosition()
-        {
-            return pos;
-        }
-
-        public Vector2 getSize()
-        {
-            return si;
-        }
-
-        public string getName()
-        {
-            return Nome;
-        }
+      
     }
 }

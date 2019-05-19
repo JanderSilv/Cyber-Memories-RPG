@@ -12,9 +12,9 @@ namespace _3ReaisEngine.Events
 
     public enum MouseButton : byte
     {
-        Left=0,
-        Right=1,
-        Scroll = 2
+        Left=1,
+        Right=2,
+        Scroll = 4
     }
 
     public class MouseEvento : EventArgs

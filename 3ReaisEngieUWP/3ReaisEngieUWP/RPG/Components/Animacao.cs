@@ -30,7 +30,6 @@ namespace _3ReaisEngine.Components
                 animations.Remove(Nome);
             }
         }
-
         public void Play(string Nome,Render render)
         {
             if (animations.ContainsKey(Nome))

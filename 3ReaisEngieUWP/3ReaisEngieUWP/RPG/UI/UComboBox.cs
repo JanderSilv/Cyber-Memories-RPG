@@ -14,110 +14,75 @@ namespace _3ReaisEngine.UI
 {
     using uwpUI = Windows.UI.Xaml.Controls;
     
-    public class UComboBox:IUIEntidade
+    public class UComboBox:UIEntidade
     {
 
-        uwpUI.ComboBox element = new uwpUI.ComboBox();
-        TranslateTransform transform = new TranslateTransform();
-        
-        private Vector2 pos = new Vector2(), si = new Vector2(100, 50);
-        public Vector2 position { get { return pos; } set { pos = value; transform.X = value.x; transform.Y = value.y; } }
-        public Vector2 size { get { return si; } set { si = value; element.Width = value.x; element.Height = value.y; } }
-        public string Nome;
-        public UIElement getElement()
-        {
-            return element;
-        }
-        public Vector2 getPosition()
-        {
-            return pos;
-        }
-        public Vector2 getSize()
-        {
-            return si;
-        }
+        ComboBox cbb = new ComboBox();
+      
         public Execute Action;
+
+        public void start()
+        {
+            cbb.HorizontalAlignment = HorizontalAlignment.Left;
+            cbb.VerticalAlignment = VerticalAlignment.Top;
+            cbb.RenderTransform = transform;
+            Action = Action;
+            cbb.SelectionChanged += act;
+            element = cbb;
+        }
 
         public UComboBox(Execute Action = null)
         {
-            element.Width = 100;
-            element.Height = 50;
-
-            element.HorizontalAlignment = HorizontalAlignment.Left;
-            element.VerticalAlignment = VerticalAlignment.Top;
-
+            cbb.Width = 100;
+            cbb.Height = 50;
             transform.X = 0;
             transform.Y = 0;
-
-            element.RenderTransform = transform;
-
-            this.Action = Action;
-            element.SelectionChanged += act;
-
+            start();
         }
         public UComboBox(Vector2 position, Execute Action = null)
         {
        
-            element.Width = 100;
-            element.Height = 50;
-
-            element.HorizontalAlignment = HorizontalAlignment.Left;
-            element.VerticalAlignment = VerticalAlignment.Top;
-
+            cbb.Width = 100;
+            cbb.Height = 50;
             transform.X = position.x;
             transform.Y = position.y;
-
-            pos = position;
-
-            element.RenderTransform = transform;
-            element.SelectionChanged += act;
-            this.Action = Action;
+            this.position = position;
+            start();
+           
         }
         public UComboBox(Vector2 position, Vector2 size, Execute Action = null)
         {
-            element.Width = size.x;
-            element.Height = size.y;
-
-            element.HorizontalAlignment = HorizontalAlignment.Left;
-            element.VerticalAlignment = VerticalAlignment.Top;
-
+            cbb.Width = size.x;
+            cbb.Height = size.y;
             transform.X = position.x;
             transform.Y = position.y;
-
-            pos = position;
-            si = size;
-
-            element.RenderTransform = transform;
-            element.SelectionChanged += act;
-            this.Action = Action;
+            this.position = position;
+            this.size = size;
+            start();
         }
 
 
         public void AddItem(object item)
         {
             ComboBoxItem cbbItem = new ComboBoxItem();
-            //cbbItem.Content = item.getName();
-           //cbbItem.
-            element.Items.Add(item);
+      
+            cbb.Items.Add(item);
             
         }
 
         public int Selected()
         {
-            return element.SelectedIndex;
+            return cbb.SelectedIndex;
         }
         public object SelectedElement()
         {
-            return element.SelectedItem;
+            return cbb.SelectedItem;
         }
 
         private void act(object sender, RoutedEventArgs e)
         {
             Action?.Invoke(this);
         }
-        public string getName()
-        {
-            return Nome;
-        }
+    
     }
 }
