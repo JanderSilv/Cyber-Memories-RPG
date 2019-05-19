@@ -30,13 +30,13 @@
     <AppXManifest Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-05-19T18:06:08.052</Modified>
+      <Modified>2019-05-19T19:41:02.769</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Debug\RPG.exe">
       <PackagePath>entrypoint\RPG.exe</PackagePath>
-      <Modified>2019-05-19T18:06:06.274</Modified>
+      <Modified>2019-05-19T19:40:04.502</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ruann\.nuget\packages\newtonsoft.json\12.0.2\lib\netstandard2.0\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
@@ -48,11 +48,107 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\RPG-LP2\3ReaisEngieUWP\3ReaisEngieUWP\bin\x64\Debug\3ReaisEngieUWP.dll">
       <PackagePath>3ReaisEngieUWP.dll</PackagePath>
-      <Modified>2019-05-19T18:06:01.659</Modified>
+      <Modified>2019-05-19T19:39:59.736</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.17763.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
       <Modified>2018-10-23T04:33:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Assets-Laborátorio_0001_Livros.png">
+      <PackagePath>Src\Images\Laboratório\Assets-Laborátorio_0001_Livros.png</PackagePath>
+      <Modified>2019-05-19T18:26:01.804</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Assets-Laborátorio_0002_Papeis.png">
+      <PackagePath>Src\Images\Laboratório\Assets-Laborátorio_0002_Papeis.png</PackagePath>
+      <Modified>2019-05-19T18:26:01.805</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Assets-Laborátorio_0003_Mesa-Vertical.png">
+      <PackagePath>Src\Images\Laboratório\Assets-Laborátorio_0003_Mesa-Vertical.png</PackagePath>
+      <Modified>2019-05-19T18:26:01.805</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Assets-Laborátorio_0004_Mesa-Horizontal.png">
+      <PackagePath>Src\Images\Laboratório\Assets-Laborátorio_0004_Mesa-Horizontal.png</PackagePath>
+      <Modified>2019-05-19T18:26:01.806</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Assets-Laborátorio_0005_Perigo.png">
+      <PackagePath>Src\Images\Laboratório\Assets-Laborátorio_0005_Perigo.png</PackagePath>
+      <Modified>2019-05-19T18:26:01.807</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Assets-Laborátorio_0006_Vidrarias.png">
+      <PackagePath>Src\Images\Laboratório\Assets-Laborátorio_0006_Vidrarias.png</PackagePath>
+      <Modified>2019-05-19T18:26:01.808</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Assets-Laborátorio_0007_Armário.png">
+      <PackagePath>Src\Images\Laboratório\Assets-Laborátorio_0007_Armário.png</PackagePath>
+      <Modified>2019-05-19T18:26:01.808</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab_0003_Máquinas.png">
+      <PackagePath>Src\Images\Laboratório\Lab_0003_Máquinas.png</PackagePath>
+      <Modified>2019-05-19T18:26:01.809</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab_0004_Extintor.png">
+      <PackagePath>Src\Images\Laboratório\Lab_0004_Extintor.png</PackagePath>
+      <Modified>2019-05-19T18:26:01.810</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab_0005_Tubo.png">
+      <PackagePath>Src\Images\Laboratório\Lab_0005_Tubo.png</PackagePath>
+      <Modified>2019-05-19T18:26:01.812</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab_0006_Luz.png">
+      <PackagePath>Src\Images\Laboratório\Lab_0006_Luz.png</PackagePath>
+      <Modified>2019-05-19T18:26:01.813</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab_0007_Grade.png">
+      <PackagePath>Src\Images\Laboratório\Lab_0007_Grade.png</PackagePath>
+      <Modified>2019-05-19T18:26:01.814</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab_0008_Planta.png">
+      <PackagePath>Src\Images\Laboratório\Lab_0008_Planta.png</PackagePath>
+      <Modified>2019-05-19T18:26:01.815</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab_0009_Maq.-de-TP.png">
+      <PackagePath>Src\Images\Laboratório\Lab_0009_Maq.-de-TP.png</PackagePath>
+      <Modified>2019-05-19T18:26:01.815</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab_Ar-Condicionado.png">
+      <PackagePath>Src\Images\Laboratório\Lab_Ar-Condicionado.png</PackagePath>
+      <Modified>2019-05-19T18:26:01.816</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab_Exit.png">
+      <PackagePath>Src\Images\Laboratório\Lab_Exit.png</PackagePath>
+      <Modified>2019-05-19T18:26:01.817</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab_Fechadura-Eletronica.png">
+      <PackagePath>Src\Images\Laboratório\Lab_Fechadura-Eletronica.png</PackagePath>
+      <Modified>2019-05-19T18:26:01.817</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab_Notebook.png">
+      <PackagePath>Src\Images\Laboratório\Lab_Notebook.png</PackagePath>
+      <Modified>2019-05-19T18:26:01.818</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab_Parede.png">
+      <PackagePath>Src\Images\Laboratório\Lab_Parede.png</PackagePath>
+      <Modified>2019-05-19T18:26:01.819</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab__0000_Cadeira-Esq.png">
+      <PackagePath>Src\Images\Laboratório\Lab__0000_Cadeira-Esq.png</PackagePath>
+      <Modified>2019-05-19T18:26:01.819</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab__0001_Cadeira-Costa.png">
+      <PackagePath>Src\Images\Laboratório\Lab__0001_Cadeira-Costa.png</PackagePath>
+      <Modified>2019-05-19T18:26:01.820</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab__0002_TP.png">
+      <PackagePath>Src\Images\Laboratório\Lab__0002_TP.png</PackagePath>
+      <Modified>2019-05-19T18:26:01.821</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab__0003_Monitores.png">
+      <PackagePath>Src\Images\Laboratório\Lab__0003_Monitores.png</PackagePath>
+      <Modified>2019-05-19T18:26:01.822</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab__0004_Piso.png">
+      <PackagePath>Src\Images\Laboratório\Lab__0004_Piso.png</PackagePath>
+      <Modified>2019-05-19T18:26:01.822</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Menu\Botões\Configurações.png">
       <PackagePath>Src\Images\Menu\Botões\Configurações.png</PackagePath>
@@ -472,6 +568,10 @@
       <PackagePath>Src\Images\Rogue\roguelike run down_Animation 1_3.png</PackagePath>
       <Modified>2019-05-03T20:27:58.593</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Maps\Laborátorio\Laboratório.xml">
+      <PackagePath>Src\Maps\Laborátorio\Laboratório.xml</PackagePath>
+      <Modified>2019-05-19T18:26:01.823</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Maps\map.xml">
       <PackagePath>Src\Maps\map.xml</PackagePath>
       <Modified>2019-05-17T21:12:27.594</Modified>
@@ -479,6 +579,10 @@
     <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
       <Modified>2019-03-24T20:37:01.145</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Maps\Laborátorio\Laborátorio.txt">
+      <PackagePath>Src\Maps\Laborátorio\Laborátorio.txt</PackagePath>
+      <Modified>2019-05-19T18:26:01.824</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Animations\dead.gif">
       <PackagePath>Src\Animations\dead.gif</PackagePath>
@@ -538,15 +642,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2019-05-19T18:06:06.046</Modified>
+      <Modified>2019-05-19T19:41:01.378</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2019-05-19T18:06:06.047</Modified>
+      <Modified>2019-05-19T19:41:01.378</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Debug\Src\ButtonStyle.xbf">
       <PackagePath>Src\ButtonStyle.xbf</PackagePath>
-      <Modified>2019-05-19T18:06:06.046</Modified>
+      <Modified>2019-05-19T19:41:01.378</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.17763.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -554,11 +658,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2019-05-19T17:48:09.814</Modified>
+      <Modified>2019-05-19T19:18:46.370</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Debug\Core\RPG.exe">
       <PackagePath>RPG.exe</PackagePath>
-      <Modified>2019-05-19T18:06:08.014</Modified>
+      <Modified>2019-05-19T19:41:02.766</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

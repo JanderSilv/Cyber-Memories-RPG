@@ -17,6 +17,12 @@ namespace _3ReaisEngine.UI
 
     public delegate void Execute(object sender);
 
+    public enum AnchorType
+    {
+        Proporcional,
+        Exact
+    }
+
     public abstract class UIEntidade
     {
         public UIElement element;
@@ -26,7 +32,7 @@ namespace _3ReaisEngine.UI
         public Vector2 size = new Vector2(100, 50);
         public UIEntidade parent;
         public ManipulationModes manipulationMode { get { return element.ManipulationMode; } set { element.ManipulationMode = value; } }
-
+        public AnchorType anchor = AnchorType.Proporcional;
 
     }
 

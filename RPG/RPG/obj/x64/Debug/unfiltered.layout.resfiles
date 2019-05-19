@@ -39,6 +39,30 @@ Src\Images\Feiticeiro\sorcerer attack_Animation 1_8.png
 Src\Images\Feiticeiro\sorcerer attack_Animation 1_9.png
 Src\Images\Feiticeiro\sorcerer villain.png
 Src\Images\Feiticeiro\villain.png
+Src\Images\Laboratório\Assets-Laborátorio_0001_Livros.png
+Src\Images\Laboratório\Assets-Laborátorio_0002_Papeis.png
+Src\Images\Laboratório\Assets-Laborátorio_0003_Mesa-Vertical.png
+Src\Images\Laboratório\Assets-Laborátorio_0004_Mesa-Horizontal.png
+Src\Images\Laboratório\Assets-Laborátorio_0005_Perigo.png
+Src\Images\Laboratório\Assets-Laborátorio_0006_Vidrarias.png
+Src\Images\Laboratório\Assets-Laborátorio_0007_Armário.png
+Src\Images\Laboratório\Lab__0000_Cadeira-Esq.png
+Src\Images\Laboratório\Lab__0001_Cadeira-Costa.png
+Src\Images\Laboratório\Lab__0002_TP.png
+Src\Images\Laboratório\Lab__0003_Monitores.png
+Src\Images\Laboratório\Lab__0004_Piso.png
+Src\Images\Laboratório\Lab_0003_Máquinas.png
+Src\Images\Laboratório\Lab_0004_Extintor.png
+Src\Images\Laboratório\Lab_0005_Tubo.png
+Src\Images\Laboratório\Lab_0006_Luz.png
+Src\Images\Laboratório\Lab_0007_Grade.png
+Src\Images\Laboratório\Lab_0008_Planta.png
+Src\Images\Laboratório\Lab_0009_Maq.-de-TP.png
+Src\Images\Laboratório\Lab_Ar-Condicionado.png
+Src\Images\Laboratório\Lab_Exit.png
+Src\Images\Laboratório\Lab_Fechadura-Eletronica.png
+Src\Images\Laboratório\Lab_Notebook.png
+Src\Images\Laboratório\Lab_Parede.png
 Src\Images\Mago\wizard attack.png
 Src\Images\Mago\wizard death.png
 Src\Images\Mago\wizard fly forward.png
@@ -119,5 +143,7 @@ Src\Images\Zumbi\undead_hurt.gif
 Src\Images\Zumbi\undead_idle.gif
 Src\Images\Zumbi\undead_walk.gif
 Src\JunglerockAlpha.png
+Src\Maps\Laborátorio\Laborátorio.txt
+Src\Maps\Laborátorio\Laboratório.xml
 Src\Maps\map.xml
 Src\Opera-04.png

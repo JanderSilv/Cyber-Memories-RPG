@@ -56,9 +56,10 @@ namespace RPG.Src.Scripts
 
         public override void OnClick(MouseEvento e)
         {
-            UButton sair = new UButton("", new Vector2(50, 80), new Vector2(100, 50));
+            UButton sair = new UButton("", EntPos, new Vector2(100, 50));
             sair.setBackground("Src/Images/Menu/Botões/Sair.png");
             sair.setOnHover("Src/Images/Menu/Botões/Sair_Selecionado.png");
+            sair.anchor = AnchorType.Exact;
             AmbienteJogo.window.Add(sair, false);
         }
 

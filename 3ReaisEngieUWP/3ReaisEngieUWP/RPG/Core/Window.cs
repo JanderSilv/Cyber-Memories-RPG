@@ -28,6 +28,7 @@ namespace _3ReaisEngine.RPG.Core
         public List<Render> renders = new List<Render>();
         public List<Body> bodies = new List<Body>();
         public List<UIEntidade> uiElements = new List<UIEntidade>();
+        public List<UIEntidade> gameUIElements = new List<UIEntidade>(); 
 
         private Panel game_layer;
         private Panel ui_layer;
@@ -102,7 +103,33 @@ namespace _3ReaisEngine.RPG.Core
             Windows.UI.Xaml.Window.Current.CoreWindow.Activate();
         }
 
-        
+        public void UpdateWindow()
+        {
+            foreach (UIEntidade element in uiElements)
+            {
+                uptPos(element);
+            }
+
+            foreach (UIEntidade element in gameUIElements)
+            {
+                uptPos(element);
+                TranslateTransform tt = ((TranslateTransform) element.element.RenderTransform);
+                tt.X -= AmbienteJogo.currentCamera.drawOffset.x;
+                tt.Y -= AmbienteJogo.currentCamera.drawOffset.y;
+            }
+
+            for (int i = 0; i < entidades.Count; i++)
+            {
+                if (entidades[i] != null && !entidades[i].IsStatic) entidades[i].Update();
+            }
+
+            for (int i = 0; i < renders.Count; i++)
+            {
+                if (renders[i] == null) continue;
+                renders[i].transform.X = renders[i].entidade.EntPos.x - AmbienteJogo.currentCamera.drawOffset.x;
+                renders[i].transform.Y = renders[i].entidade.EntPos.y - AmbienteJogo.currentCamera.drawOffset.y;
+            }
+        }
 
         public void SetCurrent()
         {
@@ -186,16 +213,17 @@ namespace _3ReaisEngine.RPG.Core
 
         public void Add(UIEntidade element,bool UILayer = true)
         {
-            uiElements.Add(element);
+            
 
             if (UILayer==false)
             {
                 game_layer.Children.Add(element.element);
-               
+                gameUIElements.Add(element);
             }
             else
             {
                 ui_layer.Children.Add(element.element);
+                uiElements.Add(element);
             }
 
             uptPos(element);
@@ -262,33 +290,47 @@ namespace _3ReaisEngine.RPG.Core
             TranslateTransform tt = ((TranslateTransform)e.RenderTransform);
             Vector2 pos = element.position;
             Vector2 si = element.size;
-
-            if (parent != null)
+            if (element.anchor == AnchorType.Proporcional)
             {
-                Vector2 parentPos = parent.position;
-                Vector2 parentSi = parent.size;
-                TranslateTransform ptt = ((TranslateTransform)parent.element.RenderTransform);
+                if (parent != null)
+                {
+                    Vector2 parentPos = parent.position;
+                    Vector2 parentSi = parent.size;
+                    TranslateTransform ptt = ((TranslateTransform)parent.element.RenderTransform);
 
-                tt.X = ptt.X ;
-                tt.Y = ptt.Y ;
+                    tt.X = ptt.X;
+                    tt.Y = ptt.Y;
 
-                tt.X += 2 * (((pos.x / 2) / 100.0) * parentSi.x) - si.x / 2;
-                tt.Y += 2 * (((pos.y / 2) / 100.0) * parentSi.y) - si.y / 2;
+                    tt.X += 2 * (((pos.x / 2) / 100.0) * parentSi.x) - si.x / 2;
+                    tt.Y += 2 * (((pos.y / 2) / 100.0) * parentSi.y) - si.y / 2;
+                }
+                else
+                {
+                    tt.X = 2 * (((pos.x / 2) / 100.0) * Widht) - si.x / 2;
+                    tt.Y = 2 * (((pos.y / 2) / 100.0) * Height) - si.y / 2;
+                }
             }
             else
             {
-                tt.X = 2 * (((pos.x / 2) / 100.0) * Widht) - si.x / 2;
-                tt.Y = 2 * (((pos.y / 2) / 100.0) * Height) - si.y / 2;
+                if (parent != null)
+                {
+                    Vector2 parentPos = parent.position;
+                    Vector2 parentSi = parent.size;
+                    TranslateTransform ptt = ((TranslateTransform)parent.element.RenderTransform);
+
+                    tt.X = ptt.X + pos.x - si.x / 2;
+                    tt.Y = ptt.Y + pos.y - si.y / 2;
+                }
+                else
+                {
+                    tt.X = pos.x - si.x / 2;
+                    tt.Y = pos.y - si.y / 2;
+                }
             }
+           
         }
 
-        public void UpdateWindow()
-        {
-            foreach (UIEntidade element in uiElements)
-            {
-                uptPos(element);
-            }
-        }
+       
 
         private void Game_KeyDown(object sender, KeyRoutedEventArgs e)
         {

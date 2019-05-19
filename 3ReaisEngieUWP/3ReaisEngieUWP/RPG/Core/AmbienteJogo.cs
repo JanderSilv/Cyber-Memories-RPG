@@ -69,7 +69,7 @@ namespace _3ReaisEngine
 
                     currentCamera.Update();
                     gerenciadorEventos.Update();
-                    window.UpdateWindow();
+                   
                     gerenciadorFisica.UpdateColisions(window.colisores.ToArray());
 
                     Parallel.ForEach(window.bodies, (b) =>
@@ -83,17 +83,8 @@ namespace _3ReaisEngine
                         if (b.velocity.y > 0) b.velocity.y -= dragy;
                     });
 
-                    for (int i = 0; i < window.entidades.Count; i++)
-                    {
-                        if (window.entidades[i] != null && !window.entidades[i].IsStatic) window.entidades[i].Update();
-                    }
 
-                    for (int i = 0; i < window.renders.Count; i++)
-                    {
-                        if (window.renders[i] == null) continue;
-                        window.renders[i].transform.X = window.renders[i].entidade.EntPos.x - currentCamera.drawOffset.x;
-                        window.renders[i].transform.Y = window.renders[i].entidade.EntPos.y - currentCamera.drawOffset.y;
-                    }
+                    window.UpdateWindow();
                     
 
                     await Task.Delay(1000 / frameRate);
