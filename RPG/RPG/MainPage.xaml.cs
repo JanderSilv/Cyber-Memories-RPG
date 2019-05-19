@@ -18,7 +18,6 @@ namespace RPG
 
     public sealed partial class MainPage : Page
     {
-        public static Player p;
         Window window;
 
         public MainPage()
@@ -40,14 +39,33 @@ namespace RPG
             sair.setBackground("Src/Images/Menu/Botões/Sair.png");
             sair.setOnHover("Src/Images/Menu/Botões/Sair_Selecionado.png");
 
-            panel.addChild(play);
+           // panel.addChild(play);
             panel.addChild(conf);
             panel.addChild(sair);
             panel.manipulationMode = ManipulationModes.All;
 
-            window.AddUI(panel);
+            window.Add(play);
 
             window.SetCurrent();
+
+            Player p = new Player(new Vector2(window.Widht/2, window.Height/2));
+            p.Nome = "ntbp";
+            AmbienteJogo.AdcionarEntidade(new Tronco(new Vector2(100+window.Widht/2, window.Height/2)));
+            
+            AmbienteJogo.currentCamera.Seek = p;
+            AmbienteJogo.AdcionarEntidade(p);
+
+            //try
+            //{
+            //    Engine.save(p, "E:/Projects/RPG-LP2/RPG/RPG/Src/saves/player.txt");
+
+            //}catch(Exception e)
+            //{
+            //    Engine.Debug("Message: "+e.Message);
+            //    Engine.Debug("Stacktrace: "+e.StackTrace);
+            //    Engine.Debug("InnerException"+e.InnerException);
+            //}
+
 
         }
     }

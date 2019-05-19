@@ -51,7 +51,7 @@
             },
             "Newtonsoft.Json": {
               "target": "Package",
-              "version": "[12.0.1, )"
+              "version": "[12.0.2, )"
             },
             "TiledNet": {
               "target": "Package",

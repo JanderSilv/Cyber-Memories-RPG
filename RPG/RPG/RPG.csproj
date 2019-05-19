@@ -12,7 +12,7 @@
     <DefaultLanguage>pt-BR</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetPlatformVersion Condition=" '$(TargetPlatformVersion)' == '' ">10.0.17763.0</TargetPlatformVersion>
-    <TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
+    <TargetPlatformMinVersion>10.0.17134.0</TargetPlatformMinVersion>
     <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -103,11 +103,9 @@
     <Compile Include="Src\Scripts\Componentes\Estatus.cs" />
     <Compile Include="Src\Scripts\Componentes\Itinerario.cs" />
     <Compile Include="Src\Scripts\Componentes\Movel.cs" />
-    <Compile Include="Src\Scripts\CraftSystem.cs" />
+    <Compile Include="Src\Scripts\Managers\CraftSystem.cs" />
     <Compile Include="Src\Scripts\Entidades\Areia.cs" />
-    <Compile Include="Src\Scripts\Entidades\Caixa.cs" />
     <Compile Include="Src\Scripts\Componentes\Inventario.cs" />
-    <Compile Include="Src\Scripts\Entidades\Undead.cs" />
     <Compile Include="Src\Scripts\Habilidade\Envenenamento.cs" />
     <Compile Include="Src\Scripts\Habilidade\Trovao.cs" />
     <Compile Include="Src\Scripts\Interfaces\Armazenavel.cs" />
@@ -293,10 +291,15 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
-      <Version>6.1.7</Version>
+      <Version>6.2.8</Version>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json">
+      <Version>12.0.2</Version>
     </PackageReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Src\saves\" />
+  </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>

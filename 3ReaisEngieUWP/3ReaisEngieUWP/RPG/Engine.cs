@@ -11,13 +11,13 @@ namespace _3ReaisEngine
     public static class Engine
     {
 
-        public static bool salva(Object x, string path)
+        public static void save<T>(T x, string path)
         {
             string output = JsonConvert.SerializeObject(x);
-          
+           
             File.WriteAllText(path, output);
 
-            return true;
+            
         }
         public static T load<T>(string path)
         {

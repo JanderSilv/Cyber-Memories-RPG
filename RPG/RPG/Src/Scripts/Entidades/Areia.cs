@@ -53,14 +53,15 @@ namespace RPG.Src.Scripts
             col.tipo = TipoColisao.Dinamica;
             col.tamanho = r.size;
         }
+
         public override void OnClick(MouseEvento e)
         {
-
-          
-            UButton start = new UButton("Eu sou tronco", new Vector2(50, 50), new Vector2(150, 50));
-           // start.setBackground("Src/Images/Menu/Botões/Iniciar.png", Stretch.Fill);
-            AmbienteJogo.window.AddUI(start);
+            UButton sair = new UButton("", new Vector2(50, 80), new Vector2(100, 50));
+            sair.setBackground("Src/Images/Menu/Botões/Sair.png");
+            sair.setOnHover("Src/Images/Menu/Botões/Sair_Selecionado.png");
+            AmbienteJogo.window.Add(sair, false);
         }
+
     }
 
     [RequerComponente(typeof(Render))]

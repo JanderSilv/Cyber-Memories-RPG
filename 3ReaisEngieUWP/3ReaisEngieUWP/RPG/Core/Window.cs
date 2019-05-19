@@ -53,18 +53,12 @@ namespace _3ReaisEngine.RPG.Core
             canv.SetValue(Canvas.ZIndexProperty, 0);
             canv.KeyDown += Game_KeyDown;
             canv.KeyUp += Game_KeyUp;
-            // canv.PointerPressed += Game_PointerPressed;
-            //  canv.PointerReleased += Game_PointerReleased;
-
-
+        
 
             ui.Width = 840;
             ui.Height = 620;
             ui.SetValue(Canvas.ZIndexProperty, 1);
-            //  ui.PointerPressed += Game_PointerPressed;
-            //  ui.PointerReleased += Game_PointerReleased;
-
-            // root.Content = canv;
+          
             root.Height = canv.Height;
             root.Width = canv.Width;
 
@@ -89,19 +83,14 @@ namespace _3ReaisEngine.RPG.Core
             canv.SetValue(Canvas.ZIndexProperty, 0);
             canv.KeyDown += Game_KeyDown;
             canv.KeyUp += Game_KeyUp;
-            //   canv.PointerPressed += Game_PointerPressed;
-            //  canv.PointerReleased += Game_PointerReleased;
-
+         
             ui.Width = Widht;
             ui.Height = Height;
             ui.SetValue(Canvas.ZIndexProperty, 1);
-            //   ui.PointerPressed += Game_PointerPressed;
-            //   ui.PointerReleased += Game_PointerReleased;
-
+          
             root.Height = canv.Height;
             root.Width = canv.Width;
-            // root.Content = canv;
-
+         
             game_layer = canv;
             ui_layer = ui;
 
@@ -112,6 +101,8 @@ namespace _3ReaisEngine.RPG.Core
             ApplicationView.PreferredLaunchWindowingMode = ApplicationViewWindowingMode.PreferredLaunchViewSize;
             Windows.UI.Xaml.Window.Current.CoreWindow.Activate();
         }
+
+        
 
         public void SetCurrent()
         {
@@ -188,6 +179,39 @@ namespace _3ReaisEngine.RPG.Core
             }
         }
 
+        public void Add(UIElement element)
+        {
+            game_layer.Children.Add(element);
+        }
+
+        public void Add(UIEntidade element,bool UILayer = true)
+        {
+            uiElements.Add(element);
+
+            if (UILayer==false)
+            {
+                game_layer.Children.Add(element.element);
+               
+            }
+            else
+            {
+                ui_layer.Children.Add(element.element);
+            }
+
+            uptPos(element);
+
+            if (element is IUIStack)
+            {
+                foreach (UIEntidade i in ((IUIStack)element).getChilds()) Add(i,UILayer);
+            }
+        }
+
+        public void Add(UIEntidade[] elements, bool UILayer = true)
+        {
+            for (int i = 0; i < elements.Length; i++) Add(elements[i],UILayer);
+        }
+
+
         public void Remove(Entidade element)
         {
             entidades.Remove(element);
@@ -204,11 +228,6 @@ namespace _3ReaisEngine.RPG.Core
             }
         }
 
-        public void Add(UIElement element)
-        {
-            game_layer.Children.Add(element);
-        }
-
         public void Remove(UIElement element)
         {
             game_layer.Children.Remove(element);
@@ -216,22 +235,16 @@ namespace _3ReaisEngine.RPG.Core
 
         }
 
-        public void AddUI(UIEntidade element)
+        public void Remove(UIEntidade element,bool UILayer = true)
         {
-
-            uiElements.Add(element);
-            ui_layer.Children.Add(element.element);
-            uptPos(element);
-
-            if (element is IUIStack)
+            if (UILayer == false)
             {
-                foreach (UIEntidade i in ((IUIStack)element).getChilds()) AddUI(i);
+                game_layer.Children.Remove(element.element);
             }
-        }
-
-        public void Remove(UIEntidade element)
-        {
-            ui_layer.Children.Remove(element.element);
+            else
+            {
+                ui_layer.Children.Remove(element.element);
+            }
             if (element is IUIStack)
             {
                 foreach (UIEntidade i in ((IUIStack)element).getChilds()) Remove(i);
@@ -275,57 +288,6 @@ namespace _3ReaisEngine.RPG.Core
             {
                 uptPos(element);
             }
-        }
-
-        private void Game_PointerReleased(object sender, PointerRoutedEventArgs e)
-        {
-            Pointer ptr = e.Pointer;
-            PointerPoint ptrPt = e.GetCurrentPoint(game_layer);
-            MouseEvento me = new MouseEvento();
-            me.Tipo = Modificador.ButtonUp;
-            me.Modificador = e.KeyModifiers;
-            me.Position = new Vector2((float)ptrPt.Position.X, (float)ptrPt.Position.Y);
-
-            if (ptrPt.Properties.IsLeftButtonPressed)
-            {
-                me.Botao = MouseButton.Left;
-            }
-            if (ptrPt.Properties.IsMiddleButtonPressed)
-            {
-                me.Botao = MouseButton.Scroll;
-            }
-            if (ptrPt.Properties.IsRightButtonPressed)
-            {
-                me.Botao = MouseButton.Right;
-            }
-
-
-            AmbienteJogo.EnviarEvento(me);
-        }
-
-        private void Game_PointerPressed(object sender, PointerRoutedEventArgs e)
-        {
-            Windows.UI.Xaml.Window.Current.CoreWindow.Activate();
-            Pointer ptr = e.Pointer;
-            PointerPoint ptrPt = e.GetCurrentPoint(game_layer);
-            MouseEvento me = new MouseEvento();
-            me.Tipo = Modificador.ButtonDown;
-            me.Modificador = e.KeyModifiers;
-            me.Position = new Vector2((float)ptrPt.Position.X, (float)ptrPt.Position.Y);
-
-            if (ptrPt.Properties.IsLeftButtonPressed)
-            {
-                me.Botao = MouseButton.Left;
-            }
-            if (ptrPt.Properties.IsMiddleButtonPressed)
-            {
-                me.Botao = MouseButton.Scroll;
-            }
-            if (ptrPt.Properties.IsRightButtonPressed)
-            {
-                me.Botao = MouseButton.Right;
-            }
-            AmbienteJogo.EnviarEvento(me);
         }
 
         private void Game_KeyDown(object sender, KeyRoutedEventArgs e)
