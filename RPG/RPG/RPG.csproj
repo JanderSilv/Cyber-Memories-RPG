@@ -192,6 +192,8 @@
     <Content Include="Src\Images\tiles\tronco.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Src\Maps\Laborátorio\Laboratório.xml" />
+    <Content Include="Src\Maps\Laborátorio\Laborátorio.txt" />
     <Content Include="Src\Maps\map.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
