@@ -131,6 +131,30 @@
     <None Include="RPG_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Src\Images\Laboratório\Assets-Laborátorio_0001_Livros.png" />
+    <Content Include="Src\Images\Laboratório\Assets-Laborátorio_0002_Papeis.png" />
+    <Content Include="Src\Images\Laboratório\Assets-Laborátorio_0003_Mesa-Vertical.png" />
+    <Content Include="Src\Images\Laboratório\Assets-Laborátorio_0004_Mesa-Horizontal.png" />
+    <Content Include="Src\Images\Laboratório\Assets-Laborátorio_0005_Perigo.png" />
+    <Content Include="Src\Images\Laboratório\Assets-Laborátorio_0006_Vidrarias.png" />
+    <Content Include="Src\Images\Laboratório\Assets-Laborátorio_0007_Armário.png" />
+    <Content Include="Src\Images\Laboratório\Lab_0003_Máquinas.png" />
+    <Content Include="Src\Images\Laboratório\Lab_0004_Extintor.png" />
+    <Content Include="Src\Images\Laboratório\Lab_0005_Tubo.png" />
+    <Content Include="Src\Images\Laboratório\Lab_0006_Luz.png" />
+    <Content Include="Src\Images\Laboratório\Lab_0007_Grade.png" />
+    <Content Include="Src\Images\Laboratório\Lab_0008_Planta.png" />
+    <Content Include="Src\Images\Laboratório\Lab_0009_Maq.-de-TP.png" />
+    <Content Include="Src\Images\Laboratório\Lab_Ar-Condicionado.png" />
+    <Content Include="Src\Images\Laboratório\Lab_Exit.png" />
+    <Content Include="Src\Images\Laboratório\Lab_Fechadura-Eletronica.png" />
+    <Content Include="Src\Images\Laboratório\Lab_Notebook.png" />
+    <Content Include="Src\Images\Laboratório\Lab_Parede.png" />
+    <Content Include="Src\Images\Laboratório\Lab__0000_Cadeira-Esq.png" />
+    <Content Include="Src\Images\Laboratório\Lab__0001_Cadeira-Costa.png" />
+    <Content Include="Src\Images\Laboratório\Lab__0002_TP.png" />
+    <Content Include="Src\Images\Laboratório\Lab__0003_Monitores.png" />
+    <Content Include="Src\Images\Laboratório\Lab__0004_Piso.png" />
     <Content Include="Src\Images\Menu\Botões\Configurações.png" />
     <Content Include="Src\Images\Menu\Botões\Configurações_Selecionado.png" />
     <Content Include="Src\Images\Menu\Botões\Controles.png" />
