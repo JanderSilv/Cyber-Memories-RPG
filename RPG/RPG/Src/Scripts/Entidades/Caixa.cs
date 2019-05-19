@@ -29,13 +29,13 @@ namespace RPG.Src.Scripts
           
             
             Render r = GetComponente<Render>();
-            Colisao col = GetComponente<Colisao>();
+            
             caminho = GetComponente<Itinerario>();
             mov = GetComponente<Movel>();
-
+            Colisao col = GetComponente<Colisao>();
             col.tipo = TipoColisao.Dinamica;
             r.LoadImage("Src/Opera-04.png");            
-            mov.col = col;
+           
             caminho.movel = mov;
 
             caminho.AddPos("1", new Vector2(50, 50));
@@ -58,9 +58,6 @@ namespace RPG.Src.Scripts
           
         }
 
-        public override void OnClick(MouseEvento e)
-        {
-            Engine.Debug("FUI CUTUCADO");
-        }
+       
     }
 }

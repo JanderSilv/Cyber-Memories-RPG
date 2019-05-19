@@ -20,7 +20,7 @@ namespace _3ReaisEngine.Core
             //bacon
             XmlDocument doc = new XmlDocument();
             doc.Load(path);
-            int tileWidht = 32, tileHeight = 32,layerWidht,layerHeihgt;
+            int tileWidht = 64, tileHeight = 64,layerWidht,layerHeihgt;
             int[,] matt;
             string[] arr;
 

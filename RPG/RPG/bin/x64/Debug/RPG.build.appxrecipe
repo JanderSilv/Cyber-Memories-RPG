@@ -661,10 +661,7 @@
     <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Animations\Dead.png">
       <PackagePath>Src\Animations\Dead.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\cabeca.png">
-      <PackagePath>Src\cabeca.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\JunglerockAlpha.png">
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\JunglerockAlpha.png">
       <PackagePath>Src\JunglerockAlpha.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Sprites\Bau\Treasure Chest closed 254x254.png">

@@ -24,6 +24,11 @@ namespace _3ReaisEngine.Core
             }
          }
       
+        public virtual void Init()
+        {
+
+        }
+
         public void setEntidade(Entidade e)
         {
             entidade = e;

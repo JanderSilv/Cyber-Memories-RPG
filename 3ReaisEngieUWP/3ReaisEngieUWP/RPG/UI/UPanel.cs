@@ -7,105 +7,97 @@ using _3ReaisEngine.Core;
 using Windows.UI;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Xaml.Shapes;
 
 namespace _3ReaisEngine.UI
 {
-    public class UPanel : IUIEntidade
+    public class UPanel : UIEntidade, IUIStack
     {
-        Rectangle element = new Rectangle();
-        TranslateTransform transform = new TranslateTransform();
+        Rectangle rect = new Rectangle();
 
         public Brush brush = new SolidColorBrush(Colors.Aqua);
-        private Vector2 pos = new Vector2(), si = new Vector2(100, 50);
-        public Vector2 position { get { return pos; } set { pos = value; transform.X = value.x; transform.Y = value.y; } }
-        public Vector2 size { get { return si; } set { si = value; element.Width = value.x; element.Height = value.y; } }
 
-        public void Content(byte Red,byte Green,byte Blue,byte Alpha )
+        public List<UIEntidade> childs = new List<UIEntidade>();
+
+
+        public void start()
         {
-            Color C = new Color() { A = Alpha, B = Blue, R = Red, G = Green};
+            rect.Fill = brush;
+            rect.HorizontalAlignment = HorizontalAlignment.Left;
+            rect.VerticalAlignment = VerticalAlignment.Top;
+            rect.ManipulationDelta += rect_ManipulationDelta;
+            rect.RenderTransform = transform;
+            element = rect;
+        }
+
+        public UPanel()
+        {
+           
+            rect.Width = 100;
+            rect.Height = 50;
+            transform.X = 0;
+            transform.Y = 0;
+            start();
+
+        }
+
+
+
+        public UPanel(Vector2 pos)
+        {
+            
+            rect.Width = 100;
+            rect.Height = 50;
+            position = pos;
+            start();
+
+        }
+        public UPanel(Vector2 pos, Vector2 size)
+        {
+
+            
+            rect.Width = size.x;
+            rect.Height = size.y;
+            this.size = size;
+            position = pos;
+            start();
+        }
+
+        public void Content(byte Red, byte Green, byte Blue, byte Alpha)
+        {
+            Color C = new Color() { A = Alpha, B = Blue, R = Red, G = Green };
             brush = new SolidColorBrush(C);
         }
         public void Content(Color cor)
         {
             brush = new SolidColorBrush(cor);
         }
-        public string Nome;
 
-        public UPanel()
+        public void addChild(UIEntidade child)
         {
-            
-            element.Fill = brush;
-
-            element.Width = 100;
-            element.Height = 50;
-
-            element.HorizontalAlignment = HorizontalAlignment.Left;
-            element.VerticalAlignment = VerticalAlignment.Top;
-
-            transform.X = 0;
-            transform.Y = 0;
-
-            element.RenderTransform = transform;
-
-
-
-        }
-        public UPanel(Vector2 pos)
-        {
-            element.Fill = brush;
-
-            element.Width = 100;
-            element.Height = 50;
-
-            element.HorizontalAlignment = HorizontalAlignment.Left;
-            element.VerticalAlignment = VerticalAlignment.Top;
-
-            this.pos = pos;
-
-            element.RenderTransform = transform;
-
-
-
-        }
-        public UPanel(Vector2 pos, Vector2 size)
-        {
-
-            element.Fill = brush;
-
-            element.Width = size.x;
-            element.Height = size.y;
-            this.si = size;
-
-
-            element.HorizontalAlignment = HorizontalAlignment.Left;
-            element.VerticalAlignment = VerticalAlignment.Top;
-
-            this.pos = pos;
-
-            element.RenderTransform = transform;
-
-
-
+            child.parent = this;
+            childs.Add(child);
         }
 
-        public UIElement getElement()
+        public void removeChild(UIEntidade child)
         {
-            return element;
+            child.parent = null;
+            childs.Remove(child);
         }
-        public Vector2 getPosition()
+
+        public List<UIEntidade> getChilds()
         {
-            return pos;
+            return childs;
         }
-        public Vector2 getSize()
+
+        private void rect_ManipulationDelta(object sender, ManipulationDeltaRoutedEventArgs e)
         {
-            return si;
+            position.x += (float)e.Delta.Translation.X;
+            position.y += (float)e.Delta.Translation.Y;
         }
-        public string getName()
-        {
-            return Nome;
-        }
+
     }
 }

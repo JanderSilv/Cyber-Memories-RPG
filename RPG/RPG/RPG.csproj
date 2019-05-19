@@ -103,6 +103,7 @@
     <Compile Include="Src\Scripts\Componentes\Estatus.cs" />
     <Compile Include="Src\Scripts\Componentes\Itinerario.cs" />
     <Compile Include="Src\Scripts\Componentes\Movel.cs" />
+    <Compile Include="Src\Scripts\CraftSystem.cs" />
     <Compile Include="Src\Scripts\Entidades\Areia.cs" />
     <Compile Include="Src\Scripts\Entidades\Caixa.cs" />
     <Compile Include="Src\Scripts\Componentes\Inventario.cs" />
@@ -194,9 +195,6 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Src\Audio\serrote.wav">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Src\cabeca.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Src\dance.gif">

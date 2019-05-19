@@ -10,99 +10,58 @@ using Windows.UI.Xaml.Media;
 
 namespace _3ReaisEngine.UI
 {
-    public class UText : IUIEntidade
+    public class UText : UIEntidade
     {
-        TextBlock element = new TextBlock();
-        TranslateTransform transform = new TranslateTransform();
-
-        private Vector2 pos = new Vector2(), si = new Vector2(100, 50);
-        public Vector2 position { get { return pos; } set { pos = value; transform.X = value.x; transform.Y = value.y; } }
-        public Vector2 size { get { return si; } set { si = value; element.Width = value.x; element.Height = value.y; } }
-        public string content { get { return element.Text; } set { element.Text = value; } }
-        public string Nome;
-
-        public UIElement getElement()
+        TextBlock txt = new TextBlock();
+      
+        public string content { get { return txt.Text; } set { txt.Text = value; } }
+      
+        void start()
         {
-            return element;
-        }
-        public Vector2 getPosition()
-        {
-            return pos;
-        }
-        public Vector2 getSize()
-        {
-            return si;
-        }
-        public string getName()
-        {
-            return Nome;
+            txt.HorizontalAlignment = HorizontalAlignment.Left;
+            txt.VerticalAlignment = VerticalAlignment.Top;
+            txt.RenderTransform = transform;
         }
 
         public UText()
         {
-            element.Width = 100;
-            element.Height = 50;
-
-            element.HorizontalAlignment = HorizontalAlignment.Left;
-            element.VerticalAlignment = VerticalAlignment.Top;
-
+            txt.Width = 100;
+            txt.Height = 50;
             transform.X = 100;
             transform.Y = 100;
+            txt.Text = "UText";
 
-            element.Text = "UText";
-
-            element.RenderTransform = transform;
         }
         public UText(string text)
         {
-            element.Width = 100;
-            element.Height = 50;
-            
-            element.HorizontalAlignment = HorizontalAlignment.Left;
-            element.VerticalAlignment = VerticalAlignment.Top;
-
+            txt.Width = 100;
+            txt.Height = 50;
             transform.X = 0;
             transform.Y = 0;
-
-            element.Text = text;
-
-            element.RenderTransform = transform;
+            txt.Text = text;
+            start();
         }
         public UText(string text,Vector2 position)
         {
 
-            element.Width = 100;
-            element.Height = 50;
-
-            element.HorizontalAlignment = HorizontalAlignment.Left;
-            element.VerticalAlignment = VerticalAlignment.Top;
-
+            txt.Width = 100;
+            txt.Height = 50;
             transform.X = position.x;
             transform.Y = position.y;
-
-            pos = position;
-
-            element.Text = text;
-            element.RenderTransform = transform;
-          
+            position = position;
+            txt.Text = text;
+            start();
         }
         public UText(string text,Vector2 position, Vector2 size)
         {
-            element.Width = size.x;
-            element.Height = size.y;
-
-            element.HorizontalAlignment = HorizontalAlignment.Left;
-            element.VerticalAlignment = VerticalAlignment.Top;
-
+            txt.Width = size.x;
+            txt.Height = size.y;
             transform.X = position.x;
             transform.Y = position.y;
-
-            pos = position;
-            si = size;
-
-            element.Text = text;
-            element.RenderTransform = transform;
-          
+            position = position;
+            size = size;
+            txt.Text = text;
+            start();
         }
 
     }

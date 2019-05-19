@@ -1,4 +1,5 @@
 ﻿using _3ReaisEngine;
+using _3ReaisEngine.Attributes;
 using _3ReaisEngine.Components;
 using _3ReaisEngine.Core;
 
@@ -23,7 +24,7 @@ using System.Threading.Tasks;
         
     }
 
-    
+    [RequerComponente(typeof(Movel))]
     public class Itinerario : Componente<Itinerario>
     {    
         Dictionary<string, No> caminho = new Dictionary<string, No>();
@@ -34,7 +35,12 @@ using System.Threading.Tasks;
         float espera = 3;
         public Movel movel;
 
-        public Itinerario()
+    public override void Init()
+    {
+        movel = entidade.GetComponente<Movel>();
+    }
+
+    public Itinerario()
         {
             atual = null;
             destino = null;

@@ -66,14 +66,28 @@ namespace _3ReaisEngine
                         Engine.Debug("Window is missing");
                         continue;
                     }
+
                     currentCamera.Update();
                     gerenciadorEventos.Update();
+                    window.UpdateWindow();
                     gerenciadorFisica.UpdateColisions(window.colisores.ToArray());
 
-                    for(int i = 0; i < window.entidades.Count; i++)
+                    Parallel.ForEach(window.bodies, (b) =>
+                    {
+                        b.position += b.velocity;
+                        float dragx = (Math.Abs(b.velocity.x) < b.drag) ? Math.Abs(b.velocity.x) : b.drag;
+                        float dragy = (Math.Abs(b.velocity.y) < b.drag) ? Math.Abs(b.velocity.y) : b.drag;
+                        if (b.velocity.x < 0) b.velocity.x += dragx;
+                        if (b.velocity.x > 0) b.velocity.x -= dragx;
+                        if (b.velocity.y < 0) b.velocity.y += dragy;
+                        if (b.velocity.y > 0) b.velocity.y -= dragy;
+                    });
+
+                    for (int i = 0; i < window.entidades.Count; i++)
                     {
                         if (window.entidades[i] != null && !window.entidades[i].IsStatic) window.entidades[i].Update();
                     }
+
                     for (int i = 0; i < window.renders.Count; i++)
                     {
                         if (window.renders[i] == null) continue;

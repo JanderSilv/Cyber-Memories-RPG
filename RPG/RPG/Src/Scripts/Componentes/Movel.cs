@@ -8,55 +8,45 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-
+[RequerComponente(typeof(Body))]
 public class Movel:Componente<Movel>
 {
-    public Colisao col;
     
-    public bool Mover(float x, float y)
+    public Body bod;
+    public override void Init()
     {
-        if (col == null)
-        {
-            entidade.EntPos.x += x;
-            entidade.EntPos.y += y;
-            return true;
-        }
-
-        bool m = false;
         
-        if (x < 0) if (col.momentoDeColisao.z == 0){ entidade.EntPos.x += x; m = true; }
-        if (x > 0) if (col.momentoDeColisao.x == 0) entidade.EntPos.x += x;m = true;
+        bod = entidade.GetComponente<Body>();
+    }
 
-        if (y < 0) if (col.momentoDeColisao.w == 0) { entidade.EntPos.y += y; m = true; }
-        if (y > 0) if (col.momentoDeColisao.y == 0) { entidade.EntPos.y += y; m = true; }
-        return m;
+    public void Mover(float x, float y)
+    {
+
+        bod.velocity.x = x;
+        bod.velocity.y = y;
+       
+     
     }
 
    public void MoveTo(Vector2 target,float vel)
     {
        
-            if (target.x < entidade.EntPos.x) if (col.momentoDeColisao.z == 0) entidade.EntPos.x -= vel;
-            if (target.x > entidade.EntPos.x) if (col.momentoDeColisao.x == 0) entidade.EntPos.x += vel;
-            if (target.y < entidade.EntPos.y) if (col.momentoDeColisao.w == 0) entidade.EntPos.y -= vel;
-            if (target.x > entidade.EntPos.y) if (col.momentoDeColisao.y == 0) entidade.EntPos.y += vel;
+            if (target.x < entidade.EntPos.x)  bod.velocity.x = -vel;
+            if (target.x > entidade.EntPos.x)  bod.velocity.x = vel;
+            if (target.y < entidade.EntPos.y)  bod.velocity.y = -vel;
+            if (target.x > entidade.EntPos.y)  bod.velocity.y = vel;
         
     }
 
     public bool Mover(Vector2 direcao)
     {
-        if (col == null)
-        {
-            entidade.EntPos += direcao;
-            return false;
-        }
-
         bool m = false;
        
-        if (direcao.x < 0) if (col.momentoDeColisao.z == 0) { entidade.EntPos.x += direcao.x; m = true; }
-        if (direcao.x > 0) if (col.momentoDeColisao.x == 0) entidade.EntPos.x += direcao.x; m = true;
+        if (direcao.x < 0)  { bod.velocity.x = direcao.x; m = true; }
+        if (direcao.x > 0)  { bod.velocity.x = direcao.x; m = true; }
 
-        if (direcao.y < 0) if (col.momentoDeColisao.w == 0) { entidade.EntPos.y += direcao.y; m = true; }
-        if (direcao.y > 0) if (col.momentoDeColisao.y == 0) { entidade.EntPos.y += direcao.y; m = true; }
+        if (direcao.y < 0)  { bod.velocity.y = direcao.y; m = true; }
+        if (direcao.y > 0)  { bod.velocity.y = direcao.y; m = true; }
         return m;
     }
 

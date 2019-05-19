@@ -8,6 +8,7 @@ namespace _3ReaisEngine.Core
     public interface IComponente
     {
         int getRegister();
+        void Init();
         void setEntidade(Entidade e);
     }
 }

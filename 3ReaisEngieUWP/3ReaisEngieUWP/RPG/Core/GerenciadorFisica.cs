@@ -34,15 +34,20 @@ namespace _3ReaisEngine.Core
             Vector2 safeDist = Vector2.Zero;
             float angleCol;
             Vector2 dir;
+            Vector2 velocity;
+            Body b;
 
             for (int i = 0; i < lenght; i++)
             {
                 if (array[i].tipo == TipoColisao.Estatica) continue;
-
+                velocity = Vector2.Zero;
                 array[i].momentoDeColisao.w = 0;
                 array[i].momentoDeColisao.x = 0;
                 array[i].momentoDeColisao.y = 0;
                 array[i].momentoDeColisao.z = 0;
+
+                
+                if((b = array[i].entidade.GetComponente<Body>()) != null) velocity = b.velocity;
 
                 for (int j = 0; j < lenght; j++)
                 {
@@ -52,16 +57,33 @@ namespace _3ReaisEngine.Core
                     safeDist.x = (array[i].tamanho.x + array[j].tamanho.x) / 2.0f;
                     safeDist.y = (array[i].tamanho.y + array[j].tamanho.y) / 2.0f;
 
-                  
-                    if (distance.x > safeDist.x || distance.y > safeDist.y) continue;
+                    if ((distance.x + velocity.x) > safeDist.x || (distance.y + velocity.y) > safeDist.y) continue;
 
                     angleCol = GetAngle(array[i].Position, array[j].Position, new Vector2(1, 0));
                     dir = (angleCol < GetAngle(array[i].Position, (array[i].Position + array[i].tamanho / 2.0f), Vector2.right) ? Vector2.right : Vector2.up);
+                 
 
-                    if (array[i].Position.x > array[j].Position.x && dir == Vector2.right) array[i].momentoDeColisao.z = -1;
-                    if (array[i].Position.x < array[j].Position.x && dir == Vector2.right) array[i].momentoDeColisao.x = -1;                   
-                    if (array[i].Position.y > array[j].Position.y && dir == Vector2.up) array[i].momentoDeColisao.w = -1;
-                    if (array[i].Position.y < array[j].Position.y && dir == Vector2.up) array[i].momentoDeColisao.y = -1;
+                    if (array[i].Position.x+velocity.x > array[j].Position.x && dir == Vector2.right)
+                    {
+                        array[i].momentoDeColisao.z = 1;
+                        if (velocity.x < 0) velocity.x = 0;
+                    }
+                    if (array[i].Position.x+velocity.x < array[j].Position.x && dir == Vector2.right)
+                    {
+                        array[i].momentoDeColisao.x = 1;
+                        if (velocity.x > 0) velocity.x = 0;
+                    }
+                    if (array[i].Position.y+velocity.y > array[j].Position.y && dir == Vector2.up)
+                    {
+                        array[i].momentoDeColisao.w = 1;
+                        if (velocity.y < 0) velocity.y = 0;
+                    }
+                    if (array[i].Position.y+velocity.y < array[j].Position.y && dir == Vector2.up)
+                    {
+                        array[i].momentoDeColisao.y = 1;
+                        if (velocity.y > 0) velocity.y = 0;
+                    }
+                 
                     array[i].onColisionAction?.Invoke(array[j]);
 
                 }

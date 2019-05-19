@@ -15,6 +15,7 @@ namespace _3ReaisEngine.Components
     public class Render : Componente<Render>
     {
         public Image img;
+        public Vector2 size { get => new Vector2((float)img.Width, (float)img.Height); set { img.Width = value.x; img.Height = value.y; } }
         public TranslateTransform transform;
        
 

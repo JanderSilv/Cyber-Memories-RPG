@@ -7,8 +7,11 @@ namespace _3ReaisEngine.Core
 
     public class Input
     {
-
+        byte MouseButtons =0;
+        Vector2 mousePos = Vector2.Zero;
+        public Vector2 MouseDelta { get => MouseDelta; private set { MouseDelta = value; } }
         byte[] teclado = new byte[(int)(VirtualKey.GamepadRightThumbstickLeft+1)];
+        byte[] tecladoUp = new byte[(int)(VirtualKey.GamepadRightThumbstickLeft + 1)];
         List<VirtualKey> keyUp = new List<VirtualKey>();
 
         public Input()
@@ -18,15 +21,24 @@ namespace _3ReaisEngine.Core
         
         public bool UpdateMouse(MouseEvento e)
         {
-
+            
+            MouseDelta = e.Position - mousePos;
+            mousePos = e.Position;
+            if (e.Tipo == Modificador.ButtonDown)
+            {
+                MouseButtons |= (byte)e.Botao;
+            }
+            else
+            {
+                MouseButtons ^= (byte)e.Botao;
+            }
             return false;
         }
 
         public bool UpdateTeclado(TecladoEvento e)
         {
             int k = e.Tecla;
-            keyUp.Clear();
-
+            for (int i = 0; i < tecladoUp.Length; i++) tecladoUp[i] = 0;
            
                 if (e.Modificador == (byte)ModificadorList.KeyDown)
                 {
@@ -35,7 +47,7 @@ namespace _3ReaisEngine.Core
                 else if (e.Modificador == (byte)ModificadorList.KeyUp)
                 {
                     teclado[k] = 0;
-                    keyUp.Add((VirtualKey)k);
+                    tecladoUp[k] = 1;
                     
                 }
             
@@ -54,7 +66,13 @@ namespace _3ReaisEngine.Core
         }
         public bool TeclaSolta(VirtualKey key)
         {
-            return keyUp.Contains(key);
+            return tecladoUp[(int)key]==1;
         }
+
+        public bool MouseButton(MouseButton btn)
+        {
+            return (MouseButtons & (byte)btn)==(byte)btn;
+        }
+        
     }
 }

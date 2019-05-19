@@ -1,11 +1,15 @@
-﻿using _3ReaisEngine.Attributes;
+﻿using _3ReaisEngine;
+using _3ReaisEngine.Attributes;
 using _3ReaisEngine.Components;
 using _3ReaisEngine.Core;
-
+using _3ReaisEngine.Events;
+using _3ReaisEngine.UI;
+using Windows.UI.Xaml.Media;
 
 namespace RPG.Src.Scripts
 {
     [RequerComponente(typeof(Render))]
+    
     public class Areia: Entidade
     {
         public Areia(Vector2 pos)
@@ -13,8 +17,9 @@ namespace RPG.Src.Scripts
             EntPos = pos;
             Render r = GetComponente<Render>();
             r.LoadImage("Src/Images/tiles/areia.png");
-            r.img.Width = 32;
-            r.img.Height = 32;
+            r.img.Width = 64;
+            r.img.Height = 64;
+           
         }
     }
 
@@ -26,9 +31,11 @@ namespace RPG.Src.Scripts
             EntPos = pos;
             Render r = GetComponente<Render>();
             r.LoadImage("Src/Images/tiles/grama.png");
-            r.img.Width = 32;
-            r.img.Height = 32;
+            r.img.Width = 64;
+            r.img.Height = 64;
+          
         }
+
     }
 
     [RequerComponente(typeof(Render))]
@@ -39,8 +46,20 @@ namespace RPG.Src.Scripts
             EntPos = pos;
             Render r = GetComponente<Render>();
             r.LoadImage("Src/Images/tiles/tronco.png");
-            r.img.Width = 32;
-            r.img.Height = 32;
+            r.img.Width = 64;
+            r.img.Height = 64;
+            AddComponente<Colisao>();
+            Colisao col = GetComponente<Colisao>();
+            col.tipo = TipoColisao.Dinamica;
+            col.tamanho = r.size;
+        }
+        public override void OnClick(MouseEvento e)
+        {
+
+          
+            UButton start = new UButton("Eu sou tronco", new Vector2(50, 50), new Vector2(150, 50));
+           // start.setBackground("Src/Images/Menu/Botões/Iniciar.png", Stretch.Fill);
+            AmbienteJogo.window.AddUI(start);
         }
     }
 
@@ -52,8 +71,12 @@ namespace RPG.Src.Scripts
             EntPos = pos;
             Render r = GetComponente<Render>();
             r.LoadImage("Src/Images/tiles/flores.png");
-            r.img.Width = 32;
-            r.img.Height = 32;
+            r.img.Width = 64;
+            r.img.Height = 64;
+            AddComponente<Colisao>();
+            Colisao col = GetComponente<Colisao>();
+            col.tipo = TipoColisao.Dinamica;
+            col.tamanho = r.size;
         }
     }
 
@@ -65,8 +88,15 @@ namespace RPG.Src.Scripts
             EntPos = pos;
             Render r = GetComponente<Render>();
             r.LoadImage("Src/Images/tiles/arvore.png");
-            r.img.Width = 32;
-            r.img.Height = 96;
+            r.img.Width = 64*2;
+            r.img.Height = 64*3;
+            AddComponente<Colisao>();
+            Colisao col = GetComponente<Colisao>();
+            col.tamanho = new Vector2(64*2, 64);
+            col.relativePos = new Vector2(128, 64*3);
+            col.tipo = TipoColisao.Dinamica;
+            
+            
         }
     }
 
@@ -78,8 +108,12 @@ namespace RPG.Src.Scripts
             EntPos = pos;
             Render r = GetComponente<Render>();
             r.LoadImage("Src/Images/tiles/rocha1.png");
-            r.img.Width = 32;
-            r.img.Height = 32;
+            r.img.Width = 64;
+            r.img.Height = 64;
+            AddComponente<Colisao>();
+            Colisao col = GetComponente<Colisao>();
+            col.tipo = TipoColisao.Dinamica;
+            col.tamanho = r.size;
         }
     }
 
@@ -91,8 +125,12 @@ namespace RPG.Src.Scripts
             EntPos = pos;
             Render r = GetComponente<Render>();
             r.LoadImage("Src/Images/tiles/rocha2.png");
-            r.img.Width = 32;
-            r.img.Height = 32;
+            r.img.Width = 64;
+            r.img.Height = 64;
+            AddComponente<Colisao>();
+            Colisao col = GetComponente<Colisao>();
+            col.tipo = TipoColisao.Dinamica;
+            col.tamanho = r.size;
         }
     }
 

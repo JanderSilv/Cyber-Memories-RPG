@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-05-14T13:20:53.687</Modified>
+      <Modified>2019-05-19T12:38:12.619</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\bin\x64\Debug\RPG.exe">
       <PackagePath>entrypoint\RPG.exe</PackagePath>
-      <Modified>2019-05-14T12:48:08.721</Modified>
+      <Modified>2019-05-19T12:38:02.710</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sonia\.nuget\packages\runtime.win10-x64.microsoft.netcore.universalwindowsplatform\6.1.7\runtimes\win10-x64\nativeassets\uap10.0.15138\clrcompression.dll">
       <PackagePath>clrcompression.dll</PackagePath>
@@ -696,7 +696,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\3ReaisEngieUWP\3ReaisEngieUWP\bin\x64\Debug\3ReaisEngieUWP.dll">
       <PackagePath>3ReaisEngieUWP.dll</PackagePath>
-      <Modified>2019-05-13T20:12:41.925</Modified>
+      <Modified>2019-05-19T12:37:40.535</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.17763.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
@@ -708,7 +708,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Animations\dead.gif">
       <PackagePath>Src\Animations\dead.gif</PackagePath>
-      <Modified>2019-04-09T18:17:59.452</Modified>
+      <Modified>2019-05-17T10:46:18.201</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Animations\idle.gif">
       <PackagePath>Src\Animations\idle.gif</PackagePath>
@@ -880,11 +880,7 @@
       <PackagePath>Src\Animations\Dead.png</PackagePath>
       <Modified>2019-04-09T18:17:59.408</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\cabeca.png">
-      <PackagePath>Src\cabeca.png</PackagePath>
-      <Modified>2019-04-12T17:02:03.675</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\JunglerockAlpha.png">
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\JunglerockAlpha.png">
       <PackagePath>Src\JunglerockAlpha.png</PackagePath>
       <Modified>2019-04-12T17:02:03.675</Modified>
     </AppxPackagedFile>
@@ -1170,7 +1166,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Maps\map.xml">
       <PackagePath>Src\Maps\map.xml</PackagePath>
-      <Modified>2019-05-13T20:08:35.138</Modified>
+      <Modified>2019-05-17T21:12:27.594</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
@@ -1190,19 +1186,19 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\bin\x64\Debug\RPG.xr.xml">
       <PackagePath>RPG.xr.xml</PackagePath>
-      <Modified>2019-05-13T19:50:20.570</Modified>
+      <Modified>2019-05-18T14:41:16.826</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\bin\x64\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2019-05-14T13:20:49.956</Modified>
+      <Modified>2019-05-19T12:38:02.474</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\bin\x64\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2019-05-14T13:20:49.957</Modified>
+      <Modified>2019-05-19T12:38:02.474</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\bin\x64\Debug\Src\ButtonStyle.xbf">
       <PackagePath>Src\ButtonStyle.xbf</PackagePath>
-      <Modified>2019-05-14T13:20:49.955</Modified>
+      <Modified>2019-05-19T12:38:02.474</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.17763.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -1210,11 +1206,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2019-05-13T20:51:09.338</Modified>
+      <Modified>2019-05-18T17:27:22.582</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\bin\x64\Debug\Core\RPG.exe">
       <PackagePath>RPG.exe</PackagePath>
-      <Modified>2019-05-14T13:20:53.662</Modified>
+      <Modified>2019-05-19T12:38:12.612</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
