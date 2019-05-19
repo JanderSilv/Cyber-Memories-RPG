@@ -3,7 +3,7 @@
 public enum Estado
 {
 
-    Normal = 1, Envenenado = 2, Paralisado = 4, Confuso = 8, Dormindo = 16
+    Normal = 1, Envenenado = 2, Paralisado = 4, Confuso = 8, Dormindo = 16, Cego = 32
 }
 
 public class Status : Componente<Status>

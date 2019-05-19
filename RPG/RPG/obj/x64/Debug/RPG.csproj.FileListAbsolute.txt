@@ -1977,3 +1977,18 @@ E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Debug\resources.en-us.resfiles.intermediate
 E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Debug\3ReaisEngieUWP.pri.xml
 E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Debug\ProjectArchitectures.txt
 E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_636758660200000000.json
+C:\Users\Jafe Ferreira\Documents\GitHub\LP\RPG\RPG\obj\x64\Debug\RPG.csprojAssemblyReference.cache
+C:\Users\Jafe Ferreira\Documents\GitHub\LP\RPG\RPG\obj\x64\Debug\App.g.i.cs
+C:\Users\Jafe Ferreira\Documents\GitHub\LP\RPG\RPG\obj\x64\Debug\App.g.cs
+C:\Users\Jafe Ferreira\Documents\GitHub\LP\RPG\RPG\obj\x64\Debug\MainPage.g.i.cs
+C:\Users\Jafe Ferreira\Documents\GitHub\LP\RPG\RPG\obj\x64\Debug\MainPage.g.cs
+C:\Users\Jafe Ferreira\Documents\GitHub\LP\RPG\RPG\obj\x64\Debug\XamlTypeInfo.g.cs
+C:\Users\Jafe Ferreira\Documents\GitHub\LP\RPG\RPG\obj\x64\Debug\App.xaml
+C:\Users\Jafe Ferreira\Documents\GitHub\LP\RPG\RPG\obj\x64\Debug\MainPage.xaml
+C:\Users\Jafe Ferreira\Documents\GitHub\LP\RPG\RPG\obj\x64\Debug\Src\ButtonStyle.xaml
+C:\Users\Jafe Ferreira\Documents\GitHub\LP\RPG\RPG\obj\x64\Debug\App.xbf
+C:\Users\Jafe Ferreira\Documents\GitHub\LP\RPG\RPG\obj\x64\Debug\MainPage.xbf
+C:\Users\Jafe Ferreira\Documents\GitHub\LP\RPG\RPG\obj\x64\Debug\Src\ButtonStyle.xbf
+C:\Users\Jafe Ferreira\Documents\GitHub\LP\RPG\RPG\obj\x64\Debug\XamlSaveStateFile.xml
+C:\Users\Jafe Ferreira\Documents\GitHub\LP\RPG\RPG\obj\x64\Debug\RPG.exe
+C:\Users\Jafe Ferreira\Documents\GitHub\LP\RPG\RPG\obj\x64\Debug\RPG.pdb
