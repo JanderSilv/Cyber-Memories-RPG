@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,12 +12,12 @@ using Windows.UI.Xaml.Media.Imaging;
 namespace _3ReaisEngine.UI
 {
     using uwpUI = Windows.UI.Xaml.Controls;
-    
-    public class UComboBox:UIEntidade
+
+    public class UComboBox : UIEntidade
     {
 
         ComboBox cbb = new ComboBox();
-      
+
         public Execute Action;
 
         public void start()
@@ -41,14 +40,14 @@ namespace _3ReaisEngine.UI
         }
         public UComboBox(Vector2 position, Execute Action = null)
         {
-       
+
             cbb.Width = 100;
             cbb.Height = 50;
             transform.X = position.x;
             transform.Y = position.y;
             this.position = position;
             start();
-           
+
         }
         public UComboBox(Vector2 position, Vector2 size, Execute Action = null)
         {
@@ -65,9 +64,9 @@ namespace _3ReaisEngine.UI
         public void AddItem(object item)
         {
             ComboBoxItem cbbItem = new ComboBoxItem();
-      
+
             cbb.Items.Add(item);
-            
+
         }
 
         public int Selected()
@@ -83,6 +82,6 @@ namespace _3ReaisEngine.UI
         {
             Action?.Invoke(this);
         }
-    
+
     }
 }

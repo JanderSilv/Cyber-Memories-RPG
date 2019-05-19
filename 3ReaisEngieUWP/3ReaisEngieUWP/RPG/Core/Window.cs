@@ -20,7 +20,7 @@ using Windows.UI.Xaml.Media;
 
 namespace _3ReaisEngine.RPG.Core
 {
-   public class Window 
+    public class Window
     {
         //Info das Entidades
         public List<Entidade> entidades = new List<Entidade>();
@@ -33,10 +33,10 @@ namespace _3ReaisEngine.RPG.Core
         private Panel ui_layer;
 
         private ulong EntidadeCount = 1;
-        public float Widht { set { game_layer.Width = value; } get { return (float)game_layer.Width;} }
+        public float Widht { set { game_layer.Width = value; } get { return (float)game_layer.Width; } }
         public float Height { set { game_layer.Height = value; } get { return (float)game_layer.Height; } }
 
-       
+
         public Page root;
 
         public Window(Page root)
@@ -49,22 +49,22 @@ namespace _3ReaisEngine.RPG.Core
             canv.Width = 840;
             canv.Height = 620;
             canv.Children.Add(ui);
-            
+
             canv.SetValue(Canvas.ZIndexProperty, 0);
             canv.KeyDown += Game_KeyDown;
             canv.KeyUp += Game_KeyUp;
-           // canv.PointerPressed += Game_PointerPressed;
-          //  canv.PointerReleased += Game_PointerReleased;
+            // canv.PointerPressed += Game_PointerPressed;
+            //  canv.PointerReleased += Game_PointerReleased;
 
-            
+
 
             ui.Width = 840;
             ui.Height = 620;
             ui.SetValue(Canvas.ZIndexProperty, 1);
-          //  ui.PointerPressed += Game_PointerPressed;
-          //  ui.PointerReleased += Game_PointerReleased;
-            
-           // root.Content = canv;
+            //  ui.PointerPressed += Game_PointerPressed;
+            //  ui.PointerReleased += Game_PointerReleased;
+
+            // root.Content = canv;
             root.Height = canv.Height;
             root.Width = canv.Width;
 
@@ -76,7 +76,7 @@ namespace _3ReaisEngine.RPG.Core
             ApplicationView.PreferredLaunchWindowingMode = ApplicationViewWindowingMode.PreferredLaunchViewSize;
             Windows.UI.Xaml.Window.Current.CoreWindow.Activate();
         }
-        public Window(Page root,float Widht,float Height)
+        public Window(Page root, float Widht, float Height)
         {
             Canvas canv = new Canvas();
             Canvas ui = new Canvas();
@@ -89,38 +89,39 @@ namespace _3ReaisEngine.RPG.Core
             canv.SetValue(Canvas.ZIndexProperty, 0);
             canv.KeyDown += Game_KeyDown;
             canv.KeyUp += Game_KeyUp;
-         //   canv.PointerPressed += Game_PointerPressed;
-          //  canv.PointerReleased += Game_PointerReleased;
+            //   canv.PointerPressed += Game_PointerPressed;
+            //  canv.PointerReleased += Game_PointerReleased;
 
             ui.Width = Widht;
             ui.Height = Height;
             ui.SetValue(Canvas.ZIndexProperty, 1);
-         //   ui.PointerPressed += Game_PointerPressed;
-         //   ui.PointerReleased += Game_PointerReleased;
+            //   ui.PointerPressed += Game_PointerPressed;
+            //   ui.PointerReleased += Game_PointerReleased;
 
             root.Height = canv.Height;
             root.Width = canv.Width;
-           // root.Content = canv;
+            // root.Content = canv;
 
             game_layer = canv;
             ui_layer = ui;
 
-           
-            
+
+
             Windows.UI.Xaml.Window.Current.CoreWindow.SizeChanged += CoreWindow_SizeChanged;
             ApplicationView.PreferredLaunchViewSize = new Size(Widht, Height);
             ApplicationView.PreferredLaunchWindowingMode = ApplicationViewWindowingMode.PreferredLaunchViewSize;
             Windows.UI.Xaml.Window.Current.CoreWindow.Activate();
         }
 
-        public void SetCurrent() {
+        public void SetCurrent()
+        {
             root.Content = game_layer;
             AmbienteJogo.window = this;
         }
-      
+
         public void Add(Entidade element)
         {
-           
+
             entidades.Add(element);
             element.ID = EntidadeCount;
             EntidadeCount++;
@@ -146,7 +147,7 @@ namespace _3ReaisEngine.RPG.Core
                 renders.Add(r);
                 Add(r.img);
             }
-            if(element.GetComponente(ref b))
+            if (element.GetComponente(ref b))
             {
                 bodies.Add(b);
             }
@@ -156,7 +157,7 @@ namespace _3ReaisEngine.RPG.Core
         {
             foreach (Entidade element in elements)
             {
-              
+
                 entidades.Add(element);
                 element.ID = EntidadeCount;
                 EntidadeCount++;
@@ -202,7 +203,7 @@ namespace _3ReaisEngine.RPG.Core
                 Remove(r.img);
             }
         }
-        
+
         public void Add(UIElement element)
         {
             game_layer.Children.Add(element);
@@ -211,40 +212,18 @@ namespace _3ReaisEngine.RPG.Core
         public void Remove(UIElement element)
         {
             game_layer.Children.Remove(element);
-          
+
 
         }
 
         public void AddUI(UIEntidade element)
         {
 
-            UIElement e = element.element;
-            UIEntidade parent = element.parent;
-            e.SetValue(Canvas.HorizontalAlignmentProperty, Canvas.LeftProperty);
-            e.SetValue(Canvas.VerticalAlignmentProperty, Canvas.TopProperty);
-
-            TranslateTransform tt= ((TranslateTransform)e.RenderTransform);
-            Vector2 pos = element.position;
-            Vector2 si = element.size;
-
-            if (parent != null)
-            {
-                Vector2 parentPos = parent.position;
-                Vector2 parentSi = parent.size;
-
-                tt.X = 2 * (((parentPos.x / 2) / 100.0) * Widht) - si.x / 2;
-                tt.Y = 2 * (((parentPos.y / 2) / 100.0) * Height) - si.y / 2;
-
-                tt.X += 2 * (((pos.x / 2) / 100.0) * parentSi.x) - si.x / 2;
-                tt.Y += 2 * (((pos.y / 2) / 100.0) * parentSi.y) - si.y / 2;
-            }
-            else{
-                tt.X = 2 * (((pos.x / 2) / 100.0) * Widht) - si.x / 2;
-                tt.Y = 2 * (((pos.y / 2) / 100.0) * Height) - si.y / 2;
-            }
             uiElements.Add(element);
-            ui_layer.Children.Add(e);
-            if(element is IUIStack)
+            ui_layer.Children.Add(element.element);
+            uptPos(element);
+
+            if (element is IUIStack)
             {
                 foreach (UIEntidade i in ((IUIStack)element).getChilds()) AddUI(i);
             }
@@ -260,35 +239,41 @@ namespace _3ReaisEngine.RPG.Core
             uiElements.Remove(element);
         }
 
+        void uptPos(UIEntidade element)
+        {
+            UIElement e = element.element;
+            UIEntidade parent = element.parent;
+            e.SetValue(Canvas.HorizontalAlignmentProperty, Canvas.LeftProperty);
+            e.SetValue(Canvas.VerticalAlignmentProperty, Canvas.TopProperty);
+
+            TranslateTransform tt = ((TranslateTransform)e.RenderTransform);
+            Vector2 pos = element.position;
+            Vector2 si = element.size;
+
+            if (parent != null)
+            {
+                Vector2 parentPos = parent.position;
+                Vector2 parentSi = parent.size;
+                TranslateTransform ptt = ((TranslateTransform)parent.element.RenderTransform);
+
+                tt.X = ptt.X ;
+                tt.Y = ptt.Y ;
+
+                tt.X += 2 * (((pos.x / 2) / 100.0) * parentSi.x) - si.x / 2;
+                tt.Y += 2 * (((pos.y / 2) / 100.0) * parentSi.y) - si.y / 2;
+            }
+            else
+            {
+                tt.X = 2 * (((pos.x / 2) / 100.0) * Widht) - si.x / 2;
+                tt.Y = 2 * (((pos.y / 2) / 100.0) * Height) - si.y / 2;
+            }
+        }
+
         public void UpdateWindow()
         {
-            foreach(UIEntidade element in uiElements)
+            foreach (UIEntidade element in uiElements)
             {
-                UIElement e = element.element;
-                UIEntidade parent = element.parent;
-                e.SetValue(Canvas.HorizontalAlignmentProperty, Canvas.LeftProperty);
-                e.SetValue(Canvas.VerticalAlignmentProperty, Canvas.TopProperty);
-
-                TranslateTransform tt = ((TranslateTransform)e.RenderTransform);
-                Vector2 pos = element.position;
-                Vector2 si = element.size;
-
-                if (parent != null)
-                {
-                    Vector2 parentPos = parent.position;
-                    Vector2 parentSi = element.size;
-
-                    tt.X = 2 * (((parentPos.x / 2) / 100.0) * Widht) - si.x / 2;
-                    tt.Y = 2 * (((parentPos.y / 2) / 100.0) * Height) - si.y / 2;
-
-                    tt.X += 2 * (((pos.x / 2) / 100.0) * parentSi.x) - si.x / 2;
-                    tt.Y += 2 * (((pos.y / 2) / 100.0) * parentSi.y) - si.y / 2;
-                }
-                else
-                {
-                    tt.X = 2 * (((pos.x / 2) / 100.0) * Widht) - si.x / 2;
-                    tt.Y = 2 * (((pos.y / 2) / 100.0) * Height) - si.y / 2;
-                }
+                uptPos(element);
             }
         }
 
@@ -314,7 +299,7 @@ namespace _3ReaisEngine.RPG.Core
                 me.Botao = MouseButton.Right;
             }
 
-            
+
             AmbienteJogo.EnviarEvento(me);
         }
 
@@ -347,14 +332,14 @@ namespace _3ReaisEngine.RPG.Core
         {
             TecladoEvento te = new TecladoEvento { Tecla = (int)e.Key, Repeticoes = e.KeyStatus.RepeatCount, Modificador = (byte)ModificadorList.KeyDown };
             AmbienteJogo.EnviarEvento(te);
-           
+
         }
 
         private void Game_KeyUp(object sender, KeyRoutedEventArgs e)
         {
             TecladoEvento te = new TecladoEvento { Tecla = (int)e.Key, Repeticoes = e.KeyStatus.RepeatCount, Modificador = (byte)ModificadorList.KeyUp };
             AmbienteJogo.EnviarEvento(te);
-           
+
         }
 
         private void CoreWindow_SizeChanged(Windows.UI.Core.CoreWindow sender, Windows.UI.Core.WindowSizeChangedEventArgs args)
@@ -374,9 +359,9 @@ namespace _3ReaisEngine.RPG.Core
             root.Height = game_layer.Height;
             root.Width = game_layer.Width;
 
-            foreach(UIElement e in ui_layer.Children)
+            foreach (UIElement e in ui_layer.Children)
             {
-               
+
                 ((TranslateTransform)e.RenderTransform).X *= a.x;
                 ((TranslateTransform)e.RenderTransform).Y *= a.y;
             }

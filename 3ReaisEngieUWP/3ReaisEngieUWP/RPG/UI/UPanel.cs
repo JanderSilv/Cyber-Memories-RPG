@@ -35,7 +35,7 @@ namespace _3ReaisEngine.UI
 
         public UPanel()
         {
-           
+
             rect.Width = 100;
             rect.Height = 50;
             transform.X = 0;
@@ -48,7 +48,7 @@ namespace _3ReaisEngine.UI
 
         public UPanel(Vector2 pos)
         {
-            
+
             rect.Width = 100;
             rect.Height = 50;
             position = pos;
@@ -58,7 +58,7 @@ namespace _3ReaisEngine.UI
         public UPanel(Vector2 pos, Vector2 size)
         {
 
-            
+
             rect.Width = size.x;
             rect.Height = size.y;
             this.size = size;

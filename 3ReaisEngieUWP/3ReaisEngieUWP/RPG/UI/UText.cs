@@ -13,9 +13,9 @@ namespace _3ReaisEngine.UI
     public class UText : UIEntidade
     {
         TextBlock txt = new TextBlock();
-      
+
         public string content { get { return txt.Text; } set { txt.Text = value; } }
-      
+
         void start()
         {
             txt.HorizontalAlignment = HorizontalAlignment.Left;
@@ -41,7 +41,7 @@ namespace _3ReaisEngine.UI
             txt.Text = text;
             start();
         }
-        public UText(string text,Vector2 position)
+        public UText(string text, Vector2 position)
         {
 
             txt.Width = 100;
@@ -52,7 +52,7 @@ namespace _3ReaisEngine.UI
             txt.Text = text;
             start();
         }
-        public UText(string text,Vector2 position, Vector2 size)
+        public UText(string text, Vector2 position, Vector2 size)
         {
             txt.Width = size.x;
             txt.Height = size.y;
