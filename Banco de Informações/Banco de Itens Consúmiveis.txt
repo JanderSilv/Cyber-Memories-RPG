@@ -19,24 +19,24 @@ Itens:
 o Itens:
 
       o Poção de Vida Pequena
-	 • Recupera [valor] de HP de um aliado
+	 • Recupera 20 de HP de um aliado
 	 • Normal
 	 • 60
 	 • Sim
 	 • Um aliado
 	 • Sempre
-	 • Recuperação HP [valor]
+	 • Recuperação HP 20
 
       o Poção de Vida Média
-	• Recupera [valor] de HP de um aliado
+	• Recupera 30 de HP de um aliado
 	• Normal
 	• 170
 	• Sim
 	• Um aliado
 	• Sempre
-	• Recuperação HP [valor]
+	• Recuperação HP 30
 
-      o Poção de Vida Média
+      o Poção de Vida Grande 
 	• Recupera 100% do HP de um aliado
 	• Normal
 	• 450
@@ -46,22 +46,22 @@ o Itens:
 	• Recuperação HP 100%
 
       o Poção de Mana Pequena
-	• Recupera [valor] de MP de um aliado
+	• Recupera 20 de MP de um aliado
 	• Normal
 	• 120
 	• Sim
 	• Um aliado
 	• Sempre
-	• Recuperação MP [valor]
+	• Recuperação MP 20
 
       o Poção de Mana Média
-	• Recupera [valor] de MP de um aliado
+	• Recupera 30 de MP de um aliado
 	• Normal
 	• 300
 	• Sim
 	• Um aliado
 	• Sempre
-	• Recuperação MP [valor]
+	• Recuperação MP 30
 
       o Poção de Mana Grande
 	• Recupera 100% de MP de um aliado
