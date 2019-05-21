@@ -8,7 +8,8 @@ public enum Estado
 
 public class Status : Componente<Status>
 {
-    public int forca, inteligencia, resistencia, sorte, saude, destreza,level;
+    public int forca, inteligencia, resistencia, sorte, saude, destreza, level, mana;
+    public int saudeMax, manaMax, forcaMax; 
     public float velocidade;
     public double  xpMax, xpRecebido, xpAtual;
     public Estado estadoAtual;
