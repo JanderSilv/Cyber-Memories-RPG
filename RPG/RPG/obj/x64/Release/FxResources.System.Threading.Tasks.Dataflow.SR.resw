@@ -141,6 +141,9 @@
   <data name="InvalidOperation_FailedToConsumeReservedMessage" xml:space="preserve">
     <value>The target block failed to consume a message it had successfully reserved.</value>
   </data>
+  <data name="InvalidOperation_ErrorDuringCleanup" xml:space="preserve">
+    <value>An error occurred while linking up the target or during the cleanup after completion.</value>
+  </data>
   <data name="Argument_BoundedCapacityNotSupported" xml:space="preserve">
     <value>BoundedCapacity must be Unbounded or -1 for this dataflow block.</value>
   </data>

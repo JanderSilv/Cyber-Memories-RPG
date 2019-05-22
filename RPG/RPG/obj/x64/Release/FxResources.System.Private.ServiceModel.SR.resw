@@ -177,6 +177,9 @@
   <data name="ActivityProcessAction" xml:space="preserve">
     <value>Process action '{0}'.</value>
   </data>
+  <data name="SFxNone2004" xml:space="preserve">
+    <value>The WS-Addressing "none" value is not valid for the August 2004 version of WS-Addressing.</value>
+  </data>
   <data name="CannotReadToken" xml:space="preserve">
     <value>Cannot read the token from the '{0}' element with the '{1}' namespace for BinarySecretSecurityToken, with a '{2}' ValueType. If this element is expected to be valid, ensure that security is configured to consume tokens with the name, namespace and value type specified.</value>
   </data>
@@ -564,9 +567,6 @@
   <data name="KeyIdentifierCannotCreateKey" xml:space="preserve">
     <value>This SecurityKeyIdentifier does not have any clause that can create a key.</value>
   </data>
-  <data name="SFxSetManualAddresssingOnChannelDispatcher0" xml:space="preserve">
-    <value>This property sets ManualAddressing on the client. To set ManualAddressing on the server, use ChannelDispatcher's ManualAddressing.</value>
-  </data>
   <data name="SFxInvalidMessageHeaderArrayType" xml:space="preserve">
     <value>MessageHeaderArrayAttribute found on member {0} is not a single dimensional array.</value>
   </data>
@@ -683,6 +683,9 @@
   </data>
   <data name="SFxKnownTypeAttributeUnknownMethod3" xml:space="preserve">
     <value>ServiceKnownTypeAttribute in {0} refers to a method {1} that does not exist in type {2}</value>
+  </data>
+  <data name="SFxRequestHasInvalidFromOnClient" xml:space="preserve">
+    <value>The request message has From='{0}' but IContextChannel.LocalAddress is '{1}'.  When ManualAddressing is false, these values must be the same, null, or EndpointAddress.AnonymousAddress.  Enable ManualAddressing or avoid setting From on the message.</value>
   </data>
   <data name="SFxErrorReflectionOnUnknown1" xml:space="preserve">
     <value>An error occurred while loading attribute '{0}'.  Please see InnerException for more details.</value>
@@ -1748,6 +1751,9 @@
   </data>
   <data name="ServerRejectedUpgradeRequest" xml:space="preserve">
     <value>The server rejected the upgrade request.</value>
+  </data>
+  <data name="SFxSetManualAddressingOnChannelDispatcher0" xml:space="preserve">
+    <value>This property sets ManualAddressing on the client. To set ManualAddressing on the server, use ChannelDispatcher's ManualAddressing.</value>
   </data>
   <data name="CannotFindCert" xml:space="preserve">
     <value>Cannot find the X.509 certificate using the following search criteria: StoreName '{0}', StoreLocation '{1}', FindType '{2}', FindValue '{3}'.</value>

@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="ADP_DbProviderFactories_FactoryNotLoadable" xml:space="preserve">
+    <value>The registered .NET Data Provider's DbProviderFactory implementation type '{0}' couldn't be loaded.</value>
+  </data>
   <data name="DataColumn_NullDataType" xml:space="preserve">
     <value>Column requires a valid DataType.</value>
   </data>
@@ -224,6 +227,9 @@
   </data>
   <data name="Expr_InWithoutList" xml:space="preserve">
     <value>Syntax error: The IN keyword must be followed by a non-empty list of expressions separated by commas, and also must be enclosed in parentheses.</value>
+  </data>
+  <data name="ADP_DbProviderFactories_InvariantNameNotFound" xml:space="preserve">
+    <value>The specified invariant name '{0}' wasn't found in the list of registered .NET Data Providers.</value>
   </data>
   <data name="ADP_ConnectionStringSyntax" xml:space="preserve">
     <value>Format of the initialization string does not conform to specification starting at index {0}.</value>
@@ -660,6 +666,9 @@
   <data name="DataTable_MultipleSimpleContentColumns" xml:space="preserve">
     <value>DataTable already has a simple content column.</value>
   </data>
+  <data name="ADP_DbProviderFactories_NoInstance" xml:space="preserve">
+    <value>The requested .NET Data Provider's implementation does not have an Instance field of a System.Data.Common.DbProviderFactory derived type.</value>
+  </data>
   <data name="Xml_FoundEntity" xml:space="preserve">
     <value>DataSet cannot expand entities. Use XmlValidatingReader and set the EntityHandling property accordingly.</value>
   </data>
@@ -815,6 +824,9 @@
   </data>
   <data name="Expr_MismatchKindandTimeSpan" xml:space="preserve">
     <value>Kind property of provided DateTime argument, does not match 'hours' and 'minutes' arguments.</value>
+  </data>
+  <data name="ADP_DbProviderFactories_NotAFactoryType" xml:space="preserve">
+    <value>The type '{0}' doesn't inherit from DbProviderFactory.</value>
   </data>
   <data name="DataIndex_RecordStateRange" xml:space="preserve">
     <value>The RowStates parameter must be set to a valid combination of values from the DataViewRowState enumeration.</value>
@@ -1298,6 +1310,9 @@
   </data>
   <data name="Xml_DynamicWithoutXmlSerializable" xml:space="preserve">
     <value>DataSet will not serialize types that implement IDynamicMetaObjectProvider but do not also implement IXmlSerializable.</value>
+  </data>
+  <data name="ADP_DbProviderFactories_NoAssemblyQualifiedName" xml:space="preserve">
+    <value>The missing .NET Data Provider's assembly qualified name is required.</value>
   </data>
   <data name="Expr_UnsupportedType" xml:space="preserve">
     <value>A DataColumn of type '{0}' does not support expression.</value>

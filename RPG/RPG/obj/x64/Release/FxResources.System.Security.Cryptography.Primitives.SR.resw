@@ -123,6 +123,9 @@
   <data name="Argument_InvalidValue" xml:space="preserve">
     <value>Value was invalid.</value>
   </data>
+  <data name="InvalidOperation_IncorrectImplementation" xml:space="preserve">
+    <value>The algorithm's implementation is incorrect.</value>
+  </data>
   <data name="Argument_StreamNotReadable" xml:space="preserve">
     <value>Stream was not readable.</value>
   </data>
@@ -170,6 +173,9 @@
   </data>
   <data name="Cryptography_InvalidBlockSize" xml:space="preserve">
     <value>Specified block size is not valid for this algorithm.</value>
+  </data>
+  <data name="Cryptography_DefaultAlgorithm_NotSupported" xml:space="preserve">
+    <value>This platform does not allow the automatic selection of an algorithm.</value>
   </data>
   <data name="HashNameMultipleSetNotSupported" xml:space="preserve">
     <value>Setting the hashname after it's already been set is not supported on this platform.</value>

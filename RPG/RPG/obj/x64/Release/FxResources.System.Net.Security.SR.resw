@@ -126,6 +126,9 @@
   <data name="net_io_must_be_rw_stream" xml:space="preserve">
     <value>The stream has to be read/write.</value>
   </data>
+  <data name="net_conflicting_options" xml:space="preserve">
+    <value>The '{0}' option was already set in the SslStream constructor.</value>
+  </data>
   <data name="event_CertificateFromDelegate" xml:space="preserve">
     <value>Got a certificate from the client delegate.</value>
   </data>
@@ -195,6 +198,9 @@
   <data name="security_ExtendedProtectionPolicy_UseDifferentConstructorForNever" xml:space="preserve">
     <value>To construct a policy with PolicyEnforcement.Never, the single-parameter constructor must be used.</value>
   </data>
+  <data name="net_ssl_app_protocols_invalid" xml:space="preserve">
+    <value>The application protocol list is invalid.</value>
+  </data>
   <data name="net_auth_supported_impl_levels" xml:space="preserve">
     <value>The supported values are Identification, Impersonation or Delegation.</value>
   </data>
@@ -205,7 +211,7 @@
     <value>SSL Write BIO failed with OpenSSL error - {0}.</value>
   </data>
   <data name="net_auth_SSPI" xml:space="preserve">
-    <value>A call to SSPI failed, see inner exception.</value>
+    <value>Authentication failed, see inner exception.</value>
   </data>
   <data name="event_CertIsType2" xml:space="preserve">
     <value>Certificate is of type X509Certificate2 and contains the private key.</value>
@@ -258,6 +264,9 @@
   <data name="event_SecurityContextInputBuffers" xml:space="preserve">
     <value>{0}(In-Buffers count={1}, Out-Buffer length={2}, returned code={3}).</value>
   </data>
+  <data name="net_alpn_config_failed" xml:space="preserve">
+    <value>ALPN configuration failed on this platform.</value>
+  </data>
   <data name="net_auth_ignored_reauth" xml:space="preserve">
     <value>Re-authentication failed because the remote party continued to encrypt more than {0} bytes before answering re-authentication.</value>
   </data>
@@ -282,11 +291,11 @@
   <data name="event_SspiSelectedCipherSuite" xml:space="preserve">
     <value>{0}(Protocol={1}, Cipher={2} {3} bit strength, Hash={4} {5} bit strength, Key Exchange={6} {7} bit strength).</value>
   </data>
+  <data name="net_ssl_io_renego" xml:space="preserve">
+    <value>The remote party requested renegotiation when AllowRenegotiation was set to false.</value>
+  </data>
   <data name="net_nego_protection_level_not_supported" xml:space="preserve">
     <value>Requested protection level is not supported with the gssapi implementation currently installed.</value>
-  </data>
-  <data name="net_get_ssl_method_failed" xml:space="preserve">
-    <value>Failed to get SSL method '{0}'. Ensure the OpenSSL method exists on the current system.</value>
   </data>
   <data name="net_ssl_x509Name_push_failed_error" xml:space="preserve">
     <value>Failed to push X509_NAME into stack.</value>
@@ -326,6 +335,9 @@
   </data>
   <data name="net_frame_size" xml:space="preserve">
     <value>Received an invalid authentication frame. The message size is limited to {0} bytes, attempted to read {1} bytes.</value>
+  </data>
+  <data name="net_ssl_app_protocol_invalid" xml:space="preserve">
+    <value>The application protocol value is invalid.</value>
   </data>
   <data name="net_io_eof" xml:space="preserve">
     <value> Received an unexpected EOF or 0 bytes from the transport stream.</value>
@@ -387,9 +399,6 @@
   <data name="net_auth_context_expectation" xml:space="preserve">
     <value>A security requirement was not fulfilled during authentication. Required: {0}, negotiated: {1}.</value>
   </data>
-  <data name="net_completed_result" xml:space="preserve">
-    <value>This operation cannot be performed on a completed asynchronous result object.</value>
-  </data>
   <data name="event_SelectedCert" xml:space="preserve">
     <value>Selected certificate: {0}.</value>
   </data>
@@ -398,6 +407,9 @@
   </data>
   <data name="net_auth_context_expectation_remote" xml:space="preserve">
     <value>A remote side security requirement was not fulfilled during authentication. Try increasing the ProtectionLevel and/or ImpersonationLevel.</value>
+  </data>
+  <data name="net_alpn_failed" xml:space="preserve">
+    <value>No common application protocol exists between the client and the server. Application negotiation failed.</value>
   </data>
   <data name="net_io_encrypt" xml:space="preserve">
     <value>The encryption operation failed, see inner exception.</value>

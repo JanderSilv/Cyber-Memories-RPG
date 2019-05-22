@@ -21,7 +21,7 @@ public class Player : Entidade
     readonly Movel mov;
 
     float vel;  
-    bool dead = false;
+  
 
     public Player(Vector2 pos)
     {
@@ -59,7 +59,7 @@ public class Player : Entidade
         if (AmbienteJogo.Input.TeclaPressionada(Windows.System.VirtualKey.A))
         {
             body.velocity.x = -vel;
-            dead = false;
+         
             anim.Play("Walk", render);
             
         }
@@ -71,7 +71,7 @@ public class Player : Entidade
         if (AmbienteJogo.Input.TeclaPressionada(Windows.System.VirtualKey.D))
         {
             body.velocity.x = vel;
-            dead = false;
+ 
             anim.Play("Walk", render);
             
         }
@@ -83,7 +83,7 @@ public class Player : Entidade
         if (AmbienteJogo.Input.TeclaPressionada(Windows.System.VirtualKey.W))
         {
             body.velocity.y = -vel;
-            dead = false;
+          
             anim.Play("Walk", render);
             
         }
@@ -96,7 +96,7 @@ public class Player : Entidade
         if (AmbienteJogo.Input.TeclaPressionada(Windows.System.VirtualKey.S))
         {
             body.velocity.y = vel;
-            dead = false;
+         
             anim.Play("Walk", render);
             
         }
@@ -105,19 +105,7 @@ public class Player : Entidade
             anim.Play("Idle", render);
         }
 
-        if (AmbienteJogo.Input.TeclaPressionada(Windows.System.VirtualKey.Escape))
-        {
-            if (!dead)
-            {
-                anim.Play("Dead", render);
-                anim.Play("JaDead", render);
-                dead = true;
-            }
-            else
-            {
-                anim.Play("JaDead", render);
-            } 
-        }
+     
     }
     public override void OnClick(MouseEvento e)
     {

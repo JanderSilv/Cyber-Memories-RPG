@@ -5,6 +5,8 @@ using Newtonsoft.Json;
 using System;
 using System.Diagnostics;
 using System.IO;
+using System.Threading.Tasks;
+using Windows.Storage;
 
 namespace _3ReaisEngine
 {
@@ -14,11 +16,17 @@ namespace _3ReaisEngine
         public static void save<T>(T x, string path)
         {
             string output = JsonConvert.SerializeObject(x);
-           
-            File.WriteAllText(path, output);
-
-            
+            File.WriteAllText(path, output);  
         }
+
+        public static async void saveAsync(string file,string fileName)
+        {
+            StorageFolder storageFolder = ApplicationData.Current.LocalFolder;
+            Debug(storageFolder.Path);
+            StorageFile sampleFile = await storageFolder.CreateFileAsync(fileName, CreationCollisionOption.ReplaceExisting);
+            await FileIO.WriteTextAsync(sampleFile, file);
+        }
+
         public static T load<T>(string path)
         {
            

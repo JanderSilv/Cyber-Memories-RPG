@@ -541,7 +541,6 @@ E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\Src\Opera-04.png
 E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\Src\Audio\beep.mp3
 E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\Src\Audio\rain.mp3
 E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\Src\Audio\serrote.wav
-E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\Src\cabeca.png
 E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\Src\dance.gif
 E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\App.xbf
 E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\MainPage.xbf
@@ -577,12 +576,10 @@ E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Animations\dead.gif
 E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Animations\Dead.png
 E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Animations\idle.gif
 E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Animations\jump.gif
-E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Animations\Menu\Menu.gif
 E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Animations\walk.gif
 E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Audio\beep.mp3
 E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Audio\rain.mp3
 E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Audio\serrote.wav
-E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\cabeca.png
 E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\dance.gif
 E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Botões\Configurações.png
 E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Botões\Configurações_Selecionado.png
@@ -598,81 +595,6 @@ E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Logo.png
 E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Logo2.png
 E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\JunglerockAlpha.png
 E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Opera-04.png
-E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Bau\Treasure Chest closed 254x254.png
-E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Bau\Treasure Chest open 254x254.png
-E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Cavaleiro\knight 3 block.png
-E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Cavaleiro\knight 3 idle.png
-E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Cavaleiro\knight 3 improved slash animation.png
-E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Cavaleiro\knight death animation.png
-E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Cavaleiro\knight walk animation.png
-E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Feiticeiro\sorcerer attack_Animation 1_0.png
-E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Feiticeiro\sorcerer attack_Animation 1_1.png
-E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Feiticeiro\sorcerer attack_Animation 1_2.png
-E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Feiticeiro\sorcerer attack_Animation 1_3.png
-E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Feiticeiro\sorcerer attack_Animation 1_4.png
-E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Feiticeiro\sorcerer attack_Animation 1_5.png
-E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Feiticeiro\sorcerer attack_Animation 1_6.png
-E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Feiticeiro\sorcerer attack_Animation 1_7.png
-E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Feiticeiro\sorcerer attack_Animation 1_8.png
-E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Feiticeiro\sorcerer attack_Animation 1_9.png
-E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Feiticeiro\sorcerer villain.png
-E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Feiticeiro\villain.png
-E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Mago\wizard attack.png
-E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Mago\wizard death.png
-E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Mago\wizard fly forward.png
-E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Mago\wizard idle.png
-E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like attack animations.png
-E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like attack animations_attack down_0.png
-E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like attack animations_attack down_1.png
-E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like attack animations_attack down_2.png
-E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like attack animations_attack down_3.png
-E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like attack animations_attack left_0.png
-E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like attack animations_attack left_1.png
-E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like attack animations_attack left_2.png
-E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like attack animations_attack left_3.png
-E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like attack animations_attack right_0.png
-E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like attack animations_attack right_1.png
-E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like attack animations_attack right_2.png
-E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like attack animations_attack right_3.png
-E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like attack animations_attack up_0.png
-E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like attack animations_attack up_1.png
-E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like attack animations_attack up_2.png
-E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like attack animations_attack up_3.png
-E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like attack.png
-E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like attack_Animation 1_0.png
-E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like attack_Animation 1_1.png
-E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like attack_Animation 1_2.png
-E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like attack_Animation 1_3.png
-E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like attack_Animation 1_4.png
-E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like attack_Animation 1_5.png
-E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like attack_Animation 1_6.png
-E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like attack_Animation 1_7.png
-E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like attack_Animation 1_8.png
-E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like attack_Animation 1_9.png
-E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like idle.png
-E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like idle_Animation 1_0.png
-E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like idle_Animation 1_1.png
-E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like idle_Animation 1_2.png
-E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like run up_Animation 1_0.png
-E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like run up_Animation 1_1.png
-E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like run up_Animation 1_2.png
-E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like run up_Animation 1_3.png
-E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like run.png
-E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like run_Animation 1_0.png
-E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like run_Animation 1_1.png
-E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like run_Animation 1_2.png
-E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like run_Animation 1_3.png
-E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like run_Animation 1_4.png
-E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\rogue like run_Animation 1_5.png
-E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\roguelike run down_Animation 1_0.png
-E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\roguelike run down_Animation 1_1.png
-E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\roguelike run down_Animation 1_2.png
-E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Rogue\roguelike run down_Animation 1_3.png
-E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Zumbi\undead_attack.gif
-E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Zumbi\undead_death.gif
-E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Zumbi\undead_hurt.gif
-E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Zumbi\undead_idle.gif
-E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Sprites\Zumbi\undead_walk.gif
 E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\RPG.build.appxrecipe
 E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\clrcompression.dll
 E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\Microsoft.CSharp.dll
@@ -1004,17 +926,11 @@ E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\3ReaisEngieUWP.dll
 E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\WinMetadata\Windows.winmd
 E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\resources.pri
 E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\clrcompression.dll
-E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Animations\Menu\Menu.gif
 E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Animations\dead.gif
 E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Animations\idle.gif
 E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Animations\jump.gif
 E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Animations\walk.gif
 E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\dance.gif
-E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Zumbi\undead_attack.gif
-E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Zumbi\undead_death.gif
-E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Zumbi\undead_hurt.gif
-E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Zumbi\undead_idle.gif
-E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Zumbi\undead_walk.gif
 E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Menu\Botões\Configurações.png
 E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Menu\Botões\Configurações_Selecionado.png
 E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Menu\Botões\Iniciar.png
@@ -1036,78 +952,7 @@ E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Assets\Square44x44Logo.target
 E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Assets\StoreLogo.png
 E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Assets\Wide310x150Logo.scale-200.png
 E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Animations\Dead.png
-E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\cabeca.png
 E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\JunglerockAlpha.png
-E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Bau\Treasure Chest closed 254x254.png
-E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Bau\Treasure Chest open 254x254.png
-E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Cavaleiro\knight 3 block.png
-E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Cavaleiro\knight 3 idle.png
-E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Cavaleiro\knight 3 improved slash animation.png
-E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Cavaleiro\knight death animation.png
-E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Cavaleiro\knight walk animation.png
-E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Feiticeiro\sorcerer attack_Animation 1_0.png
-E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Feiticeiro\sorcerer attack_Animation 1_1.png
-E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Feiticeiro\sorcerer attack_Animation 1_2.png
-E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Feiticeiro\sorcerer attack_Animation 1_3.png
-E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Feiticeiro\sorcerer attack_Animation 1_4.png
-E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Feiticeiro\sorcerer attack_Animation 1_5.png
-E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Feiticeiro\sorcerer attack_Animation 1_6.png
-E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Feiticeiro\sorcerer attack_Animation 1_7.png
-E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Feiticeiro\sorcerer attack_Animation 1_8.png
-E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Feiticeiro\sorcerer attack_Animation 1_9.png
-E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Feiticeiro\sorcerer villain.png
-E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Feiticeiro\villain.png
-E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Mago\wizard attack.png
-E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Mago\wizard death.png
-E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Mago\wizard fly forward.png
-E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Mago\wizard idle.png
-E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\rogue like attack animations.png
-E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\rogue like attack animations_attack down_0.png
-E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\rogue like attack animations_attack down_1.png
-E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\rogue like attack animations_attack down_2.png
-E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\rogue like attack animations_attack down_3.png
-E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\rogue like attack animations_attack left_0.png
-E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\rogue like attack animations_attack left_1.png
-E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\rogue like attack animations_attack left_2.png
-E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\rogue like attack animations_attack left_3.png
-E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\rogue like attack animations_attack right_0.png
-E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\rogue like attack animations_attack right_1.png
-E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\rogue like attack animations_attack right_2.png
-E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\rogue like attack animations_attack right_3.png
-E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\rogue like attack animations_attack up_0.png
-E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\rogue like attack animations_attack up_1.png
-E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\rogue like attack animations_attack up_2.png
-E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\rogue like attack animations_attack up_3.png
-E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\rogue like attack.png
-E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\rogue like attack_Animation 1_0.png
-E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\rogue like attack_Animation 1_1.png
-E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\rogue like attack_Animation 1_2.png
-E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\rogue like attack_Animation 1_3.png
-E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\rogue like attack_Animation 1_4.png
-E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\rogue like attack_Animation 1_5.png
-E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\rogue like attack_Animation 1_6.png
-E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\rogue like attack_Animation 1_7.png
-E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\rogue like attack_Animation 1_8.png
-E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\rogue like attack_Animation 1_9.png
-E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\rogue like idle.png
-E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\rogue like idle_Animation 1_0.png
-E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\rogue like idle_Animation 1_1.png
-E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\rogue like idle_Animation 1_2.png
-E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\rogue like run up_Animation 1_0.png
-E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\rogue like run up_Animation 1_1.png
-E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\rogue like run up_Animation 1_2.png
-E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\rogue like run up_Animation 1_3.png
-E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\rogue like run.png
-E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\rogue like run_Animation 1_0.png
-E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\rogue like run_Animation 1_1.png
-E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\rogue like run_Animation 1_2.png
-E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\rogue like run_Animation 1_3.png
-E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\rogue like run_Animation 1_4.png
-E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\rogue like run_Animation 1_5.png
-E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\roguelike run down_Animation 1_0.png
-E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\roguelike run down_Animation 1_1.png
-E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\roguelike run down_Animation 1_2.png
-E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Sprites\Rogue\roguelike run down_Animation 1_3.png
 E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Audio\beep.mp3
 E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Audio\rain.mp3
 E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Audio\serrote.wav
@@ -1191,3 +1036,403 @@ E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\RPG.McgInterop\Safe
 E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\RPG.McgInterop\SharedStubs.g.cs
 E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\System.Private.RPG.Generated.dll
 E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\RPG.csprojAssemblyReference.cache
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\Src\Images\tiles\areia.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\Src\Images\tiles\arvore.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\Src\Images\tiles\flores.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\Src\Images\tiles\grama.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\Src\Images\tiles\rocha1.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\Src\Images\tiles\rocha2.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\Src\Images\tiles\tronco.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\Src\Maps\map.xml
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Bau\Treasure Chest closed 254x254.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Bau\Treasure Chest open 254x254.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Cavaleiro\knight 3 block.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Cavaleiro\knight 3 idle.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Cavaleiro\knight 3 improved slash animation.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Cavaleiro\knight death animation.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Cavaleiro\knight walk animation.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Feiticeiro\sorcerer attack_Animation 1_0.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Feiticeiro\sorcerer attack_Animation 1_1.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Feiticeiro\sorcerer attack_Animation 1_2.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Feiticeiro\sorcerer attack_Animation 1_3.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Feiticeiro\sorcerer attack_Animation 1_4.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Feiticeiro\sorcerer attack_Animation 1_5.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Feiticeiro\sorcerer attack_Animation 1_6.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Feiticeiro\sorcerer attack_Animation 1_7.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Feiticeiro\sorcerer attack_Animation 1_8.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Feiticeiro\sorcerer attack_Animation 1_9.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Feiticeiro\sorcerer villain.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Feiticeiro\villain.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Laboratório\Assets-Laborátorio_0001_Livros.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Laboratório\Assets-Laborátorio_0002_Papeis.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Laboratório\Assets-Laborátorio_0003_Mesa-Vertical.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Laboratório\Assets-Laborátorio_0004_Mesa-Horizontal.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Laboratório\Assets-Laborátorio_0005_Perigo.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Laboratório\Assets-Laborátorio_0006_Vidrarias.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Laboratório\Assets-Laborátorio_0007_Armário.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Laboratório\Lab_0003_Máquinas.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Laboratório\Lab_0004_Extintor.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Laboratório\Lab_0005_Tubo.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Laboratório\Lab_0006_Luz.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Laboratório\Lab_0007_Grade.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Laboratório\Lab_0008_Planta.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Laboratório\Lab_0009_Maq.-de-TP.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Laboratório\Lab_Ar-Condicionado.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Laboratório\Lab_Exit.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Laboratório\Lab_Fechadura-Eletronica.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Laboratório\Lab_Notebook.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Laboratório\Lab_Parede.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Laboratório\Lab__0000_Cadeira-Esq.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Laboratório\Lab__0001_Cadeira-Costa.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Laboratório\Lab__0002_TP.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Laboratório\Lab__0003_Monitores.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Laboratório\Lab__0004_Piso.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Mago\wizard attack.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Mago\wizard death.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Mago\wizard fly forward.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Mago\wizard idle.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Botões\Controles.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Botões\Controles_Selecionado.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Botões\Volume.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Botões\Volume_Selecionado.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Rogue\rogue like attack animations.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Rogue\rogue like attack animations_attack down_0.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Rogue\rogue like attack animations_attack down_1.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Rogue\rogue like attack animations_attack down_2.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Rogue\rogue like attack animations_attack down_3.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Rogue\rogue like attack animations_attack left_0.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Rogue\rogue like attack animations_attack left_1.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Rogue\rogue like attack animations_attack left_2.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Rogue\rogue like attack animations_attack left_3.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Rogue\rogue like attack animations_attack right_0.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Rogue\rogue like attack animations_attack right_1.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Rogue\rogue like attack animations_attack right_2.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Rogue\rogue like attack animations_attack right_3.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Rogue\rogue like attack animations_attack up_0.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Rogue\rogue like attack animations_attack up_1.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Rogue\rogue like attack animations_attack up_2.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Rogue\rogue like attack animations_attack up_3.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Rogue\rogue like attack.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Rogue\rogue like attack_Animation 1_0.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Rogue\rogue like attack_Animation 1_1.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Rogue\rogue like attack_Animation 1_2.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Rogue\rogue like attack_Animation 1_3.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Rogue\rogue like attack_Animation 1_4.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Rogue\rogue like attack_Animation 1_5.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Rogue\rogue like attack_Animation 1_6.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Rogue\rogue like attack_Animation 1_7.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Rogue\rogue like attack_Animation 1_8.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Rogue\rogue like attack_Animation 1_9.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Rogue\rogue like idle.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Rogue\rogue like idle_Animation 1_0.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Rogue\rogue like idle_Animation 1_1.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Rogue\rogue like idle_Animation 1_2.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Rogue\rogue like run up_Animation 1_0.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Rogue\rogue like run up_Animation 1_1.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Rogue\rogue like run up_Animation 1_2.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Rogue\rogue like run up_Animation 1_3.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Rogue\rogue like run.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Rogue\rogue like run_Animation 1_0.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Rogue\rogue like run_Animation 1_1.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Rogue\rogue like run_Animation 1_2.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Rogue\rogue like run_Animation 1_3.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Rogue\rogue like run_Animation 1_4.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Rogue\rogue like run_Animation 1_5.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Rogue\roguelike run down_Animation 1_0.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Rogue\roguelike run down_Animation 1_1.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Rogue\roguelike run down_Animation 1_2.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Rogue\roguelike run down_Animation 1_3.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\tiles\areia.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\tiles\arvore.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\tiles\flores.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\tiles\grama.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\tiles\rocha1.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\tiles\rocha2.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\tiles\tronco.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Zumbi\undead_attack.gif
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Zumbi\undead_death.gif
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Zumbi\undead_hurt.gif
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Zumbi\undead_idle.gif
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Zumbi\undead_walk.gif
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Maps\Laborátorio\Laboratório.xml
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Maps\Laborátorio\Laborátorio.txt
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Maps\map.xml
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\Newtonsoft.Json.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.IO.Pipes.AccessControl.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Memory.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Runtime.CompilerServices.Unsafe.dll
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\System.Security.Permissions.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Newtonsoft.Json.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.IO.Pipes.AccessControl.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Memory.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Runtime.CompilerServices.Unsafe.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\System.Security.Permissions.dll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Laboratório\Assets-Laborátorio_0001_Livros.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Laboratório\Assets-Laborátorio_0002_Papeis.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Laboratório\Assets-Laborátorio_0003_Mesa-Vertical.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Laboratório\Assets-Laborátorio_0004_Mesa-Horizontal.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Laboratório\Assets-Laborátorio_0005_Perigo.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Laboratório\Assets-Laborátorio_0006_Vidrarias.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Laboratório\Assets-Laborátorio_0007_Armário.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Laboratório\Lab_0003_Máquinas.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Laboratório\Lab_0004_Extintor.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Laboratório\Lab_0005_Tubo.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Laboratório\Lab_0006_Luz.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Laboratório\Lab_0007_Grade.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Laboratório\Lab_0008_Planta.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Laboratório\Lab_0009_Maq.-de-TP.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Laboratório\Lab_Ar-Condicionado.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Laboratório\Lab_Exit.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Laboratório\Lab_Fechadura-Eletronica.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Laboratório\Lab_Notebook.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Laboratório\Lab_Parede.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Laboratório\Lab__0000_Cadeira-Esq.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Laboratório\Lab__0001_Cadeira-Costa.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Laboratório\Lab__0002_TP.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Laboratório\Lab__0003_Monitores.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Laboratório\Lab__0004_Piso.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Menu\Botões\Controles.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Menu\Botões\Controles_Selecionado.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Menu\Botões\Volume.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Menu\Botões\Volume_Selecionado.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\tiles\areia.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\tiles\arvore.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\tiles\flores.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\tiles\grama.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\tiles\rocha1.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\tiles\rocha2.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\tiles\tronco.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Bau\Treasure Chest closed 254x254.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Bau\Treasure Chest open 254x254.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Cavaleiro\knight 3 block.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Cavaleiro\knight 3 idle.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Cavaleiro\knight 3 improved slash animation.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Cavaleiro\knight death animation.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Cavaleiro\knight walk animation.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Feiticeiro\sorcerer attack_Animation 1_0.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Feiticeiro\sorcerer attack_Animation 1_1.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Feiticeiro\sorcerer attack_Animation 1_2.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Feiticeiro\sorcerer attack_Animation 1_3.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Feiticeiro\sorcerer attack_Animation 1_4.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Feiticeiro\sorcerer attack_Animation 1_5.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Feiticeiro\sorcerer attack_Animation 1_6.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Feiticeiro\sorcerer attack_Animation 1_7.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Feiticeiro\sorcerer attack_Animation 1_8.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Feiticeiro\sorcerer attack_Animation 1_9.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Feiticeiro\sorcerer villain.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Feiticeiro\villain.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Mago\wizard attack.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Mago\wizard death.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Mago\wizard fly forward.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Mago\wizard idle.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Rogue\rogue like attack animations.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Rogue\rogue like attack animations_attack down_0.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Rogue\rogue like attack animations_attack down_1.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Rogue\rogue like attack animations_attack down_2.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Rogue\rogue like attack animations_attack down_3.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Rogue\rogue like attack animations_attack left_0.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Rogue\rogue like attack animations_attack left_1.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Rogue\rogue like attack animations_attack left_2.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Rogue\rogue like attack animations_attack left_3.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Rogue\rogue like attack animations_attack right_0.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Rogue\rogue like attack animations_attack right_1.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Rogue\rogue like attack animations_attack right_2.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Rogue\rogue like attack animations_attack right_3.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Rogue\rogue like attack animations_attack up_0.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Rogue\rogue like attack animations_attack up_1.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Rogue\rogue like attack animations_attack up_2.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Rogue\rogue like attack animations_attack up_3.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Rogue\rogue like attack.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Rogue\rogue like attack_Animation 1_0.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Rogue\rogue like attack_Animation 1_1.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Rogue\rogue like attack_Animation 1_2.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Rogue\rogue like attack_Animation 1_3.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Rogue\rogue like attack_Animation 1_4.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Rogue\rogue like attack_Animation 1_5.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Rogue\rogue like attack_Animation 1_6.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Rogue\rogue like attack_Animation 1_7.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Rogue\rogue like attack_Animation 1_8.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Rogue\rogue like attack_Animation 1_9.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Rogue\rogue like idle.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Rogue\rogue like idle_Animation 1_0.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Rogue\rogue like idle_Animation 1_1.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Rogue\rogue like idle_Animation 1_2.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Rogue\rogue like run up_Animation 1_0.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Rogue\rogue like run up_Animation 1_1.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Rogue\rogue like run up_Animation 1_2.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Rogue\rogue like run up_Animation 1_3.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Rogue\rogue like run.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Rogue\rogue like run_Animation 1_0.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Rogue\rogue like run_Animation 1_1.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Rogue\rogue like run_Animation 1_2.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Rogue\rogue like run_Animation 1_3.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Rogue\rogue like run_Animation 1_4.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Rogue\rogue like run_Animation 1_5.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Rogue\roguelike run down_Animation 1_0.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Rogue\roguelike run down_Animation 1_1.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Rogue\roguelike run down_Animation 1_2.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Rogue\roguelike run down_Animation 1_3.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Maps\Laborátorio\Laboratório.xml
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Maps\map.xml
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Maps\Laborátorio\Laborátorio.txt
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Zumbi\undead_attack.gif
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Zumbi\undead_death.gif
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Zumbi\undead_hurt.gif
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Zumbi\undead_idle.gif
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Zumbi\undead_walk.gif
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\Microsoft.Win32.Primitives.ildll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\Microsoft.Win32.Primitives.ilpdb
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\Newtonsoft.Json.ildll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\Newtonsoft.Json.ilpdb
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.Collections.NonGeneric.ildll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.Collections.NonGeneric.ilpdb
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.Collections.Specialized.ildll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.Collections.Specialized.ilpdb
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.ComponentModel.ildll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.ComponentModel.ilpdb
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.ComponentModel.Primitives.ildll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.ComponentModel.Primitives.ilpdb
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.ComponentModel.TypeConverter.ildll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.ComponentModel.TypeConverter.ilpdb
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.Data.Common.ildll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.Data.Common.ilpdb
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.Diagnostics.DiagnosticSource.ildll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.Diagnostics.DiagnosticSource.ilpdb
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.Diagnostics.TraceSource.ildll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.Diagnostics.TraceSource.ilpdb
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.Drawing.Primitives.ildll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.Drawing.Primitives.ilpdb
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.IO.FileSystem.ildll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.IO.FileSystem.ilpdb
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.Net.Http.ildll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.Net.Http.ilpdb
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.Net.NameResolution.ildll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.Net.NameResolution.ilpdb
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.Net.Primitives.ildll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.Net.Primitives.ilpdb
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.Net.Requests.ildll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.Net.Requests.ilpdb
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.Net.Security.ildll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.Net.Security.ilpdb
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.Net.ServicePoint.ildll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.Net.ServicePoint.ilpdb
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.Net.Sockets.ildll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.Net.Sockets.ilpdb
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.Net.WebHeaderCollection.ildll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.Net.WebHeaderCollection.ilpdb
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.Private.Xml.ildll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.Private.Xml.ilpdb
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.Private.Xml.Linq.ildll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.Private.Xml.Linq.ilpdb
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.Resources.Writer.ildll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.Resources.Writer.ilpdb
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.Runtime.CompilerServices.Unsafe.ildll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.Runtime.CompilerServices.Unsafe.ilpdb
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.Runtime.InteropServices.RuntimeInformation.ildll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.Runtime.InteropServices.RuntimeInformation.ilpdb
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.Runtime.Numerics.ildll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.Runtime.Numerics.ilpdb
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.Runtime.Serialization.Formatters.ildll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.Runtime.Serialization.Formatters.ilpdb
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.Runtime.Serialization.Primitives.ildll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.Runtime.Serialization.Primitives.ilpdb
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.Security.Claims.ildll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.Security.Claims.ilpdb
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.Security.Cryptography.Algorithms.ildll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.Security.Cryptography.Algorithms.ilpdb
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.Security.Cryptography.Cng.ildll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.Security.Cryptography.Cng.ilpdb
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.Security.Cryptography.Csp.ildll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.Security.Cryptography.Csp.ilpdb
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.Security.Cryptography.Encoding.ildll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.Security.Cryptography.Encoding.ilpdb
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.Security.Cryptography.Primitives.ildll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.Security.Cryptography.Primitives.ilpdb
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.Security.Cryptography.X509Certificates.ildll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.Security.Cryptography.X509Certificates.ilpdb
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.Security.Principal.Windows.ildll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.Security.Principal.Windows.ilpdb
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.Threading.Overlapped.ildll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.Threading.Overlapped.ilpdb
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.Threading.Tasks.Parallel.ildll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.Threading.Tasks.Parallel.ilpdb
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.Threading.Thread.ildll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.Threading.Thread.ilpdb
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.Transactions.Local.ildll
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\ILTransformed\System.Transactions.Local.ilpdb
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.Collections.NonGeneric.0.rsrc
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.Collections.NonGeneric.index.txt
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.Collections.Specialized.0.rsrc
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.Collections.Specialized.index.txt
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.ComponentModel.Primitives.0.rsrc
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.ComponentModel.Primitives.index.txt
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.ComponentModel.TypeConverter.0.rsrc
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.ComponentModel.TypeConverter.index.txt
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.Data.Common.0.rsrc
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.Data.Common.index.txt
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.Diagnostics.DiagnosticSource.0.rsrc
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.Diagnostics.DiagnosticSource.index.txt
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.Diagnostics.TraceSource.0.rsrc
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.Diagnostics.TraceSource.index.txt
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.Drawing.Primitives.0.rsrc
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.Drawing.Primitives.index.txt
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.IO.FileSystem.0.rsrc
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.IO.FileSystem.index.txt
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.Net.Http.0.rsrc
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.Net.Http.1.rsrc
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.Net.Http.index.txt
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.Net.NameResolution.0.rsrc
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.Net.NameResolution.index.txt
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.Net.Primitives.0.rsrc
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.Net.Primitives.index.txt
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.Net.Requests.0.rsrc
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.Net.Requests.index.txt
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.Net.Security.0.rsrc
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.Net.Security.1.rsrc
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.Net.Security.index.txt
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.Net.ServicePoint.0.rsrc
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.Net.ServicePoint.index.txt
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.Net.Sockets.0.rsrc
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.Net.Sockets.index.txt
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.Net.WebHeaderCollection.0.rsrc
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.Net.WebHeaderCollection.index.txt
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.Private.Xml.0.rsrc
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.Private.Xml.1.rsrc
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.Private.Xml.index.txt
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.Private.Xml.Linq.0.rsrc
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.Private.Xml.Linq.1.rsrc
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.Private.Xml.Linq.index.txt
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.Resources.Writer.0.rsrc
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.Resources.Writer.index.txt
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.Runtime.InteropServices.RuntimeInformation.0.rsrc
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.Runtime.InteropServices.RuntimeInformation.index.txt
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.Runtime.Numerics.0.rsrc
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.Runtime.Numerics.index.txt
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.Runtime.Serialization.Formatters.0.rsrc
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.Runtime.Serialization.Formatters.index.txt
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.Runtime.Serialization.Primitives.0.rsrc
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.Runtime.Serialization.Primitives.index.txt
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.Security.Claims.0.rsrc
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.Security.Claims.index.txt
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.Security.Cryptography.Algorithms.0.rsrc
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.Security.Cryptography.Algorithms.index.txt
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.Security.Cryptography.Cng.0.rsrc
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.Security.Cryptography.Cng.index.txt
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.Security.Cryptography.Csp.0.rsrc
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.Security.Cryptography.Csp.index.txt
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.Security.Cryptography.Encoding.0.rsrc
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.Security.Cryptography.Encoding.index.txt
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.Security.Cryptography.Primitives.0.rsrc
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.Security.Cryptography.Primitives.index.txt
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.Security.Cryptography.X509Certificates.0.rsrc
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.Security.Cryptography.X509Certificates.index.txt
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.Security.Principal.Windows.0.rsrc
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.Security.Principal.Windows.index.txt
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.Threading.Overlapped.0.rsrc
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.Threading.Overlapped.index.txt
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.Threading.Tasks.Parallel.0.rsrc
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.Threading.Tasks.Parallel.index.txt
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.Threading.Thread.0.rsrc
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.Threading.Thread.index.txt
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.Transactions.Local.0.rsrc
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.Transactions.Local.index.txt

@@ -351,6 +351,9 @@
   <data name="MetadataStringDecoderEncodingMustBeUtf8" xml:space="preserve">
     <value>The MetadataStringDecoder instance used to instantiate the Metadata reader must have a UTF8 encoding.</value>
   </data>
+  <data name="ExpectedNonEmptyArray" xml:space="preserve">
+    <value>Expected non-empty array.</value>
+  </data>
   <data name="ValueTooLarge" xml:space="preserve">
     <value>Value is too large.</value>
   </data>
@@ -389,6 +392,9 @@
   </data>
   <data name="SectionTooSmall" xml:space="preserve">
     <value>Section too small.</value>
+  </data>
+  <data name="InvalidPdbChecksumDataFormat" xml:space="preserve">
+    <value>Invalid PDB Checksum data format.</value>
   </data>
   <data name="InvalidMetadataSectionSpan" xml:space="preserve">
     <value>Invalid metadata section span.</value>

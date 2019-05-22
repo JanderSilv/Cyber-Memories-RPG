@@ -183,6 +183,9 @@
   <data name="NotSupported_UnseekableStream" xml:space="preserve">
     <value>Stream does not support seeking.</value>
   </data>
+  <data name="IO_PathTooLong_Path" xml:space="preserve">
+    <value>The path '{0}' is too long, or a component of the specified path is too long.</value>
+  </data>
   <data name="InvalidOperation_CannotChangeBufferSizeOfWinRtStreamAdapter" xml:space="preserve">
     <value>Cannot convert the specified Windows Runtime stream to a managed System.IO.Stream object with the specified buffer size because this Windows Runtime stream has been previously converted to a managed Stream object with a different buffer size. Ensure that the 'bufferSize' argument matches the existing buffer or use the '{0}'-overload without the 'bufferSize' argument to convert the specified Windows Runtime stream to a Stream object with the same buffer size as previously.</value>
   </data>

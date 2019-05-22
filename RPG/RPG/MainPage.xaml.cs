@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Threading.Tasks;
 using System.Xml;
@@ -48,25 +49,72 @@ namespace RPG
 
             window.SetCurrent();
 
-            Player p = new Player(new Vector2(window.Widht/2, window.Height/2));
+            Player p = new Player(new Vector2(400,300));
+            AmbienteJogo.currentCamera.setSeek(p);
+            
+            AmbienteJogo.AdcionarEntidade(p);
+           
+
             p.Nome = "ntbp";
             AmbienteJogo.AdcionarEntidade(new Tronco(new Vector2(100+window.Widht/2, window.Height/2)));
+
             
-            AmbienteJogo.currentCamera.Seek = p;
-            AmbienteJogo.AdcionarEntidade(p);
 
             //try
             //{
             //    Engine.save(p, "E:/Projects/RPG-LP2/RPG/RPG/Src/saves/player.txt");
 
-            //}catch(Exception e)
+            //}
+            //catch (Exception e)
             //{
-            //    Engine.Debug("Message: "+e.Message);
-            //    Engine.Debug("Stacktrace: "+e.StackTrace);
-            //    Engine.Debug("InnerException"+e.InnerException);
+            //    Engine.Debug("Message: " + e.Message);
+            //    Engine.Debug("Stacktrace: " + e.StackTrace);
+            //    Engine.Debug("InnerException" + e.InnerException);
             //}
 
+            DungeonGenerator dg = new DungeonGenerator();
+            dg.heightDungeon = 100;
+            dg.widhtDungeon = 100;
+            dg.qntRooms = 10;
+            dg.roomXMin = 8;
+            dg.roomXMax = 16;
+            dg.roomYMin = 8;
+            dg.roomYMax = 16;
+            dg.Generate();
 
+            string map="";
+
+            for (int j = 0; j < dg.heightDungeon; j++)
+            {
+                for (int i = 0; i < dg.widhtDungeon; i++)
+                {
+                    if (dg.dungeonMap[i, j] == 0)
+                    {
+                        map += "  ";
+                        Debug.Write("  ");
+                    }
+                    else
+                    {
+                        map += dg.dungeonMap[i, j] + " ";
+                        Debug.Write(dg.dungeonMap[i, j] + " ");
+                    }
+                   
+                }
+                map += '\n';
+                Engine.Debug("");
+            }
+
+            try
+            {
+                Engine.saveAsync(map,"map.txt");
+            }
+            catch(Exception e)
+            {
+                Engine.Debug(e.StackTrace);
+                Engine.Debug(e.InnerException);
+                Engine.Debug(e.Message);
+            }
         }
     }
-}
+    }
+

@@ -123,6 +123,12 @@
   <data name="ObjectDisposed_PipeClosed" xml:space="preserve">
     <value>Cannot access a closed pipe.</value>
   </data>
+  <data name="PlatformNotSupported_InvalidPipeNameChars" xml:space="preserve">
+    <value>The name of a pipe on this platform must be a valid file name or a valid absolute path to a file name.</value>
+  </data>
+  <data name="UnauthorizedAccess_NotOwnedByCurrentUser" xml:space="preserve">
+    <value>Could not connect to the pipe because it was not owned by the current user.</value>
+  </data>
   <data name="NotSupported_UnwritableStream" xml:space="preserve">
     <value>Stream does not support writing.</value>
   </data>
@@ -147,6 +153,9 @@
   <data name="NotSupported_UnseekableStream" xml:space="preserve">
     <value>Stream does not support seeking.</value>
   </data>
+  <data name="IO_PathTooLong_Path" xml:space="preserve">
+    <value>The path '{0}' is too long, or a component of the specified path is too long.</value>
+  </data>
   <data name="IO_FileNotFound" xml:space="preserve">
     <value>Unable to find the specified file.</value>
   </data>
@@ -165,11 +174,14 @@
   <data name="Argument_InvalidHandle" xml:space="preserve">
     <value>Invalid handle.</value>
   </data>
+  <data name="UnauthorizedAccess_ClientIsNotCurrentUser" xml:space="preserve">
+    <value>Client connection (user id {0}) was refused because it was not owned by the current user (id {1}).</value>
+  </data>
   <data name="InvalidOperation_PipeDisconnected" xml:space="preserve">
     <value>Pipe is in a disconnected state.</value>
   </data>
-  <data name="ArgumentOutOfRange_PathLengthInvalid" xml:space="preserve">
-    <value>The path '{0}' is of an invalid length for use with domain sockets on this platform.  The length must be between 1 and {1} characters, inclusive.</value>
+  <data name="ArgumentOutOfRange_NeedValidPipeAccessRights" xml:space="preserve">
+    <value>Invalid PipeAccessRights value.</value>
   </data>
   <data name="ArgumentNull_ServerName" xml:space="preserve">
     <value>serverName cannot be null. Use \".\" for current machine.</value>
@@ -198,6 +210,9 @@
   <data name="UnauthorizedAccess_IODenied_Path" xml:space="preserve">
     <value>Access to the path '{0}' is denied.</value>
   </data>
+  <data name="IO_AllPipeInstancesAreBusy" xml:space="preserve">
+    <value>All pipe instances are busy.</value>
+  </data>
   <data name="ArgumentOutOfRange_TransmissionModeByteOrMsg" xml:space="preserve">
     <value>For named pipes, transmission mode can be TransmissionMode.Byte or PipeTransmissionMode.Message. For anonymous pipes, transmission mode can be TransmissionMode.Byte.</value>
   </data>
@@ -212,6 +227,9 @@
   </data>
   <data name="ArgumentOutOfRange_NeedNonNegNum" xml:space="preserve">
     <value>Non negative number is required.</value>
+  </data>
+  <data name="IO_IO_PipeBroken" xml:space="preserve">
+    <value>Pipe is broken.</value>
   </data>
   <data name="ObjectDisposed_StreamClosed" xml:space="preserve">
     <value>Cannot access a closed Stream.</value>
@@ -246,11 +264,11 @@
   <data name="ArgumentOutOfRange_MaxNumServerInstances" xml:space="preserve">
     <value>maxNumberOfServerInstances must either be a value between 1 and 254, or NamedPipeServerStream.MaxAllowedServerInstances (to obtain the maximum number allowed by system resources).</value>
   </data>
+  <data name="Argument_NonContainerInvalidAnyFlag" xml:space="preserve">
+    <value>This flag may not be set on a pipe.</value>
+  </data>
   <data name="Argument_EmptyServerName" xml:space="preserve">
     <value>serverName cannot be an empty string.  Use \\\".\\\" for current machine.</value>
-  </data>
-  <data name="PlatformNotSupproted_InvalidNameChars" xml:space="preserve">
-    <value>The name of a pipe on this platform must only include characters valid in file names.</value>
   </data>
   <data name="ArgumentOutOfRange_InvalidTimeout" xml:space="preserve">
     <value>Timeout must be non-negative or equal to -1 (Timeout.Infinite)</value>

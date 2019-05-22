@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Cryptography_InvalidPadding" xml:space="preserve">
-    <value>Specified padding mode is not valid for this algorithm.</value>
+    <value>Padding is invalid and cannot be removed.</value>
   </data>
   <data name="Cryptography_InvalidDsaParameters_SeedRestriction_ShortKey" xml:space="preserve">
     <value>The specified DSA parameters are not valid; Seed, if present, must be 20 bytes long for keys shorter than 1024 bits.</value>
@@ -153,6 +153,9 @@
   <data name="Cryptography_UnknownHashAlgorithm" xml:space="preserve">
     <value>'{0}' is not a known hash algorithm.</value>
   </data>
+  <data name="Cryptography_RSA_DecryptWrongSize" xml:space="preserve">
+    <value>The length of the data to decrypt is not valid for the size of this key.</value>
+  </data>
   <data name="Cryptography_Der_Invalid_Encoding" xml:space="preserve">
     <value>ASN1 corrupted data.</value>
   </data>
@@ -164,6 +167,9 @@
   </data>
   <data name="Cryptography_InvalidDsaParameters_MismatchedPGY" xml:space="preserve">
     <value>The specified DSA parameters are not valid; P, G and Y must be the same length (the key size).</value>
+  </data>
+  <data name="Cryptography_ArgECDHRequiresECDHKey" xml:space="preserve">
+    <value>Keys used with the ECDiffieHellmanCng algorithm must have an algorithm group of ECDiffieHellman.</value>
   </data>
   <data name="Cryptography_UnexpectedTransformTruncation" xml:space="preserve">
     <value>CNG provider unexpectedly terminated encryption or decryption prematurely.</value>
@@ -204,6 +210,9 @@
   <data name="Cryptography_RC2_EKSKS" xml:space="preserve">
     <value>KeySize value must be at least as large as the EffectiveKeySize value.</value>
   </data>
+  <data name="Cryptography_KeyTooSmall" xml:space="preserve">
+    <value>The key is too small for the requested operation.</value>
+  </data>
   <data name="Arg_CryptographyException" xml:space="preserve">
     <value>Error occurred during a cryptographic operation.</value>
   </data>
@@ -212,6 +221,9 @@
   </data>
   <data name="Argument_InvalidOffLen" xml:space="preserve">
     <value>Offset and length were out of bounds for the array or count is greater than the number of elements from index to the end of the source collection.</value>
+  </data>
+  <data name="Cryptography_ArgECDHKeySizeMismatch" xml:space="preserve">
+    <value>The keys from both parties must be the same size to generate a secret agreement.</value>
   </data>
   <data name="Cryptography_InvalidKey_SemiWeak" xml:space="preserve">
     <value>Specified key is a known semi-weak key for '{0}' and cannot be used.</value>
@@ -249,6 +261,12 @@
   <data name="Cryptography_MustTransformWholeBlock" xml:space="preserve">
     <value>TransformBlock may only process bytes in block sized increments.</value>
   </data>
+  <data name="Cryptography_SignHash_WrongSize" xml:space="preserve">
+    <value>The provided hash value is not the expected size for the specified hash algorithm.</value>
+  </data>
+  <data name="Cryptography_Encryption_MessageTooLong" xml:space="preserve">
+    <value>The message exceeds the maximum allowable length for the chosen options ({0}).</value>
+  </data>
   <data name="Cryptography_AddNullOrEmptyName" xml:space="preserve">
     <value>CryptoConfig cannot add a mapping for a null or empty name.</value>
   </data>
@@ -279,6 +297,9 @@
   <data name="Cryptography_InvalidECNamedCurve" xml:space="preserve">
     <value>The specified named curve parameters are not valid. Only the Oid parameter must be set.</value>
   </data>
+  <data name="Cryptography_TlsRequires64ByteSeed" xml:space="preserve">
+    <value>The TLS key derivation function requires a seed value of exactly 64 bytes.</value>
+  </data>
   <data name="Cryptography_InvalidDsaParameters_QRestriction_ShortKey" xml:space="preserve">
     <value>The specified DSA parameters are not valid; Q must be 20 bytes long for keys shorter than 1024 bits.</value>
   </data>
@@ -288,6 +309,9 @@
   <data name="Cryptography_InvalidDsaParameters_QRestriction_LargeKey" xml:space="preserve">
     <value>The specified DSA parameters are not valid; Q's length must be one of 20, 32 or 64 bytes.</value>
   </data>
+  <data name="Cryptography_TlsRequiresLabelAndSeed" xml:space="preserve">
+    <value>The TLS key derivation function requires both the label and seed properties to be set.</value>
+  </data>
   <data name="Cryptography_UnknownPaddingMode" xml:space="preserve">
     <value>Unknown padding mode used.</value>
   </data>
@@ -296,6 +320,9 @@
   </data>
   <data name="ArgumentOutOfRange_NeedPosNum" xml:space="preserve">
     <value>Positive number required.</value>
+  </data>
+  <data name="Cryptography_OAEP_Decryption_Failed" xml:space="preserve">
+    <value>Error occurred while decoding OAEP padding.</value>
   </data>
   <data name="Cryptography_OpenInvalidHandle" xml:space="preserve">
     <value>Cannot open an invalid handle.</value>

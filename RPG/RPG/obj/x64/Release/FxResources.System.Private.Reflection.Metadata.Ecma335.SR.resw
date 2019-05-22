@@ -121,7 +121,7 @@
     <value>Invalid signature.</value>
   </data>
   <data name="ArrayLengthsNotEqual" xml:space="preserve">
-    <value>Object is not a array with the same number of elements as the array to compare it to.</value>
+    <value>Object is not an array with the same number of elements as the array to compare it to.</value>
   </data>
   <data name="StreamTooLarge" xml:space="preserve">
     <value>Stream length minus starting position is too large to hold a PEImage.</value>
@@ -136,7 +136,7 @@
     <value>PE image not available.</value>
   </data>
   <data name="ArrayInitializedStateNotEqual" xml:space="preserve">
-    <value>Object is not a array with the same initialization state as the array to compare it to.</value>
+    <value>Object is not an array with the same initialization state as the array to compare it to.</value>
   </data>
   <data name="InvalidDirectoryRVA" xml:space="preserve">
     <value>Invalid directory relative virtual address.</value>
@@ -309,6 +309,9 @@
   <data name="InvalidNumberOfSections" xml:space="preserve">
     <value>Invalid number of sections in declared in PE header.</value>
   </data>
+  <data name="UnexpectedPdbChecksumDataSignature" xml:space="preserve">
+    <value>Unexpected PDB Checksum data signature value.</value>
+  </data>
   <data name="UnableToReadMetadataFile" xml:space="preserve">
     <value>Unable to read metadata file.</value>
   </data>
@@ -375,6 +378,9 @@
   <data name="MetadataStringDecoderEncodingMustBeUtf8" xml:space="preserve">
     <value>The MetadataStringDecoder instance used to instantiate the Metadata reader must have a UTF8 encoding.</value>
   </data>
+  <data name="ExpectedNonEmptyArray" xml:space="preserve">
+    <value>Expected non-empty array.</value>
+  </data>
   <data name="ValueTooLarge" xml:space="preserve">
     <value>Value is too large.</value>
   </data>
@@ -419,6 +425,9 @@
   </data>
   <data name="SectionTooSmall" xml:space="preserve">
     <value>Section too small.</value>
+  </data>
+  <data name="InvalidPdbChecksumDataFormat" xml:space="preserve">
+    <value>Invalid PDB Checksum data data format.</value>
   </data>
   <data name="InvalidMetadataSectionSpan" xml:space="preserve">
     <value>Invalid metadata section span.</value>

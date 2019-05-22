@@ -192,6 +192,10 @@
   <data name="XmlRpcLitXmlns" xml:space="preserve">
     <value>Input or output values of an rpc\literal method cannot have an XmlNamespaceDeclarations attribute (member '{0}').</value>
   </data>
+  <data name="HelpMiscOptions" xml:space="preserve">
+    <value>  
+  Miscellaneous options:</value>
+  </data>
   <data name="Sch_InvalidValueDetailedAttribute" xml:space="preserve">
     <value>The attribute '{0}' has an invalid value '{1}' according to its schema type '{2}' - {3}</value>
   </data>
@@ -251,6 +255,9 @@
   </data>
   <data name="Sch_MissAttribute" xml:space="preserve">
     <value>The '{0}' attribute is either invalid or missing.</value>
+  </data>
+  <data name="InfoNoSerializableTypes" xml:space="preserve">
+    <value>Assembly '{0}' does not contain any types that can be serialized using XmlSerializer.</value>
   </data>
   <data name="XmlUdeclaredXsdType" xml:space="preserve">
     <value>The type, {0}, is undeclared.</value>
@@ -372,6 +379,10 @@
   <data name="XmlDuplicateNs" xml:space="preserve">
     <value>Illegal namespace declaration xmlns:{0}='{1}'. Namespace alias '{0}' already defined in the current scope.</value>
   </data>
+  <data name="HelpDevOptions" xml:space="preserve">
+    <value>  
+  Developer options:</value>
+  </data>
   <data name="Xslt_NotFirstImport" xml:space="preserve">
     <value>'xsl:import' instructions must precede all other element children of an 'xsl:stylesheet' element.</value>
   </data>
@@ -423,9 +434,6 @@
   <data name="XPath_ScientificNotation" xml:space="preserve">
     <value>Scientific notation is not allowed.</value>
   </data>
-  <data name="InfoAssemblyName" xml:space="preserve">
-    <value>Serialization Assembly Name: {0}.</value>
-  </data>
   <data name="Xml_UnexpectedEOF1" xml:space="preserve">
     <value>Unexpected end of file has occurred.</value>
   </data>
@@ -450,8 +458,15 @@
   <data name="Sch_MissDtvaluesAttribute" xml:space="preserve">
     <value>The dt:values attribute is missing.</value>
   </data>
+  <data name="HelpUsage" xml:space="preserve">
+    <value>
+Usage: dotnet {0} [--assembly &lt;assembly file path&gt;] [--type &lt;type name&gt;]</value>
+  </data>
   <data name="Xml_UnknownEncoding" xml:space="preserve">
     <value>System does not support '{0}' encoding.</value>
+  </data>
+  <data name="HelpProxy" xml:space="preserve">
+    <value>     {0}    Generate serialization code only for proxy classes and web method parameters.</value>
   </data>
   <data name="Xslt_AnalyzeStringChildOrder" xml:space="preserve">
     <value>When both 'xsl:matching-string' and 'xsl:non-matching-string' elements are present, 'xsl:matching-string' element must come first.</value>
@@ -464,6 +479,9 @@
   </data>
   <data name="Sch_ComplexContentModel" xml:space="preserve">
     <value>Content model validation resulted in a large number of states, possibly due to large occurrence ranges. Therefore, content model may not be validated accurately.</value>
+  </data>
+  <data name="HelpForce" xml:space="preserve">
+    <value>     {0}         Forces overwrite of a previously generated assembly.</value>
   </data>
   <data name="XmlSerializeErrorDetails" xml:space="preserve">
     <value>There is an error in XML document ({0}, {1}).</value>
@@ -571,7 +589,7 @@
     <value>For security reasons DTD is prohibited in this XML document. To enable DTD processing set the DtdProcessing property on XmlReaderSettings to Parse and pass the settings into XmlReader.Create method.</value>
   </data>
   <data name="ErrSerializerExists" xml:space="preserve">
-    <value>Cannot generate serialization assembly {0} because it already exists. Use /{1} to force an overwrite of the existing assembly.</value>
+    <value>Cannot generate serialization code {0} because the code file already exists. Use /{1} to force an overwrite of the existing file.</value>
   </data>
   <data name="XmlRpcRefsInValueType" xml:space="preserve">
     <value>Cannot serialize {0}. References in structs are not supported with encoded SOAP.</value>
@@ -736,7 +754,7 @@
     <value>Extension object '{0}' does not contain a matching '{1}' method that has {2} parameter(s).</value>
   </data>
   <data name="ErrDirectoryExists" xml:space="preserve">
-    <value>Cannot generate serialization assembly '{0}' because a directory with the same name already exists.</value>
+    <value>Cannot generate serialization code '{0}' because a directory with the same name already exists.</value>
   </data>
   <data name="Sch_XmlSpace" xml:space="preserve">
     <value>Invalid xml:space syntax.</value>
@@ -1065,6 +1083,9 @@
   <data name="Xml_CanNotBindToReservedNamespace" xml:space="preserve">
     <value>Cannot bind to the reserved namespace.</value>
   </data>
+  <data name="InfoGeneratedFile" xml:space="preserve">
+    <value>Generated serialization code for assembly {0} --&gt; '{1}'.</value>
+  </data>
   <data name="Sch_DupAttributeUse" xml:space="preserve">
     <value>The attribute '{0}' already exists.</value>
   </data>
@@ -1143,6 +1164,9 @@
   <data name="Sch_AttributeValueDataType" xml:space="preserve">
     <value>The '{0}' attribute has an invalid value according to its data type.</value>
   </data>
+  <data name="FailLoadAssemblyUnderPregenMode" xml:space="preserve">
+    <value>"Fail to load assembly {0} or {0} doesn't exist under PreGen Mode.</value>
+  </data>
   <data name="Xml_XmlDeclNotFirst" xml:space="preserve">
     <value>Unexpected XML declaration. The XML declaration must be the first node in the document, and no whitespace characters are allowed to appear before it.</value>
   </data>
@@ -1175,6 +1199,9 @@
   </data>
   <data name="Xml_UnexpectedCDataEnd" xml:space="preserve">
     <value>']]&gt;' is not expected.</value>
+  </data>
+  <data name="ErrLoadAssembly" xml:space="preserve">
+    <value>File or assembly name '{0}', or one of its dependencies, was not found.</value>
   </data>
   <data name="Xp_InvalidToken" xml:space="preserve">
     <value>'{0}' has an invalid token.</value>
@@ -1368,6 +1395,9 @@
   <data name="XPathDocument_ValidateInvalidNodeType" xml:space="preserve">
     <value>Validate and CheckValidity are only allowed on Root or Element nodes.</value>
   </data>
+  <data name="HelpAssembly" xml:space="preserve">
+    <value>     {0}|{1}   Assembly location or display name.</value>
+  </data>
   <data name="Sch_MaxExlIncMismatch" xml:space="preserve">
     <value>It is an error if the derived 'maxExclusive' facet value is greater than or equal to the parent 'maxInclusive' facet value.</value>
   </data>
@@ -1454,6 +1484,12 @@
   </data>
   <data name="DirectoryAccessDenied" xml:space="preserve">
     <value>Access to directory {0} is denied.  The process under which XmlSerializer is running does not have sufficient permission to access the directory.</value>
+  </data>
+  <data name="HelpDescription" xml:space="preserve">
+    <value>Generates serialization code for use with XmlSerializer.
+The utility allows developers to pre-generate code for serialization
+building and deploying the assemblies with the application.
+    </value>
   </data>
   <data name="Sch_AttributeCircularRef" xml:space="preserve">
     <value>Circular attribute reference.</value>
@@ -1725,6 +1761,9 @@
   <data name="XmlMissingMethodEnum" xml:space="preserve">
     <value>The method for enum {0} is missing.</value>
   </data>
+  <data name="InfoIgnoreType" xml:space="preserve">
+    <value>Ignoring '{0}'.</value>
+  </data>
   <data name="XmlInvalidAttributeType" xml:space="preserve">
     <value>{0} may not be used on parameters or return values when they are not wrapped.</value>
   </data>
@@ -1903,7 +1942,7 @@
     <value>{0}.{1}() must return a valid type name. Type '{2}' cannot be found in the targetNamespace='{3}'.</value>
   </data>
   <data name="ErrGenerationFailed" xml:space="preserve">
-    <value>Sgen utility failed to pregenerate serialization assembly for {0}.</value>
+    <value>Sgen utility failed to pregenerate serialization code for {0}.</value>
   </data>
   <data name="Xslt_NotSupported" xml:space="preserve">
     <value>Compilation of XSLT is not supported on this platform.</value>
@@ -2265,6 +2304,9 @@
   <data name="Sch_LengthGtBaseLength" xml:space="preserve">
     <value>It is an error if 'length' is among the members of {facets} of {base type definition} and {value} is greater than the {value} of the parent 'length'.</value>
   </data>
+  <data name="GenerateSerializerNotFound" xml:space="preserve">
+    <value>Method 'System.Xml.Serialization.XmlSerializer.GenerateSerializer' was not found. This is likely because you are using an older version of the framework. Please update to .NET Core v2.1 or later.</value>
+  </data>
   <data name="XmlUnsupportedRank" xml:space="preserve">
     <value>Cannot serialize object of type {0}. Multidimensional arrays are not supported.</value>
   </data>
@@ -2504,6 +2546,9 @@
   </data>
   <data name="XmlMismatchSchemaObjects" xml:space="preserve">
     <value>Warning: Cannot share {0} named '{1}' from '{2}' namespace. Several mismatched schema declarations were found.</value>
+  </data>
+  <data name="InfoFileName" xml:space="preserve">
+    <value>Serialization Code File Name: {0}.</value>
   </data>
   <data name="XmlBareTextMember" xml:space="preserve">
     <value>There was an error exporting '{0}': bare members cannot contain text content.</value>
@@ -2932,7 +2977,7 @@
     <value>The '{0}' element is not supported in this context.</value>
   </data>
   <data name="XmlPregenTypeDynamic" xml:space="preserve">
-    <value>Cannot pre-generate serialization assembly for type '{0}'. Pre-generation of serialization assemblies is not supported for dynamic types. Save the assembly and load it from disk to use it with XmlSerialization.</value>
+    <value>Cannot pre-generate serialization code for type '{0}'. Pre-generation of serialization assemblies is not supported for dynamic types. Save the assembly and load it from disk to use it with XmlSerialization.</value>
   </data>
   <data name="Sch_DupXsdElement" xml:space="preserve">
     <value>'{0}' is a duplicate XSD element.</value>
@@ -3129,11 +3174,11 @@
   <data name="Xml_DtdAlreadyWritten" xml:space="preserve">
     <value>The DTD has already been written out.</value>
   </data>
-  <data name="InfoGeneratedAssembly" xml:space="preserve">
-    <value>Generated serialization assembly for assembly {0} --&gt; '{1}'.</value>
-  </data>
   <data name="XmlTypeUsedTwice" xml:space="preserve">
     <value>The type '{0}' from namespace '{1}' was used in two different ways.</value>
+  </data>
+  <data name="MoreHelp" xml:space="preserve">
+    <value>If you would like more help, please type "sgen {0}".</value>
   </data>
   <data name="Sch_AttListPresence" xml:space="preserve">
     <value>An attribute of type ID must have a declared default of either #IMPLIED or #REQUIRED.</value>
@@ -3152,6 +3197,12 @@
   </data>
   <data name="Xslt_EmptyNsAlias" xml:space="preserve">
     <value>The value of the '{0}' attribute cannot be empty. Use '#default' to specify the default namespace.</value>
+  </data>
+  <data name="HelpType" xml:space="preserve">
+    <value>     {0}          Generate code for serialization/deserialization of the specified type from the input assembly.</value>
+  </data>
+  <data name="HelpHelp" xml:space="preserve">
+    <value>     {0}|{1}       Show help.</value>
   </data>
   <data name="XmlIl_DocumentLoadError" xml:space="preserve">
     <value>An error occurred while loading document '{0}'. See InnerException for a complete description of the error.</value>
@@ -3190,7 +3241,7 @@
     <value>Expected WhitespaceHandling.None, or WhitespaceHandling.All, or WhitespaceHandling.Significant.</value>
   </data>
   <data name="ErrDirectoryNotExists" xml:space="preserve">
-    <value>Cannot generate serialization assembly '{0}' because directory {1} doesn't exist.</value>
+    <value>Cannot generate serialization code because directory {0} doesn't exist.</value>
   </data>
   <data name="XmlBinary_InvalidStandalone" xml:space="preserve">
     <value>Invalid BinaryXml standalone token.</value>
@@ -3308,6 +3359,9 @@
   </data>
   <data name="XmlRpcLitElementNullable" xml:space="preserve">
     <value>{0}='{1}' is not supported with rpc\literal SOAP. The wrapper element cannot be nullable.</value>
+  </data>
+  <data name="HelpOut" xml:space="preserve">
+    <value>     {0}|{1}        Output directory name (default: target assembly location).</value>
   </data>
   <data name="Sch_InvalidNamespaceAttribute" xml:space="preserve">
     <value>The namespace attribute cannot have empty string as its value.</value>

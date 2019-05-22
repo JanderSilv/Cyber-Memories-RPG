@@ -210,6 +210,9 @@
   <data name="ConcurrentDictionary_IndexIsNegative" xml:space="preserve">
     <value>The index argument is less than zero.</value>
   </data>
+  <data name="Arg_KeyNotFoundWithKey" xml:space="preserve">
+    <value>The given key '{0}' was not present in the dictionary.</value>
+  </data>
   <data name="BlockingCollection_CantAddAnyWhenCompleted" xml:space="preserve">
     <value>At least one of the specified collections is marked as complete with regards to additions.</value>
   </data>
