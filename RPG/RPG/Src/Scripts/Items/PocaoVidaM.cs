@@ -8,7 +8,7 @@ namespace RPG.Src.Scripts.Items
 {
     class PocaoVidaM : Item, Comercial, Atacavel, Equipavel
     {
-        {
+        
         public PocaoVidaM()
         {
             TipoItem = (ushort)tipoItem.Consumivel;
@@ -19,6 +19,11 @@ namespace RPG.Src.Scripts.Items
             Descricao = "Recupera 30 de HP de um aliado";
 
             ItemManager.GenID(this);
+        }
+
+        public void Atacar(Status e)
+        {
+          
         }
 
         public void Equipar(Status e)

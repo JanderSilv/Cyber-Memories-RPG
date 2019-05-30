@@ -19,11 +19,25 @@ namespace RPG
     public sealed partial class MainPage : Page
     {
         Window window;
+        Window selecao;
+
+        private string[] ImagePath = new string [4];
+        private int i=0;
+
+        UImage charSelector;
 
         public MainPage()
         {
             InitializeComponent();
+
+            ImagePath[0] = "Src/Images/Menu/Botões/Iniciar.png";
+            ImagePath[1] = "Src/Images/Menu/Botões/Iniciar.png";
+            ImagePath[2] = "Src/Images/Menu/Botões/Iniciar.png";
+            ImagePath[4] = "Src/Images/Menu/Botões/Iniciar.png";
+
+
             window = new Window(this, 840, 620);
+            selecao = new Window(this, 840, 620);
             AmbienteJogo.window = window;
 
             UPanel panel = new UPanel(new Vector2(50, 50), new Vector2(200, 300));
@@ -34,8 +48,10 @@ namespace RPG
 
             play.setBackground("Src/Images/Menu/Botões/Iniciar.png");
             play.setOnHover("Src/Images/Menu/Botões/Jogar_Selecionado.png");
+
             conf.setBackground("Src/Images/Menu/Botões/Configurações.png");
             conf.setOnHover("Src/Images/Menu/Botões/Configurações_Selecionado.png");
+
             sair.setBackground("Src/Images/Menu/Botões/Sair.png");
             sair.setOnHover("Src/Images/Menu/Botões/Sair_Selecionado.png");
 
@@ -46,7 +62,7 @@ namespace RPG
 
             window.Add(play);
 
-            window.SetCurrent();
+            selecao.SetCurrent();
 
             Player p = new Player(new Vector2(window.Widht/2, window.Height/2));
             p.Nome = "ntbp";
@@ -54,6 +70,8 @@ namespace RPG
             
             AmbienteJogo.currentCamera.Seek = p;
             AmbienteJogo.AdcionarEntidade(p);
+
+            charSelector = new UImage(ImagePath[i], new Vector2(65, 40));
 
             //try
             //{
@@ -67,6 +85,51 @@ namespace RPG
             //}
 
 
+        }
+
+        void SelecaoDePersonagem()
+        {
+
+
+            UButton man = new UButton("", new Vector2(25,20), new Vector2(178,67), Man);
+            UButton woman = new UButton("", new Vector2(25,30), new Vector2(178,67), Woman);
+            UButton rightSelector = new UButton("", new Vector2(70, 70), new Vector2(100, 50), RightSelector);
+            UButton leftSelector = new UButton("", new Vector2(70, 60), new Vector2(100, 50), LeftSelector);
+
+            man.setBackground("");
+            man.setOnHover("");
+            woman.setBackground("");
+            woman.setOnHover("");
+            rightSelector.setBackground("");
+            leftSelector.setBackground("");
+
+        }
+
+        
+
+        private void LeftSelector(object sender)
+        {
+            i--;
+            charSelector.Content = ImagePath[i];
+        }
+
+        private void RightSelector(object sender)
+        {
+            i++;
+            charSelector.Content = ImagePath[i];
+
+        }
+
+        private void Woman(object sender)
+        {
+            i = 2;
+            charSelector.Content = ImagePath[i];
+        }
+
+        private void Man(object sender)
+        {
+            i = 0;
+            charSelector.Content = ImagePath[i];
         }
     }
 }

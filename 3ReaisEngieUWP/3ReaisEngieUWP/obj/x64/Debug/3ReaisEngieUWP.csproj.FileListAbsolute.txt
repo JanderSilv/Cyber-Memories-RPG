@@ -135,6 +135,13 @@ C:\DEV\Projects\RPG-LP2\3ReaisEngieUWP\3ReaisEngieUWP\obj\x64\Debug\qualifiers.t
 C:\DEV\Projects\RPG-LP2\3ReaisEngieUWP\3ReaisEngieUWP\obj\x64\Debug\qualifiers.txt.intermediate
 C:\DEV\Projects\RPG-LP2\3ReaisEngieUWP\3ReaisEngieUWP\obj\x64\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\DEV\Projects\RPG-LP2\3ReaisEngieUWP\3ReaisEngieUWP\obj\x64\Debug\3ReaisEngieUWP.csprojAssemblyReference.cache
+C:\Users\Jafe Ferreira\Documents\GitHub\LP\3ReaisEngieUWP\3ReaisEngieUWP\bin\x64\Debug\3ReaisEngieUWP.dll
+C:\Users\Jafe Ferreira\Documents\GitHub\LP\3ReaisEngieUWP\3ReaisEngieUWP\bin\x64\Debug\Microsoft.UI.Xaml.Markup.winmd
+C:\Users\Jafe Ferreira\Documents\GitHub\LP\3ReaisEngieUWP\3ReaisEngieUWP\obj\x64\Debug\3ReaisEngieUWP.csprojAssemblyReference.cache
+C:\Users\Jafe Ferreira\Documents\GitHub\LP\3ReaisEngieUWP\3ReaisEngieUWP\obj\x64\Debug\3ReaisEngieUWP.csproj.CoreCompileInputs.cache
+C:\Users\Jafe Ferreira\Documents\GitHub\LP\3ReaisEngieUWP\3ReaisEngieUWP\obj\x64\Debug\3ReaisEngieUWP.csproj.CopyComplete
+C:\Users\Jafe Ferreira\Documents\GitHub\LP\3ReaisEngieUWP\3ReaisEngieUWP\obj\x64\Debug\3ReaisEngieUWP.dll
+C:\Users\Jafe Ferreira\Documents\GitHub\LP\3ReaisEngieUWP\3ReaisEngieUWP\obj\x64\Debug\3ReaisEngieUWP.pdb
 E:\Projects\RPG-LP2\3ReaisEngieUWP\3ReaisEngieUWP\bin\x64\Debug\3ReaisEngieUWP.dll
 E:\Projects\RPG-LP2\3ReaisEngieUWP\3ReaisEngieUWP\bin\x64\Debug\3ReaisEngieUWP.pdb
 E:\Projects\RPG-LP2\3ReaisEngieUWP\3ReaisEngieUWP\bin\x64\Debug\3ReaisEngieUWP.pri
@@ -158,11 +165,3 @@ E:\Projects\RPG-LP2\3ReaisEngieUWP\3ReaisEngieUWP\obj\x64\Debug\pri.resfiles.int
 E:\Projects\RPG-LP2\3ReaisEngieUWP\3ReaisEngieUWP\obj\x64\Debug\qualifiers.txt
 E:\Projects\RPG-LP2\3ReaisEngieUWP\3ReaisEngieUWP\obj\x64\Debug\qualifiers.txt.intermediate
 E:\Projects\RPG-LP2\3ReaisEngieUWP\3ReaisEngieUWP\obj\x64\Debug\MultipleQualifiersPerDimensionFound.txt
-E:\Projects\RPG-LP2\3ReaisEngieUWP\3ReaisEngieUWP\obj\x64\Debug\3ReaisEngieUWP.csprojAssemblyReference.cache
-C:\Users\Jafe Ferreira\Documents\GitHub\LP\3ReaisEngieUWP\3ReaisEngieUWP\bin\x64\Debug\3ReaisEngieUWP.dll
-C:\Users\Jafe Ferreira\Documents\GitHub\LP\3ReaisEngieUWP\3ReaisEngieUWP\bin\x64\Debug\Microsoft.UI.Xaml.Markup.winmd
-C:\Users\Jafe Ferreira\Documents\GitHub\LP\3ReaisEngieUWP\3ReaisEngieUWP\obj\x64\Debug\3ReaisEngieUWP.csprojAssemblyReference.cache
-C:\Users\Jafe Ferreira\Documents\GitHub\LP\3ReaisEngieUWP\3ReaisEngieUWP\obj\x64\Debug\3ReaisEngieUWP.csproj.CoreCompileInputs.cache
-C:\Users\Jafe Ferreira\Documents\GitHub\LP\3ReaisEngieUWP\3ReaisEngieUWP\obj\x64\Debug\3ReaisEngieUWP.csproj.CopyComplete
-C:\Users\Jafe Ferreira\Documents\GitHub\LP\3ReaisEngieUWP\3ReaisEngieUWP\obj\x64\Debug\3ReaisEngieUWP.dll
-C:\Users\Jafe Ferreira\Documents\GitHub\LP\3ReaisEngieUWP\3ReaisEngieUWP\obj\x64\Debug\3ReaisEngieUWP.pdb

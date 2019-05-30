@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    "UAP,Version=v10.0.17134": {
+    "UAP,Version=v10.0.17763": {
       "BinaryTree/5.0.0": {
         "type": "package",
         "compile": {
@@ -326,7 +326,7 @@
         }
       }
     },
-    "UAP,Version=v10.0.17134/win10-arm": {
+    "UAP,Version=v10.0.17763/win10-arm": {
       "BinaryTree/5.0.0": {
         "type": "package",
         "compile": {
@@ -826,7 +826,7 @@
         }
       }
     },
-    "UAP,Version=v10.0.17134/win10-arm-aot": {
+    "UAP,Version=v10.0.17763/win10-arm-aot": {
       "BinaryTree/5.0.0": {
         "type": "package",
         "compile": {
@@ -1327,7 +1327,7 @@
         }
       }
     },
-    "UAP,Version=v10.0.17134/win10-arm64-aot": {
+    "UAP,Version=v10.0.17763/win10-arm64-aot": {
       "BinaryTree/5.0.0": {
         "type": "package",
         "compile": {
@@ -1652,7 +1652,7 @@
         }
       }
     },
-    "UAP,Version=v10.0.17134/win10-x64": {
+    "UAP,Version=v10.0.17763/win10-x64": {
       "BinaryTree/5.0.0": {
         "type": "package",
         "compile": {
@@ -2152,7 +2152,7 @@
         }
       }
     },
-    "UAP,Version=v10.0.17134/win10-x64-aot": {
+    "UAP,Version=v10.0.17763/win10-x64-aot": {
       "BinaryTree/5.0.0": {
         "type": "package",
         "compile": {
@@ -2653,7 +2653,7 @@
         }
       }
     },
-    "UAP,Version=v10.0.17134/win10-x86": {
+    "UAP,Version=v10.0.17763/win10-x86": {
       "BinaryTree/5.0.0": {
         "type": "package",
         "compile": {
@@ -3153,7 +3153,7 @@
         }
       }
     },
-    "UAP,Version=v10.0.17134/win10-x86-aot": {
+    "UAP,Version=v10.0.17763/win10-x86-aot": {
       "BinaryTree/5.0.0": {
         "type": "package",
         "compile": {
@@ -7392,7 +7392,7 @@
     }
   },
   "projectFileDependencyGroups": {
-    "UAP,Version=v10.0.17134": [
+    "UAP,Version=v10.0.17763": [
       "BinaryTree >= 5.0.0",
       "Imagine.Uwp.Json >= 1.0.0",
       "Microsoft.NETCore.UniversalWindowsPlatform >= 6.1.7",
@@ -7401,41 +7401,41 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ythas\\.nuget\\packages\\": {},
+    "C:\\Users\\ruann\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Ythasla\\OneDrive\\Documentos\\GITHUB\\RPG-LP2\\3ReaisEngieUWP\\3ReaisEngieUWP\\3ReaisEngieUWP.csproj",
+      "projectUniqueName": "E:\\Projects\\RPG-LP2\\3ReaisEngieUWP\\3ReaisEngieUWP\\3ReaisEngieUWP.csproj",
       "projectName": "3ReaisEngieUWP",
-      "projectPath": "E:\\Ythasla\\OneDrive\\Documentos\\GITHUB\\RPG-LP2\\3ReaisEngieUWP\\3ReaisEngieUWP\\3ReaisEngieUWP.csproj",
-      "packagesPath": "C:\\Users\\ythas\\.nuget\\packages\\",
-      "outputPath": "E:\\Ythasla\\OneDrive\\Documentos\\GITHUB\\RPG-LP2\\3ReaisEngieUWP\\3ReaisEngieUWP\\obj\\",
+      "projectPath": "E:\\Projects\\RPG-LP2\\3ReaisEngieUWP\\3ReaisEngieUWP\\3ReaisEngieUWP.csproj",
+      "packagesPath": "C:\\Users\\ruann\\.nuget\\packages\\",
+      "outputPath": "E:\\Projects\\RPG-LP2\\3ReaisEngieUWP\\3ReaisEngieUWP\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\ythas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ruann\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "uap10.0.17134"
+        "uap10.0.17763"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "uap10.0.17134": {
+        "uap10.0.17763": {
           "projectReferences": {}
         }
       }
     },
     "frameworks": {
-      "uap10.0.17134": {
+      "uap10.0.17763": {
         "dependencies": {
           "BinaryTree": {
             "target": "Package",
@@ -7494,10 +7494,10 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "O pacote 'TiledNet 2.0.0' foi restaurado usando '.NETFramework,Version=v4.6.1' em vez da estrutura de destino do projeto 'UAP,Version=v10.0.17134'. Esse pacote pode não ser totalmente compatível com o seu projeto.",
+      "message": "O pacote 'TiledNet 2.0.0' foi restaurado usando '.NETFramework,Version=v4.6.1' em vez da estrutura de destino do projeto 'UAP,Version=v10.0.17763'. Esse pacote pode não ser totalmente compatível com o seu projeto.",
       "libraryId": "TiledNet",
       "targetGraphs": [
-        "UAP,Version=v10.0.17134"
+        "UAP,Version=v10.0.17763"
       ]
     }
   ]

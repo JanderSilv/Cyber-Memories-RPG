@@ -20,6 +20,11 @@ namespace RPG.Src.Scripts.Items
             ItemManager.GenID(this);
         }
 
+        public void Atacar(Status e)
+        {
+           
+        }
+
         public void Equipar(Status e)
         {
             e.saude = e.saudeMax;
