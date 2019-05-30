@@ -4,6 +4,7 @@ using System.Reflection;
 using _3ReaisEngine.Attributes;
 using _3ReaisEngine.Components;
 using _3ReaisEngine.Events;
+using Newtonsoft.Json;
 
 namespace _3ReaisEngine.Core
 {
@@ -13,11 +14,13 @@ namespace _3ReaisEngine.Core
      * Toda entidade por padrão inicia com a componente Transform, pois contem os dados de onde o objeto se localiza em relação ao mapa
      */
 
+       
     public abstract class Entidade
     {
-        protected Dictionary<int, IComponente> Componentes;//armazenar os componentes da entidade
+        
+        public Dictionary<int, IComponente> Componentes;//armazenar os componentes da entidade
         public string Nome;
-        private ulong id;
+        public ulong id;
         public bool IsStatic = false;//pra otimização de rotina (objetos estaticos) 
         public Vector2 EntPos { get; set; } // posicao da entidade no mapa
         public ulong ID { get { return id; } set { if (id == 0) id = value; } }
@@ -81,7 +84,7 @@ namespace _3ReaisEngine.Core
                     }
                 }
                 
-                t.entidade = this;
+                t.setEntidade(this);
                 Componentes.Add(Componente<T>.IntComponenteID,t);
                 return true;
             }
@@ -104,7 +107,7 @@ namespace _3ReaisEngine.Core
                         Componentes.Add(reg, comp);
                     }
                 }
-                c.entidade = this;
+                c.setEntidade(this);
                  Componentes.Add(Componente<T>.IntComponenteID,c);
             }
             return false;
@@ -160,6 +163,7 @@ namespace _3ReaisEngine.Core
             return (T)c;
         }
 
+      
         /*
          É executado a cada frame do jogo
          */

@@ -3,6 +3,7 @@ using _3ReaisEngine.Core;
 using _3ReaisEngine.Events;
 using _3ReaisEngine.RPG.Core;
 using _3ReaisEngine.UI;
+using Newtonsoft.Json;
 using System;
 using Windows.UI.Input;
 using Windows.UI.Xaml.Controls;
@@ -14,8 +15,10 @@ namespace _3ReaisEngine.Components
    
     public class Render : Componente<Render>
     {
+        [JsonIgnore]
         public Image img;
         public Vector2 size { get => new Vector2((float)img.Width, (float)img.Height); set { img.Width = value.x; img.Height = value.y; } }
+        [JsonIgnore]
         public TranslateTransform transform;
        
 

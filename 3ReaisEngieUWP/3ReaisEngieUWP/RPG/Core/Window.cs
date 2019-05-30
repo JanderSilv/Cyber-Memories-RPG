@@ -149,8 +149,8 @@ namespace _3ReaisEngine.RPG.Core
             MalhaColisao mc = null;
             Body b = null;
 
-            element.EntPos.x += Widht / 4;
-            element.EntPos.y += Height / 4;
+         //   element.EntPos.x += Widht / 4;
+          //  element.EntPos.y += Height / 4;
 
             if (element.GetComponente(ref mc))
             {
@@ -184,8 +184,8 @@ namespace _3ReaisEngine.RPG.Core
                 Render r = null;
                 Body b = null;
                 MalhaColisao mc = null;
-                element.EntPos.x += Widht / 4;
-                element.EntPos.y += Height / 4;
+                //element.EntPos.x += Widht / 4;
+                //element.EntPos.y += Height / 4;
                 if (element.GetComponente(ref mc))
                 {
                     colisores.AddRange(mc.colisoes);

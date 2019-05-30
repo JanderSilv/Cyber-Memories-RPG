@@ -20,8 +20,8 @@ public class Player : Entidade
     readonly Colisao col;
     readonly Movel mov;
 
-    float vel;  
-    bool dead = false;
+    public float vel;  
+    public bool dead = false;
 
     public Player(Vector2 pos)
     {

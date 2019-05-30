@@ -1,4 +1,5 @@
 ﻿using _3ReaisEngine.Components;
+using Newtonsoft.Json;
 using System;
 
 namespace _3ReaisEngine.Core
@@ -13,7 +14,7 @@ namespace _3ReaisEngine.Core
         
         protected static int m_intComponenteID;
         public static int IntComponenteID { get { return m_intComponenteID; } }
-   
+        [JsonIgnore]
         public Entidade entidade;
 
         public Componente(){

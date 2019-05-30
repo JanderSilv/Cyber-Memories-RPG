@@ -5,17 +5,25 @@ using Newtonsoft.Json;
 using System;
 using System.Diagnostics;
 using System.IO;
+using Windows.Storage;
 
 namespace _3ReaisEngine
 {
     public static class Engine
     {
 
-        public static void save<T>(T x, string path)
+        public static void save<T>(T x, string filename)
         {
-            string output = JsonConvert.SerializeObject(x);
-           
-            File.WriteAllText(path, output);     
+            JsonSerializerSettings settings = new JsonSerializerSettings { TypeNameHandling = TypeNameHandling.All, Formatting = Formatting.Indented };
+            string output = JsonConvert.SerializeObject(x, settings);
+            saveAsync(output, filename);         
+        }
+        public static async void saveAsync(string file, string fileName)
+        {
+            StorageFolder storageFolder = ApplicationData.Current.LocalFolder;
+            Debug(storageFolder.Path);
+            StorageFile sampleFile = await storageFolder.CreateFileAsync(fileName, CreationCollisionOption.ReplaceExisting);
+            await FileIO.WriteTextAsync(sampleFile, file);
         }
         public static T load<T>(string path)
         {

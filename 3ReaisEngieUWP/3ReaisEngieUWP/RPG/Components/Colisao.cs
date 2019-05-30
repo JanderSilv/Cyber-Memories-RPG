@@ -1,5 +1,6 @@
 ﻿using _3ReaisEngine.Attributes;
 using _3ReaisEngine.Core;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 
@@ -10,9 +11,11 @@ namespace _3ReaisEngine.Components
         Estatica,
         Dinamica
     }
+    public delegate void OnColision(Colisao c);
+
     public class Colisao : Componente<Colisao>
     {
-        public delegate void OnColision(Colisao c);
+       
 
         public Vector4 momentoDeColisao;
         
@@ -21,6 +24,7 @@ namespace _3ReaisEngine.Components
         public Vector2 Position { get { return entidade.EntPos + relativePos; } }
 
         public TipoColisao tipo = TipoColisao.Estatica;
+        [JsonIgnore]
         public OnColision onColisionAction = null;
         public List<Type> ignoreTypes = new List<Type>();
 

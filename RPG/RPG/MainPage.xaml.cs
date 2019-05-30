@@ -24,15 +24,12 @@ namespace RPG
         {
             InitializeComponent();
             window = new Window(this, 840, 620);
-         
-
-
-  
-
-            Player p = new Player(new Vector2(window.Widht/2, window.Height/2));
+            window.SetCurrent();
+            AmbienteJogo.AdcionarEntidade(new Tronco(new Vector2(window.Widht / 2, window.Height / 2)));
+            Player p = new Player(new Vector2(window.Widht/4, window.Height/4));
             p.Nome = "ntbp";
-            AmbienteJogo.AdcionarEntidade(new Tronco(new Vector2(100+window.Widht/2, window.Height/2)));
-            
+
+
             AmbienteJogo.currentCamera.Seek = p;
             AmbienteJogo.AdcionarEntidade(p);
 
@@ -40,8 +37,9 @@ namespace RPG
 
             try
             {
-                Engine.save(p, "E:/Projects/RPG-LP2/RPG/RPG/Src/saves/player.txt");
-
+            
+                Engine.save(p, "Player.txt");
+              
             }
             catch (Exception e)
             {
