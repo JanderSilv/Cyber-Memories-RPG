@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>LAPTOP-I3GVLU4P</Machine>
-    <WindowsUser>ruann</WindowsUser>
+    <Machine>JANDER</Machine>
+    <WindowsUser>Jander</WindowsUser>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetOsVersion>10.0</TargetOsVersion>
     <TargetOsDescription>Windows 10.0</TargetOsDescription>
@@ -10,493 +10,553 @@
     <PackageArchitecture>x64</PackageArchitecture>
     <PackageIdentityName>2d5fb77a-6e92-49d7-b9e3-84e29a9f9a60</PackageIdentityName>
     <PackageIdentityPublisher>CN=ruann</PackageIdentityPublisher>
-    <IntermediateOutputPath>E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\obj\x64\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Debug\AppX</LayoutDir>
+    <LayoutDir>C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\bin\x64\Debug\AppX</LayoutDir>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Debug\RPG.exe">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\bin\x64\Debug\RPG.exe">
       <PackagePath>entrypoint\RPG.exe</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ruann\.nuget\packages\newtonsoft.json\12.0.2\lib\netstandard2.0\Newtonsoft.Json.dll">
+    <AppxPackagedFile Include="C:\Users\sonia\.nuget\packages\newtonsoft.json\12.0.2\lib\netstandard2.0\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.netcore.universalwindowsplatform\6.2.8\runtimes\win10-x64\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\3ReaisEngieUWP\3ReaisEngieUWP\bin\x64\Debug\3ReaisEngieUWP.dll">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\3ReaisEngieUWP\3ReaisEngieUWP\bin\x64\Debug\3ReaisEngieUWP.dll">
       <PackagePath>3ReaisEngieUWP.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.17763.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Assets-Laborátorio_0001_Livros.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Assets-Laborátorio_0001_Livros.png">
       <PackagePath>Src\Images\Laboratório\Assets-Laborátorio_0001_Livros.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Assets-Laborátorio_0002_Papeis.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Assets-Laborátorio_0002_Papeis.png">
       <PackagePath>Src\Images\Laboratório\Assets-Laborátorio_0002_Papeis.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Assets-Laborátorio_0003_Mesa-Vertical.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Assets-Laborátorio_0003_Mesa-Vertical.png">
       <PackagePath>Src\Images\Laboratório\Assets-Laborátorio_0003_Mesa-Vertical.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Assets-Laborátorio_0004_Mesa-Horizontal.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Assets-Laborátorio_0004_Mesa-Horizontal.png">
       <PackagePath>Src\Images\Laboratório\Assets-Laborátorio_0004_Mesa-Horizontal.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Assets-Laborátorio_0005_Perigo.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Assets-Laborátorio_0005_Perigo.png">
       <PackagePath>Src\Images\Laboratório\Assets-Laborátorio_0005_Perigo.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Assets-Laborátorio_0006_Vidrarias.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Assets-Laborátorio_0006_Vidrarias.png">
       <PackagePath>Src\Images\Laboratório\Assets-Laborátorio_0006_Vidrarias.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Assets-Laborátorio_0007_Armário.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Assets-Laborátorio_0007_Armário.png">
       <PackagePath>Src\Images\Laboratório\Assets-Laborátorio_0007_Armário.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab_0003_Máquinas.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab_0003_Máquinas.png">
       <PackagePath>Src\Images\Laboratório\Lab_0003_Máquinas.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab_0004_Extintor.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab_0004_Extintor.png">
       <PackagePath>Src\Images\Laboratório\Lab_0004_Extintor.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab_0005_Tubo.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab_0005_Tubo.png">
       <PackagePath>Src\Images\Laboratório\Lab_0005_Tubo.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab_0006_Luz.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab_0006_Luz.png">
       <PackagePath>Src\Images\Laboratório\Lab_0006_Luz.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab_0007_Grade.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab_0007_Grade.png">
       <PackagePath>Src\Images\Laboratório\Lab_0007_Grade.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab_0008_Planta.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab_0008_Planta.png">
       <PackagePath>Src\Images\Laboratório\Lab_0008_Planta.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab_0009_Maq.-de-TP.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab_0009_Maq.-de-TP.png">
       <PackagePath>Src\Images\Laboratório\Lab_0009_Maq.-de-TP.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab_Ar-Condicionado.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab_Ar-Condicionado.png">
       <PackagePath>Src\Images\Laboratório\Lab_Ar-Condicionado.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab_Exit.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab_Exit.png">
       <PackagePath>Src\Images\Laboratório\Lab_Exit.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab_Fechadura-Eletronica.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab_Fechadura-Eletronica.png">
       <PackagePath>Src\Images\Laboratório\Lab_Fechadura-Eletronica.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab_Notebook.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab_Notebook.png">
       <PackagePath>Src\Images\Laboratório\Lab_Notebook.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab_Parede.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab_Parede.png">
       <PackagePath>Src\Images\Laboratório\Lab_Parede.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab__0000_Cadeira-Esq.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab__0000_Cadeira-Esq.png">
       <PackagePath>Src\Images\Laboratório\Lab__0000_Cadeira-Esq.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab__0001_Cadeira-Costa.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab__0001_Cadeira-Costa.png">
       <PackagePath>Src\Images\Laboratório\Lab__0001_Cadeira-Costa.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab__0002_TP.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab__0002_TP.png">
       <PackagePath>Src\Images\Laboratório\Lab__0002_TP.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab__0003_Monitores.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab__0003_Monitores.png">
       <PackagePath>Src\Images\Laboratório\Lab__0003_Monitores.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab__0004_Piso.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab__0004_Piso.png">
       <PackagePath>Src\Images\Laboratório\Lab__0004_Piso.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Menu\Botões\Configurações.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Menu\Botões\Configurações.png">
       <PackagePath>Src\Images\Menu\Botões\Configurações.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Menu\Botões\Configurações_Selecionado.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Menu\Botões\Configurações_Selecionado.png">
       <PackagePath>Src\Images\Menu\Botões\Configurações_Selecionado.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Menu\Botões\Controles.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Menu\Botões\Controles.png">
       <PackagePath>Src\Images\Menu\Botões\Controles.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Menu\Botões\Controles_Selecionado.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Menu\Botões\Controles_Selecionado.png">
       <PackagePath>Src\Images\Menu\Botões\Controles_Selecionado.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Menu\Botões\Iniciar.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Menu\Botões\Iniciar.png">
       <PackagePath>Src\Images\Menu\Botões\Iniciar.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Menu\Botões\Jogar_Selecionado.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Menu\Botões\Jogar_Selecionado.png">
       <PackagePath>Src\Images\Menu\Botões\Jogar_Selecionado.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Menu\Botões\Sair.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Menu\Botões\Sair.png">
       <PackagePath>Src\Images\Menu\Botões\Sair.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Menu\Botões\Sair_Selecionado.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Menu\Botões\Sair_Selecionado.png">
       <PackagePath>Src\Images\Menu\Botões\Sair_Selecionado.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Menu\Botões\Sobre.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Menu\Botões\Sobre.png">
       <PackagePath>Src\Images\Menu\Botões\Sobre.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Menu\Botões\Sobre_Selecionado.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Menu\Botões\Sobre_Selecionado.png">
       <PackagePath>Src\Images\Menu\Botões\Sobre_Selecionado.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Menu\Botões\Voltar.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Menu\Botões\Voltar.png">
       <PackagePath>Src\Images\Menu\Botões\Voltar.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Menu\Botões\Voltar_Selecionado.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Menu\Botões\Voltar_Selecionado.png">
       <PackagePath>Src\Images\Menu\Botões\Voltar_Selecionado.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Menu\Botões\Volume.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Menu\Botões\Volume.png">
       <PackagePath>Src\Images\Menu\Botões\Volume.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Menu\Botões\Volume_Selecionado.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Menu\Botões\Volume_Selecionado.png">
       <PackagePath>Src\Images\Menu\Botões\Volume_Selecionado.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Menu\Logo.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Menu\Logo.png">
       <PackagePath>Src\Images\Menu\Logo.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Menu\Logo2.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Menu\Logo2.png">
       <PackagePath>Src\Images\Menu\Logo2.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\tiles\areia.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Menu\Selecao_Personagem\Homem-Branco-Combate.png">
+      <PackagePath>Src\Images\Menu\Selecao_Personagem\Homem-Branco-Combate.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Menu\Selecao_Personagem\Mulher-Negro-Combate.png">
+      <PackagePath>Src\Images\Menu\Selecao_Personagem\Mulher-Negro-Combate.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Menu\Selecao_Personagem\Mulher-Branco-Combate.png">
+      <PackagePath>Src\Images\Menu\Selecao_Personagem\Mulher-Branco-Combate.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Menu\Selecao_Personagem\Homem-Negro-Combate.png">
+      <PackagePath>Src\Images\Menu\Selecao_Personagem\Homem-Negro-Combate.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Menu\Selecao_Personagem\Contorno.png">
+      <PackagePath>Src\Images\Menu\Selecao_Personagem\Contorno.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Menu\Selecao_Personagem\Escolha_Personagem.png">
+      <PackagePath>Src\Images\Menu\Selecao_Personagem\Escolha_Personagem.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Menu\Selecao_Personagem\Homem-Branco-Face.png">
+      <PackagePath>Src\Images\Menu\Selecao_Personagem\Homem-Branco-Face.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Menu\Selecao_Personagem\Homem-Negro-Face.png">
+      <PackagePath>Src\Images\Menu\Selecao_Personagem\Homem-Negro-Face.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Menu\Selecao_Personagem\Homem.png">
+      <PackagePath>Src\Images\Menu\Selecao_Personagem\Homem.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Menu\Selecao_Personagem\Homem_Selecionado.png">
+      <PackagePath>Src\Images\Menu\Selecao_Personagem\Homem_Selecionado.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Menu\Selecao_Personagem\Mulher Selecionado.png">
+      <PackagePath>Src\Images\Menu\Selecao_Personagem\Mulher Selecionado.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Menu\Selecao_Personagem\Mulher-Branco-Face.png">
+      <PackagePath>Src\Images\Menu\Selecao_Personagem\Mulher-Branco-Face.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Menu\Selecao_Personagem\Mulher-Negro-Face.png">
+      <PackagePath>Src\Images\Menu\Selecao_Personagem\Mulher-Negro-Face.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Menu\Selecao_Personagem\Mulher.png">
+      <PackagePath>Src\Images\Menu\Selecao_Personagem\Mulher.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Menu\Selecao_Personagem\Pronto.png">
+      <PackagePath>Src\Images\Menu\Selecao_Personagem\Pronto.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Menu\Selecao_Personagem\Pronto_Selecionado.png">
+      <PackagePath>Src\Images\Menu\Selecao_Personagem\Pronto_Selecionado.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Menu\Selecao_Personagem\Seta Direita Selecionado.png">
+      <PackagePath>Src\Images\Menu\Selecao_Personagem\Seta Direita Selecionado.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Menu\Selecao_Personagem\Seta Direita.png">
+      <PackagePath>Src\Images\Menu\Selecao_Personagem\Seta Direita.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Menu\Selecao_Personagem\Seta Esquerda Selecionado.png">
+      <PackagePath>Src\Images\Menu\Selecao_Personagem\Seta Esquerda Selecionado.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Menu\Selecao_Personagem\Seta Esquerda.png">
+      <PackagePath>Src\Images\Menu\Selecao_Personagem\Seta Esquerda.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\tiles\areia.png">
       <PackagePath>Src\Images\tiles\areia.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\tiles\arvore.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\tiles\arvore.png">
       <PackagePath>Src\Images\tiles\arvore.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\tiles\flores.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\tiles\flores.png">
       <PackagePath>Src\Images\tiles\flores.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\tiles\grama.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\tiles\grama.png">
       <PackagePath>Src\Images\tiles\grama.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\tiles\rocha1.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\tiles\rocha1.png">
       <PackagePath>Src\Images\tiles\rocha1.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\tiles\rocha2.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\tiles\rocha2.png">
       <PackagePath>Src\Images\tiles\rocha2.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\tiles\tronco.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\tiles\tronco.png">
       <PackagePath>Src\Images\tiles\tronco.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Opera-04.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Opera-04.png">
       <PackagePath>Src\Opera-04.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Animations\Dead.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Animations\Dead.png">
       <PackagePath>Src\Animations\Dead.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\JunglerockAlpha.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\JunglerockAlpha.png">
       <PackagePath>Src\JunglerockAlpha.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Bau\Treasure Chest closed 254x254.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Bau\Treasure Chest closed 254x254.png">
       <PackagePath>Src\Images\Bau\Treasure Chest closed 254x254.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Bau\Treasure Chest open 254x254.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Bau\Treasure Chest open 254x254.png">
       <PackagePath>Src\Images\Bau\Treasure Chest open 254x254.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Cavaleiro\knight 3 block.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Cavaleiro\knight 3 block.png">
       <PackagePath>Src\Images\Cavaleiro\knight 3 block.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Cavaleiro\knight 3 idle.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Cavaleiro\knight 3 idle.png">
       <PackagePath>Src\Images\Cavaleiro\knight 3 idle.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Cavaleiro\knight 3 improved slash animation.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Cavaleiro\knight 3 improved slash animation.png">
       <PackagePath>Src\Images\Cavaleiro\knight 3 improved slash animation.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Cavaleiro\knight death animation.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Cavaleiro\knight death animation.png">
       <PackagePath>Src\Images\Cavaleiro\knight death animation.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Cavaleiro\knight walk animation.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Cavaleiro\knight walk animation.png">
       <PackagePath>Src\Images\Cavaleiro\knight walk animation.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Feiticeiro\sorcerer attack_Animation 1_0.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Feiticeiro\sorcerer attack_Animation 1_0.png">
       <PackagePath>Src\Images\Feiticeiro\sorcerer attack_Animation 1_0.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Feiticeiro\sorcerer attack_Animation 1_1.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Feiticeiro\sorcerer attack_Animation 1_1.png">
       <PackagePath>Src\Images\Feiticeiro\sorcerer attack_Animation 1_1.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Feiticeiro\sorcerer attack_Animation 1_2.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Feiticeiro\sorcerer attack_Animation 1_2.png">
       <PackagePath>Src\Images\Feiticeiro\sorcerer attack_Animation 1_2.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Feiticeiro\sorcerer attack_Animation 1_3.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Feiticeiro\sorcerer attack_Animation 1_3.png">
       <PackagePath>Src\Images\Feiticeiro\sorcerer attack_Animation 1_3.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Feiticeiro\sorcerer attack_Animation 1_4.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Feiticeiro\sorcerer attack_Animation 1_4.png">
       <PackagePath>Src\Images\Feiticeiro\sorcerer attack_Animation 1_4.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Feiticeiro\sorcerer attack_Animation 1_5.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Feiticeiro\sorcerer attack_Animation 1_5.png">
       <PackagePath>Src\Images\Feiticeiro\sorcerer attack_Animation 1_5.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Feiticeiro\sorcerer attack_Animation 1_6.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Feiticeiro\sorcerer attack_Animation 1_6.png">
       <PackagePath>Src\Images\Feiticeiro\sorcerer attack_Animation 1_6.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Feiticeiro\sorcerer attack_Animation 1_7.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Feiticeiro\sorcerer attack_Animation 1_7.png">
       <PackagePath>Src\Images\Feiticeiro\sorcerer attack_Animation 1_7.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Feiticeiro\sorcerer attack_Animation 1_8.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Feiticeiro\sorcerer attack_Animation 1_8.png">
       <PackagePath>Src\Images\Feiticeiro\sorcerer attack_Animation 1_8.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Feiticeiro\sorcerer attack_Animation 1_9.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Feiticeiro\sorcerer attack_Animation 1_9.png">
       <PackagePath>Src\Images\Feiticeiro\sorcerer attack_Animation 1_9.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Feiticeiro\sorcerer villain.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Feiticeiro\sorcerer villain.png">
       <PackagePath>Src\Images\Feiticeiro\sorcerer villain.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Feiticeiro\villain.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Feiticeiro\villain.png">
       <PackagePath>Src\Images\Feiticeiro\villain.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Mago\wizard attack.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Mago\wizard attack.png">
       <PackagePath>Src\Images\Mago\wizard attack.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Mago\wizard death.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Mago\wizard death.png">
       <PackagePath>Src\Images\Mago\wizard death.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Mago\wizard fly forward.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Mago\wizard fly forward.png">
       <PackagePath>Src\Images\Mago\wizard fly forward.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Mago\wizard idle.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Mago\wizard idle.png">
       <PackagePath>Src\Images\Mago\wizard idle.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack animations.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack animations.png">
       <PackagePath>Src\Images\Rogue\rogue like attack animations.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack animations_attack down_0.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack animations_attack down_0.png">
       <PackagePath>Src\Images\Rogue\rogue like attack animations_attack down_0.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack animations_attack down_1.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack animations_attack down_1.png">
       <PackagePath>Src\Images\Rogue\rogue like attack animations_attack down_1.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack animations_attack down_2.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack animations_attack down_2.png">
       <PackagePath>Src\Images\Rogue\rogue like attack animations_attack down_2.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack animations_attack down_3.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack animations_attack down_3.png">
       <PackagePath>Src\Images\Rogue\rogue like attack animations_attack down_3.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack animations_attack left_0.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack animations_attack left_0.png">
       <PackagePath>Src\Images\Rogue\rogue like attack animations_attack left_0.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack animations_attack left_1.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack animations_attack left_1.png">
       <PackagePath>Src\Images\Rogue\rogue like attack animations_attack left_1.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack animations_attack left_2.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack animations_attack left_2.png">
       <PackagePath>Src\Images\Rogue\rogue like attack animations_attack left_2.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack animations_attack left_3.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack animations_attack left_3.png">
       <PackagePath>Src\Images\Rogue\rogue like attack animations_attack left_3.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack animations_attack right_0.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack animations_attack right_0.png">
       <PackagePath>Src\Images\Rogue\rogue like attack animations_attack right_0.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack animations_attack right_1.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack animations_attack right_1.png">
       <PackagePath>Src\Images\Rogue\rogue like attack animations_attack right_1.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack animations_attack right_2.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack animations_attack right_2.png">
       <PackagePath>Src\Images\Rogue\rogue like attack animations_attack right_2.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack animations_attack right_3.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack animations_attack right_3.png">
       <PackagePath>Src\Images\Rogue\rogue like attack animations_attack right_3.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack animations_attack up_0.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack animations_attack up_0.png">
       <PackagePath>Src\Images\Rogue\rogue like attack animations_attack up_0.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack animations_attack up_1.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack animations_attack up_1.png">
       <PackagePath>Src\Images\Rogue\rogue like attack animations_attack up_1.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack animations_attack up_2.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack animations_attack up_2.png">
       <PackagePath>Src\Images\Rogue\rogue like attack animations_attack up_2.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack animations_attack up_3.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack animations_attack up_3.png">
       <PackagePath>Src\Images\Rogue\rogue like attack animations_attack up_3.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack.png">
       <PackagePath>Src\Images\Rogue\rogue like attack.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack_Animation 1_0.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack_Animation 1_0.png">
       <PackagePath>Src\Images\Rogue\rogue like attack_Animation 1_0.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack_Animation 1_1.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack_Animation 1_1.png">
       <PackagePath>Src\Images\Rogue\rogue like attack_Animation 1_1.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack_Animation 1_2.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack_Animation 1_2.png">
       <PackagePath>Src\Images\Rogue\rogue like attack_Animation 1_2.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack_Animation 1_3.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack_Animation 1_3.png">
       <PackagePath>Src\Images\Rogue\rogue like attack_Animation 1_3.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack_Animation 1_4.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack_Animation 1_4.png">
       <PackagePath>Src\Images\Rogue\rogue like attack_Animation 1_4.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack_Animation 1_5.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack_Animation 1_5.png">
       <PackagePath>Src\Images\Rogue\rogue like attack_Animation 1_5.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack_Animation 1_6.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack_Animation 1_6.png">
       <PackagePath>Src\Images\Rogue\rogue like attack_Animation 1_6.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack_Animation 1_7.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack_Animation 1_7.png">
       <PackagePath>Src\Images\Rogue\rogue like attack_Animation 1_7.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack_Animation 1_8.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack_Animation 1_8.png">
       <PackagePath>Src\Images\Rogue\rogue like attack_Animation 1_8.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack_Animation 1_9.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack_Animation 1_9.png">
       <PackagePath>Src\Images\Rogue\rogue like attack_Animation 1_9.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like idle.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like idle.png">
       <PackagePath>Src\Images\Rogue\rogue like idle.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like idle_Animation 1_0.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like idle_Animation 1_0.png">
       <PackagePath>Src\Images\Rogue\rogue like idle_Animation 1_0.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like idle_Animation 1_1.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like idle_Animation 1_1.png">
       <PackagePath>Src\Images\Rogue\rogue like idle_Animation 1_1.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like idle_Animation 1_2.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like idle_Animation 1_2.png">
       <PackagePath>Src\Images\Rogue\rogue like idle_Animation 1_2.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like run up_Animation 1_0.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like run up_Animation 1_0.png">
       <PackagePath>Src\Images\Rogue\rogue like run up_Animation 1_0.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like run up_Animation 1_1.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like run up_Animation 1_1.png">
       <PackagePath>Src\Images\Rogue\rogue like run up_Animation 1_1.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like run up_Animation 1_2.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like run up_Animation 1_2.png">
       <PackagePath>Src\Images\Rogue\rogue like run up_Animation 1_2.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like run up_Animation 1_3.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like run up_Animation 1_3.png">
       <PackagePath>Src\Images\Rogue\rogue like run up_Animation 1_3.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like run.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like run.png">
       <PackagePath>Src\Images\Rogue\rogue like run.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like run_Animation 1_0.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like run_Animation 1_0.png">
       <PackagePath>Src\Images\Rogue\rogue like run_Animation 1_0.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like run_Animation 1_1.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like run_Animation 1_1.png">
       <PackagePath>Src\Images\Rogue\rogue like run_Animation 1_1.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like run_Animation 1_2.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like run_Animation 1_2.png">
       <PackagePath>Src\Images\Rogue\rogue like run_Animation 1_2.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like run_Animation 1_3.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like run_Animation 1_3.png">
       <PackagePath>Src\Images\Rogue\rogue like run_Animation 1_3.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like run_Animation 1_4.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like run_Animation 1_4.png">
       <PackagePath>Src\Images\Rogue\rogue like run_Animation 1_4.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like run_Animation 1_5.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like run_Animation 1_5.png">
       <PackagePath>Src\Images\Rogue\rogue like run_Animation 1_5.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\roguelike run down_Animation 1_0.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\roguelike run down_Animation 1_0.png">
       <PackagePath>Src\Images\Rogue\roguelike run down_Animation 1_0.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\roguelike run down_Animation 1_1.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\roguelike run down_Animation 1_1.png">
       <PackagePath>Src\Images\Rogue\roguelike run down_Animation 1_1.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\roguelike run down_Animation 1_2.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\roguelike run down_Animation 1_2.png">
       <PackagePath>Src\Images\Rogue\roguelike run down_Animation 1_2.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\roguelike run down_Animation 1_3.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\roguelike run down_Animation 1_3.png">
       <PackagePath>Src\Images\Rogue\roguelike run down_Animation 1_3.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Maps\Laborátorio\Laboratório.xml">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Maps\Laborátorio\Laboratório.xml">
       <PackagePath>Src\Maps\Laborátorio\Laboratório.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Maps\map.xml">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Maps\map.xml">
       <PackagePath>Src\Maps\map.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Maps\Laborátorio\Laborátorio.txt">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Maps\Laborátorio\Laborátorio.txt">
       <PackagePath>Src\Maps\Laborátorio\Laborátorio.txt</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Animations\dead.gif">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Animations\dead.gif">
       <PackagePath>Src\Animations\dead.gif</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Animations\idle.gif">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Animations\idle.gif">
       <PackagePath>Src\Animations\idle.gif</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Animations\jump.gif">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Animations\jump.gif">
       <PackagePath>Src\Animations\jump.gif</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Animations\walk.gif">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Animations\walk.gif">
       <PackagePath>Src\Animations\walk.gif</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\dance.gif">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\dance.gif">
       <PackagePath>Src\dance.gif</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Zumbi\undead_attack.gif">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Zumbi\undead_attack.gif">
       <PackagePath>Src\Images\Zumbi\undead_attack.gif</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Zumbi\undead_death.gif">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Zumbi\undead_death.gif">
       <PackagePath>Src\Images\Zumbi\undead_death.gif</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Zumbi\undead_hurt.gif">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Zumbi\undead_hurt.gif">
       <PackagePath>Src\Images\Zumbi\undead_hurt.gif</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Zumbi\undead_idle.gif">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Zumbi\undead_idle.gif">
       <PackagePath>Src\Images\Zumbi\undead_idle.gif</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Zumbi\undead_walk.gif">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Zumbi\undead_walk.gif">
       <PackagePath>Src\Images\Zumbi\undead_walk.gif</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Audio\beep.mp3">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Audio\beep.mp3">
       <PackagePath>Src\Audio\beep.mp3</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Audio\rain.mp3">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Audio\rain.mp3">
       <PackagePath>Src\Audio\rain.mp3</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Audio\serrote.wav">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Audio\serrote.wav">
       <PackagePath>Src\Audio\serrote.wav</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Debug\RPG.xr.xml">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\bin\x64\Debug\RPG.xr.xml">
       <PackagePath>RPG.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\bin\x64\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\bin\x64\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Debug\Src\ButtonStyle.xbf">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\bin\x64\Debug\Src\ButtonStyle.xbf">
       <PackagePath>Src\ButtonStyle.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.17763.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Debug\Core\RPG.exe">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\bin\x64\Debug\Core\RPG.exe">
       <PackagePath>RPG.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>
@@ -551,33 +611,33 @@
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
       <Name>Microsoft.VCLibs.140.00.Debug</Name>
-      <Version>14.0.27508.1</Version>
+      <Version>14.0.27323.0</Version>
       <Architecture>ARM</Architecture>
-      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.27508.1, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.27323.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\ARM\Microsoft.VCLibs.ARM.Debug.14.00.appx</AppxLocation>
       <MoreInfo></MoreInfo>
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
       <Name>Microsoft.VCLibs.140.00.Debug</Name>
-      <Version>14.0.27508.1</Version>
+      <Version>14.0.27323.0</Version>
       <Architecture>ARM64</Architecture>
-      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.27508.1, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.27323.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\ARM64\Microsoft.VCLibs.ARM64.Debug.14.00.appx</AppxLocation>
       <MoreInfo></MoreInfo>
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
       <Name>Microsoft.VCLibs.140.00.Debug</Name>
-      <Version>14.0.27508.1</Version>
+      <Version>14.0.27323.0</Version>
       <Architecture>x64</Architecture>
-      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.27508.1, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.27323.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\x64\Microsoft.VCLibs.x64.Debug.14.00.appx</AppxLocation>
       <MoreInfo></MoreInfo>
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
       <Name>Microsoft.VCLibs.140.00.Debug</Name>
-      <Version>14.0.27508.1</Version>
+      <Version>14.0.27323.0</Version>
       <Architecture>x86</Architecture>
-      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.27508.1, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.27323.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\x86\Microsoft.VCLibs.x86.Debug.14.00.appx</AppxLocation>
       <MoreInfo></MoreInfo>
     </ResolvedSDKReference>
