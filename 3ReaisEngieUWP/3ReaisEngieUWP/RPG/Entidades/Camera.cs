@@ -3,7 +3,7 @@ namespace _3ReaisEngine.Entidades
 {
    public class Camera:Core.Entidade
     {
-        public Core.Entidade Seek = null;
+        public Core.Entidade Seek { get; private set; }
         public Core.Vector2 delta;
         public Core.Vector2 last;
         public Core.Vector2 drawOffset;

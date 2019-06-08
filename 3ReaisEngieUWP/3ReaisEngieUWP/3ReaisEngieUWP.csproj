@@ -133,6 +133,7 @@
     <Compile Include="RPG\Events\MouseEvento.cs" />
     <Compile Include="RPG\Events\PrioridadeCamada.cs" />
     <Compile Include="RPG\Events\TecladoEvento.cs" />
+    <Compile Include="RPG\UI\MessageBox.cs" />
     <Compile Include="RPG\UI\UButton.cs" />
     <Compile Include="RPG\UI\UComboBox.cs" />
     <Compile Include="RPG\UI\UImage.cs" />

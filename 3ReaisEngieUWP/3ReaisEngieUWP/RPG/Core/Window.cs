@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 using Windows.Foundation;
 using Windows.System;
 using Windows.UI;
+using Windows.UI.Core;
 using Windows.UI.Input;
 using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
@@ -28,8 +29,8 @@ namespace _3ReaisEngine.RPG.Core
         public List<Render> renders = new List<Render>();
         public List<Body> bodies = new List<Body>();
         public List<UIEntidade> uiElements = new List<UIEntidade>();
-        public List<UIEntidade> gameUIElements = new List<UIEntidade>(); 
-
+        public List<UIEntidade> gameUIElements = new List<UIEntidade>();
+        CoreWindow coreWindow;
         private Panel game_layer;
         private Panel ui_layer;
 
@@ -42,18 +43,22 @@ namespace _3ReaisEngine.RPG.Core
 
         public Window(Page root)
         {
+            coreWindow = CoreWindow.GetForCurrentThread();
+            coreWindow.Activate();
+
             Canvas canv = new Canvas();
             Canvas ui = new Canvas();
-
+            
             this.root = root;
-
+            
             canv.Width = 840;
             canv.Height = 620;
             canv.Children.Add(ui);
 
             canv.SetValue(Canvas.ZIndexProperty, 0);
-            canv.KeyDown += Game_KeyDown;
-            canv.KeyUp += Game_KeyUp;
+           
+            coreWindow.KeyDown += Game_KeyDown;
+            coreWindow.KeyUp += Game_KeyUp;
         
 
             ui.Width = 840;
@@ -71,8 +76,21 @@ namespace _3ReaisEngine.RPG.Core
             ApplicationView.PreferredLaunchWindowingMode = ApplicationViewWindowingMode.PreferredLaunchViewSize;
             Windows.UI.Xaml.Window.Current.CoreWindow.Activate();
         }
+
+        public MessageBox ShowMessageBox(string Titulo, string Descricao, Vector2 pos, object contentBtn1 = null, object contentBtn2 = null, Execute act1 = null, Execute act2 = null)
+        {
+            MessageBox mb = null;
+            mb = new MessageBox(Titulo, Descricao, pos, contentBtn1, contentBtn2, act1, act2, this);
+                        
+            Add(mb.panel);
+            
+    
+            return mb;
+        }
+
         public Window(Page root, float Widht, float Height)
         {
+            coreWindow = CoreWindow.GetForCurrentThread();
             Canvas canv = new Canvas();
             Canvas ui = new Canvas();
 
@@ -82,8 +100,8 @@ namespace _3ReaisEngine.RPG.Core
             canv.Height = Height;
             canv.Children.Add(ui);
             canv.SetValue(Canvas.ZIndexProperty, 0);
-            canv.KeyDown += Game_KeyDown;
-            canv.KeyUp += Game_KeyUp;
+            coreWindow.KeyDown += Game_KeyDown;
+            coreWindow.KeyUp += Game_KeyUp;
          
             ui.Width = Widht;
             ui.Height = Height;
@@ -149,8 +167,8 @@ namespace _3ReaisEngine.RPG.Core
             MalhaColisao mc = null;
             Body b = null;
 
-         //   element.EntPos.x += Widht / 4;
-          //  element.EntPos.y += Height / 4;
+            //element.EntPos.x += Widht / 4;
+            //element.EntPos.y += Height / 4;
 
             if (element.GetComponente(ref mc))
             {
@@ -232,6 +250,8 @@ namespace _3ReaisEngine.RPG.Core
             {
                 foreach (UIEntidade i in ((IUIStack)element).getChilds()) Add(i,UILayer);
             }
+            
+           
         }
 
         public void Add(UIEntidade[] elements, bool UILayer = true)
@@ -332,16 +352,16 @@ namespace _3ReaisEngine.RPG.Core
 
        
 
-        private void Game_KeyDown(object sender, KeyRoutedEventArgs e)
+        private void Game_KeyDown(CoreWindow sender, KeyEventArgs e)
         {
-            TecladoEvento te = new TecladoEvento { Tecla = (int)e.Key, Repeticoes = e.KeyStatus.RepeatCount, Modificador = (byte)ModificadorList.KeyDown };
+            TecladoEvento te = new TecladoEvento { Tecla = (int)e.VirtualKey, Repeticoes = e.KeyStatus.RepeatCount, Modificador = (byte)ModificadorList.KeyDown };
             AmbienteJogo.EnviarEvento(te);
 
         }
 
-        private void Game_KeyUp(object sender, KeyRoutedEventArgs e)
+        private void Game_KeyUp(CoreWindow sender, KeyEventArgs e)
         {
-            TecladoEvento te = new TecladoEvento { Tecla = (int)e.Key, Repeticoes = e.KeyStatus.RepeatCount, Modificador = (byte)ModificadorList.KeyUp };
+            TecladoEvento te = new TecladoEvento { Tecla = (int)e.VirtualKey, Repeticoes = e.KeyStatus.RepeatCount, Modificador = (byte)ModificadorList.KeyUp };
             AmbienteJogo.EnviarEvento(te);
 
         }

@@ -11,6 +11,9 @@ using Windows.UI.Xaml.Controls;
 
 namespace _3ReaisEngine.RPG.Components
 {
+    /// <summary>
+    /// Dispõe informações sobre determinado áudio
+    /// </summary>
     public class AudioSource
     {
         public string Name ="";
@@ -18,10 +21,19 @@ namespace _3ReaisEngine.RPG.Components
         public bool Loop = false;
     }
 
+    /// <summary>
+    /// Gerencia a execução dos audios de uma entidade
+    /// </summary>
     public class Audio:Componente<Audio>
     {
+        /// <summary>
+        /// Lista de audios da entidade
+        /// </summary>
         public Dictionary<string, AudioSource> Audios = new Dictionary<string, AudioSource>();   
-
+        /// <summary>
+        /// Executa um audio 
+        /// </summary>
+        /// <param name="name">nome do audio a ser executado</param>
         public async void Play(string name)
         {
             MediaElement player = new MediaElement();
@@ -43,11 +55,6 @@ namespace _3ReaisEngine.RPG.Components
             {
                 Console.WriteLine("[Componente Audio]: "+e.Message);
             }
-
-           
-
-           
-
         }
 
         

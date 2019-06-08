@@ -140,6 +140,8 @@
     <Compile Include="Src\Scripts\Jogo.cs" />
     <Compile Include="Src\Scripts\Managers\InventarioManager.cs" />
     <Compile Include="Src\Scripts\Managers\ItemManager.cs" />
+    <Compile Include="Src\Scripts\Componentes\QuestSystem.cs" />
+    <Compile Include="Src\Scripts\Quests\ColidirComTronco.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">

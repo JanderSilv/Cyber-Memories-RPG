@@ -1,8 +1,10 @@
-﻿using _3ReaisEngine;
+﻿using System;
+using _3ReaisEngine;
 using _3ReaisEngine.Attributes;
 using _3ReaisEngine.Components;
 using _3ReaisEngine.Core;
 using _3ReaisEngine.Events;
+using RPG.Src.Scripts;
 
 [RequerComponente(typeof(Colisao))]
 [RequerComponente(typeof(Body))]
@@ -11,15 +13,14 @@ using _3ReaisEngine.Events;
 [RequerComponente(typeof(Inventario))]
 [RequerComponente(typeof(Status))]
 [RequerComponente(typeof(Movel))]
-
+[RequerComponente(typeof(QuestSystem))]
 public class Player : Entidade
 {
     readonly Body body;
     readonly Animacao anim;
     readonly Render render;
     readonly Colisao col;
-    readonly Movel mov;
-
+    readonly QuestSystem quests;
     public float vel;  
     public bool dead = false;
 
@@ -33,9 +34,10 @@ public class Player : Entidade
 
         col = GetComponente<Colisao>();
         render = GetComponente<Render>();
-        anim = GetComponente<Animacao>();
-        mov = GetComponente<Movel>();
+        anim = GetComponente<Animacao>();;
         body = GetComponente<Body>();
+        quests = GetComponente<QuestSystem>();
+        quests.OnNewQuest = newQuest;
         body.drag = vel;
 
         col.tipo = TipoColisao.Dinamica;
@@ -53,9 +55,14 @@ public class Player : Entidade
 
     }
 
+    private void newQuest(Quest q)
+    {
+        Engine.Debug("New Quest added: " + q.Nome);
+    }
+
     public override void Update()
     {
-
+        quests.UpdateQuest();
         if (AmbienteJogo.Input.TeclaPressionada(Windows.System.VirtualKey.A))
         {
             body.velocity.x = -vel;
@@ -126,6 +133,12 @@ public class Player : Entidade
     public void OnColide(Colisao col)
     {
         anim.Play("Idle", render);
+        if(col.entidade is Tronco)
+        {
+
+            Quest q = quests.GetQuestAtiva("Andando ao acaso");
+            if (q != null) q.Data["Colidiu"] +=1;
+        }
        
     }
 

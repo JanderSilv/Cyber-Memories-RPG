@@ -9,6 +9,9 @@ using System.Threading.Tasks;
 namespace _3ReaisEngine.Components
 {
     [RequerComponente(typeof(Colisao))]
+    ///<summary>
+    /// Gerencia algumas propiedades físicas da entidade, como posição, velocidade, atrito e tamanho
+    ///</summary>
     public class Body :Componente<Body>
     {
         public Vector2 position { get { return entidade.EntPos; }  set { entidade.EntPos=value;} }

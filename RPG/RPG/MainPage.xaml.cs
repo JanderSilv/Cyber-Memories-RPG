@@ -21,36 +21,25 @@ namespace RPG
         Window window;
       
         public MainPage()
-        {
+        {       
             InitializeComponent();
             window = new Window(this, 840, 620);
             window.SetCurrent();
-            AmbienteJogo.AdcionarEntidade(new Tronco(new Vector2(window.Widht / 2, window.Height / 2)));
-            Player p = new Player(new Vector2(window.Widht/4, window.Height/4));
+            Tronco t = new Tronco(new Vector2(100, 50));
+            AmbienteJogo.AdcionarEntidade(t);
+
+            Player p = new Player(new Vector2(window.Widht / 2, window.Height / 2));
             p.Nome = "ntbp";
 
-
-            AmbienteJogo.currentCamera.Seek = p;
+            p.GetComponente<QuestSystem>().AddQuest(new ColidirComTronco());
+            
+            AmbienteJogo.currentCamera.setSeek (p);
             AmbienteJogo.AdcionarEntidade(p);
 
 
-
-            try
-            {
-            
-                Engine.save(p, "Player.txt");
-              
-            }
-            catch (Exception e)
-            {
-                Engine.Debug("Message: " + e.Message);
-                Engine.Debug("Stacktrace: " + e.StackTrace);
-                Engine.Debug("InnerException" + e.InnerException);
-            }
-
-
+            window.ShowMessageBox("Ola", "ola", new Vector2(40, 60), "Claro", "Nunca");
         }
 
-    
+       
     }
 }
