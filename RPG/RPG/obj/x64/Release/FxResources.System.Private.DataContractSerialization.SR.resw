@@ -441,17 +441,11 @@
   <data name="ValueMustBeInRange" xml:space="preserve">
     <value>The value of this argument must fall within the range {0} to {1}.</value>
   </data>
-  <data name="ReferencedTypeMatchingMessage" xml:space="preserve">
-    <value>(matching)</value>
-  </data>
   <data name="XmlEndElementExpected" xml:space="preserve">
     <value>End element '{0}' from namespace '{1}' expected. Found {2}.</value>
   </data>
   <data name="PartialTrustCollectionContractTypeNotPublic" xml:space="preserve">
     <value>The collection data contract type '{0}' cannot be deserialized because it does not have a public parameterless constructor. Adding a public parameterless constructor will fix this error. Alternatively, you can make it internal, and use the InternalsVisibleToAttribute attribute on your assembly in order to enable serialization of internal members - see documentation for more details. Be aware that doing so has certain security implications.</value>
-  </data>
-  <data name="OrderCannotBeNegative" xml:space="preserve">
-    <value>Property 'Order' in DataMemberAttribute attribute cannot be a negative number.</value>
   </data>
   <data name="XmlInvalidCommentChars" xml:space="preserve">
     <value>XML comments cannot contain '--' or end with '-'.</value>
@@ -482,9 +476,6 @@
   </data>
   <data name="EnumTypeCannotHaveIsReference" xml:space="preserve">
     <value>Enum type '{0}' cannot have the IsReference setting of '{1}'. Either change the setting to '{2}', or remove it completely.</value>
-  </data>
-  <data name="ReferencedTypeNotMatchingMessage" xml:space="preserve">
-    <value>(not matching)</value>
   </data>
   <data name="IsAnyCannotHaveXmlRoot" xml:space="preserve">
     <value>Type '{0}' cannot specify an XmlRootAttribute attribute because its IsAny setting is 'true'. This type must write all its contents including the root element. Verify that the IXmlSerializable implementation is correct.</value>
@@ -590,12 +581,6 @@
   </data>
   <data name="CollectionAssignedToIncompatibleInterface" xml:space="preserve">
     <value>'{0}' is a collection type and cannot be serialized when assigned to an interface type that does not implement IEnumerable ('{1}'.)</value>
-  </data>
-  <data name="AmbiguousReferencedCollectionTypes3" xml:space="preserve">
-    <value>List of referenced collection types contains more than one type with data contract name '{0}' in namespace '{1}'. Include only one of the following types. Only matching types can be valid references: {2}</value>
-  </data>
-  <data name="AmbiguousReferencedCollectionTypes1" xml:space="preserve">
-    <value>List of referenced collection types contains more than one type with same data contract name. Include only one of the following types. Only matching types can be valid references: {0}</value>
   </data>
   <data name="IsAnyCannotBeSerializedAsDerivedType" xml:space="preserve">
     <value>An object of type '{0}' cannot be serialized at the top level for IXmlSerializable root type '{1}' since its IsAny setting is 'true'. This type must write all its contents including the root element. Verify that the IXmlSerializable implementation is correct.</value>
@@ -927,17 +912,11 @@
   <data name="DupContractInDataContractSet" xml:space="preserve">
     <value>DataContract with name '{0}' and namespace '{1}' cannot be added to DataContractSet since another contract with the same data contract name is already present and the contracts are not equivalent.</value>
   </data>
-  <data name="ReferencedCollectionTypesCannotContainNull" xml:space="preserve">
-    <value>ReferencedCollectionTypes specified via ImportOptions must contain valid types. Cannot contain null.</value>
-  </data>
   <data name="QueryGeneratorPathToMemberNotFound" xml:space="preserve">
     <value>Cannot find a path to the member when generating the XPath query.</value>
   </data>
   <data name="NoSetMethodForProperty" xml:space="preserve">
     <value>No set method for property '{1}' in type '{0}'.</value>
-  </data>
-  <data name="ReferencedTypesCannotContainNull" xml:space="preserve">
-    <value>ReferencedTypes specified via ImportOptions must contain valid types. Cannot contain null.</value>
   </data>
   <data name="JsonInvalidItemNameForArrayElement" xml:space="preserve">
     <value>Encountered unexpected element local name '{0}' for item in collection. '{1}' is the only valid local name for elements in a collection.</value>
@@ -1128,17 +1107,8 @@
   <data name="DataContractNamespaceReserved" xml:space="preserve">
     <value>DataContract namespace '{0}' cannot be specified since it is reserved.</value>
   </data>
-  <data name="XmlMaxNameTableCharCountExceeded" xml:space="preserve">
-    <value>The maximum nametable character count quota ({0}) has been exceeded while reading XML data. The nametable is a data structure used to store strings encountered during XML processing - long XML documents with non-repeating element names, attribute names and attribute values may trigger this quota. This quota may be increased by changing the MaxNameTableCharCount property on the XmlDictionaryReaderQuotas object used when creating the XML reader.</value>
-  </data>
   <data name="XmlMissingLowSurrogate" xml:space="preserve">
     <value>The surrogate pair is invalid. Missing a low surrogate character.</value>
-  </data>
-  <data name="AmbiguousReferencedTypes1" xml:space="preserve">
-    <value>List of referenced types contains more than one type with same data contract name. Need to exclude all but one of the following types. Only matching types can be valid references: {0}</value>
-  </data>
-  <data name="AmbiguousReferencedTypes3" xml:space="preserve">
-    <value>List of referenced types contains more than one type with data contract name '{0}' in namespace '{1}'. Need to exclude all but one of the following types. Only matching types can be valid references: {2}</value>
   </data>
   <data name="UnexpectedEndOfFile" xml:space="preserve">
     <value>Unexpected end of file.</value>

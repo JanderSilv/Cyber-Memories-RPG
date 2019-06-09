@@ -183,9 +183,6 @@
   <data name="net_WebSockets_Argument_InvalidMessageType" xml:space="preserve">
     <value>The message type '{0}' is not allowed for the '{1}' operation. Valid message types are: '{2}, {3}'. To close the WebSocket, use the '{4}' operation instead. </value>
   </data>
-  <data name="offset_out_of_range" xml:space="preserve">
-    <value>Offset exceeds the length of buffer.</value>
-  </data>
   <data name="net_log_listener_unsupported_authentication_scheme" xml:space="preserve">
     <value>Received a request with an unsupported authentication scheme, Authorization:{0} SupportedSchemes:{1}.</value>
   </data>
@@ -275,9 +272,6 @@
   </data>
   <data name="net_WebSockets_AcceptNotAWebSocket" xml:space="preserve">
     <value>The {0} operation was called on an incoming request that did not specify a '{1}: {2}' header or the {2} header not contain '{3}'. {2} specified by the client was '{4}'.</value>
-  </data>
-  <data name="net_no_client_certificate" xml:space="preserve">
-    <value>Client certificate not found.</value>
   </data>
   <data name="event_OperationReturnedSomething" xml:space="preserve">
     <value>{0} returned {1}.</value>

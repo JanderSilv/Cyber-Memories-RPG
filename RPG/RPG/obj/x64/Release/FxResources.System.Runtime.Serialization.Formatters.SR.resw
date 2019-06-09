@@ -282,6 +282,9 @@
   <data name="Serialization_DuplicateSelector" xml:space="preserve">
     <value>Type {0} and the types derived from it (such as {1}) are not permitted to be deserialized at this security level.</value>
   </data>
+  <data name="Arg_HTCapacityOverflow" xml:space="preserve">
+    <value>Capacity overflowed and went negative.</value>
+  </data>
   <data name="Serialization_IORIncomplete" xml:space="preserve">
     <value>The object with ID {0} implements the IObjectReference interface for which all dependencies cannot be resolved. The likely cause is two instances of IObjectReference that have a mutual dependency on each other.</value>
   </data>

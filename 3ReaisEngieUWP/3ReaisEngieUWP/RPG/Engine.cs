@@ -5,6 +5,7 @@ using Newtonsoft.Json;
 using System;
 using System.Diagnostics;
 using System.IO;
+using System.Threading.Tasks;
 using Windows.Storage;
 
 namespace _3ReaisEngine
@@ -25,6 +26,7 @@ namespace _3ReaisEngine
             StorageFile sampleFile = await storageFolder.CreateFileAsync(fileName, CreationCollisionOption.ReplaceExisting);
             await FileIO.WriteTextAsync(sampleFile, file);
         }
+
         public static T load<T>(string path)
         {
            

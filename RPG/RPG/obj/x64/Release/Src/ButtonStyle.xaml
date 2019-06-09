@@ -4,7 +4,30 @@
     xmlns:local="using:_3ReaisEngine.RPG.Styles">
 
     <Style TargetType="Button" x:Key="ButtonStyle">
-    
+
+
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button" >
+                   
+                    <Grid x:Name="RootGrid" Background="{TemplateBinding Background}">
+                       
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup x:Name="CommonStates">
+                                
+                                <VisualState x:Name="Normal">
+                                   
+                                </VisualState>
+                              
+                                
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>
+                       
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+
     </Style>
 
 </ResourceDictionary>

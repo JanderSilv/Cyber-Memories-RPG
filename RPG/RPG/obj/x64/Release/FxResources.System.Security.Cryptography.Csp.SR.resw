@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Cryptography_InvalidPadding" xml:space="preserve">
-    <value>Specified padding mode is not valid for this algorithm.</value>
+    <value>Padding is invalid and cannot be removed.</value>
   </data>
   <data name="Cryptography_HashAlgorithmNameNullOrEmpty" xml:space="preserve">
     <value>The hash algorithm name cannot be null or empty.</value>
@@ -132,8 +132,8 @@
   <data name="Cryptography_UnknownHashAlgorithm" xml:space="preserve">
     <value>'{0}' is not a known hash algorithm.</value>
   </data>
-  <data name="NotSupported_UnwritableStream" xml:space="preserve">
-    <value>Stream does not support writing.</value>
+  <data name="Cryptography_RSA_DecryptWrongSize" xml:space="preserve">
+    <value>The length of the data to decrypt is not valid for the size of this key.</value>
   </data>
   <data name="Cryptography_CSP_NoPrivateKey" xml:space="preserve">
     <value>Object contains only the public half of a key pair. A private key must also be provided.</value>
@@ -171,17 +171,11 @@
   <data name="Cryptography_CSP_NotFound" xml:space="preserve">
     <value>The requested key container was not found.</value>
   </data>
-  <data name="Argument_InvalidOffLen" xml:space="preserve">
-    <value>Offset and length were out of bounds for the array or count is greater than the number of elements from index to the end of the source collection.</value>
-  </data>
   <data name="Cryptography_CAPI_Required" xml:space="preserve">
     <value>'{0}' requires Windows Cryptographic API (CAPI), which is not available on this platform.</value>
   </data>
   <data name="Cryptography_InvalidKey_SemiWeak" xml:space="preserve">
     <value>Specified key is a known semi-weak key for '{0}' and cannot be used.</value>
-  </data>
-  <data name="Cryptography_Padding_DecDataTooBig" xml:space="preserve">
-    <value>The data to be decrypted exceeds the maximum for this modulus of {0} bytes.</value>
   </data>
   <data name="Cryptography_TransformBeyondEndOfBuffer" xml:space="preserve">
     <value>Attempt to transform beyond end of buffer.</value>
@@ -209,9 +203,6 @@
   </data>
   <data name="CspParameter_invalid" xml:space="preserve">
     <value>CSPParameters cannot be null</value>
-  </data>
-  <data name="NotSupported_UnreadableStream" xml:space="preserve">
-    <value>Stream does not support reading.</value>
   </data>
   <data name="Cryptography_PasswordDerivedBytes_TooManyBytes" xml:space="preserve">
     <value>Requested number of bytes exceeds the maximum.</value>

@@ -144,6 +144,9 @@
   <data name="NotSupported_UnseekableStream" xml:space="preserve">
     <value>Stream does not support seeking.</value>
   </data>
+  <data name="IO_PathTooLong_Path" xml:space="preserve">
+    <value>The specified port name '{0}' is too long.  The port name must be less than 260 characters.</value>
+  </data>
   <data name="IO_PathTooLong" xml:space="preserve">
     <value>The specified port name is too long.  The port name must be less than 260 characters.</value>
   </data>

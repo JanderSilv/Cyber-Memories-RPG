@@ -286,7 +286,7 @@
     <value>String cannot be empty.</value>
   </data>
   <data name="Argument_InvalidPathChars" xml:space="preserve">
-    <value>Illegal characters in path.</value>
+    <value>Illegal characters in path '{0}'.</value>
   </data>
   <data name="CentralDirectoryInvalid" xml:space="preserve">
     <value>Central Directory is invalid.</value>

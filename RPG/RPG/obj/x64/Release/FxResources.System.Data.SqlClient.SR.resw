@@ -124,7 +124,7 @@
     <value>Unrecognized System.Transactions.IsolationLevel enumeration value: {0}.</value>
   </data>
   <data name="SQL_KerberosTicketMissingError" xml:space="preserve">
-    <value>Cannot access Kerberos ticket. Ensure Kerberos has been initialized with 'kinit'.</value>
+    <value>Cannot authenticate using Kerberos. Ensure Kerberos has been initialized on the client with 'kinit' and a Service Principal Name has been registered for the SQL Server to allow Kerberos authentication.</value>
   </data>
   <data name="SQL_BulkLoadCannotConvertValue" xml:space="preserve">
     <value>The given value of type {0} from the data source cannot be converted to type {1} of the specified target column.</value>
@@ -142,7 +142,7 @@
     <value>Value cannot be converted to SqlVariant.</value>
   </data>
   <data name="ADP_DeriveParametersNotSupported" xml:space="preserve">
-    <value>{0} DeriveParameters only supports CommandType.StoredProcedure, not CommandType.{1}.</value>
+    <value>{0} DeriveParameters only supports CommandType.StoredProcedure, not CommandType. {1}.</value>
   </data>
   <data name="SQL_CannotGetDTCAddress" xml:space="preserve">
     <value>Unable to get the address of the distributed transaction coordinator for the server, from the server.  Is DTC enabled on the server?</value>
@@ -168,6 +168,12 @@
   <data name="Snix_Execute" xml:space="preserve">
     <value>A transport-level error has occurred when sending the request to the server.</value>
   </data>
+  <data name="SQL_ChangePasswordUseOfUnallowedKey" xml:space="preserve">
+    <value>The keyword '{0}' must not be specified in the connectionString argument to ChangePassword.</value>
+  </data>
+  <data name="ADP_InvalidArgumentLength" xml:space="preserve">
+    <value>The length of argument '{0}' exceeds its limit of '{1}'.</value>
+  </data>
   <data name="ADP_OpenReaderExists" xml:space="preserve">
     <value>There is already an open DataReader associated with this Command which must be closed first.</value>
   </data>
@@ -188,6 +194,9 @@
   </data>
   <data name="LocalDB_MethodNotFound" xml:space="preserve">
     <value>Invalid SQLUserInstance.dll found at the location specified in the registry. Verify that the Local Database Runtime feature of SQL Server Express is properly installed.</value>
+  </data>
+  <data name="SQLUDT_InvalidUdtTypeName" xml:space="preserve">
+    <value>UdtTypeName property must be set for UDT parameters.</value>
   </data>
   <data name="SqlMetaData_SpecifyBothSortOrderAndOrdinal" xml:space="preserve">
     <value>The sort order and ordinal must either both be specified, or neither should be specified (SortOrder.Unspecified and -1).  The values given were: order = {0}, ordinal = {1}.</value>
@@ -309,6 +318,9 @@
   <data name="SqlMisc_NotFilledMessage" xml:space="preserve">
     <value>SQL Type has not been loaded with data.</value>
   </data>
+  <data name="ADP_UnknownDataTypeCode" xml:space="preserve">
+    <value>Unable to handle an unknown TypeCode {0} returned by Type {1}.</value>
+  </data>
   <data name="MDF_InvalidXmlMissingColumn" xml:space="preserve">
     <value>The metadata XML is invalid. The {0} collection must contain a {1} column and it must be a string column.</value>
   </data>
@@ -320,6 +332,9 @@
   </data>
   <data name="ADP_ConnectionStateMsg" xml:space="preserve">
     <value>The connection's current state: {0}.</value>
+  </data>
+  <data name="ADP_InvalidMixedUsageOfSecureAndClearCredential" xml:space="preserve">
+    <value>Cannot use Credential with UserID, UID, Password, or PWD connection string keywords.</value>
   </data>
   <data name="MDF_AmbigousCollectionName" xml:space="preserve">
     <value>The collection name '{0}' matches at least two collections with the same name but with different case, but does not match any of them exactly.</value>
@@ -339,8 +354,14 @@
   <data name="InvalidSchemaTableOrdinals" xml:space="preserve">
     <value>Invalid column ordinals in schema table.  ColumnOrdinals, if present, must not have duplicates or gaps.</value>
   </data>
+  <data name="SQLUDT_Unexpected" xml:space="preserve">
+    <value>unexpected error encountered in SqlClient data provider. {0}</value>
+  </data>
   <data name="ADP_ParameterValueOutOfRange" xml:space="preserve">
     <value>Parameter value '{0}' is out of range.</value>
+  </data>
+  <data name="SQL_InvalidUdt3PartNameFormat" xml:space="preserve">
+    <value>Invalid 3 part name format for UdtTypeName.</value>
   </data>
   <data name="ADP_InvalidSourceBufferIndex" xml:space="preserve">
     <value>Invalid source buffer (size of {0}) offset: {1}</value>
@@ -356,6 +377,9 @@
   </data>
   <data name="SqlProvider_MissingSortOrdinal" xml:space="preserve">
     <value>The sort ordinal {0} was not specified.</value>
+  </data>
+  <data name="ADP_InvalidMixedUsageOfSecureCredentialAndIntegratedSecurity" xml:space="preserve">
+    <value>Cannot use Credential with Integrated Security connection string keyword.</value>
   </data>
   <data name="SQL_SSPIInitializeError" xml:space="preserve">
     <value>Cannot initialize SSPI package.</value>
@@ -395,6 +419,9 @@
   </data>
   <data name="ADP_InvalidOffsetValue" xml:space="preserve">
     <value>Invalid parameter Offset value '{0}'. The value must be greater than or equal to 0.</value>
+  </data>
+  <data name="SqlUdt_InvalidUdtMessage" xml:space="preserve">
+    <value>'{0}' is an invalid user defined type, reason: {1}.</value>
   </data>
   <data name="ADP_TransactionZombied" xml:space="preserve">
     <value>This {0} has completed; it is no longer usable.</value>
@@ -572,6 +599,9 @@
   </data>
   <data name="SNI_PN9" xml:space="preserve">
     <value>SQL Network Interfaces</value>
+  </data>
+  <data name="SQL_ChangePasswordArgumentMissing" xml:space="preserve">
+    <value>The '{0}' argument must not be null or empty.</value>
   </data>
   <data name="SqlParameter_UnexpectedTypeNameForNonStruct" xml:space="preserve">
     <value>TypeName specified for parameter '{0}'.  TypeName must only be set for Structured parameters.</value>
@@ -792,6 +822,9 @@
   <data name="SQL_NonBlobColumn" xml:space="preserve">
     <value>Invalid attempt to GetBytes on column '{0}'.  The GetBytes function can only be used on columns of type Text, NText, or Image.</value>
   </data>
+  <data name="SQLUDT_UnexpectedUdtTypeName" xml:space="preserve">
+    <value>UdtTypeName property must be set only for UDT parameters.</value>
+  </data>
   <data name="Snix_SendRows" xml:space="preserve">
     <value>A transport-level error has occurred while sending information to the server.</value>
   </data>
@@ -821,6 +854,9 @@
   </data>
   <data name="SQL_ExRoutingDestination" xml:space="preserve">
     <value>Routing Destination:{0}</value>
+  </data>
+  <data name="SqlUdtReason_NoUdtAttribute" xml:space="preserve">
+    <value>no UDT attribute</value>
   </data>
   <data name="SQLCR_NoCRAckAtReconnection" xml:space="preserve">
     <value>The server did not acknowledge a recovery attempt, connection recovery is not possible.</value>
@@ -897,6 +933,9 @@
   <data name="SQL_SevereError" xml:space="preserve">
     <value>A severe error occurred on the current command.  The results, if any, should be discarded.</value>
   </data>
+  <data name="SQLUDT_MaxByteSizeValue" xml:space="preserve">
+    <value>range: 0-8000</value>
+  </data>
   <data name="LocalDB_FailedGetDLLHandle" xml:space="preserve">
     <value>Local Database Runtime: Cannot load SQLUserInstance.dll.</value>
   </data>
@@ -972,17 +1011,26 @@
   <data name="SqlMisc_ConversionOverflowMessage" xml:space="preserve">
     <value>Conversion overflows.</value>
   </data>
+  <data name="SQLUDT_InvalidSqlType" xml:space="preserve">
+    <value>Specified type is not registered on the target server. {0}.</value>
+  </data>
   <data name="SQL_Timeout" xml:space="preserve">
     <value>Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.</value>
   </data>
   <data name="SQL_InvalidPartnerConfiguration" xml:space="preserve">
     <value>Server {0}, database {1} is not configured for database mirroring.</value>
   </data>
+  <data name="ADP_MustBeReadOnly" xml:space="preserve">
+    <value>{0} must be marked as read only.</value>
+  </data>
   <data name="ADP_CollectionIndexString" xml:space="preserve">
     <value>An {0} with {1} '{2}' is not contained by this {3}.</value>
   </data>
   <data name="MDF_UnsupportedVersion" xml:space="preserve">
     <value> requested collection ({0}) is not supported by this version of the provider.</value>
+  </data>
+  <data name="SQL_UDTTypeName" xml:space="preserve">
+    <value>SqlParameter.UdtTypeName is an invalid multipart name</value>
   </data>
   <data name="ADP_InvalidConnectionOptionValue" xml:space="preserve">
     <value>Invalid value for key '{0}'.</value>
@@ -1095,6 +1143,9 @@
   <data name="SQL_StreamWriteNotSupported" xml:space="preserve">
     <value>The Stream does not support writing.</value>
   </data>
+  <data name="SQL_ChangePasswordConflictsWithSSPI" xml:space="preserve">
+    <value>ChangePassword can only be used with SQL authentication, not with integrated security.</value>
+  </data>
   <data name="ADP_InvalidCommandTimeout" xml:space="preserve">
     <value>Invalid CommandTimeout value {0}; the value must be &gt;= 0.</value>
   </data>
@@ -1194,6 +1245,9 @@
   <data name="Snix_Login" xml:space="preserve">
     <value>A connection was successfully established with the server, but then an error occurred during the login process.</value>
   </data>
+  <data name="SQL_ChangePasswordRequiresYukon" xml:space="preserve">
+    <value>ChangePassword requires SQL Server 9.0 or later.</value>
+  </data>
   <data name="SQL_CannotModifyPropertyAsyncOperationInProgress" xml:space="preserve">
     <value>{0} cannot be changed while async operation is in progress.</value>
   </data>
@@ -1202,6 +1256,9 @@
   </data>
   <data name="SqlDependency_DatabaseBrokerDisabled" xml:space="preserve">
     <value>The SQL Server Service Broker for the current database is not enabled, and as a result query notifications are not supported.  Please enable the Service Broker for this database if you wish to use notifications.</value>
+  </data>
+  <data name="SQL_CannotCreateNormalizer" xml:space="preserve">
+    <value>Cannot create normalizer for '{0}'.</value>
   </data>
   <data name="SqlMetaData_NameTooLong" xml:space="preserve">
     <value>The name is too long.</value>

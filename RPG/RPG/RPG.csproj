@@ -106,6 +106,7 @@
     <Compile Include="Src\Scripts\Items\PocaoVidaG.cs" />
     <Compile Include="Src\Scripts\Items\PocaoVidaM.cs" />
     <Compile Include="Src\Scripts\Items\PocaoVidaP.cs" />
+    <Compile Include="Src\Scripts\DungeonGenerator.cs" />
     <Compile Include="Src\Scripts\Managers\CraftSystem.cs" />
     <Compile Include="Src\Scripts\Entidades\Areia.cs" />
     <Compile Include="Src\Scripts\Componentes\Inventario.cs" />
@@ -190,6 +191,26 @@
     <Content Include="Src\Images\Menu\Botões\Volume_Selecionado.png" />
     <Content Include="Src\Images\Menu\Logo.png" />
     <Content Include="Src\Images\Menu\Logo2.png" />
+    <Content Include="Src\Images\Menu\Selecao_Personagem\Homem-Branco-Combate.png" />
+    <Content Include="Src\Images\Menu\Selecao_Personagem\Mulher-Negro-Combate.png" />
+    <Content Include="Src\Images\Menu\Selecao_Personagem\Mulher-Branco-Combate.png" />
+    <Content Include="Src\Images\Menu\Selecao_Personagem\Homem-Negro-Combate.png" />
+    <Content Include="Src\Images\Menu\Selecao_Personagem\Contorno.png" />
+    <Content Include="Src\Images\Menu\Selecao_Personagem\Escolha_Personagem.png" />
+    <Content Include="Src\Images\Menu\Selecao_Personagem\Homem-Branco-Face.png" />
+    <Content Include="Src\Images\Menu\Selecao_Personagem\Homem-Negro-Face.png" />
+    <Content Include="Src\Images\Menu\Selecao_Personagem\Homem.png" />
+    <Content Include="Src\Images\Menu\Selecao_Personagem\Homem_Selecionado.png" />
+    <Content Include="Src\Images\Menu\Selecao_Personagem\Mulher Selecionado.png" />
+    <Content Include="Src\Images\Menu\Selecao_Personagem\Mulher-Branco-Face.png" />
+    <Content Include="Src\Images\Menu\Selecao_Personagem\Mulher-Negro-Face.png" />
+    <Content Include="Src\Images\Menu\Selecao_Personagem\Mulher.png" />
+    <Content Include="Src\Images\Menu\Selecao_Personagem\Pronto.png" />
+    <Content Include="Src\Images\Menu\Selecao_Personagem\Pronto_Selecionado.png" />
+    <Content Include="Src\Images\Menu\Selecao_Personagem\Seta Direita Selecionado.png" />
+    <Content Include="Src\Images\Menu\Selecao_Personagem\Seta Direita.png" />
+    <Content Include="Src\Images\Menu\Selecao_Personagem\Seta Esquerda Selecionado.png" />
+    <Content Include="Src\Images\Menu\Selecao_Personagem\Seta Esquerda.png" />
     <Content Include="Src\Images\tiles\areia.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

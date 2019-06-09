@@ -168,6 +168,9 @@
   <data name="Cryptography_UnknownHashAlgorithm" xml:space="preserve">
     <value>'{0}' is not a known hash algorithm.</value>
   </data>
+  <data name="Cryptography_RSA_DecryptWrongSize" xml:space="preserve">
+    <value>The length of the data to decrypt is not valid for the size of this key.</value>
+  </data>
   <data name="Cryptography_X509_ExportFailed" xml:space="preserve">
     <value>The certificate export operation failed.</value>
   </data>
@@ -252,6 +255,9 @@
   <data name="Cryptography_InvalidDsaParameters_MismatchedPJ" xml:space="preserve">
     <value>The specified DSA parameters are not valid; J (if present) must be shorter than P.</value>
   </data>
+  <data name="Cryptography_KeyTooSmall" xml:space="preserve">
+    <value>The key is too small for the requested operation.</value>
+  </data>
   <data name="Cryptography_Unix_X509_PropertyNotSettable" xml:space="preserve">
     <value>The {0} value cannot be set on Unix.</value>
   </data>
@@ -324,6 +330,12 @@
   <data name="Cryptography_X509_InvalidFindType" xml:space="preserve">
     <value>Invalid find type.</value>
   </data>
+  <data name="Cryptography_SignHash_WrongSize" xml:space="preserve">
+    <value>The provided hash value is not the expected size for the specified hash algorithm.</value>
+  </data>
+  <data name="Cryptography_Encryption_MessageTooLong" xml:space="preserve">
+    <value>The message exceeds the maximum allowable length for the chosen options ({0}).</value>
+  </data>
   <data name="Cryptography_InvalidPaddingMode" xml:space="preserve">
     <value>Specified padding mode is not valid for this algorithm.</value>
   </data>
@@ -371,6 +383,12 @@
   </data>
   <data name="Cryptography_X509_InvalidFindValue" xml:space="preserve">
     <value>Invalid find value.</value>
+  </data>
+  <data name="Cryptography_X509_StoreAddFailure" xml:space="preserve">
+    <value>The X509 certificate could not be added to the store.</value>
+  </data>
+  <data name="Cryptography_OAEP_Decryption_Failed" xml:space="preserve">
+    <value>Error occurred while decoding OAEP padding.</value>
   </data>
   <data name="Arg_OutOfRange_NeedNonNegNum" xml:space="preserve">
     <value>Non-negative number required.</value>

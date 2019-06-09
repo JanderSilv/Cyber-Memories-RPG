@@ -117,8 +117,14 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="ArgumentNull_ArrayWithNullElements" xml:space="preserve">
+    <value>The array cannot contain null elements.</value>
+  </data>
   <data name="UndefinedBackref" xml:space="preserve">
     <value>Reference to undefined group number {0}.</value>
+  </data>
+  <data name="PlatformNotSupported_CompileToAssembly" xml:space="preserve">
+    <value>This platform does not support writing compiled regular expressions to an assembly.</value>
   </data>
   <data name="UnexpectedOpcode" xml:space="preserve">
     <value>Unexpected opcode in regular expression generation: {0}.</value>
@@ -146,6 +152,9 @@
   </data>
   <data name="MalformedSlashP" xml:space="preserve">
     <value>Malformed \\p{X} character escape.</value>
+  </data>
+  <data name="InvalidEmptyArgument" xml:space="preserve">
+    <value>Argument {0} cannot be zero-length.</value>
   </data>
   <data name="MalformedNameRef" xml:space="preserve">
     <value>Malformed \\k&lt;...&gt; named back reference.</value>
@@ -251,5 +260,8 @@
   </data>
   <data name="InvalidGroupName" xml:space="preserve">
     <value>Invalid group name: Group names must begin with a word character.</value>
+  </data>
+  <data name="IllegalDefaultRegexMatchTimeoutInAppDomain" xml:space="preserve">
+    <value>AppDomain data '{0}' contains the invalid value or object '{1}' for specifying a default matching timeout for System.Text.RegularExpressions.Regex.</value>
   </data>
 </root>

@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>LAPTOP-I3GVLU4P</Machine>
-    <WindowsUser>ruann</WindowsUser>
+    <Machine>JANDER</Machine>
+    <WindowsUser>Jander</WindowsUser>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetOsVersion>10.0</TargetOsVersion>
     <TargetOsDescription>Windows 10.0</TargetOsDescription>
@@ -10,7 +10,7 @@
     <PackageArchitecture>x64</PackageArchitecture>
     <PackageIdentityName>2d5fb77a-6e92-49d7-b9e3-84e29a9f9a60</PackageIdentityName>
     <PackageIdentityPublisher>CN=ruann</PackageIdentityPublisher>
-    <IntermediateOutputPath>E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\obj\x64\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -18,8 +18,8 @@
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>2FF5B2BBD94C3DB52BDC922B307E7F97FB2CAAEE21048777579A7400B26BFBA0</RegisteredManifestChecksum>
+    <LayoutDir>C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\bin\x64\Debug\AppX</LayoutDir>
+    <RegisteredManifestChecksum>FAC39B4033FD7AD16734CB788AE4985CF2ED80B24DC229BAE7529D1ABBEBD949</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>2d5fb77a-6e92-49d7-b9e3-84e29a9f9a60_1.0.0.0_x64__df0wr8x2vnj7j</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>2d5fb77a-6e92-49d7-b9e3-84e29a9f9a60_df0wr8x2vnj7j!App</RegisteredUserModeAppID>
     <RegisteredPackageID>2d5fb77a-6e92-49d7-b9e3-84e29a9f9a60</RegisteredPackageID>
@@ -27,18 +27,18 @@
     <RegisteredVersion>1.0.0.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2019-06-08T23:43:55.315</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Debug\RPG.exe">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\bin\x64\Debug\RPG.exe">
       <PackagePath>entrypoint\RPG.exe</PackagePath>
       <Modified>2019-06-08T23:43:52.293</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ruann\.nuget\packages\newtonsoft.json\12.0.2\lib\netstandard2.0\Newtonsoft.Json.dll">
+    <AppxPackagedFile Include="C:\Users\sonia\.nuget\packages\newtonsoft.json\12.0.2\lib\netstandard2.0\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
       <Modified>2019-04-22T04:06:16.000</Modified>
     </AppxPackagedFile>
@@ -46,621 +46,701 @@
       <PackagePath>System.Runtime.dll</PackagePath>
       <Modified>2019-03-13T01:23:24.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\3ReaisEngieUWP\3ReaisEngieUWP\bin\x64\Debug\3ReaisEngieUWP.dll">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\3ReaisEngieUWP\3ReaisEngieUWP\bin\x64\Debug\3ReaisEngieUWP.dll">
       <PackagePath>3ReaisEngieUWP.dll</PackagePath>
       <Modified>2019-06-08T23:43:45.718</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.17763.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
-      <Modified>2018-10-23T04:33:40.000</Modified>
+      <Modified>2018-10-23T03:33:40.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Assets-Laborátorio_0001_Livros.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Assets-Laborátorio_0001_Livros.png">
       <PackagePath>Src\Images\Laboratório\Assets-Laborátorio_0001_Livros.png</PackagePath>
-      <Modified>2019-05-19T18:26:01.804</Modified>
+      <Modified>2019-05-29T15:00:44.684</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Assets-Laborátorio_0002_Papeis.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Assets-Laborátorio_0002_Papeis.png">
       <PackagePath>Src\Images\Laboratório\Assets-Laborátorio_0002_Papeis.png</PackagePath>
-      <Modified>2019-05-19T18:26:01.805</Modified>
+      <Modified>2019-05-29T15:00:44.688</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Assets-Laborátorio_0003_Mesa-Vertical.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Assets-Laborátorio_0003_Mesa-Vertical.png">
       <PackagePath>Src\Images\Laboratório\Assets-Laborátorio_0003_Mesa-Vertical.png</PackagePath>
-      <Modified>2019-05-19T18:26:01.805</Modified>
+      <Modified>2019-05-29T15:00:44.688</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Assets-Laborátorio_0004_Mesa-Horizontal.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Assets-Laborátorio_0004_Mesa-Horizontal.png">
       <PackagePath>Src\Images\Laboratório\Assets-Laborátorio_0004_Mesa-Horizontal.png</PackagePath>
-      <Modified>2019-05-19T18:26:01.806</Modified>
+      <Modified>2019-05-29T15:00:44.692</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Assets-Laborátorio_0005_Perigo.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Assets-Laborátorio_0005_Perigo.png">
       <PackagePath>Src\Images\Laboratório\Assets-Laborátorio_0005_Perigo.png</PackagePath>
-      <Modified>2019-05-19T18:26:01.807</Modified>
+      <Modified>2019-05-29T15:00:44.692</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Assets-Laborátorio_0006_Vidrarias.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Assets-Laborátorio_0006_Vidrarias.png">
       <PackagePath>Src\Images\Laboratório\Assets-Laborátorio_0006_Vidrarias.png</PackagePath>
-      <Modified>2019-05-19T18:26:01.808</Modified>
+      <Modified>2019-05-29T15:00:44.728</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Assets-Laborátorio_0007_Armário.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Assets-Laborátorio_0007_Armário.png">
       <PackagePath>Src\Images\Laboratório\Assets-Laborátorio_0007_Armário.png</PackagePath>
-      <Modified>2019-05-19T18:26:01.808</Modified>
+      <Modified>2019-05-29T15:00:44.728</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab_0003_Máquinas.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab_0003_Máquinas.png">
       <PackagePath>Src\Images\Laboratório\Lab_0003_Máquinas.png</PackagePath>
-      <Modified>2019-05-19T18:26:01.809</Modified>
+      <Modified>2019-05-29T15:00:44.732</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab_0004_Extintor.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab_0004_Extintor.png">
       <PackagePath>Src\Images\Laboratório\Lab_0004_Extintor.png</PackagePath>
-      <Modified>2019-05-19T18:26:01.810</Modified>
+      <Modified>2019-05-29T15:00:44.732</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab_0005_Tubo.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab_0005_Tubo.png">
       <PackagePath>Src\Images\Laboratório\Lab_0005_Tubo.png</PackagePath>
-      <Modified>2019-05-19T18:26:01.812</Modified>
+      <Modified>2019-05-29T15:00:44.968</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab_0006_Luz.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab_0006_Luz.png">
       <PackagePath>Src\Images\Laboratório\Lab_0006_Luz.png</PackagePath>
-      <Modified>2019-05-19T18:26:01.813</Modified>
+      <Modified>2019-05-29T15:00:44.968</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab_0007_Grade.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab_0007_Grade.png">
       <PackagePath>Src\Images\Laboratório\Lab_0007_Grade.png</PackagePath>
-      <Modified>2019-05-19T18:26:01.814</Modified>
+      <Modified>2019-05-29T15:00:44.972</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab_0008_Planta.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab_0008_Planta.png">
       <PackagePath>Src\Images\Laboratório\Lab_0008_Planta.png</PackagePath>
-      <Modified>2019-05-19T18:26:01.815</Modified>
+      <Modified>2019-05-29T15:00:44.972</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab_0009_Maq.-de-TP.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab_0009_Maq.-de-TP.png">
       <PackagePath>Src\Images\Laboratório\Lab_0009_Maq.-de-TP.png</PackagePath>
-      <Modified>2019-05-19T18:26:01.815</Modified>
+      <Modified>2019-05-29T15:00:44.976</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab_Ar-Condicionado.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab_Ar-Condicionado.png">
       <PackagePath>Src\Images\Laboratório\Lab_Ar-Condicionado.png</PackagePath>
-      <Modified>2019-05-19T18:26:01.816</Modified>
+      <Modified>2019-05-29T15:00:44.976</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab_Exit.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab_Exit.png">
       <PackagePath>Src\Images\Laboratório\Lab_Exit.png</PackagePath>
-      <Modified>2019-05-19T18:26:01.817</Modified>
+      <Modified>2019-05-29T15:00:44.976</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab_Fechadura-Eletronica.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab_Fechadura-Eletronica.png">
       <PackagePath>Src\Images\Laboratório\Lab_Fechadura-Eletronica.png</PackagePath>
-      <Modified>2019-05-19T18:26:01.817</Modified>
+      <Modified>2019-05-29T15:00:45.060</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab_Notebook.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab_Notebook.png">
       <PackagePath>Src\Images\Laboratório\Lab_Notebook.png</PackagePath>
-      <Modified>2019-05-19T18:26:01.818</Modified>
+      <Modified>2019-05-29T15:00:45.064</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab_Parede.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab_Parede.png">
       <PackagePath>Src\Images\Laboratório\Lab_Parede.png</PackagePath>
-      <Modified>2019-05-19T18:26:01.819</Modified>
+      <Modified>2019-05-29T15:00:45.068</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab__0000_Cadeira-Esq.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab__0000_Cadeira-Esq.png">
       <PackagePath>Src\Images\Laboratório\Lab__0000_Cadeira-Esq.png</PackagePath>
-      <Modified>2019-05-19T18:26:01.819</Modified>
+      <Modified>2019-05-29T15:00:45.068</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab__0001_Cadeira-Costa.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab__0001_Cadeira-Costa.png">
       <PackagePath>Src\Images\Laboratório\Lab__0001_Cadeira-Costa.png</PackagePath>
-      <Modified>2019-05-19T18:26:01.820</Modified>
+      <Modified>2019-05-29T15:00:45.072</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab__0002_TP.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab__0002_TP.png">
       <PackagePath>Src\Images\Laboratório\Lab__0002_TP.png</PackagePath>
-      <Modified>2019-05-19T18:26:01.821</Modified>
+      <Modified>2019-05-29T15:00:45.080</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab__0003_Monitores.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab__0003_Monitores.png">
       <PackagePath>Src\Images\Laboratório\Lab__0003_Monitores.png</PackagePath>
-      <Modified>2019-05-19T18:26:01.822</Modified>
+      <Modified>2019-05-29T15:00:45.088</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab__0004_Piso.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab__0004_Piso.png">
       <PackagePath>Src\Images\Laboratório\Lab__0004_Piso.png</PackagePath>
-      <Modified>2019-05-19T18:26:01.822</Modified>
+      <Modified>2019-05-29T15:00:45.092</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Menu\Botões\Configurações.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Menu\Botões\Configurações.png">
       <PackagePath>Src\Images\Menu\Botões\Configurações.png</PackagePath>
-      <Modified>2019-05-03T20:29:12.053</Modified>
+      <Modified>2019-05-02T18:46:47.672</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Menu\Botões\Configurações_Selecionado.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Menu\Botões\Configurações_Selecionado.png">
       <PackagePath>Src\Images\Menu\Botões\Configurações_Selecionado.png</PackagePath>
-      <Modified>2019-05-03T20:29:12.054</Modified>
+      <Modified>2019-05-02T18:46:47.675</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Menu\Botões\Controles.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Menu\Botões\Controles.png">
       <PackagePath>Src\Images\Menu\Botões\Controles.png</PackagePath>
-      <Modified>2019-05-19T13:34:21.050</Modified>
+      <Modified>2019-05-13T20:48:00.120</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Menu\Botões\Controles_Selecionado.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Menu\Botões\Controles_Selecionado.png">
       <PackagePath>Src\Images\Menu\Botões\Controles_Selecionado.png</PackagePath>
-      <Modified>2019-05-19T13:34:21.051</Modified>
+      <Modified>2019-05-13T20:48:00.154</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Menu\Botões\Iniciar.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Menu\Botões\Iniciar.png">
       <PackagePath>Src\Images\Menu\Botões\Iniciar.png</PackagePath>
-      <Modified>2019-05-03T20:29:12.055</Modified>
+      <Modified>2019-05-02T18:46:47.679</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Menu\Botões\Jogar_Selecionado.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Menu\Botões\Jogar_Selecionado.png">
       <PackagePath>Src\Images\Menu\Botões\Jogar_Selecionado.png</PackagePath>
-      <Modified>2019-05-03T20:29:12.056</Modified>
+      <Modified>2019-05-02T18:46:47.683</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Menu\Botões\Sair.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Menu\Botões\Sair.png">
       <PackagePath>Src\Images\Menu\Botões\Sair.png</PackagePath>
-      <Modified>2019-05-03T20:29:12.057</Modified>
+      <Modified>2019-05-02T18:46:47.687</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Menu\Botões\Sair_Selecionado.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Menu\Botões\Sair_Selecionado.png">
       <PackagePath>Src\Images\Menu\Botões\Sair_Selecionado.png</PackagePath>
-      <Modified>2019-05-03T20:29:12.058</Modified>
+      <Modified>2019-05-02T18:46:47.691</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Menu\Botões\Sobre.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Menu\Botões\Sobre.png">
       <PackagePath>Src\Images\Menu\Botões\Sobre.png</PackagePath>
-      <Modified>2019-05-19T13:34:21.052</Modified>
+      <Modified>2019-05-13T20:48:02.666</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Menu\Botões\Sobre_Selecionado.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Menu\Botões\Sobre_Selecionado.png">
       <PackagePath>Src\Images\Menu\Botões\Sobre_Selecionado.png</PackagePath>
-      <Modified>2019-05-03T20:29:12.060</Modified>
+      <Modified>2019-05-02T18:46:47.695</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Menu\Botões\Voltar.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Menu\Botões\Voltar.png">
       <PackagePath>Src\Images\Menu\Botões\Voltar.png</PackagePath>
-      <Modified>2019-05-03T20:29:12.061</Modified>
+      <Modified>2019-05-02T18:46:47.699</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Menu\Botões\Voltar_Selecionado.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Menu\Botões\Voltar_Selecionado.png">
       <PackagePath>Src\Images\Menu\Botões\Voltar_Selecionado.png</PackagePath>
-      <Modified>2019-05-03T20:29:12.062</Modified>
+      <Modified>2019-05-02T18:46:47.703</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Menu\Botões\Volume.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Menu\Botões\Volume.png">
       <PackagePath>Src\Images\Menu\Botões\Volume.png</PackagePath>
-      <Modified>2019-05-19T13:34:21.052</Modified>
+      <Modified>2019-05-13T20:48:02.694</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Menu\Botões\Volume_Selecionado.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Menu\Botões\Volume_Selecionado.png">
       <PackagePath>Src\Images\Menu\Botões\Volume_Selecionado.png</PackagePath>
-      <Modified>2019-05-19T13:34:21.053</Modified>
+      <Modified>2019-05-13T20:48:02.705</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Menu\Logo.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Menu\Logo.png">
       <PackagePath>Src\Images\Menu\Logo.png</PackagePath>
-      <Modified>2019-05-03T20:29:12.063</Modified>
+      <Modified>2019-04-30T16:57:42.636</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Menu\Logo2.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Menu\Logo2.png">
       <PackagePath>Src\Images\Menu\Logo2.png</PackagePath>
-      <Modified>2019-05-03T20:29:12.065</Modified>
+      <Modified>2019-04-30T17:10:37.016</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\tiles\areia.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Menu\Selecao_Personagem\Homem-Branco-Combate.png">
+      <PackagePath>Src\Images\Menu\Selecao_Personagem\Homem-Branco-Combate.png</PackagePath>
+      <Modified>2019-06-04T17:20:57.033</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Menu\Selecao_Personagem\Mulher-Negro-Combate.png">
+      <PackagePath>Src\Images\Menu\Selecao_Personagem\Mulher-Negro-Combate.png</PackagePath>
+      <Modified>2019-06-04T17:14:44.078</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Menu\Selecao_Personagem\Mulher-Branco-Combate.png">
+      <PackagePath>Src\Images\Menu\Selecao_Personagem\Mulher-Branco-Combate.png</PackagePath>
+      <Modified>2019-06-04T17:01:01.407</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Menu\Selecao_Personagem\Homem-Negro-Combate.png">
+      <PackagePath>Src\Images\Menu\Selecao_Personagem\Homem-Negro-Combate.png</PackagePath>
+      <Modified>2019-06-04T16:54:39.901</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Menu\Selecao_Personagem\Contorno.png">
+      <PackagePath>Src\Images\Menu\Selecao_Personagem\Contorno.png</PackagePath>
+      <Modified>2019-06-04T12:46:10.949</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Menu\Selecao_Personagem\Escolha_Personagem.png">
+      <PackagePath>Src\Images\Menu\Selecao_Personagem\Escolha_Personagem.png</PackagePath>
+      <Modified>2019-06-04T12:46:10.959</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Menu\Selecao_Personagem\Homem-Branco-Face.png">
+      <PackagePath>Src\Images\Menu\Selecao_Personagem\Homem-Branco-Face.png</PackagePath>
+      <Modified>2019-06-04T16:10:44.211</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Menu\Selecao_Personagem\Homem-Negro-Face.png">
+      <PackagePath>Src\Images\Menu\Selecao_Personagem\Homem-Negro-Face.png</PackagePath>
+      <Modified>2019-06-04T16:10:44.218</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Menu\Selecao_Personagem\Homem.png">
+      <PackagePath>Src\Images\Menu\Selecao_Personagem\Homem.png</PackagePath>
+      <Modified>2019-06-04T12:46:11.098</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Menu\Selecao_Personagem\Homem_Selecionado.png">
+      <PackagePath>Src\Images\Menu\Selecao_Personagem\Homem_Selecionado.png</PackagePath>
+      <Modified>2019-06-04T12:46:11.107</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Menu\Selecao_Personagem\Mulher Selecionado.png">
+      <PackagePath>Src\Images\Menu\Selecao_Personagem\Mulher Selecionado.png</PackagePath>
+      <Modified>2019-06-04T12:46:11.175</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Menu\Selecao_Personagem\Mulher-Branco-Face.png">
+      <PackagePath>Src\Images\Menu\Selecao_Personagem\Mulher-Branco-Face.png</PackagePath>
+      <Modified>2019-06-04T16:10:44.166</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Menu\Selecao_Personagem\Mulher-Negro-Face.png">
+      <PackagePath>Src\Images\Menu\Selecao_Personagem\Mulher-Negro-Face.png</PackagePath>
+      <Modified>2019-06-04T16:10:44.203</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Menu\Selecao_Personagem\Mulher.png">
+      <PackagePath>Src\Images\Menu\Selecao_Personagem\Mulher.png</PackagePath>
+      <Modified>2019-06-04T12:46:11.183</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Menu\Selecao_Personagem\Pronto.png">
+      <PackagePath>Src\Images\Menu\Selecao_Personagem\Pronto.png</PackagePath>
+      <Modified>2019-06-04T14:44:59.817</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Menu\Selecao_Personagem\Pronto_Selecionado.png">
+      <PackagePath>Src\Images\Menu\Selecao_Personagem\Pronto_Selecionado.png</PackagePath>
+      <Modified>2019-06-04T12:46:11.191</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Menu\Selecao_Personagem\Seta Direita Selecionado.png">
+      <PackagePath>Src\Images\Menu\Selecao_Personagem\Seta Direita Selecionado.png</PackagePath>
+      <Modified>2019-06-04T12:46:11.199</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Menu\Selecao_Personagem\Seta Direita.png">
+      <PackagePath>Src\Images\Menu\Selecao_Personagem\Seta Direita.png</PackagePath>
+      <Modified>2019-06-04T12:46:11.206</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Menu\Selecao_Personagem\Seta Esquerda Selecionado.png">
+      <PackagePath>Src\Images\Menu\Selecao_Personagem\Seta Esquerda Selecionado.png</PackagePath>
+      <Modified>2019-06-04T12:46:11.213</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Menu\Selecao_Personagem\Seta Esquerda.png">
+      <PackagePath>Src\Images\Menu\Selecao_Personagem\Seta Esquerda.png</PackagePath>
+      <Modified>2019-06-04T12:46:11.232</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\tiles\areia.png">
       <PackagePath>Src\Images\tiles\areia.png</PackagePath>
-      <Modified>2019-05-10T03:29:32.740</Modified>
+      <Modified>2019-05-13T19:50:15.040</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\tiles\arvore.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\tiles\arvore.png">
       <PackagePath>Src\Images\tiles\arvore.png</PackagePath>
-      <Modified>2019-05-10T03:29:32.744</Modified>
+      <Modified>2019-05-13T19:50:15.044</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\tiles\flores.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\tiles\flores.png">
       <PackagePath>Src\Images\tiles\flores.png</PackagePath>
-      <Modified>2019-05-10T03:29:32.748</Modified>
+      <Modified>2019-05-13T19:50:15.052</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\tiles\grama.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\tiles\grama.png">
       <PackagePath>Src\Images\tiles\grama.png</PackagePath>
-      <Modified>2019-05-10T03:50:53.388</Modified>
+      <Modified>2019-05-13T19:50:15.056</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\tiles\rocha1.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\tiles\rocha1.png">
       <PackagePath>Src\Images\tiles\rocha1.png</PackagePath>
-      <Modified>2019-05-10T03:29:32.751</Modified>
+      <Modified>2019-05-13T19:50:15.060</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\tiles\rocha2.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\tiles\rocha2.png">
       <PackagePath>Src\Images\tiles\rocha2.png</PackagePath>
-      <Modified>2019-05-10T03:29:32.794</Modified>
+      <Modified>2019-05-13T19:50:15.072</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\tiles\tronco.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\tiles\tronco.png">
       <PackagePath>Src\Images\tiles\tronco.png</PackagePath>
-      <Modified>2019-05-10T03:29:32.798</Modified>
+      <Modified>2019-05-13T19:50:15.076</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Opera-04.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Opera-04.png">
       <PackagePath>Src\Opera-04.png</PackagePath>
-      <Modified>2019-04-26T19:00:23.471</Modified>
+      <Modified>2019-04-29T17:29:40.318</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2019-03-24T20:37:01.089</Modified>
+      <Modified>2019-03-24T19:54:59.737</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-03-24T20:37:01.091</Modified>
+      <Modified>2019-03-24T19:54:59.741</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-03-24T20:37:01.093</Modified>
+      <Modified>2019-03-24T19:54:59.769</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-03-24T20:37:01.095</Modified>
+      <Modified>2019-03-24T19:54:59.801</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-03-24T20:37:01.098</Modified>
+      <Modified>2019-03-24T19:54:59.805</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-03-24T20:37:01.100</Modified>
+      <Modified>2019-03-24T19:54:59.835</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-03-24T20:37:01.102</Modified>
+      <Modified>2019-03-24T19:54:59.839</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Animations\Dead.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Animations\Dead.png">
       <PackagePath>Src\Animations\Dead.png</PackagePath>
-      <Modified>2019-04-09T14:39:46.432</Modified>
+      <Modified>2019-04-09T18:17:59.408</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\JunglerockAlpha.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\JunglerockAlpha.png">
       <PackagePath>Src\JunglerockAlpha.png</PackagePath>
-      <Modified>2019-04-09T14:39:46.443</Modified>
+      <Modified>2019-04-12T17:02:03.675</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Bau\Treasure Chest closed 254x254.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Bau\Treasure Chest closed 254x254.png">
       <PackagePath>Src\Images\Bau\Treasure Chest closed 254x254.png</PackagePath>
-      <Modified>2019-05-03T20:27:57.869</Modified>
+      <Modified>2019-05-29T15:00:44.497</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Bau\Treasure Chest open 254x254.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Bau\Treasure Chest open 254x254.png">
       <PackagePath>Src\Images\Bau\Treasure Chest open 254x254.png</PackagePath>
-      <Modified>2019-05-03T20:27:57.903</Modified>
+      <Modified>2019-05-29T15:00:44.533</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Cavaleiro\knight 3 block.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Cavaleiro\knight 3 block.png">
       <PackagePath>Src\Images\Cavaleiro\knight 3 block.png</PackagePath>
-      <Modified>2019-05-03T20:27:57.917</Modified>
+      <Modified>2019-05-29T15:00:44.537</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Cavaleiro\knight 3 idle.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Cavaleiro\knight 3 idle.png">
       <PackagePath>Src\Images\Cavaleiro\knight 3 idle.png</PackagePath>
-      <Modified>2019-05-03T20:27:57.921</Modified>
+      <Modified>2019-05-29T15:00:44.537</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Cavaleiro\knight 3 improved slash animation.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Cavaleiro\knight 3 improved slash animation.png">
       <PackagePath>Src\Images\Cavaleiro\knight 3 improved slash animation.png</PackagePath>
-      <Modified>2019-05-03T20:27:57.957</Modified>
+      <Modified>2019-05-29T15:00:44.541</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Cavaleiro\knight death animation.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Cavaleiro\knight death animation.png">
       <PackagePath>Src\Images\Cavaleiro\knight death animation.png</PackagePath>
-      <Modified>2019-05-03T20:27:57.961</Modified>
+      <Modified>2019-05-29T15:00:44.541</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Cavaleiro\knight walk animation.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Cavaleiro\knight walk animation.png">
       <PackagePath>Src\Images\Cavaleiro\knight walk animation.png</PackagePath>
-      <Modified>2019-05-03T20:27:57.965</Modified>
+      <Modified>2019-05-29T15:00:44.557</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Feiticeiro\sorcerer attack_Animation 1_0.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Feiticeiro\sorcerer attack_Animation 1_0.png">
       <PackagePath>Src\Images\Feiticeiro\sorcerer attack_Animation 1_0.png</PackagePath>
-      <Modified>2019-05-03T20:27:57.978</Modified>
+      <Modified>2019-05-29T15:00:44.557</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Feiticeiro\sorcerer attack_Animation 1_1.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Feiticeiro\sorcerer attack_Animation 1_1.png">
       <PackagePath>Src\Images\Feiticeiro\sorcerer attack_Animation 1_1.png</PackagePath>
-      <Modified>2019-05-03T20:27:57.982</Modified>
+      <Modified>2019-05-29T15:00:44.561</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Feiticeiro\sorcerer attack_Animation 1_2.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Feiticeiro\sorcerer attack_Animation 1_2.png">
       <PackagePath>Src\Images\Feiticeiro\sorcerer attack_Animation 1_2.png</PackagePath>
-      <Modified>2019-05-03T20:27:57.985</Modified>
+      <Modified>2019-05-29T15:00:44.561</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Feiticeiro\sorcerer attack_Animation 1_3.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Feiticeiro\sorcerer attack_Animation 1_3.png">
       <PackagePath>Src\Images\Feiticeiro\sorcerer attack_Animation 1_3.png</PackagePath>
-      <Modified>2019-05-03T20:27:57.993</Modified>
+      <Modified>2019-05-29T15:00:44.565</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Feiticeiro\sorcerer attack_Animation 1_4.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Feiticeiro\sorcerer attack_Animation 1_4.png">
       <PackagePath>Src\Images\Feiticeiro\sorcerer attack_Animation 1_4.png</PackagePath>
-      <Modified>2019-05-03T20:27:57.998</Modified>
+      <Modified>2019-05-29T15:00:44.569</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Feiticeiro\sorcerer attack_Animation 1_5.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Feiticeiro\sorcerer attack_Animation 1_5.png">
       <PackagePath>Src\Images\Feiticeiro\sorcerer attack_Animation 1_5.png</PackagePath>
-      <Modified>2019-05-03T20:27:58.002</Modified>
+      <Modified>2019-05-29T15:00:44.569</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Feiticeiro\sorcerer attack_Animation 1_6.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Feiticeiro\sorcerer attack_Animation 1_6.png">
       <PackagePath>Src\Images\Feiticeiro\sorcerer attack_Animation 1_6.png</PackagePath>
-      <Modified>2019-05-03T20:27:58.016</Modified>
+      <Modified>2019-05-29T15:00:44.573</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Feiticeiro\sorcerer attack_Animation 1_7.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Feiticeiro\sorcerer attack_Animation 1_7.png">
       <PackagePath>Src\Images\Feiticeiro\sorcerer attack_Animation 1_7.png</PackagePath>
-      <Modified>2019-05-03T20:27:58.020</Modified>
+      <Modified>2019-05-29T15:00:44.573</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Feiticeiro\sorcerer attack_Animation 1_8.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Feiticeiro\sorcerer attack_Animation 1_8.png">
       <PackagePath>Src\Images\Feiticeiro\sorcerer attack_Animation 1_8.png</PackagePath>
-      <Modified>2019-05-03T20:27:58.024</Modified>
+      <Modified>2019-05-29T15:00:44.577</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Feiticeiro\sorcerer attack_Animation 1_9.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Feiticeiro\sorcerer attack_Animation 1_9.png">
       <PackagePath>Src\Images\Feiticeiro\sorcerer attack_Animation 1_9.png</PackagePath>
-      <Modified>2019-05-03T20:27:58.028</Modified>
+      <Modified>2019-05-29T15:00:44.577</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Feiticeiro\sorcerer villain.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Feiticeiro\sorcerer villain.png">
       <PackagePath>Src\Images\Feiticeiro\sorcerer villain.png</PackagePath>
-      <Modified>2019-05-03T20:27:58.052</Modified>
+      <Modified>2019-05-29T15:00:44.581</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Feiticeiro\villain.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Feiticeiro\villain.png">
       <PackagePath>Src\Images\Feiticeiro\villain.png</PackagePath>
-      <Modified>2019-05-03T20:27:58.071</Modified>
+      <Modified>2019-05-29T15:00:44.613</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Mago\wizard attack.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Mago\wizard attack.png">
       <PackagePath>Src\Images\Mago\wizard attack.png</PackagePath>
-      <Modified>2019-05-03T20:27:58.113</Modified>
+      <Modified>2019-05-29T15:00:45.112</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Mago\wizard death.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Mago\wizard death.png">
       <PackagePath>Src\Images\Mago\wizard death.png</PackagePath>
-      <Modified>2019-05-03T20:27:58.161</Modified>
+      <Modified>2019-05-29T15:00:45.120</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Mago\wizard fly forward.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Mago\wizard fly forward.png">
       <PackagePath>Src\Images\Mago\wizard fly forward.png</PackagePath>
-      <Modified>2019-05-03T20:27:58.166</Modified>
+      <Modified>2019-05-29T15:00:45.120</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Mago\wizard idle.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Mago\wizard idle.png">
       <PackagePath>Src\Images\Mago\wizard idle.png</PackagePath>
-      <Modified>2019-05-03T20:27:58.183</Modified>
+      <Modified>2019-05-29T15:00:45.124</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack animations.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack animations.png">
       <PackagePath>Src\Images\Rogue\rogue like attack animations.png</PackagePath>
-      <Modified>2019-05-03T20:27:58.194</Modified>
+      <Modified>2019-05-29T15:00:45.132</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack animations_attack down_0.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack animations_attack down_0.png">
       <PackagePath>Src\Images\Rogue\rogue like attack animations_attack down_0.png</PackagePath>
-      <Modified>2019-05-03T20:27:58.198</Modified>
+      <Modified>2019-05-29T15:00:45.136</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack animations_attack down_1.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack animations_attack down_1.png">
       <PackagePath>Src\Images\Rogue\rogue like attack animations_attack down_1.png</PackagePath>
-      <Modified>2019-05-03T20:27:58.201</Modified>
+      <Modified>2019-05-29T15:00:45.140</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack animations_attack down_2.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack animations_attack down_2.png">
       <PackagePath>Src\Images\Rogue\rogue like attack animations_attack down_2.png</PackagePath>
-      <Modified>2019-05-03T20:27:58.205</Modified>
+      <Modified>2019-05-29T15:00:45.140</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack animations_attack down_3.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack animations_attack down_3.png">
       <PackagePath>Src\Images\Rogue\rogue like attack animations_attack down_3.png</PackagePath>
-      <Modified>2019-05-03T20:27:58.209</Modified>
+      <Modified>2019-05-29T15:00:45.144</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack animations_attack left_0.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack animations_attack left_0.png">
       <PackagePath>Src\Images\Rogue\rogue like attack animations_attack left_0.png</PackagePath>
-      <Modified>2019-05-03T20:27:58.213</Modified>
+      <Modified>2019-05-29T15:00:45.144</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack animations_attack left_1.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack animations_attack left_1.png">
       <PackagePath>Src\Images\Rogue\rogue like attack animations_attack left_1.png</PackagePath>
-      <Modified>2019-05-03T20:27:58.216</Modified>
+      <Modified>2019-05-29T15:00:45.152</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack animations_attack left_2.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack animations_attack left_2.png">
       <PackagePath>Src\Images\Rogue\rogue like attack animations_attack left_2.png</PackagePath>
-      <Modified>2019-05-03T20:27:58.221</Modified>
+      <Modified>2019-05-29T15:00:45.156</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack animations_attack left_3.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack animations_attack left_3.png">
       <PackagePath>Src\Images\Rogue\rogue like attack animations_attack left_3.png</PackagePath>
-      <Modified>2019-05-03T20:27:58.271</Modified>
+      <Modified>2019-05-29T15:00:45.156</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack animations_attack right_0.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack animations_attack right_0.png">
       <PackagePath>Src\Images\Rogue\rogue like attack animations_attack right_0.png</PackagePath>
-      <Modified>2019-05-03T20:27:58.293</Modified>
+      <Modified>2019-05-29T15:00:45.156</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack animations_attack right_1.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack animations_attack right_1.png">
       <PackagePath>Src\Images\Rogue\rogue like attack animations_attack right_1.png</PackagePath>
-      <Modified>2019-05-03T20:27:58.297</Modified>
+      <Modified>2019-05-29T15:00:45.160</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack animations_attack right_2.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack animations_attack right_2.png">
       <PackagePath>Src\Images\Rogue\rogue like attack animations_attack right_2.png</PackagePath>
-      <Modified>2019-05-03T20:27:58.313</Modified>
+      <Modified>2019-05-29T15:00:45.164</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack animations_attack right_3.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack animations_attack right_3.png">
       <PackagePath>Src\Images\Rogue\rogue like attack animations_attack right_3.png</PackagePath>
-      <Modified>2019-05-03T20:27:58.316</Modified>
+      <Modified>2019-05-29T15:00:45.172</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack animations_attack up_0.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack animations_attack up_0.png">
       <PackagePath>Src\Images\Rogue\rogue like attack animations_attack up_0.png</PackagePath>
-      <Modified>2019-05-03T20:27:58.319</Modified>
+      <Modified>2019-05-29T15:00:45.180</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack animations_attack up_1.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack animations_attack up_1.png">
       <PackagePath>Src\Images\Rogue\rogue like attack animations_attack up_1.png</PackagePath>
-      <Modified>2019-05-03T20:27:58.323</Modified>
+      <Modified>2019-05-29T15:00:45.184</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack animations_attack up_2.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack animations_attack up_2.png">
       <PackagePath>Src\Images\Rogue\rogue like attack animations_attack up_2.png</PackagePath>
-      <Modified>2019-05-03T20:27:58.327</Modified>
+      <Modified>2019-05-29T15:00:45.188</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack animations_attack up_3.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack animations_attack up_3.png">
       <PackagePath>Src\Images\Rogue\rogue like attack animations_attack up_3.png</PackagePath>
-      <Modified>2019-05-03T20:27:58.331</Modified>
+      <Modified>2019-05-29T15:00:45.188</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack.png">
       <PackagePath>Src\Images\Rogue\rogue like attack.png</PackagePath>
-      <Modified>2019-05-03T20:27:58.364</Modified>
+      <Modified>2019-05-29T15:00:45.192</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack_Animation 1_0.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack_Animation 1_0.png">
       <PackagePath>Src\Images\Rogue\rogue like attack_Animation 1_0.png</PackagePath>
-      <Modified>2019-05-03T20:27:58.368</Modified>
+      <Modified>2019-05-29T15:00:45.196</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack_Animation 1_1.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack_Animation 1_1.png">
       <PackagePath>Src\Images\Rogue\rogue like attack_Animation 1_1.png</PackagePath>
-      <Modified>2019-05-03T20:27:58.372</Modified>
+      <Modified>2019-05-29T15:00:45.200</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack_Animation 1_2.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack_Animation 1_2.png">
       <PackagePath>Src\Images\Rogue\rogue like attack_Animation 1_2.png</PackagePath>
-      <Modified>2019-05-03T20:27:58.375</Modified>
+      <Modified>2019-05-29T15:00:45.204</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack_Animation 1_3.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack_Animation 1_3.png">
       <PackagePath>Src\Images\Rogue\rogue like attack_Animation 1_3.png</PackagePath>
-      <Modified>2019-05-03T20:27:58.388</Modified>
+      <Modified>2019-05-29T15:00:45.204</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack_Animation 1_4.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack_Animation 1_4.png">
       <PackagePath>Src\Images\Rogue\rogue like attack_Animation 1_4.png</PackagePath>
-      <Modified>2019-05-03T20:27:58.391</Modified>
+      <Modified>2019-05-29T15:00:45.208</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack_Animation 1_5.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack_Animation 1_5.png">
       <PackagePath>Src\Images\Rogue\rogue like attack_Animation 1_5.png</PackagePath>
-      <Modified>2019-05-03T20:27:58.395</Modified>
+      <Modified>2019-05-29T15:00:45.212</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack_Animation 1_6.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack_Animation 1_6.png">
       <PackagePath>Src\Images\Rogue\rogue like attack_Animation 1_6.png</PackagePath>
-      <Modified>2019-05-03T20:27:58.439</Modified>
+      <Modified>2019-05-29T15:00:45.216</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack_Animation 1_7.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack_Animation 1_7.png">
       <PackagePath>Src\Images\Rogue\rogue like attack_Animation 1_7.png</PackagePath>
-      <Modified>2019-05-03T20:27:58.443</Modified>
+      <Modified>2019-05-29T15:00:45.216</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack_Animation 1_8.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack_Animation 1_8.png">
       <PackagePath>Src\Images\Rogue\rogue like attack_Animation 1_8.png</PackagePath>
-      <Modified>2019-05-03T20:27:58.447</Modified>
+      <Modified>2019-05-29T15:00:45.220</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack_Animation 1_9.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like attack_Animation 1_9.png">
       <PackagePath>Src\Images\Rogue\rogue like attack_Animation 1_9.png</PackagePath>
-      <Modified>2019-05-03T20:27:58.451</Modified>
+      <Modified>2019-05-29T15:00:45.224</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like idle.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like idle.png">
       <PackagePath>Src\Images\Rogue\rogue like idle.png</PackagePath>
-      <Modified>2019-05-03T20:27:58.455</Modified>
+      <Modified>2019-05-29T15:00:45.224</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like idle_Animation 1_0.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like idle_Animation 1_0.png">
       <PackagePath>Src\Images\Rogue\rogue like idle_Animation 1_0.png</PackagePath>
-      <Modified>2019-05-03T20:27:58.459</Modified>
+      <Modified>2019-05-29T15:00:45.236</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like idle_Animation 1_1.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like idle_Animation 1_1.png">
       <PackagePath>Src\Images\Rogue\rogue like idle_Animation 1_1.png</PackagePath>
-      <Modified>2019-05-03T20:27:58.463</Modified>
+      <Modified>2019-05-29T15:00:45.240</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like idle_Animation 1_2.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like idle_Animation 1_2.png">
       <PackagePath>Src\Images\Rogue\rogue like idle_Animation 1_2.png</PackagePath>
-      <Modified>2019-05-03T20:27:58.464</Modified>
+      <Modified>2019-05-29T15:00:45.240</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like run up_Animation 1_0.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like run up_Animation 1_0.png">
       <PackagePath>Src\Images\Rogue\rogue like run up_Animation 1_0.png</PackagePath>
-      <Modified>2019-05-03T20:27:58.469</Modified>
+      <Modified>2019-05-29T15:00:45.244</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like run up_Animation 1_1.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like run up_Animation 1_1.png">
       <PackagePath>Src\Images\Rogue\rogue like run up_Animation 1_1.png</PackagePath>
-      <Modified>2019-05-03T20:27:58.474</Modified>
+      <Modified>2019-05-29T15:00:45.244</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like run up_Animation 1_2.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like run up_Animation 1_2.png">
       <PackagePath>Src\Images\Rogue\rogue like run up_Animation 1_2.png</PackagePath>
-      <Modified>2019-05-03T20:27:58.477</Modified>
+      <Modified>2019-05-29T15:00:45.248</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like run up_Animation 1_3.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like run up_Animation 1_3.png">
       <PackagePath>Src\Images\Rogue\rogue like run up_Animation 1_3.png</PackagePath>
-      <Modified>2019-05-03T20:27:58.481</Modified>
+      <Modified>2019-05-29T15:00:45.252</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like run.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like run.png">
       <PackagePath>Src\Images\Rogue\rogue like run.png</PackagePath>
-      <Modified>2019-05-03T20:27:58.506</Modified>
+      <Modified>2019-05-29T15:00:45.256</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like run_Animation 1_0.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like run_Animation 1_0.png">
       <PackagePath>Src\Images\Rogue\rogue like run_Animation 1_0.png</PackagePath>
-      <Modified>2019-05-03T20:27:58.507</Modified>
+      <Modified>2019-05-29T15:00:45.260</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like run_Animation 1_1.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like run_Animation 1_1.png">
       <PackagePath>Src\Images\Rogue\rogue like run_Animation 1_1.png</PackagePath>
-      <Modified>2019-05-03T20:27:58.543</Modified>
+      <Modified>2019-05-29T15:00:45.260</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like run_Animation 1_2.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like run_Animation 1_2.png">
       <PackagePath>Src\Images\Rogue\rogue like run_Animation 1_2.png</PackagePath>
-      <Modified>2019-05-03T20:27:58.567</Modified>
+      <Modified>2019-05-29T15:00:45.264</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like run_Animation 1_3.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like run_Animation 1_3.png">
       <PackagePath>Src\Images\Rogue\rogue like run_Animation 1_3.png</PackagePath>
-      <Modified>2019-05-03T20:27:58.571</Modified>
+      <Modified>2019-05-29T15:00:45.268</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like run_Animation 1_4.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like run_Animation 1_4.png">
       <PackagePath>Src\Images\Rogue\rogue like run_Animation 1_4.png</PackagePath>
-      <Modified>2019-05-03T20:27:58.574</Modified>
+      <Modified>2019-05-29T15:00:45.268</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like run_Animation 1_5.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\rogue like run_Animation 1_5.png">
       <PackagePath>Src\Images\Rogue\rogue like run_Animation 1_5.png</PackagePath>
-      <Modified>2019-05-03T20:27:58.578</Modified>
+      <Modified>2019-05-29T15:00:45.272</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\roguelike run down_Animation 1_0.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\roguelike run down_Animation 1_0.png">
       <PackagePath>Src\Images\Rogue\roguelike run down_Animation 1_0.png</PackagePath>
-      <Modified>2019-05-03T20:27:58.581</Modified>
+      <Modified>2019-05-29T15:00:45.272</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\roguelike run down_Animation 1_1.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\roguelike run down_Animation 1_1.png">
       <PackagePath>Src\Images\Rogue\roguelike run down_Animation 1_1.png</PackagePath>
-      <Modified>2019-05-03T20:27:58.585</Modified>
+      <Modified>2019-05-29T15:00:45.276</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\roguelike run down_Animation 1_2.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\roguelike run down_Animation 1_2.png">
       <PackagePath>Src\Images\Rogue\roguelike run down_Animation 1_2.png</PackagePath>
-      <Modified>2019-05-03T20:27:58.589</Modified>
+      <Modified>2019-05-29T15:00:45.280</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Rogue\roguelike run down_Animation 1_3.png">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Rogue\roguelike run down_Animation 1_3.png">
       <PackagePath>Src\Images\Rogue\roguelike run down_Animation 1_3.png</PackagePath>
-      <Modified>2019-05-03T20:27:58.593</Modified>
+      <Modified>2019-05-29T15:00:45.284</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Maps\Laborátorio\Laboratório.xml">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Maps\Laborátorio\Laboratório.xml">
       <PackagePath>Src\Maps\Laborátorio\Laboratório.xml</PackagePath>
       <Modified>2019-05-28T12:57:42.233</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Maps\map.xml">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Maps\map.xml">
       <PackagePath>Src\Maps\map.xml</PackagePath>
-      <Modified>2019-05-17T21:12:27.594</Modified>
+      <Modified>2019-05-13T20:08:35.138</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2019-03-24T20:37:01.145</Modified>
+      <Modified>2019-03-24T19:54:59.941</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Maps\Laborátorio\Laborátorio.txt">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Maps\Laborátorio\Laborátorio.txt">
       <PackagePath>Src\Maps\Laborátorio\Laborátorio.txt</PackagePath>
-      <Modified>2019-05-19T18:26:01.824</Modified>
+      <Modified>2019-05-29T15:00:45.428</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Animations\dead.gif">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Animations\dead.gif">
       <PackagePath>Src\Animations\dead.gif</PackagePath>
-      <Modified>2019-05-19T13:34:42.370</Modified>
+      <Modified>2019-05-29T15:00:44.489</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Animations\idle.gif">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Animations\idle.gif">
       <PackagePath>Src\Animations\idle.gif</PackagePath>
-      <Modified>2019-04-09T14:39:46.437</Modified>
+      <Modified>2019-04-09T18:17:59.592</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Animations\jump.gif">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Animations\jump.gif">
       <PackagePath>Src\Animations\jump.gif</PackagePath>
-      <Modified>2019-04-09T14:39:46.439</Modified>
+      <Modified>2019-04-09T18:17:59.620</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Animations\walk.gif">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Animations\walk.gif">
       <PackagePath>Src\Animations\walk.gif</PackagePath>
-      <Modified>2019-04-09T14:39:46.442</Modified>
+      <Modified>2019-04-09T18:17:59.676</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\dance.gif">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\dance.gif">
       <PackagePath>Src\dance.gif</PackagePath>
-      <Modified>2019-04-09T14:39:46.476</Modified>
+      <Modified>2019-04-12T17:02:03.675</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Zumbi\undead_attack.gif">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Zumbi\undead_attack.gif">
       <PackagePath>Src\Images\Zumbi\undead_attack.gif</PackagePath>
-      <Modified>2019-05-03T20:27:58.620</Modified>
+      <Modified>2019-05-29T15:00:45.288</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Zumbi\undead_death.gif">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Zumbi\undead_death.gif">
       <PackagePath>Src\Images\Zumbi\undead_death.gif</PackagePath>
-      <Modified>2019-05-03T20:27:58.623</Modified>
+      <Modified>2019-05-29T15:00:45.288</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Zumbi\undead_hurt.gif">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Zumbi\undead_hurt.gif">
       <PackagePath>Src\Images\Zumbi\undead_hurt.gif</PackagePath>
-      <Modified>2019-05-03T20:27:58.627</Modified>
+      <Modified>2019-05-29T15:00:45.320</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Zumbi\undead_idle.gif">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Zumbi\undead_idle.gif">
       <PackagePath>Src\Images\Zumbi\undead_idle.gif</PackagePath>
-      <Modified>2019-05-03T20:27:58.638</Modified>
+      <Modified>2019-05-29T15:00:45.320</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Zumbi\undead_walk.gif">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Images\Zumbi\undead_walk.gif">
       <PackagePath>Src\Images\Zumbi\undead_walk.gif</PackagePath>
-      <Modified>2019-05-03T20:27:58.642</Modified>
+      <Modified>2019-05-29T15:00:45.324</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Audio\beep.mp3">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Audio\beep.mp3">
       <PackagePath>Src\Audio\beep.mp3</PackagePath>
-      <Modified>2019-04-16T14:45:22.041</Modified>
+      <Modified>2019-04-16T14:30:05.569</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Audio\rain.mp3">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Audio\rain.mp3">
       <PackagePath>Src\Audio\rain.mp3</PackagePath>
-      <Modified>2019-04-16T14:45:22.057</Modified>
+      <Modified>2019-04-16T14:30:05.614</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Audio\serrote.wav">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\Src\Audio\serrote.wav">
       <PackagePath>Src\Audio\serrote.wav</PackagePath>
-      <Modified>2019-04-16T14:45:22.077</Modified>
+      <Modified>2019-04-16T14:30:05.664</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Debug\RPG.xr.xml">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\bin\x64\Debug\RPG.xr.xml">
       <PackagePath>RPG.xr.xml</PackagePath>
-      <Modified>2019-05-18T14:41:16.826</Modified>
+      <Modified>2019-05-13T19:50:20.570</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\bin\x64\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
       <Modified>2019-06-08T23:43:52.106</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\bin\x64\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
       <Modified>2019-06-08T23:43:52.106</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Debug\Src\ButtonStyle.xbf">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\bin\x64\Debug\Src\ButtonStyle.xbf">
       <PackagePath>Src\ButtonStyle.xbf</PackagePath>
       <Modified>2019-06-08T23:43:52.090</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.17763.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
-      <Modified>2018-10-23T03:44:28.000</Modified>
+      <Modified>2018-10-23T02:44:28.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <Modified>2019-06-06T00:52:21.530</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Debug\Core\RPG.exe">
+    <AppxPackagedFile Include="C:\Users\sonia\OneDrive\Documents\GitHub\RPG-LP2\RPG\RPG\bin\x64\Debug\Core\RPG.exe">
       <PackagePath>RPG.exe</PackagePath>
       <Modified>2019-06-08T23:43:55.300</Modified>
     </AppxPackagedFile>
@@ -722,36 +802,36 @@
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
       <Name>Microsoft.VCLibs.140.00.Debug</Name>
-      <Version>14.0.27508.1</Version>
+      <Version>14.0.27323.0</Version>
       <Architecture>ARM</Architecture>
-      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.27508.1, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.27323.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\ARM\Microsoft.VCLibs.ARM.Debug.14.00.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
       <Name>Microsoft.VCLibs.140.00.Debug</Name>
-      <Version>14.0.27508.1</Version>
+      <Version>14.0.27323.0</Version>
       <Architecture>ARM64</Architecture>
-      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.27508.1, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.27323.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\ARM64\Microsoft.VCLibs.ARM64.Debug.14.00.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
       <Name>Microsoft.VCLibs.140.00.Debug</Name>
-      <Version>14.0.27508.1</Version>
+      <Version>14.0.27323.0</Version>
       <Architecture>x64</Architecture>
-      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.27508.1, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.27323.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\x64\Microsoft.VCLibs.x64.Debug.14.00.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
       <Name>Microsoft.VCLibs.140.00.Debug</Name>
-      <Version>14.0.27508.1</Version>
+      <Version>14.0.27323.0</Version>
       <Architecture>x86</Architecture>
-      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.27508.1, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.27323.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\x86\Microsoft.VCLibs.x86.Debug.14.00.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
