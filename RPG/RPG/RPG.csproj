@@ -103,6 +103,12 @@
     <Compile Include="Src\Scripts\Componentes\Estatus.cs" />
     <Compile Include="Src\Scripts\Componentes\Itinerario.cs" />
     <Compile Include="Src\Scripts\Componentes\Movel.cs" />
+    <Compile Include="Src\Scripts\Entidades\ChaveEletronica.cs" />
+    <Compile Include="Src\Scripts\Entidades\Parede.cs" />
+    <Compile Include="Src\Scripts\Entidades\Piso.cs" />
+    <Compile Include="Src\Scripts\Entidades\PlacaDeSaida.cs" />
+    <Compile Include="Src\Scripts\Entidades\Planta.cs" />
+    <Compile Include="Src\Scripts\Entidades\Tubulacao.cs" />
     <Compile Include="Src\Scripts\Managers\CraftSystem.cs" />
     <Compile Include="Src\Scripts\Entidades\Areia.cs" />
     <Compile Include="Src\Scripts\Componentes\Inventario.cs" />
@@ -137,7 +143,6 @@
     <Compile Include="Src\Scripts\Componentes\Mercador.cs" />
     <Compile Include="Src\Scripts\Entidades\Player.cs" />
     <Compile Include="Src\Scripts\Items\Arco.cs" />
-    <Compile Include="Src\Scripts\Jogo.cs" />
     <Compile Include="Src\Scripts\Managers\InventarioManager.cs" />
     <Compile Include="Src\Scripts\Managers\ItemManager.cs" />
   </ItemGroup>
