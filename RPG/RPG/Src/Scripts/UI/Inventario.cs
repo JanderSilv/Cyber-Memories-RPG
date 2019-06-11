@@ -22,14 +22,14 @@ namespace RPG.Src.Scripts.UI
 
             UPanel inventory = new UPanel(new Vector2(50, 50), new Vector2(660, 330));
 
-            UImage storage = new UImage("Src/Images/Menu/Inventário/Contorno.png", new Vector2(1, 5), new Vector2(100, 100));
-            UImage coin = new UImage("Src/Images/Menu/Inventário/Moeda.png", new Vector2(90,4), new Vector2(100,100));
+            UImage storage = new UImage("Src/Images/Menu/Inventário/Contorno.png", new Vector2(1, 5), new Vector2(526, 320));
+            UImage coin = new UImage("Src/Images/Menu/Inventário/Moeda.png", new Vector2(90,4), new Vector2(24,26));
 
-            // Preencher os slots
+            // Preencher os slots do inventário.
 
-            UImage atrbBorder = new UImage("Src/Images/Menu/Inventário/Contorno_Inventario.png", new Vector2(70, 40), new Vector2(100, 100));
-            UImage invText = new UImage("Src/Images/Menu/Inventário/Inventário_1.png", new Vector2(10, 10), new Vector2(100, 100));
-            UImage atrbText = new UImage("Src/Images/Menu/Inventário/Personagem.png", new Vector2(70, 10), new Vector2(100, 100));
+            UImage atrbBorder = new UImage("Src/Images/Menu/Inventário/Contorno_Inventario.png", new Vector2(151, 203), new Vector2(100, 100));
+            UImage invText = new UImage("Src/Images/Menu/Inventário/Inventário_1.png", new Vector2(10, 10), new Vector2(184, 33));
+            UImage persText = new UImage("Src/Images/Menu/Inventário/Personagem.png", new Vector2(70, 10), new Vector2(166, 23));
 
 
             UButton weapon = new UButton("", new Vector2(70, 10), new Vector2(56,51), Weapon);
@@ -47,7 +47,7 @@ namespace RPG.Src.Scripts.UI
             inventory.addChild(coin);
             inventory.addChild(atrbBorder);
             inventory.addChild(invText);
-            inventory.addChild(atrbText);
+            inventory.addChild(persText);
             inventory.addChild(weapon);
             inventory.addChild(armor);
             inventory.addChild(attribute);
@@ -57,7 +57,7 @@ namespace RPG.Src.Scripts.UI
 
             UPanel panArmor = new UPanel(new Vector2(), new Vector2());
 
-            UImage txtArmor = new UImage("Src/Images/Menu/Inventário/Armadura_Texto.png", new Vector2(), new Vector2(100,100));
+            UImage txtArmor = new UImage("Src/Images/Menu/Inventário/Armadura_Texto.png", new Vector2(), new Vector2(112,181));
 
             panArmor.addChild(txtArmor);
         }
@@ -66,7 +66,7 @@ namespace RPG.Src.Scripts.UI
         {
             UPanel panWeapon = new UPanel(new Vector2(), new Vector2());
 
-            UImage txtWeapon = new UImage("Src/Images/Menu/Inventário/Arma_Texto.png", new Vector2(), new Vector2(100, 100));
+            UImage txtWeapon = new UImage("Src/Images/Menu/Inventário/Arma_Texto.png", new Vector2(), new Vector2(62, 81));
 
             panWeapon.addChild(txtWeapon);
         }
@@ -75,7 +75,7 @@ namespace RPG.Src.Scripts.UI
         {
             UPanel panAttribute = new UPanel(new Vector2(), new Vector2());
 
-            UImage txtAttribute = new UImage("Src/Images/Menu/Inventário/Atributos_Texto.png", new Vector2(), new Vector2(100, 100));
+            UImage txtAttribute = new UImage("Src/Images/Menu/Inventário/Atributos_Texto.png", new Vector2(), new Vector2(62, 162));
 
             panAttribute.addChild(txtAttribute);
         }
