@@ -45,7 +45,6 @@ namespace RPG
 
        
             selecao = new Window(this, 840, 620);
-            AmbienteJogo.window = window;
 
             UPanel panel = new UPanel(new Vector2(50, 50), new Vector2(200, 300));
 
