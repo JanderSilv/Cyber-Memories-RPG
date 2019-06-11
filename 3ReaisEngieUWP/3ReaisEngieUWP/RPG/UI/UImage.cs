@@ -19,10 +19,12 @@ namespace _3ReaisEngine.UI
 
         void start()
         {
+            img.Stretch = Stretch.Uniform;
             img.HorizontalAlignment = HorizontalAlignment.Left;
             img.VerticalAlignment = VerticalAlignment.Top;
             img.RenderTransform = transform;
             element = img;
+            frameworkElement = (FrameworkElement)element;
         }
 
         public UImage(string Content)
@@ -46,11 +48,13 @@ namespace _3ReaisEngine.UI
         {
 
             img.Source = new BitmapImage(new Uri("ms-appx:/" + Content));
-            size = size;
-            position = pos;
             start();
+            base.size = size;
+            position = pos;
+           
         }
 
+       
 
     }
 }

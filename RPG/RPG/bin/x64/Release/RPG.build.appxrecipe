@@ -283,6 +283,66 @@
     <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Logo2.png">
       <PackagePath>Src\Images\Menu\Logo2.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Selecao_Personagem\Contorno.png">
+      <PackagePath>Src\Images\Menu\Selecao_Personagem\Contorno.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Selecao_Personagem\Escolha_Personagem.png">
+      <PackagePath>Src\Images\Menu\Selecao_Personagem\Escolha_Personagem.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Selecao_Personagem\Homem-Branco-Combate.png">
+      <PackagePath>Src\Images\Menu\Selecao_Personagem\Homem-Branco-Combate.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Selecao_Personagem\Homem-Branco-Face.png">
+      <PackagePath>Src\Images\Menu\Selecao_Personagem\Homem-Branco-Face.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Selecao_Personagem\Homem-Negro-Combate.png">
+      <PackagePath>Src\Images\Menu\Selecao_Personagem\Homem-Negro-Combate.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Selecao_Personagem\Homem-Negro-Face.png">
+      <PackagePath>Src\Images\Menu\Selecao_Personagem\Homem-Negro-Face.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Selecao_Personagem\Homem.png">
+      <PackagePath>Src\Images\Menu\Selecao_Personagem\Homem.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Selecao_Personagem\Homem_Selecionado.png">
+      <PackagePath>Src\Images\Menu\Selecao_Personagem\Homem_Selecionado.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Selecao_Personagem\Mulher Selecionado.png">
+      <PackagePath>Src\Images\Menu\Selecao_Personagem\Mulher Selecionado.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Selecao_Personagem\Mulher-Branco-Combate.png">
+      <PackagePath>Src\Images\Menu\Selecao_Personagem\Mulher-Branco-Combate.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Selecao_Personagem\Mulher-Branco-Face.png">
+      <PackagePath>Src\Images\Menu\Selecao_Personagem\Mulher-Branco-Face.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Selecao_Personagem\Mulher-Negro-Combate.png">
+      <PackagePath>Src\Images\Menu\Selecao_Personagem\Mulher-Negro-Combate.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Selecao_Personagem\Mulher-Negro-Face.png">
+      <PackagePath>Src\Images\Menu\Selecao_Personagem\Mulher-Negro-Face.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Selecao_Personagem\Mulher.png">
+      <PackagePath>Src\Images\Menu\Selecao_Personagem\Mulher.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Selecao_Personagem\Pronto.png">
+      <PackagePath>Src\Images\Menu\Selecao_Personagem\Pronto.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Selecao_Personagem\Pronto_Selecionado.png">
+      <PackagePath>Src\Images\Menu\Selecao_Personagem\Pronto_Selecionado.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Selecao_Personagem\Seta Direita Selecionado.png">
+      <PackagePath>Src\Images\Menu\Selecao_Personagem\Seta Direita Selecionado.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Selecao_Personagem\Seta Direita.png">
+      <PackagePath>Src\Images\Menu\Selecao_Personagem\Seta Direita.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Selecao_Personagem\Seta Esquerda Selecionado.png">
+      <PackagePath>Src\Images\Menu\Selecao_Personagem\Seta Esquerda Selecionado.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Selecao_Personagem\Seta Esquerda.png">
+      <PackagePath>Src\Images\Menu\Selecao_Personagem\Seta Esquerda.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Rogue\rogue like attack animations.png">
       <PackagePath>Src\Images\Rogue\rogue like attack animations.png</PackagePath>
     </AppxPackagedFile>

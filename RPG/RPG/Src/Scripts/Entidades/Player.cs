@@ -25,7 +25,7 @@ public class Player : Entidade
     public bool dead = false;
     readonly Movel mov;
 
-    float vel;  
+
   
 
     public Player(Vector2 pos)

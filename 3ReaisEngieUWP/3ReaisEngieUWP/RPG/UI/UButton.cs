@@ -26,14 +26,31 @@ namespace _3ReaisEngine.UI
     public abstract class UIEntidade
     {
         public UIElement element;
+        public FrameworkElement frameworkElement;
+
+
         protected TranslateTransform transform = new TranslateTransform();
         public string Nome;
-        public Vector2 position = new Vector2();
-        public Vector2 size = new Vector2(100, 50);
+        public Vector2 position;
+        public Vector2 size {
+            get { return new Vector2((float)frameworkElement.Width,(float)frameworkElement.Height); }
+            set { frameworkElement.Width = value.x; frameworkElement.Height = value.y; }
+        }
+        
         public UIEntidade parent;
         public ManipulationModes manipulationMode { get { return element.ManipulationMode; } set { element.ManipulationMode = value; } }
         public AnchorType anchor = AnchorType.Proporcional;
 
+   
+
+        public virtual void Resize(float x, float y) {
+            
+            ((FrameworkElement)element).Width = x;
+            ((FrameworkElement)element).Height = y;
+            size.x = x;
+            size.y = y;
+
+        }
     }
 
     public interface IUIStack
@@ -52,9 +69,9 @@ namespace _3ReaisEngine.UI
     public class UButton : UIEntidade, IUIBackground
     {
         public Execute Action;
-
+       
         Button btn = new Button();
-
+       
         public object Content { get { return btn.Content; } set { btn.Content = value; } }
 
 
@@ -78,12 +95,14 @@ namespace _3ReaisEngine.UI
             btn.PointerEntered += btn_PointerEntered;
             btn.PointerExited += btn_PointerExited;
             btn.Click += act;
+            frameworkElement = (FrameworkElement)element;
 
         }
 
         public UButton(object Content, Vector2 position, Vector2 size, Execute Action = null)
         {
 
+            Start();
             btn.ManipulationDelta += btn_ManipulationDelta;
             btn.CanDrag = true;
             btn.Content = Content;
@@ -94,7 +113,7 @@ namespace _3ReaisEngine.UI
             base.position = position;
             base.size = size;
             this.Action = Action;
-            Start();
+           
         }
 
         public UButton(object Content, Execute Action = null)
@@ -137,7 +156,7 @@ namespace _3ReaisEngine.UI
             brush.ImageSource = Normal;
             btn.Background = brush;
         }
-        public void setBackground(string path, Stretch strech)
+        public void setBackground(string path, Stretch strech = Stretch.Uniform)
         {
             Normal = new BitmapImage(new Uri("ms-appx:/" + path));
             if (OnHover == null) OnHover = Normal;
@@ -169,6 +188,8 @@ namespace _3ReaisEngine.UI
         {
             Action?.Invoke(this);
         }
+
+       
 
 
     }

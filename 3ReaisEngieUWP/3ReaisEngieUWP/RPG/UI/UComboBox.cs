@@ -28,6 +28,7 @@ namespace _3ReaisEngine.UI
             Action = Action;
             cbb.SelectionChanged += act;
             element = cbb;
+            frameworkElement = (FrameworkElement)element;
         }
 
         public UComboBox(Execute Action = null)
@@ -51,13 +52,14 @@ namespace _3ReaisEngine.UI
         }
         public UComboBox(Vector2 position, Vector2 size, Execute Action = null)
         {
+            start();
             cbb.Width = size.x;
             cbb.Height = size.y;
             transform.X = position.x;
             transform.Y = position.y;
             this.position = position;
             this.size = size;
-            start();
+           
         }
 
 
@@ -83,5 +85,10 @@ namespace _3ReaisEngine.UI
             Action?.Invoke(this);
         }
 
+        public override void Resize(float x, float y)
+        {
+            cbb.Height = y;
+            cbb.Width = x;
+        }
     }
 }

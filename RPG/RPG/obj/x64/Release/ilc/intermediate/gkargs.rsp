@@ -4,6 +4,6 @@
 /Lib:"E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in"
 /Lib:"C:\Program Files (x86)\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.native.compiler\2.2.3\tools\x64\ilc\lib\Private"
 /WinMD:"E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\WinMetadata\Windows.winmd"
-/VSTelemetrySessionSettings:"{"IsOptedIn":true,"HostName":"Dev14","AppInsightsInstrumentationKey":"f144292e-e3b2-4011-ac90-20e5c03fbce5","AsimovInstrumentationKey":"AIF-312cbd79-9dbb-4c48-a7da-3cc2a931cb70","AppId":1001,"UserId":"2e63e153-edd2-4136-a29c-357d601d1078","Id":"729c94ab-fd54-4986-8b39-cfc5b4922bb3","ProcessStartTime":636940010696258294}"
+/VSTelemetrySessionSettings:"{"IsOptedIn":true,"HostName":"Dev14","AppInsightsInstrumentationKey":"f144292e-e3b2-4011-ac90-20e5c03fbce5","AsimovInstrumentationKey":"AIF-312cbd79-9dbb-4c48-a7da-3cc2a931cb70","AppId":1001,"UserId":"2e63e153-edd2-4136-a29c-357d601d1078","Id":"434d5ef7-68ab-45b1-9aa4-94a63212efd7","ProcessStartTime":636958708083810304}"
 /RdXmlPath:"C:\Program Files (x86)\Microsoft SDKs\UWPNuGetPackages\microsoft.net.native.compiler\2.2.3\tools\LibraryXML"
 /RunOnlyPreDR

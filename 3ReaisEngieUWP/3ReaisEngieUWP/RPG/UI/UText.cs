@@ -22,6 +22,7 @@ namespace _3ReaisEngine.UI
             txt.HorizontalAlignment = HorizontalAlignment.Left;
             txt.VerticalAlignment = VerticalAlignment.Top;
             txt.RenderTransform = transform;
+            frameworkElement = (FrameworkElement)element;
         }
 
         public UText()
@@ -56,6 +57,7 @@ namespace _3ReaisEngine.UI
         }
         public UText(string text, Vector2 position, Vector2 size)
         {
+            start();
             txt.Width = size.x;
             txt.Height = size.y;
             transform.X = position.x;
@@ -63,7 +65,7 @@ namespace _3ReaisEngine.UI
             position = position;
             size = size;
             txt.Text = text;
-            start();
+           
         }
 
     }

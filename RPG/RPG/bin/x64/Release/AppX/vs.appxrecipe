@@ -30,7 +30,7 @@
     <AppXManifest Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-05-21T15:07:44.357</Modified>
+      <Modified>2019-06-11T20:48:41.525</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -74,19 +74,19 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2019-05-21T15:06:41.744</Modified>
+      <Modified>2019-06-11T20:47:12.212</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\RPG.dll">
       <PackagePath>RPG.dll</PackagePath>
-      <Modified>2019-05-21T15:07:42.905</Modified>
+      <Modified>2019-06-11T20:48:40.378</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\RPG.exe">
       <PackagePath>RPG.exe</PackagePath>
-      <Modified>2019-05-21T15:07:44.279</Modified>
+      <Modified>2019-06-11T20:48:41.480</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\RPG.pdb">
       <PackagePath>RPG.pdb</PackagePath>
-      <Modified>2019-05-21T15:07:44.264</Modified>
+      <Modified>2019-06-11T20:48:41.472</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Animations\dead.gif">
       <PackagePath>Src\Animations\dead.gif</PackagePath>
@@ -376,6 +376,86 @@
       <PackagePath>Src\Images\Menu\Logo2.png</PackagePath>
       <Modified>2019-05-03T20:29:12.065</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Selecao_Personagem\Contorno.png">
+      <PackagePath>Src\Images\Menu\Selecao_Personagem\Contorno.png</PackagePath>
+      <Modified>2019-06-09T22:42:37.898</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Selecao_Personagem\Escolha_Personagem.png">
+      <PackagePath>Src\Images\Menu\Selecao_Personagem\Escolha_Personagem.png</PackagePath>
+      <Modified>2019-06-09T22:42:37.953</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Selecao_Personagem\Homem-Branco-Combate.png">
+      <PackagePath>Src\Images\Menu\Selecao_Personagem\Homem-Branco-Combate.png</PackagePath>
+      <Modified>2019-06-09T22:42:37.989</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Selecao_Personagem\Homem-Branco-Face.png">
+      <PackagePath>Src\Images\Menu\Selecao_Personagem\Homem-Branco-Face.png</PackagePath>
+      <Modified>2019-06-09T22:42:38.007</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Selecao_Personagem\Homem-Negro-Combate.png">
+      <PackagePath>Src\Images\Menu\Selecao_Personagem\Homem-Negro-Combate.png</PackagePath>
+      <Modified>2019-06-09T22:42:38.044</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Selecao_Personagem\Homem-Negro-Face.png">
+      <PackagePath>Src\Images\Menu\Selecao_Personagem\Homem-Negro-Face.png</PackagePath>
+      <Modified>2019-06-09T22:42:38.050</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Selecao_Personagem\Homem.png">
+      <PackagePath>Src\Images\Menu\Selecao_Personagem\Homem.png</PackagePath>
+      <Modified>2019-06-09T22:42:38.054</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Selecao_Personagem\Homem_Selecionado.png">
+      <PackagePath>Src\Images\Menu\Selecao_Personagem\Homem_Selecionado.png</PackagePath>
+      <Modified>2019-06-09T22:42:38.058</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Selecao_Personagem\Mulher Selecionado.png">
+      <PackagePath>Src\Images\Menu\Selecao_Personagem\Mulher Selecionado.png</PackagePath>
+      <Modified>2019-06-09T22:42:38.087</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Selecao_Personagem\Mulher-Branco-Combate.png">
+      <PackagePath>Src\Images\Menu\Selecao_Personagem\Mulher-Branco-Combate.png</PackagePath>
+      <Modified>2019-06-09T22:42:38.106</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Selecao_Personagem\Mulher-Branco-Face.png">
+      <PackagePath>Src\Images\Menu\Selecao_Personagem\Mulher-Branco-Face.png</PackagePath>
+      <Modified>2019-06-09T22:42:38.136</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Selecao_Personagem\Mulher-Negro-Combate.png">
+      <PackagePath>Src\Images\Menu\Selecao_Personagem\Mulher-Negro-Combate.png</PackagePath>
+      <Modified>2019-06-09T22:42:38.199</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Selecao_Personagem\Mulher-Negro-Face.png">
+      <PackagePath>Src\Images\Menu\Selecao_Personagem\Mulher-Negro-Face.png</PackagePath>
+      <Modified>2019-06-09T22:42:38.205</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Selecao_Personagem\Mulher.png">
+      <PackagePath>Src\Images\Menu\Selecao_Personagem\Mulher.png</PackagePath>
+      <Modified>2019-06-09T22:42:38.223</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Selecao_Personagem\Pronto.png">
+      <PackagePath>Src\Images\Menu\Selecao_Personagem\Pronto.png</PackagePath>
+      <Modified>2019-06-09T22:42:38.263</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Selecao_Personagem\Pronto_Selecionado.png">
+      <PackagePath>Src\Images\Menu\Selecao_Personagem\Pronto_Selecionado.png</PackagePath>
+      <Modified>2019-06-09T22:42:38.312</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Selecao_Personagem\Seta Direita Selecionado.png">
+      <PackagePath>Src\Images\Menu\Selecao_Personagem\Seta Direita Selecionado.png</PackagePath>
+      <Modified>2019-06-09T22:42:38.346</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Selecao_Personagem\Seta Direita.png">
+      <PackagePath>Src\Images\Menu\Selecao_Personagem\Seta Direita.png</PackagePath>
+      <Modified>2019-06-09T22:42:38.347</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Selecao_Personagem\Seta Esquerda Selecionado.png">
+      <PackagePath>Src\Images\Menu\Selecao_Personagem\Seta Esquerda Selecionado.png</PackagePath>
+      <Modified>2019-06-09T22:42:38.350</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Selecao_Personagem\Seta Esquerda.png">
+      <PackagePath>Src\Images\Menu\Selecao_Personagem\Seta Esquerda.png</PackagePath>
+      <Modified>2019-06-09T22:42:38.352</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Rogue\rogue like attack animations.png">
       <PackagePath>Src\Images\Rogue\rogue like attack animations.png</PackagePath>
       <Modified>2019-05-03T20:27:58.194</Modified>
@@ -618,7 +698,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Maps\Laborátorio\Laboratório.xml">
       <PackagePath>Src\Maps\Laborátorio\Laboratório.xml</PackagePath>
-      <Modified>2019-05-19T18:26:01.823</Modified>
+      <Modified>2019-05-28T12:57:42.233</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Maps\Laborátorio\Laborátorio.txt">
       <PackagePath>Src\Maps\Laborátorio\Laborátorio.txt</PackagePath>

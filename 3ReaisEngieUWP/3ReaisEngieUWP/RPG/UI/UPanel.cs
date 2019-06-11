@@ -31,6 +31,7 @@ namespace _3ReaisEngine.UI
             rect.ManipulationDelta += rect_ManipulationDelta;
             rect.RenderTransform = transform;
             element = rect;
+            frameworkElement = (FrameworkElement)element;
         }
 
         public UPanel()
@@ -48,22 +49,21 @@ namespace _3ReaisEngine.UI
 
         public UPanel(Vector2 pos)
         {
-
+            start();
             rect.Width = 100;
             rect.Height = 50;
             position = pos;
-            start();
+           
 
         }
         public UPanel(Vector2 pos, Vector2 size)
         {
 
-
+            start();
             rect.Width = size.x;
             rect.Height = size.y;
-            this.size = size;
             position = pos;
-            start();
+            this.size = size;
         }
 
         public void Content(byte Red, byte Green, byte Blue, byte Alpha)

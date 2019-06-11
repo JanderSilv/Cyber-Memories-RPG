@@ -143,6 +143,7 @@
     <Compile Include="Src\Scripts\Managers\ItemManager.cs" />
     <Compile Include="Src\Scripts\Componentes\QuestSystem.cs" />
     <Compile Include="Src\Scripts\Quests\ColidirComTronco.cs" />
+    <Compile Include="Src\Scripts\Telas\SelPersonagem.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">

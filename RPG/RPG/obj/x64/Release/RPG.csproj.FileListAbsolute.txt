@@ -1436,3 +1436,43 @@ E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.Th
 E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.Threading.Thread.index.txt
 E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.Transactions.Local.0.rsrc
 E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\intermediate\Resources\System.Transactions.Local.index.txt
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Selecao_Personagem\Contorno.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Selecao_Personagem\Escolha_Personagem.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Selecao_Personagem\Homem-Branco-Combate.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Selecao_Personagem\Homem-Branco-Face.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Selecao_Personagem\Homem-Negro-Combate.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Selecao_Personagem\Homem-Negro-Face.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Selecao_Personagem\Homem.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Selecao_Personagem\Homem_Selecionado.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Selecao_Personagem\Mulher Selecionado.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Selecao_Personagem\Mulher-Branco-Combate.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Selecao_Personagem\Mulher-Branco-Face.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Selecao_Personagem\Mulher-Negro-Combate.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Selecao_Personagem\Mulher-Negro-Face.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Selecao_Personagem\Mulher.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Selecao_Personagem\Pronto.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Selecao_Personagem\Pronto_Selecionado.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Selecao_Personagem\Seta Direita Selecionado.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Selecao_Personagem\Seta Direita.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Selecao_Personagem\Seta Esquerda Selecionado.png
+E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Release\ilc\Src\Images\Menu\Selecao_Personagem\Seta Esquerda.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Menu\Selecao_Personagem\Homem-Branco-Combate.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Menu\Selecao_Personagem\Mulher-Negro-Combate.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Menu\Selecao_Personagem\Mulher-Branco-Combate.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Menu\Selecao_Personagem\Homem-Negro-Combate.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Menu\Selecao_Personagem\Contorno.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Menu\Selecao_Personagem\Escolha_Personagem.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Menu\Selecao_Personagem\Homem-Branco-Face.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Menu\Selecao_Personagem\Homem-Negro-Face.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Menu\Selecao_Personagem\Homem.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Menu\Selecao_Personagem\Homem_Selecionado.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Menu\Selecao_Personagem\Mulher Selecionado.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Menu\Selecao_Personagem\Mulher-Branco-Face.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Menu\Selecao_Personagem\Mulher-Negro-Face.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Menu\Selecao_Personagem\Mulher.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Menu\Selecao_Personagem\Pronto.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Menu\Selecao_Personagem\Pronto_Selecionado.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Menu\Selecao_Personagem\Seta Direita Selecionado.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Menu\Selecao_Personagem\Seta Direita.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Menu\Selecao_Personagem\Seta Esquerda Selecionado.png
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Release\ilc\in\Src\Images\Menu\Selecao_Personagem\Seta Esquerda.png

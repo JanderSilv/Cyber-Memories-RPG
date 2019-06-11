@@ -33,7 +33,7 @@ namespace _3ReaisEngine.RPG.Core
         CoreWindow coreWindow;
         private Panel game_layer;
         private Panel ui_layer;
-
+        private Vector2 lastSize;
         private ulong EntidadeCount = 1;
         public float Widht { set { game_layer.Width = value; } get { return (float)game_layer.Width; } }
         public float Height { set { game_layer.Height = value; } get { return (float)game_layer.Height; } }
@@ -54,12 +54,12 @@ namespace _3ReaisEngine.RPG.Core
             canv.Width = 840;
             canv.Height = 620;
             canv.Children.Add(ui);
-
+            lastSize = new Vector2((float)canv.Width,(float)canv.Height);
             canv.SetValue(Canvas.ZIndexProperty, 0);
            
             coreWindow.KeyDown += Game_KeyDown;
             coreWindow.KeyUp += Game_KeyUp;
-        
+
 
             ui.Width = 840;
             ui.Height = 620;
@@ -77,6 +77,7 @@ namespace _3ReaisEngine.RPG.Core
             Windows.UI.Xaml.Window.Current.CoreWindow.Activate();
         }
 
+    
         public MessageBox ShowMessageBox(string Titulo, string Descricao, Vector2 pos, object contentBtn1 = null, object contentBtn2 = null, Execute act1 = null, Execute act2 = null)
         {
             MessageBox mb = null;
@@ -102,7 +103,6 @@ namespace _3ReaisEngine.RPG.Core
             canv.SetValue(Canvas.ZIndexProperty, 0);
             coreWindow.KeyDown += Game_KeyDown;
             coreWindow.KeyUp += Game_KeyUp;
-         
             ui.Width = Widht;
             ui.Height = Height;
             ui.SetValue(Canvas.ZIndexProperty, 1);
@@ -112,7 +112,7 @@ namespace _3ReaisEngine.RPG.Core
          
             game_layer = canv;
             ui_layer = ui;
-
+            lastSize = new Vector2((float)canv.Width, (float)canv.Height);
 
 
             Windows.UI.Xaml.Window.Current.CoreWindow.SizeChanged += CoreWindow_SizeChanged;
@@ -349,7 +349,7 @@ namespace _3ReaisEngine.RPG.Core
             }
            
         }
-
+       
        
 
         private void Game_KeyDown(CoreWindow sender, KeyEventArgs e)
@@ -368,12 +368,12 @@ namespace _3ReaisEngine.RPG.Core
 
         private void CoreWindow_SizeChanged(Windows.UI.Core.CoreWindow sender, Windows.UI.Core.WindowSizeChangedEventArgs args)
         {
-            Debug.WriteLine(args.Size.ToString());
+            
 
             Vector2 a = new Vector2();
             a.x = (float)(args.Size.Width / game_layer.Width);
             a.y = (float)(args.Size.Height / game_layer.Height);
-
+         
             game_layer.Width = args.Size.Width;
             game_layer.Height = args.Size.Height;
 
@@ -388,6 +388,17 @@ namespace _3ReaisEngine.RPG.Core
 
                 ((TranslateTransform)e.RenderTransform).X *= a.x;
                 ((TranslateTransform)e.RenderTransform).Y *= a.y;
+
+            }
+
+            foreach (UIEntidade element in uiElements)
+            {
+               
+                element.Resize(element.size.x* a.x, element.size.y*a.y);
+            }
+            foreach (UIEntidade element in gameUIElements)
+            {
+                element.Resize(element.size.x* a.x, element.size.y* a.y);
             }
         }
     }
