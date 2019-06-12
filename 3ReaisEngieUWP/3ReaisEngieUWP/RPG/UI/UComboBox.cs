@@ -24,7 +24,7 @@ namespace _3ReaisEngine.UI
         {
             cbb.HorizontalAlignment = HorizontalAlignment.Left;
             cbb.VerticalAlignment = VerticalAlignment.Top;
-            cbb.RenderTransform = transform;
+            cbb.RenderTransform = new TranslateTransform();
             Action = Action;
             cbb.SelectionChanged += act;
             element = cbb;

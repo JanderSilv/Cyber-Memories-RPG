@@ -13,7 +13,7 @@ using Windows.UI.Xaml.Media.Imaging;
 
 namespace _3ReaisEngine.UI
 {
-    using uwpUI = Windows.UI.Xaml.Controls;
+   
 
     public delegate void Execute(object sender);
 
@@ -29,7 +29,7 @@ namespace _3ReaisEngine.UI
         public FrameworkElement frameworkElement;
 
 
-        protected TranslateTransform transform = new TranslateTransform();
+        
         public string Nome;
         public Vector2 position;
         public Vector2 size {
@@ -39,6 +39,8 @@ namespace _3ReaisEngine.UI
         
         public UIEntidade parent;
         public ManipulationModes manipulationMode { get { return element.ManipulationMode; } set { element.ManipulationMode = value; } }
+        public TranslateTransform transform { get { return (TranslateTransform)element.RenderTransform; }
+            protected set { element.RenderTransform = value; } }
         public AnchorType anchor = AnchorType.Proporcional;
 
    
@@ -69,13 +71,9 @@ namespace _3ReaisEngine.UI
     public class UButton : UIEntidade, IUIBackground
     {
         public Execute Action;
-       
-        Button btn = new Button();
-       
         public object Content { get { return btn.Content; } set { btn.Content = value; } }
 
-
-
+        Button btn = new Button();
         BitmapImage Normal;
         BitmapImage OnHover;
         BitmapImage OnClick;
@@ -91,7 +89,7 @@ namespace _3ReaisEngine.UI
             btn.ManipulationDelta += btn_ManipulationDelta;
             btn.HorizontalAlignment = HorizontalAlignment.Left;
             btn.VerticalAlignment = VerticalAlignment.Top;
-            btn.RenderTransform = transform;
+            btn.RenderTransform = new TranslateTransform();
             btn.PointerEntered += btn_PointerEntered;
             btn.PointerExited += btn_PointerExited;
             btn.Click += act;
@@ -115,7 +113,6 @@ namespace _3ReaisEngine.UI
             this.Action = Action;
            
         }
-
         public UButton(object Content, Execute Action = null)
         {
             btn.CanDrag = true;
@@ -127,7 +124,6 @@ namespace _3ReaisEngine.UI
             this.Action = Action;
             Start();
         }
-
         public UButton(object Content, Vector2 position, Execute Action = null)
         {
             btn.Content = Content;

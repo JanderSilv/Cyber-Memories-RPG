@@ -4,6 +4,6 @@
     {
         e.saude -= 15;
         e.estadoAtual |= Estado.Paralisado;
-        _3ReaisEngine.Engine.Debug("O oponente está paralisado");
+        _3ReaisEngine.Engine.Print("O oponente está paralisado");
     }
 }

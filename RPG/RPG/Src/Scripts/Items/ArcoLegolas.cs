@@ -15,7 +15,7 @@
         nev = new Nevasca();
 
         ItemManager.GenID(this);
-        _3ReaisEngine.Engine.Debug("ID do arcolegolas " + ID);
+        _3ReaisEngine.Engine.Print("ID do arcolegolas " + ID);
     }
 
     public void Equipar(Status e)

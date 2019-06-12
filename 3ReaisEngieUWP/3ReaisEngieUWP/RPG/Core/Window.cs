@@ -81,10 +81,10 @@ namespace _3ReaisEngine.RPG.Core
         public MessageBox ShowMessageBox(string Titulo, string Descricao, Vector2 pos, object contentBtn1 = null, object contentBtn2 = null, Execute act1 = null, Execute act2 = null)
         {
             MessageBox mb = null;
-            mb = new MessageBox(Titulo, Descricao, pos, contentBtn1, contentBtn2, act1, act2, this);
-                        
-            Add(mb.panel);
-            
+           
+                 mb = new MessageBox(Titulo, Descricao, pos, contentBtn1, contentBtn2, act1, act2, this);
+                Add(mb.panel);
+           
     
             return mb;
         }
@@ -302,49 +302,56 @@ namespace _3ReaisEngine.RPG.Core
 
         void uptPos(UIEntidade element)
         {
+           
             UIElement e = element.element;
             UIEntidade parent = element.parent;
             e.SetValue(Canvas.HorizontalAlignmentProperty, Canvas.LeftProperty);
             e.SetValue(Canvas.VerticalAlignmentProperty, Canvas.TopProperty);
-
-            TranslateTransform tt = ((TranslateTransform)e.RenderTransform);
             Vector2 pos = element.position;
             Vector2 si = element.size;
+            
             if (element.anchor == AnchorType.Proporcional)
             {
                 if (parent != null)
                 {
-                    Vector2 parentPos = parent.position;
+                   
                     Vector2 parentSi = parent.size;
-                    TranslateTransform ptt = ((TranslateTransform)parent.element.RenderTransform);
+                  
 
-                    tt.X = ptt.X;
-                    tt.Y = ptt.Y;
+                    element.transform.X = parent.transform.X;
+                    element.transform.Y = parent.transform.Y;
 
-                    tt.X += 2 * (((pos.x / 2) / 100.0) * parentSi.x) - si.x / 2;
-                    tt.Y += 2 * (((pos.y / 2) / 100.0) * parentSi.y) - si.y / 2;
+                    element.transform.X += 2 * (((pos.x / 2) / 100.0) * parentSi.x) - si.x / 2;
+                    element.transform.Y += 2 * (((pos.y / 2) / 100.0) * parentSi.y) - si.y / 2;
+                    
                 }
                 else
                 {
-                    tt.X = 2 * (((pos.x / 2) / 100.0) * Widht) - si.x / 2;
-                    tt.Y = 2 * (((pos.y / 2) / 100.0) * Height) - si.y / 2;
+                   
+                    try
+                    {
+                        element.transform.X = 2 * (((pos.x / 2) / 100.0) * Widht) - si.x / 2;
+                        element.transform.Y = 2 * (((pos.y / 2) / 100.0) * Height) - si.y / 2;
+                    }catch(Exception ex)
+                    {
+                        Engine.Debug(ex);
+                    }
                 }
             }
             else
             {
                 if (parent != null)
                 {
-                    Vector2 parentPos = parent.position;
-                    Vector2 parentSi = parent.size;
-                    TranslateTransform ptt = ((TranslateTransform)parent.element.RenderTransform);
-
-                    tt.X = ptt.X + pos.x - si.x / 2;
-                    tt.Y = ptt.Y + pos.y - si.y / 2;
+                   
+                    element.transform.X = parent.transform.X + pos.x - si.x / 2;
+                    element.transform.Y = parent.transform.Y + pos.y - si.y / 2;
+                   
                 }
                 else
                 {
-                    tt.X = pos.x - si.x / 2;
-                    tt.Y = pos.y - si.y / 2;
+                    element.transform.X = pos.x - si.x / 2;
+                    element.transform.Y = pos.y - si.y / 2;
+                    
                 }
             }
            

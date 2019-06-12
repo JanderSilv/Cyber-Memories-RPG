@@ -22,7 +22,7 @@ class ColidirComTronco : Quest
 
     public override void OnFinish()
     {
-        Engine.Debug("Quest finalizada");
+        Engine.Print("Quest finalizada");
         
     }
 }

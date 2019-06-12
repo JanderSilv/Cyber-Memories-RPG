@@ -10,11 +10,10 @@ using Windows.UI.Xaml.Media.Imaging;
 
 namespace _3ReaisEngine.UI
 {
-    using uwpUI = Windows.UI.Xaml.Controls;
-
+  
     public class UImage : UIEntidade
     {
-        public uwpUI.Image img = new uwpUI.Image();
+        public Windows.UI.Xaml.Controls.Image img = new Windows.UI.Xaml.Controls.Image();
         public object Content { get { return img.Source; } set { img.Source = new BitmapImage(new Uri("ms-appx:/" + (string)value)); } }
 
         void start()
@@ -22,7 +21,7 @@ namespace _3ReaisEngine.UI
             img.Stretch = Stretch.Uniform;
             img.HorizontalAlignment = HorizontalAlignment.Left;
             img.VerticalAlignment = VerticalAlignment.Top;
-            img.RenderTransform = transform;
+            img.RenderTransform = new TranslateTransform();
             element = img;
             frameworkElement = (FrameworkElement)element;
         }
@@ -53,8 +52,6 @@ namespace _3ReaisEngine.UI
             position = pos;
            
         }
-
-       
 
     }
 }

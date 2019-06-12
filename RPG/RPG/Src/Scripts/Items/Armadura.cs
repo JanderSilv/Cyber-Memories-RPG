@@ -10,7 +10,7 @@
         Descricao = "Nao é muito util mas melhor que ficar nu";
 
         ItemManager.GenID(this);
-        _3ReaisEngine.Engine.Debug("ID da armadura " + ID);
+        _3ReaisEngine.Engine.Print("ID da armadura " + ID);
     }
 
     public void Atacar(Status e)

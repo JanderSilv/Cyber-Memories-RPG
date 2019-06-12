@@ -10,7 +10,7 @@
         Descricao = "Cajado maciço feito de carvalho";
 
         ItemManager.GenID(this);
-        _3ReaisEngine.Engine.Debug("ID do cajadomadeira " + ID);
+        _3ReaisEngine.Engine.Print("ID do cajadomadeira " + ID);
     }
 
     public void Equipar(Status e)

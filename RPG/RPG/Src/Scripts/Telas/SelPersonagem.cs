@@ -1,4 +1,5 @@
-﻿using _3ReaisEngine.Core;
+﻿using _3ReaisEngine;
+using _3ReaisEngine.Core;
 using _3ReaisEngine.RPG.Core;
 using _3ReaisEngine.UI;
 using System;
@@ -20,10 +21,10 @@ public class SelPersonagem : Window
         private int i = 0;
     public SelPersonagem(Page root) : base(root,800,640)
         {
-            ImagePath[0] = "Src/Images/Menu/Selecao_Personagem/Homem-Branco-Combate.png";
-            ImagePath[1] = "Src/Images/Menu/Selecao_Personagem/Homem-Negro-Combate.png";
-            ImagePath[2] = "Src/Images/Menu/Selecao_Personagem/Mulher-Branco-Combate.png";
-            ImagePath[3] = "Src/Images/Menu/Selecao_Personagem/Mulher-Negro-Combate.png";
+            ImagePath[0] = "Src/Images/Menu/Selecao_Personagem/Homem-Branco-Face.png";
+            ImagePath[1] = "Src/Images/Menu/Selecao_Personagem/Homem-Negro-Face.png";
+            ImagePath[2] = "Src/Images/Menu/Selecao_Personagem/Mulher-Branco-Face.png";
+            ImagePath[3] = "Src/Images/Menu/Selecao_Personagem/Mulher-Negro-Face.png";
 
             ImagePath2[0] = "Src/Images/Menu/Selecao_Personagem/Homem-Branco-Combate.png";
             ImagePath2[1] = "Src/Images/Menu/Selecao_Personagem/Homem-Negro-Combate.png";
@@ -43,6 +44,7 @@ public class SelPersonagem : Window
             UButton rightSelector = new UButton("", new Vector2(58, 73), new Vector2(45, 41), RightSelector);
             UButton leftSelector = new UButton("", new Vector2(43, 73), new Vector2(45, 41), LeftSelector);
             UButton ready = new UButton("", new Vector2(52, 90), new Vector2(188, 49), Ready);
+
 
 
             Add(title);
@@ -68,6 +70,13 @@ public class SelPersonagem : Window
 
             ready.setBackground("Src/Images/Menu/Selecao_Personagem/Pronto.png", Stretch.Uniform);
             ready.setOnHover("Src/Images/Menu/Selecao_Personagem/Pronto_Selecionado.png");
+
+        
+            UText text = new UText("HELLO WORLD", new Vector2(50, 50), new Vector2(350, 150));
+            text.fontSize = 50;
+          
+          
+       
     }
 
    

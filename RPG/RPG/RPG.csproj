@@ -138,7 +138,6 @@
     <Compile Include="Src\Scripts\Items\Item.cs" />
     <Compile Include="Src\Scripts\Componentes\Mercador.cs" />
     <Compile Include="Src\Scripts\Entidades\Player.cs" />
-    <Compile Include="Src\Scripts\Jogo.cs" />
     <Compile Include="Src\Scripts\Managers\InventarioManager.cs" />
     <Compile Include="Src\Scripts\Managers\ItemManager.cs" />
     <Compile Include="Src\Scripts\Componentes\QuestSystem.cs" />
@@ -193,17 +192,17 @@
     <Content Include="Src\Images\Menu\Logo.png" />
     <Content Include="Src\Images\Menu\Logo2.png" />
     <Content Include="Src\Images\Menu\Selecao_Personagem\Homem-Branco-Combate.png" />
+    <Content Include="Src\Images\Menu\Selecao_Personagem\Homem-Branco-Face.png" />
+    <Content Include="Src\Images\Menu\Selecao_Personagem\Homem-Negro-Face.png" />
+    <Content Include="Src\Images\Menu\Selecao_Personagem\Mulher-Branco-Face.png" />
     <Content Include="Src\Images\Menu\Selecao_Personagem\Mulher-Negro-Combate.png" />
     <Content Include="Src\Images\Menu\Selecao_Personagem\Mulher-Branco-Combate.png" />
     <Content Include="Src\Images\Menu\Selecao_Personagem\Homem-Negro-Combate.png" />
     <Content Include="Src\Images\Menu\Selecao_Personagem\Contorno.png" />
     <Content Include="Src\Images\Menu\Selecao_Personagem\Escolha_Personagem.png" />
-    <Content Include="Src\Images\Menu\Selecao_Personagem\Homem-Branco-Face.png" />
-    <Content Include="Src\Images\Menu\Selecao_Personagem\Homem-Negro-Face.png" />
     <Content Include="Src\Images\Menu\Selecao_Personagem\Homem.png" />
     <Content Include="Src\Images\Menu\Selecao_Personagem\Homem_Selecionado.png" />
     <Content Include="Src\Images\Menu\Selecao_Personagem\Mulher Selecionado.png" />
-    <Content Include="Src\Images\Menu\Selecao_Personagem\Mulher-Branco-Face.png" />
     <Content Include="Src\Images\Menu\Selecao_Personagem\Mulher-Negro-Face.png" />
     <Content Include="Src\Images\Menu\Selecao_Personagem\Mulher.png" />
     <Content Include="Src\Images\Menu\Selecao_Personagem\Pronto.png" />
@@ -212,27 +211,6 @@
     <Content Include="Src\Images\Menu\Selecao_Personagem\Seta Direita.png" />
     <Content Include="Src\Images\Menu\Selecao_Personagem\Seta Esquerda Selecionado.png" />
     <Content Include="Src\Images\Menu\Selecao_Personagem\Seta Esquerda.png" />
-    <Content Include="Src\Images\tiles\areia.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Src\Images\tiles\arvore.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Src\Images\tiles\flores.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Src\Images\tiles\grama.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Src\Images\tiles\rocha1.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Src\Images\tiles\rocha2.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Src\Images\tiles\tronco.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
     <Content Include="Src\Maps\Laborátorio\Laboratório.xml" />
     <Content Include="Src\Maps\Laborátorio\Laborátorio.txt" />
     <Content Include="Src\Maps\map.xml">
@@ -267,81 +245,6 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Src\JunglerockAlpha.png" />
-    <Content Include="Src\Images\Bau\Treasure Chest closed 254x254.png" />
-    <Content Include="Src\Images\Bau\Treasure Chest open 254x254.png" />
-    <Content Include="Src\Images\Cavaleiro\knight 3 block.png" />
-    <Content Include="Src\Images\Cavaleiro\knight 3 idle.png" />
-    <Content Include="Src\Images\Cavaleiro\knight 3 improved slash animation.png" />
-    <Content Include="Src\Images\Cavaleiro\knight death animation.png" />
-    <Content Include="Src\Images\Cavaleiro\knight walk animation.png" />
-    <Content Include="Src\Images\Feiticeiro\sorcerer attack_Animation 1_0.png" />
-    <Content Include="Src\Images\Feiticeiro\sorcerer attack_Animation 1_1.png" />
-    <Content Include="Src\Images\Feiticeiro\sorcerer attack_Animation 1_2.png" />
-    <Content Include="Src\Images\Feiticeiro\sorcerer attack_Animation 1_3.png" />
-    <Content Include="Src\Images\Feiticeiro\sorcerer attack_Animation 1_4.png" />
-    <Content Include="Src\Images\Feiticeiro\sorcerer attack_Animation 1_5.png" />
-    <Content Include="Src\Images\Feiticeiro\sorcerer attack_Animation 1_6.png" />
-    <Content Include="Src\Images\Feiticeiro\sorcerer attack_Animation 1_7.png" />
-    <Content Include="Src\Images\Feiticeiro\sorcerer attack_Animation 1_8.png" />
-    <Content Include="Src\Images\Feiticeiro\sorcerer attack_Animation 1_9.png" />
-    <Content Include="Src\Images\Feiticeiro\sorcerer villain.png" />
-    <Content Include="Src\Images\Feiticeiro\villain.png" />
-    <Content Include="Src\Images\Mago\wizard attack.png" />
-    <Content Include="Src\Images\Mago\wizard death.png" />
-    <Content Include="Src\Images\Mago\wizard fly forward.png" />
-    <Content Include="Src\Images\Mago\wizard idle.png" />
-    <Content Include="Src\Images\Rogue\rogue like attack animations.png" />
-    <Content Include="Src\Images\Rogue\rogue like attack animations_attack down_0.png" />
-    <Content Include="Src\Images\Rogue\rogue like attack animations_attack down_1.png" />
-    <Content Include="Src\Images\Rogue\rogue like attack animations_attack down_2.png" />
-    <Content Include="Src\Images\Rogue\rogue like attack animations_attack down_3.png" />
-    <Content Include="Src\Images\Rogue\rogue like attack animations_attack left_0.png" />
-    <Content Include="Src\Images\Rogue\rogue like attack animations_attack left_1.png" />
-    <Content Include="Src\Images\Rogue\rogue like attack animations_attack left_2.png" />
-    <Content Include="Src\Images\Rogue\rogue like attack animations_attack left_3.png" />
-    <Content Include="Src\Images\Rogue\rogue like attack animations_attack right_0.png" />
-    <Content Include="Src\Images\Rogue\rogue like attack animations_attack right_1.png" />
-    <Content Include="Src\Images\Rogue\rogue like attack animations_attack right_2.png" />
-    <Content Include="Src\Images\Rogue\rogue like attack animations_attack right_3.png" />
-    <Content Include="Src\Images\Rogue\rogue like attack animations_attack up_0.png" />
-    <Content Include="Src\Images\Rogue\rogue like attack animations_attack up_1.png" />
-    <Content Include="Src\Images\Rogue\rogue like attack animations_attack up_2.png" />
-    <Content Include="Src\Images\Rogue\rogue like attack animations_attack up_3.png" />
-    <Content Include="Src\Images\Rogue\rogue like attack.png" />
-    <Content Include="Src\Images\Rogue\rogue like attack_Animation 1_0.png" />
-    <Content Include="Src\Images\Rogue\rogue like attack_Animation 1_1.png" />
-    <Content Include="Src\Images\Rogue\rogue like attack_Animation 1_2.png" />
-    <Content Include="Src\Images\Rogue\rogue like attack_Animation 1_3.png" />
-    <Content Include="Src\Images\Rogue\rogue like attack_Animation 1_4.png" />
-    <Content Include="Src\Images\Rogue\rogue like attack_Animation 1_5.png" />
-    <Content Include="Src\Images\Rogue\rogue like attack_Animation 1_6.png" />
-    <Content Include="Src\Images\Rogue\rogue like attack_Animation 1_7.png" />
-    <Content Include="Src\Images\Rogue\rogue like attack_Animation 1_8.png" />
-    <Content Include="Src\Images\Rogue\rogue like attack_Animation 1_9.png" />
-    <Content Include="Src\Images\Rogue\rogue like idle.png" />
-    <Content Include="Src\Images\Rogue\rogue like idle_Animation 1_0.png" />
-    <Content Include="Src\Images\Rogue\rogue like idle_Animation 1_1.png" />
-    <Content Include="Src\Images\Rogue\rogue like idle_Animation 1_2.png" />
-    <Content Include="Src\Images\Rogue\rogue like run up_Animation 1_0.png" />
-    <Content Include="Src\Images\Rogue\rogue like run up_Animation 1_1.png" />
-    <Content Include="Src\Images\Rogue\rogue like run up_Animation 1_2.png" />
-    <Content Include="Src\Images\Rogue\rogue like run up_Animation 1_3.png" />
-    <Content Include="Src\Images\Rogue\rogue like run.png" />
-    <Content Include="Src\Images\Rogue\rogue like run_Animation 1_0.png" />
-    <Content Include="Src\Images\Rogue\rogue like run_Animation 1_1.png" />
-    <Content Include="Src\Images\Rogue\rogue like run_Animation 1_2.png" />
-    <Content Include="Src\Images\Rogue\rogue like run_Animation 1_3.png" />
-    <Content Include="Src\Images\Rogue\rogue like run_Animation 1_4.png" />
-    <Content Include="Src\Images\Rogue\rogue like run_Animation 1_5.png" />
-    <Content Include="Src\Images\Rogue\roguelike run down_Animation 1_0.png" />
-    <Content Include="Src\Images\Rogue\roguelike run down_Animation 1_1.png" />
-    <Content Include="Src\Images\Rogue\roguelike run down_Animation 1_2.png" />
-    <Content Include="Src\Images\Rogue\roguelike run down_Animation 1_3.png" />
-    <Content Include="Src\Images\Zumbi\undead_attack.gif" />
-    <Content Include="Src\Images\Zumbi\undead_death.gif" />
-    <Content Include="Src\Images\Zumbi\undead_hurt.gif" />
-    <Content Include="Src\Images\Zumbi\undead_idle.gif" />
-    <Content Include="Src\Images\Zumbi\undead_walk.gif" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">

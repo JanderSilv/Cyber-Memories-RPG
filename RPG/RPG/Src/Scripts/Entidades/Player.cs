@@ -61,7 +61,7 @@ public class Player : Entidade
 
     private void newQuest(Quest q)
     {
-        Engine.Debug("New Quest added: " + q.Nome);
+        Engine.Print("New Quest added: " + q.Nome);
     }
 
     public override void Update()
@@ -120,7 +120,7 @@ public class Player : Entidade
     }
     public override void OnClick(MouseEvento e)
     {
-        Engine.Debug("player aqui");
+        Engine.Print("player aqui");
     }
     public void OnColide(Colisao col)
     {

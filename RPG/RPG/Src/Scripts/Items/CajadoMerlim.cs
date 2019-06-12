@@ -15,7 +15,7 @@
         trov = new Trovao();
 
         ItemManager.GenID(this);
-        _3ReaisEngine.Engine.Debug("ID do cajadomerlim " + ID);
+        _3ReaisEngine.Engine.Print("ID do cajadomerlim " + ID);
     }
 
     public void Equipar(Status e)

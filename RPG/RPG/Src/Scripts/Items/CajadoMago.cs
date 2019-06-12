@@ -10,7 +10,7 @@
         Descricao = "Cajado de carvalho forjado com uma gema mágica";
 
         ItemManager.GenID(this);
-        _3ReaisEngine.Engine.Debug("ID do cajadomago " + ID);
+        _3ReaisEngine.Engine.Print("ID do cajadomago " + ID);
     }
 
     public void Equipar(Status e)
