@@ -10,7 +10,7 @@
         Descricao = "Espada forjada em aço";
 
         ItemManager.GenID(this);
-        _3ReaisEngine.Engine.Debug("ID do espadaaco" + ID);
+        _3ReaisEngine.Engine.Print("ID do espadaaco" + ID);
     }
 
     public void Equipar(Status e)

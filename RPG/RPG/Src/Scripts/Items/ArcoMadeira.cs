@@ -10,7 +10,7 @@
         Descricao = "Arco feito para a caça";
 
         ItemManager.GenID(this);
-        _3ReaisEngine.Engine.Debug("ID do arcomadeira " + ID);
+        _3ReaisEngine.Engine.Print("ID do arcomadeira " + ID);
     }
 
     public void Equipar(Status e)

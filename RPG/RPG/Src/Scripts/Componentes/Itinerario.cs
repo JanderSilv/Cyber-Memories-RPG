@@ -52,12 +52,12 @@ using System.Threading.Tasks;
         {
             if (caminho.Count <= 1)
             {
-                Engine.Debug("caminho pequeno demais");
+                Engine.Print("caminho pequeno demais");
                 return;
             }
             if (atual == null)
             {
-                Engine.Debug("primeiro passo");
+                Engine.Print("primeiro passo");
                 atual = caminho.Values.ElementAt(0);
             }
 

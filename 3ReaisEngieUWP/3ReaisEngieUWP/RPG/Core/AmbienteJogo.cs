@@ -63,7 +63,7 @@ namespace _3ReaisEngine
                 {
                     if (window == null)
                     {
-                        Engine.Debug("Window is missing");
+                        Engine.Print("Window is missing");
                         continue;
                     }
 
@@ -91,8 +91,8 @@ namespace _3ReaisEngine
                     posUpdate?.Invoke();
                 }catch(Exception e)
                 {
-                    Engine.Debug("_3reais: " + e.Message);
-                    Engine.Debug("_3reais: "+e.StackTrace);
+                    Engine.Print("_3reais: " + e.Message);
+                    Engine.Print("_3reais: "+e.StackTrace);
                   
                 }
                    

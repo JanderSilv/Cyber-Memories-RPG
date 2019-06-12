@@ -20,25 +20,6 @@ Src\Audio\beep.mp3
 Src\Audio\rain.mp3
 Src\Audio\serrote.wav
 Src\dance.gif
-Src\Images\Bau\Treasure Chest closed 254x254.png
-Src\Images\Bau\Treasure Chest open 254x254.png
-Src\Images\Cavaleiro\knight 3 block.png
-Src\Images\Cavaleiro\knight 3 idle.png
-Src\Images\Cavaleiro\knight 3 improved slash animation.png
-Src\Images\Cavaleiro\knight death animation.png
-Src\Images\Cavaleiro\knight walk animation.png
-Src\Images\Feiticeiro\sorcerer attack_Animation 1_0.png
-Src\Images\Feiticeiro\sorcerer attack_Animation 1_1.png
-Src\Images\Feiticeiro\sorcerer attack_Animation 1_2.png
-Src\Images\Feiticeiro\sorcerer attack_Animation 1_3.png
-Src\Images\Feiticeiro\sorcerer attack_Animation 1_4.png
-Src\Images\Feiticeiro\sorcerer attack_Animation 1_5.png
-Src\Images\Feiticeiro\sorcerer attack_Animation 1_6.png
-Src\Images\Feiticeiro\sorcerer attack_Animation 1_7.png
-Src\Images\Feiticeiro\sorcerer attack_Animation 1_8.png
-Src\Images\Feiticeiro\sorcerer attack_Animation 1_9.png
-Src\Images\Feiticeiro\sorcerer villain.png
-Src\Images\Feiticeiro\villain.png
 Src\Images\Laboratório\Assets-Laborátorio_0001_Livros.png
 Src\Images\Laboratório\Assets-Laborátorio_0002_Papeis.png
 Src\Images\Laboratório\Assets-Laborátorio_0003_Mesa-Vertical.png
@@ -63,10 +44,6 @@ Src\Images\Laboratório\Lab_Exit.png
 Src\Images\Laboratório\Lab_Fechadura-Eletronica.png
 Src\Images\Laboratório\Lab_Notebook.png
 Src\Images\Laboratório\Lab_Parede.png
-Src\Images\Mago\wizard attack.png
-Src\Images\Mago\wizard death.png
-Src\Images\Mago\wizard fly forward.png
-Src\Images\Mago\wizard idle.png
 Src\Images\Menu\Botões\Configurações.png
 Src\Images\Menu\Botões\Configurações_Selecionado.png
 Src\Images\Menu\Botões\Controles.png
@@ -103,65 +80,6 @@ Src\Images\Menu\Selecao_Personagem\Seta Direita Selecionado.png
 Src\Images\Menu\Selecao_Personagem\Seta Direita.png
 Src\Images\Menu\Selecao_Personagem\Seta Esquerda Selecionado.png
 Src\Images\Menu\Selecao_Personagem\Seta Esquerda.png
-Src\Images\Rogue\rogue like attack animations.png
-Src\Images\Rogue\rogue like attack animations_attack down_0.png
-Src\Images\Rogue\rogue like attack animations_attack down_1.png
-Src\Images\Rogue\rogue like attack animations_attack down_2.png
-Src\Images\Rogue\rogue like attack animations_attack down_3.png
-Src\Images\Rogue\rogue like attack animations_attack left_0.png
-Src\Images\Rogue\rogue like attack animations_attack left_1.png
-Src\Images\Rogue\rogue like attack animations_attack left_2.png
-Src\Images\Rogue\rogue like attack animations_attack left_3.png
-Src\Images\Rogue\rogue like attack animations_attack right_0.png
-Src\Images\Rogue\rogue like attack animations_attack right_1.png
-Src\Images\Rogue\rogue like attack animations_attack right_2.png
-Src\Images\Rogue\rogue like attack animations_attack right_3.png
-Src\Images\Rogue\rogue like attack animations_attack up_0.png
-Src\Images\Rogue\rogue like attack animations_attack up_1.png
-Src\Images\Rogue\rogue like attack animations_attack up_2.png
-Src\Images\Rogue\rogue like attack animations_attack up_3.png
-Src\Images\Rogue\rogue like attack.png
-Src\Images\Rogue\rogue like attack_Animation 1_0.png
-Src\Images\Rogue\rogue like attack_Animation 1_1.png
-Src\Images\Rogue\rogue like attack_Animation 1_2.png
-Src\Images\Rogue\rogue like attack_Animation 1_3.png
-Src\Images\Rogue\rogue like attack_Animation 1_4.png
-Src\Images\Rogue\rogue like attack_Animation 1_5.png
-Src\Images\Rogue\rogue like attack_Animation 1_6.png
-Src\Images\Rogue\rogue like attack_Animation 1_7.png
-Src\Images\Rogue\rogue like attack_Animation 1_8.png
-Src\Images\Rogue\rogue like attack_Animation 1_9.png
-Src\Images\Rogue\rogue like idle.png
-Src\Images\Rogue\rogue like idle_Animation 1_0.png
-Src\Images\Rogue\rogue like idle_Animation 1_1.png
-Src\Images\Rogue\rogue like idle_Animation 1_2.png
-Src\Images\Rogue\rogue like run up_Animation 1_0.png
-Src\Images\Rogue\rogue like run up_Animation 1_1.png
-Src\Images\Rogue\rogue like run up_Animation 1_2.png
-Src\Images\Rogue\rogue like run up_Animation 1_3.png
-Src\Images\Rogue\rogue like run.png
-Src\Images\Rogue\rogue like run_Animation 1_0.png
-Src\Images\Rogue\rogue like run_Animation 1_1.png
-Src\Images\Rogue\rogue like run_Animation 1_2.png
-Src\Images\Rogue\rogue like run_Animation 1_3.png
-Src\Images\Rogue\rogue like run_Animation 1_4.png
-Src\Images\Rogue\rogue like run_Animation 1_5.png
-Src\Images\Rogue\roguelike run down_Animation 1_0.png
-Src\Images\Rogue\roguelike run down_Animation 1_1.png
-Src\Images\Rogue\roguelike run down_Animation 1_2.png
-Src\Images\Rogue\roguelike run down_Animation 1_3.png
-Src\Images\tiles\areia.png
-Src\Images\tiles\arvore.png
-Src\Images\tiles\flores.png
-Src\Images\tiles\grama.png
-Src\Images\tiles\rocha1.png
-Src\Images\tiles\rocha2.png
-Src\Images\tiles\tronco.png
-Src\Images\Zumbi\undead_attack.gif
-Src\Images\Zumbi\undead_death.gif
-Src\Images\Zumbi\undead_hurt.gif
-Src\Images\Zumbi\undead_idle.gif
-Src\Images\Zumbi\undead_walk.gif
 Src\JunglerockAlpha.png
 Src\Maps\Laborátorio\Laborátorio.txt
 Src\Maps\Laborátorio\Laboratório.xml

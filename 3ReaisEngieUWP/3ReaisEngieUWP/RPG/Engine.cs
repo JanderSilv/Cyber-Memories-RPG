@@ -22,7 +22,7 @@ namespace _3ReaisEngine
         public static async void saveAsync(string file, string fileName)
         {
             StorageFolder storageFolder = ApplicationData.Current.LocalFolder;
-            Debug(storageFolder.Path);
+            Print(storageFolder.Path);
             StorageFile sampleFile = await storageFolder.CreateFileAsync(fileName, CreationCollisionOption.ReplaceExisting);
             await FileIO.WriteTextAsync(sampleFile, file);
         }
@@ -36,13 +36,20 @@ namespace _3ReaisEngine
             return deserializedGeneric;
         }
 
-        public static void Debug(object obj)
+        public static void Print(object obj)
         {
 #if LOG
             System.Diagnostics.Debug.WriteLine(obj);
 #endif
         }
-
+        public static void Debug(Exception e)
+        {
+            System.Diagnostics.Debug.WriteLine("EXCEPTION:");
+            System.Diagnostics.Debug.WriteLine("ON:"+ e.StackTrace);
+            System.Diagnostics.Debug.WriteLine("INNER:" + e.InnerException);
+            System.Diagnostics.Debug.WriteLine("SOURCE:" + e.Source);
+            System.Diagnostics.Debug.WriteLine("MESSAGE:" + e.Message);
+        }
         public static float Distance(Vector2 a, Vector2 b)
         {
             return (float)System.Math.Sqrt((a.x - b.x) * (a.x - b.x) + (a.y - b.y) * (a.y - b.y));

@@ -5,6 +5,6 @@ public class Confuso : Habilidade
     {
         e.estadoAtual |= Estado.Confuso;
         e.saude -= 5;
-        _3ReaisEngine.Engine.Debug("O oponente está confuso");
+        _3ReaisEngine.Engine.Print("O oponente está confuso");
     }
 }

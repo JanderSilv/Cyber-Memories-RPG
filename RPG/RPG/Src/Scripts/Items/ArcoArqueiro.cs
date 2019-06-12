@@ -10,7 +10,7 @@
         Descricao = "Arco longo de combate melhorado";
 
         ItemManager.GenID(this);
-        _3ReaisEngine.Engine.Debug("ID do arcoarqueiro " + ID);
+        _3ReaisEngine.Engine.Print("ID do arcoarqueiro " + ID);
     }
 
     public void Equipar(Status e)

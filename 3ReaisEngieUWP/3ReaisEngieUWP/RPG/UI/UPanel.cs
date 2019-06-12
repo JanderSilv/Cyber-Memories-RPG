@@ -18,19 +18,17 @@ namespace _3ReaisEngine.UI
     {
         Rectangle rect = new Rectangle();
 
-        public Brush brush = new SolidColorBrush(Colors.Aqua);
-
         public List<UIEntidade> childs = new List<UIEntidade>();
 
 
         public void start()
         {
-            rect.Fill = brush;
+            rect.Fill = new SolidColorBrush(Colors.White) ;
             rect.HorizontalAlignment = HorizontalAlignment.Left;
             rect.VerticalAlignment = VerticalAlignment.Top;
             rect.ManipulationDelta += rect_ManipulationDelta;
-            rect.RenderTransform = transform;
             element = rect;
+            transform = new TranslateTransform();     
             frameworkElement = (FrameworkElement)element;
         }
 
@@ -42,6 +40,7 @@ namespace _3ReaisEngine.UI
             transform.X = 0;
             transform.Y = 0;
             start();
+            this.position = new Vector2(50, 50);
 
         }
 
@@ -52,7 +51,7 @@ namespace _3ReaisEngine.UI
             start();
             rect.Width = 100;
             rect.Height = 50;
-            position = pos;
+            this.position = pos;
            
 
         }
@@ -62,18 +61,18 @@ namespace _3ReaisEngine.UI
             start();
             rect.Width = size.x;
             rect.Height = size.y;
-            position = pos;
+            this.position = pos;
             this.size = size;
         }
 
         public void Content(byte Red, byte Green, byte Blue, byte Alpha)
         {
             Color C = new Color() { A = Alpha, B = Blue, R = Red, G = Green };
-            brush = new SolidColorBrush(C);
+            rect.Fill = new SolidColorBrush(C);
         }
         public void Content(Color cor)
         {
-            brush = new SolidColorBrush(cor);
+            rect.Fill = new SolidColorBrush(cor);
         }
 
         public void addChild(UIEntidade child)

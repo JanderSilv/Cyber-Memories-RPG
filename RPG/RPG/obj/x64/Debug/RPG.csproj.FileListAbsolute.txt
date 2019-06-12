@@ -1,10 +1,3 @@
-E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Debug\Src\Images\tiles\areia.png
-E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Debug\Src\Images\tiles\arvore.png
-E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Debug\Src\Images\tiles\flores.png
-E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Debug\Src\Images\tiles\grama.png
-E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Debug\Src\Images\tiles\rocha1.png
-E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Debug\Src\Images\tiles\rocha2.png
-E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Debug\Src\Images\tiles\tronco.png
 E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Debug\Src\Maps\map.xml
 E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Debug\Src\Opera-04.png
 E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Debug\Src\Audio\beep.mp3
