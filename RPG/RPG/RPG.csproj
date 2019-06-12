@@ -144,6 +144,7 @@
     <Compile Include="Src\Scripts\Componentes\QuestSystem.cs" />
     <Compile Include="Src\Scripts\Quests\ColidirComTronco.cs" />
     <Compile Include="Src\Scripts\Telas\SelPersonagem.cs" />
+    <Compile Include="Src\Scripts\UI\Inventario.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -190,6 +191,22 @@
     <Content Include="Src\Images\Menu\Botões\Voltar_Selecionado.png" />
     <Content Include="Src\Images\Menu\Botões\Volume.png" />
     <Content Include="Src\Images\Menu\Botões\Volume_Selecionado.png" />
+    <Content Include="Src\Images\Menu\Inventário\Armadura.png" />
+    <Content Include="Src\Images\Menu\Inventário\Armadura_Selecionado.png" />
+    <Content Include="Src\Images\Menu\Inventário\Armadura_Texto.png" />
+    <Content Include="Src\Images\Menu\Inventário\Armas.png" />
+    <Content Include="Src\Images\Menu\Inventário\Armas_Selecionados.png" />
+    <Content Include="Src\Images\Menu\Inventário\Arma_Texto.png" />
+    <Content Include="Src\Images\Menu\Inventário\Atributos.png" />
+    <Content Include="Src\Images\Menu\Inventário\Atributos_Selecionado.png" />
+    <Content Include="Src\Images\Menu\Inventário\Atributos_Texto.png" />
+    <Content Include="Src\Images\Menu\Inventário\Contorno.png" />
+    <Content Include="Src\Images\Menu\Inventário\Contorno_Inventario.png" />
+    <Content Include="Src\Images\Menu\Inventário\Inventário.png" />
+    <Content Include="Src\Images\Menu\Inventário\Inventário_1.png" />
+    <Content Include="Src\Images\Menu\Inventário\Moeda.png" />
+    <Content Include="Src\Images\Menu\Inventário\Personagem.png" />
+    <Content Include="Src\Images\Menu\Inventário\Slot.png" />
     <Content Include="Src\Images\Menu\Logo.png" />
     <Content Include="Src\Images\Menu\Logo2.png" />
     <Content Include="Src\Images\Menu\Selecao_Personagem\Homem-Branco-Combate.png" />
