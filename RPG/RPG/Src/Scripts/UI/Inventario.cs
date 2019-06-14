@@ -12,29 +12,29 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Media.Imaging;
 
-namespace RPG.Src.Scripts.UI
-{
-    class Inventario 
+
+   public class InventarioPopUp 
     {
+
+        public UPanel inventory = new UPanel(new Vector2(50, 50), new Vector2(680, 330*1.25f));
         public void ShowInventory()
         {
-            // Tem que organizar as posições, ainda não testei.
+        // Tem que organizar as posições, ainda não testei.
 
-            UPanel inventory = new UPanel(new Vector2(50, 50), new Vector2(660, 330));
-
-            UImage storage = new UImage("Src/Images/Menu/Inventário/Contorno.png", new Vector2(1, 5), new Vector2(526, 320));
-            UImage coin = new UImage("Src/Images/Menu/Inventário/Moeda.png", new Vector2(90,4), new Vector2(24,26));
+        inventory.manipulationMode = ManipulationModes.All;
+            inventory.SetBackGround("Src/Images/Menu/Inventário/Contorno.png");
+            UImage coin = new UImage("Src/Images/Menu/Inventário/Moeda.png", new Vector2(92.75f,15f), new Vector2(24,26));
 
             // Preencher os slots do inventário.
 
-            UImage atrbBorder = new UImage("Src/Images/Menu/Inventário/Contorno_Inventario.png", new Vector2(151, 203), new Vector2(100, 100));
-            UImage invText = new UImage("Src/Images/Menu/Inventário/Inventário_1.png", new Vector2(10, 10), new Vector2(184, 33));
+            UImage atrbBorder = new UImage("Src/Images/Menu/Inventário/Contorno_Inventario.png", new Vector2(70, 55), new Vector2(260, 303));
+            UImage invText = new UImage("Src/Images/Menu/Inventário/Inventário_1.png", new Vector2(25, 10), new Vector2(184, 33));
             UImage persText = new UImage("Src/Images/Menu/Inventário/Personagem.png", new Vector2(70, 10), new Vector2(166, 23));
 
 
-            UButton weapon = new UButton("", new Vector2(70, 10), new Vector2(56,51), Weapon);
-            UButton armor = new UButton("", new Vector2(70,20), new Vector2(56,51), Armor);
-            UButton attribute = new UButton("", new Vector2(70, 30), new Vector2(56, 51), Attribute);
+            UButton weapon = new UButton("", new Vector2(107, 30), new Vector2(56,51), Weapon);
+            UButton armor = new UButton("", new Vector2(107,50), new Vector2(56,51), Armor);
+            UButton attribute = new UButton("", new Vector2(107, 70), new Vector2(56, 51), Attribute);
 
             weapon.setBackground("Src/Images/Menu/Inventário/Armas.png");
             weapon.setOnHover("Src/Images/Menu/Inventário/Armas_Selecionados.png");
@@ -43,7 +43,7 @@ namespace RPG.Src.Scripts.UI
             attribute.setBackground("Src/Images/Menu/Inventário/Atributos.png");
             attribute.setOnHover("Src/Images/Menu/Inventário/Atributos_Selecionado.png");
 
-            inventory.addChild(storage);
+           
             inventory.addChild(coin);
             inventory.addChild(atrbBorder);
             inventory.addChild(invText);
@@ -98,4 +98,3 @@ namespace RPG.Src.Scripts.UI
             showAttribute();
         }
     }
-}

@@ -17,7 +17,7 @@ namespace _3ReaisEngine.Components
         public Vector2 position { get { return entidade.EntPos; }  set { entidade.EntPos=value;} }
         public Vector2 velocity = new Vector2();
         public Vector2 size = new Vector2();
-        public float drag;
+        public float drag = 1;
 
     }
 }

@@ -139,6 +139,7 @@
     <Compile Include="RPG\UI\UImage.cs" />
     <Compile Include="RPG\UI\UPanel.cs" />
     <Compile Include="RPG\UI\UText.cs" />
+    <Compile Include="RPG\UI\UTextBox.cs" />
     <EmbeddedResource Include="Properties\_3ReaisEngieUWP.rd.xml" />
   </ItemGroup>
   <ItemGroup>

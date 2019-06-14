@@ -2,6 +2,7 @@
 using _3ReaisEngine.Core;
 using _3ReaisEngine.RPG.Core;
 using _3ReaisEngine.UI;
+using RPG.Src.Scripts.Telas;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,6 +20,8 @@ public class SelPersonagem : Window
         UImage charSelector;
         UImage charSelector2;
         private int i = 0;
+        public GameWin game;
+        
     public SelPersonagem(Page root) : base(root,800,640)
         {
             ImagePath[0] = "Src/Images/Menu/Selecao_Personagem/Homem-Branco-Face.png";
@@ -46,7 +49,6 @@ public class SelPersonagem : Window
             UButton ready = new UButton("", new Vector2(52, 90), new Vector2(188, 49), Ready);
 
 
-
             Add(title);
             Add(border);
             Add(charSelector);
@@ -56,7 +58,6 @@ public class SelPersonagem : Window
             Add(rightSelector);
             Add(leftSelector);
             Add(ready);
-
 
             man.setBackground("Src/Images/Menu/Selecao_Personagem/Homem.png",Stretch.Uniform);
             man.setOnHover("Src/Images/Menu/Selecao_Personagem/Homem_Selecionado.png");
@@ -72,17 +73,29 @@ public class SelPersonagem : Window
             ready.setOnHover("Src/Images/Menu/Selecao_Personagem/Pronto_Selecionado.png");
 
         
-            UText text = new UText("HELLO WORLD", new Vector2(50, 50), new Vector2(350, 150));
-            text.fontSize = 50;
-          
-          
-       
     }
 
-   
+
+
     private void Ready(object sender)
     {
-        //window.SetCurrent();
+        switch (i)
+        {
+            case 0:
+                game.PlayerImageFolder = "Homem-Branco";
+                break;
+            case 1:
+                game.PlayerImageFolder = "Homem-Negro";
+                break;
+            case 2:
+                game.PlayerImageFolder = "Mulher-Branco";
+                break;
+            case 3:
+                game.PlayerImageFolder = "Mulher-Negro";
+                break;
+        }
+        
+        game?.SetCurrent();
     }
 
     private void LeftSelector(object sender)

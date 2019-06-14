@@ -17,13 +17,12 @@ namespace _3ReaisEngine.UI
     public class UPanel : UIEntidade, IUIStack
     {
         Rectangle rect = new Rectangle();
-
         public List<UIEntidade> childs = new List<UIEntidade>();
 
 
         public void start()
         {
-            rect.Fill = new SolidColorBrush(Colors.White) ;
+            rect.Fill = new SolidColorBrush(Colors.White);
             rect.HorizontalAlignment = HorizontalAlignment.Left;
             rect.VerticalAlignment = VerticalAlignment.Top;
             rect.ManipulationDelta += rect_ManipulationDelta;
@@ -73,6 +72,13 @@ namespace _3ReaisEngine.UI
         public void Content(Color cor)
         {
             rect.Fill = new SolidColorBrush(cor);
+        }
+
+        public void SetBackGround(string path)
+        {
+            ImageBrush im = new ImageBrush();
+            im.ImageSource = new BitmapImage(new Uri("ms-appx:" + path)); ;
+            rect.Fill = im; 
         }
 
         public void addChild(UIEntidade child)

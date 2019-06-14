@@ -31,7 +31,7 @@ namespace _3ReaisEngine.UI
 
         
         public string Nome;
-        public Vector2 position;
+        public Vector2 position = new Vector2(50,50);
         public Vector2 size {
             get { return new Vector2((float)frameworkElement.Width,(float)frameworkElement.Height); }
             set { frameworkElement.Width = value.x; frameworkElement.Height = value.y; }
@@ -42,8 +42,6 @@ namespace _3ReaisEngine.UI
         public TranslateTransform transform { get { return (TranslateTransform)element.RenderTransform; }
             protected set { element.RenderTransform = value; } }
         public AnchorType anchor = AnchorType.Proporcional;
-
-   
 
         public virtual void Resize(float x, float y) {
             
@@ -126,6 +124,7 @@ namespace _3ReaisEngine.UI
         }
         public UButton(object Content, Vector2 position, Execute Action = null)
         {
+            Start();
             btn.Content = Content;
             btn.Width = 100;
             btn.Height = 50;
@@ -133,7 +132,7 @@ namespace _3ReaisEngine.UI
             transform.Y = position.y;
             base.position = position;
             this.Action = Action;
-            Start();
+            this.size = new Vector2(100, 50);
         }
 
         private void btn_ManipulationDelta(object sender, ManipulationDeltaRoutedEventArgs e)

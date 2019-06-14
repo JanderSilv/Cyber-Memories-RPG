@@ -18,7 +18,7 @@ namespace _3ReaisEngine.Components
     {
        
         Dictionary<string, BitmapImage> animations = new Dictionary<string, BitmapImage>();
-
+        Render render;
         /// <summary>
         /// Adiciona um gif na lista de animaçoes
         /// </summary>
@@ -62,7 +62,7 @@ namespace _3ReaisEngine.Components
         /// <param name="Nome"> Nome da animação a ser reproduzida</param>
         public void Play(string Nome)
         {
-            Render render = entidade.GetComponente<Render>();
+            if(render==null) render = entidade.GetComponente<Render>();
             if (animations.ContainsKey(Nome))
             {
                 render.img.Source = animations[Nome];

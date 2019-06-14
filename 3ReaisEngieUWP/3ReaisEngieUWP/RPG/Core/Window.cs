@@ -121,6 +121,10 @@ namespace _3ReaisEngine.RPG.Core
             Windows.UI.Xaml.Window.Current.CoreWindow.Activate();
         }
 
+        public virtual void OnActive()
+        {
+
+        }
         public void UpdateWindow()
         {
             foreach (UIEntidade element in uiElements)
@@ -151,6 +155,7 @@ namespace _3ReaisEngine.RPG.Core
 
         public void SetCurrent()
         {
+            OnActive();
             root.Content = game_layer;
             AmbienteJogo.window = this;
         }

@@ -58,6 +58,22 @@ Src\Images\Menu\Botões\Voltar.png
 Src\Images\Menu\Botões\Voltar_Selecionado.png
 Src\Images\Menu\Botões\Volume.png
 Src\Images\Menu\Botões\Volume_Selecionado.png
+Src\Images\Menu\Inventário\Arma_Texto.png
+Src\Images\Menu\Inventário\Armadura.png
+Src\Images\Menu\Inventário\Armadura_Selecionado.png
+Src\Images\Menu\Inventário\Armadura_Texto.png
+Src\Images\Menu\Inventário\Armas.png
+Src\Images\Menu\Inventário\Armas_Selecionados.png
+Src\Images\Menu\Inventário\Atributos.png
+Src\Images\Menu\Inventário\Atributos_Selecionado.png
+Src\Images\Menu\Inventário\Atributos_Texto.png
+Src\Images\Menu\Inventário\Contorno.png
+Src\Images\Menu\Inventário\Contorno_Inventario.png
+Src\Images\Menu\Inventário\Inventário.png
+Src\Images\Menu\Inventário\Inventário_1.png
+Src\Images\Menu\Inventário\Moeda.png
+Src\Images\Menu\Inventário\Personagem.png
+Src\Images\Menu\Inventário\Slot.png
 Src\Images\Menu\Logo.png
 Src\Images\Menu\Logo2.png
 Src\Images\Menu\Selecao_Personagem\Contorno.png
@@ -80,6 +96,24 @@ Src\Images\Menu\Selecao_Personagem\Seta Direita Selecionado.png
 Src\Images\Menu\Selecao_Personagem\Seta Direita.png
 Src\Images\Menu\Selecao_Personagem\Seta Esquerda Selecionado.png
 Src\Images\Menu\Selecao_Personagem\Seta Esquerda.png
+Src\Images\Players\Homem-Branco\Sprites\Lab_Direita.gif
+Src\Images\Players\Homem-Branco\Sprites\Lab_Esquerda.gif
+Src\Images\Players\Homem-Branco\Sprites\Lab_Frente.gif
+Src\Images\Players\Homem-Branco\Sprites\Lab_Fundo.gif
+Src\Images\Players\Homem-Negro\Sprites\Lab_Direita.gif
+Src\Images\Players\Homem-Negro\Sprites\Lab_Esquerda.gif
+Src\Images\Players\Homem-Negro\Sprites\Lab_Frente.gif
+Src\Images\Players\Homem-Negro\Sprites\Lab_Fundi.gif
+Src\Images\Players\Homem-Negro-Combate.gif
+Src\Images\Players\Mulher-Branca-Combate.gif
+Src\Images\Players\Mulher-Branco\Sprites\Lab_Direita.gif
+Src\Images\Players\Mulher-Branco\Sprites\Lab_Esquerda.gif
+Src\Images\Players\Mulher-Branco\Sprites\Lab_Frente.gif
+Src\Images\Players\Mulher-Branco\Sprites\Lab_Fundo.gif
+Src\Images\Players\Mulher-Negro\Sprites\Direita.gif
+Src\Images\Players\Mulher-Negro\Sprites\Esquerda.gif
+Src\Images\Players\Mulher-Negro\Sprites\Frente.gif
+Src\Images\Players\Mulher-Negro\Sprites\Fundo.gif
 Src\JunglerockAlpha.png
 Src\Maps\Laborátorio\Laborátorio.txt
 Src\Maps\Laborátorio\Laboratório.xml
