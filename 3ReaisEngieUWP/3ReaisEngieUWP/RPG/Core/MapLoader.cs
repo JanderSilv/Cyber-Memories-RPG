@@ -11,59 +11,70 @@ using System.Xml;
 
 namespace _3ReaisEngine.Core
 {
-   
+
     public static class MapLoader
     {
-        public static List<Entidade> LoadMap(string path,Dictionary<int,Type> dic)
+        public static List<Entidade> LoadMap(string path, Dictionary<int, Type> dic)
         {
             List<Entidade> list = new List<Entidade>();
-            //bacon
-            XmlDocument doc = new XmlDocument();
-            doc.Load(path);
-            int tileWidht = 64, tileHeight = 64,layerWidht,layerHeihgt;
-            int[,] matt;
-            string[] arr;
-
-            foreach (XmlNode node in doc.ChildNodes)
+            try
             {
-                if(node.Name == "map")
+
+                //bacon
+                XmlDocument doc = new XmlDocument();
+                doc.Load(path);
+                Engine.Print("Doc not Null");
+                int tileWidht = 64, tileHeight = 64, layerWidht, layerHeihgt;
+
+                string[] arr;
+
+                foreach (XmlNode node in doc.ChildNodes)
                 {
-                    // tileHeight = int.Parse(node.Attributes["tileheight"].InnerText);
-                    // tileWidht  = int.Parse(node.Attributes["tilewidht"].InnerText);
 
-                    foreach (XmlNode node2 in node.ChildNodes)
+                    if (node.Name == "map")
                     {
+                        tileHeight = 52;
+                        tileWidht = 52;
 
-                        if (node2.Name == "layer")
+                        foreach (XmlNode node2 in node.ChildNodes)
                         {
-                            layerWidht = int.Parse(node2.Attributes["width"].InnerText);
-                            layerHeihgt = int.Parse(node2.Attributes["height"].InnerText);
 
-                         
-                            arr = node2.InnerText.Split(',');
-
-                            int i = 0;
-                            for (int x = layerWidht; x > 0; x--)
+                            if (node2.Name == "layer")
                             {
+                                layerWidht = 16;
+                                layerHeihgt = 9;
+
+
+                                arr = node2.InnerText.Split(',');
+
+                                int i = 0;
                                 for (int y = 0; y < layerHeihgt; y++)
                                 {
-                                    int id = int.Parse(arr[i]); 
-                                  
-                                    if (dic.ContainsKey(id))
+                                    for (int x = 0; x < layerWidht; x++)
                                     {
-                                         list.Add((Entidade)Activator.CreateInstance(dic[id],new object[] {new Vector2(x*tileWidht,y*tileHeight)}));
+                                        int id = int.Parse(arr[i]);
+                                       
+                                        if (dic.ContainsKey(id))
+                                        {
+                                          
+                                            list.Add((Entidade)Activator.CreateInstance(dic[id], new object[] { new Vector2(x * tileWidht*0.925f, y * tileHeight*0.925f) }));
+                                        }
+                                        i++;
                                     }
-                                    i++;
                                 }
+
+
+
                             }
 
 
-
                         }
-
-
                     }
-                }  
+                }
+            }
+            catch (Exception e)
+            {
+                Engine.Debug(e);
             }
 
             return list;

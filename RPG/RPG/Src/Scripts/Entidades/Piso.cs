@@ -1,4 +1,5 @@
-﻿using _3ReaisEngine.Components;
+﻿using _3ReaisEngine.Attributes;
+using _3ReaisEngine.Components;
 using _3ReaisEngine.Core;
 using System;
 using System.Collections.Generic;
@@ -9,7 +10,6 @@ using System.Threading.Tasks;
 namespace RPG.Src.Scripts.Entidades
 {
     [RequerComponente(typeof(Render))]
-
     class Piso: Entidade
     {
         public Piso(Vector2 pos)

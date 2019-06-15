@@ -20,14 +20,14 @@ public class SelPersonagem : Window
         UImage charSelector;
         UImage charSelector2;
         private int i = 0;
-        public GameWin game;
+        public Laboratorio game;
         
     public SelPersonagem(Page root) : base(root,800,640)
         {
-            ImagePath[0] = "Src/Images/Menu/Selecao_Personagem/Homem-Branco-Face.png";
-            ImagePath[1] = "Src/Images/Menu/Selecao_Personagem/Homem-Negro-Face.png";
-            ImagePath[2] = "Src/Images/Menu/Selecao_Personagem/Mulher-Branco-Face.png";
-            ImagePath[3] = "Src/Images/Menu/Selecao_Personagem/Mulher-Negro-Face.png";
+            ImagePath[0] = "Src/Images/Players/Homem Branco/Face.png";
+            ImagePath[1] = "Src/Images/Players/Homem Negro/Face.png";
+            ImagePath[2] = "Src/Images/Players/Mulher Branco/Face.png";
+            ImagePath[3] = "Src/Images/Players/Mulher Negro/Face.png";
 
             ImagePath2[0] = "Src/Images/Menu/Selecao_Personagem/Homem-Branco-Combate.png";
             ImagePath2[1] = "Src/Images/Menu/Selecao_Personagem/Homem-Negro-Combate.png";
@@ -82,19 +82,19 @@ public class SelPersonagem : Window
         switch (i)
         {
             case 0:
-                game.PlayerImageFolder = "Homem-Branco";
+                game.PlayerSkin = "Homem Branco";
                 break;
             case 1:
-                game.PlayerImageFolder = "Homem-Negro";
+                game.PlayerSkin = "Homem Negro";
                 break;
             case 2:
-                game.PlayerImageFolder = "Mulher-Branco";
+                game.PlayerSkin = "Mulher Branco";
                 break;
             case 3:
-                game.PlayerImageFolder = "Mulher-Negro";
+                game.PlayerSkin = "Mulher Negro";
                 break;
         }
-        
+
         game?.SetCurrent();
     }
 

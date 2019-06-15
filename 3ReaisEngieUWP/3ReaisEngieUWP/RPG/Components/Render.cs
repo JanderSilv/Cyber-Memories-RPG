@@ -43,8 +43,8 @@ namespace _3ReaisEngine.Components
             img.PointerPressed += Img_PointerPressed;
             img.PointerReleased += Img_PointerReleased;
             source.Play();
-            img.Width = 100;
-            img.Height = 100;
+            //img.Width = 100;
+            //img.Height = 100;
             img.RenderTransform = transform;
         }
         /// <summary>
@@ -80,8 +80,8 @@ namespace _3ReaisEngine.Components
             img.PointerPressed += Img_PointerPressed;
             img.PointerReleased += Img_PointerReleased;
             source.Play();
-            img.Width = 100;
-            img.Height = 100;
+           // img.Width = 100;
+           // img.Height = 100;
             img.RenderTransform = transform;
         }
         /// <summary>
@@ -100,8 +100,8 @@ namespace _3ReaisEngine.Components
             img.PointerPressed += Img_PointerPressed;
             img.PointerReleased += Img_PointerReleased;
             source.Play();
-            img.Width = 100;
-            img.Height = 100;
+           // img.Width = 100;
+           // img.Height = 100;
             img.RenderTransform = transform;
             transform.X = x;
             transform.Y = y;

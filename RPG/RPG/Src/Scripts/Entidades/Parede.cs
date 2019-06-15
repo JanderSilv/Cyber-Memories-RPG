@@ -1,4 +1,5 @@
-﻿using _3ReaisEngine.Components;
+﻿using _3ReaisEngine.Attributes;
+using _3ReaisEngine.Components;
 using _3ReaisEngine.Core;
 using System;
 using System.Collections.Generic;
@@ -12,8 +13,15 @@ namespace RPG.Src.Scripts.Entidades
 
     class Parede: Entidade
     {
+        private Colisao col;
+
         public Parede(Vector2 pos)
         {
+            col = AddComponente<Colisao>();
+            col.tamanho.x = 52;
+            col.tamanho.y = 52;
+            col.relativePos.y -=20;
+            col.tipo = TipoColisao.Estatica;
             EntPos = pos;
             Render r = GetComponente<Render>();
             r.LoadImage("Src/Images/Laboratório/Lab_Parede.png");

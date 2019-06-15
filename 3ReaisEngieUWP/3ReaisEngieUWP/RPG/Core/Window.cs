@@ -194,6 +194,41 @@ namespace _3ReaisEngine.RPG.Core
             }
         }
 
+        public void Add(List<Entidade> elements)
+        {
+            foreach (Entidade element in elements)
+            {
+
+                entidades.Add(element);
+                element.ID = EntidadeCount;
+                EntidadeCount++;
+
+                Colisao c = null;
+                Render r = null;
+                Body b = null;
+                MalhaColisao mc = null;
+                //element.EntPos.x += Widht / 4;
+                //element.EntPos.y += Height / 4;
+                if (element.GetComponente(ref mc))
+                {
+                    colisores.AddRange(mc.colisoes);
+                }
+                if (element.GetComponente(ref c))
+                {
+                    colisores.Add(c);
+                }
+                if (element.GetComponente(ref r))
+                {
+                    renders.Add(r);
+                    Add(r.img);
+                }
+                if (element.GetComponente(ref b))
+                {
+                    bodies.Add(b);
+                }
+            }
+        }
+
         public void Add(Entidade[] elements)
         {
             foreach (Entidade element in elements)
@@ -366,7 +401,9 @@ namespace _3ReaisEngine.RPG.Core
 
         private void Game_KeyDown(CoreWindow sender, KeyEventArgs e)
         {
+            
             TecladoEvento te = new TecladoEvento { Tecla = (int)e.VirtualKey, Repeticoes = e.KeyStatus.RepeatCount, Modificador = (byte)ModificadorList.KeyDown };
+           
             AmbienteJogo.EnviarEvento(te);
 
         }

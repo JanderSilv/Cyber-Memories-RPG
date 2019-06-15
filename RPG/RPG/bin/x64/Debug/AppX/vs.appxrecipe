@@ -19,7 +19,7 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>EBD2124AC85248E2F449C47FD39B4B76EDC9A3AAE680C633462054853F55DB11</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>33B46518A5F719C8E9AA50DA07A507674A471A5F5200C171F5BB59F860AA6302</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>2d5fb77a-6e92-49d7-b9e3-84e29a9f9a60_1.0.0.0_x64__df0wr8x2vnj7j</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>2d5fb77a-6e92-49d7-b9e3-84e29a9f9a60_df0wr8x2vnj7j!App</RegisteredUserModeAppID>
     <RegisteredPackageID>2d5fb77a-6e92-49d7-b9e3-84e29a9f9a60</RegisteredPackageID>
@@ -30,13 +30,13 @@
     <AppXManifest Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-06-13T19:02:02.367</Modified>
+      <Modified>2019-06-15T05:40:45.578</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Debug\RPG.exe">
       <PackagePath>entrypoint\RPG.exe</PackagePath>
-      <Modified>2019-06-13T19:02:01.709</Modified>
+      <Modified>2019-06-15T05:40:44.943</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ruann\.nuget\packages\newtonsoft.json\12.0.2\lib\netstandard2.0\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
@@ -48,7 +48,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\RPG-LP2\3ReaisEngieUWP\3ReaisEngieUWP\bin\x64\Debug\3ReaisEngieUWP.dll">
       <PackagePath>3ReaisEngieUWP.dll</PackagePath>
-      <Modified>2019-06-13T18:54:22.605</Modified>
+      <Modified>2019-06-15T05:22:20.531</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.17763.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
@@ -106,8 +106,8 @@
       <PackagePath>Src\Images\Laboratório\Lab_0008_Planta.png</PackagePath>
       <Modified>2019-05-19T18:26:01.815</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab_0009_Maq.-de-TP.png">
-      <PackagePath>Src\Images\Laboratório\Lab_0009_Maq.-de-TP.png</PackagePath>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab_0009_Maq-de-TP.png">
+      <PackagePath>Src\Images\Laboratório\Lab_0009_Maq-de-TP.png</PackagePath>
       <Modified>2019-05-19T18:26:01.815</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab_Ar-Condicionado.png">
@@ -130,25 +130,29 @@
       <PackagePath>Src\Images\Laboratório\Lab_Parede.png</PackagePath>
       <Modified>2019-05-19T18:26:01.819</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab__0000_Cadeira-Esq.png">
-      <PackagePath>Src\Images\Laboratório\Lab__0000_Cadeira-Esq.png</PackagePath>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab_0000_Cadeira-Esq.png">
+      <PackagePath>Src\Images\Laboratório\Lab_0000_Cadeira-Esq.png</PackagePath>
       <Modified>2019-05-19T18:26:01.819</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab__0001_Cadeira-Costa.png">
-      <PackagePath>Src\Images\Laboratório\Lab__0001_Cadeira-Costa.png</PackagePath>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab_0001_Cadeira-Costa.png">
+      <PackagePath>Src\Images\Laboratório\Lab_0001_Cadeira-Costa.png</PackagePath>
       <Modified>2019-05-19T18:26:01.820</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab__0002_TP.png">
-      <PackagePath>Src\Images\Laboratório\Lab__0002_TP.png</PackagePath>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab_0002_TP.png">
+      <PackagePath>Src\Images\Laboratório\Lab_0002_TP.png</PackagePath>
       <Modified>2019-05-19T18:26:01.821</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab__0003_Monitores.png">
-      <PackagePath>Src\Images\Laboratório\Lab__0003_Monitores.png</PackagePath>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab_0003_Monitores.png">
+      <PackagePath>Src\Images\Laboratório\Lab_0003_Monitores.png</PackagePath>
       <Modified>2019-05-19T18:26:01.822</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab__0004_Piso.png">
-      <PackagePath>Src\Images\Laboratório\Lab__0004_Piso.png</PackagePath>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Lab_0004_Piso.png">
+      <PackagePath>Src\Images\Laboratório\Lab_0004_Piso.png</PackagePath>
       <Modified>2019-05-19T18:26:01.822</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Porta.png">
+      <PackagePath>Src\Images\Laboratório\Porta.png</PackagePath>
+      <Modified>2019-06-14T17:49:41.250</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Menu\Botões\Configurações.png">
       <PackagePath>Src\Images\Menu\Botões\Configurações.png</PackagePath>
@@ -205,6 +209,10 @@
     <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Menu\Botões\Volume_Selecionado.png">
       <PackagePath>Src\Images\Menu\Botões\Volume_Selecionado.png</PackagePath>
       <Modified>2019-05-19T13:34:21.053</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Menu\Chat.png">
+      <PackagePath>Src\Images\Menu\Chat.png</PackagePath>
+      <Modified>2019-06-14T23:45:23.468</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Menu\Inventário\Armadura.png">
       <PackagePath>Src\Images\Menu\Inventário\Armadura.png</PackagePath>
@@ -282,16 +290,16 @@
       <PackagePath>Src\Images\Menu\Selecao_Personagem\Homem-Branco-Combate.png</PackagePath>
       <Modified>2019-06-09T22:42:37.989</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Menu\Selecao_Personagem\Homem-Branco-Face.png">
-      <PackagePath>Src\Images\Menu\Selecao_Personagem\Homem-Branco-Face.png</PackagePath>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Homem Branco\Face.png">
+      <PackagePath>Src\Images\Players\Homem Branco\Face.png</PackagePath>
       <Modified>2019-06-12T00:16:09.444</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Menu\Selecao_Personagem\Homem-Negro-Face.png">
-      <PackagePath>Src\Images\Menu\Selecao_Personagem\Homem-Negro-Face.png</PackagePath>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Homem Negro\Face.png">
+      <PackagePath>Src\Images\Players\Homem Negro\Face.png</PackagePath>
       <Modified>2019-06-12T00:16:09.446</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Menu\Selecao_Personagem\Mulher-Branco-Face.png">
-      <PackagePath>Src\Images\Menu\Selecao_Personagem\Mulher-Branco-Face.png</PackagePath>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Mulher Branco\Face.png">
+      <PackagePath>Src\Images\Players\Mulher Branco\Face.png</PackagePath>
       <Modified>2019-06-12T00:16:09.448</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Menu\Selecao_Personagem\Mulher-Negro-Combate.png">
@@ -326,8 +334,8 @@
       <PackagePath>Src\Images\Menu\Selecao_Personagem\Mulher Selecionado.png</PackagePath>
       <Modified>2019-06-09T22:42:38.087</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Menu\Selecao_Personagem\Mulher-Negro-Face.png">
-      <PackagePath>Src\Images\Menu\Selecao_Personagem\Mulher-Negro-Face.png</PackagePath>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Mulher Negro\Face.png">
+      <PackagePath>Src\Images\Players\Mulher Negro\Face.png</PackagePath>
       <Modified>2019-06-12T00:16:09.450</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Menu\Selecao_Personagem\Mulher.png">
@@ -358,6 +366,166 @@
       <PackagePath>Src\Images\Menu\Selecao_Personagem\Seta Esquerda.png</PackagePath>
       <Modified>2019-06-09T22:42:38.352</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Homem Branco\Dano.png">
+      <PackagePath>Src\Images\Players\Homem Branco\Dano.png</PackagePath>
+      <Modified>2019-06-14T16:51:13.751</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Homem Branco\Deitado.png">
+      <PackagePath>Src\Images\Players\Homem Branco\Deitado.png</PackagePath>
+      <Modified>2019-06-14T16:51:13.752</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Homem Branco\Direita_Parado.png">
+      <PackagePath>Src\Images\Players\Homem Branco\Direita_Parado.png</PackagePath>
+      <Modified>2019-06-14T16:51:13.753</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Homem Branco\Esquerda_Parado.png">
+      <PackagePath>Src\Images\Players\Homem Branco\Esquerda_Parado.png</PackagePath>
+      <Modified>2019-06-14T16:51:13.754</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Homem Branco\Frente_Parado.png">
+      <PackagePath>Src\Images\Players\Homem Branco\Frente_Parado.png</PackagePath>
+      <Modified>2019-06-14T16:51:13.755</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Homem Branco\Fundo_Parado.png">
+      <PackagePath>Src\Images\Players\Homem Branco\Fundo_Parado.png</PackagePath>
+      <Modified>2019-06-14T16:51:13.760</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Homem Branco\Lab\Direita_Parado.png">
+      <PackagePath>Src\Images\Players\Homem Branco\Lab\Direita_Parado.png</PackagePath>
+      <Modified>2019-06-14T16:51:13.761</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Homem Branco\Lab\Esquerda_Parado.png">
+      <PackagePath>Src\Images\Players\Homem Branco\Lab\Esquerda_Parado.png</PackagePath>
+      <Modified>2019-06-14T16:51:13.762</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Homem Branco\Lab\Frente_Parado.png">
+      <PackagePath>Src\Images\Players\Homem Branco\Lab\Frente_Parado.png</PackagePath>
+      <Modified>2019-06-14T16:51:13.762</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Homem Branco\Lab\Fundo_Parado.png">
+      <PackagePath>Src\Images\Players\Homem Branco\Lab\Fundo_Parado.png</PackagePath>
+      <Modified>2019-06-14T16:51:13.763</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Homem Negro\Dano.png">
+      <PackagePath>Src\Images\Players\Homem Negro\Dano.png</PackagePath>
+      <Modified>2019-06-14T16:51:13.772</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Homem Negro\Deitado.png">
+      <PackagePath>Src\Images\Players\Homem Negro\Deitado.png</PackagePath>
+      <Modified>2019-06-14T16:51:13.773</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Homem Negro\Direita_Parado.png">
+      <PackagePath>Src\Images\Players\Homem Negro\Direita_Parado.png</PackagePath>
+      <Modified>2019-06-14T16:51:13.773</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Homem Negro\Esquerda_Parado.png">
+      <PackagePath>Src\Images\Players\Homem Negro\Esquerda_Parado.png</PackagePath>
+      <Modified>2019-06-14T16:51:13.774</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Homem Negro\Frente_Parado.png">
+      <PackagePath>Src\Images\Players\Homem Negro\Frente_Parado.png</PackagePath>
+      <Modified>2019-06-14T16:51:13.775</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Homem Negro\Fundo_Parado.png">
+      <PackagePath>Src\Images\Players\Homem Negro\Fundo_Parado.png</PackagePath>
+      <Modified>2019-06-14T16:51:13.776</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Homem Negro\Lab\Direita_Parado.png">
+      <PackagePath>Src\Images\Players\Homem Negro\Lab\Direita_Parado.png</PackagePath>
+      <Modified>2019-06-14T16:51:13.781</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Homem Negro\Lab\Esquerda_Parado.png">
+      <PackagePath>Src\Images\Players\Homem Negro\Lab\Esquerda_Parado.png</PackagePath>
+      <Modified>2019-06-14T16:51:13.782</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Homem Negro\Lab\Frente_Parado.png">
+      <PackagePath>Src\Images\Players\Homem Negro\Lab\Frente_Parado.png</PackagePath>
+      <Modified>2019-06-14T16:51:13.782</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Homem Negro\Lab\Fundo_Parado.png">
+      <PackagePath>Src\Images\Players\Homem Negro\Lab\Fundo_Parado.png</PackagePath>
+      <Modified>2019-06-14T16:51:13.783</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Mulher Branco\Dano.png">
+      <PackagePath>Src\Images\Players\Mulher Branco\Dano.png</PackagePath>
+      <Modified>2019-06-14T16:51:13.788</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Mulher Branco\Deitado.png">
+      <PackagePath>Src\Images\Players\Mulher Branco\Deitado.png</PackagePath>
+      <Modified>2019-06-14T16:51:13.788</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Mulher Branco\Direita_Parado.png">
+      <PackagePath>Src\Images\Players\Mulher Branco\Direita_Parado.png</PackagePath>
+      <Modified>2019-06-14T16:51:13.789</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Mulher Branco\Esquerda_Parado.png">
+      <PackagePath>Src\Images\Players\Mulher Branco\Esquerda_Parado.png</PackagePath>
+      <Modified>2019-06-14T16:51:13.790</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Mulher Branco\Frente_Parado.png">
+      <PackagePath>Src\Images\Players\Mulher Branco\Frente_Parado.png</PackagePath>
+      <Modified>2019-06-14T16:51:13.790</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Mulher Branco\Fundo_Parado.png">
+      <PackagePath>Src\Images\Players\Mulher Branco\Fundo_Parado.png</PackagePath>
+      <Modified>2019-06-14T16:51:13.791</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Mulher Branco\Lab\Direita_Parado.png">
+      <PackagePath>Src\Images\Players\Mulher Branco\Lab\Direita_Parado.png</PackagePath>
+      <Modified>2019-06-14T16:51:13.796</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Mulher Branco\Lab\Esquerda_Parado.png">
+      <PackagePath>Src\Images\Players\Mulher Branco\Lab\Esquerda_Parado.png</PackagePath>
+      <Modified>2019-06-14T16:51:13.797</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Mulher Branco\Lab\Frente_Parado.png">
+      <PackagePath>Src\Images\Players\Mulher Branco\Lab\Frente_Parado.png</PackagePath>
+      <Modified>2019-06-14T16:51:13.798</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Mulher Branco\Lab\Fundo_Parado.png">
+      <PackagePath>Src\Images\Players\Mulher Branco\Lab\Fundo_Parado.png</PackagePath>
+      <Modified>2019-06-14T16:51:13.798</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Mulher Negro\Dano.png">
+      <PackagePath>Src\Images\Players\Mulher Negro\Dano.png</PackagePath>
+      <Modified>2019-06-14T16:51:13.803</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Mulher Negro\Deitado.png">
+      <PackagePath>Src\Images\Players\Mulher Negro\Deitado.png</PackagePath>
+      <Modified>2019-06-14T16:51:13.803</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Mulher Negro\Direita_Parado.png">
+      <PackagePath>Src\Images\Players\Mulher Negro\Direita_Parado.png</PackagePath>
+      <Modified>2019-06-14T16:51:13.804</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Mulher Negro\Esquerda__Parado.png">
+      <PackagePath>Src\Images\Players\Mulher Negro\Esquerda__Parado.png</PackagePath>
+      <Modified>2019-06-14T16:51:13.805</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Mulher Negro\Frente_Parado.png">
+      <PackagePath>Src\Images\Players\Mulher Negro\Frente_Parado.png</PackagePath>
+      <Modified>2019-06-14T16:51:13.806</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Mulher Negro\Fundo_Parado.png">
+      <PackagePath>Src\Images\Players\Mulher Negro\Fundo_Parado.png</PackagePath>
+      <Modified>2019-06-14T16:51:13.807</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Mulher Negro\Lab\Direita_Parado.png">
+      <PackagePath>Src\Images\Players\Mulher Negro\Lab\Direita_Parado.png</PackagePath>
+      <Modified>2019-06-14T16:51:13.811</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Mulher Negro\Lab\Esquerda_Parado.png">
+      <PackagePath>Src\Images\Players\Mulher Negro\Lab\Esquerda_Parado.png</PackagePath>
+      <Modified>2019-06-14T16:51:13.812</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Mulher Negro\Lab\Frente_Parado.png">
+      <PackagePath>Src\Images\Players\Mulher Negro\Lab\Frente_Parado.png</PackagePath>
+      <Modified>2019-06-14T16:51:13.813</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Mulher Negro\Lab\Fundo_Parado.png">
+      <PackagePath>Src\Images\Players\Mulher Negro\Lab\Fundo_Parado.png</PackagePath>
+      <Modified>2019-06-14T16:51:13.813</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Opera-04.png">
       <PackagePath>Src\Opera-04.png</PackagePath>
       <Modified>2019-04-26T19:00:23.471</Modified>
@@ -368,32 +536,26 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2019-03-24T20:37:01.091</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2019-03-24T20:37:01.093</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2019-03-24T20:37:01.095</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2019-03-24T20:37:01.098</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2019-03-24T20:37:01.100</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2019-03-24T20:37:01.102</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Animations\Dead.png">
@@ -404,77 +566,149 @@
       <PackagePath>Src\JunglerockAlpha.png</PackagePath>
       <Modified>2019-04-09T14:39:46.443</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Homem-Branco\Sprites\Lab_Direita.gif">
-      <PackagePath>Src\Images\Players\Homem-Branco\Sprites\Lab_Direita.gif</PackagePath>
-      <Modified>2019-06-13T18:11:27.581</Modified>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Homem Branco\anim\Combate.gif">
+      <PackagePath>Src\Images\Players\Homem Branco\anim\Combate.gif</PackagePath>
+      <Modified>2019-06-14T16:51:13.767</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Homem-Branco\Sprites\Lab_Esquerda.gif">
-      <PackagePath>Src\Images\Players\Homem-Branco\Sprites\Lab_Esquerda.gif</PackagePath>
-      <Modified>2019-06-13T18:11:27.629</Modified>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Homem Branco\anim\Direita.gif">
+      <PackagePath>Src\Images\Players\Homem Branco\anim\Direita.gif</PackagePath>
+      <Modified>2019-06-14T16:51:13.768</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Homem-Branco\Sprites\Lab_Frente.gif">
-      <PackagePath>Src\Images\Players\Homem-Branco\Sprites\Lab_Frente.gif</PackagePath>
-      <Modified>2019-06-13T18:11:27.630</Modified>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Homem Branco\anim\Esquerda.gif">
+      <PackagePath>Src\Images\Players\Homem Branco\anim\Esquerda.gif</PackagePath>
+      <Modified>2019-06-14T16:51:13.769</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Homem-Branco\Sprites\Lab_Fundo.gif">
-      <PackagePath>Src\Images\Players\Homem-Branco\Sprites\Lab_Fundo.gif</PackagePath>
-      <Modified>2019-06-13T18:11:27.632</Modified>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Homem Branco\anim\Frente.gif">
+      <PackagePath>Src\Images\Players\Homem Branco\anim\Frente.gif</PackagePath>
+      <Modified>2019-06-14T16:51:13.770</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Homem-Negro-Combate.gif">
-      <PackagePath>Src\Images\Players\Homem-Negro-Combate.gif</PackagePath>
-      <Modified>2019-06-13T15:13:37.043</Modified>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Homem Branco\anim\Fundo.gif">
+      <PackagePath>Src\Images\Players\Homem Branco\anim\Fundo.gif</PackagePath>
+      <Modified>2019-06-14T16:51:13.771</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Homem-Negro\Sprites\Lab_Direita.gif">
-      <PackagePath>Src\Images\Players\Homem-Negro\Sprites\Lab_Direita.gif</PackagePath>
-      <Modified>2019-06-13T18:11:27.636</Modified>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Homem Branco\Lab\anim\Lab_Direita.gif">
+      <PackagePath>Src\Images\Players\Homem Branco\Lab\anim\Lab_Direita.gif</PackagePath>
+      <Modified>2019-06-14T16:51:13.764</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Homem-Negro\Sprites\Lab_Esquerda.gif">
-      <PackagePath>Src\Images\Players\Homem-Negro\Sprites\Lab_Esquerda.gif</PackagePath>
-      <Modified>2019-06-13T18:11:27.637</Modified>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Homem Branco\Lab\anim\Lab_Esquerda.gif">
+      <PackagePath>Src\Images\Players\Homem Branco\Lab\anim\Lab_Esquerda.gif</PackagePath>
+      <Modified>2019-06-14T16:51:13.765</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Homem-Negro\Sprites\Lab_Frente.gif">
-      <PackagePath>Src\Images\Players\Homem-Negro\Sprites\Lab_Frente.gif</PackagePath>
-      <Modified>2019-06-13T18:11:27.714</Modified>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Homem Branco\Lab\anim\Lab_Frente.gif">
+      <PackagePath>Src\Images\Players\Homem Branco\Lab\anim\Lab_Frente.gif</PackagePath>
+      <Modified>2019-06-14T16:51:13.766</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Homem-Negro\Sprites\Lab_Fundi.gif">
-      <PackagePath>Src\Images\Players\Homem-Negro\Sprites\Lab_Fundi.gif</PackagePath>
-      <Modified>2019-06-13T18:11:27.716</Modified>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Homem Branco\Lab\anim\Lab_Fundo.gif">
+      <PackagePath>Src\Images\Players\Homem Branco\Lab\anim\Lab_Fundo.gif</PackagePath>
+      <Modified>2019-06-14T16:51:13.766</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Mulher-Branca-Combate.gif">
-      <PackagePath>Src\Images\Players\Mulher-Branca-Combate.gif</PackagePath>
-      <Modified>2019-06-13T15:13:37.085</Modified>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Homem Negro\anim\Combate.gif">
+      <PackagePath>Src\Images\Players\Homem Negro\anim\Combate.gif</PackagePath>
+      <Modified>2019-06-14T16:51:13.777</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Mulher-Branco\Sprites\Lab_Direita.gif">
-      <PackagePath>Src\Images\Players\Mulher-Branco\Sprites\Lab_Direita.gif</PackagePath>
-      <Modified>2019-06-13T18:11:27.720</Modified>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Homem Negro\anim\Direita.gif">
+      <PackagePath>Src\Images\Players\Homem Negro\anim\Direita.gif</PackagePath>
+      <Modified>2019-06-14T16:51:13.778</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Mulher-Branco\Sprites\Lab_Esquerda.gif">
-      <PackagePath>Src\Images\Players\Mulher-Branco\Sprites\Lab_Esquerda.gif</PackagePath>
-      <Modified>2019-06-13T18:11:27.722</Modified>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Homem Negro\anim\Esquerda.gif">
+      <PackagePath>Src\Images\Players\Homem Negro\anim\Esquerda.gif</PackagePath>
+      <Modified>2019-06-14T16:51:13.778</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Mulher-Branco\Sprites\Lab_Frente.gif">
-      <PackagePath>Src\Images\Players\Mulher-Branco\Sprites\Lab_Frente.gif</PackagePath>
-      <Modified>2019-06-13T18:11:27.723</Modified>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Homem Negro\anim\Frente.gif">
+      <PackagePath>Src\Images\Players\Homem Negro\anim\Frente.gif</PackagePath>
+      <Modified>2019-06-14T16:51:13.779</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Mulher-Branco\Sprites\Lab_Fundo.gif">
-      <PackagePath>Src\Images\Players\Mulher-Branco\Sprites\Lab_Fundo.gif</PackagePath>
-      <Modified>2019-06-13T18:11:27.738</Modified>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Homem Negro\anim\Fundo.gif">
+      <PackagePath>Src\Images\Players\Homem Negro\anim\Fundo.gif</PackagePath>
+      <Modified>2019-06-14T16:51:13.780</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Mulher-Negro\Sprites\Direita.gif">
-      <PackagePath>Src\Images\Players\Mulher-Negro\Sprites\Direita.gif</PackagePath>
-      <Modified>2019-06-13T18:11:27.752</Modified>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Homem Negro\Lab\anim\Lab_Direita.gif">
+      <PackagePath>Src\Images\Players\Homem Negro\Lab\anim\Lab_Direita.gif</PackagePath>
+      <Modified>2019-06-14T16:51:13.784</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Mulher-Negro\Sprites\Esquerda.gif">
-      <PackagePath>Src\Images\Players\Mulher-Negro\Sprites\Esquerda.gif</PackagePath>
-      <Modified>2019-06-13T18:11:27.767</Modified>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Homem Negro\Lab\anim\Lab_Esquerda.gif">
+      <PackagePath>Src\Images\Players\Homem Negro\Lab\anim\Lab_Esquerda.gif</PackagePath>
+      <Modified>2019-06-14T16:51:13.785</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Mulher-Negro\Sprites\Frente.gif">
-      <PackagePath>Src\Images\Players\Mulher-Negro\Sprites\Frente.gif</PackagePath>
-      <Modified>2019-06-13T18:11:27.769</Modified>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Homem Negro\Lab\anim\Lab_Frente.gif">
+      <PackagePath>Src\Images\Players\Homem Negro\Lab\anim\Lab_Frente.gif</PackagePath>
+      <Modified>2019-06-14T16:51:13.786</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Mulher-Negro\Sprites\Fundo.gif">
-      <PackagePath>Src\Images\Players\Mulher-Negro\Sprites\Fundo.gif</PackagePath>
-      <Modified>2019-06-13T18:11:27.770</Modified>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Homem Negro\Lab\anim\Lab_Fundo.gif">
+      <PackagePath>Src\Images\Players\Homem Negro\Lab\anim\Lab_Fundo.gif</PackagePath>
+      <Modified>2019-06-14T16:51:13.787</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Mulher Branco\anim\Combate.gif">
+      <PackagePath>Src\Images\Players\Mulher Branco\anim\Combate.gif</PackagePath>
+      <Modified>2019-06-14T16:51:13.792</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Mulher Branco\anim\Direita.gif">
+      <PackagePath>Src\Images\Players\Mulher Branco\anim\Direita.gif</PackagePath>
+      <Modified>2019-06-14T16:51:13.793</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Mulher Branco\anim\Esquerda.gif">
+      <PackagePath>Src\Images\Players\Mulher Branco\anim\Esquerda.gif</PackagePath>
+      <Modified>2019-06-14T16:51:13.794</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Mulher Branco\anim\Frente.gif">
+      <PackagePath>Src\Images\Players\Mulher Branco\anim\Frente.gif</PackagePath>
+      <Modified>2019-06-14T16:51:13.795</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Mulher Branco\anim\Fundo.gif">
+      <PackagePath>Src\Images\Players\Mulher Branco\anim\Fundo.gif</PackagePath>
+      <Modified>2019-06-14T16:51:13.795</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Mulher Branco\Lab\anim\Lab_Direita.gif">
+      <PackagePath>Src\Images\Players\Mulher Branco\Lab\anim\Lab_Direita.gif</PackagePath>
+      <Modified>2019-06-14T16:51:13.799</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Mulher Branco\Lab\anim\Lab_Esquerda.gif">
+      <PackagePath>Src\Images\Players\Mulher Branco\Lab\anim\Lab_Esquerda.gif</PackagePath>
+      <Modified>2019-06-14T16:51:13.800</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Mulher Branco\Lab\anim\Lab_Frente.gif">
+      <PackagePath>Src\Images\Players\Mulher Branco\Lab\anim\Lab_Frente.gif</PackagePath>
+      <Modified>2019-06-14T16:51:13.801</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Mulher Branco\Lab\anim\Lab_Fundo.gif">
+      <PackagePath>Src\Images\Players\Mulher Branco\Lab\anim\Lab_Fundo.gif</PackagePath>
+      <Modified>2019-06-14T16:51:13.802</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Mulher Negro\anim\Combate.gif">
+      <PackagePath>Src\Images\Players\Mulher Negro\anim\Combate.gif</PackagePath>
+      <Modified>2019-06-14T16:51:13.807</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Mulher Negro\anim\Direita.gif">
+      <PackagePath>Src\Images\Players\Mulher Negro\anim\Direita.gif</PackagePath>
+      <Modified>2019-06-14T16:51:13.808</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Mulher Negro\anim\Esquerda.gif">
+      <PackagePath>Src\Images\Players\Mulher Negro\anim\Esquerda.gif</PackagePath>
+      <Modified>2019-06-14T16:51:13.809</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Mulher Negro\anim\Frente.gif">
+      <PackagePath>Src\Images\Players\Mulher Negro\anim\Frente.gif</PackagePath>
+      <Modified>2019-06-14T16:51:13.810</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Mulher Negro\anim\Fundo.gif">
+      <PackagePath>Src\Images\Players\Mulher Negro\anim\Fundo.gif</PackagePath>
+      <Modified>2019-06-14T16:51:13.810</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Mulher Negro\Lab\anim\Direita.gif">
+      <PackagePath>Src\Images\Players\Mulher Negro\Lab\anim\Direita.gif</PackagePath>
+      <Modified>2019-06-14T16:51:13.814</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Mulher Negro\Lab\anim\Esquerda.gif">
+      <PackagePath>Src\Images\Players\Mulher Negro\Lab\anim\Esquerda.gif</PackagePath>
+      <Modified>2019-06-14T16:51:13.815</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Mulher Negro\Lab\anim\Frente.gif">
+      <PackagePath>Src\Images\Players\Mulher Negro\Lab\anim\Frente.gif</PackagePath>
+      <Modified>2019-06-14T16:51:13.816</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Mulher Negro\Lab\anim\Fundo.gif">
+      <PackagePath>Src\Images\Players\Mulher Negro\Lab\anim\Fundo.gif</PackagePath>
+      <Modified>2019-06-14T16:51:13.817</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Animations\dead.gif">
       <PackagePath>Src\Animations\dead.gif</PackagePath>
@@ -496,9 +730,9 @@
       <PackagePath>Src\dance.gif</PackagePath>
       <Modified>2019-04-09T14:39:46.476</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Maps\Laborátorio\Laboratório.xml">
-      <PackagePath>Src\Maps\Laborátorio\Laboratório.xml</PackagePath>
-      <Modified>2019-05-28T12:57:42.233</Modified>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Maps\Laboratorio\Laboratório.xml">
+      <PackagePath>Src\Maps\Laboratorio\Laboratório.xml</PackagePath>
+      <Modified>2019-06-14T21:39:31.687</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Maps\map.xml">
       <PackagePath>Src\Maps\map.xml</PackagePath>
@@ -508,9 +742,9 @@
       <PackagePath>Properties\Default.rd.xml</PackagePath>
       <Modified>2019-03-24T20:37:01.145</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Maps\Laborátorio\Laborátorio.txt">
-      <PackagePath>Src\Maps\Laborátorio\Laborátorio.txt</PackagePath>
-      <Modified>2019-05-19T18:26:01.824</Modified>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Maps\Laboratorio\Laborátorio.txt">
+      <PackagePath>Src\Maps\Laboratorio\Laborátorio.txt</PackagePath>
+      <Modified>2019-06-14T18:18:08.228</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Audio\beep.mp3">
       <PackagePath>Src\Audio\beep.mp3</PackagePath>
@@ -530,15 +764,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2019-06-13T19:02:01.512</Modified>
+      <Modified>2019-06-15T05:40:44.723</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2019-06-13T19:02:01.512</Modified>
+      <Modified>2019-06-15T05:40:44.724</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Debug\Src\ButtonStyle.xbf">
       <PackagePath>Src\ButtonStyle.xbf</PackagePath>
-      <Modified>2019-06-13T19:02:01.511</Modified>
+      <Modified>2019-06-15T05:40:44.723</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.17763.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -546,11 +780,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2019-06-13T18:40:54.357</Modified>
+      <Modified>2019-06-15T03:52:11.968</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Debug\Core\RPG.exe">
       <PackagePath>RPG.exe</PackagePath>
-      <Modified>2019-06-13T19:02:02.363</Modified>
+      <Modified>2019-06-15T05:40:45.575</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

@@ -37,7 +37,7 @@ namespace _3ReaisEngine.Components
         /// <summary>
         /// Posição total da caixa de colisao, ou seja sua posição relavita mais a posição da entidade
         /// </summary>
-        public Vector2 Position { get { return entidade.EntPos + relativePos; } }
+        public Vector2 Position { get { return new Vector2(entidade.EntPos.x + relativePos.x, entidade.EntPos.y + relativePos.y); } private set { } }
 
         public TipoColisao tipo = TipoColisao.Estatica;
 
@@ -56,12 +56,12 @@ namespace _3ReaisEngine.Components
           
             momentoDeColisao = new Vector4();
             tamanho = new Vector2(85, 85);
-            relativePos = Vector2.Zero;
+            relativePos = new Vector2(0,0);
         }      
         public Colisao(Vector2 size)
         {
             momentoDeColisao = new Vector4();
-            relativePos = Vector2.Zero;
+            relativePos = new Vector2(0, 0);
             tamanho = size;
         }
         public Colisao(Vector2 size,Vector2 relativePos)

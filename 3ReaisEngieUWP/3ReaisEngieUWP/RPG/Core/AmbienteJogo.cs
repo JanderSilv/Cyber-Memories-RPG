@@ -61,6 +61,7 @@ namespace _3ReaisEngine
             {
                 try
                 {
+                    
                     if (window == null)
                     {
                         Engine.Print("Window is missing");

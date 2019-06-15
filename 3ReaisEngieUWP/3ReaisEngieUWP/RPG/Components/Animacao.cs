@@ -27,9 +27,14 @@ namespace _3ReaisEngine.Components
         public void AddAnimation(string Nome,string animPath)
         {
             BitmapImage source = new BitmapImage(new Uri("ms-appx:"+animPath));
-            if (!animations.ContainsKey(Nome) && source != null)
+            if (source == null) return;
+            if (!animations.ContainsKey(Nome) )
             {
                 animations.Add(Nome, source);
+            }
+            else 
+            {
+                animations[Nome] = source;
             }
         }
         /// <summary>

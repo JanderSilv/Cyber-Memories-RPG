@@ -10,16 +10,75 @@ using System.Threading.Tasks;
 public class Player:Entidade
 {
     public Animacao anim;
+    public bool Lab = true;
     Body body;
     Render render;
+    Colisao col;
+    public string skin = "Homem Negro";
+
+    InventarioPopUp inventoryUI;
+    bool inventoryOpen = false;
+    public static Player currentPlayer;
+   
+  
+
     public Player()
     {
+        currentPlayer = this;
         anim = AddComponente<Animacao>();
         body = AddComponente<Body>();
+        col = GetComponente<Colisao>();
         render = GetComponente<Render>();
+        inventoryUI = new InventarioPopUp();
+       
+
+        col.tamanho.x = 50;
+        col.tamanho.y = 20;
+        col.tipo = TipoColisao.Dinamica;
+
         render.img.Width = 50;
         render.img.Height = 50;
+
+        LoadSkin(skin);
+       
     }
+
+    public void LoadSkin(string skinFolder)
+    {
+        skin = skinFolder;
+        if (Lab)
+        {
+            anim.AddAnimation("Move_Left", "Src/Images/Players/" + skin  + "/Lab/anim/Lab_Esquerda.gif");
+            anim.AddAnimation("Move_Right", "Src/Images/Players/" + skin + "/Lab/anim/Lab_Direita.gif");
+            anim.AddAnimation("Move_Down", "Src/Images/Players/" + skin +  "/Lab/anim/Lab_Frente.gif");
+            anim.AddAnimation("Move_Up", "Src/Images/Players/" + skin +    "/Lab/anim/Lab_Fundo.gif");
+
+            anim.AddAnimation("Stop_Left", "Src/Images/Players/" + skin  + "/Lab/Esquerda_Parado.png");
+            anim.AddAnimation("Stop_Right", "Src/Images/Players/" + skin + "/Lab/Direita_Parado.png");
+            anim.AddAnimation("Stop_Up", "Src/Images/Players/" + skin +    "/Lab/Fundo_Parado.png");
+            anim.AddAnimation("Stop_Down", "Src/Images/Players/" + skin +  "/Lab/Frente_Parado.png");
+        }
+        else
+        {
+            anim.AddAnimation("Move_Left", "Src/Images/Players/" + skin + "/anim/Esquerda.gif");
+            anim.AddAnimation("Move_Right", "Src/Images/Players/" + skin + "/anim/Direita.gif");
+            anim.AddAnimation("Move_Down", "Src/Images/Players/" + skin + "/anim/Frente.gif");
+            anim.AddAnimation("Move_Up", "Src/Images/Players/" + skin + "/anim/Fundo.gif");
+
+            anim.AddAnimation("Stop_Left", "Src/Images/Players/" + skin + "/Esquerda_Parado.png");
+            anim.AddAnimation("Stop_Right", "Src/Images/Players/" + skin + "/Direita_Parado.png");
+            anim.AddAnimation("Stop_Up", "Src/Images/Players/" + skin + "/Fundo_Parado.png");
+            anim.AddAnimation("Stop_Down", "Src/Images/Players/" + skin + "/Frente_Parado.png");
+
+            anim.AddAnimation("Hit", "Src/Images/Players/" + skin + "/Dano.png");
+            anim.AddAnimation("Lying", "Src/Images/Players/" + skin + "/Deitado.png");
+            anim.AddAnimation("Fight", "Src/Images/Players/" + skin + "/anim/Combate.gif");
+        }
+
+        anim.Play("Stop_Down");
+
+    }
+  
 
     public override void Update()
     {
@@ -42,6 +101,36 @@ public class Player:Entidade
         {
             body.velocity.x = 5;
             anim.Play("Move_Right");
+        }
+        if (AmbienteJogo.Input.TeclaPressionada(Windows.System.VirtualKey.E))
+        {
+            if (inventoryOpen)
+            {
+                inventoryUI.HideInventory();
+                inventoryOpen = false;
+            }
+            else
+            {
+                inventoryUI.ShowInventory();
+                inventoryOpen = true;
+            }
+        }
+
+        if (AmbienteJogo.Input.TeclaSolta(Windows.System.VirtualKey.W))
+        {
+            anim.Play("Stop_Up");
+        }
+        if (AmbienteJogo.Input.TeclaSolta(Windows.System.VirtualKey.A))
+        {
+            anim.Play("Stop_Left");
+        }
+        if (AmbienteJogo.Input.TeclaSolta(Windows.System.VirtualKey.S))
+        {
+            anim.Play("Stop_Down");
+        }
+        if (AmbienteJogo.Input.TeclaSolta(Windows.System.VirtualKey.D))
+        {
+            anim.Play("Stop_Right");
         }
     }
 }
