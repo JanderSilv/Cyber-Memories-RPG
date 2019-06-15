@@ -22,6 +22,7 @@ namespace _3ReaisEngine.Components
         /// Classe Image fornecida pelo UWP
         /// </summary>
         public Image img { get; private set; }
+        public int Layer = 0;
         /// <summary>
         /// Tamanho da imagem
         /// </summary>

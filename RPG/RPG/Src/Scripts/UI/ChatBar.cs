@@ -40,8 +40,9 @@ public static class ChatBar
         static UImage Image = new UImage("Src/Images/Players/Homem Negro/Face.png",new Vector2(85,45),new Vector2(120,120));
         static UText Text = new UText("",new Vector2(37,60),new Vector2(500,170));
         static bool alreadyOpen;
-        static bool exit = false; 
-      
+        static bool exit = false;
+        static bool next = false;
+     
         public static void Init()
         {
         chat.SetBackGround("Src/Images/Menu/Chat.png");
@@ -55,20 +56,19 @@ public static class ChatBar
         }
 
         private static void weakup() {
-        if (!alreadyOpen)
-        {
-            exit = false;
+
+            exit = true;
             AmbienteJogo.RegistrarEventoCallBack(PrioridadeEvento.Interface, UpdateTeclado);
             AmbienteJogo.window.Add(chat);
             chat.position.y = 108;
             chat.size.x = AmbienteJogo.window.Widht;
             Anim();
             alreadyOpen = true;
+            exit = false;
         }
-    }
         public static void ShowChat(string image,string txt)
         {
-
+            if (alreadyOpen) return;
             weakup();
             Image.Content = image;
             Text.content = txt;
@@ -78,29 +78,31 @@ public static class ChatBar
 
         public static async void ShowChat(Chat c)
         {
-
+        if (alreadyOpen) return;
         weakup();
 
         foreach (var m in c.messages)
         {
+            next = false;
             if (exit) return;
             if (m.who == Chat.who.receiver) Image.Content = c.ReceiverImage;
             else Image.Content = c.SenderImage;          
             Text.content = m.message;
-            await Task.Delay(2000);
-           
+
+             await Task.Run(() => { while (!next && !exit) ; }); 
         }
         c.done = true;
         HideChat();
       
-    }
+        }
 
+      
         public static bool UpdateTeclado(TecladoEvento e)
         {
             if(e.Tecla == (int)VirtualKey.Enter)
             {
-           
-           
+
+            next = true;
             }
             if (e.Tecla == (int)VirtualKey.Escape)
             {
@@ -112,7 +114,7 @@ public static class ChatBar
 
         async static Task Anim()
         {
-        for (int i = 0; i < 10; i++)
+        for (int i = 0; i < 17; i++)
         {
             chat.position.y -=1.0f;
             await Task.Delay(10);

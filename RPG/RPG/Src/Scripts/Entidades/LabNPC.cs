@@ -67,12 +67,7 @@ namespace RPG.Src.Scripts.Entidades
 
         public override void Update()
         {
-            if(chat.done)
-            {
-                Engine.Wait(30);
-                movel.MoveTo(new Vector2(400, 185), 4.2f);
-               
-            }
+           
         }
         public override void OnClick(MouseEvento e)
         {

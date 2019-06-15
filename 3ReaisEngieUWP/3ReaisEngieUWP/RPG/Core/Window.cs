@@ -35,6 +35,7 @@ namespace _3ReaisEngine.RPG.Core
         private Panel ui_layer;
         private Vector2 lastSize;
         private ulong EntidadeCount = 1;
+
         public float Widht { set { game_layer.Width = value; } get { return (float)game_layer.Width; } }
         public float Height { set { game_layer.Height = value; } get { return (float)game_layer.Height; } }
 
@@ -46,9 +47,10 @@ namespace _3ReaisEngine.RPG.Core
             coreWindow = CoreWindow.GetForCurrentThread();
             coreWindow.Activate();
 
-            Canvas canv = new Canvas();
+            Canvas canv = new Canvas();         
             Canvas ui = new Canvas();
-            
+            Canvas.SetZIndex(canv, 0);
+            Canvas.SetZIndex(ui, 10000);
             this.root = root;
             
             canv.Width = 840;
@@ -94,7 +96,8 @@ namespace _3ReaisEngine.RPG.Core
             coreWindow = CoreWindow.GetForCurrentThread();
             Canvas canv = new Canvas();
             Canvas ui = new Canvas();
-
+            Canvas.SetZIndex(canv, 0);
+            Canvas.SetZIndex(ui, 10000);
             this.root = root;
 
             canv.Width = Widht;
@@ -144,13 +147,16 @@ namespace _3ReaisEngine.RPG.Core
             {
                 if (entidades[i] != null && !entidades[i].IsStatic) entidades[i].Update();
             }
-
+          
             for (int i = 0; i < renders.Count; i++)
             {
                 if (renders[i] == null) continue;
                 renders[i].transform.X = renders[i].entidade.EntPos.x - AmbienteJogo.currentCamera.drawOffset.x;
                 renders[i].transform.Y = renders[i].entidade.EntPos.y - AmbienteJogo.currentCamera.drawOffset.y;
+                int l = renders[i].Layer * 1000 + (int)renders[i].entidade.EntPos.y;
+                Canvas.SetZIndex(renders[i].img,l);
             }
+          
         }
 
         public void SetCurrent()
@@ -186,7 +192,7 @@ namespace _3ReaisEngine.RPG.Core
             if (element.GetComponente(ref r))
             {
                 renders.Add(r);
-                Add(r.img);
+                game_layer.Children.Add(r.img);
             }
             if (element.GetComponente(ref b))
             {
@@ -220,7 +226,7 @@ namespace _3ReaisEngine.RPG.Core
                 if (element.GetComponente(ref r))
                 {
                     renders.Add(r);
-                    Add(r.img);
+                    game_layer.Children.Add(r.img);
                 }
                 if (element.GetComponente(ref b))
                 {
@@ -242,8 +248,7 @@ namespace _3ReaisEngine.RPG.Core
                 Render r = null;
                 Body b = null;
                 MalhaColisao mc = null;
-                //element.EntPos.x += Widht / 4;
-                //element.EntPos.y += Height / 4;
+              
                 if (element.GetComponente(ref mc))
                 {
                     colisores.AddRange(mc.colisoes);
@@ -255,7 +260,7 @@ namespace _3ReaisEngine.RPG.Core
                 if (element.GetComponente(ref r))
                 {
                     renders.Add(r);
-                    Add(r.img);
+                    game_layer.Children.Add(r.img);
                 }
                 if (element.GetComponente(ref b))
                 {
@@ -264,10 +269,7 @@ namespace _3ReaisEngine.RPG.Core
             }
         }
 
-        public void Add(UIElement element)
-        {
-            game_layer.Children.Add(element);
-        }
+        
 
         public void Add(UIEntidade element,bool UILayer = true)
         {
@@ -280,6 +282,7 @@ namespace _3ReaisEngine.RPG.Core
             }
             else
             {
+                Canvas.SetZIndex(element.element, 100000 + ui_layer.Children.Count);
                 ui_layer.Children.Add(element.element);
                 uiElements.Add(element);
             }

@@ -16,6 +16,7 @@ namespace RPG.Src.Scripts.Entidades
         {
            EntPos = pos;
            Render r = GetComponente<Render>();
+            r.Layer = -1;
             r.LoadImage("Src/Images/Laboratório/Lab_0004_Piso.png"); 
         }
     }
