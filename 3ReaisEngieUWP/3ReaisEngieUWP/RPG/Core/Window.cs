@@ -132,11 +132,13 @@ namespace _3ReaisEngine.RPG.Core
         {
             foreach (UIEntidade element in uiElements)
             {
+                Canvas.SetZIndex(element.element, element.zIndex);
                 uptPos(element);
             }
 
             foreach (UIEntidade element in gameUIElements)
             {
+                Canvas.SetZIndex(element.element, element.zIndex);
                 uptPos(element);
                 TranslateTransform tt = ((TranslateTransform) element.element.RenderTransform);
                 tt.X -= AmbienteJogo.currentCamera.drawOffset.x;
@@ -277,20 +279,29 @@ namespace _3ReaisEngine.RPG.Core
 
             if (UILayer==false)
             {
-                game_layer.Children.Add(element.element);
-                gameUIElements.Add(element);
+                if (!game_layer.Children.Contains(element.element))
+                {
+                    game_layer.Children.Add(element.element);
+                    gameUIElements.Add(element);
+                }
+               
             }
             else
             {
-                Canvas.SetZIndex(element.element, 100000 + ui_layer.Children.Count);
-                ui_layer.Children.Add(element.element);
-                uiElements.Add(element);
+                if (!ui_layer.Children.Contains(element.element))
+                {
+                    Canvas.SetZIndex(element.element, 100000 + ui_layer.Children.Count);
+                    ui_layer.Children.Add(element.element);
+                    uiElements.Add(element);
+                }
             }
 
             uptPos(element);
 
             if (element is IUIStack)
             {
+                ((IUIStack)element).setUiLayerProp(UILayer);
+              
                 foreach (UIEntidade i in ((IUIStack)element).getChilds()) Add(i,UILayer);
             }
             
@@ -359,8 +370,7 @@ namespace _3ReaisEngine.RPG.Core
                 {
                    
                     Vector2 parentSi = parent.size;
-                  
-
+                    
                     element.transform.X = parent.transform.X;
                     element.transform.Y = parent.transform.Y;
 

@@ -11,15 +11,33 @@ MainPage.xbf
 RPG.xr.xml
 Src\ButtonStyle.xbf
 Properties\Default.rd.xml
-Src\Animations\dead.gif
-Src\Animations\Dead.png
-Src\Animations\idle.gif
-Src\Animations\jump.gif
-Src\Animations\walk.gif
 Src\Audio\beep.mp3
 Src\Audio\rain.mp3
 Src\Audio\serrote.wav
 Src\dance.gif
+Src\Images\Games\Combat\Animacoes\CorteFogo\CorteFogo.gif
+Src\Images\Games\Combat\Animacoes\CorteFogo\CorteFogo.m4a
+Src\Images\Games\Combat\Animacoes\CortesMultiplos\CortesMultiplos.gif
+Src\Images\Games\Combat\Animacoes\CortesMultiplos\CortesMultiplos.mp3
+Src\Images\Games\Combat\Animacoes\FlechaGelo\FlechaGelo.gif
+Src\Images\Games\Combat\Animacoes\FlechaGelo\FlechaGelo.mp3
+Src\Images\Games\Combat\Animacoes\Pancada\Pancada.gif
+Src\Images\Games\Combat\Animacoes\Pancada\Pancada.m4a
+Src\Images\Games\Combat\Animacoes\Raio\Raio.gif
+Src\Images\Games\Combat\Animacoes\Raio\Raio.m4a
+Src\Images\Games\Combat\BattleScenes\Grassland.png
+Src\Images\Games\Combat\BattleScenes\Lava2.png
+Src\Images\Games\Combat\BattleScenes\Meadow.png
+Src\Images\Games\Combat\BattleScenes\Road1.png
+Src\Images\Games\Combat\combat.png
+Src\Images\Games\Combat\Monsters\Slime.png
+Src\Images\Games\Combat\UI\Atacar.png
+Src\Images\Games\Combat\UI\ChatBox.png
+Src\Images\Games\Combat\UI\CombatBox.png
+Src\Images\Games\Combat\UI\Contorno.png
+Src\Images\Games\Combat\UI\Correr.png
+Src\Images\Games\Combat\UI\Habilidade.png
+Src\Images\Games\Combat\UI\Inventario.png
 Src\Images\Laboratório\Assets-Laborátorio_0001_Livros.png
 Src\Images\Laboratório\Assets-Laborátorio_0002_Papeis.png
 Src\Images\Laboratório\Assets-Laborátorio_0003_Mesa-Vertical.png
@@ -60,6 +78,7 @@ Src\Images\Menu\Botões\Voltar_Selecionado.png
 Src\Images\Menu\Botões\Volume.png
 Src\Images\Menu\Botões\Volume_Selecionado.png
 Src\Images\Menu\Chat.png
+Src\Images\Menu\ChatBox.png
 Src\Images\Menu\Inventário\Arma_Texto.png
 Src\Images\Menu\Inventário\Armadura.png
 Src\Images\Menu\Inventário\Armadura_Selecionado.png
@@ -174,6 +193,14 @@ Src\Images\Players\Mulher Negro\Lab\Direita_Parado.png
 Src\Images\Players\Mulher Negro\Lab\Esquerda_Parado.png
 Src\Images\Players\Mulher Negro\Lab\Frente_Parado.png
 Src\Images\Players\Mulher Negro\Lab\Fundo_Parado.png
+Src\Images\Windows_XP\Jogos XP\Cyber Memories Clicado.png
+Src\Images\Windows_XP\Jogos XP\Cyber Memories.png
+Src\Images\Windows_XP\Jogos XP\Joli Man Clicado.png
+Src\Images\Windows_XP\Jogos XP\Joli Man.png
+Src\Images\Windows_XP\Jogos XP\Lap_Bird_Clicado.png
+Src\Images\Windows_XP\Jogos XP\Lap_Bird_icon.png
+Src\Images\Windows_XP\Jogos XP\Lapa_Bird.png
+Src\Images\Windows_XP\Windows XP.png
 Src\JunglerockAlpha.png
 Src\Maps\Laboratorio\Laborátorio.txt
 Src\Maps\Laboratorio\Laboratório.xml

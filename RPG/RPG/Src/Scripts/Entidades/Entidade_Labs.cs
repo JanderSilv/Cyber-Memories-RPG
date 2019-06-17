@@ -3,6 +3,7 @@ using _3ReaisEngine.Attributes;
 using _3ReaisEngine.Components;
 using _3ReaisEngine.Core;
 using _3ReaisEngine.Events;
+using _3ReaisEngine.UI;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -259,16 +260,34 @@ namespace RPG.Src.Scripts.Entidades
     public class Notebook : Entidade
     {
         public float atu = 0;
+        private UButton btn_Use;
+        ScreenPC screenPC = new ScreenPC();
+        bool btn_ativo = false;
+
         public Notebook(Vector2 pos)
         {
             EntPos = pos;
+           
+
+           
             Render r = GetComponente<Render>();
             r.LoadImage("Src/Images/Laboratório/Lab_Notebook.png");
+             btn_Use = new UButton("", new Vector2(EntPos.x+50, EntPos.y-25), new Vector2(50, 25),startPC);
+            btn_Use.setBackground("Src/Images/Menu/Botões/Jogar_Selecionado.png");
+            btn_Use.anchor = AnchorType.Exact;
+        }
+
+        private void startPC(object sender)
+        {
+            screenPC.Show();
+            AmbienteJogo.window.Remove(btn_Use, false);
+            btn_ativo = false;
         }
 
         public override void Update()
         {
-            atu += 0.005f;
+            if(atu<100) atu += 0.2f;
+            screenPC.Update();
         }
 
         public override void OnClick(MouseEvento e)
@@ -276,7 +295,28 @@ namespace RPG.Src.Scripts.Entidades
            
             if (Engine.Distance(this.EntPos, Player.currentPlayer.EntPos) < 50)
             {
-                ChatBar.ShowChat("Src/Images/Laboratório/Lab_Notebook.png", "              BAIXANDO ATUALIZAÇÕES\n                                "+(int)atu+"%\n        NÃO DESLIGUE O COMPUTADOR");
+                if (atu < 100)
+                {
+                    ChatBar.ShowChat("Src/Images/Laboratório/Lab_Notebook.png", "              BAIXANDO ATUALIZAÇÕES\n                                " + (int)atu + "%\n        NÃO DESLIGUE O COMPUTADOR");
+                }
+                else
+                {
+                    try
+                    {
+                        if (!btn_ativo)
+                        {
+                            AmbienteJogo.window.Add(btn_Use, false);
+                            btn_ativo = true;
+                        }
+                        
+                    }
+                    catch(Exception ee)
+                    {
+                        Engine.Debug(ee);
+                    }
+                   
+                }
+               
             }
         }
     }

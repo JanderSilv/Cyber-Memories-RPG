@@ -27,7 +27,7 @@ namespace _3ReaisEngine.UI
     {
         public UIElement element;
         public FrameworkElement frameworkElement;
-
+        public int zIndex=0;
 
         
         public string Nome;
@@ -55,6 +55,10 @@ namespace _3ReaisEngine.UI
 
     public interface IUIStack
     {
+        void setUiLayerProp(bool val);
+        bool IsUiLayer();
+
+        void UpdateUI();
         void addChild(UIEntidade child);
         void removeChild(UIEntidade child);
         List<UIEntidade> getChilds();
@@ -92,6 +96,7 @@ namespace _3ReaisEngine.UI
             btn.PointerExited += btn_PointerExited;
             btn.Click += act;
             frameworkElement = (FrameworkElement)element;
+            parent = null;
 
         }
 

@@ -40,6 +40,189 @@
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.17763.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Games\Combat\Animacoes\CorteFogo\CorteFogo.gif">
+      <PackagePath>Src\Images\Games\Combat\Animacoes\CorteFogo\CorteFogo.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Games\Combat\Animacoes\CortesMultiplos\CortesMultiplos.gif">
+      <PackagePath>Src\Images\Games\Combat\Animacoes\CortesMultiplos\CortesMultiplos.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Games\Combat\Animacoes\FlechaGelo\FlechaGelo.gif">
+      <PackagePath>Src\Images\Games\Combat\Animacoes\FlechaGelo\FlechaGelo.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Games\Combat\Animacoes\Pancada\Pancada.gif">
+      <PackagePath>Src\Images\Games\Combat\Animacoes\Pancada\Pancada.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Games\Combat\Animacoes\Raio\Raio.gif">
+      <PackagePath>Src\Images\Games\Combat\Animacoes\Raio\Raio.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Homem Branco\anim\Combate.gif">
+      <PackagePath>Src\Images\Players\Homem Branco\anim\Combate.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Homem Branco\anim\Direita.gif">
+      <PackagePath>Src\Images\Players\Homem Branco\anim\Direita.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Homem Branco\anim\Esquerda.gif">
+      <PackagePath>Src\Images\Players\Homem Branco\anim\Esquerda.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Homem Branco\anim\Frente.gif">
+      <PackagePath>Src\Images\Players\Homem Branco\anim\Frente.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Homem Branco\anim\Fundo.gif">
+      <PackagePath>Src\Images\Players\Homem Branco\anim\Fundo.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Homem Branco\Lab\anim\Lab_Direita.gif">
+      <PackagePath>Src\Images\Players\Homem Branco\Lab\anim\Lab_Direita.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Homem Branco\Lab\anim\Lab_Esquerda.gif">
+      <PackagePath>Src\Images\Players\Homem Branco\Lab\anim\Lab_Esquerda.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Homem Branco\Lab\anim\Lab_Frente.gif">
+      <PackagePath>Src\Images\Players\Homem Branco\Lab\anim\Lab_Frente.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Homem Branco\Lab\anim\Lab_Fundo.gif">
+      <PackagePath>Src\Images\Players\Homem Branco\Lab\anim\Lab_Fundo.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Homem Negro\anim\Combate.gif">
+      <PackagePath>Src\Images\Players\Homem Negro\anim\Combate.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Homem Negro\anim\Direita.gif">
+      <PackagePath>Src\Images\Players\Homem Negro\anim\Direita.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Homem Negro\anim\Esquerda.gif">
+      <PackagePath>Src\Images\Players\Homem Negro\anim\Esquerda.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Homem Negro\anim\Frente.gif">
+      <PackagePath>Src\Images\Players\Homem Negro\anim\Frente.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Homem Negro\anim\Fundo.gif">
+      <PackagePath>Src\Images\Players\Homem Negro\anim\Fundo.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Homem Negro\Lab\anim\Lab_Direita.gif">
+      <PackagePath>Src\Images\Players\Homem Negro\Lab\anim\Lab_Direita.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Homem Negro\Lab\anim\Lab_Esquerda.gif">
+      <PackagePath>Src\Images\Players\Homem Negro\Lab\anim\Lab_Esquerda.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Homem Negro\Lab\anim\Lab_Frente.gif">
+      <PackagePath>Src\Images\Players\Homem Negro\Lab\anim\Lab_Frente.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Homem Negro\Lab\anim\Lab_Fundo.gif">
+      <PackagePath>Src\Images\Players\Homem Negro\Lab\anim\Lab_Fundo.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Mulher Branco\anim\Combate.gif">
+      <PackagePath>Src\Images\Players\Mulher Branco\anim\Combate.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Mulher Branco\anim\Direita.gif">
+      <PackagePath>Src\Images\Players\Mulher Branco\anim\Direita.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Mulher Branco\anim\Esquerda.gif">
+      <PackagePath>Src\Images\Players\Mulher Branco\anim\Esquerda.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Mulher Branco\anim\Frente.gif">
+      <PackagePath>Src\Images\Players\Mulher Branco\anim\Frente.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Mulher Branco\anim\Fundo.gif">
+      <PackagePath>Src\Images\Players\Mulher Branco\anim\Fundo.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Mulher Branco\Lab\anim\Lab_Direita.gif">
+      <PackagePath>Src\Images\Players\Mulher Branco\Lab\anim\Lab_Direita.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Mulher Branco\Lab\anim\Lab_Esquerda.gif">
+      <PackagePath>Src\Images\Players\Mulher Branco\Lab\anim\Lab_Esquerda.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Mulher Branco\Lab\anim\Lab_Frente.gif">
+      <PackagePath>Src\Images\Players\Mulher Branco\Lab\anim\Lab_Frente.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Mulher Branco\Lab\anim\Lab_Fundo.gif">
+      <PackagePath>Src\Images\Players\Mulher Branco\Lab\anim\Lab_Fundo.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Mulher Negro\anim\Combate.gif">
+      <PackagePath>Src\Images\Players\Mulher Negro\anim\Combate.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Mulher Negro\anim\Direita.gif">
+      <PackagePath>Src\Images\Players\Mulher Negro\anim\Direita.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Mulher Negro\anim\Esquerda.gif">
+      <PackagePath>Src\Images\Players\Mulher Negro\anim\Esquerda.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Mulher Negro\anim\Frente.gif">
+      <PackagePath>Src\Images\Players\Mulher Negro\anim\Frente.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Mulher Negro\anim\Fundo.gif">
+      <PackagePath>Src\Images\Players\Mulher Negro\anim\Fundo.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Mulher Negro\Lab\anim\Direita.gif">
+      <PackagePath>Src\Images\Players\Mulher Negro\Lab\anim\Direita.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Mulher Negro\Lab\anim\Esquerda.gif">
+      <PackagePath>Src\Images\Players\Mulher Negro\Lab\anim\Esquerda.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Mulher Negro\Lab\anim\Frente.gif">
+      <PackagePath>Src\Images\Players\Mulher Negro\Lab\anim\Frente.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Mulher Negro\Lab\anim\Fundo.gif">
+      <PackagePath>Src\Images\Players\Mulher Negro\Lab\anim\Fundo.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\dance.gif">
+      <PackagePath>Src\dance.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Games\Combat\Animacoes\CorteFogo\CorteFogo.m4a">
+      <PackagePath>Src\Images\Games\Combat\Animacoes\CorteFogo\CorteFogo.m4a</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Games\Combat\Animacoes\Pancada\Pancada.m4a">
+      <PackagePath>Src\Images\Games\Combat\Animacoes\Pancada\Pancada.m4a</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Games\Combat\Animacoes\Raio\Raio.m4a">
+      <PackagePath>Src\Images\Games\Combat\Animacoes\Raio\Raio.m4a</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Games\Combat\Animacoes\CortesMultiplos\CortesMultiplos.mp3">
+      <PackagePath>Src\Images\Games\Combat\Animacoes\CortesMultiplos\CortesMultiplos.mp3</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Games\Combat\Animacoes\FlechaGelo\FlechaGelo.mp3">
+      <PackagePath>Src\Images\Games\Combat\Animacoes\FlechaGelo\FlechaGelo.mp3</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Audio\beep.mp3">
+      <PackagePath>Src\Audio\beep.mp3</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Audio\rain.mp3">
+      <PackagePath>Src\Audio\rain.mp3</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Games\Combat\BattleScenes\Grassland.png">
+      <PackagePath>Src\Images\Games\Combat\BattleScenes\Grassland.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Games\Combat\BattleScenes\Lava2.png">
+      <PackagePath>Src\Images\Games\Combat\BattleScenes\Lava2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Games\Combat\BattleScenes\Meadow.png">
+      <PackagePath>Src\Images\Games\Combat\BattleScenes\Meadow.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Games\Combat\BattleScenes\Road1.png">
+      <PackagePath>Src\Images\Games\Combat\BattleScenes\Road1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Games\Combat\Monsters\Slime.png">
+      <PackagePath>Src\Images\Games\Combat\Monsters\Slime.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Games\Combat\UI\Atacar.png">
+      <PackagePath>Src\Images\Games\Combat\UI\Atacar.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Games\Combat\UI\ChatBox.png">
+      <PackagePath>Src\Images\Games\Combat\UI\ChatBox.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Games\Combat\UI\CombatBox.png">
+      <PackagePath>Src\Images\Games\Combat\UI\CombatBox.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Games\Combat\UI\Contorno.png">
+      <PackagePath>Src\Images\Games\Combat\UI\Contorno.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Games\Combat\UI\Correr.png">
+      <PackagePath>Src\Images\Games\Combat\UI\Correr.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Games\Combat\UI\Habilidade.png">
+      <PackagePath>Src\Images\Games\Combat\UI\Habilidade.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Games\Combat\UI\Inventario.png">
+      <PackagePath>Src\Images\Games\Combat\UI\Inventario.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Laboratório\Assets-Laborátorio_0001_Livros.png">
       <PackagePath>Src\Images\Laboratório\Assets-Laborátorio_0001_Livros.png</PackagePath>
     </AppxPackagedFile>
@@ -159,6 +342,12 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Menu\Chat.png">
       <PackagePath>Src\Images\Menu\Chat.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Menu\ChatBox.png">
+      <PackagePath>Src\Images\Menu\ChatBox.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Games\Combat\combat.png">
+      <PackagePath>Src\Images\Games\Combat\combat.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Menu\Inventário\Armadura.png">
       <PackagePath>Src\Images\Menu\Inventário\Armadura.png</PackagePath>
@@ -394,6 +583,30 @@
     <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Mulher Negro\Lab\Fundo_Parado.png">
       <PackagePath>Src\Images\Players\Mulher Negro\Lab\Fundo_Parado.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Windows_XP\Jogos XP\Cyber Memories Clicado.png">
+      <PackagePath>Src\Images\Windows_XP\Jogos XP\Cyber Memories Clicado.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Windows_XP\Jogos XP\Cyber Memories.png">
+      <PackagePath>Src\Images\Windows_XP\Jogos XP\Cyber Memories.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Windows_XP\Jogos XP\Joli Man Clicado.png">
+      <PackagePath>Src\Images\Windows_XP\Jogos XP\Joli Man Clicado.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Windows_XP\Jogos XP\Joli Man.png">
+      <PackagePath>Src\Images\Windows_XP\Jogos XP\Joli Man.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Windows_XP\Jogos XP\Lapa_Bird.png">
+      <PackagePath>Src\Images\Windows_XP\Jogos XP\Lapa_Bird.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Windows_XP\Jogos XP\Lap_Bird_icon.png">
+      <PackagePath>Src\Images\Windows_XP\Jogos XP\Lap_Bird_icon.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Windows_XP\Jogos XP\Lap_Bird_Clicado.png">
+      <PackagePath>Src\Images\Windows_XP\Jogos XP\Lap_Bird_Clicado.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Windows_XP\Windows XP.png">
+      <PackagePath>Src\Images\Windows_XP\Windows XP.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Opera-04.png">
       <PackagePath>Src\Opera-04.png</PackagePath>
     </AppxPackagedFile>
@@ -418,134 +631,8 @@
     <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Animations\Dead.png">
-      <PackagePath>Src\Animations\Dead.png</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\JunglerockAlpha.png">
       <PackagePath>Src\JunglerockAlpha.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Homem Branco\anim\Combate.gif">
-      <PackagePath>Src\Images\Players\Homem Branco\anim\Combate.gif</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Homem Branco\anim\Direita.gif">
-      <PackagePath>Src\Images\Players\Homem Branco\anim\Direita.gif</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Homem Branco\anim\Esquerda.gif">
-      <PackagePath>Src\Images\Players\Homem Branco\anim\Esquerda.gif</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Homem Branco\anim\Frente.gif">
-      <PackagePath>Src\Images\Players\Homem Branco\anim\Frente.gif</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Homem Branco\anim\Fundo.gif">
-      <PackagePath>Src\Images\Players\Homem Branco\anim\Fundo.gif</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Homem Branco\Lab\anim\Lab_Direita.gif">
-      <PackagePath>Src\Images\Players\Homem Branco\Lab\anim\Lab_Direita.gif</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Homem Branco\Lab\anim\Lab_Esquerda.gif">
-      <PackagePath>Src\Images\Players\Homem Branco\Lab\anim\Lab_Esquerda.gif</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Homem Branco\Lab\anim\Lab_Frente.gif">
-      <PackagePath>Src\Images\Players\Homem Branco\Lab\anim\Lab_Frente.gif</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Homem Branco\Lab\anim\Lab_Fundo.gif">
-      <PackagePath>Src\Images\Players\Homem Branco\Lab\anim\Lab_Fundo.gif</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Homem Negro\anim\Combate.gif">
-      <PackagePath>Src\Images\Players\Homem Negro\anim\Combate.gif</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Homem Negro\anim\Direita.gif">
-      <PackagePath>Src\Images\Players\Homem Negro\anim\Direita.gif</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Homem Negro\anim\Esquerda.gif">
-      <PackagePath>Src\Images\Players\Homem Negro\anim\Esquerda.gif</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Homem Negro\anim\Frente.gif">
-      <PackagePath>Src\Images\Players\Homem Negro\anim\Frente.gif</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Homem Negro\anim\Fundo.gif">
-      <PackagePath>Src\Images\Players\Homem Negro\anim\Fundo.gif</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Homem Negro\Lab\anim\Lab_Direita.gif">
-      <PackagePath>Src\Images\Players\Homem Negro\Lab\anim\Lab_Direita.gif</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Homem Negro\Lab\anim\Lab_Esquerda.gif">
-      <PackagePath>Src\Images\Players\Homem Negro\Lab\anim\Lab_Esquerda.gif</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Homem Negro\Lab\anim\Lab_Frente.gif">
-      <PackagePath>Src\Images\Players\Homem Negro\Lab\anim\Lab_Frente.gif</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Homem Negro\Lab\anim\Lab_Fundo.gif">
-      <PackagePath>Src\Images\Players\Homem Negro\Lab\anim\Lab_Fundo.gif</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Mulher Branco\anim\Combate.gif">
-      <PackagePath>Src\Images\Players\Mulher Branco\anim\Combate.gif</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Mulher Branco\anim\Direita.gif">
-      <PackagePath>Src\Images\Players\Mulher Branco\anim\Direita.gif</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Mulher Branco\anim\Esquerda.gif">
-      <PackagePath>Src\Images\Players\Mulher Branco\anim\Esquerda.gif</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Mulher Branco\anim\Frente.gif">
-      <PackagePath>Src\Images\Players\Mulher Branco\anim\Frente.gif</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Mulher Branco\anim\Fundo.gif">
-      <PackagePath>Src\Images\Players\Mulher Branco\anim\Fundo.gif</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Mulher Branco\Lab\anim\Lab_Direita.gif">
-      <PackagePath>Src\Images\Players\Mulher Branco\Lab\anim\Lab_Direita.gif</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Mulher Branco\Lab\anim\Lab_Esquerda.gif">
-      <PackagePath>Src\Images\Players\Mulher Branco\Lab\anim\Lab_Esquerda.gif</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Mulher Branco\Lab\anim\Lab_Frente.gif">
-      <PackagePath>Src\Images\Players\Mulher Branco\Lab\anim\Lab_Frente.gif</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Mulher Branco\Lab\anim\Lab_Fundo.gif">
-      <PackagePath>Src\Images\Players\Mulher Branco\Lab\anim\Lab_Fundo.gif</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Mulher Negro\anim\Combate.gif">
-      <PackagePath>Src\Images\Players\Mulher Negro\anim\Combate.gif</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Mulher Negro\anim\Direita.gif">
-      <PackagePath>Src\Images\Players\Mulher Negro\anim\Direita.gif</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Mulher Negro\anim\Esquerda.gif">
-      <PackagePath>Src\Images\Players\Mulher Negro\anim\Esquerda.gif</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Mulher Negro\anim\Frente.gif">
-      <PackagePath>Src\Images\Players\Mulher Negro\anim\Frente.gif</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Mulher Negro\anim\Fundo.gif">
-      <PackagePath>Src\Images\Players\Mulher Negro\anim\Fundo.gif</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Mulher Negro\Lab\anim\Direita.gif">
-      <PackagePath>Src\Images\Players\Mulher Negro\Lab\anim\Direita.gif</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Mulher Negro\Lab\anim\Esquerda.gif">
-      <PackagePath>Src\Images\Players\Mulher Negro\Lab\anim\Esquerda.gif</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Mulher Negro\Lab\anim\Frente.gif">
-      <PackagePath>Src\Images\Players\Mulher Negro\Lab\anim\Frente.gif</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Mulher Negro\Lab\anim\Fundo.gif">
-      <PackagePath>Src\Images\Players\Mulher Negro\Lab\anim\Fundo.gif</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Animations\dead.gif">
-      <PackagePath>Src\Animations\dead.gif</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Animations\idle.gif">
-      <PackagePath>Src\Animations\idle.gif</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Animations\jump.gif">
-      <PackagePath>Src\Animations\jump.gif</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Animations\walk.gif">
-      <PackagePath>Src\Animations\walk.gif</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\dance.gif">
-      <PackagePath>Src\dance.gif</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Maps\Laboratorio\Laboratório.xml">
       <PackagePath>Src\Maps\Laboratorio\Laboratório.xml</PackagePath>
@@ -558,12 +645,6 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Maps\Laboratorio\Laborátorio.txt">
       <PackagePath>Src\Maps\Laboratorio\Laborátorio.txt</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Audio\beep.mp3">
-      <PackagePath>Src\Audio\beep.mp3</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Audio\rain.mp3">
-      <PackagePath>Src\Audio\rain.mp3</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Audio\serrote.wav">
       <PackagePath>Src\Audio\serrote.wav</PackagePath>

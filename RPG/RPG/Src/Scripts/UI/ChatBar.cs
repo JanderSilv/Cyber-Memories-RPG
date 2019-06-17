@@ -45,7 +45,7 @@ public static class ChatBar
      
         public static void Init()
         {
-        chat.SetBackGround("Src/Images/Menu/Chat.png");
+        chat.SetBackGround("Src/Images/Menu/ChatBox.png");
         chat.addChild(Image);
         chat.addChild(Text);
         Text.horizontalAlignment = Windows.UI.Xaml.HorizontalAlignment.Left;
