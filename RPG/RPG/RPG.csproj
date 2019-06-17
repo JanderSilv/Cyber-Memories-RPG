@@ -148,6 +148,8 @@
     <Compile Include="Src\Scripts\Managers\InventarioManager.cs" />
     <Compile Include="Src\Scripts\Managers\ItemManager.cs" />
     <Compile Include="Src\Scripts\Componentes\QuestSystem.cs" />
+    <Compile Include="Src\Scripts\PC\Game.cs" />
+    <Compile Include="Src\Scripts\PC\Games\Combate.cs" />
     <Compile Include="Src\Scripts\Quests\ColidirComTronco.cs" />
     <Compile Include="Src\Scripts\Telas\GameWin.cs" />
     <Compile Include="Src\Scripts\Telas\Laboratorio.cs" />
@@ -155,14 +157,43 @@
     <Compile Include="Src\Scripts\Telas\SelPersonagem.cs" />
     <Compile Include="Src\Scripts\UI\ChatBar.cs" />
     <Compile Include="Src\Scripts\UI\Inventario.cs" />
+    <Compile Include="Src\Scripts\UI\Particle.cs" />
+    <Compile Include="Src\Scripts\UI\ScreenPC.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
     <None Include="RPG_TemporaryKey.pfx" />
+    <None Include="Src\Images\Games\Combat\Animacoes\CorteFogo\CorteFogo.psd" />
+    <None Include="Src\Images\Games\Combat\Animacoes\CortesMultiplos\CortesMultiplos.psd" />
+    <None Include="Src\Images\Games\Combat\Animacoes\FlechaGelo\FlechaGelo.psd" />
+    <None Include="Src\Images\Games\Combat\Animacoes\Pancada\Pancada.psd" />
+    <None Include="Src\Images\Games\Combat\Animacoes\Raio\Raio.psd" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Src\Images\Games\Combat\Animacoes\CorteFogo\CorteFogo.gif" />
+    <Content Include="Src\Images\Games\Combat\Animacoes\CorteFogo\CorteFogo.m4a" />
+    <Content Include="Src\Images\Games\Combat\Animacoes\CortesMultiplos\CortesMultiplos.gif" />
+    <Content Include="Src\Images\Games\Combat\Animacoes\CortesMultiplos\CortesMultiplos.mp3" />
+    <Content Include="Src\Images\Games\Combat\Animacoes\FlechaGelo\FlechaGelo.gif" />
+    <Content Include="Src\Images\Games\Combat\Animacoes\FlechaGelo\FlechaGelo.mp3" />
+    <Content Include="Src\Images\Games\Combat\Animacoes\Pancada\Pancada.gif" />
+    <Content Include="Src\Images\Games\Combat\Animacoes\Pancada\Pancada.m4a" />
+    <Content Include="Src\Images\Games\Combat\Animacoes\Raio\Raio.gif" />
+    <Content Include="Src\Images\Games\Combat\Animacoes\Raio\Raio.m4a" />
+    <Content Include="Src\Images\Games\Combat\BattleScenes\Grassland.png" />
+    <Content Include="Src\Images\Games\Combat\BattleScenes\Lava2.png" />
+    <Content Include="Src\Images\Games\Combat\BattleScenes\Meadow.png" />
+    <Content Include="Src\Images\Games\Combat\BattleScenes\Road1.png" />
+    <Content Include="Src\Images\Games\Combat\Monsters\Slime.png" />
+    <Content Include="Src\Images\Games\Combat\UI\Atacar.png" />
+    <Content Include="Src\Images\Games\Combat\UI\ChatBox.png" />
+    <Content Include="Src\Images\Games\Combat\UI\CombatBox.png" />
+    <Content Include="Src\Images\Games\Combat\UI\Contorno.png" />
+    <Content Include="Src\Images\Games\Combat\UI\Correr.png" />
+    <Content Include="Src\Images\Games\Combat\UI\Habilidade.png" />
+    <Content Include="Src\Images\Games\Combat\UI\Inventario.png" />
     <Content Include="Src\Images\Laboratório\Assets-Laborátorio_0001_Livros.png" />
     <Content Include="Src\Images\Laboratório\Assets-Laborátorio_0002_Papeis.png" />
     <Content Include="Src\Images\Laboratório\Assets-Laborátorio_0003_Mesa-Vertical.png" />
@@ -203,6 +234,8 @@
     <Content Include="Src\Images\Menu\Botões\Volume.png" />
     <Content Include="Src\Images\Menu\Botões\Volume_Selecionado.png" />
     <Content Include="Src\Images\Menu\Chat.png" />
+    <Content Include="Src\Images\Menu\ChatBox.png" />
+    <Content Include="Src\Images\Games\Combat\combat.png" />
     <Content Include="Src\Images\Menu\Inventário\Armadura.png" />
     <Content Include="Src\Images\Menu\Inventário\Armadura_Selecionado.png" />
     <Content Include="Src\Images\Menu\Inventário\Armadura_Texto.png" />
@@ -317,6 +350,14 @@
     <Content Include="Src\Images\Players\Mulher Negro\Lab\Esquerda_Parado.png" />
     <Content Include="Src\Images\Players\Mulher Negro\Lab\Frente_Parado.png" />
     <Content Include="Src\Images\Players\Mulher Negro\Lab\Fundo_Parado.png" />
+    <Content Include="Src\Images\Windows_XP\Jogos XP\Cyber Memories Clicado.png" />
+    <Content Include="Src\Images\Windows_XP\Jogos XP\Cyber Memories.png" />
+    <Content Include="Src\Images\Windows_XP\Jogos XP\Joli Man Clicado.png" />
+    <Content Include="Src\Images\Windows_XP\Jogos XP\Joli Man.png" />
+    <Content Include="Src\Images\Windows_XP\Jogos XP\Lapa_Bird.png" />
+    <Content Include="Src\Images\Windows_XP\Jogos XP\Lap_Bird_icon.png" />
+    <Content Include="Src\Images\Windows_XP\Jogos XP\Lap_Bird_Clicado.png" />
+    <Content Include="Src\Images\Windows_XP\Windows XP.png" />
     <Content Include="Src\Maps\Laboratorio\Laboratório.xml" />
     <Content Include="Src\Maps\Laboratorio\Laborátorio.txt" />
     <Content Include="Src\Maps\map.xml">
@@ -333,11 +374,6 @@
     <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
     <Content Include="Assets\StoreLogo.png" />
     <Content Include="Assets\Wide310x150Logo.scale-200.png" />
-    <Content Include="Src\Animations\dead.gif" />
-    <Content Include="Src\Animations\Dead.png" />
-    <Content Include="Src\Animations\idle.gif" />
-    <Content Include="Src\Animations\jump.gif" />
-    <Content Include="Src\Animations\walk.gif" />
     <Content Include="Src\Audio\beep.mp3">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -376,6 +412,8 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Src\Images\Games\Joli Coin\" />
+    <Folder Include="Src\Images\Games\Lap Bird\" />
     <Folder Include="Src\saves\" />
   </ItemGroup>
   <ItemGroup>
