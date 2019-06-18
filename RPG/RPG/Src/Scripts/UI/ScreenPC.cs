@@ -44,31 +44,19 @@ public class ScreenPC
 
 
 
-
-    #region PC
     enum StateMachine
     {
-        Desktop, Combate, Joli, Lap
+        Desktop, Combate, Joli, Lap,None
     }
+
+   
     StateMachine state = StateMachine.Desktop;
     UPanel screen;
     Input teclado;
     UButton cyberMem, joliMan, lapBird;
-    bool interrupt = false;
-    #endregion
-
-    #region Combate
-    UPanel battleFooter, statusPlayer, statusEnemy,lifePlayer,lifeEnemy;
-    UButton Attack, Run, Habilidade, Inventario;
-    UImage battlePlayer, battleEnemy, effectEnemy, effectPlayer, playerImage;
-    UText playerLP, enemyLP,combatLog;
-    bool PlayerMove = false;
-    bool PllayerAttack = false;
-    int turno;
-    float lastpf,playerLife = 120,playerFullLife= 120,lastef, enemyLife = 135,enemyFullLife = 135,danoPhase=0;
-    string Message;
-    #endregion
-
+    
+    Game currentGame;
+    Combate combate;
 
     public ScreenPC()
     {
@@ -78,10 +66,9 @@ public class ScreenPC
         screen.zIndex = 1000;
         teclado = new Input();
 
-        #region Desktop
-        cyberMem = new UButton("", new Vector2(-250, -150), new Vector2(30, 30), combatGame);
-        joliMan = new UButton("", new Vector2(-250, -110), new Vector2(30, 30), JoliGame);
-        lapBird = new UButton("", new Vector2(-250, -70), new Vector2(30, 30), LapGame);
+        cyberMem = new UButton("", new Vector2(10, 10), new Vector2(30, 30), combatGame);
+        joliMan = new UButton("", new Vector2(10, 20), new Vector2(30, 30), JoliGame);
+        lapBird = new UButton("", new Vector2(10, 30), new Vector2(30, 30), LapGame);
 
         cyberMem.setBackground("Src/Images/Windows_XP/Jogos XP/Cyber Memories.png", Stretch.Uniform);
         joliMan.setBackground(" Src/Images/Windows_XP/Jogos XP/Joli Man.png", Stretch.Uniform);
@@ -91,222 +78,42 @@ public class ScreenPC
         joliMan.setOnHover("Src/Images/Windows_XP/Jogos XP/Joli Man Clicado.png");
         lapBird.setOnHover("Src/Images/Windows_XP/Jogos XP/Lap_Bird_Clicado.png");
 
-        cyberMem.anchor = AnchorType.Exact;
-        joliMan.anchor = AnchorType.Exact;
-        lapBird.anchor = AnchorType.Exact;
-        #endregion
+        RenderDesktop();
 
-        #region Combate
         
-        battleFooter = new UPanel(new Vector2(30, 130), new Vector2(585, 80));
-        battleFooter.SetBackGround("Src/Images/Games/Combat/combat.png");
-        battleFooter.anchor = AnchorType.Exact;
-
-        playerImage = new UImage("Src/Images/Players/Homem Negro/Face.png", new Vector2(278, 130), new Vector2(65, 65));
-        playerImage.anchor = AnchorType.Exact;
-
-        battleEnemy = new UImage("Src/Images/Games/Combat/Monsters/Slime.png", new Vector2(-200, -5), new Vector2(80, 120));
-        battleEnemy.anchor = AnchorType.Exact;
-
-        battlePlayer = new UImage("Src/Images/Games/Combat/Monsters/Slime.png", new Vector2(200, -5), new Vector2(80, 120));
-        battlePlayer.anchor = AnchorType.Exact;
-
-        effectEnemy = new UImage("Src/Images/Games/Combat/Animacoes/Pancada/Pancada.gif", new Vector2(-200, -20), new Vector2(80, 80));
-        effectEnemy.anchor = AnchorType.Exact;
-
-        effectPlayer = new UImage("Src/Images/Games/Combat/Animacoes/Pancada/Pancada.gif", new Vector2(200, -20), new Vector2(80, 80));
-        effectPlayer.anchor = AnchorType.Exact;
-
-        Attack = new UButton("", new Vector2(-190, 135), new Vector2(90, 40), battleAttack);
-        Attack.setBackground("Src/Images/Games/Combat/UI/Atacar.png", Stretch.Fill);
-        Attack.anchor = AnchorType.Exact;
-
-        Habilidade = new UButton("", new Vector2(-85, 135), new Vector2(90, 40), battleHabilidade);
-        Habilidade.setBackground("Src/Images/Games/Combat/UI/Habilidade.png", Stretch.Fill);
-        Habilidade.anchor = AnchorType.Exact;
-
-        Inventario = new UButton("", new Vector2(20, 135), new Vector2(90, 40), battleInventario);
-        Inventario.setBackground("Src/Images/Games/Combat/UI/Inventario.png", Stretch.Fill);
-        Inventario.anchor = AnchorType.Exact;
-
-        Run = new UButton("", new Vector2(130, 135), new Vector2(90, 40), battleRun);
-        Run.setBackground("Src/Images/Games/Combat/UI/Correr.png", Stretch.Fill);
-        Run.anchor = AnchorType.Exact;
-
-        statusPlayer = new UPanel(new Vector2(230, -132), new Vector2(150, 40));
-        statusPlayer.SetBackGround("Src/Images/Games/Combat/UI/CombatBox.png");
-        statusPlayer.anchor = AnchorType.Exact;
-        lifePlayer = new UPanel(new Vector2(230, -142), new Vector2(130, 5));
-        lifePlayer.anchor = AnchorType.Exact;
-        lifePlayer.Content(0, 255, 127, 255);
-        playerLP = new UText(playerLife.ToString(), new Vector2(285, -116));
-        playerLP.anchor = AnchorType.Exact;
-        playerLP.fontSize = 10;
-
-        statusEnemy = new UPanel(new Vector2(-170, -132), new Vector2(150, 40));
-        statusEnemy.SetBackGround("Src/Images/Games/Combat/UI/CombatBox.png");
-        statusEnemy.anchor = AnchorType.Exact;
-        lifeEnemy = new UPanel(new Vector2(-170, -142), new Vector2(130, 5));
-        lifeEnemy.anchor = AnchorType.Exact;
-        lifeEnemy.Content(255, 127, 127, 255);
-        enemyLP = new UText(enemyLife.ToString(), new Vector2(-115, -116));
-        enemyLP.anchor = AnchorType.Exact;
-        enemyLP.fontSize = 10;
-
-        combatLog = new UText("", new Vector2(25, -132), new Vector2(150, 40));
-        combatLog.anchor = AnchorType.Exact;
-        combatLog.fontSize = 22;
-        combatLog.horizontalAlignment = Windows.UI.Xaml.HorizontalAlignment.Center;
-        combatLog.textAlignment = Windows.UI.Xaml.TextAlignment.Center;
-        combatLog.SetColor(Colors.DarkRed);
-        lastpf = playerLife;
-        lastef = enemyLife;
-        #endregion
     }
 
     internal void Update()
     {
-        if(state == StateMachine.Combate)
+        if(state!= StateMachine.Desktop)
         {
-            if (playerLife < 0) playerLife = 0;
-            if (enemyLife < 0) enemyLife = 0;
-            combatLog.content = Message;
-            enemyLP.content = enemyLife.ToString();
-            playerLP.content = playerLife.ToString();
-            lifePlayer.Resize(130 * (playerLife / playerFullLife), lifePlayer.size.y);
-            lifeEnemy.Resize(130 * (enemyLife / enemyFullLife), lifeEnemy.size.y);
-            if (lastpf != playerLife)
-            {
-                float dx = (130 * (lastpf - playerLife)) / playerFullLife;
-                lifePlayer.position.x += dx / 2;
-            }
-            if (lastef != enemyLife)
-            {
-                float dx = (130 * (lastef - enemyLife)) / enemyFullLife;
-                lifeEnemy.position.x += dx / 2;
-            }
-
-            lastpf = playerLife;
-            lastef = enemyLife;
+            currentGame?.UpdateGame();
         }
-       
-    }
-
-
-    #region Combate_Funcs
-    private void battleRun(object sender)
-    {
-
-    }
-
-    private void battleInventario(object sender)
-    {
-
-    }
-
-    private void battleHabilidade(object sender)
-    {
-        if (PlayerMove) return;
-        effectEnemy.Content = "Src/Images/Games/Combat/Animacoes/CorteFogo/CorteFogo.gif";
-        danoPhase = 35;
-        PllayerAttack = true;
-    }
-
-    private void battleAttack(object sender)
-    {
-        if (PlayerMove) return;
-        effectEnemy.Content = "Src/Images/Games/Combat/Animacoes/Pancada/Pancada.gif";
-        danoPhase = 20;
-        PllayerAttack = true;
-
-    }
-
-    async Task AnimAtaqueFisico(UImage ent, UImage effect, float vel = 3.5f, float dist = 380.5f)
-    {
-        PlayerMove = true;
-        PllayerAttack = false;
-        await Task.Run(async () =>
-        {
-            float relVel = Math.Abs(vel);
-            for (float i = 0; i <= dist; i += relVel)
-            {
-                if (interrupt) return;
-                ent.position.x -= (vel);
-                PlayerMove = true;
-                await Task.Delay(10);
-            }
-
-            effect.zIndex = 1010;
-            if (interrupt) return;
-            await Task.Delay(400);
-            effect.zIndex = -1;
-
-            for (float i = 0; i <= dist; i += relVel)
-            {
-                if (interrupt) return;
-                ent.position.x += vel;
-                PlayerMove = true;
-                await Task.Delay(10);
-            }
-            PlayerMove = false;
-
-        });
+        
     }
 
     private void combatGame(object sender)
     {
         state = StateMachine.Combate;
-
+        currentGame = new Combate(screen);
+        currentGame.Start();
+        
         Render();
-        Random rdm = new Random();
-        playerLife = 120;playerFullLife = playerLife;
-        enemyLife = 130;enemyFullLife = enemyLife;
-        battlePlayer.position.x = 200;
-        battleEnemy.position.y = -200;
-        Task.Run(async () =>
-        {
-            if (interrupt) return;
-            turno =rdm.Next(6) % 2;
-            while (state == StateMachine.Combate)
-            {
-                if (turno == 1)
-                {
-                    Message = "Inimigo Ataca!";
-                    PllayerAttack = false;
-                    await Task.Delay(1500);
-                    await AnimAtaqueFisico(battleEnemy, effectPlayer, -3.5f);
-                    turno = 0;
-                    playerLife -= 15+(rdm.Next(0,5)*5);
-                }
-                else
-                {
-                    Message = "Sua Vez!";
-                    if (PllayerAttack)
-                    {
-                        await AnimAtaqueFisico(battlePlayer, effectEnemy);
-                        turno = 1;
-                        PllayerAttack = false;
-                        enemyLife -= danoPhase;
-                    }
-
-                }
-            }
-        });
     }
-
-    #endregion
-
-
 
     private void LapGame(object sender)
     {
         state = StateMachine.Lap;
+        currentGame = new LapBird(screen);
+        currentGame.teclado = teclado;
+        currentGame.Start();
         Render();
     }
 
     private void JoliGame(object sender)
     {
         state = StateMachine.Joli;
+        currentGame = null;
         Render();
     }
 
@@ -331,19 +138,19 @@ public class ScreenPC
     private bool PcKeyword(TecladoEvento e)
     {
         teclado.UpdateTeclado(e);
-
+        currentGame?.KeyBoardUpdate();
         if (teclado.TeclaPressionada(VirtualKey.Escape))
         {
-            if (state != StateMachine.Desktop)
-            {
-                interrupt = true;
+            
                 state = StateMachine.Desktop;
-                Engine.Print("Desktop");
                 Render();
-            }
-
+           
         }
-
+        if (teclado.TeclaPressionada(VirtualKey.P))
+        {
+           
+            Hide();
+        }
         return true;
     }
 
@@ -353,86 +160,48 @@ public class ScreenPC
         AmbienteJogo.RemoverEventoCallBack(PrioridadeEvento.Interface, PcKeyword);
         AmbienteJogo.RemoverEventoCallBack(PrioridadeEvento.Interface, PcMouse);
         AmbienteJogo.window.Remove(screen);
-        state = StateMachine.Desktop;
+        state = StateMachine.None;
     }
 
     public void Render()
     {
         Clear();
         Canvas.SetZIndex(screen.element, 1000);
+
         if (state == StateMachine.Desktop)
-        {
-            interrupt = false;
-            screen.SetBackGround("Src/Images/Windows_XP/Windows XP.png");
-            cyberMem.position = new Vector2(-250, -155);
-            joliMan.position = new Vector2(-250, -115);
-            lapBird.position = new Vector2(-250, -75);
-            screen.addChild(cyberMem);
-            screen.addChild(joliMan);
-            screen.addChild(lapBird);
-            AmbienteJogo.window.Add(screen, false);
+        {    
+            RenderDesktop();
         }
         else
         {
-            if (state == StateMachine.Combate)
-            {
-                playerImage.Content = "Src/Images/Players/" + Player.currentPlayer.skin + "/Face.png";
-                screen.SetBackGround("Src/Images/Games/Combat/BattleScenes/Grassland.png");
-                screen.addChild(battleFooter);
-                screen.addChild(playerImage);
-                screen.addChild(Attack);
-                screen.addChild(Habilidade);
-                screen.addChild(Inventario);
-                screen.addChild(Run);
-                screen.addChild(battleEnemy);
-                screen.addChild(battlePlayer);
-                screen.addChild(effectEnemy);
-                screen.addChild(effectPlayer);
-                screen.addChild(statusEnemy);
-                screen.addChild(statusPlayer);
-                screen.addChild(lifePlayer);
-                screen.addChild(lifeEnemy);
-                screen.addChild(playerLP);
-                screen.addChild(enemyLP);
-                screen.addChild(combatLog);
-                effectEnemy.zIndex = -1;
-                effectPlayer.zIndex = -1;
-            }
-            else if (state == StateMachine.Joli)
-            {
-
-            }
-            else if (state == StateMachine.Lap)
-            {
-
-            }
+            currentGame?.Render();
         }
 
-        AmbienteJogo.window.Add(screen, false);
+        AmbienteJogo.window.Add(screen);
+    }
+
+    public void RenderDesktop()
+    {
+        screen.SetBackGround("Src/Images/Windows_XP/Windows XP.png");
+        cyberMem.anchor = AnchorType.Proporcional;
+        joliMan.anchor = AnchorType.Proporcional;
+        lapBird.anchor = AnchorType.Proporcional;
+
+        cyberMem.position = new Vector2(5, 10);
+        joliMan.position = new Vector2(5, 20);
+        lapBird.position = new Vector2(5, 30);
+
+        screen.addChild(cyberMem);
+        //screen.addChild(joliMan);
+        screen.addChild(lapBird);
     }
 
     public void Clear()
     {
+        currentGame?.Close();
         screen.removeChild(cyberMem);
         screen.removeChild(joliMan);
         screen.removeChild(lapBird);
-        screen.removeChild(battleFooter);
-        screen.removeChild(playerImage);
-        screen.removeChild(Attack);
-        screen.removeChild(Habilidade);
-        screen.removeChild(Inventario);
-        screen.removeChild(Run);
-        screen.removeChild(battleEnemy);
-        screen.removeChild(battlePlayer);
-        screen.removeChild(effectEnemy);
-        screen.removeChild(effectPlayer);
-        screen.removeChild(statusPlayer);
-        screen.removeChild(statusEnemy);
-        screen.removeChild(lifeEnemy);
-        screen.removeChild(lifePlayer);
-        screen.removeChild(playerLP);
-        screen.removeChild(enemyLP);
-        screen.removeChild(combatLog);
     }
 
 }

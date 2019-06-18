@@ -48,18 +48,26 @@ namespace _3ReaisEngine.Core
                                 arr = node2.InnerText.Split(',');
 
                                 int i = 0;
-                                for (int y = 0; y < layerHeihgt; y++)
+                                for (int y = -1; y < layerHeihgt+1; y++)
                                 {
-                                    for (int x = 0; x < layerWidht; x++)
+                                    for (int x = -1; x < layerWidht+1; x++)
                                     {
-                                        int id = int.Parse(arr[i]);
-                                       
-                                        if (dic.ContainsKey(id))
+                                        if(y ==-1 || x==-1 || y ==layerHeihgt || x == layerWidht)
                                         {
-                                          
-                                            list.Add((Entidade)Activator.CreateInstance(dic[id], new object[] { new Vector2(x * tileWidht*0.925f, y * tileHeight*0.925f) }));
+                                            list.Add((Entidade)Activator.CreateInstance(dic[65000], new object[] { new Vector2(x * tileWidht * 0.925f, y * tileHeight * 0.925f) }));
                                         }
-                                        i++;
+                                        else
+                                        {
+                                            int id = int.Parse(arr[i]);
+
+                                            if (dic.ContainsKey(id))
+                                            {
+
+                                                list.Add((Entidade)Activator.CreateInstance(dic[id], new object[] { new Vector2(x * tileWidht * 0.925f, y * tileHeight * 0.925f) }));
+                                            }
+                                            i++;
+                                        }
+                                       
                                     }
                                 }
 

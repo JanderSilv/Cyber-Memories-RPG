@@ -1,4 +1,6 @@
-﻿using _3ReaisEngine.UI;
+﻿using _3ReaisEngine.Core;
+using _3ReaisEngine.Events;
+using _3ReaisEngine.UI;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,10 +10,22 @@ using System.Threading.Tasks;
 
 public class Game
 {
-    UPanel screen;
-    public virtual void Start(UPanel scr)
+    protected UPanel screen;
+    public Input teclado;
+    public bool run;
+
+    public Game(UPanel scr)
     {
         screen = scr;
+    }
+
+    public virtual void Render()
+    {
+
+    }
+    public virtual void Start()
+    {
+        
     }
 
     public virtual void UpdateGame()
@@ -22,6 +36,11 @@ public class Game
     public virtual void Close()
     {
 
+    }
+
+    public virtual void KeyBoardUpdate()
+    {
+       
     }
 
 }

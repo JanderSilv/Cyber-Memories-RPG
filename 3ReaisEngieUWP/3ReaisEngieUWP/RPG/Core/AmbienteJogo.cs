@@ -45,11 +45,12 @@ namespace _3ReaisEngine
             Input = new Input();
             currentCamera = new Camera();
 
+            
+
+
             RegistrarEventoCallBack(PrioridadeEvento.Game, Input.UpdateTeclado);
             RegistrarEventoCallBack(PrioridadeEvento.Game, Input.UpdateMouse);
             Windows.ApplicationModel.Core.CoreApplication.MainView.CoreWindow.Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () => { Execute(); });
-
-
         }
 
 

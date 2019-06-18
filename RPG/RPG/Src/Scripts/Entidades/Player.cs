@@ -14,6 +14,7 @@ public class Player:Entidade
     Body body;
     Render render;
     Colisao col;
+    public QuestSystem quest;
     public string skin = "Homem Negro";
 
     InventarioPopUp inventoryUI;
@@ -30,15 +31,15 @@ public class Player:Entidade
         col = GetComponente<Colisao>();
         render = GetComponente<Render>();
         inventoryUI = new InventarioPopUp();
-       
-
+        quest = AddComponente<QuestSystem>();
+        quest.AddQuest(new FalarComNPC());
         col.tamanho.x = 50;
         col.tamanho.y = 20;
         col.tipo = TipoColisao.Dinamica;
 
         render.img.Width = 50;
         render.img.Height = 50;
-
+       
         LoadSkin(skin);
        
     }
@@ -82,6 +83,7 @@ public class Player:Entidade
 
     public override void Update()
     {
+        quest.UpdateQuest();
         if (AmbienteJogo.Input.TeclaPressionada(Windows.System.VirtualKey.W))
         {
             body.velocity.y = -5;

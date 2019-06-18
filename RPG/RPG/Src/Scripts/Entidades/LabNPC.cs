@@ -18,7 +18,10 @@ namespace RPG.Src.Scripts.Entidades
         Colisao col;
         Body body;
         Chat chat;
+        Chat chat2;
         Movel movel;
+
+        bool Chat1 = false;
         public LabNPC()
         {
             render = AddComponente<Render>();
@@ -63,6 +66,13 @@ namespace RPG.Src.Scripts.Entidades
             chat.messages.Add(new Chat.Message(Chat.who.receiver, "Isso é muito estranho mesmo até para ele"));
             chat.messages.Add(new Chat.Message(Chat.who.receiver, "O que estaria fazendo tao longe no tempo?"));
             chat.messages.Add(new Chat.Message(Chat.who.sender, "Espero que n precisemos saber"));
+            chat.messages.Add(new Chat.Message(Chat.who.sender, "Porém devido a vários outros trabalhos não pudemos terminar seu salto ainda"));
+            chat.messages.Add(new Chat.Message(Chat.who.sender, "Fique à vontade enquanto faço os ajustes necessários "));
+            chat.messages.Add(new Chat.Message(Chat.who.receiver, "Ok"));
+            chat2 = new Chat();
+            chat2.SenderImage = "Src/Images/Players/Mulher Negro/Face.png";
+            chat2.ReceiverImage = "Src/Images/Players/" + Player.currentPlayer.skin + "/Face.png";
+            chat2.messages.Add(new Chat.Message(Chat.who.sender, "Ainda não terminei"));
         }
 
         public override void Update()
@@ -72,10 +82,24 @@ namespace RPG.Src.Scripts.Entidades
         public override void OnClick(MouseEvento e)
         {
             if (Engine.Distance(this.EntPos, Player.currentPlayer.EntPos) < 100)
-            {         
-                anim.Play("Stop_Down");
-                ChatBar.ShowChat(chat);
+            {
                
+                    Quest q = Player.currentPlayer.quest.GetQuestAtiva(new FalarComNPC().Nome);
+                    if (q != null) q.Data["Falou"] = true;
+                    else Engine.Print("N tem missao");
+              
+                    anim.Play("Stop_Down");
+                if (Chat1 == false)
+                {
+                    ChatBar.ShowChat(chat);
+                    Chat1 = true;
+                }
+                else
+                {
+                    ChatBar.ShowChat(chat2);
+                }
+                 
+
             }
         }
     }

@@ -80,7 +80,7 @@ public static class ChatBar
         {
         if (alreadyOpen) return;
         weakup();
-
+        c.done = false;
         foreach (var m in c.messages)
         {
             next = false;
@@ -89,6 +89,7 @@ public static class ChatBar
             else Image.Content = c.SenderImage;          
             Text.content = m.message;
 
+            await Task.Run(async () => { await Task.Delay(500); next = false; });
              await Task.Run(() => { while (!next && !exit) ; }); 
         }
         c.done = true;
@@ -96,12 +97,12 @@ public static class ChatBar
       
         }
 
-      
+       
         public static bool UpdateTeclado(TecladoEvento e)
         {
             if(e.Tecla == (int)VirtualKey.Enter)
             {
-
+            
             next = true;
             }
             if (e.Tecla == (int)VirtualKey.Escape)
