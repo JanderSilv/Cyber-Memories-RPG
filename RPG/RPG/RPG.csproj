@@ -172,6 +172,7 @@
     <None Include="Src\Images\Games\Combat\Animacoes\Raio\Raio.psd" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Src\Audio\Funkaholic.mp3" />
     <Content Include="Src\Images\Games\Combat\Animacoes\CorteFogo\CorteFogo.gif" />
     <Content Include="Src\Images\Games\Combat\Animacoes\CorteFogo\CorteFogo.m4a" />
     <Content Include="Src\Images\Games\Combat\Animacoes\CortesMultiplos\CortesMultiplos.gif" />
@@ -225,8 +226,11 @@
     <Content Include="Src\Images\Menu\Botões\Controles_Selecionado.png" />
     <Content Include="Src\Images\Menu\Botões\Iniciar.png" />
     <Content Include="Src\Images\Menu\Botões\Jogar_Selecionado.png" />
+    <Content Include="Src\Images\Menu\Botões\Mountains1.png" />
+    <Content Include="Src\Images\Menu\Botões\Mountains2.png" />
     <Content Include="Src\Images\Menu\Botões\Sair.png" />
     <Content Include="Src\Images\Menu\Botões\Sair_Selecionado.png" />
+    <Content Include="Src\Images\Menu\Botões\Sobre.jpg" />
     <Content Include="Src\Images\Menu\Botões\Sobre.png" />
     <Content Include="Src\Images\Menu\Botões\Sobre_Selecionado.png" />
     <Content Include="Src\Images\Menu\Botões\Voltar.png" />
@@ -342,10 +346,10 @@
     <Content Include="Src\Images\Players\Mulher Negro\Esquerda__Parado.png" />
     <Content Include="Src\Images\Players\Mulher Negro\Frente_Parado.png" />
     <Content Include="Src\Images\Players\Mulher Negro\Fundo_Parado.png" />
-    <Content Include="Src\Images\Players\Mulher Negro\Lab\anim\Direita.gif" />
-    <Content Include="Src\Images\Players\Mulher Negro\Lab\anim\Esquerda.gif" />
-    <Content Include="Src\Images\Players\Mulher Negro\Lab\anim\Frente.gif" />
-    <Content Include="Src\Images\Players\Mulher Negro\Lab\anim\Fundo.gif" />
+    <Content Include="Src\Images\Players\Mulher Negro\Lab\anim\Lab_Direita.gif" />
+    <Content Include="Src\Images\Players\Mulher Negro\Lab\anim\Lab_Esquerda.gif" />
+    <Content Include="Src\Images\Players\Mulher Negro\Lab\anim\Lab_Frente.gif" />
+    <Content Include="Src\Images\Players\Mulher Negro\Lab\anim\Lab_Fundo.gif" />
     <Content Include="Src\Images\Players\Mulher Negro\Lab\Direita_Parado.png" />
     <Content Include="Src\Images\Players\Mulher Negro\Lab\Esquerda_Parado.png" />
     <Content Include="Src\Images\Players\Mulher Negro\Lab\Frente_Parado.png" />
