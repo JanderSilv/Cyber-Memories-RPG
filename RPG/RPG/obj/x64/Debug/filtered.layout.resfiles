@@ -12,6 +12,7 @@ RPG.xr.xml
 Src\ButtonStyle.xbf
 Properties\Default.rd.xml
 Src\Audio\beep.mp3
+Src\Audio\Funkaholic.mp3
 Src\Audio\rain.mp3
 Src\Audio\serrote.wav
 Src\dance.gif
@@ -69,8 +70,11 @@ Src\Images\Menu\Botões\Controles.png
 Src\Images\Menu\Botões\Controles_Selecionado.png
 Src\Images\Menu\Botões\Iniciar.png
 Src\Images\Menu\Botões\Jogar_Selecionado.png
+Src\Images\Menu\Botões\Mountains1.png
+Src\Images\Menu\Botões\Mountains2.png
 Src\Images\Menu\Botões\Sair.png
 Src\Images\Menu\Botões\Sair_Selecionado.png
+Src\Images\Menu\Botões\Sobre.jpg
 Src\Images\Menu\Botões\Sobre.png
 Src\Images\Menu\Botões\Sobre_Selecionado.png
 Src\Images\Menu\Botões\Voltar.png
@@ -185,10 +189,10 @@ Src\Images\Players\Mulher Negro\Esquerda__Parado.png
 Src\Images\Players\Mulher Negro\Face.png
 Src\Images\Players\Mulher Negro\Frente_Parado.png
 Src\Images\Players\Mulher Negro\Fundo_Parado.png
-Src\Images\Players\Mulher Negro\Lab\anim\Direita.gif
-Src\Images\Players\Mulher Negro\Lab\anim\Esquerda.gif
-Src\Images\Players\Mulher Negro\Lab\anim\Frente.gif
-Src\Images\Players\Mulher Negro\Lab\anim\Fundo.gif
+Src\Images\Players\Mulher Negro\Lab\anim\Lab_Direita.gif
+Src\Images\Players\Mulher Negro\Lab\anim\Lab_Esquerda.gif
+Src\Images\Players\Mulher Negro\Lab\anim\Lab_Frente.gif
+Src\Images\Players\Mulher Negro\Lab\anim\Lab_Fundo.gif
 Src\Images\Players\Mulher Negro\Lab\Direita_Parado.png
 Src\Images\Players\Mulher Negro\Lab\Esquerda_Parado.png
 Src\Images\Players\Mulher Negro\Lab\Frente_Parado.png
