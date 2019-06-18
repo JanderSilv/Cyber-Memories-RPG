@@ -29,23 +29,23 @@ public class SelPersonagem : Window
             ImagePath[2] = "Src/Images/Players/Mulher Branco/Face.png";
             ImagePath[3] = "Src/Images/Players/Mulher Negro/Face.png";
 
-            ImagePath2[0] = "Src/Images/Menu/Selecao_Personagem/Homem-Branco-Combate.png";
-            ImagePath2[1] = "Src/Images/Menu/Selecao_Personagem/Homem-Negro-Combate.png";
-            ImagePath2[2] = "Src/Images/Menu/Selecao_Personagem/Mulher-Branco-Combate.png";
-            ImagePath2[3] = "Src/Images/Menu/Selecao_Personagem/Mulher-Negro-Combate.png";
+            ImagePath2[0] = "Src/Images/Players/Homem Branco/anim/Combate.gif";
+            ImagePath2[1] = "Src/Images/Players/Homem Negro/anim/Combate.gif";
+            ImagePath2[2] = "Src/Images/Players/Mulher Branco/anim/Combate.gif";
+            ImagePath2[3] = "Src/Images/Players/Mulher Negro/anim/Combate.gif";
 
            
 
-            UImage title = new UImage("Src/Images/Menu/Selecao_Personagem/Escolha_Personagem.png", new Vector2(50, 10), new Vector2(500, 100));
+            UImage title = new UImage("Src/Images/Menu/Selecao_Personagem/Escolha_Personagem.png", new Vector2(53, 15), new Vector2(519, 51));
             UImage border = new UImage("Src/Images/Menu/Selecao_Personagem/Contorno.png", new Vector2(53, 45), new Vector2(300, 250));
-            charSelector = new UImage(ImagePath[i], new Vector2(52.5f, 38f), new Vector2(100, 100));
-            charSelector2 = new UImage(ImagePath2[i], new Vector2(52.5f, 56), new Vector2(50, 50));
+            charSelector = new UImage(ImagePath[i], new Vector2(52.5f, 38f), new Vector2(144, 144));
+            charSelector2 = new UImage(ImagePath2[i], new Vector2(52.5f, 56), new Vector2(43, 63));
 
 
             UButton man = new UButton("", new Vector2(23, 39), new Vector2(206, 78), Man);
             UButton woman = new UButton("", new Vector2(23, 54), new Vector2(206, 78), Woman);
-            UButton rightSelector = new UButton("", new Vector2(58, 73), new Vector2(45, 41), RightSelector);
-            UButton leftSelector = new UButton("", new Vector2(43, 73), new Vector2(45, 41), LeftSelector);
+            UButton rightSelector = new UButton("", new Vector2(61, 73), new Vector2(45, 41), RightSelector);
+            UButton leftSelector = new UButton("", new Vector2(46, 73), new Vector2(45, 41), LeftSelector);
             UButton ready = new UButton("", new Vector2(52, 90), new Vector2(188, 49), Ready);
 
 
