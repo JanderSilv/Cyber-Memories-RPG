@@ -57,7 +57,7 @@ namespace _3ReaisEngine.RPG.Core
             canv.Height = 620;
             canv.Children.Add(ui);
             lastSize = new Vector2((float)canv.Width,(float)canv.Height);
-            canv.SetValue(Canvas.ZIndexProperty, 0);
+         
            
             coreWindow.KeyDown += Game_KeyDown;
             coreWindow.KeyUp += Game_KeyUp;
@@ -65,7 +65,7 @@ namespace _3ReaisEngine.RPG.Core
 
             ui.Width = 840;
             ui.Height = 620;
-            ui.SetValue(Canvas.ZIndexProperty, 1);
+           
           
             root.Height = canv.Height;
             root.Width = canv.Width;
@@ -103,12 +103,12 @@ namespace _3ReaisEngine.RPG.Core
             canv.Width = Widht;
             canv.Height = Height;
             canv.Children.Add(ui);
-            canv.SetValue(Canvas.ZIndexProperty, 0);
+            
             coreWindow.KeyDown += Game_KeyDown;
             coreWindow.KeyUp += Game_KeyUp;
             ui.Width = Widht;
             ui.Height = Height;
-            ui.SetValue(Canvas.ZIndexProperty, 1);
+            
           
             root.Height = canv.Height;
             root.Width = canv.Width;
@@ -167,7 +167,7 @@ namespace _3ReaisEngine.RPG.Core
             root.Content = game_layer;
             AmbienteJogo.window = this;
         }
-
+        
         public void Add(Entidade element)
         {
 
@@ -380,15 +380,8 @@ namespace _3ReaisEngine.RPG.Core
                 }
                 else
                 {
-                   
-                    try
-                    {
                         element.transform.X = 2 * (((pos.x / 2) / 100.0) * Widht) - si.x / 2;
-                        element.transform.Y = 2 * (((pos.y / 2) / 100.0) * Height) - si.y / 2;
-                    }catch(Exception ex)
-                    {
-                        Engine.Debug(ex);
-                    }
+                        element.transform.Y = 2 * (((pos.y / 2) / 100.0) * Height) - si.y / 2;                 
                 }
             }
             else

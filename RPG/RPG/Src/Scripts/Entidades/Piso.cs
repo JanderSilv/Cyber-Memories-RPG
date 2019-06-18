@@ -20,4 +20,17 @@ namespace RPG.Src.Scripts.Entidades
             r.LoadImage("Src/Images/Laboratório/Lab_0004_Piso.png"); 
         }
     }
+    class Block : Entidade
+    {
+        Colisao col;
+        public Block(Vector2 pos)
+        {
+            EntPos = pos;
+            col = AddComponente<Colisao>();
+            col.tamanho.x = 50;
+            col.tamanho.y = 100;
+            col.tipo = TipoColisao.Estatica;
+
+        }
+    }
 }

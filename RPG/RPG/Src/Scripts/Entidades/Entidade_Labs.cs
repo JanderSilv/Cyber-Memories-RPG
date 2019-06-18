@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Windows.UI.Xaml.Controls;
 
 namespace RPG.Src.Scripts.Entidades
 {
@@ -46,6 +47,7 @@ namespace RPG.Src.Scripts.Entidades
             EntPos.y += 26f;
             Render r = GetComponente<Render>();
             r.LoadImage("Src/Images/Laboratório/Lab_0007_Grade.png");
+            Canvas.SetZIndex(r.img, 5);
         }
 
     }
@@ -286,8 +288,8 @@ namespace RPG.Src.Scripts.Entidades
 
         public override void Update()
         {
-            if(atu<100) atu += 0.2f;
-            screenPC.Update();
+            if(atu<100) atu += 2.0f;
+             screenPC.Update();
         }
 
         public override void OnClick(MouseEvento e)
@@ -297,6 +299,7 @@ namespace RPG.Src.Scripts.Entidades
             {
                 if (atu < 100)
                 {
+                    Player.currentPlayer.GetComponente<QuestSystem>().GetQuestAtiva("Curiosidade so mata gato").Data["Feito"] ++;
                     ChatBar.ShowChat("Src/Images/Laboratório/Lab_Notebook.png", "              BAIXANDO ATUALIZAÇÕES\n                                " + (int)atu + "%\n        NÃO DESLIGUE O COMPUTADOR");
                 }
                 else
@@ -342,6 +345,22 @@ namespace RPG.Src.Scripts.Entidades
             Render r = GetComponente<Render>();
             r.LoadImage("Src/Images/Laboratório/Assets-Laborátorio_0001_Livros.png");
         }
+        public override void OnClick(MouseEvento e)
+        {
+
+            if (Engine.Distance(this.EntPos, Player.currentPlayer.EntPos) < 50)
+            {
+                Player.currentPlayer.GetComponente<QuestSystem>().GetQuestAtiva("Curiosidade so mata gato").Data["Feito"]++;
+                var chat2 = new Chat();
+                
+                chat2.ReceiverImage = "Src/Images/Players/" + Player.currentPlayer.skin + "/Face.png";
+                chat2.messages.Add(new Chat.Message(Chat.who.receiver, "Um livro de história..."));
+                chat2.messages.Add(new Chat.Message(Chat.who.receiver, "\"...diz a lenda que há mt tempo tempo atrás uma entidade enganou um dos antigos deuses e comprometeu nossa realidade levando-a ao caos e esquecimento...\""));
+                chat2.messages.Add(new Chat.Message(Chat.who.receiver, "\"...entretanto uma divindade conhecido por alguns como Misso surgiu e restaurou o mundo das cinzas...\""));
+                ChatBar.ShowChat(chat2);
+            }
+
+        }
 
     }
 
@@ -360,6 +379,7 @@ namespace RPG.Src.Scripts.Entidades
            
             if (Engine.Distance(this.EntPos, Player.currentPlayer.EntPos) < 50)
             {
+                Player.currentPlayer.GetComponente<QuestSystem>().GetQuestAtiva("Curiosidade so mata gato").Data["Feito"]++;
                 ChatBar.ShowChat("Src/Images/Players/" + Player.currentPlayer.skin + "/Face.png", "Hmm... \nSr. Bruno escreveu uma boa história aqui.");
             }
             

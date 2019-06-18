@@ -26,6 +26,7 @@ namespace _3ReaisEngine.RPG.Components
     /// </summary>
     public class Audio:Componente<Audio>
     {
+        MediaElement player;
         /// <summary>
         /// Lista de audios da entidade
         /// </summary>
@@ -36,7 +37,7 @@ namespace _3ReaisEngine.RPG.Components
         /// <param name="name">nome do audio a ser executado</param>
         public async void Play(string name)
         {
-            MediaElement player = new MediaElement();
+           player = new MediaElement();
 
             try
             {
@@ -50,13 +51,17 @@ namespace _3ReaisEngine.RPG.Components
                 player.IsLooping = Audios[name].Loop;
                 player.Volume = Audios[name].Volume;
                 player.Play();
+               
             }
             catch(Exception e)
             {
                 Console.WriteLine("[Componente Audio]: "+e.Message);
             }
         }
-
+        public void Stop()
+        {
+            player.Stop();
+        }
         
     }
 }

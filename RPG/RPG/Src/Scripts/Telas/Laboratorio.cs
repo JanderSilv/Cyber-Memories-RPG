@@ -37,7 +37,8 @@ using Windows.UI.Xaml.Controls;
         { 22, typeof(Notebook)},
         { 23, typeof(Vidraria)},
         { 24, typeof(Livros)},
-        { 25, typeof(Papeis)}       
+        { 25, typeof(Papeis)},
+        {65000, typeof(Block) }
         };
     public string PlayerSkin;
     public Laboratorio(Page root) : base(root)

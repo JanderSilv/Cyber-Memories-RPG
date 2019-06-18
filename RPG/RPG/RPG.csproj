@@ -150,7 +150,8 @@
     <Compile Include="Src\Scripts\Componentes\QuestSystem.cs" />
     <Compile Include="Src\Scripts\PC\Game.cs" />
     <Compile Include="Src\Scripts\PC\Games\Combate.cs" />
-    <Compile Include="Src\Scripts\Quests\ColidirComTronco.cs" />
+    <Compile Include="Src\Scripts\PC\Games\LapBird.cs" />
+    <Compile Include="Src\Scripts\Quests\FalarComNPC.cs" />
     <Compile Include="Src\Scripts\Telas\GameWin.cs" />
     <Compile Include="Src\Scripts\Telas\Laboratorio.cs" />
     <Compile Include="Src\Scripts\Telas\MenuPrin.cs" />
@@ -195,6 +196,11 @@
     <Content Include="Src\Images\Games\Combat\UI\Correr.png" />
     <Content Include="Src\Images\Games\Combat\UI\Habilidade.png" />
     <Content Include="Src\Images\Games\Combat\UI\Inventario.png" />
+    <Content Include="Src\Images\Games\Lap Bird\js.png" />
+    <Content Include="Src\Images\Games\Lap Bird\25bdc01ef04229430bd9470b6d2d55301c812c85.png" />
+    <Content Include="Src\Images\Games\Lap Bird\bigbig.png" />
+    <Content Include="Src\Images\Games\Lap Bird\file.png" />
+    <Content Include="Src\Images\Games\Lap Bird\Lapa_Bird.png" />
     <Content Include="Src\Images\Laboratório\Assets-Laborátorio_0001_Livros.png" />
     <Content Include="Src\Images\Laboratório\Assets-Laborátorio_0002_Papeis.png" />
     <Content Include="Src\Images\Laboratório\Assets-Laborátorio_0003_Mesa-Vertical.png" />
@@ -259,6 +265,7 @@
     <Content Include="Src\Images\Menu\Logo.png" />
     <Content Include="Src\Images\Menu\Logo2.png" />
     <Content Include="Src\Images\Menu\Selecao_Personagem\Homem-Branco-Combate.png" />
+    <Content Include="Src\Images\Games\Combat\Monsters\Morto.png" />
     <Content Include="Src\Images\Players\Homem Branco\Face.png" />
     <Content Include="Src\Images\Players\Homem Negro\Face.png" />
     <Content Include="Src\Images\Players\Mulher Branco\Face.png" />
@@ -417,7 +424,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Src\Images\Games\Joli Coin\" />
-    <Folder Include="Src\Images\Games\Lap Bird\" />
     <Folder Include="Src\saves\" />
   </ItemGroup>
   <ItemGroup>
