@@ -35,6 +35,7 @@ namespace _3ReaisEngine.RPG.Core
         private Panel ui_layer;
         private Vector2 lastSize;
         private ulong EntidadeCount = 1;
+
         public float Widht { set { game_layer.Width = value; } get { return (float)game_layer.Width; } }
         public float Height { set { game_layer.Height = value; } get { return (float)game_layer.Height; } }
 
@@ -46,9 +47,10 @@ namespace _3ReaisEngine.RPG.Core
             coreWindow = CoreWindow.GetForCurrentThread();
             coreWindow.Activate();
 
-            Canvas canv = new Canvas();
+            Canvas canv = new Canvas();         
             Canvas ui = new Canvas();
-            
+            Canvas.SetZIndex(canv, 0);
+            Canvas.SetZIndex(ui, 10000);
             this.root = root;
             
             canv.Width = 840;
@@ -94,7 +96,8 @@ namespace _3ReaisEngine.RPG.Core
             coreWindow = CoreWindow.GetForCurrentThread();
             Canvas canv = new Canvas();
             Canvas ui = new Canvas();
-
+            Canvas.SetZIndex(canv, 0);
+            Canvas.SetZIndex(ui, 10000);
             this.root = root;
 
             canv.Width = Widht;
@@ -121,15 +124,21 @@ namespace _3ReaisEngine.RPG.Core
             Windows.UI.Xaml.Window.Current.CoreWindow.Activate();
         }
 
+        public virtual void OnActive()
+        {
+
+        }
         public void UpdateWindow()
         {
             foreach (UIEntidade element in uiElements)
             {
+                Canvas.SetZIndex(element.element, element.zIndex);
                 uptPos(element);
             }
 
             foreach (UIEntidade element in gameUIElements)
             {
+                Canvas.SetZIndex(element.element, element.zIndex);
                 uptPos(element);
                 TranslateTransform tt = ((TranslateTransform) element.element.RenderTransform);
                 tt.X -= AmbienteJogo.currentCamera.drawOffset.x;
@@ -140,17 +149,21 @@ namespace _3ReaisEngine.RPG.Core
             {
                 if (entidades[i] != null && !entidades[i].IsStatic) entidades[i].Update();
             }
-
+          
             for (int i = 0; i < renders.Count; i++)
             {
                 if (renders[i] == null) continue;
                 renders[i].transform.X = renders[i].entidade.EntPos.x - AmbienteJogo.currentCamera.drawOffset.x;
                 renders[i].transform.Y = renders[i].entidade.EntPos.y - AmbienteJogo.currentCamera.drawOffset.y;
+                int l = renders[i].Layer * 1000 + (int)renders[i].entidade.EntPos.y;
+                Canvas.SetZIndex(renders[i].img,l);
             }
+          
         }
 
         public void SetCurrent()
         {
+            OnActive();
             root.Content = game_layer;
             AmbienteJogo.window = this;
         }
@@ -181,7 +194,7 @@ namespace _3ReaisEngine.RPG.Core
             if (element.GetComponente(ref r))
             {
                 renders.Add(r);
-                Add(r.img);
+                game_layer.Children.Add(r.img);
             }
             if (element.GetComponente(ref b))
             {
@@ -189,7 +202,7 @@ namespace _3ReaisEngine.RPG.Core
             }
         }
 
-        public void Add(Entidade[] elements)
+        public void Add(List<Entidade> elements)
         {
             foreach (Entidade element in elements)
             {
@@ -215,7 +228,7 @@ namespace _3ReaisEngine.RPG.Core
                 if (element.GetComponente(ref r))
                 {
                     renders.Add(r);
-                    Add(r.img);
+                    game_layer.Children.Add(r.img);
                 }
                 if (element.GetComponente(ref b))
                 {
@@ -224,10 +237,41 @@ namespace _3ReaisEngine.RPG.Core
             }
         }
 
-        public void Add(UIElement element)
+        public void Add(Entidade[] elements)
         {
-            game_layer.Children.Add(element);
+            foreach (Entidade element in elements)
+            {
+
+                entidades.Add(element);
+                element.ID = EntidadeCount;
+                EntidadeCount++;
+
+                Colisao c = null;
+                Render r = null;
+                Body b = null;
+                MalhaColisao mc = null;
+              
+                if (element.GetComponente(ref mc))
+                {
+                    colisores.AddRange(mc.colisoes);
+                }
+                if (element.GetComponente(ref c))
+                {
+                    colisores.Add(c);
+                }
+                if (element.GetComponente(ref r))
+                {
+                    renders.Add(r);
+                    game_layer.Children.Add(r.img);
+                }
+                if (element.GetComponente(ref b))
+                {
+                    bodies.Add(b);
+                }
+            }
         }
+
+        
 
         public void Add(UIEntidade element,bool UILayer = true)
         {
@@ -235,19 +279,29 @@ namespace _3ReaisEngine.RPG.Core
 
             if (UILayer==false)
             {
-                game_layer.Children.Add(element.element);
-                gameUIElements.Add(element);
+                if (!game_layer.Children.Contains(element.element))
+                {
+                    game_layer.Children.Add(element.element);
+                    gameUIElements.Add(element);
+                }
+               
             }
             else
             {
-                ui_layer.Children.Add(element.element);
-                uiElements.Add(element);
+                if (!ui_layer.Children.Contains(element.element))
+                {
+                    Canvas.SetZIndex(element.element, 100000 + ui_layer.Children.Count);
+                    ui_layer.Children.Add(element.element);
+                    uiElements.Add(element);
+                }
             }
 
             uptPos(element);
 
             if (element is IUIStack)
             {
+                ((IUIStack)element).setUiLayerProp(UILayer);
+              
                 foreach (UIEntidade i in ((IUIStack)element).getChilds()) Add(i,UILayer);
             }
             
@@ -316,8 +370,7 @@ namespace _3ReaisEngine.RPG.Core
                 {
                    
                     Vector2 parentSi = parent.size;
-                  
-
+                    
                     element.transform.X = parent.transform.X;
                     element.transform.Y = parent.transform.Y;
 
@@ -361,7 +414,9 @@ namespace _3ReaisEngine.RPG.Core
 
         private void Game_KeyDown(CoreWindow sender, KeyEventArgs e)
         {
+            
             TecladoEvento te = new TecladoEvento { Tecla = (int)e.VirtualKey, Repeticoes = e.KeyStatus.RepeatCount, Modificador = (byte)ModificadorList.KeyDown };
+           
             AmbienteJogo.EnviarEvento(te);
 
         }

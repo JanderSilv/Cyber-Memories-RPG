@@ -16,7 +16,7 @@
   <Properties>
     <DisplayName>RPG</DisplayName>
     <PublisherDisplayName>ruann</PublisherDisplayName>
-    <Logo>Assets\StoreLogo.png</Logo>
+    <Logo>Assets/StoreLogo.png</Logo>
   </Properties>
 
   <Dependencies>
@@ -33,12 +33,12 @@
       EntryPoint="RPG.App">
       <uap:VisualElements
         DisplayName="RPG"
-        Square150x150Logo="Assets\Square150x150Logo.png"
-        Square44x44Logo="Assets\Square44x44Logo.png"
+        Square150x150Logo="Assets/Square150x150Logo.png"
+        Square44x44Logo="Assets/Square44x44Logo.png"
         Description="RPG"
         BackgroundColor="transparent">
-        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png"/>
-        <uap:SplashScreen Image="Assets\SplashScreen.png" />
+        <uap:DefaultTile Wide310x150Logo="Assets/Wide310x150Logo.png"/>
+        <uap:SplashScreen Image="Assets/SplashScreen.png" />
       </uap:VisualElements>
     </Application>
   </Applications>

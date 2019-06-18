@@ -25,8 +25,7 @@ namespace _3ReaisEngine.UI
 
         void start()
         {
-            txt.HorizontalAlignment = HorizontalAlignment.Center;
-            txt.VerticalAlignment = VerticalAlignment.Center;
+            txt.TextWrapping = TextWrapping.Wrap;
             txt.HorizontalTextAlignment = TextAlignment.Center;
            
             element = txt;

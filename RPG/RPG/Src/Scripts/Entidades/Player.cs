@@ -1,139 +1,137 @@
-﻿using System;
-using _3ReaisEngine;
-using _3ReaisEngine.Attributes;
+﻿using _3ReaisEngine;
 using _3ReaisEngine.Components;
 using _3ReaisEngine.Core;
-using _3ReaisEngine.Events;
-using RPG.Src.Scripts;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-[RequerComponente(typeof(Colisao))]
-[RequerComponente(typeof(Body))]
-[RequerComponente(typeof(Render))]
-[RequerComponente(typeof(Animacao))]
-[RequerComponente(typeof(Inventario))]
-[RequerComponente(typeof(Status))]
-[RequerComponente(typeof(Movel))]
-[RequerComponente(typeof(QuestSystem))]
-public class Player : Entidade
+public class Player:Entidade
 {
-    readonly Body body;
-    readonly Animacao anim;
-    readonly Render render;
-    readonly Colisao col;
-    readonly QuestSystem quests;
-    public float vel;  
-    public bool dead = false;
-    readonly Movel mov;
+    public Animacao anim;
+    public bool Lab = true;
+    Body body;
+    Render render;
+    Colisao col;
+    public string skin = "Homem Negro";
 
-
+    InventarioPopUp inventoryUI;
+    bool inventoryOpen = false;
+    public static Player currentPlayer;
+   
   
 
-    public Player(Vector2 pos)
+    public Player()
     {
-        
-        AddComponente<Mercador>();
-        Nome = "Tust";
-        EntPos = pos;
-        vel = 6;
-
+        currentPlayer = this;
+        anim = AddComponente<Animacao>();
+        body = AddComponente<Body>();
         col = GetComponente<Colisao>();
         render = GetComponente<Render>();
-        anim = GetComponente<Animacao>();;
-        body = GetComponente<Body>();
-        quests = GetComponente<QuestSystem>();
-        quests.OnNewQuest = newQuest;
-        body.drag = vel;
+        inventoryUI = new InventarioPopUp();
+       
 
+        col.tamanho.x = 50;
+        col.tamanho.y = 20;
         col.tipo = TipoColisao.Dinamica;
-        col.onColisionAction += OnColide;
-        col.tamanho.x = 40;
 
-        anim.AddAnimation("Idle", "Src/Animations/idle.gif");
-        anim.AddAnimation("Dead", "Src/Animations/dead.gif");
-        anim.AddAnimation("JaDead", "Src/Animations/Dead.png");
-        anim.AddAnimation("Walk", "Src/Animations/walk.gif");
-        anim.Play("Idle",render);
+        render.img.Width = 50;
+        render.img.Height = 50;
 
-      
-     
-
-    }
-
-    private void newQuest(Quest q)
-    {
-        Engine.Print("New Quest added: " + q.Nome);
-    }
-
-    public override void Update()
-    {
-        quests.UpdateQuest();
-        if (AmbienteJogo.Input.TeclaPressionada(Windows.System.VirtualKey.A))
-        {
-            body.velocity.x = -vel;
-         
-            anim.Play("Walk", render);
-            
-        }
-        if (AmbienteJogo.Input.TeclaSolta(Windows.System.VirtualKey.A))
-        {      
-            anim.Play("Idle", render);
-        }
-
-        if (AmbienteJogo.Input.TeclaPressionada(Windows.System.VirtualKey.D))
-        {
-            body.velocity.x = vel;
- 
-            anim.Play("Walk", render);
-            
-        }
-        if (AmbienteJogo.Input.TeclaSolta(Windows.System.VirtualKey.D))
-        {          
-            anim.Play("Idle", render);
-        }
-
-        if (AmbienteJogo.Input.TeclaPressionada(Windows.System.VirtualKey.W))
-        {
-            body.velocity.y = -vel;
-          
-            anim.Play("Walk", render);
-            
-        }
-        if (AmbienteJogo.Input.TeclaSolta(Windows.System.VirtualKey.W))
-        {
-          
-            anim.Play("Idle", render);
-        }
-
-        if (AmbienteJogo.Input.TeclaPressionada(Windows.System.VirtualKey.S))
-        {
-            body.velocity.y = vel;
-         
-            anim.Play("Walk", render);
-            
-        }
-        if (AmbienteJogo.Input.TeclaSolta(Windows.System.VirtualKey.S))
-        {
-            anim.Play("Idle", render);
-        }
-
-     
-    }
-    public override void OnClick(MouseEvento e)
-    {
-        Engine.Print("player aqui");
-    }
-    public void OnColide(Colisao col)
-    {
-        anim.Play("Idle", render);
-        if(col.entidade is Tronco)
-        {
-
-            Quest q = quests.GetQuestAtiva("Andando ao acaso");
-            if (q != null) q.Data["Colidiu"] +=1;
-        }
+        LoadSkin(skin);
        
     }
 
-   
+    public void LoadSkin(string skinFolder)
+    {
+        skin = skinFolder;
+        if (Lab)
+        {
+            anim.AddAnimation("Move_Left", "Src/Images/Players/" + skin  + "/Lab/anim/Lab_Esquerda.gif");
+            anim.AddAnimation("Move_Right", "Src/Images/Players/" + skin + "/Lab/anim/Lab_Direita.gif");
+            anim.AddAnimation("Move_Down", "Src/Images/Players/" + skin +  "/Lab/anim/Lab_Frente.gif");
+            anim.AddAnimation("Move_Up", "Src/Images/Players/" + skin +    "/Lab/anim/Lab_Fundo.gif");
+
+            anim.AddAnimation("Stop_Left", "Src/Images/Players/" + skin  + "/Lab/Esquerda_Parado.png");
+            anim.AddAnimation("Stop_Right", "Src/Images/Players/" + skin + "/Lab/Direita_Parado.png");
+            anim.AddAnimation("Stop_Up", "Src/Images/Players/" + skin +    "/Lab/Fundo_Parado.png");
+            anim.AddAnimation("Stop_Down", "Src/Images/Players/" + skin +  "/Lab/Frente_Parado.png");
+        }
+        else
+        {
+            anim.AddAnimation("Move_Left", "Src/Images/Players/" + skin + "/anim/Esquerda.gif");
+            anim.AddAnimation("Move_Right", "Src/Images/Players/" + skin + "/anim/Direita.gif");
+            anim.AddAnimation("Move_Down", "Src/Images/Players/" + skin + "/anim/Frente.gif");
+            anim.AddAnimation("Move_Up", "Src/Images/Players/" + skin + "/anim/Fundo.gif");
+
+            anim.AddAnimation("Stop_Left", "Src/Images/Players/" + skin + "/Esquerda_Parado.png");
+            anim.AddAnimation("Stop_Right", "Src/Images/Players/" + skin + "/Direita_Parado.png");
+            anim.AddAnimation("Stop_Up", "Src/Images/Players/" + skin + "/Fundo_Parado.png");
+            anim.AddAnimation("Stop_Down", "Src/Images/Players/" + skin + "/Frente_Parado.png");
+
+            anim.AddAnimation("Hit", "Src/Images/Players/" + skin + "/Dano.png");
+            anim.AddAnimation("Lying", "Src/Images/Players/" + skin + "/Deitado.png");
+            anim.AddAnimation("Fight", "Src/Images/Players/" + skin + "/anim/Combate.gif");
+        }
+
+        anim.Play("Stop_Down");
+
+    }
+  
+
+    public override void Update()
+    {
+        if (AmbienteJogo.Input.TeclaPressionada(Windows.System.VirtualKey.W))
+        {
+            body.velocity.y = -5;
+            anim.Play("Move_Up");
+        }
+        if (AmbienteJogo.Input.TeclaPressionada(Windows.System.VirtualKey.S))
+        {
+            body.velocity.y = 5;
+            anim.Play("Move_Down");
+        }
+        if (AmbienteJogo.Input.TeclaPressionada(Windows.System.VirtualKey.A))
+        {
+            body.velocity.x = -5;
+            anim.Play("Move_Left");
+        }
+        if (AmbienteJogo.Input.TeclaPressionada(Windows.System.VirtualKey.D))
+        {
+            body.velocity.x = 5;
+            anim.Play("Move_Right");
+        }
+        if (AmbienteJogo.Input.TeclaPressionada(Windows.System.VirtualKey.E))
+        {
+            if (inventoryOpen)
+            {
+                inventoryUI.HideInventory();
+                inventoryOpen = false;
+            }
+            else
+            {
+                inventoryUI.ShowInventory();
+                inventoryOpen = true;
+            }
+        }
+
+        if (AmbienteJogo.Input.TeclaSolta(Windows.System.VirtualKey.W))
+        {
+            anim.Play("Stop_Up");
+        }
+        if (AmbienteJogo.Input.TeclaSolta(Windows.System.VirtualKey.A))
+        {
+            anim.Play("Stop_Left");
+        }
+        if (AmbienteJogo.Input.TeclaSolta(Windows.System.VirtualKey.S))
+        {
+            anim.Play("Stop_Down");
+        }
+        if (AmbienteJogo.Input.TeclaSolta(Windows.System.VirtualKey.D))
+        {
+            anim.Play("Stop_Right");
+        }
+    }
 }
 

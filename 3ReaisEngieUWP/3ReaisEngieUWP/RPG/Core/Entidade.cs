@@ -31,7 +31,7 @@ namespace _3ReaisEngine.Core
         {
             ID = 0;
             Componentes = new Dictionary<int, IComponente>();
-            EntPos = new Vector2();
+            EntPos = new Vector2(0,0);
             foreach (Attribute atr in GetType().GetTypeInfo().GetCustomAttributes(typeof(RequerComponente)))
             {
 
@@ -66,7 +66,7 @@ namespace _3ReaisEngine.Core
          *  Adiciona um componente a esta entidade
          *  retorna true se bem sucedido, false se mal sucedido
          */
-        public bool AddComponente<T>() where T : Componente<T>, new()
+        public T AddComponente<T>() where T : Componente<T>, new()
         {
             if (!Componentes.ContainsKey(Componente<T>.IntComponenteID))
             {
@@ -86,10 +86,10 @@ namespace _3ReaisEngine.Core
                 
                 t.setEntidade(this);
                 Componentes.Add(Componente<T>.IntComponenteID,t);
-                return true;
+                return t;
             }
 
-            return false;
+            return null;
         }
        
         public bool AddComponente<T>(Componente<T> c)

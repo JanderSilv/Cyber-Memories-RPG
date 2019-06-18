@@ -1,0 +1,32 @@
+Legenda do Laboratório:
+
+IDs:
+
+1 = Piso
+2 = Parede
+3 = Planta
+
+4 = Tubulação
+5 = Placa de Saída
+6 = Chave Eletrônica
+7 = Porta
+8 = Aviso de Perigo
+9 = Grade
+10 = Monitores
+11 = Luzes
+12 = Ar-Condicionado
+13 = Mesa Horizontal
+14 = Cadeira_Costa
+15 = Máquina
+16 = Teletransporte
+
+17 = Máq. de TP
+18 = Armário
+19 = Extintor
+20 = Mesa Vertical
+21 = Cadeira_Esq.
+
+22 = Notebook
+23 = Vidrarias
+24 = Livros
+25 = Papeis

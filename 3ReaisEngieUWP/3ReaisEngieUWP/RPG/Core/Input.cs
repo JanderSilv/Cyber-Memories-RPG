@@ -12,7 +12,7 @@ namespace _3ReaisEngine.Core
         public Vector2 MouseDelta { get => MouseDelta; private set { MouseDelta = value; } }
         byte[] teclado = new byte[(int)(VirtualKey.GamepadRightThumbstickLeft+1)];
         byte[] tecladoUp = new byte[(int)(VirtualKey.GamepadRightThumbstickLeft + 1)];
-        List<VirtualKey> keyUp = new List<VirtualKey>();
+      
 
         public Input()
         {
@@ -38,9 +38,9 @@ namespace _3ReaisEngine.Core
         public bool UpdateTeclado(TecladoEvento e)
         {
             int k = e.Tecla;
-            for (int i = 0; i < tecladoUp.Length; i++) tecladoUp[i] = 0;
-           
-                if (e.Modificador == (byte)ModificadorList.KeyDown)
+            for (int i = 0; i < tecladoUp.Length; i++) tecladoUp[i] = 0; teclado[k] = 0;
+
+            if (e.Modificador == (byte)ModificadorList.KeyDown)
                 {
                     teclado[k] = 1;
                 }

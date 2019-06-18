@@ -18,7 +18,7 @@ namespace _3ReaisEngine.Components
     {
        
         Dictionary<string, BitmapImage> animations = new Dictionary<string, BitmapImage>();
-
+        Render render;
         /// <summary>
         /// Adiciona um gif na lista de animaçoes
         /// </summary>
@@ -27,9 +27,14 @@ namespace _3ReaisEngine.Components
         public void AddAnimation(string Nome,string animPath)
         {
             BitmapImage source = new BitmapImage(new Uri("ms-appx:"+animPath));
-            if (!animations.ContainsKey(Nome) && source != null)
+            if (source == null) return;
+            if (!animations.ContainsKey(Nome) )
             {
                 animations.Add(Nome, source);
+            }
+            else 
+            {
+                animations[Nome] = source;
             }
         }
         /// <summary>
@@ -62,7 +67,7 @@ namespace _3ReaisEngine.Components
         /// <param name="Nome"> Nome da animação a ser reproduzida</param>
         public void Play(string Nome)
         {
-            Render render = entidade.GetComponente<Render>();
+            if(render==null) render = entidade.GetComponente<Render>();
             if (animations.ContainsKey(Nome))
             {
                 render.img.Source = animations[Nome];

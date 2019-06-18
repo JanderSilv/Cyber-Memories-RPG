@@ -17,13 +17,12 @@ namespace _3ReaisEngine.UI
     public class UPanel : UIEntidade, IUIStack
     {
         Rectangle rect = new Rectangle();
-
         public List<UIEntidade> childs = new List<UIEntidade>();
-
+        public bool isUiLyaer = true;
 
         public void start()
         {
-            rect.Fill = new SolidColorBrush(Colors.White) ;
+            rect.Fill = new SolidColorBrush(Colors.White);
             rect.HorizontalAlignment = HorizontalAlignment.Left;
             rect.VerticalAlignment = VerticalAlignment.Top;
             rect.ManipulationDelta += rect_ManipulationDelta;
@@ -75,17 +74,50 @@ namespace _3ReaisEngine.UI
             rect.Fill = new SolidColorBrush(cor);
         }
 
+        public void SetBackGround(string path)
+        {
+            ImageBrush im = new ImageBrush();
+            im.ImageSource = new BitmapImage(new Uri("ms-appx:" + path)); ;
+            rect.Fill = im; 
+        }
+
         public void addChild(UIEntidade child)
         {
-            child.parent = this;
-            childs.Add(child);
+
+            if (!childs.Contains(child))
+            {
+                child.zIndex = (int)element.GetValue(Canvas.ZIndexProperty) + childs.Count;
+                child.parent = this;
+                childs.Add(child);
+              
+            }
         }
 
         public void removeChild(UIEntidade child)
         {
-            child.parent = null;
-            childs.Remove(child);
+           
+            if (childs.Contains(child)) {
+                child.parent = null;
+                AmbienteJogo.window.Remove(child,isUiLyaer);
+                childs.Remove(child);
+            } 
         }
+        public void UpdateUI()
+        {
+            for(int i = 0; i < childs.Count; i++)
+            {
+                if (childs[i] != null)
+                {
+                    AmbienteJogo.window.Add(childs[i], isUiLyaer);
+                    if(childs[i] is IUIStack)
+                    {
+                        ((IUIStack)(childs[i])).UpdateUI();
+                    }
+                }
+                
+            }
+        }
+      
 
         public List<UIEntidade> getChilds()
         {
@@ -98,5 +130,14 @@ namespace _3ReaisEngine.UI
             position.y += (float)e.Delta.Translation.Y;
         }
 
+        public bool IsUiLayer()
+        {
+            return isUiLyaer;
+        }
+
+        public void setUiLayerProp(bool val)
+        {
+            isUiLyaer = val;
+        }
     }
 }

@@ -11,15 +11,33 @@ MainPage.xbf
 RPG.xr.xml
 Src\ButtonStyle.xbf
 Properties\Default.rd.xml
-Src\Animations\dead.gif
-Src\Animations\Dead.png
-Src\Animations\idle.gif
-Src\Animations\jump.gif
-Src\Animations\walk.gif
 Src\Audio\beep.mp3
 Src\Audio\rain.mp3
 Src\Audio\serrote.wav
 Src\dance.gif
+Src\Images\Games\Combat\Animacoes\CorteFogo\CorteFogo.gif
+Src\Images\Games\Combat\Animacoes\CorteFogo\CorteFogo.m4a
+Src\Images\Games\Combat\Animacoes\CortesMultiplos\CortesMultiplos.gif
+Src\Images\Games\Combat\Animacoes\CortesMultiplos\CortesMultiplos.mp3
+Src\Images\Games\Combat\Animacoes\FlechaGelo\FlechaGelo.gif
+Src\Images\Games\Combat\Animacoes\FlechaGelo\FlechaGelo.mp3
+Src\Images\Games\Combat\Animacoes\Pancada\Pancada.gif
+Src\Images\Games\Combat\Animacoes\Pancada\Pancada.m4a
+Src\Images\Games\Combat\Animacoes\Raio\Raio.gif
+Src\Images\Games\Combat\Animacoes\Raio\Raio.m4a
+Src\Images\Games\Combat\BattleScenes\Grassland.png
+Src\Images\Games\Combat\BattleScenes\Lava2.png
+Src\Images\Games\Combat\BattleScenes\Meadow.png
+Src\Images\Games\Combat\BattleScenes\Road1.png
+Src\Images\Games\Combat\combat.png
+Src\Images\Games\Combat\Monsters\Slime.png
+Src\Images\Games\Combat\UI\Atacar.png
+Src\Images\Games\Combat\UI\ChatBox.png
+Src\Images\Games\Combat\UI\CombatBox.png
+Src\Images\Games\Combat\UI\Contorno.png
+Src\Images\Games\Combat\UI\Correr.png
+Src\Images\Games\Combat\UI\Habilidade.png
+Src\Images\Games\Combat\UI\Inventario.png
 Src\Images\Laboratório\Assets-Laborátorio_0001_Livros.png
 Src\Images\Laboratório\Assets-Laborátorio_0002_Papeis.png
 Src\Images\Laboratório\Assets-Laborátorio_0003_Mesa-Vertical.png
@@ -27,23 +45,24 @@ Src\Images\Laboratório\Assets-Laborátorio_0004_Mesa-Horizontal.png
 Src\Images\Laboratório\Assets-Laborátorio_0005_Perigo.png
 Src\Images\Laboratório\Assets-Laborátorio_0006_Vidrarias.png
 Src\Images\Laboratório\Assets-Laborátorio_0007_Armário.png
-Src\Images\Laboratório\Lab__0000_Cadeira-Esq.png
-Src\Images\Laboratório\Lab__0001_Cadeira-Costa.png
-Src\Images\Laboratório\Lab__0002_TP.png
-Src\Images\Laboratório\Lab__0003_Monitores.png
-Src\Images\Laboratório\Lab__0004_Piso.png
+Src\Images\Laboratório\Lab_0000_Cadeira-Esq.png
+Src\Images\Laboratório\Lab_0001_Cadeira-Costa.png
+Src\Images\Laboratório\Lab_0002_TP.png
 Src\Images\Laboratório\Lab_0003_Máquinas.png
+Src\Images\Laboratório\Lab_0003_Monitores.png
 Src\Images\Laboratório\Lab_0004_Extintor.png
+Src\Images\Laboratório\Lab_0004_Piso.png
 Src\Images\Laboratório\Lab_0005_Tubo.png
 Src\Images\Laboratório\Lab_0006_Luz.png
 Src\Images\Laboratório\Lab_0007_Grade.png
 Src\Images\Laboratório\Lab_0008_Planta.png
-Src\Images\Laboratório\Lab_0009_Maq.-de-TP.png
+Src\Images\Laboratório\Lab_0009_Maq-de-TP.png
 Src\Images\Laboratório\Lab_Ar-Condicionado.png
 Src\Images\Laboratório\Lab_Exit.png
 Src\Images\Laboratório\Lab_Fechadura-Eletronica.png
 Src\Images\Laboratório\Lab_Notebook.png
 Src\Images\Laboratório\Lab_Parede.png
+Src\Images\Laboratório\Porta.png
 Src\Images\Menu\Botões\Configurações.png
 Src\Images\Menu\Botões\Configurações_Selecionado.png
 Src\Images\Menu\Botões\Controles.png
@@ -58,6 +77,24 @@ Src\Images\Menu\Botões\Voltar.png
 Src\Images\Menu\Botões\Voltar_Selecionado.png
 Src\Images\Menu\Botões\Volume.png
 Src\Images\Menu\Botões\Volume_Selecionado.png
+Src\Images\Menu\Chat.png
+Src\Images\Menu\ChatBox.png
+Src\Images\Menu\Inventário\Arma_Texto.png
+Src\Images\Menu\Inventário\Armadura.png
+Src\Images\Menu\Inventário\Armadura_Selecionado.png
+Src\Images\Menu\Inventário\Armadura_Texto.png
+Src\Images\Menu\Inventário\Armas.png
+Src\Images\Menu\Inventário\Armas_Selecionados.png
+Src\Images\Menu\Inventário\Atributos.png
+Src\Images\Menu\Inventário\Atributos_Selecionado.png
+Src\Images\Menu\Inventário\Atributos_Texto.png
+Src\Images\Menu\Inventário\Contorno.png
+Src\Images\Menu\Inventário\Contorno_Inventario.png
+Src\Images\Menu\Inventário\Inventário.png
+Src\Images\Menu\Inventário\Inventário_1.png
+Src\Images\Menu\Inventário\Moeda.png
+Src\Images\Menu\Inventário\Personagem.png
+Src\Images\Menu\Inventário\Slot.png
 Src\Images\Menu\Logo.png
 Src\Images\Menu\Logo2.png
 Src\Images\Menu\Selecao_Personagem\Contorno.png
@@ -65,23 +102,107 @@ Src\Images\Menu\Selecao_Personagem\Escolha_Personagem.png
 Src\Images\Menu\Selecao_Personagem\Homem.png
 Src\Images\Menu\Selecao_Personagem\Homem_Selecionado.png
 Src\Images\Menu\Selecao_Personagem\Homem-Branco-Combate.png
-Src\Images\Menu\Selecao_Personagem\Homem-Branco-Face.png
 Src\Images\Menu\Selecao_Personagem\Homem-Negro-Combate.png
-Src\Images\Menu\Selecao_Personagem\Homem-Negro-Face.png
 Src\Images\Menu\Selecao_Personagem\Mulher Selecionado.png
 Src\Images\Menu\Selecao_Personagem\Mulher.png
 Src\Images\Menu\Selecao_Personagem\Mulher-Branco-Combate.png
-Src\Images\Menu\Selecao_Personagem\Mulher-Branco-Face.png
 Src\Images\Menu\Selecao_Personagem\Mulher-Negro-Combate.png
-Src\Images\Menu\Selecao_Personagem\Mulher-Negro-Face.png
 Src\Images\Menu\Selecao_Personagem\Pronto.png
 Src\Images\Menu\Selecao_Personagem\Pronto_Selecionado.png
 Src\Images\Menu\Selecao_Personagem\Seta Direita Selecionado.png
 Src\Images\Menu\Selecao_Personagem\Seta Direita.png
 Src\Images\Menu\Selecao_Personagem\Seta Esquerda Selecionado.png
 Src\Images\Menu\Selecao_Personagem\Seta Esquerda.png
+Src\Images\Players\Homem Branco\anim\Combate.gif
+Src\Images\Players\Homem Branco\anim\Direita.gif
+Src\Images\Players\Homem Branco\anim\Esquerda.gif
+Src\Images\Players\Homem Branco\anim\Frente.gif
+Src\Images\Players\Homem Branco\anim\Fundo.gif
+Src\Images\Players\Homem Branco\Dano.png
+Src\Images\Players\Homem Branco\Deitado.png
+Src\Images\Players\Homem Branco\Direita_Parado.png
+Src\Images\Players\Homem Branco\Esquerda_Parado.png
+Src\Images\Players\Homem Branco\Face.png
+Src\Images\Players\Homem Branco\Frente_Parado.png
+Src\Images\Players\Homem Branco\Fundo_Parado.png
+Src\Images\Players\Homem Branco\Lab\anim\Lab_Direita.gif
+Src\Images\Players\Homem Branco\Lab\anim\Lab_Esquerda.gif
+Src\Images\Players\Homem Branco\Lab\anim\Lab_Frente.gif
+Src\Images\Players\Homem Branco\Lab\anim\Lab_Fundo.gif
+Src\Images\Players\Homem Branco\Lab\Direita_Parado.png
+Src\Images\Players\Homem Branco\Lab\Esquerda_Parado.png
+Src\Images\Players\Homem Branco\Lab\Frente_Parado.png
+Src\Images\Players\Homem Branco\Lab\Fundo_Parado.png
+Src\Images\Players\Homem Negro\anim\Combate.gif
+Src\Images\Players\Homem Negro\anim\Direita.gif
+Src\Images\Players\Homem Negro\anim\Esquerda.gif
+Src\Images\Players\Homem Negro\anim\Frente.gif
+Src\Images\Players\Homem Negro\anim\Fundo.gif
+Src\Images\Players\Homem Negro\Dano.png
+Src\Images\Players\Homem Negro\Deitado.png
+Src\Images\Players\Homem Negro\Direita_Parado.png
+Src\Images\Players\Homem Negro\Esquerda_Parado.png
+Src\Images\Players\Homem Negro\Face.png
+Src\Images\Players\Homem Negro\Frente_Parado.png
+Src\Images\Players\Homem Negro\Fundo_Parado.png
+Src\Images\Players\Homem Negro\Lab\anim\Lab_Direita.gif
+Src\Images\Players\Homem Negro\Lab\anim\Lab_Esquerda.gif
+Src\Images\Players\Homem Negro\Lab\anim\Lab_Frente.gif
+Src\Images\Players\Homem Negro\Lab\anim\Lab_Fundo.gif
+Src\Images\Players\Homem Negro\Lab\Direita_Parado.png
+Src\Images\Players\Homem Negro\Lab\Esquerda_Parado.png
+Src\Images\Players\Homem Negro\Lab\Frente_Parado.png
+Src\Images\Players\Homem Negro\Lab\Fundo_Parado.png
+Src\Images\Players\Mulher Branco\anim\Combate.gif
+Src\Images\Players\Mulher Branco\anim\Direita.gif
+Src\Images\Players\Mulher Branco\anim\Esquerda.gif
+Src\Images\Players\Mulher Branco\anim\Frente.gif
+Src\Images\Players\Mulher Branco\anim\Fundo.gif
+Src\Images\Players\Mulher Branco\Dano.png
+Src\Images\Players\Mulher Branco\Deitado.png
+Src\Images\Players\Mulher Branco\Direita_Parado.png
+Src\Images\Players\Mulher Branco\Esquerda_Parado.png
+Src\Images\Players\Mulher Branco\Face.png
+Src\Images\Players\Mulher Branco\Frente_Parado.png
+Src\Images\Players\Mulher Branco\Fundo_Parado.png
+Src\Images\Players\Mulher Branco\Lab\anim\Lab_Direita.gif
+Src\Images\Players\Mulher Branco\Lab\anim\Lab_Esquerda.gif
+Src\Images\Players\Mulher Branco\Lab\anim\Lab_Frente.gif
+Src\Images\Players\Mulher Branco\Lab\anim\Lab_Fundo.gif
+Src\Images\Players\Mulher Branco\Lab\Direita_Parado.png
+Src\Images\Players\Mulher Branco\Lab\Esquerda_Parado.png
+Src\Images\Players\Mulher Branco\Lab\Frente_Parado.png
+Src\Images\Players\Mulher Branco\Lab\Fundo_Parado.png
+Src\Images\Players\Mulher Negro\anim\Combate.gif
+Src\Images\Players\Mulher Negro\anim\Direita.gif
+Src\Images\Players\Mulher Negro\anim\Esquerda.gif
+Src\Images\Players\Mulher Negro\anim\Frente.gif
+Src\Images\Players\Mulher Negro\anim\Fundo.gif
+Src\Images\Players\Mulher Negro\Dano.png
+Src\Images\Players\Mulher Negro\Deitado.png
+Src\Images\Players\Mulher Negro\Direita_Parado.png
+Src\Images\Players\Mulher Negro\Esquerda__Parado.png
+Src\Images\Players\Mulher Negro\Face.png
+Src\Images\Players\Mulher Negro\Frente_Parado.png
+Src\Images\Players\Mulher Negro\Fundo_Parado.png
+Src\Images\Players\Mulher Negro\Lab\anim\Direita.gif
+Src\Images\Players\Mulher Negro\Lab\anim\Esquerda.gif
+Src\Images\Players\Mulher Negro\Lab\anim\Frente.gif
+Src\Images\Players\Mulher Negro\Lab\anim\Fundo.gif
+Src\Images\Players\Mulher Negro\Lab\Direita_Parado.png
+Src\Images\Players\Mulher Negro\Lab\Esquerda_Parado.png
+Src\Images\Players\Mulher Negro\Lab\Frente_Parado.png
+Src\Images\Players\Mulher Negro\Lab\Fundo_Parado.png
+Src\Images\Windows_XP\Jogos XP\Cyber Memories Clicado.png
+Src\Images\Windows_XP\Jogos XP\Cyber Memories.png
+Src\Images\Windows_XP\Jogos XP\Joli Man Clicado.png
+Src\Images\Windows_XP\Jogos XP\Joli Man.png
+Src\Images\Windows_XP\Jogos XP\Lap_Bird_Clicado.png
+Src\Images\Windows_XP\Jogos XP\Lap_Bird_icon.png
+Src\Images\Windows_XP\Jogos XP\Lapa_Bird.png
+Src\Images\Windows_XP\Windows XP.png
 Src\JunglerockAlpha.png
-Src\Maps\Laborátorio\Laborátorio.txt
-Src\Maps\Laborátorio\Laboratório.xml
+Src\Maps\Laboratorio\Laborátorio.txt
+Src\Maps\Laboratorio\Laboratório.xml
 Src\Maps\map.xml
 Src\Opera-04.png

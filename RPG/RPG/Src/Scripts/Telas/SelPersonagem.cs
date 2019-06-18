@@ -2,6 +2,7 @@
 using _3ReaisEngine.Core;
 using _3ReaisEngine.RPG.Core;
 using _3ReaisEngine.UI;
+using RPG.Src.Scripts.Telas;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,32 +20,33 @@ public class SelPersonagem : Window
         UImage charSelector;
         UImage charSelector2;
         private int i = 0;
+        public Laboratorio game;
+        
     public SelPersonagem(Page root) : base(root,800,640)
         {
-            ImagePath[0] = "Src/Images/Menu/Selecao_Personagem/Homem-Branco-Face.png";
-            ImagePath[1] = "Src/Images/Menu/Selecao_Personagem/Homem-Negro-Face.png";
-            ImagePath[2] = "Src/Images/Menu/Selecao_Personagem/Mulher-Branco-Face.png";
-            ImagePath[3] = "Src/Images/Menu/Selecao_Personagem/Mulher-Negro-Face.png";
+            ImagePath[0] = "Src/Images/Players/Homem Branco/Face.png";
+            ImagePath[1] = "Src/Images/Players/Homem Negro/Face.png";
+            ImagePath[2] = "Src/Images/Players/Mulher Branco/Face.png";
+            ImagePath[3] = "Src/Images/Players/Mulher Negro/Face.png";
 
-            ImagePath2[0] = "Src/Images/Menu/Selecao_Personagem/Homem-Branco-Combate.png";
-            ImagePath2[1] = "Src/Images/Menu/Selecao_Personagem/Homem-Negro-Combate.png";
-            ImagePath2[2] = "Src/Images/Menu/Selecao_Personagem/Mulher-Branco-Combate.png";
-            ImagePath2[3] = "Src/Images/Menu/Selecao_Personagem/Mulher-Negro-Combate.png";
+            ImagePath2[0] = "Src/Images/Players/Homem Branco/anim/Combate.gif";
+            ImagePath2[1] = "Src/Images/Players/Homem Negro/anim/Combate.gif";
+            ImagePath2[2] = "Src/Images/Players/Mulher Branco/anim/Combate.gif";
+            ImagePath2[3] = "Src/Images/Players/Mulher Negro/anim/Combate.gif";
 
            
 
-            UImage title = new UImage("Src/Images/Menu/Selecao_Personagem/Escolha_Personagem.png", new Vector2(50, 10), new Vector2(500, 100));
+            UImage title = new UImage("Src/Images/Menu/Selecao_Personagem/Escolha_Personagem.png", new Vector2(53, 15), new Vector2(519, 51));
             UImage border = new UImage("Src/Images/Menu/Selecao_Personagem/Contorno.png", new Vector2(53, 45), new Vector2(300, 250));
-            charSelector = new UImage(ImagePath[i], new Vector2(52.5f, 38f), new Vector2(100, 100));
-            charSelector2 = new UImage(ImagePath2[i], new Vector2(52.5f, 56), new Vector2(50, 50));
+            charSelector = new UImage(ImagePath[i], new Vector2(52.5f, 38f), new Vector2(144, 144));
+            charSelector2 = new UImage(ImagePath2[i], new Vector2(52.5f, 56), new Vector2(43, 63));
 
 
             UButton man = new UButton("", new Vector2(23, 39), new Vector2(206, 78), Man);
             UButton woman = new UButton("", new Vector2(23, 54), new Vector2(206, 78), Woman);
-            UButton rightSelector = new UButton("", new Vector2(58, 73), new Vector2(45, 41), RightSelector);
-            UButton leftSelector = new UButton("", new Vector2(43, 73), new Vector2(45, 41), LeftSelector);
+            UButton rightSelector = new UButton("", new Vector2(61, 73), new Vector2(45, 41), RightSelector);
+            UButton leftSelector = new UButton("", new Vector2(46, 73), new Vector2(45, 41), LeftSelector);
             UButton ready = new UButton("", new Vector2(52, 90), new Vector2(188, 49), Ready);
-
 
 
             Add(title);
@@ -56,7 +58,6 @@ public class SelPersonagem : Window
             Add(rightSelector);
             Add(leftSelector);
             Add(ready);
-
 
             man.setBackground("Src/Images/Menu/Selecao_Personagem/Homem.png",Stretch.Uniform);
             man.setOnHover("Src/Images/Menu/Selecao_Personagem/Homem_Selecionado.png");
@@ -72,17 +73,29 @@ public class SelPersonagem : Window
             ready.setOnHover("Src/Images/Menu/Selecao_Personagem/Pronto_Selecionado.png");
 
         
-            UText text = new UText("HELLO WORLD", new Vector2(50, 50), new Vector2(350, 150));
-            text.fontSize = 50;
-          
-          
-       
     }
 
-   
+
+
     private void Ready(object sender)
     {
-        //window.SetCurrent();
+        switch (i)
+        {
+            case 0:
+                game.PlayerSkin = "Homem Branco";
+                break;
+            case 1:
+                game.PlayerSkin = "Homem Negro";
+                break;
+            case 2:
+                game.PlayerSkin = "Mulher Branco";
+                break;
+            case 3:
+                game.PlayerSkin = "Mulher Negro";
+                break;
+        }
+
+        game?.SetCurrent();
     }
 
     private void LeftSelector(object sender)

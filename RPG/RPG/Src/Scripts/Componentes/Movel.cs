@@ -34,7 +34,7 @@ public class Movel:Componente<Movel>
             if (target.x < entidade.EntPos.x)  bod.velocity.x = -vel;
             if (target.x > entidade.EntPos.x)  bod.velocity.x = vel;
             if (target.y < entidade.EntPos.y)  bod.velocity.y = -vel;
-            if (target.x > entidade.EntPos.y)  bod.velocity.y = vel;
+            if (target.y > entidade.EntPos.y)  bod.velocity.y = vel;
         
     }
 

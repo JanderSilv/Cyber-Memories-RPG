@@ -60,8 +60,30 @@ namespace _3ReaisEngine
             return new Vector2(Math.Abs(a.x - b.x), Math.Abs(a.y - b.y));
         }
 
+        public static float GetAngle(Vector2 a, Vector2 b, Vector2 eixo)
+        {
+            float d = Engine.Distance(a, b);
+            float h = 0;
+            float sin;
+            if (eixo.x != 0)
+            {
+                h = Math.Abs(a.y - b.y);
+            }
+            if (eixo.y != 0)
+            {
+                h = Math.Abs(a.x - b.x);
+            }
 
-      
+            sin = h / d;
+
+            return (float)(Math.Asin(sin) * (180.0f / Math.PI));
+        }
+
+        public static void Wait(float seconds)
+        {
+            Task.Delay((int)(seconds * 1000));
+        }
+
     }
 
 }
