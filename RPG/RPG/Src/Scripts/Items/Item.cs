@@ -14,6 +14,7 @@ public class Item : Armazenavel
     public int Preco;
     public bool Estacavel;
     public ushort TipoItem;
+    public string Icone;
 
     public bool getEstacavel()
     {
@@ -23,6 +24,11 @@ public class Item : Armazenavel
     public uint getID()
     {
         return ID;
+    }
+
+    public string getImagem()
+    {
+        return Icone;
     }
 
     public ushort getTipo()

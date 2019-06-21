@@ -17,18 +17,18 @@ using Windows.UI.Xaml.Media.Imaging;
 
 public class InventarioPopUp
 {
-
+  
     static int sizeX = 7, sizeY = 7;
     public UPanel inventory = new UPanel(new Vector2(50, 50), new Vector2(700, 330 * 1.25f));
     UImage[,] slots = new UImage[sizeX, sizeY];
+    UImage[,] itemSlot = new UImage[sizeX, sizeY];
+
     public InventarioPopUp()
     {
        
         inventory.manipulationMode = ManipulationModes.All;
         inventory.SetBackGround("Src/Images/Menu/Inventário/Contorno.png");
         UImage coin = new UImage("Src/Images/Menu/Inventário/Moeda.png", new Vector2(92.75f, 12.5f), new Vector2(24, 26));
-
-        // Preencher os slots do inventário.
 
         UImage atrbBorder = new UImage("Src/Images/Menu/Inventário/Contorno_Inventario.png", new Vector2(75, 55), new Vector2(180, 320));
         UImage invText = new UImage("Src/Images/Menu/Inventário/Inventário_1.png", new Vector2(25, 10), new Vector2(184, 33));
@@ -73,8 +73,15 @@ public class InventarioPopUp
             }
             return true;
         }
-    public void ShowInventory()
+    public void ShowInventory(Inventario inv)
     {
+        int i = 0;
+            foreach(Slot s in inv.slots.Values)
+        {
+            itemSlot[i / sizeX, i % sizeY].Content = s.arm.getImagem();
+            i++;
+        }
+
         inventory.position.x = 50;
         inventory.position.y = 50;
        // AmbienteJogo.RegistrarEventoCallBack(PrioridadeEvento.Interface, UpdateTeclado);

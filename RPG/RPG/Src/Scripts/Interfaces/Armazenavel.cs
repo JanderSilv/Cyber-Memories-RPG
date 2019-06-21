@@ -3,5 +3,8 @@
     bool getEstacavel();
     uint getID();
     ushort getTipo();
+    string getImagem();
 }
+
+
 

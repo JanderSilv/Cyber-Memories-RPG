@@ -8,6 +8,7 @@
         Preco = 500;
         Estacavel = false;
         Descricao = "Arco longo de combate melhorado";
+        Icone = "Src/Images/Menu/Baixo.png";
 
         ItemManager.GenID(this);
         _3ReaisEngine.Engine.Print("ID do arcoarqueiro " + ID);

@@ -14,6 +14,7 @@ public class Player:Entidade
     Body body;
     Render render;
     Colisao col;
+    Inventario inv;
     public QuestSystem quest;
     public string skin = "Homem Negro";
 
@@ -28,6 +29,7 @@ public class Player:Entidade
         currentPlayer = this;
         anim = AddComponente<Animacao>();
         body = AddComponente<Body>();
+        inv = AddComponente<Inventario>();
         col = GetComponente<Colisao>();
         render = GetComponente<Render>();
         inventoryUI = new InventarioPopUp();
@@ -113,7 +115,7 @@ public class Player:Entidade
             }
             else
             {
-                inventoryUI.ShowInventory();
+                inventoryUI.ShowInventory(inv);
                 inventoryOpen = true;
             }
         }
