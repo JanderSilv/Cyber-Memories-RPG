@@ -350,10 +350,12 @@ namespace RPG.Src.Scripts.Entidades
 
             if (Engine.Distance(this.EntPos, Player.currentPlayer.EntPos) < 50)
             {
-                Player.currentPlayer.GetComponente<QuestSystem>().GetQuestAtiva("Curiosidade so mata gato").Data["Feito"]++;
-                var chat2 = new Chat();
-                
-                chat2.ReceiverImage = "Src/Images/Players/" + Player.currentPlayer.skin + "/Face.png";
+                Quest q = Player.currentPlayer.GetComponente<QuestSystem>().GetQuestAtiva("Curiosidade so mata gato");
+                if(q!=null)q.Data["Feito"]++;
+                var chat2 = new Chat
+                {
+                    ReceiverImage = "Src/Images/Players/" + Player.currentPlayer.skin + "/Face.png"
+                };
                 chat2.messages.Add(new Chat.Message(Chat.who.receiver, "Um livro de história..."));
                 chat2.messages.Add(new Chat.Message(Chat.who.receiver, "\"...diz a lenda que há mt tempo tempo atrás uma entidade enganou um dos antigos deuses e comprometeu nossa realidade levando-a ao caos e esquecimento...\""));
                 chat2.messages.Add(new Chat.Message(Chat.who.receiver, "\"...entretanto uma divindade conhecido por alguns como Misso surgiu e restaurou o mundo das cinzas...\""));
