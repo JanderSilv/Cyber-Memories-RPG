@@ -94,7 +94,7 @@ public class SelPersonagem : Window
                 game.PlayerSkin = "Mulher Negro";
                 break;
         }
-
+        MenuPrin.musicaDeFundo.Stop();
         game?.SetCurrent();
     }
 

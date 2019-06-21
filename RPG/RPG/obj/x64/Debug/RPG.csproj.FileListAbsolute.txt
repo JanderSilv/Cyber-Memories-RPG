@@ -177,3 +177,4 @@ C:\Users\Jander\Documents\GitHub\RPG-LP2\RPG\RPG\obj\x64\Debug\3ReaisEngieUWP.pr
 C:\Users\Jander\Documents\GitHub\RPG-LP2\RPG\RPG\obj\x64\Debug\ProjectArchitectures.txt
 C:\Users\Jander\Documents\GitHub\RPG-LP2\RPG\RPG\obj\x64\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_636758624200000000.json
 C:\Users\Jander\Documents\GitHub\RPG-LP2\RPG\RPG\obj\x64\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_636758660200000000.json
+E:\Projects\RPG-LP2\RPG\RPG\obj\x64\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_636758624200000000.json

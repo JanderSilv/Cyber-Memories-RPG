@@ -22,7 +22,6 @@ namespace RPG
   
         SelPersonagem selecao;
         MenuPrin menuPrin;
-        GameWin gameWin;
         Laboratorio lab;
         public MainPage()
         {       
@@ -30,7 +29,6 @@ namespace RPG
 
             selecao = new SelPersonagem(this);         
             menuPrin = new MenuPrin(this);
-            gameWin = new GameWin(this);
             lab = new Laboratorio(this);
 
             menuPrin.SetCurrent();

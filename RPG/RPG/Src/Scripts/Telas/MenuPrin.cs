@@ -14,16 +14,17 @@ public class MenuPrin : Window
 {
     public Window next;
     public UPanel about;
+    static public Audio musicaDeFundo = new Audio();
     public MenuPrin(Page root) : base(root)
     {
                     /* Algoritmo do Menu */
 
-        Audio musicaDeFundo = new Audio();
+        
         AudioSource As = new AudioSource();
-        As.Name = "Src/Audio/Funkaholic.mp3";
-        As.Loop = false;
-        As.Volume = 50;
-
+        As.Name = "Funkaholic.mp3";
+        As.Loop = true;
+        As.Volume = 10;
+        musicaDeFundo.Init();
         musicaDeFundo.Audios.Add("Musica", As);
         musicaDeFundo.Play("Musica");
 
@@ -84,6 +85,7 @@ public class MenuPrin : Window
 
     private void Play(object sender)
     {
+        
         next.SetCurrent(); 
     }
 
