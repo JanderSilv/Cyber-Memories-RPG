@@ -12,8 +12,8 @@ namespace _3ReaisEngine.Core
         public Vector2 MouseDelta { get => MouseDelta; private set { MouseDelta = value; } }
         byte[] teclado = new byte[(int)(VirtualKey.GamepadRightThumbstickLeft+1)];
         byte[] tecladoUp = new byte[(int)(VirtualKey.GamepadRightThumbstickLeft + 1)];
-      
-
+        byte[] tecladoDown = new byte[(int)(VirtualKey.GamepadRightThumbstickLeft + 1)];
+        byte[] tecladoAtivo = new byte[(int)(VirtualKey.GamepadRightThumbstickLeft + 1)];
         public Input()
         {
             
@@ -38,35 +38,54 @@ namespace _3ReaisEngine.Core
         public bool UpdateTeclado(TecladoEvento e)
         {
             int k = e.Tecla;
-            for (int i = 0; i < tecladoUp.Length; i++) tecladoUp[i] = 0; teclado[k] = 0;
+            
 
-            if (e.Modificador == (byte)ModificadorList.KeyDown)
+                if (e.Modificador == (byte)ModificadorList.KeyHold)
                 {
-                    teclado[k] = 1;
+                    tecladoDown[k] = 1;
+                    tecladoAtivo[k] = 1;
                 }
                 else if (e.Modificador == (byte)ModificadorList.KeyUp)
-                {
-                    teclado[k] = 0;
+                {                 
                     tecladoUp[k] = 1;
-                    
+                    tecladoAtivo[k] = 0;
                 }
-            
+                else if (e.Modificador == (byte)ModificadorList.KeyDown)
+                {
+                    teclado[k] = 1;
+                    tecladoAtivo[k] = 1;
+            }
+
 
             return false;
         }
 
-        public bool TeclaPressionada(VirtualKey key)
+        public void ClearTeclado()
         {
-
-            if (teclado[(int)key] > 0)
+            for (int i = 0; i < tecladoUp.Length; i++)
             {
-                return true;
+                tecladoUp[i] = 0;
+                teclado[i] = 0;
+                tecladoDown[i] = 0;
+                
             }
-            return false;
+        }
+        public bool Tecla(VirtualKey key)
+        {
+            return tecladoAtivo[(int)key] != 0;
+        }
+        public bool TeclaPresa(VirtualKey key)
+        {
+            return tecladoDown[(int)key] == 1;
         }
         public bool TeclaSolta(VirtualKey key)
         {
             return tecladoUp[(int)key]==1;
+        }
+
+        public bool TeclaPressionada(VirtualKey key)
+        {
+            return teclado[(int)key] == 1;
         }
 
         public bool MouseButton(MouseButton btn)

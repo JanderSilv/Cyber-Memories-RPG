@@ -6,8 +6,9 @@ namespace _3ReaisEngine.Events
     public enum ModificadorList : byte
     {
         KeyUp = 1,
-        KeyDown = 2,
-        Shift = 4
+        KeyHold = 2,
+        Shift = 4,
+        KeyDown = 8
     }
 
     public class TecladoEvento : EventArgs

@@ -38,7 +38,7 @@ using System.Threading.Tasks;
         List<string> toRem = new List<string>();
             foreach (Quest q in QuestsAtivas.Values)
             {
-            Engine.Print(q.Nome);
+           
                 if (q.Validate())
                 {
                     q.OnFinish();

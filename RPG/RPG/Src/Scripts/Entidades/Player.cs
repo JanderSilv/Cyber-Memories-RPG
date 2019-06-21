@@ -84,22 +84,22 @@ public class Player:Entidade
     public override void Update()
     {
         quest.UpdateQuest();
-        if (AmbienteJogo.Input.TeclaPressionada(Windows.System.VirtualKey.W))
+        if (AmbienteJogo.Input.Tecla(Windows.System.VirtualKey.W))
         {
             body.velocity.y = -5;
             anim.Play("Move_Up");
         }
-        if (AmbienteJogo.Input.TeclaPressionada(Windows.System.VirtualKey.S))
+        if (AmbienteJogo.Input.Tecla(Windows.System.VirtualKey.S))
         {
             body.velocity.y = 5;
             anim.Play("Move_Down");
         }
-        if (AmbienteJogo.Input.TeclaPressionada(Windows.System.VirtualKey.A))
+        if (AmbienteJogo.Input.Tecla(Windows.System.VirtualKey.A))
         {
             body.velocity.x = -5;
             anim.Play("Move_Left");
         }
-        if (AmbienteJogo.Input.TeclaPressionada(Windows.System.VirtualKey.D))
+        if (AmbienteJogo.Input.Tecla(Windows.System.VirtualKey.D))
         {
             body.velocity.x = 5;
             anim.Play("Move_Right");

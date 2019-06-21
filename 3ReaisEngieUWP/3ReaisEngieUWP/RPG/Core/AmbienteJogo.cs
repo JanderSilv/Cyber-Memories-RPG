@@ -62,7 +62,7 @@ namespace _3ReaisEngine
             {
                 try
                 {
-                    
+                    Input.ClearTeclado();   
                     if (window == null)
                     {
                         Engine.Print("Window is missing");

@@ -81,7 +81,7 @@ namespace RPG.Src.Scripts.Entidades
         }
         public override void OnClick(MouseEvento e)
         {
-            if (Engine.Distance(this.EntPos, Player.currentPlayer.EntPos) < 100)
+            if (e.Tipo == Modificador.ButtonUp && Engine.Distance(this.EntPos, Player.currentPlayer.EntPos) < 100)
             {
                
                     Quest q = Player.currentPlayer.quest.GetQuestAtiva(new FalarComNPC().Nome);

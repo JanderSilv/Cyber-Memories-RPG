@@ -89,7 +89,6 @@ public static class ChatBar
             else Image.Content = c.SenderImage;          
             Text.content = m.message;
 
-            await Task.Run(async () => { await Task.Delay(500); next = false; });
              await Task.Run(() => { while (!next && !exit) ; }); 
         }
         c.done = true;
@@ -100,12 +99,12 @@ public static class ChatBar
        
         public static bool UpdateTeclado(TecladoEvento e)
         {
-            if(e.Tecla == (int)VirtualKey.Enter)
+            if(e.Tecla == (int)VirtualKey.Enter && e.Modificador ==  (byte)ModificadorList.KeyDown)
             {
             
             next = true;
             }
-            if (e.Tecla == (int)VirtualKey.Escape)
+            if (e.Tecla == (int)VirtualKey.Escape && e.Modificador == (byte)ModificadorList.KeyDown)
             {
            
             HideChat();
