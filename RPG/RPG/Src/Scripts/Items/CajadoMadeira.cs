@@ -8,7 +8,7 @@
         Preco = 0;
         Estacavel = false;
         Descricao = "Cajado maciço feito de carvalho";
-
+        Icone = "Src/Images/Itens/Arma/Cajado.png";
         ItemManager.GenID(this);
         _3ReaisEngine.Engine.Print("ID do cajadomadeira " + ID);
     }

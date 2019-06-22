@@ -8,7 +8,7 @@
         Preco = 0;
         Estacavel = false;
         Descricao = "Espada forjada em aço";
-
+        Icone = "Src/Images/Itens/Arma/Espada.png";
         ItemManager.GenID(this);
         _3ReaisEngine.Engine.Print("ID do espadaaco" + ID);
     }

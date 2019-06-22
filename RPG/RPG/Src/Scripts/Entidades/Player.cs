@@ -38,10 +38,14 @@ public class Player:Entidade
         col.tamanho.x = 50;
         col.tamanho.y = 20;
         col.tipo = TipoColisao.Dinamica;
-
+        inv.Init();
         render.img.Width = 50;
         render.img.Height = 50;
-       
+
+        inv.Add(new ArcoArqueiro());
+        inv.Add(new EspadaAco());
+        inv.Add(new CajadoMadeira());
+
         LoadSkin(skin);
        
     }

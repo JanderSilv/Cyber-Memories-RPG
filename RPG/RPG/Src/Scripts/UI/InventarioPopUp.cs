@@ -61,7 +61,10 @@ public class InventarioPopUp
             for (int y = 0; y < sizeY; y++)
             {
                 slots[x, y] = new UImage("Src/Images/Menu/Inventário/Slot.png", new Vector2(8 + x * 8, 22.5f + y * 10), new Vector2(40, 40));
+                itemSlot[x,y] = new UImage(" ", new Vector2(8 + x * 8, 22.5f + y * 10), new Vector2(34, 34));
+               
                 inventory.addChild(slots[x, y]);
+                inventory.addChild(itemSlot[x, y]);
             }
         }
     }
@@ -78,7 +81,7 @@ public class InventarioPopUp
         int i = 0;
             foreach(Slot s in inv.slots.Values)
         {
-            itemSlot[i / sizeX, i % sizeY].Content = s.arm.getImagem();
+            itemSlot[i % sizeX, i / sizeY].Content = s.arm.getImagem();
             i++;
         }
 

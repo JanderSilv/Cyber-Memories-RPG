@@ -27,6 +27,7 @@ namespace _3ReaisEngine.UI
     {
         public UIElement element;
         public FrameworkElement frameworkElement;
+        public Execute Action;
         public int zIndex=0;
 
         
@@ -51,6 +52,11 @@ namespace _3ReaisEngine.UI
             size.y = y;
 
         }
+
+        protected void act(object sender, RoutedEventArgs e)
+        {
+            Action?.Invoke(this);
+        }
     }
 
     public interface IUIStack
@@ -72,7 +78,7 @@ namespace _3ReaisEngine.UI
 
     public class UButton : UIEntidade, IUIBackground
     {
-        public Execute Action;
+       
         public object Content { get { return btn.Content; } set { btn.Content = value; } }
 
         Button btn = new Button();
@@ -184,10 +190,7 @@ namespace _3ReaisEngine.UI
 
             brush.ImageSource = Normal;
         }
-        private void act(object sender, RoutedEventArgs e)
-        {
-            Action?.Invoke(this);
-        }
+        
 
        
 

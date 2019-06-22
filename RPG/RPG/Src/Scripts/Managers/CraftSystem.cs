@@ -27,7 +27,7 @@ namespace RPG.Src.Scripts
            
             for(int c = 0; c < r.itens.Length; c++)
             {
-               Armazenavel arm= InventarioManager.GetByID(r.itens[c],i);
+               Armazenavel arm= i.GetByID(r.itens[c]);
                 if (arm == null) break;
                 it.Add(arm);
             }
@@ -35,7 +35,7 @@ namespace RPG.Src.Scripts
             {
                 for (int c = 0; c < r.itens.Length; c++)
                 {
-                    InventarioManager.Remove(it[c], i);
+                    i.Remove(it[c]);
                 }
             }
             else
@@ -43,7 +43,7 @@ namespace RPG.Src.Scripts
                 return false;
             }
             Armazenavel a = (Armazenavel)System.Activator.CreateInstance(ItemSystem.itenDic[r.item]);
-            InventarioManager.Add(a,i);
+            i.Add(a);
             return true;
         }
 
