@@ -17,7 +17,7 @@ namespace _3ReaisEngine.RPG.Components
     public class AudioSource
     {
         public string Name ="";
-        public float Volume = 100;
+        public float Volume = 0.5f;
         public bool Loop = false;
     }
 
@@ -49,7 +49,8 @@ namespace _3ReaisEngine.RPG.Components
                 var stream = await file.OpenAsync(FileAccessMode.Read);
                 player.SetSource(stream, file.ContentType);
                 player.IsLooping = Audios[name].Loop;
-                player.Volume = Audios[name].Volume/100.0f;
+                player.Volume = Audios[name].Volume;
+              
                 player.Play();
                
             }

@@ -145,7 +145,6 @@
     <Compile Include="Src\Scripts\Items\EspadaAco.cs" />
     <Compile Include="Src\Scripts\Items\Item.cs" />
     <Compile Include="Src\Scripts\Componentes\Mercador.cs" />
-    <Compile Include="Src\Scripts\Managers\InventarioManager.cs" />
     <Compile Include="Src\Scripts\Managers\ItemManager.cs" />
     <Compile Include="Src\Scripts\Componentes\QuestSystem.cs" />
     <Compile Include="Src\Scripts\PC\Game.cs" />
@@ -157,7 +156,7 @@
     <Compile Include="Src\Scripts\Telas\MenuPrin.cs" />
     <Compile Include="Src\Scripts\Telas\SelPersonagem.cs" />
     <Compile Include="Src\Scripts\UI\ChatBar.cs" />
-    <Compile Include="Src\Scripts\UI\Inventario.cs" />
+    <Compile Include="Src\Scripts\UI\InventarioPopUp.cs" />
     <Compile Include="Src\Scripts\UI\Particle.cs" />
     <Compile Include="Src\Scripts\UI\ScreenPC.cs" />
   </ItemGroup>

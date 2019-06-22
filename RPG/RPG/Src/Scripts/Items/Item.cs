@@ -14,6 +14,7 @@ public class Item : Armazenavel
     public int Preco;
     public bool Estacavel;
     public ushort TipoItem;
+    protected string IconPath;
 
     public bool getEstacavel()
     {
@@ -28,6 +29,11 @@ public class Item : Armazenavel
     public ushort getTipo()
     {
         return TipoItem;
+    }
+
+    public string iconPath()
+    {
+        return IconPath;
     }
 }
 

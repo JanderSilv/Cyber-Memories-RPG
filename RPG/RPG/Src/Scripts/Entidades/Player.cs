@@ -10,28 +10,31 @@ using System.Threading.Tasks;
 public class Player:Entidade
 {
     public Animacao anim;
-    public bool Lab = true;
+    
     Body body;
     Render render;
     Colisao col;
-    public QuestSystem quest;
-    public string skin = "Homem Negro";
+    Inventario inventario;
 
+    public QuestSystem quest;
     InventarioPopUp inventoryUI;
+    public string skin = "Homem Negro";
     bool inventoryOpen = false;
     public static Player currentPlayer;
-   
-  
+    public bool Lab = true;
+
 
     public Player()
     {
         currentPlayer = this;
-        anim = AddComponente<Animacao>();
-        body = AddComponente<Body>();
-        col = GetComponente<Colisao>();
+        anim   = AddComponente<Animacao>();
+        body   = AddComponente<Body>();
+        col    = GetComponente<Colisao>();
         render = GetComponente<Render>();
+        quest  = AddComponente<QuestSystem>();
+        inventario = AddComponente<Inventario>();
+
         inventoryUI = new InventarioPopUp();
-        quest = AddComponente<QuestSystem>();
         quest.AddQuest(new FalarComNPC());
         col.tamanho.x = 50;
         col.tamanho.y = 20;
@@ -113,7 +116,7 @@ public class Player:Entidade
             }
             else
             {
-                inventoryUI.ShowInventory();
+                inventoryUI.ShowInventory(inventario);
                 inventoryOpen = true;
             }
         }

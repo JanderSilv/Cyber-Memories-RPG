@@ -20,7 +20,8 @@ public class InventarioPopUp
 
     static int sizeX = 7, sizeY = 7;
     public UPanel inventory = new UPanel(new Vector2(50, 50), new Vector2(700, 330 * 1.25f));
-    UImage[,] slots = new UImage[sizeX, sizeY];
+    public UImage[,] slots = new UImage[sizeX, sizeY];
+
     public InventarioPopUp()
     {
        
@@ -65,7 +66,7 @@ public class InventarioPopUp
             }
         }
     }
-        public  bool UpdateTeclado(TecladoEvento e)
+    public  bool UpdateTeclado(TecladoEvento e)
         {
             if (e.Tecla == (int)VirtualKey.Enter || e.Tecla == (int)VirtualKey.Escape)
             {
@@ -73,8 +74,17 @@ public class InventarioPopUp
             }
             return true;
         }
-    public void ShowInventory()
+    public void ShowInventory(Inventario inv=null)
     {
+        if (inv != null)
+        {
+            int i = 0;
+           foreach(var s in inv.slots.Values)
+            {
+                slots[i/sizeX,i%sizeY].Content =  s.arm.iconPath();
+                i++;
+            }
+        }
         inventory.position.x = 50;
         inventory.position.y = 50;
        // AmbienteJogo.RegistrarEventoCallBack(PrioridadeEvento.Interface, UpdateTeclado);

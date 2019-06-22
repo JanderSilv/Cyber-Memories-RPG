@@ -104,7 +104,7 @@ public class LapBird : Game
                         obstaculos[i].Content = "Src/Images/Games/Lap Bird/js.png";
                     }
                 float d = Engine.Distance(new Vector2((float)obstaculos[i].transform.X,(float)obstaculos[i].transform.Y), new Vector2((float)Lapa.transform.X, (float)Lapa.transform.Y));
-                    if (d < 25)
+                    if (d < 20)
                     {
                     perdeu = true;
                     }
@@ -132,7 +132,7 @@ public class LapBird : Game
         }
         public override void KeyBoardUpdate()
         {
-            if (teclado.TeclaPressionada(VirtualKey.Space))
+            if (teclado.Tecla(VirtualKey.Space))
             {
             if (impulso <= 0) { impulso = 20;queda = 1; }
             }

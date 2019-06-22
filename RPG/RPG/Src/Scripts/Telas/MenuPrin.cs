@@ -23,7 +23,7 @@ public class MenuPrin : Window
         AudioSource As = new AudioSource();
         As.Name = "Funkaholic.mp3";
         As.Loop = true;
-        As.Volume = 10;
+        As.Volume = 0.1f;
         musicaDeFundo.Init();
         musicaDeFundo.Audios.Add("Musica", As);
         musicaDeFundo.Play("Musica");

@@ -85,7 +85,8 @@ public class ScreenPC
 
     internal void Update()
     {
-        if(state!= StateMachine.Desktop)
+        teclado.ClearTeclado();
+        if (state!= StateMachine.Desktop)
         {
             currentGame?.UpdateGame();
         }
@@ -137,16 +138,17 @@ public class ScreenPC
 
     private bool PcKeyword(TecladoEvento e)
     {
+       
         teclado.UpdateTeclado(e);
         currentGame?.KeyBoardUpdate();
-        if (teclado.TeclaPressionada(VirtualKey.Escape))
+        if (teclado.TeclaSolta(VirtualKey.Escape) && e.Modificador == (byte)ModificadorList.KeyDown)
         {
             
                 state = StateMachine.Desktop;
                 Render();
            
         }
-        if (teclado.TeclaPressionada(VirtualKey.P))
+        if (teclado.TeclaPressionada(VirtualKey.P) && e.Modificador == (byte)ModificadorList.KeyDown)
         {
            
             Hide();
