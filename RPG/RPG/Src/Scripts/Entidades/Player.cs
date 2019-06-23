@@ -45,7 +45,7 @@ public class Player:Entidade
         inv.Add(new ArcoArqueiro());
         inv.Add(new EspadaAco());
         inv.Add(new CajadoMadeira());
-
+        inventoryUI.inv = inv;
         LoadSkin(skin);
        
     }
@@ -119,7 +119,7 @@ public class Player:Entidade
             }
             else
             {
-                inventoryUI.ShowInventory(inv);
+                inventoryUI.ShowInventory();
                 inventoryOpen = true;
             }
         }

@@ -454,6 +454,9 @@
     <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Games\Combat\combat.png">
       <PackagePath>Src\Images\Games\Combat\combat.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Menu\info.png">
+      <PackagePath>Src\Images\Menu\info.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Menu\Inventário\Armadura.png">
       <PackagePath>Src\Images\Menu\Inventário\Armadura.png</PackagePath>
     </AppxPackagedFile>
@@ -502,17 +505,26 @@
     <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Menu\Inventário\Slot.png">
       <PackagePath>Src\Images\Menu\Inventário\Slot.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Menu\largar.png">
+      <PackagePath>Src\Images\Menu\largar.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Menu\Logo.png">
       <PackagePath>Src\Images\Menu\Logo.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Menu\Logo2.png">
       <PackagePath>Src\Images\Menu\Logo2.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Menu\pegar.png">
+      <PackagePath>Src\Images\Menu\pegar.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Menu\Selecao_Personagem\Homem-Branco-Combate.png">
       <PackagePath>Src\Images\Menu\Selecao_Personagem\Homem-Branco-Combate.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Games\Combat\Monsters\Morto.png">
       <PackagePath>Src\Images\Games\Combat\Monsters\Morto.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Menu\usar.png">
+      <PackagePath>Src\Images\Menu\usar.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\Src\Images\Players\Homem Branco\Face.png">
       <PackagePath>Src\Images\Players\Homem Branco\Face.png</PackagePath>

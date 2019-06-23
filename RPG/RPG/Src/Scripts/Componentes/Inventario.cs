@@ -10,7 +10,7 @@ public class Slot
 
 public class Inventario : Componente<Inventario>
 {
-    public int limite = 30;
+    public int limite = 49;
     public Dictionary<uint, Slot> slots = new Dictionary<uint, Slot>();
 
     public  bool Add(Armazenavel item)
@@ -89,6 +89,18 @@ public class Inventario : Componente<Inventario>
         var itens = from Armazenavel in slots.Values where Armazenavel.arm.getTipo() == tipo select Armazenavel.arm;
         return itens.ToArray();
     }
+
+    public Slot getByIndex(int index)
+    {
+        int i = 0;
+        foreach(Slot a in slots.Values)
+        {
+            if (i == index) return a;
+            i++;
+        }
+        return null;
+    }
+   
 }
 
 

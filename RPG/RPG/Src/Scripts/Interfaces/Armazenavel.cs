@@ -4,6 +4,7 @@
     uint getID();
     ushort getTipo();
     string getImagem();
+    T getItem<T>();
 }
 
 

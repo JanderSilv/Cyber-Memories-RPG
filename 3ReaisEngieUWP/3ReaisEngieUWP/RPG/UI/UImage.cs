@@ -22,6 +22,7 @@ namespace _3ReaisEngine.UI
             img.HorizontalAlignment = HorizontalAlignment.Left;
             img.VerticalAlignment = VerticalAlignment.Top;
             img.RenderTransform = new TranslateTransform();
+            img.PointerPressed += act;
             element = img;
             frameworkElement = (FrameworkElement)element;
         }

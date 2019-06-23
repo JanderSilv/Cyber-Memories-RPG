@@ -116,6 +116,7 @@ Src\Images\Menu\Botões\Volume.png
 Src\Images\Menu\Botões\Volume_Selecionado.png
 Src\Images\Menu\Chat.png
 Src\Images\Menu\ChatBox.png
+Src\Images\Menu\info.png
 Src\Images\Menu\Inventário\Arma_Texto.png
 Src\Images\Menu\Inventário\Armadura.png
 Src\Images\Menu\Inventário\Armadura_Selecionado.png
@@ -132,8 +133,10 @@ Src\Images\Menu\Inventário\Inventário_1.png
 Src\Images\Menu\Inventário\Moeda.png
 Src\Images\Menu\Inventário\Personagem.png
 Src\Images\Menu\Inventário\Slot.png
+Src\Images\Menu\largar.png
 Src\Images\Menu\Logo.png
 Src\Images\Menu\Logo2.png
+Src\Images\Menu\pegar.png
 Src\Images\Menu\Selecao_Personagem\Contorno.png
 Src\Images\Menu\Selecao_Personagem\Escolha_Personagem.png
 Src\Images\Menu\Selecao_Personagem\Homem.png
@@ -150,6 +153,7 @@ Src\Images\Menu\Selecao_Personagem\Seta Direita Selecionado.png
 Src\Images\Menu\Selecao_Personagem\Seta Direita.png
 Src\Images\Menu\Selecao_Personagem\Seta Esquerda Selecionado.png
 Src\Images\Menu\Selecao_Personagem\Seta Esquerda.png
+Src\Images\Menu\usar.png
 Src\Images\Players\Homem Branco\anim\Combate.gif
 Src\Images\Players\Homem Branco\anim\Direita.gif
 Src\Images\Players\Homem Branco\anim\Esquerda.gif

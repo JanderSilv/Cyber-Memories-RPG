@@ -272,6 +272,7 @@
     <Content Include="Src\Images\Menu\Chat.png" />
     <Content Include="Src\Images\Menu\ChatBox.png" />
     <Content Include="Src\Images\Games\Combat\combat.png" />
+    <Content Include="Src\Images\Menu\info.png" />
     <Content Include="Src\Images\Menu\Inventário\Armadura.png" />
     <Content Include="Src\Images\Menu\Inventário\Armadura_Selecionado.png" />
     <Content Include="Src\Images\Menu\Inventário\Armadura_Texto.png" />
@@ -288,10 +289,13 @@
     <Content Include="Src\Images\Menu\Inventário\Moeda.png" />
     <Content Include="Src\Images\Menu\Inventário\Personagem.png" />
     <Content Include="Src\Images\Menu\Inventário\Slot.png" />
+    <Content Include="Src\Images\Menu\largar.png" />
     <Content Include="Src\Images\Menu\Logo.png" />
     <Content Include="Src\Images\Menu\Logo2.png" />
+    <Content Include="Src\Images\Menu\pegar.png" />
     <Content Include="Src\Images\Menu\Selecao_Personagem\Homem-Branco-Combate.png" />
     <Content Include="Src\Images\Games\Combat\Monsters\Morto.png" />
+    <Content Include="Src\Images\Menu\usar.png" />
     <Content Include="Src\Images\Players\Homem Branco\Face.png" />
     <Content Include="Src\Images\Players\Homem Negro\Face.png" />
     <Content Include="Src\Images\Players\Mulher Branco\Face.png" />

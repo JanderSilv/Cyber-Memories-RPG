@@ -31,9 +31,16 @@ public class Item : Armazenavel
         return Icone;
     }
 
+    public T getItem<T>()
+    {
+        return (T)((object)this);
+    }
+
     public ushort getTipo()
     {
         return TipoItem;
     }
+
+ 
 }
 
