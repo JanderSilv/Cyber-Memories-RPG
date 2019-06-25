@@ -1,24 +1,24 @@
-﻿class Armadura : Item, Comercial, Atacavel, Equipavel
+﻿public class Armadura : Item, Comercial, Equipavel
 {
     public Armadura()
     {
         TipoItem = (ushort)tipoItem.Armadura;
-
-        Nome = "Armadura de couro";
-        Preco = 40;
         Estacavel = false;
-        Descricao = "Nao é muito util mas melhor que ficar nu";
-
         ItemManager.GenID(this);
         _3ReaisEngine.Engine.Print("ID da armadura " + ID);
     }
 
-    public void Atacar(Status e)
+    public void Atacar(Combate e)
     {
 
     }
 
-    public void Equipar(Status e)
+    public void Desequipar(Combate e)
+    {
+       
+    }
+
+    public void Equipar(Combate e)
     {
 
     }
@@ -29,3 +29,19 @@
     }
 }
 
+public class Elmo : Armadura
+{
+
+}
+public class Peitoral: Armadura
+{
+
+}
+public class Calca: Armadura
+{
+
+}
+public class Bota: Armadura
+{
+
+}

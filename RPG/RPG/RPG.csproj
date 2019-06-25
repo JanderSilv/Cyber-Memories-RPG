@@ -100,7 +100,7 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Src\Scripts\Componentes\Estatus.cs" />
+    <Compile Include="Src\Scripts\Componentes\Combate.cs" />
     <Compile Include="Src\Scripts\Componentes\Itinerario.cs" />
     <Compile Include="Src\Scripts\Componentes\Movel.cs" />
     <Compile Include="Src\Scripts\Entidades\ChaveEletronica.cs" />
@@ -112,43 +112,27 @@
     <Compile Include="Src\Scripts\Entidades\Player.cs" />
     <Compile Include="Src\Scripts\Entidades\Entidade_Labs.cs" />
     <Compile Include="Src\Scripts\Entidades\Tubulacao.cs" />
-    <Compile Include="Src\Scripts\Items\PocaoVidaG.cs" />
-    <Compile Include="Src\Scripts\Items\PocaoVidaM.cs" />
-    <Compile Include="Src\Scripts\Items\PocaoVidaP.cs" />
+    <Compile Include="Src\Scripts\Habilidade\ListaHabilidades.cs" />
+    <Compile Include="Src\Scripts\Items\Arma.cs" />
+    <Compile Include="Src\Scripts\Items\Armas\ListaArmas.cs" />
+    <Compile Include="Src\Scripts\Items\Pocoes\PocaoVidaG.cs" />
+    <Compile Include="Src\Scripts\Items\Pocoes\PocaoVidaM.cs" />
+    <Compile Include="Src\Scripts\Items\Pocoes\PocaoVidaP.cs" />
     <Compile Include="Src\Scripts\DungeonGenerator.cs" />
     <Compile Include="Src\Scripts\Managers\CraftSystem.cs" />
     <Compile Include="Src\Scripts\Componentes\Inventario.cs" />
-    <Compile Include="Src\Scripts\Habilidade\AtacarForte.cs" />
-    <Compile Include="Src\Scripts\Habilidade\Cegueira.cs" />
-    <Compile Include="Src\Scripts\Habilidade\Confuso.cs" />
-    <Compile Include="Src\Scripts\Habilidade\CorteFogo.cs" />
-    <Compile Include="Src\Scripts\Habilidade\CorteM.cs" />
-    <Compile Include="Src\Scripts\Habilidade\CorteR.cs" />
-    <Compile Include="Src\Scripts\Habilidade\DiminuirForca.cs" />
-    <Compile Include="Src\Scripts\Habilidade\Envenenamento.cs" />
-    <Compile Include="Src\Scripts\Habilidade\FlechaGelo.cs" />
-    <Compile Include="Src\Scripts\Habilidade\Nevasca.cs" />
-    <Compile Include="Src\Scripts\Habilidade\Tempestade.cs" />
-    <Compile Include="Src\Scripts\Habilidade\Trovao.cs" />
     <Compile Include="Src\Scripts\Interfaces\Armazenavel.cs" />
     <Compile Include="Src\Scripts\Interfaces\Comercial.cs" />
     <Compile Include="Src\Scripts\Interfaces\Atacavel.cs" />
     <Compile Include="Src\Scripts\Interfaces\Equipavel.cs" />
     <Compile Include="Src\Scripts\Interfaces\Habilidade.cs" />
-    <Compile Include="Src\Scripts\Items\ArcoArqueiro.cs" />
-    <Compile Include="Src\Scripts\Items\ArcoLegolas.cs" />
-    <Compile Include="Src\Scripts\Items\ArcoMadeira.cs" />
     <Compile Include="Src\Scripts\Items\Armadura.cs" />
-    <Compile Include="Src\Scripts\Items\CajadoMadeira.cs" />
-    <Compile Include="Src\Scripts\Items\CajadoMago.cs" />
-    <Compile Include="Src\Scripts\Items\CajadoMerlim.cs" />
-    <Compile Include="Src\Scripts\Items\EspadaAco.cs" />
     <Compile Include="Src\Scripts\Items\Item.cs" />
     <Compile Include="Src\Scripts\Componentes\Mercador.cs" />
     <Compile Include="Src\Scripts\Managers\ItemManager.cs" />
     <Compile Include="Src\Scripts\Componentes\QuestSystem.cs" />
     <Compile Include="Src\Scripts\PC\Game.cs" />
-    <Compile Include="Src\Scripts\PC\Games\Combate.cs" />
+    <Compile Include="Src\Scripts\PC\Games\CombateGame.cs" />
     <Compile Include="Src\Scripts\PC\Games\LapBird.cs" />
     <Compile Include="Src\Scripts\Quests\FalarComNPC.cs" />
     <Compile Include="Src\Scripts\Telas\GameWin.cs" />
@@ -252,10 +236,12 @@
     <Content Include="Src\Images\Laboratório\Lab_0003_Monitores.png" />
     <Content Include="Src\Images\Laboratório\Lab_0004_Piso.png" />
     <Content Include="Src\Images\Laboratório\Porta.png" />
+    <Content Include="Src\Images\Menu\Botões\abrir.png" />
     <Content Include="Src\Images\Menu\Botões\Configurações.png" />
     <Content Include="Src\Images\Menu\Botões\Configurações_Selecionado.png" />
     <Content Include="Src\Images\Menu\Botões\Controles.png" />
     <Content Include="Src\Images\Menu\Botões\Controles_Selecionado.png" />
+    <Content Include="Src\Images\Menu\Botões\guardar.png" />
     <Content Include="Src\Images\Menu\Botões\Iniciar.png" />
     <Content Include="Src\Images\Menu\Botões\Jogar_Selecionado.png" />
     <Content Include="Src\Images\Menu\Botões\Mountains1.png" />
@@ -455,6 +441,7 @@
   <ItemGroup>
     <Folder Include="Src\Images\Games\Joli Coin\" />
     <Folder Include="Src\saves\" />
+    <Folder Include="Src\Scripts\Items\Armaduras\" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />

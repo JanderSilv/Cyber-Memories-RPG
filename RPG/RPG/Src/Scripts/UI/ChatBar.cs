@@ -99,12 +99,12 @@ public static class ChatBar
        
         public static bool UpdateTeclado(TecladoEvento e)
         {
-            if(e.Tecla == (int)VirtualKey.Enter && e.Modificador ==  (byte)ModificadorList.KeyDown)
+            if(e.Tecla == (int)VirtualKey.Enter && e.Modificador ==  (byte)ModificadorTecla.KeyDown)
             {
             
             next = true;
             }
-            if (e.Tecla == (int)VirtualKey.Escape && e.Modificador == (byte)ModificadorList.KeyDown)
+            if (e.Tecla == (int)VirtualKey.Escape && e.Modificador == (byte)ModificadorTecla.KeyDown)
             {
            
             HideChat();

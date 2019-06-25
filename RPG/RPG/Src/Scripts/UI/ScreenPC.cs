@@ -95,7 +95,7 @@ public class ScreenPC
     private void combatGame(object sender)
     {
         state = StateMachine.Combate;
-        currentGame = new Combate(screen);
+        currentGame = new CombateGame(screen);
         currentGame.Start();
         
         Render();

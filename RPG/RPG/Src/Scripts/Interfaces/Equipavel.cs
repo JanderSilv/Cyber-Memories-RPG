@@ -1,5 +1,6 @@
 ﻿public interface Equipavel
 {
-    void Equipar(Status e);
+    void Equipar(Combate e);
+    void Desequipar(Combate e);
 }
 

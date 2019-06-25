@@ -3,7 +3,7 @@
 
 namespace _3ReaisEngine.Events
 {
-    public enum ModificadorList : byte
+    public enum ModificadorTecla : byte
     {
         KeyUp = 1,
         KeyHold = 2,

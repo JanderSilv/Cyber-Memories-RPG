@@ -205,8 +205,15 @@ namespace RPG.Src.Scripts.Entidades
     public class Armario : Entidade
     {
         Colisao col;
+        Inventario inv;
+        InventarioPopUpBau invPopUp;
+        private UButton btn_Abrir;
+        private UButton btn_Guardar;
+        private bool btn_ativo;
+
         public Armario(Vector2 pos)
         {
+            inv = AddComponente<Inventario>();
             col = AddComponente<Colisao>();
             col.tamanho.x = 60;
             col.tamanho.y = 120;
@@ -214,8 +221,56 @@ namespace RPG.Src.Scripts.Entidades
             col.tipo = TipoColisao.Estatica;
             EntPos = pos;
             EntPos.x += 60;
+            inv.Add(new CajadoMaderia());
+            inv.Add(new EspadaAco());
+            inv.Add(new ArcoMadeira());
+            inv.Add(new AdagaAco());
             Render r = GetComponente<Render>();
             r.LoadImage("Src/Images/Laboratório/Assets-Laborátorio_0007_Armário.png");
+            invPopUp = new InventarioPopUpBau();
+            invPopUp.inv = inv;
+
+            btn_Abrir = new UButton("", new Vector2(EntPos.x + 50, EntPos.y - 50), new Vector2(50, 25), abrir);
+            btn_Abrir.setBackground("Src/Images/Menu/Botões/abrir.png");
+            btn_Abrir.anchor = AnchorType.Exact;
+
+            btn_Guardar = new UButton("", new Vector2(EntPos.x + 50, EntPos.y - 20), new Vector2(50, 25), guardar);
+            btn_Guardar.setBackground("Src/Images/Menu/Botões/guardar.png");
+            btn_Guardar.anchor = AnchorType.Exact;
+        }
+
+        private void abrir(object sender)
+        {
+            invPopUp.ShowInventory();
+            btn_ativo = false;
+        }
+
+        private void guardar(object sender)
+        {
+            Player.currentPlayer.inventoryUI.troca = inv;
+            Player.currentPlayer.inventoryUI.ShowInventory();
+            btn_ativo = false;
+        }
+
+        private void Menu()
+        {
+            if (btn_ativo)
+            {
+                AmbienteJogo.window.Remove(btn_Abrir, false);
+                AmbienteJogo.window.Remove(btn_Guardar, false);
+                btn_ativo = false;
+            }
+            else
+            {
+                AmbienteJogo.window.Add(btn_Abrir, false);
+                AmbienteJogo.window.Add(btn_Guardar, false);
+                btn_ativo = true;
+            }
+        }
+
+        public override void OnClick(MouseEvento e)
+        {
+            Menu();
         }
 
     }
@@ -274,7 +329,7 @@ namespace RPG.Src.Scripts.Entidades
            
             Render r = GetComponente<Render>();
             r.LoadImage("Src/Images/Laboratório/Lab_Notebook.png");
-             btn_Use = new UButton("", new Vector2(EntPos.x+50, EntPos.y-25), new Vector2(50, 25),startPC);
+            btn_Use = new UButton("", new Vector2(EntPos.x+50, EntPos.y-25), new Vector2(50, 25),startPC);
             btn_Use.setBackground("Src/Images/Menu/Botões/Jogar_Selecionado.png");
             btn_Use.anchor = AnchorType.Exact;
         }

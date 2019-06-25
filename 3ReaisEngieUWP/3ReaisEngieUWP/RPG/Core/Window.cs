@@ -410,11 +410,11 @@ namespace _3ReaisEngine.RPG.Core
             TecladoEvento te;
             if (e.KeyStatus.WasKeyDown)
             {
-                te = new TecladoEvento { Tecla = (int)e.VirtualKey, Repeticoes = e.KeyStatus.RepeatCount, Modificador = (byte)ModificadorList.KeyHold };
+                te = new TecladoEvento { Tecla = (int)e.VirtualKey, Repeticoes = e.KeyStatus.RepeatCount, Modificador = (byte)ModificadorTecla.KeyHold };
             }
             else
             {
-                te = new TecladoEvento { Tecla = (int)e.VirtualKey, Repeticoes = e.KeyStatus.RepeatCount, Modificador = (byte)ModificadorList.KeyDown };
+                te = new TecladoEvento { Tecla = (int)e.VirtualKey, Repeticoes = e.KeyStatus.RepeatCount, Modificador = (byte)ModificadorTecla.KeyDown };
             }
             
            
@@ -426,7 +426,7 @@ namespace _3ReaisEngine.RPG.Core
         {
             if (e.KeyStatus.IsKeyReleased)
             {
-                TecladoEvento te = new TecladoEvento { Tecla = (int)e.VirtualKey, Repeticoes = e.KeyStatus.RepeatCount, Modificador = (byte)ModificadorList.KeyUp };
+                TecladoEvento te = new TecladoEvento { Tecla = (int)e.VirtualKey, Repeticoes = e.KeyStatus.RepeatCount, Modificador = (byte)ModificadorTecla.KeyUp };
                 AmbienteJogo.EnviarEvento(te);
             }
            

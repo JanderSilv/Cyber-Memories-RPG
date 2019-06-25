@@ -1,4 +1,4 @@
 ﻿public interface Atacavel
 {
-    void Atacar(Status e);
+    void Atacar(Combate e);
 }

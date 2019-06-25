@@ -7,22 +7,26 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-public class Player:Entidade
+public class Player : Entidade
 {
+    public static Player currentPlayer;
+
     public Animacao anim;
-    public bool Lab = true;
+    public Inventario inv;
+    public QuestSystem quest;
+
     Body body;
     Render render;
-    Colisao col;
-    Inventario inv;
-    public QuestSystem quest;
-    public string skin = "Homem Negro";
+    Colisao col;  
+    Combate stat;
+    public InventarioPopUpPlayer inventoryUI;
 
-    InventarioPopUp inventoryUI;
+
+    public string skin = "Homem Negro";
+    public bool Lab = true;
+
     bool inventoryOpen = false;
-    public static Player currentPlayer;
-   
-  
+
 
     public Player()
     {
@@ -30,10 +34,12 @@ public class Player:Entidade
         anim = AddComponente<Animacao>();
         body = AddComponente<Body>();
         inv = AddComponente<Inventario>();
+        quest = AddComponente<QuestSystem>();
+        stat = AddComponente<Combate>();
         col = GetComponente<Colisao>();
         render = GetComponente<Render>();
-        inventoryUI = new InventarioPopUp();
-        quest = AddComponente<QuestSystem>();
+        
+        inventoryUI = new InventarioPopUpPlayer();
         quest.AddQuest(new FalarComNPC());
         col.tamanho.x = 50;
         col.tamanho.y = 20;
@@ -41,13 +47,14 @@ public class Player:Entidade
         inv.Init();
         render.img.Width = 50;
         render.img.Height = 50;
-
-        inv.Add(new ArcoArqueiro());
+        inv.Add(new CajadoMaderia());
         inv.Add(new EspadaAco());
-        inv.Add(new CajadoMadeira());
+        inv.Add(new ArcoMadeira());
+        inv.Add(new AdagaAco());
+
         inventoryUI.inv = inv;
         LoadSkin(skin);
-       
+
     }
 
     public void LoadSkin(string skinFolder)
@@ -55,15 +62,15 @@ public class Player:Entidade
         skin = skinFolder;
         if (Lab)
         {
-            anim.AddAnimation("Move_Left", "Src/Images/Players/" + skin  + "/Lab/anim/Lab_Esquerda.gif");
+            anim.AddAnimation("Move_Left", "Src/Images/Players/" + skin + "/Lab/anim/Lab_Esquerda.gif");
             anim.AddAnimation("Move_Right", "Src/Images/Players/" + skin + "/Lab/anim/Lab_Direita.gif");
-            anim.AddAnimation("Move_Down", "Src/Images/Players/" + skin +  "/Lab/anim/Lab_Frente.gif");
-            anim.AddAnimation("Move_Up", "Src/Images/Players/" + skin +    "/Lab/anim/Lab_Fundo.gif");
+            anim.AddAnimation("Move_Down", "Src/Images/Players/" + skin + "/Lab/anim/Lab_Frente.gif");
+            anim.AddAnimation("Move_Up", "Src/Images/Players/" + skin + "/Lab/anim/Lab_Fundo.gif");
 
-            anim.AddAnimation("Stop_Left", "Src/Images/Players/" + skin  + "/Lab/Esquerda_Parado.png");
+            anim.AddAnimation("Stop_Left", "Src/Images/Players/" + skin + "/Lab/Esquerda_Parado.png");
             anim.AddAnimation("Stop_Right", "Src/Images/Players/" + skin + "/Lab/Direita_Parado.png");
-            anim.AddAnimation("Stop_Up", "Src/Images/Players/" + skin +    "/Lab/Fundo_Parado.png");
-            anim.AddAnimation("Stop_Down", "Src/Images/Players/" + skin +  "/Lab/Frente_Parado.png");
+            anim.AddAnimation("Stop_Up", "Src/Images/Players/" + skin + "/Lab/Fundo_Parado.png");
+            anim.AddAnimation("Stop_Down", "Src/Images/Players/" + skin + "/Lab/Frente_Parado.png");
         }
         else
         {
@@ -85,11 +92,14 @@ public class Player:Entidade
         anim.Play("Stop_Down");
 
     }
-  
+
 
     public override void Update()
     {
+        
         quest.UpdateQuest();
+
+        
         if (AmbienteJogo.Input.Tecla(Windows.System.VirtualKey.W))
         {
             body.velocity.y = -5;
@@ -140,6 +150,8 @@ public class Player:Entidade
         {
             anim.Play("Stop_Right");
         }
+
+       
     }
 }
 

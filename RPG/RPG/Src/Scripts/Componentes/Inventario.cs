@@ -100,6 +100,11 @@ public class Inventario : Componente<Inventario>
         }
         return null;
     }
+
+    public int Qnt()
+    {
+        return slots.Count();
+    }
    
 }
 

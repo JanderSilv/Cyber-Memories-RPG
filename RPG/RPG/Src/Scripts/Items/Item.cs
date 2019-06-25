@@ -33,14 +33,14 @@ public class Item : Armazenavel
 
     public T getItem<T>()
     {
-        return (T)((object)this);
+        if(this is T) return (T)((object)this);
+        return (T)(object)null;
     }
 
     public ushort getTipo()
     {
-        return TipoItem;
+        return (ushort)TipoItem;
     }
 
  
 }
-

@@ -40,17 +40,17 @@ namespace _3ReaisEngine.Core
             int k = e.Tecla;
             
 
-                if (e.Modificador == (byte)ModificadorList.KeyHold)
+                if (e.Modificador == (byte)ModificadorTecla.KeyHold)
                 {
                     tecladoDown[k] = 1;
                     tecladoAtivo[k] = 1;
                 }
-                else if (e.Modificador == (byte)ModificadorList.KeyUp)
+                else if (e.Modificador == (byte)ModificadorTecla.KeyUp)
                 {                 
                     tecladoUp[k] = 1;
                     tecladoAtivo[k] = 0;
                 }
-                else if (e.Modificador == (byte)ModificadorList.KeyDown)
+                else if (e.Modificador == (byte)ModificadorTecla.KeyDown)
                 {
                     teclado[k] = 1;
                     tecladoAtivo[k] = 1;
