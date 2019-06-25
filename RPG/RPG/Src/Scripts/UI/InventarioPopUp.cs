@@ -213,21 +213,19 @@ public class InventarioPopUp
     }
 }
 
-public class InventarioPopUpPlayer:InventarioPopUp
+public class InventarioPopUpPlayer : InventarioPopUp
 {
-  
     public InventarioPopUpPlayer()
     {
 
         UImage coin = new UImage("Src/Images/Menu/Inventário/Moeda.png", new Vector2(92.75f, 12.5f), new Vector2(24, 26));
-        UImage atrbBorder = new UImage("Src/Images/Menu/Inventário/Contorno_Inventario.png", new Vector2(75, 55), new Vector2(180, 320));
+        UImage atrbBorder = new UImage("Src/Images/Menu/Inventário/Contorno_Inventario.png", new Vector2(77, 57), new Vector2(180, 320));
         UImage invText = new UImage("Src/Images/Menu/Inventário/Inventário_1.png", new Vector2(25, 10), new Vector2(184, 33));
-        UImage persText = new UImage("Src/Images/Menu/Inventário/Personagem.png", new Vector2(70, 10), new Vector2(166, 23));
+        UImage persText = new UImage("Src/Images/Menu/Inventário/Personagem.png", new Vector2(77, 22), new Vector2(166, 23));
 
-
-        UButton weapon = new UButton("", new Vector2(107, 30), new Vector2(56, 51), Weapon);
-        UButton armor = new UButton("", new Vector2(107, 50), new Vector2(56, 51), Armor);
-        UButton attribute = new UButton("", new Vector2(107, 70), new Vector2(56, 51), Attribute);
+        UButton weapon = new UButton("", new Vector2(106, 30), new Vector2(56, 51), Weapon);
+        UButton armor = new UButton("", new Vector2(106, 50), new Vector2(56, 51), Armor);
+        UButton attribute = new UButton("", new Vector2(106, 70), new Vector2(56, 51), Attribute);
 
         weapon.setBackground("Src/Images/Menu/Inventário/Armas.png");
         weapon.setOnHover("Src/Images/Menu/Inventário/Armas_Selecionados.png");
@@ -235,7 +233,6 @@ public class InventarioPopUpPlayer:InventarioPopUp
         armor.setOnHover("Src/Images/Menu/Inventário/Armadura_Selecionado.png");
         attribute.setBackground("Src/Images/Menu/Inventário/Atributos.png");
         attribute.setOnHover("Src/Images/Menu/Inventário/Atributos_Selecionado.png");
-
 
         inventory.addChild(coin);
         inventory.addChild(atrbBorder);
@@ -247,49 +244,139 @@ public class InventarioPopUpPlayer:InventarioPopUp
 
     }
     public Inventario troca;
-    public void showArmor()
+
+    UPanel character = new UPanel(new Vector2(50, 50), new Vector2(800, 640));
+    UPanel panArmor;
+    UPanel panWeapon;
+    UPanel panAttribute;
+
+    protected void HideArmor()
+    {
+        character.removeChild(panArmor);
+    }
+
+    protected void HideWeapon()
+    {
+        character.removeChild(panWeapon);
+    }
+
+    protected void HideAttributes()
+    {
+        character.removeChild(panAttribute);
+    }
+
+    public void ShowArmor()
+    {
+        panArmor = new UPanel(new Vector2(50, 50), new Vector2(800, 640));
+
+        character.addChild(panArmor);
+ 
+        UImage txtArmor = new UImage("Src/Images/Menu/Inventário/Armadura_Texto.png", new Vector2(72,50), new Vector2(89,171));
+
+        panArmor.addChild(txtArmor);
+        panArmor.UpdateUI();
+        
+    }
+    public void ShowWeapon()
+    {
+        panWeapon = new UPanel(new Vector2(50, 50), new Vector2(800, 640));
+
+        character.addChild(panWeapon);
+
+
+        UImage txtWeapon = new UImage("Src/Images/Menu/Inventário/Arma_Texto.png", new Vector2(76,38), new Vector2(67, 23));
+        UImage weaponSlot = new UImage("Src/Images/Menu/Inventário/Slot.png", new Vector2(76, 45), new Vector2(40,40));
+
+        panWeapon.addChild(txtWeapon);
+        panWeapon.addChild(weaponSlot);
+        panWeapon.UpdateUI();
+    }
+    public void ShowAttribute()
     {
 
-        //UPanel panArmor = new UPanel(new Vector2(), new Vector2());
+        panAttribute = new UPanel(new Vector2(50, 50), new Vector2(800, 640));
 
-        //UImage txtArmor = new UImage("Src/Images/Menu/Inventário/Armadura_Texto.png", new Vector2(), new Vector2(112, 181));
+        character.addChild(panAttribute);
 
-        //panArmor.addChild(txtArmor);
-        //panArmor.UpdateUI();
+        UImage txtAttribute = new UImage("Src/Images/Menu/Inventário/Atributos_Texto.png", new Vector2(70,50), new Vector2(64, 169));
+
+        panAttribute.addChild(txtAttribute);
+        panAttribute.UpdateUI();
     }
-    public void showWeapon()
-    {
-        //UPanel panWeapon = new UPanel(new Vector2(), new Vector2());
-
-        //UImage txtWeapon = new UImage("Src/Images/Menu/Inventário/Arma_Texto.png", new Vector2(), new Vector2(62, 81));
-
-        //panWeapon.addChild(txtWeapon);
-        //panWeapon.UpdateUI();
-    }
-    public void showAttribute()
-    {
-        //UPanel panAttribute = new UPanel(new Vector2(), new Vector2());
-
-        //UImage txtAttribute = new UImage("Src/Images/Menu/Inventário/Atributos_Texto.png", new Vector2(), new Vector2(62, 162));
-
-        //panAttribute.addChild(txtAttribute);
-        //panAttribute.UpdateUI();
-    }
+    // Impede que a panel seja stackada
+    bool armorOpen = false, weaponOpen = false, attributeOpen = false;
 
     private void Armor(object sender)
     {
-        // troca pro panel de armadura
-        showArmor();
+        // Impede que a panel seja stackada
+        if (armorOpen == false)
+        {
+            armorOpen = true;
+            ShowArmor();
+        } else
+        {
+            // Aba ja aberta
+        }
+        // Troca as panels
+        if (armorOpen == true)
+        {
+            attributeOpen = false;
+            weaponOpen = false;
+            HideWeapon();
+            HideAttributes();
+        }
+        else
+        {
+            // Nenhuma aba aberta preveamente
+        }
+
     }
     private void Weapon(object sender)
-    {
-        // troca pro panel de arma
-        showWeapon();
+    {        
+        if (weaponOpen == false)
+        {
+            weaponOpen = true;
+            ShowWeapon();
+        } else
+        {
+            // Aba ja aberta
+        }
+
+        if (weaponOpen == true)
+        {
+            attributeOpen = false;
+            armorOpen = false;
+            HideArmor();
+            HideAttributes();
+        } else
+        {
+            // Nenhuma aba aberta preveamente
+        }
+
     }
     private void Attribute(object sender)
     {
-        // troca pro panel de atributos
-        showAttribute();
+        if (attributeOpen == false)
+        {
+            attributeOpen = true;
+            ShowAttribute();
+        }
+        else
+        {
+            // Aba ja aberta
+        }
+
+        if (attributeOpen == true)
+        {
+            weaponOpen = false;
+            armorOpen = false;
+            HideWeapon();
+            HideArmor();
+        }
+        else
+        {
+            // Nenhuma aba aberta preveamente
+        }
     }
 
     protected override void ShowMenu(Vector2 startPos, bool usar = false, bool pegar = false, bool largar = false, bool info = false)

@@ -260,8 +260,8 @@
     <Content Include="Src\Images\Games\Combat\combat.png" />
     <Content Include="Src\Images\Menu\info.png" />
     <Content Include="Src\Images\Menu\Inventário\Armadura.png" />
-    <Content Include="Src\Images\Menu\Inventário\Armadura_Selecionado.png" />
     <Content Include="Src\Images\Menu\Inventário\Armadura_Texto.png" />
+    <Content Include="Src\Images\Menu\Inventário\Armadura_Selecionado.png" />
     <Content Include="Src\Images\Menu\Inventário\Armas.png" />
     <Content Include="Src\Images\Menu\Inventário\Armas_Selecionados.png" />
     <Content Include="Src\Images\Menu\Inventário\Arma_Texto.png" />
