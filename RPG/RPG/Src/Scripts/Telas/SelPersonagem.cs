@@ -2,7 +2,7 @@
 using _3ReaisEngine.Core;
 using _3ReaisEngine.RPG.Core;
 using _3ReaisEngine.UI;
-using RPG.Src.Scripts.Telas;
+
 using System;
 using System.Collections.Generic;
 using System.Linq;

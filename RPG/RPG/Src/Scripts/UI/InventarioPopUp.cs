@@ -305,6 +305,7 @@ public class InventarioPopUpPlayer:InventarioPopUp
 
     public override void largar_act(object sender)
     {
+        if (troca == null) return;
         inv.Remove(currentItem.arm);
         troca.Add(currentItem.arm);
         currentItem = null;

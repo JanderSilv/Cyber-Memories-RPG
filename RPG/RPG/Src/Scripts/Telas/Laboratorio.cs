@@ -41,6 +41,7 @@ using Windows.UI.Xaml.Controls;
         {65000, typeof(Block) }
         };
     public string PlayerSkin;
+    public static GameWin next;
     public Laboratorio(Page root) : base(root)
     {
         ChatBar.Init();

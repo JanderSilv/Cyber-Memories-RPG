@@ -8,7 +8,7 @@ using _3ReaisEngine.Core;
 using _3ReaisEngine.RPG.Core;
 using _3ReaisEngine.UI;
 using RPG.Src.Scripts;
-using RPG.Src.Scripts.Telas;
+
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
@@ -22,7 +22,8 @@ namespace RPG
   
         SelPersonagem selecao;
         MenuPrin menuPrin;
-        Laboratorio lab;
+        public static Laboratorio lab;
+        public static GameWin game;
         public MainPage()
         {       
             InitializeComponent();
@@ -30,10 +31,12 @@ namespace RPG
             selecao = new SelPersonagem(this);         
             menuPrin = new MenuPrin(this);
             lab = new Laboratorio(this);
+            game = new GameWin(this);
 
             menuPrin.SetCurrent();
             menuPrin.next = selecao;
             selecao.game = lab;
+            Laboratorio.next = game;
            
         }
 
