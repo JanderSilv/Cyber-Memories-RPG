@@ -18,6 +18,7 @@ using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
+using Windows.UI.Xaml.Media.Imaging;
 
 namespace _3ReaisEngine.RPG.Core
 {
@@ -336,7 +337,10 @@ namespace _3ReaisEngine.RPG.Core
 
 
         }
-
+        public void SetBackground(string path)
+        {
+            game_layer.Background = new ImageBrush() { ImageSource = new BitmapImage(new Uri("ms-appx:" + path))};
+        }
         public void Remove(UIEntidade element,bool UILayer = true)
         {
             if (UILayer == false)

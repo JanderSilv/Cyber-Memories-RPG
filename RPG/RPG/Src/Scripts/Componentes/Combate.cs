@@ -1,5 +1,6 @@
 ﻿using _3ReaisEngine;
 using _3ReaisEngine.Core;
+using System;
 
 public enum Estado
 {
@@ -57,6 +58,50 @@ public class Combate : Componente<Combate>
         }
     }
 
+    public void Ataque(Combate cmb)
+    {
+        if ((estadoAtual & Estado.Paralisado) != 0) return;
+        else if((cmb.estadoAtual & Estado.Paralisado) != 0){
+            arma.Atacar(cmb);
+            return;
+        }
+        if (new Random().Next(0, 100) + destreza < 20+cmb.destreza) return;
+
+        if (new Random().Next(0, 100) + sorte > 90 + cmb.sorte)
+        {
+            arma.danoBasico += (int)(arma.danoBasico * 0.20f);
+            arma.Atacar(cmb);
+            arma.danoBasico -= (int)(arma.danoBasico * 0.20f);
+        }
+        else
+        {
+            arma.Atacar(cmb);
+        }
+    }
+    public void AtaqueEspel(Combate cmb)
+    {
+        if ((estadoAtual & Estado.Paralisado) != 0) return;
+        else if ((cmb.estadoAtual & Estado.Paralisado) != 0)
+        {
+            arma.Atacar(cmb);
+            arma.habilidade.Atacar(cmb);
+            return;
+        }
+        if (new Random().Next(0, 100) + destreza < 20 + cmb.destreza) return;
+
+        if (new Random().Next(0, 100) + sorte > 90 + cmb.sorte)
+        {
+            arma.danoBasico += (int)(arma.danoBasico * 0.20f);
+            arma.Atacar(cmb);
+            arma.danoBasico -= (int)(arma.danoBasico * 0.20f);
+        }
+        else
+        {
+            arma.Atacar(cmb);
+        }
+        arma.habilidade.Atacar(cmb);
+      
+    }
     public bool upLevel()
     {
         if (xpAtual >= xpMax)

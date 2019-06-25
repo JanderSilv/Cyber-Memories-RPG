@@ -13,13 +13,15 @@ public class Player : Entidade
 
     public Animacao anim;
     public Inventario inv;
+    public InventarioPopUpPlayer inventoryUI;
+    public Combate stat;
     public QuestSystem quest;
 
     Body body;
-    Render render;
+    public Render render;
     Colisao col;  
-    Combate stat;
-    public InventarioPopUpPlayer inventoryUI;
+   
+   
 
 
     public string skin = "Homem Negro";
@@ -47,10 +49,11 @@ public class Player : Entidade
         inv.Init();
         render.img.Width = 50;
         render.img.Height = 50;
-        inv.Add(new CajadoMaderia());
-        inv.Add(new EspadaAco());
-        inv.Add(new ArcoMadeira());
-        inv.Add(new AdagaAco());
+       
+
+        stat.saude = 400;
+        stat.saudeMax = 400;
+     
 
         inventoryUI.inv = inv;
         LoadSkin(skin);

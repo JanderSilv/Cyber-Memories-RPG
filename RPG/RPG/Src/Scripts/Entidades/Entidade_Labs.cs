@@ -181,6 +181,13 @@ namespace RPG.Src.Scripts.Entidades
             Render r = GetComponente<Render>();
             r.LoadImage("Src/Images/Laboratório/Lab_0002_TP.png");
         }
+        public override void OnClick(MouseEvento e)
+        {
+            AmbienteJogo.window.Remove(Player.currentPlayer);
+            Laboratorio.next = new GameWin(AmbienteJogo.window.root);
+            Laboratorio.next.player = Player.currentPlayer;
+            Laboratorio.next.SetCurrent();
+        }
 
     }
 

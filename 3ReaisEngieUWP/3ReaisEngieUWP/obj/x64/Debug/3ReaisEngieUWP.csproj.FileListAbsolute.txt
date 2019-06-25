@@ -165,4 +165,3 @@ E:\Projects\RPG-LP2\3ReaisEngieUWP\3ReaisEngieUWP\obj\x64\Debug\pri.resfiles.int
 E:\Projects\RPG-LP2\3ReaisEngieUWP\3ReaisEngieUWP\obj\x64\Debug\qualifiers.txt
 E:\Projects\RPG-LP2\3ReaisEngieUWP\3ReaisEngieUWP\obj\x64\Debug\qualifiers.txt.intermediate
 E:\Projects\RPG-LP2\3ReaisEngieUWP\3ReaisEngieUWP\obj\x64\Debug\MultipleQualifiersPerDimensionFound.txt
-E:\Projects\RPG-LP2\3ReaisEngieUWP\3ReaisEngieUWP\obj\x64\Debug\3ReaisEngieUWP.csprojAssemblyReference.cache

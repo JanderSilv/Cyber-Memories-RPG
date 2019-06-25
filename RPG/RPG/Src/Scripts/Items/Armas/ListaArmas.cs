@@ -53,12 +53,12 @@ public class ArcoMadeira : Arma
 
     public override void Equipar(Combate e)
     {
-        e.destreza += 10;
+        e.destreza += 5;
     }
 
     public override void Desequipar(Combate e)
     {
-        e.destreza -= 10;
+        e.destreza -= 5;
     }
 }
 public class AdagaAco : Arma

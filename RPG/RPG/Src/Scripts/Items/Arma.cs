@@ -11,7 +11,7 @@
 
     public void Atacar(Combate e)
     {
-        e.saude -= danoBasico;
+        e.saude -= danoBasico / (1 + e.resistencia / 100); ;
     }
 
     public virtual void Desequipar(Combate e)
