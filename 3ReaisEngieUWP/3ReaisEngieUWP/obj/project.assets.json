@@ -7401,24 +7401,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Jander\\.nuget\\packages\\": {},
+    "C:\\Users\\ruann\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Jander\\Documents\\GitHub\\RPG-LP2\\3ReaisEngieUWP\\3ReaisEngieUWP\\3ReaisEngieUWP.csproj",
+      "projectUniqueName": "E:\\Projects\\RPG-LP2\\3ReaisEngieUWP\\3ReaisEngieUWP\\3ReaisEngieUWP.csproj",
       "projectName": "3ReaisEngieUWP",
-      "projectPath": "C:\\Users\\Jander\\Documents\\GitHub\\RPG-LP2\\3ReaisEngieUWP\\3ReaisEngieUWP\\3ReaisEngieUWP.csproj",
-      "packagesPath": "C:\\Users\\Jander\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Jander\\Documents\\GitHub\\RPG-LP2\\3ReaisEngieUWP\\3ReaisEngieUWP\\obj\\",
+      "projectPath": "E:\\Projects\\RPG-LP2\\3ReaisEngieUWP\\3ReaisEngieUWP\\3ReaisEngieUWP.csproj",
+      "packagesPath": "C:\\Users\\ruann\\.nuget\\packages\\",
+      "outputPath": "E:\\Projects\\RPG-LP2\\3ReaisEngieUWP\\3ReaisEngieUWP\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Jander\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ruann\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

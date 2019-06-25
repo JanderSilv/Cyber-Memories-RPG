@@ -95,7 +95,7 @@ public class InventarioPopUp
 
     public bool UpdateTeclado(TecladoEvento e)
     {
-        if ((e.Tecla == (int)VirtualKey.E && e.Modificador == (byte)ModificadorTecla.KeyDown) || e.Tecla == (int)VirtualKey.Escape)
+        if ( e.Tecla == (int)VirtualKey.Escape)
         {
             HideMenu();
             HideInventory();
@@ -103,7 +103,7 @@ public class InventarioPopUp
         return true;
     }
 
-    public void ShowInventory()
+    public virtual void ShowInventory()
     {
 
         uptSlots();
@@ -130,7 +130,7 @@ public class InventarioPopUp
         }
     }
 
-    public void HideInventory()
+    public virtual void HideInventory()
     {
          AmbienteJogo.RemoverEventoCallBack(PrioridadeEvento.Interface, UpdateTeclado);
         AmbienteJogo.window.Remove(inventory);
@@ -215,6 +215,15 @@ public class InventarioPopUp
 
 public class InventarioPopUpPlayer : InventarioPopUp
 {
+    public Inventario troca;
+    bool armorOpen = false, weaponOpen = false, attributeOpen = false;
+
+    UImage txtArmor = new UImage("Src/Images/Menu/Inventário/Armadura_Texto.png", new Vector2(72, 50), new Vector2(89, 171));
+    UImage txtWeapon = new UImage("Src/Images/Menu/Inventário/Arma_Texto.png", new Vector2(76, 38), new Vector2(67, 23));
+    UImage weaponSlot = new UImage("Src/Images/Menu/Inventário/Slot.png", new Vector2(76, 45), new Vector2(40, 40));
+    UImage txtAttribute = new UImage("Src/Images/Menu/Inventário/Atributos_Texto.png", new Vector2(70, 50), new Vector2(64, 169));
+
+   
     public InventarioPopUpPlayer()
     {
 
@@ -242,69 +251,44 @@ public class InventarioPopUpPlayer : InventarioPopUp
         inventory.addChild(armor);
         inventory.addChild(attribute);
 
+
     }
-    public Inventario troca;
-
-    UPanel character = new UPanel(new Vector2(50, 50), new Vector2(800, 640));
-    UPanel panArmor;
-    UPanel panWeapon;
-    UPanel panAttribute;
-
+  
     protected void HideArmor()
     {
-        character.removeChild(panArmor);
+        inventory.removeChild(txtArmor);
     }
 
     protected void HideWeapon()
     {
-        character.removeChild(panWeapon);
+        inventory.removeChild(txtWeapon);
+        inventory.removeChild(weaponSlot);
     }
 
     protected void HideAttributes()
     {
-        character.removeChild(panAttribute);
+        inventory.removeChild(txtAttribute);
     }
 
     public void ShowArmor()
     {
-        panArmor = new UPanel(new Vector2(50, 50), new Vector2(800, 640));
+        inventory.addChild(txtArmor);
+        inventory.UpdateUI();
 
-        character.addChild(panArmor);
- 
-        UImage txtArmor = new UImage("Src/Images/Menu/Inventário/Armadura_Texto.png", new Vector2(72,50), new Vector2(89,171));
-
-        panArmor.addChild(txtArmor);
-        panArmor.UpdateUI();
-        
     }
     public void ShowWeapon()
     {
-        panWeapon = new UPanel(new Vector2(50, 50), new Vector2(800, 640));
-
-        character.addChild(panWeapon);
-
-
-        UImage txtWeapon = new UImage("Src/Images/Menu/Inventário/Arma_Texto.png", new Vector2(76,38), new Vector2(67, 23));
-        UImage weaponSlot = new UImage("Src/Images/Menu/Inventário/Slot.png", new Vector2(76, 45), new Vector2(40,40));
-
-        panWeapon.addChild(txtWeapon);
-        panWeapon.addChild(weaponSlot);
-        panWeapon.UpdateUI();
+        inventory.addChild(txtWeapon);
+        inventory.addChild(weaponSlot);
+        inventory.UpdateUI();
     }
     public void ShowAttribute()
     {
-
-        panAttribute = new UPanel(new Vector2(50, 50), new Vector2(800, 640));
-
-        character.addChild(panAttribute);
-
-        UImage txtAttribute = new UImage("Src/Images/Menu/Inventário/Atributos_Texto.png", new Vector2(70,50), new Vector2(64, 169));
-
-        panAttribute.addChild(txtAttribute);
-        panAttribute.UpdateUI();
+        inventory.addChild(txtAttribute);
+        inventory.UpdateUI();
     }
     // Impede que a panel seja stackada
-    bool armorOpen = false, weaponOpen = false, attributeOpen = false;
+    
 
     private void Armor(object sender)
     {
@@ -331,6 +315,8 @@ public class InventarioPopUpPlayer : InventarioPopUp
         }
 
     }
+
+   
     private void Weapon(object sender)
     {        
         if (weaponOpen == false)
