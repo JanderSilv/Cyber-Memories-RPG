@@ -30,13 +30,13 @@
     <AppXManifest Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-06-25T06:46:37.219</Modified>
+      <Modified>2019-06-25T13:31:27.220</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Debug\RPG.exe">
       <PackagePath>entrypoint\RPG.exe</PackagePath>
-      <Modified>2019-06-25T06:46:36.475</Modified>
+      <Modified>2019-06-25T13:20:26.540</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ruann\.nuget\packages\newtonsoft.json\12.0.2\lib\netstandard2.0\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
@@ -1044,15 +1044,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2019-06-25T06:46:36.241</Modified>
+      <Modified>2019-06-25T13:31:25.959</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2019-06-25T06:46:36.241</Modified>
+      <Modified>2019-06-25T13:31:25.959</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Debug\Src\ButtonStyle.xbf">
       <PackagePath>Src\ButtonStyle.xbf</PackagePath>
-      <Modified>2019-06-25T06:46:36.240</Modified>
+      <Modified>2019-06-25T13:31:25.958</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.17763.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -1064,7 +1064,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\RPG-LP2\RPG\RPG\bin\x64\Debug\Core\RPG.exe">
       <PackagePath>RPG.exe</PackagePath>
-      <Modified>2019-06-25T06:46:37.215</Modified>
+      <Modified>2019-06-25T13:31:27.215</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
